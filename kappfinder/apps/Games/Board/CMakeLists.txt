@@ -1,0 +1,1 @@
+install( FILES xboard.desktop Glines.desktop Gnotravex.desktop Iagno.desktop  	    Xgammon.desktop SameGnome.desktop Gataxx.desktop Gmahjongg.desktop Gnotski.desktop  	    Gchess.desktop Gmines.desktop Gstones.desktop  DESTINATION  ${DATA_INSTALL_DIR}/kappfinder/apps/Games/Board )

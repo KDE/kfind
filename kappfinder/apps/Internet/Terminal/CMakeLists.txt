@@ -1,0 +1,1 @@
+install( FILES mutt.desktop ncftp.desktop pine.desktop lftp.desktop  	    Links.desktop Lynx.desktop w3m.desktop slrn.desktop silc.desktop  	    btdownloadcurses.desktop  DESTINATION  ${DATA_INSTALL_DIR}/kappfinder/apps/Internet/Terminal )
