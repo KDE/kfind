@@ -1,0 +1,21 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=clanbomber
+Icon=clanbomber
+Name=Clanbomber
+Name[af]=Klanbommer
+Name[eo]=Bombanto
+Name[fr]=ClanBomber
+Name[hu]=Bombarakó
+Name[ja]=Clan ボンバー
+Name[km]=យន្តហោះ​ទម្លាក់​គ្រាប់បែក
+Name[ne]=क्लान बम्बर
+Name[pa]=ਕਲਾਨ ਬੰਬਰ
+Name[sv]=Klanbombare
+Name[ta]=க்ளான்பாம்பர்
+Name[te]=క్లాన్ బాంబర్
+Name[x-test]=xxClanbomberxx
+Name[zh_TW]=Clanbomber 炸彈超人
+Path=
+Terminal=true
+Type=Application

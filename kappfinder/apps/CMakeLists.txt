@@ -1,0 +1,11 @@
+
+add_subdirectory( Editors ) 
+add_subdirectory( Internet ) 
+add_subdirectory( Toys ) 
+add_subdirectory( Development ) 
+add_subdirectory( Graphics ) 
+add_subdirectory( System ) 
+add_subdirectory( Utilities ) 
+add_subdirectory( Office ) 
+add_subdirectory( Multimedia ) 
+add_subdirectory( Games ) 
