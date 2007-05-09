@@ -22,8 +22,8 @@
 #ifndef COMMON_H
 #define COMMON_H
 
-#include <Qt3Support/Q3CheckListItem>
-#include <QList>
+#include <Qt3Support/Q3ListView>
+#include <QtCore/QList>
 
 
 class AppLnkCache

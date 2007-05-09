@@ -24,8 +24,8 @@
 #include <kglobal.h>
 #include <kstandarddirs.h>
 
-#include <QDir>
-#include <QFile>
+#include <QtCore/QDir>
+#include <QtCore/QFile>
 
 #include <stdlib.h>
 

@@ -32,13 +32,13 @@
 #include <kstandarddirs.h>
 #include <kstandardguiitem.h>
 
-#include <QLabel>
-#include <QLayout>
-#include <QPushButton>
-#include <QDir>
-#include <QRegExp>
-#include <QProgressBar>
-#include <QVBoxLayout>
+#include <QtGui/QLabel>
+#include <QtGui/QLayout>
+#include <QtGui/QPushButton>
+#include <QtCore/QDir>
+#include <QtCore/QRegExp>
+#include <QtGui/QProgressBar>
+#include <QtGui/QBoxLayout>
 
 #include "toplevel.h"
 
