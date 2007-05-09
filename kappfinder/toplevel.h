@@ -24,10 +24,10 @@
 
 #include <kdialog.h>
 
-#include <QStringList>
+#include <QtCore/QStringList>
 //Added by qt3to4:
-#include <QLabel>
-#include <QList>
+#include <QtGui/QLabel>
+#include <QtCore/QList>
 #include "common.h"
 
 class QProgressBar;

@@ -25,7 +25,7 @@
 #include <klocale.h>
 #include <kstandarddirs.h>
 
-#include <QStringList>
+#include <QtCore/QStringList>
 
 #include <stdio.h>
 
