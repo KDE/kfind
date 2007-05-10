@@ -188,7 +188,7 @@ void TopLevel::slotScan()
     if (found)
        continue;
 
-    found = KService::serviceByMenuId("kde-"+desktopName+".desktop");
+    found = KService::serviceByMenuId("kde4-"+desktopName+".desktop");
     if (found)
        continue; 
 
