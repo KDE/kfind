@@ -3,7 +3,6 @@ Encoding=UTF-8
 Exec=dc_gui
 Icon=xapp
 Name=DCTC GUI
-Name[bg]=ГПИ за DCTC
 Name[br]=Etrefas DCTC
 Name[ca]=IGU per a DCTC
 Name[csb]=Graficzny interfejs dlô DCTC
