@@ -2,8 +2,8 @@
 OPTION(RUN_KAPPFINDER "Installing non-KDE applications" OFF)
 project(kappfinder)
 
-add_subdirectory( apps ) 
-add_subdirectory( pics ) 
+add_subdirectory( apps )
+add_subdirectory( pics )
 
 
 add_definitions (-DQT3_SUPPORT)
@@ -16,7 +16,7 @@ kde4_automoc(${kappfinder_SRCS})
 
 kde4_add_executable(kappfinder ${kappfinder_SRCS})
 
-target_link_libraries(kappfinder  ${KDE4_KIO_LIBS} )
+target_link_libraries(kappfinder  ${KDE4_KIO_LIBS} ${QT_QT3SUPPORT_LIBRARY})
 
 install(TARGETS kappfinder DESTINATION ${BIN_INSTALL_DIR})
 
