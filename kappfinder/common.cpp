@@ -19,17 +19,21 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+// Own
+#include "common.h"
+
+// std
+#include <stdlib.h>
+
+// Qt
+#include <QtCore/QDir>
+#include <QtCore/QFile>
+
+// KDE
 #include <kdebug.h>
 #include <kdesktopfile.h>
 #include <kglobal.h>
 #include <kstandarddirs.h>
-
-#include <QtCore/QDir>
-#include <QtCore/QFile>
-
-#include <stdlib.h>
-
-#include "common.h"
 
 #define DBG_CODE 1213
 

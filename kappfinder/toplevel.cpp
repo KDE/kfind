@@ -19,6 +19,19 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+// Own
+#include "toplevel.h"
+
+// Qt
+#include <QtGui/QLabel>
+#include <QtGui/QLayout>
+#include <QtGui/QPushButton>
+#include <QtCore/QDir>
+#include <QtCore/QRegExp>
+#include <QtGui/QProgressBar>
+#include <QtGui/QBoxLayout>
+
+// KDE
 #include <kapplication.h>
 #include <kbuildsycocaprogressdialog.h>
 #include <kdebug.h>
@@ -31,16 +44,6 @@
 #include <kservicegroup.h>
 #include <kstandarddirs.h>
 #include <kstandardguiitem.h>
-
-#include <QtGui/QLabel>
-#include <QtGui/QLayout>
-#include <QtGui/QPushButton>
-#include <QtCore/QDir>
-#include <QtCore/QRegExp>
-#include <QtGui/QProgressBar>
-#include <QtGui/QBoxLayout>
-
-#include "toplevel.h"
 
 TopLevel::TopLevel( const QString &destDir, QWidget *parent )
   : KDialog( parent )

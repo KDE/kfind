@@ -40,7 +40,7 @@ class TopLevel : public KDialog
   Q_OBJECT
 
   public:
-    TopLevel( const QString &destDir, QWidget *parent = 0 );
+    explicit TopLevel( const QString &destDir, QWidget *parent = 0 );
     ~TopLevel();
 
   public Q_SLOTS:
