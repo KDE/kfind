@@ -33,7 +33,6 @@
 class QProgressBar;
 class QLabel;
 class Q3ListView;
-class QPushButton;
 
 class TopLevel : public KDialog
 {
