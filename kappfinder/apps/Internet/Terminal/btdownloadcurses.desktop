@@ -2,6 +2,7 @@
 Exec=btdownloadcurses.py
 GenericName=BitTorrent GUI
 GenericName[ar]=واجهة المستخدم الرسومية لِــ BitTorrent
+GenericName[be]=Графічны кліент BitTorrent
 GenericName[ca]=IGU per a BitTorrent
 GenericName[csb]=Graficzny interfejs dlô BitTorrent
 GenericName[cy]=Rhyngwyneb Graffegol (GUI) BitTorrent
@@ -44,6 +45,7 @@ Icon=xapp
 InitialPreference=1
 MimeType=application/x-bittorrent
 Name=BitTorrent Python Curses GUI
+Name[be]=Графічны кліент BitTorrent на Python
 Name[ca]=IGU per a BitTorrent en Python Curses
 Name[csb]=Graficzny interfejs dlô BitTorren Pyton Curses
 Name[cy]=Rhyngwyneb Graffegol (GIU) Curses Python BitTorrent

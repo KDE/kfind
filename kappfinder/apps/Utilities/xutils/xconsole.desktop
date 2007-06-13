@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Name=X Console
 Name[af]=X Konsole
+Name[be]=Кансоль X
 Name[br]=Letrin X
 Name[ca]=Consola X
 Name[csb]=X Kònsola
@@ -45,6 +46,7 @@ Name[zh_TW]=X 控制台
 MimeType=
 GenericName=Console Message Viewer
 GenericName[af]=Konsole Boodskap Aansig
+GenericName[be]=Праглядальнік кансольных паведамленняў
 GenericName[ca]=Visor dels missatges de la consola
 GenericName[cs]=Prohlížeč zpráv z konzole
 GenericName[csb]=Przezérnik wiadłów kònsolë

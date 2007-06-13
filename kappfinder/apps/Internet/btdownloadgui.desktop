@@ -2,6 +2,7 @@
 Exec=btdownloadgui.py
 GenericName=BitTorrent GUI
 GenericName[ar]=واجهة المستخدم الرسومية لِــ BitTorrent
+GenericName[be]=Графічны кліент BitTorrent
 GenericName[ca]=IGU per a BitTorrent
 GenericName[csb]=Graficzny interfejs dlô BitTorrent
 GenericName[cy]=Rhyngwyneb Graffegol (GUI) BitTorrent
@@ -44,6 +45,7 @@ Icon=xapp
 InitialPreference=2
 MimeType=application/x-bittorrent
 Name=BitTorrent Python wxGTK GUI
+Name[be]=Графічны кліент BitTorrent на Python з wxGTK
 Name[ca]=IGU per a BitTorrent en Python wxGTK
 Name[csb]=Graficzny interfejs dlô BitTorrent brëkùjący wxGTK
 Name[cy]=Rhyngwyneb Graffegol (GIU) wxGTK Python BitTorrent

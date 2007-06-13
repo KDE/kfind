@@ -4,6 +4,7 @@ Exec=mldonkey_gui
 Icon=xapp
 Name=MLDonkey GTK+ Core Controller
 Name[af]=MLDonkey GTK+ Beheerder
+Name[be]=Кіраўнік ядра MLDonkey для GTK+
 Name[ca]=MLDonkey GTK+ Nucli controlador
 Name[csb]=Kòntroléra MLDonkey (interfejs GTK+)
 Name[cy]=Rheolydd Craidd MLDonkey GTK+
