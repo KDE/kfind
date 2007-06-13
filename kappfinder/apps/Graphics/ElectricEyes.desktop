@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Name=Electric Eyes
 Name[af]=Elektriese Oë
+Name[be]=Электрычныя вочы
 Name[br]=Daoulagad tredanel
 Name[csb]=Elektriszowé òczë
 Name[cy]=Llygaid Trydan
@@ -28,6 +29,7 @@ Name[zh_TW]=電眼
 GenericName=Image Viewer
 GenericName[af]=Beeld Aansig
 GenericName[ar]=عارض الصور
+GenericName[be]=Праглядчык відарысаў
 GenericName[br]=Gweler ar skeudennoù
 GenericName[ca]=Visor d'imatges
 GenericName[cs]=Prohlížeč obrázků

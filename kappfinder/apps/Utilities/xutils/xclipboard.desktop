@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Name=X Clipboard
 Name[af]=X Klipbord
+Name[be]=Буфер абмену X
 Name[br]=Golver X
 Name[ca]=Portapapers X
 Name[csb]=X Tacnik
@@ -46,6 +47,7 @@ MimeType=
 GenericName=Clipboard Viewer
 GenericName[af]=Klipbord Aansig
 GenericName[ar]=عارض الحافظة
+GenericName[be]=Праглядальнік буфера абмену
 GenericName[br]=Gweler ar golver
 GenericName[ca]=Visor del portapapers
 GenericName[cs]=Prohlížeč schránky

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=X Calc
+Name[be]=Калькулятар X
 Name[br]=Jederez X
 Name[csb]=X Kalkùlator
 Name[de]=X-Calc
@@ -29,6 +30,7 @@ MimeType=
 GenericName=Calculator
 GenericName[af]=Sak rekenaar
 GenericName[ar]=آلة حاسبة
+GenericName[be]=Калькулятар
 GenericName[br]=Jederez
 GenericName[ca]=Calculadora
 GenericName[cs]=Kalkulátor

@@ -4,6 +4,7 @@ Exec=ddd
 Type=Application
 GenericName=Data Display Debugger
 GenericName[af]=Data Vertoon Ontfouter
+GenericName[be]=Адладчык дадзеных манітора
 GenericName[br]=Dizraener Diskwel Roadoù
 GenericName[ca]=Depurador de dades en pantalla
 GenericName[csb]=Debuger pòdôwków

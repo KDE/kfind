@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Tux
+Name[be]=Tукс
 Name[eo]=Tuĉjo
 Name[he]=טקס
 Name[ko]=턱스(Tux)
@@ -13,6 +14,7 @@ Name[x-test]=xxTuxxx
 MimeType=
 GenericName=Linux Mascot
 GenericName[af]=Linux Gelukbringer
+GenericName[be]=Талісман Linux
 GenericName[ca]=Mascota de Linux
 GenericName[cs]=Maskot Linuxu
 GenericName[csb]=Glingòtka Linuksa

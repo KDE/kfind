@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=GNOME-Cal
+Name[be]=Каляндар GNOME
 Name[csb]=Gnome kalãdôrz
 Name[de]=GNOME Cal
 Name[eo]=Gnoma kalendaro
@@ -23,6 +24,7 @@ Name[zh_TW]=GNOME 行事曆
 GenericName=Personal Calendar
 GenericName[af]=Persoonlike Kalender
 GenericName[ar]=تقويم شخصي
+GenericName[be]=Персанальны каляндар
 GenericName[br]=Deiziadur deoc'h
 GenericName[ca]=Calendari personal
 GenericName[cs]=Osobní kalendář

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Lynx
+Name[be]=Рысь
 Name[eo]=Linko
 Name[pa]=ਲਨੈਕਸ
 Name[te]=ల్యింక్స్
@@ -8,6 +9,7 @@ Name[x-test]=xxLynxxx
 GenericName=Web Browser
 GenericName[af]=Web Blaaier
 GenericName[ar]=متصفح الشبكة
+GenericName[be]=Вандроўнік па Сеціве
 GenericName[br]=Furcher ar Gwiad
 GenericName[ca]=Fullejador web
 GenericName[cs]=WWW prohlížeč
