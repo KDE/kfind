@@ -2,7 +2,6 @@
 Version=1.0
 Name=FreeCiv Server
 Name[af]=Freeciv Bediener
-Name[ar]=خادم FreeCiv
 Name[be]=Сервер для FreeCiv
 Name[br]=Servijer FreeCiv
 Name[ca]=Servidor FreeCiv
@@ -60,7 +59,6 @@ Name[zh_TW]=FreeCiv 伺服器
 Type=Application
 Comment=A server for Free Civ
 Comment[af]=´n Bediener vir Free Civ
-Comment[ar]=خادم للعبة Free Civ
 Comment[be]=Сервер для Свабоднай Цывілізацыі
 Comment[br]=Ur servijer evit Free Civ
 Comment[ca]=Un servidor per a Free Civ
