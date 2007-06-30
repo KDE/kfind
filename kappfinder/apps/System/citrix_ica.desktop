@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Name=Citrix ICA Client
 Name[af]=Citrix ICA Kliënt
-Name[ar]=زبون Citrix ICA
 Name[be]=Кліент Citrix ICA
 Name[br]=Pratik Citrix ICA
 Name[ca]=Client Citrix ICA
@@ -58,7 +57,6 @@ Name[xh]=Citrix Umxhasi we ICA
 Name[zh_TW]=Citrix ICA 客戶端程式
 GenericName=WTS Client
 GenericName[af]=WTS Kliënt
-GenericName[ar]=زبون WTS
 GenericName[be]=Кліент WTS
 GenericName[br]=Kliant UTS
 GenericName[ca]=Client WTS

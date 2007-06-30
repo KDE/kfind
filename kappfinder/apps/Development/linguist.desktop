@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Exec=linguist
 Name=Qt Linguist
-Name[ar]=لغوي Qt
 Name[ca]=Lingüista Qt
 Name[csb]=Lingwista Qt
 Name[cy]=Ieithydd Qt
@@ -40,7 +39,6 @@ Name[xh]=Usolwimi we Qt
 Name[zh_TW]=Qt 語言學家
 GenericName=Translation Tool
 GenericName[af]=Vertaling Program
-GenericName[ar]=أداة للترجمة
 GenericName[be]=Праграма перакладу
 GenericName[bg]=Инструмент за превод
 GenericName[br]=Ostilh troidigezh

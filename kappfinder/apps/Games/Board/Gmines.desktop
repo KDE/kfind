@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Name=GNOME Mines
 Name[af]=Gnome Myne
-Name[ar]=ألغام GNOME
 Name[be]=Міны GNOME
 Name[br]=Minoù GNOME 
 Name[ca]=Mines del GNOME
@@ -47,7 +46,6 @@ Name[xh]=GNOME Iimayine
 Name[zh_TW]=GNOME 踩地雷
 GenericName=Logic Game
 GenericName[af]=Logika Speletjie
-GenericName[ar]=لعبة منطقية
 GenericName[be]=Лагічная гульня
 GenericName[ca]=Joc de lògica
 GenericName[cs]=Logická hra
