@@ -1,6 +1,5 @@
 
 OPTION(RUN_KAPPFINDER "Installing non-KDE applications" OFF)
-project(kappfinder)
 
 add_subdirectory( apps )
 add_subdirectory( pics )
