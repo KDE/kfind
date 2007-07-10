@@ -11,7 +11,6 @@ add_definitions (-DQT3_SUPPORT)
 
 set(kappfinder_SRCS main.cpp toplevel.cpp common.cpp )
 
-kde4_automoc(${kappfinder_SRCS})
 
 kde4_add_executable(kappfinder ${kappfinder_SRCS})
 
@@ -24,7 +23,6 @@ install(TARGETS kappfinder DESTINATION ${BIN_INSTALL_DIR})
 
 set(kappfinder_install_SRCS main_install.cpp common.cpp )
 
-kde4_automoc(${kappfinder_install_SRCS})
 
 kde4_add_executable(kappfinder_install ${kappfinder_install_SRCS})
 
