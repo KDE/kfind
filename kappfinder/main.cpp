@@ -45,5 +45,5 @@ int main( int argc, char *argv[] )
 
   TopLevel *dlg = new TopLevel( args->getOption( "dir" ) );
 
-  dlg->exec();
+  return dlg->exec();
 }
