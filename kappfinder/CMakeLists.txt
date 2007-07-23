@@ -31,7 +31,7 @@ target_link_libraries(kappfinder_install  ${KDE4_KDEUI_LIBS} ${QT_QT3SUPPORT_LIB
 
 ########### install files ###############
 
-install( FILES kappfinder.desktop  DESTINATION  ${XDG_APPS_DIR} )
+install( FILES kappfinder.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 
 kde4_install_icons( ${ICON_INSTALL_DIR}  )
 
