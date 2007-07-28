@@ -2,6 +2,7 @@
 Encoding=UTF-8
 MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
 Name=Nedit
+Name[bg]=gEdit
 Name[ka]=NEdit
 Name[ko]=N편집기
 Name[ne]=एन एडिट
@@ -14,6 +15,7 @@ Name[x-test]=xxNeditxx
 GenericName=Text Editor
 GenericName[af]=Teks Redigeerder
 GenericName[be]=Тэкставы рэдактар
+GenericName[bg]=X Editor
 GenericName[br]=Aozer skrid
 GenericName[ca]=Editor de text
 GenericName[cs]=Textový editor
