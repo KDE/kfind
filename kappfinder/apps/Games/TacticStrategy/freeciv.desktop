@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Version=1.0
 Name=Freeciv
+Name[bg]=Цивилизация - Freeciv
 Name[eo]=Libera Civilizludo
 Name[ne]=फ्रिसिभ
 Name[pa]=ਫਰੀਕਿਵ
@@ -14,6 +15,7 @@ Type=Application
 GenericName=Strategy Game
 GenericName[af]=Strategie Speletjie
 GenericName[be]=Стратэгічная гульня
+GenericName[bg]=Стратегическа игра
 GenericName[br]=C'hoari a gadouriezh
 GenericName[ca]=Joc d'estratègia
 GenericName[cs]=Strategická hra

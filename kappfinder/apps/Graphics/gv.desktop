@@ -9,6 +9,7 @@ MimeType=application/pdf;application/postscript;image/x-eps;application/illustra
 GenericName=Postscript Viewer
 GenericName[af]=Postscript Aansig
 GenericName[be]=Праглядальнік Postscript
+GenericName[bg]=Преглед на Postscript документи
 GenericName[br]=Gweler Postscript
 GenericName[ca]=Visor de Postscript
 GenericName[cs]=Prohlížeč Postscriptových souborů

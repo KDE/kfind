@@ -2,6 +2,7 @@
 Exec=btdownloadgui.py
 GenericName=BitTorrent GUI
 GenericName[be]=Графічны кліент BitTorrent
+GenericName[bg]=ГПИ за BitTorrent
 GenericName[ca]=IGU per a BitTorrent
 GenericName[csb]=Graficzny interfejs dlô BitTorrent
 GenericName[cy]=Rhyngwyneb Graffegol (GUI) BitTorrent

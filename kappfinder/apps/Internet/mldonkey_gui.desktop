@@ -44,6 +44,7 @@ Name[x-test]=xxMLDonkey GTK+ Core Controllerxx
 Name[zh_TW]=MLDonkey GTK+ 核心控制器
 GenericName=MLDonkey GUI
 GenericName[be]=Графічны кліент MLDonkey
+GenericName[bg]=ГПИ за MLDonkey
 GenericName[ca]=IGU per a MLDonkey
 GenericName[csb]=Graficzny interfejs dlô MLDonkey
 GenericName[de]=MLDonkey-Oberfläche

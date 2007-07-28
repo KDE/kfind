@@ -4,6 +4,7 @@ Exec=dc_gui
 Icon=xapp
 Name=DCTC GUI
 Name[be]=Графічны кліент DCTC
+Name[bg]=ГПИ за DCTC
 Name[br]=Etrefas DCTC
 Name[ca]=IGU per a DCTC
 Name[csb]=Graficzny interfejs dlô DCTC
