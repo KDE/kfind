@@ -1,1 +1,43 @@
-install( FILES alevt.desktop  	alsamixergui.desktop  	audacity.desktop  	Aumix.desktop  	aviplay.desktop  	bcast2000.desktop  	enjoympeg.desktop  	Grip.desktop  	gtv.desktop  	jazz.desktop  	MP3info.desktop  	mplayer.desktop  	mtv.desktop  	ogle.desktop  	oqtplayer.desktop  	realplayer.desktop  	rezound.desktop  	slab.desktop  	sweep.desktop  	xawtv.desktop  	xcam.desktop  	xine.desktop  	xmms.desktop  	xmms-enqueue.desktop  	XMovie.desktop  DESTINATION  ${DATA_INSTALL_DIR}/kappfinder/apps/Multimedia )
+install(FILES alevt.desktop
+              alsamixergui.desktop
+              ams.desktop
+              amsynth.desktop
+              ardour.desktop
+              audacity.desktop
+              Aumix.desktop
+              aviplay.desktop
+              bcast2000.desktop
+              djplay.desktop
+              ecamegapedal.desktop
+              enjoympeg.desktop
+              freebirth.desktop
+              freqtweak.desktop
+              galan.desktop
+              Grip.desktop
+              gtv.desktop
+              hydrogen.desktop
+              jack-rack.desktop
+              jamin.desktop
+              jazz.desktop
+              meterbridge.desktop
+              mixxx.desktop
+              MP3info.desktop
+              mplayer.desktop
+              mtv.desktop
+              ogle.desktop
+              oqtplayer.desktop
+              qjackctl.desktop
+              qsynth.desktop
+              realplayer.desktop
+              rezound.desktop
+              slab.desktop
+              sweep.desktop
+              vkeybd.desktop
+              xawtv.desktop
+              xcam.desktop
+              xine.desktop
+              xmms.desktop
+              xmms-enqueue.desktop
+              XMovie.desktop muse.desktop
+              zynaddsubfx.desktop
+              DESTINATION  ${DATA_INSTALL_DIR}/kappfinder/apps/Multimedia )
