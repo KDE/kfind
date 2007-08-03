@@ -155,7 +155,7 @@ void decorateDirs( QString destDir )
     destName = destDir + '/' + destName;
 
     if ( !QFile::exists( destName ) ) {
-      kDebug(DBG_CODE) << "Copy " << *it << " to " << destName << endl;
+      kDebug(DBG_CODE) << "Copy " << *it << " to " << destName;
       copyFile( *it, destName );
     }
   }
