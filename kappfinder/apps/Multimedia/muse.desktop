@@ -2,12 +2,15 @@
 Encoding=UTF-8
 Exec=muse
 Name=MusE
+Name[sv]=Muse
 Icon=
 GenericName=Music Sequencer
+GenericName[fa]=ترتیب‌سنج موسیقی
 GenericName[ga]=Seicheamhóir Ceoil
 GenericName[nds]=Klangsequenzer
 GenericName[pt]=Sequenciador de Música
 GenericName[pt_BR]=Sequenciador de Música
+GenericName[sv]=Musikspelare
 GenericName[zh_TW]=音樂序列器
 Type=Application
 Categories=Music;AudioVideo;
