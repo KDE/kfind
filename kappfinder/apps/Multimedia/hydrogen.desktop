@@ -12,6 +12,7 @@ GenericName[nds]=Trummelmaschien
 GenericName[pt]=Máquina de Percussão
 GenericName[pt_BR]=Máquina de Percussão
 GenericName[sv]=Trummaskin
+GenericName[th]=โปรแกรมสร้างจังหวะและเสียงกลอง
 GenericName[zh_TW]=打鼓機
 StartupNotify=true
 Type=Application

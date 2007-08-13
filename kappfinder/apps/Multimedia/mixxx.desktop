@@ -15,6 +15,7 @@ GenericName[pa]=DJ-ਮਿਕਸਰ ਅਤੇ ਪਲੇਅਰ
 GenericName[pt]=Leitor e Mistura de DJs
 GenericName[pt_BR]=Reprodutor e DJ-Mixer
 GenericName[sv]=DJ-mixer och spelare
+GenericName[th]=โปรแกรมเล่นและผสมเสียงแบบดีเจ
 GenericName[zh_TW]=DJ 混音播放程式
 StartupNotify=true
 Type=Application

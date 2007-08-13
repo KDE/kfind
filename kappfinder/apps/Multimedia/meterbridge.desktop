@@ -13,6 +13,7 @@ GenericName[nds]=Tweekanaal-VU-Klock
 GenericName[pt]=Medidor VU de Dois Canais
 GenericName[pt_BR]=Medidor VU de Dois Canais
 GenericName[sv]=VU-mätare med dubbla kanaler
+GenericName[th]=VU มิเตอร์แบบช่องคู่
 GenericName[zh_TW]=雙頻道 VU 量尺
 Name=Meterbridge
 X-KDE-StartupNotify=false
