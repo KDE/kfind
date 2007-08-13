@@ -13,6 +13,7 @@ GenericName[nds]=Kuntrullprogramm för FluidSynth
 GenericName[pt]=Controlo para o FluidSynth
 GenericName[pt_BR]=Controle para o FluidSynth
 GenericName[sv]=Styrning av Fluidsynth
+GenericName[th]=โปรแกรมควบคุมสำหรับ FluidSynth
 GenericName[zh_TW]=FluidSynth 控制
 Type=Application
 Categories=Qt;Music;AudioVideo;

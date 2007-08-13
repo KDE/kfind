@@ -11,6 +11,7 @@ GenericName[nds]=Software-Klangteler
 GenericName[pt]=Sintetizador por Software
 GenericName[pt_BR]=Software Sintetizador
 GenericName[sv]=Mjukvarusynt
+GenericName[th]=โปรแกรมสังเคราะห์เสียง
 GenericName[zh_TW]=軟體合成器
 StartupNotify=false
 Type=Application

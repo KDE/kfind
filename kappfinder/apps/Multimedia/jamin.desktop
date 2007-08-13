@@ -14,6 +14,7 @@ GenericName[pa]=ਜੈਕ ਮਾਸਟਰਿੰਗ ਟੂਲ
 GenericName[pt]=Ferramenta de Aprendizagem do Jack
 GenericName[pt_BR]=Ferramenta de Masterização do Jack
 GenericName[sv]=Jack-verktyg för framtagning av master
+GenericName[th]=เครื่องมือทำต้นฉบับสำหรับ Jack
 GenericName[zh_TW]=Jack 專家工具
 StartupNotify=true
 Type=Application

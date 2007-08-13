@@ -12,6 +12,7 @@ GenericName[nds]=Moduul-Klangteler
 GenericName[pt]=Sintetizador Modular
 GenericName[pt_BR]=Sintetizador Modular
 GenericName[sv]=Modulär synt
+GenericName[th]=โปรแกรมสังเคราะห์เสียงแบบโมดูล
 GenericName[zh_TW]=模組合成器
 StartupNotify=true
 Type=Application
