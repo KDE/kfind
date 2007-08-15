@@ -5,6 +5,7 @@ Icon=qjackctl
 Name=QJackCtl
 Name[sv]=Qjackctl
 GenericName=Control for Jack
+GenericName[bg]=Jack контрол
 GenericName[es]=Control de Jack
 GenericName[ga]=Rialtán le haghaidh Jack
 GenericName[ja]=Jack のコントロール

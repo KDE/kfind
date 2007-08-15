@@ -5,6 +5,7 @@ Icon=
 Name=vkeybd
 Name[sv]=Vkeybd
 GenericName=Virtual MIDI Keyboard
+GenericName[bg]=Виртуални MIDI клавиши
 GenericName[es]=Teclado MIDI virtual
 GenericName[ga]=Méarchlár Fíorúil MIDI
 GenericName[ja]=仮想 MIDI キーボード
