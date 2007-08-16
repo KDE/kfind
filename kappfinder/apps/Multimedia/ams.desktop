@@ -5,6 +5,7 @@ Icon=
 Name=ams
 Name[sv]=AMS
 GenericName=Alsa Modular Synthesizer
+GenericName[de]=Modularer Alsa-Synthesizer
 GenericName[es]=Sintetizador Modular Alsa
 GenericName[he]=סינתסייזר מודולרי ל־ALSA
 GenericName[ja]=ALSA モジュラーシンセサイザ
