@@ -6,6 +6,7 @@ Name=vkeybd
 Name[sv]=Vkeybd
 GenericName=Virtual MIDI Keyboard
 GenericName[bg]=Виртуални MIDI клавиши
+GenericName[de]=Virtuelle MIDI-Klaviatur
 GenericName[es]=Teclado MIDI virtual
 GenericName[ga]=Méarchlár Fíorúil MIDI
 GenericName[ja]=仮想 MIDI キーボード
