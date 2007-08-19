@@ -69,6 +69,7 @@ GenericName[th]=โปรแกรม FTP เบราว์เซอร์
 GenericName[tr]=FTP Tarayıcı
 GenericName[uk]=Навігатор FTP
 GenericName[uz]=FTP-браузер
+GenericName[vi]=Bộ duyệt FTP
 GenericName[x-test]=xxFTP Browserxx
 GenericName[zh_TW]=FTP 瀏覽器
 Exec=xftp
