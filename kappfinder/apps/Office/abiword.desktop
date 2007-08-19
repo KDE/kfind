@@ -65,6 +65,7 @@ GenericName[th]=โปรแกรมประมวลผลคำ
 GenericName[tr]=Kelime İşlemci
 GenericName[uk]=Текстовий процесор
 GenericName[uz]=Матн процессори
+GenericName[vi]=Bộ xử lý văn bản
 GenericName[x-test]=xxWord Processorxx
 GenericName[zh_TW]=文書處理程式
 Exec=abiword

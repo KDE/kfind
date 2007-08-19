@@ -64,6 +64,7 @@ GenericName[th]=เกมขุนแผนแหกค่ายบน GNOME
 GenericName[tr]=GNOME Klotski Oyunu
 GenericName[uk]=Гра Klotski для Gnome
 GenericName[uz]=GNOME Klotski ўйини
+GenericName[vi]=Trò Klotski của GNOME
 GenericName[x-test]=xxGNOME Klotski Gamexx
 GenericName[zh_TW]=GNOME 華容道
 Exec=gnotski

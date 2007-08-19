@@ -81,6 +81,7 @@ GenericName[th]=การเข้าใช้งานระยะไกล
 GenericName[tr]=Uzaktan Erişim
 GenericName[uk]=Віддалений доступ
 GenericName[uz]=Масофадан уланиш воситаси
+GenericName[vi]=Truy cập từ xa
 GenericName[x-test]=xxRemote Accessxx
 GenericName[zh_TW]=遠端存取
 Exec=gnome-telnet
