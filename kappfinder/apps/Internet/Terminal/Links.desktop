@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Name=Links
 Name[af]=Skakel
+Name[ar]=وصلات
 Name[eo]=Ligoj
 Name[eu]=Estekak
 Name[fa]=پیوندها
@@ -17,6 +18,7 @@ Name[x-test]=xxLinksxx
 Name[xh]=Amakhonkco
 GenericName=Web Browser
 GenericName[af]=Web Blaaier
+GenericName[ar]=متصفح الشبكة
 GenericName[be]=Вандроўнік па Сеціве
 GenericName[bg]=Уеб браузър
 GenericName[br]=Furcher ar Gwiad

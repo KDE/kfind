@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Name=Glines
 Name[af]=G-lyne
+Name[ar]=خمسة أو أكثر
 Name[csb]=Gnome Linije
 Name[cy]=Gllinellau
 Name[eo]=Glinioj
@@ -19,6 +20,7 @@ Name[x-test]=xxGlinesxx
 Name[zh_TW]=GNOME 顏色排列遊戲
 GenericName=Tactical Game
 GenericName[af]=Taktiese Speletjie
+GenericName[ar]=لعبة تكتيكية
 GenericName[be]=Тактычная гульня
 GenericName[bg]=Тактическа игра
 GenericName[br]=C'hoari a vrezelekaouriezh

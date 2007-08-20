@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Name=X Paint
 Name[af]=X Verf
+Name[ar]=X رسام
 Name[cy]=X Peintio
 Name[eo]=XPentro
 Name[es]=XPaint
@@ -24,6 +25,7 @@ Name[zh_TW]=X 小畫家
 MimeType=
 GenericName=Paint Program
 GenericName[af]=Verf Program
+GenericName[ar]=برنامج تلوين
 GenericName[be]=Праграма для малявання
 GenericName[bg]=Програма за рисуване
 GenericName[br]=Goulev tresañ

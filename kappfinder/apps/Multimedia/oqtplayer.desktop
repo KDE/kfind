@@ -2,6 +2,7 @@
 Encoding=UTF-8
 GenericName=MOV Video Player
 GenericName[af]=MOV Video Speler
+GenericName[ar]=MOV قارئ مرئيات
 GenericName[be]=Прайгравальнік відэафайлаў у фармаце MOV
 GenericName[bg]=Видео плеър за AVI
 GenericName[br]=Ur soner video MOV
@@ -71,7 +72,7 @@ Name=OQTPlayer
 Name[de]=OQT-Abspieler
 Name[eo]=OQT-Ludilo
 Name[fr]=Lecteur OQTP
-Name[ne]=OQT प्लेएर
+Name[ne]=OQT प्लेयर
 Name[sv]=OQTplayer
 Name[ta]=OQTசாதனம்
 Name[te]=ఒక్యుటి ప్లెయర్

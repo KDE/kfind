@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Iagno
+Name[ar]=إياجنو
 Name[be]=Ягно
 Name[ne]=लाग्नो
 Name[pa]=ਲੈਂਗਨੋ
@@ -10,6 +11,7 @@ Name[x-test]=xxIagnoxx
 Name[zh_TW]=黑白棋
 GenericName=Board Game
 GenericName[af]=Bord Speletjie
+GenericName[ar]=ألعاب الألواح
 GenericName[be]=Гульня на дошцы
 GenericName[bg]=Игри на дъска
 GenericName[br]=Ur c'hoari taolenn
