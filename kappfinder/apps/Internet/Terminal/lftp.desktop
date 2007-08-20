@@ -2,6 +2,7 @@
 Encoding=UTF-8
 GenericName=FTP Client
 GenericName[af]=FTP Kliënt
+GenericName[ar]=FTP عميل
 GenericName[be]=Кліент FTP
 GenericName[bg]=FTP клиент
 GenericName[br]=Kliant FTP
@@ -38,7 +39,7 @@ GenericName[mk]=Клиент за FTP
 GenericName[ms]=Klien FTP
 GenericName[nb]=FTP-klient
 GenericName[nds]=FTP-Programm
-GenericName[ne]=FTP ग्राहक
+GenericName[ne]=एफटीपी ग्राहक
 GenericName[nl]=FTP-client
 GenericName[nn]=FTP-klient
 GenericName[pa]=FTP ਕਲਾਂਇਟ

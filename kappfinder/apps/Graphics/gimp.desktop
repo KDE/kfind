@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Gimp
+Name[ar]=جيمب
 Name[de]=GIMP
 Name[eo]=Gimpo
 Name[es]=GIMP
@@ -18,6 +19,7 @@ Icon=gimp
 Type=Application
 GenericName=Image Manipulation Program
 GenericName[af]=Beeld Manipulasie Program
+GenericName[ar]=برنامج تلاعب بالصورة
 GenericName[be]=Адмысловы рэдактар відарысаў
 GenericName[bg]=Редактор за графични изображения
 GenericName[br]=Goulev embregiñ skeudennoù

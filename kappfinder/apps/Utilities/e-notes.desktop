@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=E-Notes
+Name[ar]=الملاحظات الإلكترونية
 Name[csb]=E-Notownik
 Name[cy]=E-Nodiadau
 Name[eo]=E-Notoj
@@ -18,6 +19,7 @@ Name[vi]=Ghi chép E
 Name[x-test]=xxE-Notesxx
 GenericName=Personal Notes
 GenericName[af]=Persoonlike Notas
+GenericName[ar]=الملاحظات الشخصية
 GenericName[be]=Персанальныя заметкі
 GenericName[bg]=Лични бележки
 GenericName[ca]=Notes personals

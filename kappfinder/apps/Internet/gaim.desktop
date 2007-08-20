@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Gaim
+Name[ar]=بيدجن
 Name[eo]=Gamo
 Name[ne]=गाइम
 Name[pa]=ਗਾਈਮ
@@ -9,6 +10,7 @@ Name[te]=గెయిమ్
 Name[x-test]=xxGaimxx
 GenericName=Instant Messenger
 GenericName[af]=Oombliklike Boodskapper
+GenericName[ar]=مرسال فوري
 GenericName[be]=Імгненны абвеснік
 GenericName[bg]=Програма за чат
 GenericName[br]=Posteler a-benn-kaer
@@ -41,7 +43,7 @@ GenericName[mk]=Инстант гласник
 GenericName[ms]=Pesanan Ringkas
 GenericName[nb]=Lynmeldingsprogram
 GenericName[nds]=Kortnarichten-Maker
-GenericName[ne]=आवश्यक म्यासेन्जर
+GenericName[ne]=तयारी मेसेन्जर
 GenericName[nl]=Instant messenger
 GenericName[nn]=Lynmeldingsprogram
 GenericName[pa]=ਮੌਕਾ ਸੁਨੇਹਾਕਾਰ

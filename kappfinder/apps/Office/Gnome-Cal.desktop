@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=GNOME-Cal
+Name[ar]=حاسبة جنوم
 Name[be]=Каляндар GNOME
 Name[csb]=Gnome kalãdôrz
 Name[de]=GNOME Cal
@@ -24,6 +25,7 @@ Name[x-test]=xxGNOME-Calxx
 Name[zh_TW]=GNOME 行事曆
 GenericName=Personal Calendar
 GenericName[af]=Persoonlike Kalender
+GenericName[ar]=تقويم شخصي
 GenericName[be]=Персанальны каляндар
 GenericName[bg]=Личен календар
 GenericName[br]=Deiziadur deoc'h
@@ -60,7 +62,7 @@ GenericName[mk]=Личен календар
 GenericName[ms]=Kalendar Peribadi
 GenericName[nb]=Personlig kalender
 GenericName[nds]=En persöönlich Kalenner
-GenericName[ne]=व्यक्तिगत क्यालेन्डर
+GenericName[ne]=व्यक्तिगत पात्रो
 GenericName[nl]=Persoonlijke agenda
 GenericName[nn]=Personleg kalender
 GenericName[pa]=ਨਿੱਜੀ ਕੈਲੰਡਰ
