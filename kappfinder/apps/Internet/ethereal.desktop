@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Name=Ethereal
 Name[km]=ស្រាល​ហើយ​បរិសុទ្ធ​ដូច​ខ្យល់​
-Name[ko]=이더리얼
 Name[ne]=इथेरियल
 Name[pa]=ਈਥਰਲ
 Name[ta]=எத்ரியல்
@@ -41,7 +40,7 @@ GenericName[ja]=ネットワークアナライザ
 GenericName[ka]=ქსელის ანალიზატორი
 GenericName[kk]=Желіні талдаушы
 GenericName[km]=កម្មវិធី​វិភាគ​បណ្ដាញ
-GenericName[ko]=네트웍 분석기
+GenericName[ko]=네트워크 분석기
 GenericName[lt]=Tinklo analizatorius
 GenericName[lv]=Tīkla Analizators
 GenericName[mk]=Анализатор на мрежи

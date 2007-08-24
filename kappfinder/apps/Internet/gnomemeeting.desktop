@@ -1,7 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=GnomeMeeting
-Name[ko]=그놈 미팅
 Name[ne]=जिनोम मिटिङ
 Name[pa]=ਗਨੋਮ ਮੀਟਿੰਗ
 Name[pl]=Gnome - Spotkania
@@ -40,6 +39,7 @@ GenericName[ja]=ビデオ会議
 GenericName[ka]=ვიდეო კონფერენცია
 GenericName[kk]=Бейне конференция
 GenericName[km]=ធ្វើ​សន្និសីទ​តាម​វីដេអូ
+GenericName[ko]=화상 대화
 GenericName[lt]=Video konferencijos
 GenericName[lv]=Video konferences
 GenericName[mk]=Видео конференции

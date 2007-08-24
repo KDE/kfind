@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Name=XMovie
 Name[eo]=X-Filmludilo
-Name[ko]=X용 영화
 Name[ne]=X चलचित्र
 Name[sv]=Xmovie
 Name[ta]=Xபடம்
@@ -41,7 +40,7 @@ GenericName[ja]=ビデオプレーヤ
 GenericName[ka]=Видео Player
 GenericName[kk]=Бейнеплейер
 GenericName[km]=កម្មវិធី​ចាក់​វីដេអូ
-GenericName[ko]=비디오 연주기
+GenericName[ko]=동영상 재생기
 GenericName[lt]=Vaizdo grotuvas
 GenericName[lv]=Video Atskaņotājs
 GenericName[mk]=Видеоплеер

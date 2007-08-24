@@ -1,7 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Nano
-Name[ko]=나노
 Name[ne]=नानो
 Name[ta]=நானோ
 Name[tg]=Нано
@@ -38,7 +37,7 @@ GenericName[ja]=テキストエディタ
 GenericName[ka]=ტექსტური რედაქტორი
 GenericName[kk]=Мәтін редакторы
 GenericName[km]=កម្មវិធី​វាយ​អត្ថបទ
-GenericName[ko]=글월 편집기
+GenericName[ko]=텍스트 편집기
 GenericName[lt]=Teksto rengyklė
 GenericName[lv]=Teksta Redaktors
 GenericName[mk]=Уредувач на текст
