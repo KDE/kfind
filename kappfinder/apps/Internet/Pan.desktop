@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Name=Pan
 Name[eo]=Forumilo
-Name[ko]=판
 Name[ne]=प्यान
 Name[pa]=ਪੈਂਨ
 Name[ta]=பான்
@@ -39,7 +38,7 @@ GenericName[ja]=Usenet ニュースリーダー
 GenericName[ka]=ახალიამბების საკითხავი პროგრამა
 GenericName[kk]=Usenet жаңалықтарды оқу
 GenericName[km]=កម្មវិធី​អាន​ព័ត៌មាន​បណ្ដាញ​អ្នក​ប្រើ
-GenericName[ko]=새소식 읽개 (유즈넷 클라이언트)
+GenericName[ko]=유즈넷 뉴스 리더
 GenericName[lt]=Usenet naujienų skaityklė
 GenericName[lv]=Usenet Vēstu Lasītājs
 GenericName[mk]=Читач на вести на Usenet

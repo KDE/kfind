@@ -2,7 +2,6 @@
 Name=Alephone
 Name[eo]=Alefono
 Name[hu]=Alaphone
-Name[ko]=알폰
 Name[ne]=एलिफोन
 Name[pa]=ਅਲੀਫੋਨ
 Name[pl]=Alefon
@@ -40,7 +39,7 @@ Comment[ja]=SDL Marathon Infinity のオープンソース版
 Comment[ka]=  Marathon Infinity–ს ღია კოდის ვერსია SDL–ისათვის
 Comment[kk]=Бастапқы мәтін ашық SDL Marathon Infinity дегеннің нұсқасы
 Comment[km]=កំណែ​ប្រភព​បើក​ចំហនៃ​ម៉ារ៉ាតុន​របស់ SDL
-Comment[ko]=SDL용 마라톤 무한대 열린 소스 판
+Comment[ko]=Marathon Infinity의 SDL용 오픈소스 버전
 Comment[lt]=Marathon Infinity, skirto SDL, atviro kodo versija
 Comment[lv]=Atvērtā koda versija Marathon Infinity spēlei izmantojot SDL
 Comment[mk]=Верзија на Marathon Infinity за SDL со отворен код
