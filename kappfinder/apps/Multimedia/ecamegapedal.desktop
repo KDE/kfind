@@ -7,6 +7,7 @@ Name[sv]=Ecamegapedal
 GenericName=Ecasound Effektrack
 GenericName[de]=Ecasound-Effektrack
 GenericName[nds]=Ecasound-Effektstellaasch
+GenericName[pt_BR]=Efeitos de Faixas do Ecasound
 GenericName[sv]=Ecasound-effektspår
 GenericName[zh_TW]=Ecasound 音效
 StartupNotify=true
