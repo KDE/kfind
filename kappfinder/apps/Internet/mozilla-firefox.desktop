@@ -4,6 +4,7 @@ Exec=firefox %u
 Icon=firefox
 Type=Application
 Name=Firefox
+Name[ar]=فايرفوكس
 Name[eo]=Mozilo Fajrovulpo
 Name[fa]=فایرفاکس
 Name[fi]=Mozilla Firefox
