@@ -8,6 +8,7 @@ Name[x-test]=xxGVxx
 MimeType=application/pdf;application/postscript;image/x-eps;application/illustrator
 GenericName=Postscript Viewer
 GenericName[af]=Postscript Aansig
+GenericName[ar]=Postscript عارض
 GenericName[be]=Праглядальнік Postscript
 GenericName[bg]=Преглед на Postscript документи
 GenericName[br]=Gweler Postscript

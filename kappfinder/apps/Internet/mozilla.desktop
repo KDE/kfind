@@ -4,6 +4,7 @@ Exec=mozilla %u
 Icon=mozilla
 Type=Application
 Name=Mozilla
+Name[ar]=موزيلا
 Name[eo]=Mozilo
 Name[fa]=موزیلا
 Name[ne]=मोजिला

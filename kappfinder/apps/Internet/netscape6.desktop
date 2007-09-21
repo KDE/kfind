@@ -4,6 +4,7 @@ Exec=netscape6 %u
 Icon=netscape
 Type=Application
 Name=Netscape6
+Name[ar]=نيتسكيب 6
 Name[cs]=Netscape 6
 Name[de]=Netscape 6
 Name[eo]=Netskapo 6
