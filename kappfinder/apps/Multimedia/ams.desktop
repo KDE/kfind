@@ -21,6 +21,7 @@ GenericName[pt_BR]=Sintetizador Modular Alsa
 GenericName[sl]=Modularni sintetizator Alsa
 GenericName[sv]=ALSA modulär synt
 GenericName[th]=โปรแกรมสังเคราะห์เสียงของ ALSA
+GenericName[wa]=Sintetijheu modulaire d' Alsa
 GenericName[zh_TW]=Alsa 模組合成器
 StartupNotify=true
 Type=Application
