@@ -87,6 +87,7 @@ GenericName[vi]=Bộ tạo mảng ảnh
 GenericName[wa]=Fijheu di bitmaps
 GenericName[x-test]=xxBitmap Creatorxx
 GenericName[xh]=Umenzi We Bitmap
+GenericName[zh_CN]=位图制作程序
 GenericName[zh_TW]=點陣圖製作程式
 Exec=bitmap
 Terminal=false

@@ -78,6 +78,7 @@ GenericName[uz]=Вектор асосидаги расм чизиш дастур
 GenericName[vi]=Trình vẽ dựa vào véctơ
 GenericName[x-test]=xxVector-based Drawing Programxx
 GenericName[xh]=Inkqubo Yomzobo Osekwe-Kwimitha Yovavanyo
+GenericName[zh_CN]=矢量绘图程序
 GenericName[zh_TW]=向量繪圖程式
 Exec=sketch
 Terminal=false

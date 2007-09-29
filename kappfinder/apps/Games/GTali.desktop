@@ -71,6 +71,7 @@ GenericName[vi]=Trò chơi súc sắc
 GenericName[wa]=Djeu d' dés
 GenericName[x-test]=xxDice Gamexx
 GenericName[xh]=Umdlalo we Dice
+GenericName[zh_CN]=骰子游戏
 GenericName[zh_TW]=骰子遊戲
 Exec=gtali
 Terminal=false

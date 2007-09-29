@@ -78,6 +78,7 @@ GenericName[vi]=Bộ xem tập tin kiểu DVI
 GenericName[wa]=Håyneu di fitchîs DVI
 GenericName[x-test]=xxDVI Viewerxx
 GenericName[xh]=Umboniseli we DVI
+GenericName[zh_CN]=DVI 查看器
 GenericName[zh_TW]=DVI 檢視器
 MimeType=application/x-dvi
 X-KDE-StartupNotify=false

@@ -75,6 +75,7 @@ GenericName[tr]=3B Modelleme Programı
 GenericName[uk]=Модельєр 3D
 GenericName[vi]=Trình tạo mô hình và hiển thị 3 chiều
 GenericName[x-test]=xx3D Modeler/Rendererxx
+GenericName[zh_CN]=3D 建模/渲染器
 GenericName[zh_TW]=3D 場景繪製程式
 Exec=blender
 Icon=blender

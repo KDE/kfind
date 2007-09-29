@@ -69,6 +69,7 @@ GenericName[vi]=Bộ phân tích mạng
 GenericName[wa]=Analijheu rantoele
 GenericName[x-test]=xxNetwork Analyzerxx
 GenericName[xh]=Umcukucezi Womsebenzi womnatha
+GenericName[zh_CN]=网络分析程序
 GenericName[zh_TW]=網路分析程式
 Exec=ethereal
 Type=Application

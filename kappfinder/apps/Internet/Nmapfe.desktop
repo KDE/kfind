@@ -66,6 +66,7 @@ GenericName[uz]=Порт сканнер
 GenericName[vi]=Quét Cổng
 GenericName[x-test]=xxPort Scannerxx
 GenericName[xh]=Umshicileli Wofako
+GenericName[zh_CN]=端口扫描器
 GenericName[zh_TW]=連接埠掃描程式
 Exec=nmapfe
 Terminal=false

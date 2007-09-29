@@ -80,6 +80,7 @@ GenericName[uz]=ALSA миксери учун график интерфейс
 GenericName[vi]=Giao diện Hoà âm Alsa
 GenericName[wa]=Eterface do maxheu d' son Alsa
 GenericName[x-test]=xxAlsa Mixer Frontendxx
+GenericName[zh_CN]=Alsa 混音器前端
 GenericName[zh_TW]=Alsa 混音程式
 StartupNotify=false
 Type=Application

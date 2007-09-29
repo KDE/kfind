@@ -69,6 +69,7 @@ GenericName[vi]=Bộ hoà âm
 GenericName[wa]=Maxheu d' son
 GenericName[x-test]=xxAudio Mixerxx
 GenericName[xh]=Umxubi Wokuvakalayo
+GenericName[zh_CN]=混音器
 GenericName[zh_TW]=混音程式
 Exec=aumix
 Terminal=false

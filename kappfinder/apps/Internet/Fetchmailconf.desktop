@@ -74,6 +74,7 @@ GenericName[vi]=Cấu hình Fetchmail
 GenericName[wa]=Apontiaedje di fetchmail
 GenericName[x-test]=xxFetchmail Configurationxx
 GenericName[xh]=Uqwalaselo lweFetchmail
+GenericName[zh_CN]=Fetchmail 配置
 GenericName[zh_TW]=Fetchmail 組態
 Exec=fetchmailconf
 Terminal=false

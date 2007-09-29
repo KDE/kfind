@@ -71,6 +71,7 @@ GenericName[vi]=Trình đọc Tin USENET
 GenericName[wa]=Lijheu d' copinreyes (usenet)
 GenericName[x-test]=xxUsenet News Readerxx
 GenericName[xh]=Umfundi Weendaba we Usenet
+GenericName[zh_CN]=新闻组阅读程序
 GenericName[zh_TW]=新聞群組閱讀程式
 Exec=pan
 Terminal=false

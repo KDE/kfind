@@ -71,6 +71,7 @@ Comment[uk]=Пірніть у Ангбанд та переможіть Морг�
 Comment[uz]=Ангбандга бориб Морготни енгиб чиқинг
 Comment[vi]=Lặn xuống Angband và đánh bại Morgoth
 Comment[x-test]=xxDive into Angband and defeat Morgothxx
+Comment[zh_CN]=潜入 Angband 并击败 Morgoth
 Comment[zh_TW]=進入 Angband 並打敗 Morgoth
 Exec=angband
 Terminal=true

@@ -63,6 +63,7 @@ GenericName[vi]=Ứng dụng khách SILC
 GenericName[wa]=Cliyint SILC
 GenericName[x-test]=xxSILC Clientxx
 GenericName[xh]=Umxhasi we SILC
+GenericName[zh_CN]=SILC 客户端程序
 GenericName[zh_TW]=SILC 客戶端程式
 Exec=silc %u
 Icon=konsole

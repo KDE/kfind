@@ -63,6 +63,7 @@ GenericName[vi]=Mô phỏng Mái vòm
 GenericName[wa]=Djeu d' årcåde
 GenericName[x-test]=xxArcade Emulatorxx
 GenericName[xh]=Umlinganisi we Emulator
+GenericName[zh_CN]=街机模拟器
 GenericName[zh_TW]=電子遊戲模擬器
 Exec=qmamecat
 Icon=penguin

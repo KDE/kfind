@@ -76,6 +76,7 @@ GenericName[vi]=Bộ biên soạn HTML
 GenericName[wa]=Aspougneu di pådjes HTML
 GenericName[x-test]=xxHTML Editorxx
 GenericName[xh]=Umhleli we HTML
+GenericName[zh_CN]=HTML 编辑器
 GenericName[zh_TW]=HTML 編輯器
 Exec=bluefish
 Terminal=false

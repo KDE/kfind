@@ -64,6 +64,7 @@ GenericName[vi]=Bộ xem văn bản ảnh động
 GenericName[wa]=Håyneu di pådjes VideoText
 GenericName[x-test]=xxVideoText Viewerxx
 GenericName[xh]=Umboniseli Wokubhaliweyo we Video
+GenericName[zh_CN]=VideoText 查看程序
 GenericName[zh_TW]=VideoText 檢視器
 Exec=alevt
 Icon=alevt
