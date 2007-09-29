@@ -72,6 +72,7 @@ GenericName[vi]=Bộ duyệt ảnh
 GenericName[wa]=Foyteu d' imådjes
 GenericName[x-test]=xxImage Browserxx
 GenericName[xh]=Umkhangeli zincwadi Womfanekiso
+GenericName[zh_CN]=图像浏览器
 GenericName[zh_TW]=影像瀏覽器
 Exec=gqview
 Terminal=false

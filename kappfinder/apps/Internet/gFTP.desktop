@@ -66,6 +66,7 @@ GenericName[uz]=FTP-браузер
 GenericName[vi]=Bộ duyệt FTP
 GenericName[wa]=Betchteu FTP
 GenericName[x-test]=xxFTP Browserxx
+GenericName[zh_CN]=FTP 浏览器
 GenericName[zh_TW]=FTP 瀏覽器
 Exec=gftp
 Terminal=false

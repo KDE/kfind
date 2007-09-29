@@ -75,6 +75,7 @@ GenericName[vi]=Trình thư
 GenericName[wa]=Cliyint d' emilaedje
 GenericName[x-test]=xxMail Clientxx
 GenericName[xh]=Umxhasi Weposi
+GenericName[zh_CN]=电子邮件客户端程序
 GenericName[zh_TW]=郵件處理程式
 Exec=evolution
 Terminal=false

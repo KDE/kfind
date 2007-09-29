@@ -68,6 +68,7 @@ GenericName[uz]=PhotoCD воситалари
 GenericName[vi]=Công cụ CD ảnh chụp
 GenericName[wa]=Usteyes po fotos CD
 GenericName[x-test]=xxPhotoCD Toolsxx
+GenericName[zh_CN]=PhotoCD 工具
 GenericName[zh_TW]=PhotoCD 工具
 Exec=xpcd
 Terminal=false

@@ -72,6 +72,7 @@ GenericName[uk]=Квест
 GenericName[uz]=Қидирув ўйини
 GenericName[vi]=Trò chơi truy lùng
 GenericName[x-test]=xxQuest Gamexx
+GenericName[zh_CN]=寻宝游戏
 GenericName[zh_TW]=冒險遊戲
 Exec=nethack
 Terminal=true

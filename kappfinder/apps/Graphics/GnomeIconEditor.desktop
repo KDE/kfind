@@ -61,6 +61,7 @@ Name[vi]=Bộ sửa biểu tượng GNOME
 Name[wa]=Aspougneu d' imådjetes di Gnome
 Name[x-test]=xxGNOME Icon Editorxx
 Name[xh]=GNOME Umkhethi we Icon
+Name[zh_CN]=GNOME 图标编辑器
 Name[zh_TW]=GNOME 圖示編輯器
 Exec=gnome-iconedit
 Terminal=false

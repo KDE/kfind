@@ -36,6 +36,7 @@ Name[uz]=GNOME тошлар
 Name[vi]=Đá GNOME
 Name[x-test]=xxGNOME Stonesxx
 Name[xh]=GNOME Amatye
+Name[zh_CN]=GNOME 宝石游戏
 Name[zh_TW]=GNOME 寶石遊戲
 Exec=gnome-stones
 Terminal=false

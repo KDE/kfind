@@ -70,6 +70,7 @@ GenericName[vi]=Bộ xem hình
 GenericName[wa]=Håyneu d' imådjes
 GenericName[x-test]=xxPicture Viewerxx
 GenericName[xh]=Umbukeli Wemifanekiso
+GenericName[zh_CN]=图片查看器
 GenericName[zh_TW]=圖片瀏覽程式
 Exec=xv %F
 Icon=xv

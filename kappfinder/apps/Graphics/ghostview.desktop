@@ -77,6 +77,7 @@ GenericName[vi]=Bộ xem tập tin Postscript (đuôi .PS)
 GenericName[wa]=Håyneu di documints PostScript
 GenericName[x-test]=xxPostScript Viewerxx
 GenericName[xh]=Umboniseli we PostScript
+GenericName[zh_CN]=PostScript 查看器
 GenericName[zh_TW]=PostScript 檢視器
 Exec=ghostview
 Icon=gv

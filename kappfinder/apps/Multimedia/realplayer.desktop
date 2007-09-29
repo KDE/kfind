@@ -64,6 +64,7 @@ GenericName[vi]=Bộ phát ảnh động
 GenericName[wa]=Djouweu di fitchîs videyo
 GenericName[x-test]=xxVideo Playerxx
 GenericName[xh]=Umdlali we Video
+GenericName[zh_CN]=视频播放器
 GenericName[zh_TW]=視像檔播放程式
 Exec=realplay %u
 Icon=realplayer

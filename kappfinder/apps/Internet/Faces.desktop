@@ -83,6 +83,7 @@ GenericName[vi]=Thông báo có thư
 GenericName[wa]=Abranle pa emile
 GenericName[x-test]=xxMail Alertxx
 GenericName[xh]=Ulumkiso Lweposi 
+GenericName[zh_CN]=电子邮件提示程序
 GenericName[zh_TW]=郵件提示
 Exec=faces
 Terminal=false

@@ -70,6 +70,7 @@ Comment[uz]=Scorched Earth ўйинининг UNIX ва X учун эркин н
 Comment[vi]=Trò Scorched Earth nhái miễn phí cho UNIX và X
 Comment[x-test]=xxA free Scorched Earth clone for UNIX and Xxx
 Comment[xh]=Eyasimahla i Scorched Earth clone ye UNIX ne X
+Comment[zh_CN]=用于 Unix 和 X 的免费焦土克隆
 Comment[zh_TW]=UNIX 與 X 上的免費 Scorched Earth 仿製遊戲
 Exec=xscorch
 Icon=

@@ -71,6 +71,7 @@ GenericName[vi]=Bộ phát/thu đĩa CD
 GenericName[wa]=Djouweu/copieu di plakes lazer
 GenericName[x-test]=xxCD Player/Ripperxx
 GenericName[xh]=Umdlali we CD/Umsiki
+GenericName[zh_CN]=CD 播放/抓取程序
 GenericName[zh_TW]=CD 播放程式/音軌擷取程式
 Exec=grip
 Terminal=false

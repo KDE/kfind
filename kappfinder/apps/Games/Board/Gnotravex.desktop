@@ -72,6 +72,7 @@ GenericName[vi]=Trò chơi mái vòm
 GenericName[wa]=Djeu d' årcåde
 GenericName[x-test]=xxArcade Gamexx
 GenericName[xh]=Umdlalo we Arcade
+GenericName[zh_CN]=街机游戏
 GenericName[zh_TW]=電子遊戲
 Exec=gnotravex
 Terminal=false

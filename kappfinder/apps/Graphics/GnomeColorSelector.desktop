@@ -62,6 +62,7 @@ Name[vi]=Bộ chọn màu GNOME
 Name[wa]=Tchoezixheu di coleurs di Gnome
 Name[x-test]=xxGNOME Color Selectorxx
 Name[xh]=GNOME Umkhethi Wombala
+Name[zh_CN]=GNOME 颜色选择器
 Name[zh_TW]=GNOME 色彩選擇程式
 Exec=gcolorsel
 Terminal=false

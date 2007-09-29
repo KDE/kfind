@@ -70,6 +70,7 @@ GenericName[uz]=Видео конференция
 GenericName[vi]=Trình hội họp ảnh động
 GenericName[wa]=Conferince videyo
 GenericName[x-test]=xxVideo Conferencingxx
+GenericName[zh_CN]=视频会议
 GenericName[zh_TW]=視訊會議
 Exec=gnomemeeting
 Terminal=false

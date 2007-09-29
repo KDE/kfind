@@ -74,6 +74,7 @@ GenericName[uz]=Фотоапарат учун дастур
 GenericName[vi]=Chương trình máy ảnh số
 GenericName[x-test]=xxDigital Camera Programxx
 GenericName[xh]=Inkqubo ye Khamera Yamanani
+GenericName[zh_CN]=数码相机程序
 GenericName[zh_TW]=數位照相機程式
 Exec=gphoto
 Terminal=false

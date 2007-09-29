@@ -87,6 +87,7 @@ GenericName[uz]=Масофадан уланиш воситаси
 GenericName[vi]=Truy cập từ xa
 GenericName[wa]=Accès då lon
 GenericName[x-test]=xxRemote Accessxx
+GenericName[zh_CN]=远程访问
 GenericName[zh_TW]=遠端存取
 Exec=gnome-telnet
 Terminal=false
