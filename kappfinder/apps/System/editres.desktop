@@ -70,6 +70,7 @@ GenericName[vi]=Bộ sửa tài nguyên X
 GenericName[wa]=Aspougneu di rsoûces X11
 GenericName[x-test]=xxX Resource Editorxx
 GenericName[xh]=Umhleli Wecebo le X
+GenericName[zh_CN]=X 资源编辑器
 GenericName[zh_TW]=X 資源編輯器
 Exec=editres
 Terminal=false

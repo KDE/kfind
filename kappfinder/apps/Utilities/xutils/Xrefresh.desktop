@@ -81,6 +81,7 @@ GenericName[vi]=Cập nhật màn hình
 GenericName[wa]=Rafrister l' waitroûle
 GenericName[x-test]=xxRefresh Screenxx
 GenericName[xh]=Hlaziya Ikhusi
+GenericName[zh_CN]=刷新屏幕
 GenericName[zh_TW]=更新螢幕
 Exec=xrefresh
 Terminal=false

@@ -45,6 +45,7 @@ GenericName[uk]=Наш покращений віртуальний термін�
 GenericName[vi]=Trình đầu cuối ảo mở rộng của chúng ta (RXVT)
 GenericName[x-test]=xxouR eXtended Virtual Terminalxx
 GenericName[xh]=ouR eXtended Isiphelo sendlela Esingabonakaliyo
+GenericName[zh_CN]=我们的扩展虚拟终端
 GenericName[zh_TW]=我們的延伸式虛擬終端機
 Exec=rxvt
 Icon=konsole

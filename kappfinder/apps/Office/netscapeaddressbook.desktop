@@ -57,6 +57,7 @@ Name[vi]=Sổ địa chỉ Netscape
 Name[wa]=Calpin d' adresses di Netscape
 Name[x-test]=xxNetscape Addressbookxx
 Name[xh]=Incwadi Yedilesi ye Netscape
+Name[zh_CN]=Netscape 地址簿
 Name[zh_TW]=Netscape 地址簿
 Exec=netscape +addresses
 Terminal=false

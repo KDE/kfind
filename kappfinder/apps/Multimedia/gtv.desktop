@@ -64,6 +64,7 @@ GenericName[vi]=Bộ xem tập tin MPEG
 GenericName[wa]=Djouweu di videyos MPEG
 GenericName[x-test]=xxMPEG Playerxx
 GenericName[xh]=Umdlali we MPEG
+GenericName[zh_CN]=MPEG 播放器
 GenericName[zh_TW]=MPEG 播放程式
 Exec=gtv
 Icon=video

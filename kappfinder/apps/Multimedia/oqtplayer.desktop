@@ -64,6 +64,7 @@ GenericName[vi]=Bộ phát ảnh động kiểu MOV
 GenericName[wa]=Djouweu di videyos MOV
 GenericName[x-test]=xxMOV Video Playerxx
 GenericName[xh]=Umdlali we Video MOV
+GenericName[zh_CN]=MOV 视频播放器
 GenericName[zh_TW]=MOV 視訊播放程式
 Exec=oqtplayer %f
 Icon=video

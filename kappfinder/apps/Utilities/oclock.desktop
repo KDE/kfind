@@ -75,6 +75,7 @@ GenericName[vi]=Đồng hồ
 GenericName[wa]=Ôrlodje
 GenericName[x-test]=xxClockxx
 GenericName[xh]=Ikloko
+GenericName[zh_CN]=时钟
 GenericName[zh_TW]=時鐘
 Exec=oclock
 Terminal=false

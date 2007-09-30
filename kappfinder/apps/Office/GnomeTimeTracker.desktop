@@ -39,6 +39,7 @@ Name[uk]=Лічильник часу GNOME
 Name[vi]=Bộ theo dõi thời gian GNOME
 Name[x-test]=xxGNOME Time Trackerxx
 Name[xh]=GNOME Umfundi Wexesha
+Name[zh_CN]=GNOME 时间跟踪程序
 Name[zh_TW]=個人時程記錄
 Exec=gtt
 Terminal=false

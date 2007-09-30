@@ -68,6 +68,7 @@ GenericName[vi]=Chạy các chương trình Windows
 GenericName[wa]=Po-z enonder des programes Windows
 GenericName[x-test]=xxRun Windows Programsxx
 GenericName[xh]=Sebenzisa Udweliso lweenkqubo lwe Windows
+GenericName[zh_CN]=运行 Windows 程序
 GenericName[zh_TW]=執行 Windows 程式
 Icon=wine
 Type=Application

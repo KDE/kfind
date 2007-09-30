@@ -68,6 +68,7 @@ GenericName[uz]=Аудио ёзувчи
 GenericName[vi]=Bộ thu âm
 GenericName[x-test]=xxAudio Recorderxx
 GenericName[xh]=Umxubi Wokuvakalayo
+GenericName[zh_CN]=录音程序
 GenericName[zh_TW]=錄音程式
 Exec=slab
 Terminal=false

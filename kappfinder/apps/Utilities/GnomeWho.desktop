@@ -80,6 +80,7 @@ GenericName[vi]=Công cụ thông tin hệ thống
 GenericName[wa]=Usteye infôrmåcions sistinme
 GenericName[x-test]=xxSystem Info Toolxx
 GenericName[xh]=Isixhobo Senkcukacha Sendlela yokusebenza
+GenericName[zh_CN]=系统信息工具
 GenericName[zh_TW]=系統資訊工具
 Exec=gw
 Terminal=false

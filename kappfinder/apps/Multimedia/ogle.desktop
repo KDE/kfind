@@ -64,6 +64,7 @@ GenericName[vi]=Bộ phát DVD
 GenericName[wa]=Djouweu di plakes lazer DVD
 GenericName[x-test]=xxDVD Playerxx
 GenericName[xh]=Umdlali we DVD
+GenericName[zh_CN]=DVD 播放器
 GenericName[zh_TW]=DVD 播放器
 Exec=ogle %f
 Icon=video

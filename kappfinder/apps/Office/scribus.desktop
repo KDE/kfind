@@ -55,6 +55,7 @@ GenericName[uz]=Кичик нашриёт
 GenericName[vi]=Xuất bản trên máy cá nhân
 GenericName[x-test]=xxDesktop Publishingxx
 GenericName[xh]=Upapasho lwe Desktop
+GenericName[zh_CN]=桌面出版
 GenericName[zh_TW]=桌面出版
 Exec=scribus
 Terminal=false

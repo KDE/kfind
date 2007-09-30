@@ -42,6 +42,7 @@ Name[uz]=X клипборд
 Name[vi]=Bảng nháp X
 Name[x-test]=xxX Clipboardxx
 Name[xh]=Ibhodi yokuqhoboshela ye X
+Name[zh_CN]=Name=X 剪贴板
 Name[zh_TW]=X 剪貼簿
 MimeType=
 GenericName=Clipboard Viewer
@@ -107,6 +108,7 @@ GenericName[vi]=Bộ xem bảng nháp
 GenericName[wa]=Håyneu do contnou do tchapea emacralé
 GenericName[x-test]=xxClipboard Viewerxx
 GenericName[xh]=Umboniseli Webhodi eqhoboshayo
+GenericName[zh_CN]=剪贴板查看器
 GenericName[zh_TW]=剪貼簿檢視器
 Exec=xclipboard
 Icon=xclipboard

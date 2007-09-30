@@ -89,6 +89,7 @@ GenericName[vi]=Máy tính
 GenericName[wa]=Carculete
 GenericName[x-test]=xxCalculatorxx
 GenericName[xh]=Umatshini wokubala
+GenericName[zh_CN]=计算器
 GenericName[zh_TW]=計算機
 Exec=xcalc
 Icon=xcalc

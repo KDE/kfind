@@ -73,6 +73,7 @@ GenericName[vi]=Môi trường phát triển tích hợp cho Âm thanh và Ảnh
 GenericName[wa]=Evironmint di diswalpaedje odio et videyo
 GenericName[x-test]=xxAudio and Video IDExx
 GenericName[xh]=Isandi neVideo yeIDE
+GenericName[zh_CN]=影音集成开发环境
 GenericName[zh_TW]=影音整合開發環境
 Exec=bcast
 Terminal=false
