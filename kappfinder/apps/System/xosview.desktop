@@ -78,6 +78,7 @@ GenericName[vi]=Bộ theo dõi hệ thống
 GenericName[wa]=Corwaitoe do sistinme
 GenericName[x-test]=xxSystem Monitorxx
 GenericName[xh]=Indlela yokusebenza Yophatho
+GenericName[zh_CN]=系统监视器
 GenericName[zh_TW]=系統監視器
 Exec=xosview
 Icon=xosview

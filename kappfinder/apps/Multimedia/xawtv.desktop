@@ -60,6 +60,7 @@ GenericName[vi]=Xem TV!
 GenericName[wa]=Waitîz l' televuzion so vosse copiutrece
 GenericName[x-test]=xxWatch TV!xx
 GenericName[xh]=Bukela Umabona-kude!
+GenericName[zh_CN]=看电视！
 GenericName[zh_TW]=看電視！
 Exec=xawtv
 Icon=xawtv

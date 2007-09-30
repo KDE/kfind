@@ -62,6 +62,7 @@ GenericName[vi]=Cơ sở dữ liệu Thư tịch
 GenericName[wa]=Båze di dnêyes bibiografike
 GenericName[x-test]=xxBibliographic Databasexx
 GenericName[xh]=Isiseko sedata Esiluluhlu lweencwadi zombhali nawuphi na
+GenericName[zh_CN]=书目数据库
 GenericName[zh_TW]=書目資料庫
 Exec=pybliographic
 Icon=pybliographic

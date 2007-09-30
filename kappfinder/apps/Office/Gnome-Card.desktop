@@ -92,6 +92,7 @@ GenericName[vi]=Bộ quản lý liên lạc
 GenericName[wa]=Manaedjeu di calpin d' adresses
 GenericName[x-test]=xxContact Managerxx
 GenericName[xh]=Umphathi Wokuxhumanisa
+GenericName[zh_CN]=联系人管理程序
 GenericName[zh_TW]=名片管理程式
 Exec=gnomecard
 Terminal=false

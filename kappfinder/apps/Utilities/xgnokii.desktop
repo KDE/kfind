@@ -69,6 +69,7 @@ GenericName[uz]=Уяли телефон воситаси
 GenericName[vi]=Công cụ Quản lý Điện thoại Di động
 GenericName[wa]=Usteye po manaedjî les axhlåves
 GenericName[x-test]=xxMobile Phone Management Toolxx
+GenericName[zh_CN]=移动电话管理工具
 GenericName[zh_TW]=行動電話管理工具
 Exec=xgnokii
 Type=Application

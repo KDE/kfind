@@ -67,6 +67,7 @@ Name[uz]=Менюни янгиловчи восита
 Name[vi]=Công cụ Cập nhật Trình đơn
 Name[wa]=Usteye d' amidraedje des menus
 Name[x-test]=xxMenu Updating Toolxx
+Name[zh_CN]=菜单更新工具
 Name[zh_TW]=選單更新工具
 X-DBUS-StartupType=Multi
 Categories=Qt;KDE;Settings;

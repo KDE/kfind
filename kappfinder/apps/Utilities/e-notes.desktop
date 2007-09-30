@@ -79,6 +79,7 @@ GenericName[vi]=Ghi chép cá nhân
 GenericName[wa]=Notes da vosse
 GenericName[x-test]=xxPersonal Notesxx
 GenericName[xh]=Iifayile Zobuntu
+GenericName[zh_CN]=个人记事本
 GenericName[zh_TW]=個人筆記
 Exec=e-notes
 Terminal=false

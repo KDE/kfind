@@ -72,6 +72,7 @@ GenericName[uz]=Товуш процессори
 GenericName[vi]=Bộ xử lý âm thanh
 GenericName[x-test]=xxSound Processorxx
 GenericName[xh]=Umlugisi Wesandi
+GenericName[zh_CN]=声音处理程序
 GenericName[zh_TW]=音效處理程式
 Exec=jazz
 Terminal=false

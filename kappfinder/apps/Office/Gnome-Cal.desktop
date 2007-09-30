@@ -88,6 +88,7 @@ GenericName[vi]=Lịch cá nhân
 GenericName[wa]=Calindrî da vosse
 GenericName[x-test]=xxPersonal Calendarxx
 GenericName[xh]=Ikhalenda Yobuqu
+GenericName[zh_CN]=个人日程表
 GenericName[zh_TW]=個人行事曆
 Exec=gnomecal
 Terminal=false

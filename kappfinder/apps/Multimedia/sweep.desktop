@@ -76,6 +76,7 @@ GenericName[uz]=Аудио таҳрирчи
 GenericName[vi]=Bộ sửa âm thanh
 GenericName[wa]=Aspougneu d' sons
 GenericName[x-test]=xxAudio Editorxx
+GenericName[zh_CN]=音频编辑器
 GenericName[zh_TW]=音效編輯器
 StartupNotify=true
 Type=Application

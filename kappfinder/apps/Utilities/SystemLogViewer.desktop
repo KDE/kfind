@@ -60,6 +60,7 @@ Name[vi]=Bộ xem bản ghi hệ thống
 Name[wa]=Håyneu des fitchîs djournå do sistinme
 Name[x-test]=xxSystem Log Viewerxx
 Name[xh]=Umboniseli Woshicilelo oluneenkcukacha Lwendlela esetyenziswayo
+Name[zh_CN]=系统日志查看器
 Name[zh_TW]=系統紀錄檔檢視器
 Exec=logview
 Terminal=false

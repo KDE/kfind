@@ -77,5 +77,6 @@ GenericName[uk]=Текстовий процесор
 GenericName[uz]=Матн процессори
 GenericName[vi]=Bộ xử lý văn bản
 GenericName[x-test]=xxWord Processorxx
+GenericName[zh_CN]=字处理程序
 GenericName[zh_TW]=文書處理程式
 X-KDE-StartupNotify=false

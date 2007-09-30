@@ -63,6 +63,7 @@ GenericName[vi]=Bộ xem ảnh động AVI
 GenericName[wa]=Djouweu di videyos AVI
 GenericName[x-test]=xxAVI Video Playerxx
 GenericName[xh]=Umdlali we Video AVI
+GenericName[zh_CN]=AVI 视频播放器
 GenericName[zh_TW]=AVI 視訊播放程式
 Exec=aviplay %f
 Icon=video

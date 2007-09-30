@@ -74,6 +74,7 @@ GenericName[vi]=Công cụ tắt cửa sổ
 GenericName[wa]=Usteye po touwer les purneas
 GenericName[x-test]=xxWindow Termination Toolxx
 GenericName[xh]=Isixhobo Sopheliso lwe Window
+GenericName[zh_CN]=Window 终端工具
 GenericName[zh_TW]=視窗終結工具
 Exec=xkill
 Terminal=false
