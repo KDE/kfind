@@ -226,7 +226,7 @@ void TopLevel::slotScan()
       else
         item = new Q3CheckListItem( mListView, desktop.readName(), Q3CheckListItem::CheckBox );
 
-      item->setPixmap( 0, loader->loadIcon( desktop.readIcon(), K3Icon::Small ) );
+      item->setPixmap( 0, loader->loadIcon( desktop.readIcon(), KIconLoader::Small ) );
       item->setText( 1, desktop.readGenericName() );
       item->setText( 2, desktop.desktopGroup().readPathEntry( "Exec" ) );
       if ( desktop.desktopGroup().readEntry( "X-StandardInstall" , false) )
