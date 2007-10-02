@@ -24,6 +24,7 @@ GenericName[pt_BR]=Medidor VU de Dois Canais
 GenericName[sv]=VU-mätare med dubbla kanaler
 GenericName[th]=VU มิเตอร์แบบช่องคู่
 GenericName[x-test]=xxDual Channel VU-Meterxx
+GenericName[zh_CN]=双轨道 VU 仪表
 GenericName[zh_TW]=雙頻道 VU 量尺
 Name=Meterbridge
 Name[x-test]=xxMeterbridgexx

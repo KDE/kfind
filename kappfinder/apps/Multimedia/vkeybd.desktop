@@ -26,6 +26,7 @@ GenericName[sl]=Navidezna klaviatura MIDI
 GenericName[sv]=Virtuellt MIDI-keyboard
 GenericName[th]=คีย์บอร์ด MIDI เสมือน
 GenericName[x-test]=xxVirtual MIDI Keyboardxx
+GenericName[zh_CN]=虚拟 MIDI 键盘
 GenericName[zh_TW]=虛擬 MIDI 鍵盤
 StartupNotify=false
 Type=Application
