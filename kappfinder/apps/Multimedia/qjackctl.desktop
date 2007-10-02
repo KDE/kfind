@@ -27,6 +27,7 @@ GenericName[sl]=Nadzor za Jack
 GenericName[sv]=Styrning av Jack
 GenericName[th]=โปรแกรมควบคุมสำหรับ Jack
 GenericName[x-test]=xxControl for Jackxx
+GenericName[zh_CN]=Jack 控制
 GenericName[zh_TW]=Jack 控制
 Type=Application
 Categories=Qt;Music;AudioVideo;

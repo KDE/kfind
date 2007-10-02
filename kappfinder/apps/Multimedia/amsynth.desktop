@@ -19,6 +19,7 @@ GenericName[pt_BR]=Sintetizador de Modulação Analógico Retrô
 GenericName[sv]=Mjukvarusynt med retro analogmodellering
 GenericName[th]=โปรแกรมสังเคราะห์เสียงแบบ Retro Analog - Modeling
 GenericName[x-test]=xxRetro Analog - Modeling Softsynthxx
+GenericName[zh_CN]=反向模拟 - 模型软件合成器
 GenericName[zh_TW]=反向類比─軟體合成器
 StartupNotify=true
 Type=Application

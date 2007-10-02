@@ -25,6 +25,7 @@ GenericName[pt_BR]=Máquina de Percussão
 GenericName[sv]=Trummaskin
 GenericName[th]=โปรแกรมสร้างจังหวะและเสียงกลอง
 GenericName[x-test]=xxDrum Machinexx
+GenericName[zh_CN]=打鼓机
 GenericName[zh_TW]=打鼓機
 StartupNotify=true
 Type=Application
