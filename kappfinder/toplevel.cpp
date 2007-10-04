@@ -69,7 +69,6 @@ TopLevel::TopLevel( const QString &destDir, QWidget *parent )
   mListView->addColumn( i18n( "Application" ) );
   mListView->addColumn( i18n( "Description" ) );
   mListView->addColumn( i18n( "Command" ) );
-  mListView->setMinimumSize( 300, 300 );
   mListView->setRootIsDecorated( true );
   mListView->setAllColumnsShowFocus( true );
   mListView->setSelectionMode(Q3ListView::NoSelection);
@@ -102,6 +101,7 @@ TopLevel::TopLevel( const QString &destDir, QWidget *parent )
   connect( kapp, SIGNAL( lastWindowClosed() ), kapp, SLOT( quit() ) );
 
   adjustSize();
+  setMinimumSize(minimumSizeHint());
 
   mDestDir = destDir;
   mDestDir = mDestDir.replace( QRegExp( "^~/" ), QDir::homePath() + '/' );
