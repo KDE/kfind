@@ -34,6 +34,7 @@
 #include <kdesktopfile.h>
 #include <kglobal.h>
 #include <kstandarddirs.h>
+#include <kconfiggroup.h>
 
 #define DBG_CODE 1213
 
