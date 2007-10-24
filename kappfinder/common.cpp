@@ -79,9 +79,9 @@ bool scanDesktopFile( QList<AppLnkCache*> &appCache, const QString &templ,
   }
 
   // determine for which executable to look
-  QString exec = desktop.desktopGroup().readPathEntry( "TryExec" );
+  QString exec = desktop.desktopGroup().readPathEntry( "TryExec", QString() );
   if ( exec.isEmpty() )
-    exec = desktop.desktopGroup().readPathEntry( "Exec" );
+    exec = desktop.desktopGroup().readPathEntry( "Exec", QString() );
   pos = exec.indexOf( ' ' );
   if ( pos > 0 )
     exec = exec.left( pos );
