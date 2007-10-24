@@ -228,7 +228,7 @@ void TopLevel::slotScan()
 
       item->setPixmap( 0, loader->loadIcon( desktop.readIcon(), KIconLoader::Small ) );
       item->setText( 1, desktop.readGenericName() );
-      item->setText( 2, desktop.desktopGroup().readPathEntry( "Exec" ) );
+      item->setText( 2, desktop.desktopGroup().readPathEntry( "Exec", QString() ) );
       if ( desktop.desktopGroup().readEntry( "X-StandardInstall" , false) )
         item->setOn( true );
 
