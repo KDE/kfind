@@ -83,6 +83,6 @@ GenericName[x-test]=xxImage Manipulation Programxx
 GenericName[xh]=Udweliso lwenkqubo Lomfanekiso Obekwe ngendlela
 GenericName[zh_CN]=图像处理程序
 GenericName[zh_TW]=影像處理程式
-MimeType=image/gif;image/jpeg;image/bmp;image/x-xpixmap;image/tiff;image/png;image/x-xcf;image/fax-g3
+MimeType=image/gif;image/jpeg;image/bmp;image/x-xpixmap;image/tiff;image/png;image/x-xcf;image/fax-g3;
 X-KDE-StartupNotify=false
 X-StandardInstall=true

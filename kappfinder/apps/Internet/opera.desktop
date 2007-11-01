@@ -80,4 +80,4 @@ Exec=opera %u
 Terminal=false
 Icon=opera
 Type=Application
-MimeType=text/html
+MimeType=text/html;

@@ -53,7 +53,7 @@ GenericName[x-test]=xxEclipse IDExx
 GenericName[zh_CN]=Eclipse 集成开发环境
 GenericName[zh_TW]=Eclipse 整合開發環境
 X-KDE-StartupNotify=true
-MimeType=application/x-designer
+MimeType=application/x-designer;
 Icon=eclipse
 Type=Application
 

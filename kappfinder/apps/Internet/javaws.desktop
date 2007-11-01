@@ -1,6 +1,6 @@
 [Desktop Entry]
 Exec=javaws
-MimeType=application/x-java-jnlp-file
+MimeType=application/x-java-jnlp-file;
 Name=Java Web Start
 Name[da]=Java webstart
 Name[el]=Αναζήτηση στο διαδίκτυο περί Java

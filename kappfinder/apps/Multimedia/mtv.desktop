@@ -75,4 +75,4 @@ Name[is]=MpegTV spilari
 Name[te]=ఎంపిఈజి టివి
 Name[x-test]=xxMpegTVxx
 Type=Application
-MimeType=video/mpeg
+MimeType=video/mpeg;
