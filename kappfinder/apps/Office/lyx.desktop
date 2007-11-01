@@ -70,5 +70,5 @@ GenericName[zh_TW]=文書處理程式
 Exec=lyx
 Terminal=false
 Icon=lyx
-MimeType=application/x-lyx
+MimeType=application/x-lyx;
 Type=Application

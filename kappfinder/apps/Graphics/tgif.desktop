@@ -75,4 +75,4 @@ GenericName[xh]= Inkqubo Yemizobo
 GenericName[zh_CN]=绘图程序
 GenericName[zh_TW]=繪圖程式
 X-KDE-StartupNotify=false
-MimeType=application/x-tgif
+MimeType=application/x-tgif;

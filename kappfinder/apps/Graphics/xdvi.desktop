@@ -80,5 +80,5 @@ GenericName[x-test]=xxDVI Viewerxx
 GenericName[xh]=Umboniseli we DVI
 GenericName[zh_CN]=DVI 查看器
 GenericName[zh_TW]=DVI 檢視器
-MimeType=application/x-dvi
+MimeType=application/x-dvi;
 X-KDE-StartupNotify=false

@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Exec=xfig
 Icon=xfig
-MimeType=image/x-xfig
+MimeType=image/x-xfig;
 Type=Application
 Name=Xfig
 Name[eo]=XDesegno
