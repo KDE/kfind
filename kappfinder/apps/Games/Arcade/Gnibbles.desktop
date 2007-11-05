@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Name=Gnibbles
 Name[cy]=Gtameidiau
-Name[eo]=Rodoj
 Name[fr]=GNibbles
 Name[is]=Gnibbels
 Name[ne]=जिनिबल्स
@@ -24,7 +23,7 @@ GenericName[cy]=Gêm Tameidiau GNOME
 GenericName[da]=GNOME Nibbles-spil
 GenericName[de]=Nibbles-Spiel (GNOME)
 GenericName[el]=Παιχνίδι Nibbles του GNOME
-GenericName[eo]=Gnoma Rodludo
+GenericName[eo]=Gnoma nibloludo
 GenericName[es]=Juego GNOME de Nibbles
 GenericName[et]=GNOME Nibbles mäng
 GenericName[eu]=GNOME Nibbles jokoa

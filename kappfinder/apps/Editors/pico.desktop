@@ -1,7 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Pico
-Name[eo]=Piko
 Name[ne]=पिको
 Name[ta]=பிகோ
 Name[tg]=Пико
@@ -19,7 +18,7 @@ GenericName[cy]=Golygydd Testun
 GenericName[da]= Teksteditor
 GenericName[de]=Texteditor
 GenericName[el]=Επεξεργαστής κειμένου
-GenericName[eo]=Tekstredaktilo
+GenericName[eo]=Teksta redaktilo
 GenericName[es]=Editor de texto
 GenericName[et]=Tekstiredaktor
 GenericName[eu]=Testu editorea

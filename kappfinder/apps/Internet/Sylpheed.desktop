@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Name=Sylpheed
 Name[af]=Sylfeed
-Name[eo]=Silfedo
 Name[ne]=साइलफिड
 Name[pa]=ਸ਼ੀਲਫੀਡ
 Name[te]=సిల్ఫీడ్
@@ -20,7 +19,7 @@ GenericName[cy]=Dibynnydd Ebost
 GenericName[da]=E-mail-klient
 GenericName[de]=E-Mail-Programm
 GenericName[el]=Πελάτης mail
-GenericName[eo]=Legi kaj sendi retpoŝton
+GenericName[eo]=Poŝta kliento
 GenericName[es]=Cliente de correo electrónico
 GenericName[et]=E-posti klient
 GenericName[eu]=Posta bezeroa

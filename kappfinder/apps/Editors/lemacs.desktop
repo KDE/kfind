@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=Lucid Emacs
 Name[cy]=Emacs Eglur
-Name[eo]=L-Emakso
+Name[eo]=Lucid-Emakso
 Name[ne]=लुसिड इमाक्स
 Name[ta]=லூசிட் எமாக்ஸ்
 Name[x-test]=xxLucid Emacsxx
@@ -19,7 +19,7 @@ GenericName[cy]=Golygydd Testun
 GenericName[da]= Teksteditor
 GenericName[de]=Texteditor
 GenericName[el]=Επεξεργαστής κειμένου
-GenericName[eo]=Tekstredaktilo
+GenericName[eo]=Teksta redaktilo
 GenericName[es]=Editor de texto
 GenericName[et]=Tekstiredaktor
 GenericName[eu]=Testu editorea

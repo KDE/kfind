@@ -1,7 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Sced
-Name[eo]=Scenodesegnilo
 Name[ne]=स्केड
 Name[ta]=ஓவியக்கருவி
 Name[te]=సెడ్
@@ -18,7 +17,7 @@ GenericName[da]=Scene-modellering
 GenericName[de]=Szenen-Modellierer
 GenericName[el]=Μοντελοποιητής σκηνών
 GenericName[en_GB]=Scene Modeller
-GenericName[eo]=Desegnilo por tridimensiaj scenoj
+GenericName[eo]=Scena desegnilo
 GenericName[es]=Modelador de escenas
 GenericName[et]=Scene modelleerija
 GenericName[fa]=مدل‌ساز صحنه

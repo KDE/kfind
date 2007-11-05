@@ -1,7 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Grip
-Name[eo]=Gripo
 Name[fa]=چنگ زدن
 Name[fr]=GRip
 Name[ne]=ग्रिप
@@ -22,7 +21,7 @@ GenericName[cy]=Rhwygwr/Chwaraewr CD
 GenericName[da]=Cd-afspiller/ripper
 GenericName[de]=CDs wiedergeben und auslesen
 GenericName[el]=Αναπαραγωγέας CD/Ripper
-GenericName[eo]=Ludilo kaj ellegilo por muzikaj lumdiskoj
+GenericName[eo]=Ludilo kaj eltirilo por muzikaj lumdiskoj
 GenericName[es]=Reproductor/Extractor de CD
 GenericName[et]=CD mängija/rippija
 GenericName[eu]=CD jolea/ripper-a
