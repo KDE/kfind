@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Name=Lynx
 Name[be]=Рысь
-Name[eo]=Linko
 Name[pa]=ਲਨੈਕਸ
 Name[te]=ల్యింక్స్
 Name[x-test]=xxLynxxx
@@ -19,7 +18,7 @@ GenericName[cy]=Porydd Gwe
 GenericName[da]=Browser
 GenericName[de]=Web-Browser
 GenericName[el]=Περιηγητής ιστού
-GenericName[eo]=TTT-legilo
+GenericName[eo]=TTT-foliumilo
 GenericName[es]=Navegador web
 GenericName[et]=Veebibrauser
 GenericName[eu]=Web arakatzailea

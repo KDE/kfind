@@ -2,7 +2,6 @@
 Encoding=UTF-8
 Exec=eclipse
 Name=Eclipse
-Name[eo]=Eklipso
 Name[fi]=Pimennys
 Name[lt]=Užtemimas
 Name[ne]=दीर्घवृत्त
@@ -21,7 +20,7 @@ GenericName[ca]=IDE per a Eclipse
 GenericName[csb]=Òkrãżé programòwaniô Eclipse
 GenericName[cy]=IDE Eclipse
 GenericName[de]=Eclipse-Entwicklungsumgebung
-GenericName[eo]=Programada Medio 'Eklipso'
+GenericName[eo]=Programada medio Eklipso
 GenericName[es]=IDE Eclipse
 GenericName[fi]=Eclipse-kehitysympäristö
 GenericName[fr]=Environnement de développement intégré Eclipse

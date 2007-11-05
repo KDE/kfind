@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=X Emacs
-Name[eo]=XEmakso
+Name[eo]=X-Emakso
 Name[es]=XEmacs
 Name[fr]=XEmacs
 Name[km]=Emacs X
@@ -26,7 +26,7 @@ GenericName[cy]=Golygydd Testun
 GenericName[da]= Teksteditor
 GenericName[de]=Texteditor
 GenericName[el]=Επεξεργαστής κειμένου
-GenericName[eo]=Tekstredaktilo
+GenericName[eo]=Teksta redaktilo
 GenericName[es]=Editor de texto
 GenericName[et]=Tekstiredaktor
 GenericName[eu]=Testu editorea

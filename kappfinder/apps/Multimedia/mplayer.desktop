@@ -70,7 +70,6 @@ Exec=gmplayer %U
 Icon=video
 MimeType=video/x-ms-asf;video/mpeg;video/quicktime;video/x-flic;video/x-msvideo;
 Name=MPlayer
-Name[eo]=M-Ludilo
 Name[ne]=एम प्लेयर
 Name[sv]=Mplayer
 Name[ta]=Mசாதனம்
