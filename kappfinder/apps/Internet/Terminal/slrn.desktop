@@ -4,6 +4,7 @@ Exec=slrn
 Icon=slrn
 Type=Application
 Name=Slrn
+Name[sr]=Слрн
 Name[te]=ఎస్ ఎల్ ఆర్ ఎన్
 Name[x-test]=xxSlrnxx
 GenericName=News Reader

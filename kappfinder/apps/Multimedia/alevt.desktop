@@ -70,6 +70,7 @@ Exec=alevt
 Icon=alevt
 Name=AleVT
 Name[af]=Alevt
+Name[sr]=АлеВТ
 Name[te]=ఎలెవిటి
 Name[x-test]=xxAleVTxx
 Type=Application

@@ -58,6 +58,7 @@ GenericName[zh_TW]=資料顯示除錯器
 Name=DDD
 Name[af]=Ddd
 Name[de]=DDD (Debugger)
+Name[sr]=ДДД
 Name[te]=డిడిడి
 Name[x-test]=xxDDDxx
 X-KDE-StartupNotify=true

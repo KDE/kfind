@@ -1,6 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Nmapfe
+Name[sr]=Нмапфе
 Name[te]=ఎన్ మాప్ఎఫ్ఇ
 Name[x-test]=xxNmapfexx
 GenericName=Port Scanner
@@ -52,8 +53,8 @@ GenericName[ro]=Scanează calculatoare
 GenericName[ru]=Сканер портов
 GenericName[se]=Verrátskánnejeaddji
 GenericName[sl]=Pregledovalnik vrat
-GenericName[sr]=Порт скенер
-GenericName[sr@latin]=Port skener
+GenericName[sr]=Скенер портова
+GenericName[sr@latin]=Skener portova
 GenericName[sv]=Portavsökare
 GenericName[ta]=முனைய வருடி
 GenericName[te]=పొర్ట్ స్కెనర్
