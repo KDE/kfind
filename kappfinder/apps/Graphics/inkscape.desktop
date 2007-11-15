@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Inkscape
 Name[ne]=इन्कस्केप
 Name[sr]=Инкскејп
@@ -74,7 +73,6 @@ GenericName[zh_CN]=矢量绘图
 GenericName[zh_TW]=向量繪圖
 Exec=inkscape
 Icon=inkscape
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

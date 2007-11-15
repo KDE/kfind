@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=X Editor
 Name[af]=X Redigeerder
 Name[ar]=X محرر
@@ -114,7 +113,6 @@ GenericName[zh_TW]=文字編輯器
 MimeType=text/english;text/plain;
 Exec=xedit %f
 Icon=xedit
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=true

@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=MPEG Player
 GenericName[af]=MPEG Speler
 GenericName[ar]=MPEG قارئ
@@ -73,5 +72,5 @@ Name=GTV
 Name[sr]=ГТВ
 Name[te]=జిటివి
 Name[x-test]=xxGTVxx
-ServiceTypes=
+X-KDE-ServiceTypes=
 Type=Application

@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Java IDE
 GenericName[af]=Java Ide
 GenericName[ca]=IDE per a Java
@@ -53,6 +52,5 @@ Name[ta]=ஃபோர்ட்
 Name[te]=ఫోర్టె
 Name[tg]=Форте
 Name[x-test]=xxFortexx
-Path=
 Terminal=false
 Type=Application

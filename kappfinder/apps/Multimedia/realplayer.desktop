@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Video Player
 GenericName[af]=Video Speler
 GenericName[ar]=قارئ المرئيات
@@ -76,9 +75,6 @@ Name[sr]=Рилплејер
 Name[ta]=ரியல்ப்ளேயர்
 Name[te]=రియల్ ప్లెయర్
 Name[x-test]=xxRealPlayerxx
-Path=
-SwallowExec=
-SwallowTitle=
 Terminal=false
 Type=Application
 

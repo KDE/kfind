@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Bibliographic Database
 GenericName[af]=Bibliografiese Databasis
 GenericName[be]=Бібліяграфічная база дадзеных
@@ -79,7 +78,6 @@ Name[pa]=ਫੀਬਬਲੀਓਗਰਾਫ
 Name[sr]=Пиблиографик
 Name[tg]=Иттилооти китобшиноси P
 Name[x-test]=xxPybliographicxx
-Path=
-ServiceTypes=
+X-KDE-ServiceTypes=
 Terminal=false
 Type=Application

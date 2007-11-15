@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=X FTP
 Name[de]=X-FTP
 Name[eo]=X-FTP
@@ -79,6 +78,5 @@ GenericName[zh_CN]=FTP 浏览器
 GenericName[zh_TW]=FTP 瀏覽器
 Exec=xftp
 Icon=xapp
-Path=
 Type=Application
 Terminal=false

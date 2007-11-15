@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=XV
 Name[af]=Xv
 Name[fr]=Xv
@@ -75,7 +74,6 @@ GenericName[zh_CN]=图片查看器
 GenericName[zh_TW]=圖片瀏覽程式
 Exec=xv %F
 Icon=xv
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=true

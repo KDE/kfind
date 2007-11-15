@@ -128,4 +128,3 @@ Comment[zh_CN]=Free Civ 的服务器
 Comment[zh_TW]=給 Free Civ 使用的伺服器
 Exec=civserver
 Terminal=true
-Encoding=UTF-8

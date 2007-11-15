@@ -122,4 +122,3 @@ Exec=alephone -g -m
 Terminal=false
 Icon=alephone
 Type=Application
-Encoding=UTF-8

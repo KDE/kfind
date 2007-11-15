@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Watch TV!
 GenericName[af]=Kyk TV!
 GenericName[ar]=شاهد التلفاز !
@@ -72,6 +71,5 @@ Name[te]=గ్జాటివి
 Name[tr]=XawXV
 Name[uk]=XawXV
 Name[x-test]=xxXawTVxx
-Path=
 Terminal=false
 Type=Application

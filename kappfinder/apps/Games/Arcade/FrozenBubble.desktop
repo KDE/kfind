@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Tetris-Like Game
 GenericName[af]=Tetris tipe Speletjie
 GenericName[be]=Гульня тыпу Tetris
@@ -97,6 +96,5 @@ Name[wa]=Djeu d' årcåde Frozen-Bubble
 Name[x-test]=xxFrozen Bubblexx
 Name[zh_CN]=泡泡龙
 Name[zh_TW]=冰凍氣泡
-Path=
 Terminal=true
 Type=Application

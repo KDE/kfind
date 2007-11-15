@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=AVI Video Player
 GenericName[af]=AVI Video Speler
 GenericName[ar]=AVI قارئ مرئيات
@@ -77,6 +76,6 @@ Name[te]=ఎవిఐప్లె
 Name[vi]=Chơi AVI
 Name[x-test]=xxAviplayxx
 Name[xh]=Umdlalo we Avi
-ServiceTypes=
+X-KDE-ServiceTypes=
 Type=Application
 

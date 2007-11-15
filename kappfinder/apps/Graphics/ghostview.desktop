@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=GhostView
 Name[cs]=Ghostview
 Name[da]=Ghostview
@@ -81,7 +80,6 @@ GenericName[zh_CN]=PostScript 查看器
 GenericName[zh_TW]=PostScript 檢視器
 Exec=ghostview
 Icon=gv
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

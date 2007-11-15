@@ -74,5 +74,4 @@ GenericName[zh_TW]=執行 Windows 程式
 Icon=wine
 Type=Application
 MimeType=application/x-ms-dos-executable;
-Encoding=UTF-8
 X-KDE-StartupNotify=false

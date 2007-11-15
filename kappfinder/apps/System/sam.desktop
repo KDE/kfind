@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=SAM System-Administration
 Name[af]=SAM Stelsel Administrasie
 Name[be]=Сістэмнае адміністраванне SAM
@@ -65,7 +64,6 @@ Name[zh_TW]=SAM 系統管理
 MimeType=
 Exec=sam
 Icon=log
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

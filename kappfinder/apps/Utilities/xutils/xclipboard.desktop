@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=X Clipboard
 Name[af]=X Klipbord
 Name[be]=Буфер абмену X
@@ -114,7 +113,6 @@ GenericName[zh_CN]=剪贴板查看器
 GenericName[zh_TW]=剪貼簿檢視器
 Exec=xclipboard
 Icon=xclipboard
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=true

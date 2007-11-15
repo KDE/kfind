@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=XsLite
 Name[af]=Xslite
 Name[cy]=XsYsgafn
@@ -10,7 +9,6 @@ Name[x-test]=xxXsLitexx
 MimeType=
 Exec=xslite
 Icon=xapp
-Path=
 X-DocPath=
 Type=Application
 Terminal=false

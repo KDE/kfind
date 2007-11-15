@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=FTP Client
 GenericName[af]=FTP Kliënt
 GenericName[ar]=FTP عميل
@@ -74,6 +73,5 @@ Name[fr]=LFTP
 Name[sr]=Лфтп
 Name[te]=ఎల్ ఎఫ్ టి పి
 Name[x-test]=xxLftpxx
-Path=
 Terminal=true
 Type=Application

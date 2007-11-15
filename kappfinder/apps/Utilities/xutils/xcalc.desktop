@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=X Calc
 Name[be]=Калькулятар X
 Name[br]=Jederez X
@@ -95,7 +94,6 @@ GenericName[zh_CN]=计算器
 GenericName[zh_TW]=計算機
 Exec=xcalc
 Icon=xcalc
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=true

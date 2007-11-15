@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Exec=xload
 SwallowExec=xload -nolabel -fg green -bg Black -hl red -update 3 -geometry 25x25
 SwallowTitle=xload

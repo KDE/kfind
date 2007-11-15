@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 SwallowTitle=xclock
 SwallowTitle[no]=xclock
 SwallowTitle[pl]=xclock
@@ -54,7 +53,6 @@ Name[zh_CN]=X 时钟
 Name[zh_TW]=X 時鐘
 Exec=xclock
 Icon=xclock
-Path=
 Type=Application
 GenericName=Clock
 GenericName[af]=Horlosie

@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Version=1.0
 Name=Freeciv
 Name[eo]=FreeCiv
@@ -81,5 +80,4 @@ GenericName[zh_CN]=策略游戏
 GenericName[zh_TW]=策略遊戲
 Exec=civclient
 Icon=
-Path=
 Terminal=false

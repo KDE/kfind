@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Citrix ICA Client
 Name[af]=Citrix ICA Kliënt
 Name[be]=Кліент Citrix ICA
@@ -123,7 +122,6 @@ GenericName[zh_TW]=WTS 客戶端程式
 Exec=wfica %f
 Icon=terminal
 MimeType=application/x-ica;
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

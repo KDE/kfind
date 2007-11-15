@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=J2ME Toolkit
 GenericName[af]=J2me Gereedskapstel
 GenericName[be]=Набор сродкаў J2ME
@@ -67,6 +66,5 @@ Name[af]=J2me
 Name[sr]=Ј2МЕ
 Name[te]=జె2ఎంఈ
 Name[x-test]=xxJ2MExx
-Path=
 Terminal=false
 Type=Application
