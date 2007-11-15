@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=xacc
 Name[es]=Xacc
 Name[fr]=XAcc
@@ -9,7 +8,6 @@ Name[x-test]=xxxaccxx
 MimeType=
 Exec=xacc
 Icon=xapp
-Path=
 X-DocPath=
 Type=Application
 Terminal=false

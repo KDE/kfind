@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Version=1.0
 Name=XShipWars
 Name[af]=Xskeepsoorloë
@@ -84,5 +83,4 @@ GenericName[zh_CN]=策略游戏
 GenericName[zh_TW]=策略遊戲
 Exec=xshipwars
 Icon=
-Path=
 Terminal=false

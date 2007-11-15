@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Version=1.0
 Name=Defendguin
 Name[af]=Verdedig pikkewyn
@@ -82,5 +81,4 @@ GenericName[zh_CN]=游戏
 GenericName[zh_TW]=遊戲
 Exec=defendguin
 Icon=
-Path=
 Terminal=false

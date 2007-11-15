@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Exec=licq
 Icon=licq
 Name=Licq
@@ -66,6 +65,5 @@ GenericName[vi]=Trình nhắn tin ICQ
 GenericName[wa]=Messaedjreye sol moumint ICQ
 GenericName[x-test]=xxICQ Messengerxx
 GenericName[zh_TW]=ICQ 即時通訊
-Path=
 Terminal=false
 Type=Application

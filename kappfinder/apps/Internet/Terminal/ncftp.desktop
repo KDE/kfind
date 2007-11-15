@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=NcFTP
 Name[eo]=NcFtp
 Name[hu]=ncFTP
@@ -75,6 +74,5 @@ GenericName[zh_TW]=FTP 客戶端程式
 MimeType=
 Exec=ncftp
 Icon=misc
-Path=
 Type=Application
 Terminal=true

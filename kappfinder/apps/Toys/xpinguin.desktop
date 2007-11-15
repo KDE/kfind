@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Tux
 Name[be]=Tукс
 Name[eo]=Tuĉjo
@@ -74,7 +73,6 @@ GenericName[zh_CN]=Linux 吉祥物
 GenericName[zh_TW]=Linux 吉祥物
 Exec=xpinguin
 Icon=pinguin
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

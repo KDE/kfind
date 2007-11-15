@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Multimedia Player
 GenericName[af]=Multimedia Speler
 GenericName[ar]=قارئ الوسائط المتعددة
@@ -71,9 +70,6 @@ MimeType=audio/mpeg;audio/x-mod;audio/x-wav;audio/x-flac;audio/x-mpegurl;audio/x
 Name=XMMS
 Name[sr]=ИксММС
 Name[x-test]=xxXMMSxx
-Path=
-SwallowExec=
-SwallowTitle=
 Terminal=false
 Type=Application
 X-KDE-StartupNotify=false

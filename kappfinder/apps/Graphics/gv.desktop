@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=GV
 Name[af]=Gv
 Name[fr]=Gv
@@ -75,7 +74,6 @@ GenericName[zh_CN]=Postscript 查看器
 GenericName[zh_TW]=Postscript 檢視器
 Exec=gv
 Icon=gv
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

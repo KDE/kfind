@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=X Eyes
 Name[af]=X Oë
 Name[ar]=X عيون
@@ -40,7 +39,6 @@ Name[zh_CN]=X 眼睛
 MimeType=
 Exec=xeyes
 Icon=xeyes
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=true

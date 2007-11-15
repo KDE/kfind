@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Playlist Tool
 GenericName[af]=Liedjie speel lys Program
 GenericName[ar]=أداة قائمة التشغيل
@@ -127,7 +126,6 @@ Name[x-test]=xxEnqueue in XMMSxx
 Name[xh]=Folisa kwi XMMS
 Name[zh_CN]=加入 XMMS 播放列表
 Name[zh_TW]=加入 XMMS 播放列表
-Path=
 Terminal=false
 Type=Application
 NoDisplay=true

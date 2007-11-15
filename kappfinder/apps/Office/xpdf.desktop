@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=X PDF
 Name[de]=X-PDF
 Name[eo]=XPDF
@@ -77,7 +76,6 @@ GenericName[zh_CN]=PDF 查看器
 GenericName[zh_TW]=PDF 檢視程式
 Exec=xpdf
 Icon=gv
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

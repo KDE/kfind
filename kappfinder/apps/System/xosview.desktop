@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=X osview
 Name[de]=X-osview
 Name[eo]=XOperaciumrigardo
@@ -84,7 +83,6 @@ GenericName[zh_CN]=系统监视器
 GenericName[zh_TW]=系統監視器
 Exec=xosview
 Icon=xosview
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

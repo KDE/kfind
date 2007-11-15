@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Chess Game
 GenericName[af]=Skaak Speletjie
 GenericName[ar]=لعبة شطرنج
@@ -86,6 +85,5 @@ Name[vi]=Bảng X
 Name[x-test]=xxXboardxx
 Name[zh_CN]=Xboard 国际象棋
 Name[zh_TW]=Xboard 國際象棋
-Path=
 Terminal=false
 Type=Application

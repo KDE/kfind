@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Plan
 Name[fa]=نقشه
 Name[ga]=Plean
@@ -19,7 +18,6 @@ Name[xh]=Icebo
 MimeType=
 Exec=plan
 Icon=plan
-Path=
 X-DocPath=
 Type=Application
 Terminal=false

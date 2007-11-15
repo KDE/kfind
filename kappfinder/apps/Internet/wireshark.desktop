@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Wireshark
 Name[ne]=वायरसार्क
 Name[pa]=ਵਾਇਰਸ਼ਾਰਕ
@@ -77,4 +76,3 @@ Type=Application
 MimeType=
 Icon=xmag
 Terminal=false
-Path=

@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Version=1.0
 Name=Penguin Command
 Name[af]=Pikkewyn Opdrag
@@ -96,5 +95,4 @@ GenericName[zh_CN]=街机游戏
 GenericName[zh_TW]=電子遊戲
 Exec=penguin-command
 Icon=
-Path=
 Terminal=false

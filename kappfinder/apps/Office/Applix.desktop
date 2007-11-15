@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Applix
 Name[eo]=Aplikso
 Name[ne]=एप्लिक्स
@@ -9,7 +8,6 @@ Name[x-test]=xxApplixxx
 MimeType=
 Exec=applix
 Icon=applixware
-Path=
 X-DocPath=
 Type=Application
 Terminal=false

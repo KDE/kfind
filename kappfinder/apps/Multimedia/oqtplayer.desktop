@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=MOV Video Player
 GenericName[af]=MOV Video Speler
 GenericName[ar]=MOV قارئ مرئيات
@@ -80,7 +79,7 @@ Name[te]=ఒక్యుటి ప్లెయర్
 Name[x-test]=xxOQTPlayerxx
 Name[xh]=Umdlali we OQT
 Name[zh_TW]=OQT 播放器
-ServiceTypes=
+X-KDE-ServiceTypes=
 Type=Application
 X-KDE-SubstituteUID=false
 X-KDE-Username=

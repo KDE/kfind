@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=X Console
 Name[af]=X Konsole
 Name[be]=Кансоль X
@@ -112,7 +111,6 @@ GenericName[zh_CN]=控制台信息查看器
 GenericName[zh_TW]=控制台訊息檢視器
 Icon=terminal
 Exec=xconsole
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=true

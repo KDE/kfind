@@ -75,6 +75,4 @@ Comment[zh_CN]=用于 Unix 和 X 的免费焦土克隆
 Comment[zh_TW]=UNIX 與 X 上的免費 Scorched Earth 仿製遊戲
 Exec=xscorch
 Icon=
-Path=
 Terminal=false
-Encoding=UTF-8

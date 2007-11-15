@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Ethereal
 Name[ne]=इथेरियल
 Name[pa]=ਈਥਰਲ
@@ -79,4 +78,3 @@ Type=Application
 MimeType=
 Icon=xmag
 Terminal=false
-Path=

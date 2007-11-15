@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Video Player
 GenericName[af]=Video Speler
 GenericName[ar]=قارئ المرئيات
@@ -74,6 +73,6 @@ Name[ne]=जाइन
 Name[sr]=Ксине
 Name[te]=క్సైన్
 Name[x-test]=xxXinexx
-ServiceTypes=
+X-KDE-ServiceTypes=
 Type=Application
 

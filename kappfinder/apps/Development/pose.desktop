@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Palm/Wireless Emulator
 GenericName[af]=Palm/Draadloos Emulasie
 GenericName[ar]=محاكي Palm/اللاسلكي
@@ -77,6 +76,5 @@ Name[pa]=ਪੋਸ
 Name[sr]=Поуз
 Name[te]=పోజ్
 Name[x-test]=xxPosexx
-Path=
 Terminal=false
 Type=Application

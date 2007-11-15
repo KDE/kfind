@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=X Paint
 Name[af]=X Verf
 Name[ar]=X رسام
@@ -93,7 +92,6 @@ GenericName[zh_CN]=绘图程序
 GenericName[zh_TW]=繪圖程式
 Exec=xpaint
 Icon=xpaint
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

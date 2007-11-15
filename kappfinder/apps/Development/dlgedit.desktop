@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Qt DlgEdit
 Name[af]=Qt Dlgedit
 Name[ca]=Editor de diàlegs Qt
@@ -86,7 +85,6 @@ GenericName[zh_CN]=对话框编辑器
 GenericName[zh_TW]=對話盒編輯器
 Exec=dlgedit
 Icon=dlgedit
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Blender
 Name[ar]=بليندر
 Name[fa]=مخلوط‌کن
@@ -80,7 +79,6 @@ GenericName[zh_CN]=3D 建模/渲染器
 GenericName[zh_TW]=3D 場景繪製程式
 Exec=blender
 Icon=blender
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=false

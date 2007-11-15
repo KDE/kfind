@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=WordPerfect
 Name[af]=Wordperfect
 Name[hr]=Wordperfect
@@ -13,7 +12,6 @@ Name[x-test]=xxWordPerfectxx
 MimeType=application/vnd.wordperfect;
 Exec=xwp
 Icon=wp
-Path=
 X-DocPath=
 Type=Application
 Terminal=false

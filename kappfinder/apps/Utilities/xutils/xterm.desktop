@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 MimeType=
 GenericName=Terminal Program
 GenericName[af]=Terminaal Program
@@ -117,7 +116,6 @@ Name[zh_CN]=X 终端
 Name[zh_TW]=X 終端機
 Exec=xterm
 Icon=terminal
-Path=
 Type=Application
 Terminal=false
 X-KDE-StartupNotify=true

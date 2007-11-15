@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=DVD Player
 GenericName[af]=DVD Speler
 GenericName[ar]=DVD قارئ
@@ -76,7 +75,7 @@ Name[ta]=ஓகல்
 Name[te]=ఒగిల్
 Name[th]=Ogel
 Name[x-test]=xxOglexx
-ServiceTypes=
+X-KDE-ServiceTypes=
 Type=Application
 X-KDE-SubstituteUID=false
 X-KDE-Username=

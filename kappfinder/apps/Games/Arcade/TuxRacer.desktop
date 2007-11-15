@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Racing Game
 GenericName[af]=Resies Speletjie
 GenericName[ar]=ألعاب سباق
@@ -85,6 +84,5 @@ Name[uz]=Такс пойгачи
 Name[x-test]=xxTuxRacerxx
 Name[zh_CN]=企鹅赛车
 Name[zh_TW]=企鵝賽車
-Path=
 Terminal=true
 Type=Application

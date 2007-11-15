@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=WordPerfect 2000
 Name[af]=Wordperfect 2000
 Name[hr]=Wordperfect 2000
@@ -14,7 +13,6 @@ Name[x-test]=xxWordPerfect 2000xx
 MimeType=application/vnd.wordperfect;application/msword;application/x-winword97;
 Exec=wordperfect
 Icon=wp
-Path=
 X-DocPath=
 Type=Application
 Terminal=false

@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Video Player
 GenericName[af]=Video Speler
 GenericName[ar]=قارئ المرئيات
@@ -76,7 +75,7 @@ Name[sv]=Mplayer
 Name[ta]=Mசாதனம்
 Name[te]=ఎంప్లెయర్
 Name[x-test]=xxMPlayerxx
-ServiceTypes=
+X-KDE-ServiceTypes=
 Type=Application
 X-KDE-Protocols=http
 

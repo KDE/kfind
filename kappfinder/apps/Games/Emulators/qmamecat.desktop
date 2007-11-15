@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Arcade Emulator
 GenericName[af]=Arkade Emulasie
 GenericName[ar]=محاكي أركيد
@@ -76,6 +75,5 @@ Name[sr]=Ку-мамекат
 Name[te]=క్యుమెమ్ కేట్
 Name[x-test]=xxQmamecatxx
 Name[xh]=Qmamekati
-Path=
 Terminal=false
 Type=Application
