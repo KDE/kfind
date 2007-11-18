@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Nano
 Name[ne]=नानो
+Name[pa]=ਨਾਨੋ
 Name[sr]=Нано
 Name[ta]=நானோ
 Name[tg]=Нано
@@ -47,7 +48,7 @@ GenericName[nds]=Texteditor
 GenericName[ne]=पाठ सम्पादक
 GenericName[nl]=Teksteditor
 GenericName[nn]=Skriveprogram
-GenericName[pa]=ਪਾਠ ਸੰਪਾਦਕ
+GenericName[pa]=ਟੈਕਸਟ ਐਡੀਟਰ
 GenericName[pl]=Edytor tekstu
 GenericName[pt]=Editor de Texto
 GenericName[pt_BR]=Editor de Texto
