@@ -2,7 +2,6 @@
 Exec=jamin
 Icon=
 Name=Jamin
-Name[eo]=Jamino
 Name[ne]=जामिन
 Name[pa]=ਜੈਮਿਕਾ
 Name[sr]=Џемин
@@ -12,6 +11,7 @@ GenericName[be]=Начынне Jack Mastering
 GenericName[ca]=Eina de masterització pel Jack
 GenericName[de]=Jack-Audio-Bearbeitung
 GenericName[el]=Εργαλείο εγγραφής Jack
+GenericName[eo]=Jack stirilo
 GenericName[ga]=Uirlis Mháistirchóipeála Jack
 GenericName[hu]=Jack mestereszköz
 GenericName[ja]=Jack マスタリングツール
