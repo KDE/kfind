@@ -41,6 +41,7 @@ GenericName[vi]=Môi trường phát triển tích hợp Java
 GenericName[wa]=Evironmint di programaedje (IDE) po l' lingaedje Java
 GenericName[x-test]=xxJava IDExx
 GenericName[xh]=IDE ye Java
+GenericName[zh_CN]=Java 集成开发环境
 GenericName[zh_TW]=Java 整合開發環境
 Exec=runide.sh
 Icon=ksmiletris
