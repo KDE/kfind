@@ -1,0 +1,138 @@
+/*
+  Copyright (c) 1999 Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
+  Copyright (c) 2000 Matthias Elter <elter@kde.org>
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+
+/**
+ * Howto debug:
+ *    start "kinfocenter --nofork" in a debugger.
+ *
+ * If you want to test with command line arguments you need
+ * -after you have started kinfocenter in the debugger-
+ * open another shell and run kinfocenter with the desired
+ * command line arguments.
+ *
+ * The command line arguments will be passed to the version of
+ * kinfocenter in the debugger via DCOP and will cause a call
+ * to newInstance().
+ */
+
+//Added by qt3to4:
+#include <QByteArray>
+#include <QDesktopWidget>
+
+#include <kcmdlineargs.h>
+#include <kaboutdata.h>
+#include <kglobalsettings.h>
+#include <kconfig.h>
+#include <kconfiggroup.h>
+#include <kdebug.h>
+#include <kglobal.h>
+#include <klocale.h>
+#include "main.h"
+#include "main.moc"
+#include "toplevel.h"
+#include "global.h"
+#include "moduleIface.h"
+
+#include "version.h"
+
+KInfoCenterApp::KInfoCenterApp()
+  : KUniqueApplication()
+  , toplevel(0)
+{
+  toplevel = new TopLevel();
+
+  setMainWidget(toplevel);
+  // hmm? KApplication registers its KComponentData as the main and active component. Why is this
+  // needed?
+  //KGlobal::setActiveComponent(this);
+
+  // KUniqueApplication does dcop regitration for us
+  ModuleIface *modIface = new ModuleIface(toplevel, "moduleIface");
+
+  connect (modIface, SIGNAL(helpClicked()), toplevel, SLOT(slotHelpRequest()));
+  connect (modIface, SIGNAL(handbookClicked()), toplevel, SLOT(slotHandbookRequest()));
+
+  QRect desk = KGlobalSettings::desktopGeometry(toplevel);
+  KConfigGroup config(KGlobal::config(), "General");
+  // Initial size is:
+  // never bigger than workspace as reported by desk
+  // 940x700 on 96 dpi, 12 pt font
+  // 800x600 on 72 dpi, 12 pt font
+  // --> 368 + 6 x dpiX, 312 + 4 x dpiY
+  // Adjusted for font size
+  int fontSize = toplevel->fontInfo().pointSize();
+  if (fontSize == 0)
+    fontSize = (toplevel->fontInfo().pixelSize() * 72) / toplevel->logicalDpiX();
+  int x = config.readEntry(QString::fromLatin1("InitialWidth %1").arg(desk.width()),
+			       qMin( desk.width(), 368 + (6*toplevel->logicalDpiX()*fontSize)/12 ) );
+  int y = config.readEntry(QString::fromLatin1("InitialHeight %1").arg(desk.height()),
+			       qMin( desk.height(), 312 + (4*toplevel->logicalDpiX()*fontSize)/12 ) );
+  toplevel->resize(x,y);
+}
+
+KInfoCenterApp::~KInfoCenterApp()
+{
+  if (toplevel)
+    {
+      KConfigGroup config(KGlobal::config(), "General");
+      QDesktopWidget *desk = QApplication::desktop();
+      config.writeEntry(QString::fromLatin1("InitialWidth %1").arg(desk->width()), toplevel->width());
+      config.writeEntry(QString::fromLatin1("InitialHeight %1").arg(desk->height()), toplevel->height());
+      config.sync();
+    }
+}
+
+extern "C" KDE_EXPORT int kdemain(int argc, char *argv[])
+{
+  KLocale::setMainCatalog("kinfocenter");
+
+  KAboutData aboutKInfoCenter( "kinfocenter", 0, ki18n("KDE Info Center"),
+    KINFOCENTER_VERSION, ki18n("The KDE Info Center"), KAboutData::License_GPL,
+    ki18n("(c) 1998-2004, The KDE Control Center Developers"));
+
+  QByteArray argv_0 = argv[0];
+  KAboutData *aboutData;
+  aboutData = &aboutKInfoCenter;
+  KCGlobal::setIsInfoCenter(true);
+  kDebug(1208) << "Running as KInfoCenter!\n";
+
+  aboutData->addAuthor(ki18n("Helge Deller"), ki18n("Current Maintainer"), "deller@kde.org");
+  aboutData->addAuthor(ki18n("Matthias Hoelzer-Kluepfel"),KLocalizedString(), "hoelzer@kde.org");
+  aboutData->addAuthor(ki18n("Matthias Elter"),KLocalizedString(), "elter@kde.org");
+  aboutData->addAuthor(ki18n("Matthias Ettrich"),KLocalizedString(), "ettrich@kde.org");
+  aboutData->addAuthor(ki18n("Waldo Bastian"),KLocalizedString(), "bastian@kde.org");
+
+  KCmdLineArgs::init( argc, argv, aboutData );
+  KUniqueApplication::addCmdLineOptions();
+
+  KCGlobal::init();
+
+  if (!KInfoCenterApp::start()) {
+	kDebug(1208) << "kinfocenter is already running!\n";
+	return (0);
+  }
+
+  KInfoCenterApp app;
+
+  // show the whole stuff
+  app.mainWidget()->show();
+
+  return app.exec();
+}
