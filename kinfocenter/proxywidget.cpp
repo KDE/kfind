@@ -157,7 +157,7 @@ void ProxyView::resizeEvent(QResizeEvent *e)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-ProxyWidget::ProxyWidget(KCModule *client, QString title,
+ProxyWidget::ProxyWidget(KCModule *client, const QString &title,
              bool run_as_root)
   : QWidget(0)
   , _client(client)
@@ -165,7 +165,7 @@ ProxyWidget::ProxyWidget(KCModule *client, QString title,
  setWindowTitle(title);
 #ifdef __GNUC__
 #warning "kde4: DBUS port"
-#endif 
+#endif
 #if 0
  if (getuid()==0 ) {
 	 // Make root modules look as similar as possible...

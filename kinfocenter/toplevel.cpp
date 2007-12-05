@@ -36,7 +36,7 @@
 #include <kxmlguifactory.h>
 #include <QSplitter>
 
-#include <QTabWidget>
+#include <KTabWidget>
 
 
 #include "indexwidget.h"
@@ -88,7 +88,7 @@ TopLevel::TopLevel()
   _splitter = new QSplitter( Qt::Horizontal, this );
 
   // create the left hand side (the tab view)
-  _tab = new QTabWidget( _splitter );
+  _tab = new KTabWidget( _splitter );
 
   _tab->setWhatsThis( i18n("Choose between Index, Search and Quick Help") );
 
@@ -471,8 +471,9 @@ void TopLevel::aboutModule()
     dlg.exec();
 }
 
-QString TopLevel::handleAmpersand( QString modulename ) const
+QString TopLevel::handleAmpersand( const QString &modName ) const
 {
+  QString modulename = modName;
    if( modulename.contains( '&' )) // double it
    {
       for( int i = modulename.length();

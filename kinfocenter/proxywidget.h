@@ -40,7 +40,7 @@ class ProxyWidget : public QWidget
 
 public:
 
-  ProxyWidget(KCModule *client, QString title, bool run_as_root = false);
+  ProxyWidget(KCModule *client, const QString &title, bool run_as_root = false);
   ~ProxyWidget();
 
   QString quickHelp() const;
