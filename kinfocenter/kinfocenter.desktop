@@ -1,7 +1,7 @@
 [Desktop Entry]
 Exec=kinfocenter -caption "%c" %i
 Icon=hwinfo
-Type=Service
+Type=Application
 X-DocPath=kinfocenter/index.html
 X-KDE-StartupNotify=true
 OnlyShowIn=KDE;
