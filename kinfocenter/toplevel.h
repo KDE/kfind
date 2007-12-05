@@ -26,7 +26,7 @@
 
 
 class QSplitter;
-class QTabWidget;
+class KTabWidget;
 
 class KToggleAction;
 class QAction;
@@ -75,10 +75,10 @@ protected Q_SLOTS:
 
 private:
 
-  QString handleAmpersand( QString ) const;
+  QString handleAmpersand( const QString &modName ) const;
 
   QSplitter      *_splitter;
-  QTabWidget     *_tab;
+  KTabWidget     *_tab;
   DockContainer  *_dock;
   ModuleTitle    *_title;
 
