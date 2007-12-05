@@ -67,7 +67,6 @@ KInfoCenterApp::KInfoCenterApp()
   ModuleIface *modIface = new ModuleIface(toplevel, "moduleIface");
 
   connect (modIface, SIGNAL(helpClicked()), toplevel, SLOT(slotHelpRequest()));
-  connect (modIface, SIGNAL(handbookClicked()), toplevel, SLOT(slotHandbookRequest()));
 
   QRect desk = KGlobalSettings::desktopGeometry(toplevel);
   KConfigGroup config(KGlobal::config(), "General");
