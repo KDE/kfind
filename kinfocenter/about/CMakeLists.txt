@@ -1,2 +1,2 @@
-install( FILES top-right-kcontrol.png  	main.html  	kcontrol.css  DESTINATION  ${DATA_INSTALL_DIR}/kcontrol/about )
+install( FILES top-right-kinfocenter.png  	main.html  	kinfocenter.css  DESTINATION  ${DATA_INSTALL_DIR}/kinfocenter/about )
 
