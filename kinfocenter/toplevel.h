@@ -25,9 +25,9 @@
 
 class QAction;
 class QSplitter;
+class QTabWidget;
 
 class KAboutData;
-class KTabWidget;
 class KToggleAction;
 
 class DockContainer;
@@ -77,7 +77,7 @@ private:
   QString handleAmpersand( const QString &modName ) const;
 
   QSplitter      *_splitter;
-  KTabWidget     *_tab;
+  QTabWidget     *_tab;
   DockContainer  *_dock;
   ModuleTitle    *_title;
 

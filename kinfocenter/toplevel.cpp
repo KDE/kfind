@@ -42,8 +42,8 @@
 #include <ktoggleaction.h>
 #include <kwindowsystem.h>
 #include <kxmlguifactory.h>
-#include <KTabWidget>
 
+#include <QTabWidget>
 #include <QSplitter>
 
 #include <stdio.h>
@@ -88,7 +88,7 @@ TopLevel::TopLevel()
   _splitter = new QSplitter( Qt::Horizontal, this );
 
   // create the left hand side (the tab view)
-  _tab = new KTabWidget( _splitter );
+  _tab = new QTabWidget( _splitter );
 
   _tab->setWhatsThis( i18n("Choose between Index, Search and Quick Help") );
 
