@@ -12,15 +12,17 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
+
+#include "moduleiconview.h"
+#include "modules.h"
+#include "global.h"
 
 #include <Qt3Support/Q3Header>
 #include <QCursor>
-//Added by qt3to4:
 #include <QPixmap>
 #include <QKeyEvent>
 #include <Q3PtrList>
@@ -30,14 +32,9 @@
 #include <kstandarddirs.h>
 #include <kservicegroup.h>
 #include <kiconloader.h>
-
 #include <kdebug.h>
 
-#include "moduleiconview.h"
 #include "moduleiconview.moc"
-#include "modules.h"
-#include "global.h"
-
 
 ModuleIconView::ModuleIconView(ConfigModuleList *list, QWidget * parent)
   : K3ListView(parent)
@@ -95,7 +92,7 @@ void ModuleIconView::fill()
   {
      icon = loadIcon( "go-previous" );
      // go-back node
-     ModuleIconItem *i = new ModuleIconItem(this, i18n("Back"), icon);
+     ModuleIconItem *i = new ModuleIconItem(this, i18nc("go back", "Back"), icon);
      i->setOrderNo(0);
      int last_slash = _path.lastIndexOf('/', -2);
      if (last_slash == -1)
