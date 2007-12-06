@@ -110,7 +110,7 @@ SearchWidget::SearchWidget(QWidget *parent)
   connect(_input, SIGNAL(textChanged(const QString&)),
           this, SLOT(slotSearchTextChanged(const QString&)));
 
-  connect(_keyList, SIGNAL(highlighted(const QString&)),
+  connect(_keyList, SIGNAL(currentTextChanged(const QString&)),
           this, SLOT(slotKeywordSelected(const QString&)));
 
   connect(_resultList, SIGNAL(itemChanged (QListWidgetItem*)),
