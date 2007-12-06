@@ -11,35 +11,33 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-#include <QPainter>
-
-#include <QRegExp>
-#include <QLayout>
-#include <QFile>
-//Added by qt3to4:
-#include <QTextStream>
+#include "aboutwidget.h"
+#include "global.h"
+#include "modules.h"
+#include "moduletreeview.h"
 
 #include <kstandarddirs.h>
 #include <klocale.h>
 #include <kdebug.h>
-#include <QPixmap>
 #include <kcursor.h>
 #include <kglobalsettings.h>
 #include <khtml_part.h>
 #include <kapplication.h>
 #include <kvbox.h>
 
-#include "global.h"
-#include "aboutwidget.h"
+#include <QPainter>
+#include <QRegExp>
+#include <QLayout>
+#include <QFile>
+#include <QTextStream>
+#include <QPixmap>
+
 #include "aboutwidget.moc"
-#include "modules.h"
-#include "moduletreeview.h"
 
 static const char kcc_text[] = I18N_NOOP("KDE Control Center");
 

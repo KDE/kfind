@@ -12,32 +12,31 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-#include <Qt3Support/Q3Header>
-#include <QImage>
-#include <QPainter>
-#include <QBitmap>
-//Added by qt3to4:
-#include <QPixmap>
-#include <Q3PtrList>
-#include <QKeyEvent>
+#include "moduletreeview.h"
+#include "global.h"
+#include "modules.h"
 
 #include <KApplication>
 #include <klocale.h>
 #include <kiconloader.h>
 #include <kservicegroup.h>
 #include <kdebug.h>
-#include <Qt3Support/Q3WhatsThis>
 
-#include "moduletreeview.h"
+#include <Qt3Support/Q3Header>
+#include <Qt3Support/Q3WhatsThis>
+#include <QImage>
+#include <QPainter>
+#include <QBitmap>
+#include <QPixmap>
+#include <Q3PtrList>
+#include <QKeyEvent>
+
 #include "moduletreeview.moc"
-#include "modules.h"
-#include "global.h"
 
 static QPixmap appIcon(const QString &iconName)
 {

@@ -11,23 +11,27 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-#include <unistd.h> // for getuid()
+#include "proxywidget.h"
+#include "global.h"
+#include "kinfocenter_interface.h"
 
 #include <kpushbutton.h>
 #include <QLayout>
-//Added by qt3to4:
 #include <QByteArray>
 #include <QFrame>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QResizeEvent>
 #include <Q3ScrollView>
+#include <QLabel>
+#include <QtDBus/QtDBus>
+#include <QTimer>
+#include <Q3WhatsThis>
 
 #include <klocale.h>
 #include <kapplication.h>
@@ -35,17 +39,12 @@
 #include <kseparator.h>
 #include <kdialog.h>
 #include <kstandardguiitem.h>
-#include <QtDBus/QtDBus>
-
-#include <QLabel>
-
-#include "global.h"
-#include "proxywidget.h"
-#include "proxywidget.moc"
-#include <Q3WhatsThis>
 #include <kdebug.h>
-#include <QTimer>
-#include <kinfocenter_interface.h>
+
+#include <unistd.h> // for getuid()
+
+#include "proxywidget.moc"
+
 class WhatsThis : public Q3WhatsThis
 {
 public:

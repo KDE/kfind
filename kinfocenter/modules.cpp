@@ -11,23 +11,16 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-#include <unistd.h>
-#include <sys/types.h>
+#include "modules.h"
+#include "global.h"
+#include "proxywidget.h"
+#include "kcrootonly.h"
 
-
-#include <QLabel>
-#include <QLayout>
-
-//Added by qt3to4:
-#include <QVBoxLayout>
-#include <QFrame>
-#include <Q3PtrList>
 #include <kapplication.h>
 #include <kdebug.h>
 #include <kservicegroup.h>
@@ -36,20 +29,24 @@
 #include <kstandarddirs.h>
 #include <kauthorized.h>
 #include <kservicetypetrader.h>
-
-#include "modules.h"
-#include "modules.moc"
-#include "global.h"
-#include "proxywidget.h"
 #include <kcmoduleloader.h>
-#include "kcrootonly.h"
+#include <kvbox.h>
+
+#include <QLabel>
+#include <QLayout>
+#include <QVBoxLayout>
+#include <QFrame>
+#include <Q3PtrList>
+
 #ifdef Q_WS_X11
 #include <X11/Xlib.h>
 #include <QX11Info>
 #include <QX11EmbedWidget>
 #endif
-#include <kvbox.h>
+#include <unistd.h>
+#include <sys/types.h>
 
+#include "modules.moc"
 
 template class Q3PtrList<ConfigModule>;
 
@@ -71,7 +68,7 @@ ProxyWidget *ConfigModule::module()
     return _module;
 #ifdef __GNUC__
 #warning I expect KControl in its current form to disappear, if not a real port is needed
-#endif  
+#endif
   // root KCMs are gone, clean up all of the related code
   bool run_as_root = false; //needsRootPrivileges() && (getuid() != 0);
 
@@ -150,12 +147,12 @@ void ConfigModule::runAsRoot()
   _embedFrame = new KVBox( _module->parentWidget() );
 #ifdef __GNUC__
 #warning "KDE4 porting ";
-#endif  
+#endif
   //_embedFrame->setFrameStyle( QFrame::Box | QFrame::Raised );
   QPalette pal( Qt::red );
   pal.setColor( QPalette::Background,
 		_module->parentWidget()->palette().color( QPalette::Background ) );
-#ifdef __GNUC__  
+#ifdef __GNUC__
 #warning "KDE4 porting"
 #endif
   //_embedFrame->setPalette( pal );
@@ -199,8 +196,8 @@ void ConfigModule::runAsRoot()
       _rootProcess = new K3Process;
       *_rootProcess << kdesu;
 #ifdef __GNUC__
-#warning "--nonewdcop doesn't exist now"; 
-#endif     
+#warning "--nonewdcop doesn't exist now";
+#endif
       //*_rootProcess << "--nonewdcop";
       // We have to disable the keep-password feature because
       // in that case the modules is started through kdesud and kdesu

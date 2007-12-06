@@ -12,21 +12,19 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-#include <Qt3Support/Q3CheckListItem>
-//Added by qt3to4:
-#include <QResizeEvent>
-
-
 #include "indexwidget.h"
-#include "indexwidget.moc"
 #include "moduletreeview.h"
 #include "moduleiconview.h"
+
+#include <Qt3Support/Q3CheckListItem>
+#include <QResizeEvent>
+
+#include "indexwidget.moc"
 
 IndexWidget::IndexWidget(ConfigModuleList *modules, QWidget *parent ,const char *)
   : QStackedWidget(parent)

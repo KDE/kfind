@@ -17,10 +17,8 @@
 
 */
 
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/utsname.h>
+#include "global.h"
+
 #include <kservicegroup.h>
 #include <kdebug.h>
 #include <kapplication.h>
@@ -28,10 +26,12 @@
 
 #include <QObject>
 #include <Qt3Support/Q3Accel>
-//Added by qt3to4:
 #include <QByteArray>
 
-#include "global.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/utsname.h>
 
 bool KCGlobal::_root = false;
 bool KCGlobal::_infocenter = false;
@@ -54,7 +54,7 @@ void KCGlobal::init()
   if (!gethostname(buf, sizeof(buf)))
     buf[sizeof(buf)-1] ='\0';
   QString hostname(buf);
-  
+
   setHostName(hostname);
   setUserName(KUser().loginName());
   setRoot(getuid() == 0);
@@ -111,7 +111,7 @@ void KCGlobal::repairAccels( QWidget * tw )
   for (QList<QObject*>::const_iterator it( l.begin() ); it != l.end(); ++it)
   {
     QObject *obj = *it;
-   
+
     if (qobject_cast<Q3Accel*>(obj))
       qobject_cast<Q3Accel*>(obj)->repairEventFilter();
   }

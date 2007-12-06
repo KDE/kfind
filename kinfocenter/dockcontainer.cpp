@@ -11,18 +11,15 @@
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-#include <QLabel>
-
-#include <QPixmap>
-#include <QFont>
-
-#include <QApplication>
+#include "dockcontainer.h"
+#include "global.h"
+#include "modules.h"
+#include "proxywidget.h"
 
 #include <kapplication.h>
 #include <kmessagebox.h>
@@ -32,12 +29,12 @@
 #include <kiconloader.h>
 #include <kvbox.h>
 
-#include "dockcontainer.h"
-#include "dockcontainer.moc"
+#include <QLabel>
+#include <QPixmap>
+#include <QFont>
+#include <QApplication>
 
-#include "global.h"
-#include "modules.h"
-#include "proxywidget.h"
+#include "dockcontainer.moc"
 
 class ModuleTitle : public KHBox
 {

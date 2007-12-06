@@ -18,6 +18,14 @@
   MA  02110-1301, USA.
 */
 
+#include "toplevel.h"
+#include "indexwidget.h"
+#include "searchwidget.h"
+#include "helpwidget.h"
+#include "aboutwidget.h"
+#include "proxywidget.h"
+#include "moduletreeview.h"
+
 #include <kaboutapplicationdialog.h>
 #include <KApplication>
 #include <kactioncollection.h>
@@ -34,20 +42,12 @@
 #include <ktoggleaction.h>
 #include <kwindowsystem.h>
 #include <kxmlguifactory.h>
-#include <QSplitter>
-
 #include <KTabWidget>
 
+#include <QSplitter>
 
-#include "indexwidget.h"
-#include "searchwidget.h"
-#include "helpwidget.h"
-#include "aboutwidget.h"
-#include "proxywidget.h"
-#include "moduletreeview.h"
 #include <stdio.h>
 
-#include "toplevel.h"
 #include "toplevel.moc"
 
 TopLevel::TopLevel()
@@ -225,22 +225,22 @@ void TopLevel::setupActions()
 
   QActionGroup* iconSizeGroup = new QActionGroup(this);
 
-  icon_small = new KToggleAction(i18n("&Small"), this);
+  icon_small = new KToggleAction(i18nc("@option activate small size icons", "&Small"), this);
   actionCollection()->addAction("activate_smallicons", icon_small);
   connect(icon_small, SIGNAL(triggered(bool) ), SLOT(activateSmallIcons()));
   icon_small->setActionGroup(iconSizeGroup);
 
-  icon_medium = new KToggleAction(i18n("&Medium"), this);
+  icon_medium = new KToggleAction(i18nc("@option activate medium size icons", "&Medium"), this);
   actionCollection()->addAction("activate_mediumicons", icon_medium);
   connect(icon_medium, SIGNAL(triggered(bool) ), SLOT(activateMediumIcons()));
   icon_medium->setActionGroup(iconSizeGroup);
 
-  icon_large = new KToggleAction(i18n("&Large"), this);
+  icon_large = new KToggleAction(i18nc("@option activate large size icons", "&Large"), this);
   actionCollection()->addAction("activate_largeicons", icon_large);
   connect(icon_large, SIGNAL(triggered(bool) ), SLOT(activateLargeIcons()));
   icon_large->setActionGroup(iconSizeGroup);
 
-  icon_huge = new KToggleAction(i18n("&Huge"), this);
+  icon_huge = new KToggleAction(i18nc("@option activate huge size icons", "&Huge"), this);
   actionCollection()->addAction("activate_hugeicons", icon_huge);
   connect(icon_huge, SIGNAL(triggered(bool) ), SLOT(activateHugeIcons()));
   icon_huge->setActionGroup(iconSizeGroup);
