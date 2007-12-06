@@ -39,7 +39,7 @@
 class ModuleTitle : public KHBox
 {
   public:
-    ModuleTitle( QWidget *parent, const char *name=0 );
+    ModuleTitle( QWidget *parent );
     ~ModuleTitle() {}
 
     void showTitleFor( ConfigModule *module );
@@ -50,7 +50,7 @@ class ModuleTitle : public KHBox
     QLabel *m_name;
 };
 
-ModuleTitle::ModuleTitle( QWidget *parent, const char *name )
+ModuleTitle::ModuleTitle( QWidget *parent )
     : KHBox( parent )
 {
   QWidget *spacer = new QWidget( this );
