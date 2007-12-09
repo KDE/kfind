@@ -69,6 +69,7 @@ Exec=oqtplayer %f
 Icon=video
 MimeType=video/quicktime;
 Name=OQTPlayer
+Name[csb]=Grôcz OQT
 Name[de]=OQT-Abspieler
 Name[fr]=Lecteur OQTP
 Name[ne]=OQT प्लेयर
