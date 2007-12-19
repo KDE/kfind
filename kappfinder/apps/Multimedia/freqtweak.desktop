@@ -2,6 +2,7 @@
 Exec=freqtweak
 Icon=
 Name=FreqTweak
+Name[hi]=फ्रीक्वें.-ट्वीक
 Name[ne]=फ्रेक्टविक
 Name[sr]=Фректвик
 Name[sv]=Freqtweak
@@ -20,6 +21,7 @@ GenericName[eu]=Jack efektuak
 GenericName[fi]=Jack-efektejä
 GenericName[fy]=Effekten foar Jack
 GenericName[ga]=Maisíochtaí Jack
+GenericName[hi]=जैक के लिए प्रभाव
 GenericName[hu]=Effektusok a Jackhez
 GenericName[it]=Effetti per Jack
 GenericName[ja]=Jack のエフェクト

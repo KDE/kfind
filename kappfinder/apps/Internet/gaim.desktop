@@ -1,6 +1,8 @@
 [Desktop Entry]
 Name=Gaim
 Name[ar]=بيدجن
+Name[bn]=গেইম
+Name[hi]=गेम
 Name[ne]=गाइम
 Name[pa]=ਗਾਈਮ
 Name[sr]=Гаим
@@ -12,6 +14,7 @@ GenericName[af]=Oombliklike Boodskapper
 GenericName[ar]=مرسال فوري
 GenericName[be]=Імгненны абвеснік
 GenericName[bg]=Програма за чат
+GenericName[bn]=তাত্‍ক্ষণিক আড্ডা
 GenericName[br]=Posteler a-benn-kaer
 GenericName[ca]=Missatger instantani
 GenericName[cs]=Instant Messager
@@ -29,6 +32,7 @@ GenericName[fy]=Instant messenger
 GenericName[ga]=Clár teachtaireachtaí meandaracha
 GenericName[gl]=Mensaxeria Instantánea
 GenericName[he]=תוכנית מסרים מידיים
+GenericName[hi]=इंसटैंट मैसेंजर
 GenericName[hr]=Trenutne poruke
 GenericName[hu]=Azonnali üzenetküldő
 GenericName[is]=Samtalsbiðill (Instant Messenger)

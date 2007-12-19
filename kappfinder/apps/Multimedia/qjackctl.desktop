@@ -2,6 +2,7 @@
 Exec=qjackctl
 Icon=qjackctl
 Name=QJackCtl
+Name[hi]=क्यूजैककंट्रोल
 Name[sr]=КуЏекЦтл
 Name[sv]=Qjackctl
 Name[x-test]=xxQJackCtlxx
@@ -18,6 +19,7 @@ GenericName[eu]=Jack-endako kontrola
 GenericName[fi]=Jack-kontrolli
 GenericName[fy]=Kontrôle foar Jack
 GenericName[ga]=Rialtán le haghaidh Jack
+GenericName[hi]=जैक के लिये नियंत्रक
 GenericName[hu]=Vezérlő a Jackhez
 GenericName[it]=Controllo per Jack
 GenericName[ja]=Jack のコントロール

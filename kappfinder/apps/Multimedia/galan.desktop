@@ -2,6 +2,7 @@
 Exec=galan
 Icon=
 Name=gAlan
+Name[hi]=जी-एएलएएन
 Name[hu]=aAlan
 Name[sr]=Г-алан
 Name[sv]=Galan
@@ -15,6 +16,7 @@ GenericName[eo]=Modula sintezilo
 GenericName[es]=Sintetizador modular
 GenericName[et]=Modulaarsüntesaator
 GenericName[ga]=Sintéiseoir Modúlach
+GenericName[hi]=मॉड्यूलर सिंथ
 GenericName[hu]=Moduláris szintetizátor
 GenericName[it]=Sintetizzatore modulare
 GenericName[ja]=モジュラーシンセ

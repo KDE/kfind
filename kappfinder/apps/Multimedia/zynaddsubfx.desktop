@@ -2,6 +2,7 @@
 Exec=zynaddsubfx
 Icon=
 Name=ZynaddsubFX
+Name[hi]=जैडनाडसबएफएक्स
 Name[lt]=Cynosure
 Name[sr]=Зинадсуб-ФИкс
 Name[sv]=Zynaddsubfx
@@ -13,6 +14,7 @@ GenericName[de]=Software-Synthesizer
 GenericName[eo]=Programa sintezilo
 GenericName[es]=Sintetizador por software
 GenericName[ga]=Sintéiseoir Bog
+GenericName[hi]=सॉफ़्ट सिंथ
 GenericName[hu]=Szoftveres szintetizátor
 GenericName[it]=Sintetizzatore software
 GenericName[ja]=ソフトシンセ

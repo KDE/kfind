@@ -1,8 +1,10 @@
 [Desktop Entry]
 Name=GNOMEICU
 Name[af]=Gnomeicu
+Name[bn]=গনোম-আই.সি.ইউ
 Name[csb]=GNOMEICU (widzã ce)
 Name[fr]=GnomeICU
+Name[hi]=ग्नोमआईसीयू
 Name[pl]=Gnome WidzęCie (ICU)
 Name[sr]=Гном-ајсију
 Name[sr@latin]=GnomeICU
@@ -14,6 +16,7 @@ GenericName[af]=ICQ Boodskapper
 GenericName[ar]=ICQ مرسال
 GenericName[be]=Кліент ICQ
 GenericName[bg]=Програма за ICQ
+GenericName[bn]=আই-সি-কিউ মেসেঞ্জার
 GenericName[br]=Kemennader ICQ
 GenericName[ca]=Missatgeria ICQ
 GenericName[cs]=ICQ komunikátor
@@ -30,6 +33,7 @@ GenericName[fr]=Messagerie ICQ
 GenericName[fy]=ICQ-messenger
 GenericName[ga]=Teachtaire ICQ
 GenericName[he]=תוכנית מסרים מידיים של ICQ
+GenericName[hi]=आईसीक्यू मैसेंजर
 GenericName[hr]=ICQ trenutne poruke
 GenericName[hu]=ICQ üzenetküldő
 GenericName[is]=ICQ spjallforrit
