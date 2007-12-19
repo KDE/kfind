@@ -1,5 +1,7 @@
 [Desktop Entry]
 Name=Scribus
+Name[bn]=স্ক্রাইবাস
+Name[hi]=स्क्रिबस
 Name[ne]=स्क्रिबस
 Name[sr]=Скрибус
 Name[ta]=ஸ்கிரிபஸ்
@@ -9,6 +11,7 @@ GenericName[af]=Werkskerm Publisering
 GenericName[ar]=نشر عبر سطح المكتب
 GenericName[be]=Публікацыя
 GenericName[bg]=Издателска програма
+GenericName[bn]=ডেস্কটপ প্রকাশনা
 GenericName[ca]=Publicació d'escriptori
 GenericName[cs]=Publikování na desktopu
 GenericName[cy]=Cyhoeddi Penbwrdd
@@ -23,6 +26,7 @@ GenericName[fr]=Publication de bureau
 GenericName[ga]=Foilsiú Deisce
 GenericName[gl]=Publicación de Escritório
 GenericName[he]=הוצאה לאור שולחנית
+GenericName[hi]=डेस्कटॉप प्रकाशन
 GenericName[hr]=Stolno izdavaštvo
 GenericName[hu]=Kiadványszerkesztő
 GenericName[is]=Umbrotsforrit

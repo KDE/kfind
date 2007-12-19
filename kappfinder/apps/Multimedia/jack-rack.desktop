@@ -2,6 +2,7 @@
 Exec=jack-rack
 Icon=
 Name=Jack-Rack
+Name[hi]=जैक-रेक
 Name[ne]=ज्याक-र्याक
 Name[pl]=Wtyczki do Jacka (Jack-Rack)
 Name[sr]=Џек-рек
@@ -10,6 +11,7 @@ GenericName=Jack Effectrack
 GenericName[csb]=Jack-Effectrack
 GenericName[de]=Jack-Effectrack
 GenericName[eo]=Jack efektotrakilo
+GenericName[hi]=जैक इफैक्ट्रैक
 GenericName[hu]=Effektusok a Jackhez
 GenericName[ko]=Jack 효과 트랙
 GenericName[lv]=Jack efektu panelis

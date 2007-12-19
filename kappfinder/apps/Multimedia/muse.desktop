@@ -1,6 +1,7 @@
 [Desktop Entry]
 Exec=muse
 Name=MusE
+Name[hi]=म्यूज़
 Name[km]=Mures
 Name[sr]=Мјуз
 Name[sv]=Muse
@@ -20,6 +21,7 @@ GenericName[fa]=ترتیب‌سنج موسیقی
 GenericName[fi]=Sekvensseri
 GenericName[fy]=Musyk Sekwuencer
 GenericName[ga]=Seicheamhóir Ceoil
+GenericName[hi]=संगीत सीक्वेंसर
 GenericName[hu]=Zeneszekvencer
 GenericName[it]=Sequencer musicale
 GenericName[ja]=ミュージックシーケンサ

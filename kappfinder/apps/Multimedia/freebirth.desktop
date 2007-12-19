@@ -2,6 +2,7 @@
 Exec=freebirth
 Icon=
 Name=FreeBirth
+Name[hi]=फ्री-बर्थ
 Name[km]=FreeDB
 Name[ne]=फ्रि बर्थ
 Name[sr]=Фрибирт
@@ -20,6 +21,7 @@ GenericName[fi]=Rumpukone
 GenericName[fy]=Drum masine
 GenericName[ga]=Meaisín Drumadóireachta
 GenericName[he]=מכונת תופים
+GenericName[hi]=ड्रम मशीन
 GenericName[hu]=Dobgép
 GenericName[is]=Trommuheili
 GenericName[ja]=ドラムマシン

@@ -2,6 +2,7 @@
 Exec=ecamegapedal
 Icon=
 Name=EcaMegaPedal
+Name[hi]=ईका-मेगा-पेडल
 Name[ne]=एकामेगापेडल
 Name[sr]=Екамегапедал
 Name[sv]=Ecamegapedal
@@ -10,6 +11,7 @@ GenericName=Ecasound Effektrack
 GenericName[csb]=Ecasound-Effektrack
 GenericName[de]=Ecasound-Effektrack
 GenericName[eo]=Ecasound efektotrakilo
+GenericName[hi]=ईकासाउंड इफ़ैक्टट्रैक
 GenericName[hu]=Ecasound effektusok
 GenericName[lv]=Ecasound efektu panelis
 GenericName[nb]=Ecasound Effektspor

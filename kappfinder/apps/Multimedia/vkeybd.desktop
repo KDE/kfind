@@ -2,6 +2,7 @@
 Exec=vkeybd
 Icon=
 Name=vkeybd
+Name[hi]=वीकीबोर्ड
 Name[sr]=Вкибд
 Name[sv]=Vkeybd
 Name[x-test]=xxvkeybdxx
@@ -18,6 +19,7 @@ GenericName[eu]=MIDI teklatu birtuala
 GenericName[fi]=Virtuaalinen MIDI-koskettimisto
 GenericName[fy]=Firtueel MIDI Keyboard
 GenericName[ga]=Méarchlár Fíorúil MIDI
+GenericName[hi]=आभासी मिडी कुंजीपट
 GenericName[hu]=Virtuális MIDI billentyűzet
 GenericName[it]=Tastiera MIDI virtuale
 GenericName[ja]=仮想 MIDI キーボード

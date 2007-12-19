@@ -1,6 +1,7 @@
 [Desktop Entry]
 GenericName=Java IDE
 GenericName[af]=Java Ide
+GenericName[bn]=জাভা IDE
 GenericName[ca]=IDE per a Java
 GenericName[csb]=IDE Javë
 GenericName[cy]=IDE Java
@@ -16,6 +17,7 @@ GenericName[fr]=Environnement de développement intégré Java
 GenericName[ga]=IDE Java
 GenericName[gl]=IDE Java
 GenericName[he]=סביבת פיתוח משולבת ל־Java
+GenericName[hi]=जावा आईडीई
 GenericName[is]=Java-forritunarumhverfi
 GenericName[it]=Ambiente di sviluppo integrato Java
 GenericName[ko]=자바 통합 개발 환경
@@ -46,6 +48,8 @@ GenericName[zh_TW]=Java 整合開發環境
 Exec=runide.sh
 Icon=ksmiletris
 Name=Forte
+Name[bn]=ফোর্টে
+Name[hi]=फोर्ट
 Name[ne]=फर्ट
 Name[pa]=ਫੋਰਟੀ
 Name[sr]=Форте

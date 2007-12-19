@@ -2,6 +2,7 @@
 Exec=ams
 Icon=
 Name=ams
+Name[hi]=एएमएस
 Name[sr]=Амс
 Name[sv]=AMS
 Name[x-test]=xxamsxx
@@ -16,6 +17,7 @@ GenericName[et]=Alsa modulaarsüntesaator
 GenericName[eu]=Alsa sintetizadore modularra
 GenericName[ga]=Sintéiseoir Modúlach Alsa
 GenericName[he]=סינתסייזר מודולרי ל־ALSA
+GenericName[hi]=आल्सा मॉड्यूलर सिंथेसाइज़र
 GenericName[hu]=ALSA moduláris szintetizátor
 GenericName[is]=Alsa hljóðgerfill
 GenericName[ja]=ALSA モジュラーシンセサイザ

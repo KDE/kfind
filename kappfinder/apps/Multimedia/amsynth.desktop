@@ -2,6 +2,7 @@
 Exec=amSynth
 Icon=
 Name=amSynth
+Name[hi]=एएमसिंथ
 Name[sr]=Амсинт
 Name[sv]=Amsynth
 Name[x-test]=xxamSynthxx
@@ -11,6 +12,7 @@ GenericName[csb]=Retro-Analog - Mòdelowanié Softsynth
 GenericName[de]=Retro-Analog - Softsynth-Modellierung
 GenericName[el]=Αναλογικό ρετρό - Σύνθεση Softsynth
 GenericName[eo]=Retro analog - modeliga sintezilo
+GenericName[hi]=रीट्रो एनॉलाक - मॉडलिंग सॉफ़्टसिंथ
 GenericName[hu]=Analóg szoftveres szintetizátor
 GenericName[ja]=レトロアナログ - モデリングソフトシンセ
 GenericName[kk]=Ретро аналогты - модельдеу бағдарлама синтезаторы
