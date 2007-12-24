@@ -37,7 +37,6 @@
 #include <kdebug.h>
 #include <kdesktopfile.h>
 #include <kglobal.h>
-#include <kiconloader.h>
 #include <klocale.h>
 #include <kmessagebox.h>
 #include <kservice.h>
@@ -65,13 +64,13 @@ TopLevel::TopLevel( const QString &destDir, QWidget *parent )
   label->setAlignment( Qt::AlignLeft );
   label->setWordWrap( true );
 
-  mListView = new Q3ListView( frame );
-  mListView->addColumn( i18n( "Application" ) );
-  mListView->addColumn( i18n( "Description" ) );
-  mListView->addColumn( i18n( "Command" ) );
+  mListView = new QTreeWidget( frame );
+  mListView->setHeaderLabels(QStringList() << i18n( "Application" ) << i18n( "Description" ) << i18n( "Command" ) );
   mListView->setRootIsDecorated( true );
   mListView->setAllColumnsShowFocus( true );
-  mListView->setSelectionMode(Q3ListView::NoSelection);
+  mListView->setSelectionMode( QTreeWidget::NoSelection );
+  mListView->setColumnWidth( 0, 200 );
+  mListView->setColumnWidth( 1, 160 );
 
   mProgress = new QProgressBar( frame );
   mProgress->setTextVisible( false );
@@ -113,7 +112,7 @@ TopLevel::~TopLevel()
   mAppCache.clear();
 }
 
-Q3ListViewItem* TopLevel::addGroupItem( Q3ListViewItem *parent, const QString &relPath,
+QTreeWidgetItem* TopLevel::addGroupItem( QTreeWidgetItem *parent, const QString &relPath,
                                        const QString &name )
 {
   KServiceGroup::Ptr root = KServiceGroup::group( relPath );
@@ -127,27 +126,25 @@ Q3ListViewItem* TopLevel::addGroupItem( Q3ListViewItem *parent, const QString &r
     if ( p->isType( KST_KServiceGroup ) ) {
       const KServiceGroup* serviceGroup = static_cast<const KServiceGroup*>( p );
       if ( QString( "%1%2/" ).arg( relPath ).arg( name ) == serviceGroup->relPath() ) {
-        Q3ListViewItem* retval;
+        QTreeWidgetItemIterator it( mListView );
         if ( parent )
-          retval = parent->firstChild();
-        else
-          retval = mListView->firstChild();
+          it = QTreeWidgetItemIterator( parent );
 
-        while ( retval ) {
-          if ( retval->text( 0 ) == serviceGroup->caption() )
-            return retval;
+        while ( *it ) {
+          if ( ( *it )->text( 0 ) == serviceGroup->caption() )
+            return ( *it );
 
-          retval = retval->nextSibling();
+          it++;
         }
 
-        Q3ListViewItem *item;
+        QTreeWidgetItem *item;
         if ( parent )
-          item = new Q3ListViewItem( parent, serviceGroup->caption() );
+          item = new QTreeWidgetItem( parent, QStringList() << serviceGroup->caption() );
         else
-          item = new Q3ListViewItem( mListView, serviceGroup->caption() );
+          item = new QTreeWidgetItem( mListView, QStringList() << serviceGroup->caption() );
 
-        item->setPixmap( 0, SmallIcon( serviceGroup->icon() ) );
-        item->setOpen( true );
+        item->setIcon( 0, KIcon( serviceGroup->icon() ) );
+        item->setExpanded( true );
         return item;
       }
     }
@@ -158,8 +155,6 @@ Q3ListViewItem* TopLevel::addGroupItem( Q3ListViewItem *parent, const QString &r
 
 void TopLevel::slotScan()
 {
-  KIconLoader* loader = KIconLoader::global();
-
   mTemplates = KGlobal::dirs()->findAllResources( "data", "kappfinder/apps/*.desktop", KStandardDirs::Recursive );
 
   mAppCache.clear();
@@ -209,7 +204,7 @@ void TopLevel::slotScan()
       relPath = relPath.left( relPath.lastIndexOf( '/' ) + 1 );
       QStringList dirList = relPath.split( '/');
 
-      Q3ListViewItem *dirItem = 0;
+      QTreeWidgetItem *dirItem = 0;
       QString tmpRelPath = QString();
 
       QStringList::Iterator tmpIt;
@@ -220,17 +215,19 @@ void TopLevel::slotScan()
 
       mFound++;
 
-      Q3CheckListItem *item;
+      QTreeWidgetItem *item;
       if ( dirItem )
-        item = new Q3CheckListItem( dirItem, desktop.readName(), Q3CheckListItem::CheckBox );
+        item = new QTreeWidgetItem( dirItem, QStringList() << desktop.readName() );
       else
-        item = new Q3CheckListItem( mListView, desktop.readName(), Q3CheckListItem::CheckBox );
+        item = new QTreeWidgetItem( mListView, QStringList() << desktop.readName() );
 
-      item->setPixmap( 0, loader->loadIcon( desktop.readIcon(), KIconLoader::Small ) );
+      item->setIcon( 0, KIcon( desktop.readIcon() ) );
       item->setText( 1, desktop.readGenericName() );
       item->setText( 2, desktop.desktopGroup().readPathEntry( "Exec", QString() ) );
       if ( desktop.desktopGroup().readEntry( "X-StandardInstall" , false) )
-        item->setOn( true );
+        item->setCheckState( 0, Qt::Checked );
+      else
+        item->setCheckState( 0, Qt::Unchecked );
 
       AppLnkCache* cache = mAppCache.last();
       if ( cache )
@@ -260,14 +257,14 @@ void TopLevel::slotSelectAll()
 {
   AppLnkCache* cache;
   Q_FOREACH( cache, mAppCache )
-    cache->item->setOn( true );
+    cache->item->setCheckState( 0, Qt::Checked );
 }
 
 void TopLevel::slotUnselectAll()
 {
   AppLnkCache* cache;
   Q_FOREACH( cache, mAppCache )
-    cache->item->setOn( false );
+    cache->item->setCheckState( 0, Qt::Unchecked );
 }
 
 void TopLevel::slotCreate()

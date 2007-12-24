@@ -25,14 +25,12 @@
 #include <kdialog.h>
 
 #include <QtCore/QStringList>
-//Added by qt3to4:
-#include <QtGui/QLabel>
-#include <QtCore/QList>
+#include <QtGui/QTreeWidget>
+
 #include "common.h"
 
 class QProgressBar;
 class QLabel;
-class Q3ListView;
 
 class TopLevel : public KDialog
 {
@@ -49,12 +47,12 @@ class TopLevel : public KDialog
     void slotUnselectAll();
 
   private:
-    Q3ListViewItem *addGroupItem( Q3ListViewItem *parent, const QString &relPath,
+    QTreeWidgetItem *addGroupItem( QTreeWidgetItem *parent, const QString &relPath,
                                  const QString &name );
 
     QProgressBar *mProgress;
     QLabel *mSummary;
-    Q3ListView *mListView;
+    QTreeWidget *mListView;
     QString mDestDir;
     QStringList mTemplates;
 
