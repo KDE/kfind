@@ -90,8 +90,7 @@ bool scanDesktopFile( QList<AppLnkCache*> &appCache, const QString &templ,
   QString pexec = KGlobal::dirs()->findExe( exec,
                  QString( ::getenv( "PATH" ) ) + ":/usr/X11R6/bin:/usr/games" );
   if ( pexec.isEmpty() ) {
-    kDebug(DBG_CODE) << "looking for " << exec.toLocal8Bit().constData()
-                      << "\t\tnot found" << endl;
+    kDebug(DBG_CODE) << "looking for " << exec << "\t\tnot found";
     return false;
   }
 
@@ -103,8 +102,7 @@ bool scanDesktopFile( QList<AppLnkCache*> &appCache, const QString &templ,
 
   appCache.append( cache );
 
-  kDebug(DBG_CODE) << "looking for " << exec.toLocal8Bit().constData()
-                    << "\t\tfound" << endl;
+  kDebug(DBG_CODE) << "looking for " << exec << "\t\tfound";
   return true;
 }
 
@@ -112,7 +110,7 @@ void createDesktopFiles( QList<AppLnkCache*> &appCache, int &added )
 {
   AppLnkCache* cache;
   Q_FOREACH( cache,appCache ){
-    if ( cache->item == 0 || ( cache->item && cache->item->isOn() ) ) {
+    if ( cache->item == 0 || ( cache->item && cache->item->checkState(0) == Qt::Checked ) ) {
       added++;
 
       QString destDir = cache->destDir;

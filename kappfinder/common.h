@@ -22,7 +22,7 @@
 #ifndef COMMON_H
 #define COMMON_H
 
-#include <Qt3Support/Q3ListView>
+#include <QtGui/QTreeWidgetItem>
 #include <QtCore/QList>
 
 
@@ -32,7 +32,7 @@ class AppLnkCache
     QString destDir;
     QString destName;
     QString templ;
-    Q3CheckListItem *item;
+    QTreeWidgetItem *item;
 };
 
 bool scanDesktopFile( QList<AppLnkCache*> &appCache, const QString &templ,
