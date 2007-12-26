@@ -46,6 +46,7 @@ GenericName[zh_TW]=雙頻道 VU 量尺
 Name=Meterbridge
 Name[hi]=मीटर-ब्रिज
 Name[ne]=मिटरब्रिज
+Name[pa]=ਮੀਟਰਬਰਿੱਜ਼
 Name[sr]=Метербриџ
 Name[x-test]=xxMeterbridgexx
 X-KDE-StartupNotify=false
