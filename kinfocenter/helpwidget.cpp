@@ -27,7 +27,6 @@
 #include <krun.h>
 #include <ktoolinvocation.h>
 
-#include <QLayout>
 #include <QVBoxLayout>
 
 #include "helpwidget.moc"

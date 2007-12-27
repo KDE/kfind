@@ -21,12 +21,10 @@
 
 #include <Q3PtrList>
 #include <QLabel>
-#include <QLayout>
 #include <QListWidgetItem>
 #include <QRegExp>
 #include <QVBoxLayout>
 
-#include <KApplication>
 #include <klineedit.h>
 #include <kiconloader.h>
 #include <klocale.h>

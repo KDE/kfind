@@ -30,12 +30,8 @@
 #include <kapplication.h>
 #include <kvbox.h>
 
-#include <QPainter>
-#include <QRegExp>
-#include <QLayout>
 #include <QFile>
 #include <QTextStream>
-#include <QPixmap>
 
 #include "aboutwidget.moc"
 

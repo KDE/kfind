@@ -27,7 +27,6 @@
 #include "moduletreeview.h"
 
 #include <kaboutapplicationdialog.h>
-#include <KApplication>
 #include <kactioncollection.h>
 #include <kbugreport.h>
 #include <kaboutdata.h>

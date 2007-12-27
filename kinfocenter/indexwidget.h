@@ -22,7 +22,6 @@
 #include "global.h"
 
 #include <QStackedWidget>
-#include <QResizeEvent>
 
 class ConfigModuleList;
 class ConfigModule;
