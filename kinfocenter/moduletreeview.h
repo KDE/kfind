@@ -20,7 +20,6 @@
 #ifndef __moduletreeview_h__
 #define __moduletreeview_h__
 
-#include <QPalette>
 #include <Qt3Support/Q3PtrList>
 #include <Qt3Support/Q3CheckListItem>
 //Added by qt3to4:

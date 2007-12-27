@@ -21,7 +21,6 @@
 #include "kinfocenter_interface.h"
 
 #include <kpushbutton.h>
-#include <QLayout>
 #include <QByteArray>
 #include <QFrame>
 #include <QHBoxLayout>
@@ -30,7 +29,6 @@
 #include <Q3ScrollView>
 #include <QLabel>
 #include <QtDBus/QtDBus>
-#include <QTimer>
 #include <Q3WhatsThis>
 
 #include <klocale.h>

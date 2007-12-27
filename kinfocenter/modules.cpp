@@ -33,7 +33,6 @@
 #include <kvbox.h>
 
 #include <QLabel>
-#include <QLayout>
 #include <QVBoxLayout>
 #include <QFrame>
 #include <Q3PtrList>

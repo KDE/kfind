@@ -17,10 +17,8 @@
 */
 #include "kcrootonly.h"
 
-#include <KApplication>
 #include <klocale.h>
 
-#include <QLayout>
 #include <QLabel>
 #include <QVBoxLayout>
 

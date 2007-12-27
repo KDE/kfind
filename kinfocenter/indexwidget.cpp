@@ -22,7 +22,6 @@
 #include "moduleiconview.h"
 
 #include <Qt3Support/Q3CheckListItem>
-#include <QResizeEvent>
 
 #include "indexwidget.moc"
 

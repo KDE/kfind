@@ -22,7 +22,6 @@
 #include "global.h"
 
 #include <Qt3Support/Q3Header>
-#include <QCursor>
 #include <QPixmap>
 #include <QKeyEvent>
 #include <Q3PtrList>

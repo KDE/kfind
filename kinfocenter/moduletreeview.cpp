@@ -21,7 +21,6 @@
 #include "global.h"
 #include "modules.h"
 
-#include <KApplication>
 #include <klocale.h>
 #include <kiconloader.h>
 #include <kservicegroup.h>
