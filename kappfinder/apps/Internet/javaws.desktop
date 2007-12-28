@@ -2,6 +2,7 @@
 Exec=javaws
 MimeType=application/x-java-jnlp-file;
 Name=Java Web Start
+Name[ar]=شبكة بدء Java
 Name[bn]=জাভা ওয়েব স্টার্ট
 Name[da]=Java webstart
 Name[el]=Αναζήτηση στο διαδίκτυο περί Java

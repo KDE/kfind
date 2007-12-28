@@ -1,6 +1,7 @@
 [Desktop Entry]
 Exec=btdownloadcurses.py
 GenericName=BitTorrent GUI
+GenericName[ar]=واجهة بيت تورنت
 GenericName[be]=Графічны кліент BitTorrent
 GenericName[bg]=ГПИ за BitTorrent
 GenericName[bn]=বিট-টরেন্ট গুই

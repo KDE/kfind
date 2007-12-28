@@ -2,6 +2,7 @@
 Exec=dc_gui
 Icon=xapp
 Name=DCTC GUI
+Name[ar]=واجهة DCTC
 Name[be]=Графічны кліент DCTC
 Name[bg]=ГПИ за DCTC
 Name[bn]=DCTC গুই
@@ -41,6 +42,7 @@ Name[zh_CN]=DCTC 图形用户界面
 Name[zh_TW]=DCTC 圖型使用者介面
 GenericName=Direct Connect Clone
 GenericName[af]=Direkte Koppeling Namaaksel
+GenericName[ar]=تقليد Direct Connect
 GenericName[be]=Клон Direct Connect
 GenericName[bn]=ডাইরেক্ট কানেক্ট ক্লোন
 GenericName[ca]=Clon per a la connexió directa
