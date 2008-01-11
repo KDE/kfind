@@ -2,6 +2,7 @@
 Name=Aumix
 Name[bn]=অমিক্স
 Name[hi]=ऑमिक्स
+Name[kn]=ಔಮಿಕ್ಸ್
 Name[ne]=अउमिक्स
 Name[pa]=ਊਮਿਕਸ
 Name[sr]=Аумикс
@@ -40,6 +41,7 @@ GenericName[ja]=オーディオミキサー
 GenericName[ka]=აუდიო მიქსერი
 GenericName[kk]=Дыбыс микшері
 GenericName[km]=ឧបករណ៍​លាយ​អូឌីយ៉ូ
+GenericName[kn]=ಧ್ವನಿ ಮಿಶ್ರಕ (ಮಿಕ್ಸರ್)
 GenericName[ko]=소리 믹서
 GenericName[lt]=Audio mikšeris
 GenericName[lv]=Audio mikseris

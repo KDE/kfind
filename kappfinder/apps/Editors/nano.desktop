@@ -2,6 +2,7 @@
 Name=Nano
 Name[bn]=ন্যানো
 Name[hi]=नेनो
+Name[kn]=ನಾನೋ
 Name[ne]=नानो
 Name[pa]=ਨਾਨੋ
 Name[sr]=Нано
@@ -42,6 +43,7 @@ GenericName[ja]=テキストエディタ
 GenericName[ka]=ტექსტური რედაქტორი
 GenericName[kk]=Мәтін редакторы
 GenericName[km]=កម្មវិធី​និពន្ធ​​អត្ថបទ
+GenericName[kn]=ಪಠ್ಯ ಸಂಪಾದಕ
 GenericName[ko]=텍스트 편집기
 GenericName[ku]=Edîtorê Nivîsan
 GenericName[lt]=Teksto redaktorius

@@ -2,6 +2,7 @@
 Name=Sylpheed
 Name[af]=Sylfeed
 Name[hi]=सिलफीड
+Name[kn]=ಸಿಲ್ಫೀಡ್
 Name[ne]=साइलफिड
 Name[pa]=ਸ਼ੀਲਫੀਡ
 Name[sr]=Силфид
@@ -41,6 +42,7 @@ GenericName[ja]=メールクライアント
 GenericName[ka]=ფოსტა
 GenericName[kk]=Эл.пошта клиенті
 GenericName[km]=កម្មវិធី​អ៊ីមែល
+GenericName[kn]=ಅಂಚೆ ಸೇವನಾರ್ಥಿ (ಕ್ಲಯಂಟ್)
 GenericName[ko]=메일 클라이언트
 GenericName[ku]=Daxwazkara Mailan
 GenericName[lt]=Pašto klientas
