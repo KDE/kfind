@@ -2,6 +2,7 @@
 Name=Wireshark
 Name[bn]=ওয়ায়ার-শার্ক
 Name[hi]=वायरशार्क
+Name[kn]=ವೈರ್ಶಾರ್ಕ್
 Name[ne]=वायरसार्क
 Name[pa]=ਵਾਇਰਸ਼ਾਰਕ
 Name[sr]=Вајершарк
@@ -41,6 +42,7 @@ GenericName[ja]=ネットワークアナライザ
 GenericName[ka]=ქსელის ანალიზატორი
 GenericName[kk]=Желіні талдаушы
 GenericName[km]=កម្មវិធី​វិភាគ​បណ្ដាញ
+GenericName[kn]=ಜಾಲಬಂಧ ವಿಶ್ಲೇಷಕ
 GenericName[ko]=네트워크 분석기
 GenericName[ku]=Analîzkara Torê
 GenericName[lt]=Tinklo analizatorius

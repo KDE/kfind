@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Nmapfe
 Name[hi]=एन-मैफे
+Name[kn]=ನ್ಮಾಪ್ಫೇ
 Name[sr]=Нмапфе
 Name[te]=ఎన్ మాప్ఎఫ్ఇ
 Name[x-test]=xxNmapfexx
@@ -37,6 +38,7 @@ GenericName[ja]=ポートスキャナ
 GenericName[ka]=პორტების სკანერი
 GenericName[kk]=Порт сканері
 GenericName[km]=កម្មវិធី​ស្កេន​ច្រក
+GenericName[kn]=ಸಂಪರ್ಕ ಕಿಂಡಿ (ಪೋರ್ಟ್) ಕ್ರಮವೀಕ್ಷಕ (ಸ್ಕಾನರ್)
 GenericName[ko]=포트 스캐너
 GenericName[ku]=Skenkera Portan
 GenericName[lt]=Prievadų skeneris

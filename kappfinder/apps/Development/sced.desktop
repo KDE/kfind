@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Sced
 Name[hi]=सेड(Sced)
+Name[kn]=ಸೆಡ್
 Name[ne]=स्केड
 Name[sr]=Сцед
 Name[ta]=ஓவியக்கருவி
@@ -37,6 +38,7 @@ GenericName[it]=Modellatore di scene
 GenericName[ja]=シーンモデラー
 GenericName[kk]=Көріністі үлгілеу құралы
 GenericName[km]=កម្មវិធី​ធ្វើ​គំរូ​រូបភាព
+GenericName[kn]=ದೃಶ್ಯ ಮಾದರಿಕಾರ
 GenericName[ko]=장면 모델러
 GenericName[ku]=Modelkirina Dîmenan
 GenericName[lt]=Scenos modeliuotojas

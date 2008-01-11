@@ -2,6 +2,7 @@
 Name=Pico
 Name[bn]=পিকো
 Name[hi]=पिको
+Name[kn]=ಪಿಕೋ
 Name[ne]=पिको
 Name[sr]=Пико
 Name[ta]=பிகோ
@@ -41,6 +42,7 @@ GenericName[ja]=テキストエディタ
 GenericName[ka]=ტექსტური რედაქტორი
 GenericName[kk]=Мәтін редакторы
 GenericName[km]=កម្មវិធី​និពន្ធ​​អត្ថបទ
+GenericName[kn]=ಪಠ್ಯ ಸಂಪಾದಕ
 GenericName[ko]=텍스트 편집기
 GenericName[ku]=Edîtorê Nivîsan
 GenericName[lt]=Teksto redaktorius

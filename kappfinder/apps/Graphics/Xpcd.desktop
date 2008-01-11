@@ -2,6 +2,7 @@
 Name=Xpcd
 Name[fr]=XPCD
 Name[hi]=एक्सपीसीडी
+Name[kn]=ಎಕ್ಸ್ಪಿಸಿಡಿ
 Name[sr]=Икс‑пцд
 Name[te]=ఎక్స్ పిసిడి
 Name[x-test]=xxXpcdxx
@@ -39,6 +40,7 @@ GenericName[ja]=PhotoCD ツール
 GenericName[ka]=PhotoCD–ს ხელსაწყოები
 GenericName[kk]=PhotoCD құралдары
 GenericName[km]=ឧបករណ៍ PhotoCD
+GenericName[kn]=ಚಿತ್ರ-ಅಡಕಮುದ್ರಿಕೆ ಸಲಕರಣೆ
 GenericName[ko]=PhotoCD 도구
 GenericName[ku]=Amûrên PhotoCD
 GenericName[lt]=PhotoCD įrankiai
