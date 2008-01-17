@@ -27,6 +27,7 @@
 #include <QObject>
 #include <Qt3Support/Q3Accel>
 #include <QByteArray>
+#include <QWidget>
 
 #include <stdlib.h>
 #include <unistd.h>
