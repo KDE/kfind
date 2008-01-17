@@ -58,7 +58,6 @@ KInfoCenterApp::KInfoCenterApp()
 {
   toplevel = new TopLevel();
 
-  setMainWidget(toplevel);
   // hmm? KApplication registers its KComponentData as the main and active component. Why is this
   // needed?
   //KGlobal::setActiveComponent(this);
@@ -84,6 +83,7 @@ KInfoCenterApp::KInfoCenterApp()
   int y = config.readEntry(QString::fromLatin1("InitialHeight %1").arg(desk.height()),
 			       qMin( desk.height(), 312 + (4*toplevel->logicalDpiX()*fontSize)/12 ) );
   toplevel->resize(x,y);
+  toplevel->show();
 }
 
 KInfoCenterApp::~KInfoCenterApp()
@@ -129,9 +129,6 @@ extern "C" KDE_EXPORT int kdemain(int argc, char *argv[])
   }
 
   KInfoCenterApp app;
-
-  // show the whole stuff
-  app.mainWidget()->show();
 
   return app.exec();
 }

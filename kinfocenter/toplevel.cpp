@@ -50,7 +50,7 @@
 #include "toplevel.moc"
 
 TopLevel::TopLevel()
-  : KXmlGuiWindow( 0, Qt::WStyle_ContextHelp  )
+  : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint  )
   , _active(0), dummyAbout(0)
 {
   setCaption(QString());
@@ -124,7 +124,7 @@ TopLevel::TopLevel()
   _dock = new DockContainer( _splitter );
 
   // That one does the trick ...
-  _splitter->setResizeMode( _tab, QSplitter::KeepSize );
+  _splitter->setStretchFactor( _splitter->indexOf( _tab ), 0 );
 
   connect(_dock, SIGNAL(newModule(const QString&, const QString&, const QString&)),
                   this, SLOT(newModule(const QString&, const QString&, const QString&)));
@@ -370,7 +370,7 @@ void TopLevel::categorySelected(Q3ListViewItem *category)
   // insert the about widget
   Q3ListViewItem *firstItem = category->firstChild();
   QString caption = static_cast<ModuleTreeItem*>(category)->caption();
-  if( _dock->baseWidget()->isA( "AboutWidget" ) )
+  if( qstrcmp(_dock->baseWidget()->metaObject()->className(), "AboutWidget" ) == 0)
   {
     static_cast<AboutWidget *>( _dock->baseWidget() )->setCategory( firstItem, caption);
   }
@@ -432,7 +432,7 @@ void TopLevel::deleteDummyAbout()
 
 void TopLevel::slotHelpRequest()
 {
-    _tab->showPage( _helptab );
+    _tab->setCurrentIndex( _tab->indexOf( _helptab ) );
 }
 
 void TopLevel::reportBug()

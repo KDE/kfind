@@ -106,7 +106,7 @@ void ConfigModule::deleteClient()
   kapp->syncX();
 
   if(_module)
-    _module->close(true);
+    _module->close();
   _module = 0;
 
   delete _embedLayout;

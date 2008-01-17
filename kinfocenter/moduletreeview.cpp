@@ -342,7 +342,8 @@ void ModuleTreeItem::paintCell( QPainter * p, const QColorGroup & cg, int column
       QPixmap pixmap(offset, offset);
       pixmap.fill(Qt::color0);
       pixmap.setMask(pixmap.createHeuristicMask());
-      QBitmap mask( pixmap.size(), true );
+      QBitmap mask( pixmap.size() );
+      mask.clear();
       pixmap.setMask( mask );
       Q3ListViewItem::setPixmap(0, pixmap);
     }
