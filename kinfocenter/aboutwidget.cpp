@@ -164,7 +164,7 @@ void AboutWidget::updatePixmap()
                 szName = module->moduleName();
                 szComment = module->comment();
                 content += "<a href=\"%1\" class=\"kcm_link\">" + szName + "</a></td><td class=\"kc_rightcol\">" + szComment;
-                KUrl moduleURL(QString("kcm://%1").arg(QString().sprintf("%p",module)) );
+                KUrl moduleURL(QString("kcm://%1").arg(QString().sprintf("%p",(void*)module)) );
                 QString linkURL( moduleURL.url() );
                 content = content.arg( linkURL );
                 _moduleMap.insert( linkURL, module );
