@@ -1,0 +1,22 @@
+# libmach for Tru64
+# linux/raw.h for Linux
+# devinfo.h, libdevinfo for the list of {IRQ,DMA,IOPORTS/MEMRANGES} for FreeBSD
+
+case "$host" in
+  *-*-osf*)
+    AC_CHECK_LIB(mach, vm_statistics, LIB_TRU64_MACH="-lmach")dnl
+    ;;
+  *-*-linux*)
+    AC_CHECK_HEADERS(linux/raw.h sys/raw.h)dnl
+    ;;
+  *-*-freebsd*)
+    AC_CHECK_HEADERS(devinfo.h)
+    AC_CHECK_LIB(devinfo, devinfo_foreach_rman, LIBDEVINFO="-ldevinfo")
+    ;;
+esac
+AC_SUBST(LIB_TRU64_MACH)
+
+AC_HAVE_GL( have_gl=yes, have_gl=no )
+AM_CONDITIONAL(COMPILE_GL_INFO, test x$have_gl = xyes)
+
+KDE_CHECK_LONG_LONG
