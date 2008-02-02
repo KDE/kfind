@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=NcFTP
-Name[eo]=NcFtp
 Name[hi]=एनसीएफटीपी
 Name[hu]=ncFTP
 Name[sr]=НцФТП
@@ -20,7 +19,6 @@ GenericName[cy]=Dibynnydd FTP
 GenericName[da]=FTP-klient
 GenericName[de]=FTP-Programm
 GenericName[el]=Πελάτης FTP
-GenericName[eo]=FTP-kliento
 GenericName[es]=Cliente FTP
 GenericName[et]=FTP klient
 GenericName[eu]=FTP bezeroa

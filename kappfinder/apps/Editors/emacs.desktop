@@ -2,7 +2,6 @@
 Name=Emacs
 Name[ar]=إيماكس
 Name[bn]=ইম্যাক্স
-Name[eo]=Emakso
 Name[hi]=ईमेक्स
 Name[ne]=इमाक्स
 Name[sr]=Емакс
@@ -21,7 +20,6 @@ GenericName[cy]=Golygydd Testun
 GenericName[da]= Teksteditor
 GenericName[de]=Texteditor
 GenericName[el]=Επεξεργαστής κειμένου
-GenericName[eo]=Teksta redaktilo
 GenericName[es]=Editor de texto
 GenericName[et]=Tekstiredaktor
 GenericName[eu]=Testu editorea
