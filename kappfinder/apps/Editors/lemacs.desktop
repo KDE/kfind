@@ -2,7 +2,6 @@
 Name=Lucid Emacs
 Name[bn]=লুসিড ইম্যাক্স
 Name[cy]=Emacs Eglur
-Name[eo]=Lucid-Emakso
 Name[hi]=ल्यूसिड ईमेक्स
 Name[ne]=लुसिड इमाक्स
 Name[sr]=Луцидов Емакс
@@ -23,7 +22,6 @@ GenericName[cy]=Golygydd Testun
 GenericName[da]= Teksteditor
 GenericName[de]=Texteditor
 GenericName[el]=Επεξεργαστής κειμένου
-GenericName[eo]=Teksta redaktilo
 GenericName[es]=Editor de texto
 GenericName[et]=Tekstiredaktor
 GenericName[eu]=Testu editorea
