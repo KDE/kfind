@@ -5,7 +5,9 @@ add_definitions (-DQT3_SUPPORT -DQT3_SUPPORT_WARNINGS)
 add_subdirectory( info )
 add_subdirectory( nics )
 add_subdirectory( usbview )
+
 macro_optional_find_package(RAW1394)
+macro_log_feature(RAW1394_FOUND "RAW1394" "library for direct access to IEEE 1394 bus" "http://www.linux1394.org/" FALSE "" "View FireWire devices in kinfocenter.")
 
 if(RAW1394_FOUND)
    add_subdirectory( view1394 )
