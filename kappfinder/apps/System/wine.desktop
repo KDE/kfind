@@ -2,6 +2,7 @@
 Exec=wine %f
 Name=Wine
 Name[bn]=ওয়াইন
+Name[gu]=વાઇન
 Name[hi]=वाइन
 Name[ne]=रक्सी
 Name[pa]=ਵਾਈਨ
@@ -32,6 +33,7 @@ GenericName[fr]=Fait fonctionner des programmes Windows
 GenericName[fy]=Windows-programma's útfiere
 GenericName[ga]=Rith Feidhmchláir Windows
 GenericName[gl]=Executar programas de Windows
+GenericName[gu]=વિન્ડોઝ કાર્યક્રમ ચલાવો
 GenericName[he]=הפעלת תוכניות של Windows
 GenericName[hi]=विंडो प्रोग्राम चलाए
 GenericName[hr]=Pokretanje Windows programa

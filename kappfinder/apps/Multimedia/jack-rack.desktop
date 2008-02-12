@@ -2,6 +2,7 @@
 Exec=jack-rack
 Icon=
 Name=Jack-Rack
+Name[gu]=જેક-રેક
 Name[hi]=जैक-रेक
 Name[is]=Jack-Stæða
 Name[ne]=ज्याक-र्याक
@@ -16,6 +17,7 @@ GenericName[de]=Jack-Effectrack
 GenericName[eo]=Jack efektotrakilo
 GenericName[ga]=Rian Maisíochta Jack
 GenericName[gl]=Pista de efeitos de Jack
+GenericName[gu]=જેક ઇફેક્ટટ્રેક
 GenericName[hi]=जैक इफैक्ट्रैक
 GenericName[hu]=Effektusok a Jackhez
 GenericName[is]=Jack Effektastæða

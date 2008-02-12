@@ -2,6 +2,7 @@
 Name=Jazz
 Name[be]=Джаз
 Name[fa]=جاز
+Name[gu]=જાઝ
 Name[hi]=ज़ैज
 Name[ka]=ჯაზი
 Name[ne]=ज्याज
@@ -32,6 +33,7 @@ GenericName[fr]=Outil de traitement du son
 GenericName[fy]=lûdsstudio
 GenericName[ga]=Próiseálaí Fuaime
 GenericName[gl]=Procesador de son
+GenericName[gu]=સાઉન્ડ પ્રોસેસર
 GenericName[he]=מעבד צליל
 GenericName[hi]=ध्वनि प्रोसेसर
 GenericName[hr]=Procesor zvuka

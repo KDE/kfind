@@ -2,6 +2,7 @@
 Name=WordPerfect
 Name[af]=Wordperfect
 Name[bn]=ওয়ার্ড-পারফেক্ট
+Name[gu]=વર્ડપરફેક્ટ
 Name[hi]=वर्डपरफेक्ट
 Name[hr]=Wordperfect
 Name[ne]=वर्ड पर्फेक्ट
@@ -41,6 +42,7 @@ GenericName[fr]=Traitement de texte
 GenericName[fy]=Tekstferwurker
 GenericName[ga]=Próiseálaí Focal
 GenericName[gl]=Procesador de textos
+GenericName[gu]=વર્ડ પ્રોસેસર
 GenericName[he]=מעבד תמלילים
 GenericName[hi]=वर्ड प्रोसेसर
 GenericName[hr]=Program za obrada teksta

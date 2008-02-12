@@ -2,6 +2,7 @@
 Name=Galeon
 Name[ar]=جاليون
 Name[bn]=গ্যালিয়ন
+Name[gu]=ગેલોન
 Name[hi]=गेलियन
 Name[kn]=ಗ್ಯಾಲಿಯಾನ್
 Name[ne]=ग्यालियन
@@ -35,6 +36,7 @@ GenericName[fr]=Navigateur web
 GenericName[fy]=Webblêder
 GenericName[ga]=Brabhsálaí Gréasáin
 GenericName[gl]=Navegador Web
+GenericName[gu]=વેબ બ્રાઉઝર
 GenericName[he]=דפדפן אינטרנט
 GenericName[hi]=वेब ब्राउज़र
 GenericName[hr]=Web preglednik

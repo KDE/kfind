@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Wireshark
 Name[bn]=ওয়ায়ার-শার্ক
+Name[gu]=વાયરશાર્ક
 Name[hi]=वायरशार्क
 Name[kn]=ವೈರ್ಶಾರ್ಕ್
 Name[ne]=वायरसार्क
@@ -32,6 +33,7 @@ GenericName[fr]=Analyseur réseau
 GenericName[fy]=Netwurkanalyze
 GenericName[ga]=Anailíseoir Líonra
 GenericName[gl]=Analisador da rede
+GenericName[gu]=નેટવર્ક એનલાઇઝર
 GenericName[he]=מאבחן רשת
 GenericName[hi]=नेटवर्क एनॉलाइज़र
 GenericName[hr]=Analizator mreže

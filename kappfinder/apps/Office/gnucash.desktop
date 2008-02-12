@@ -2,6 +2,7 @@
 Name=GnuCash
 Name[bn]=গনিউ-ক্যাশ
 Name[csb]=Gnu - dëtczi
+Name[gu]=ગ્નુકેશ
 Name[hi]=ग्नूकैश
 Name[ne]=जीएनयू क्यास
 Name[pa]=ਗਨੂਕੈਸ਼
@@ -36,6 +37,7 @@ GenericName[fr]=Gestionnaire de finances
 GenericName[fy]=Finansjeel behear
 GenericName[ga]=Bainisteoir Airgeadais
 GenericName[gl]=Xestor de finanzas
+GenericName[gu]=નાણાં વ્યવસ્થાપક
 GenericName[he]=מנהל כספים
 GenericName[hi]=वित्तीय प्रबंधक
 GenericName[hr]=Rukovoditelj financija
