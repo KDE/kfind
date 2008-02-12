@@ -2,6 +2,7 @@
 Name=Epiphany
 Name[ar]=إبِفِني
 Name[bn]=এপিফেনি
+Name[gu]=એપિફની
 Name[hi]=एपिफेनी
 Name[ja]=Ephiphany ウェブブラウザ
 Name[kn]=ಎಪಿಫೆನಿ
@@ -37,6 +38,7 @@ GenericName[fr]=Navigateur web
 GenericName[fy]=Webblêder
 GenericName[ga]=Brabhsálaí Gréasáin
 GenericName[gl]=Navegador Web
+GenericName[gu]=વેબ બ્રાઉઝર
 GenericName[he]=דפדפן אינטרנט
 GenericName[hi]=वेब ब्राउज़र
 GenericName[hr]=Web preglednik

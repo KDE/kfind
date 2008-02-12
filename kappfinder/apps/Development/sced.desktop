@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Sced
+Name[gu]=સ્કેડ
 Name[hi]=सेड(Sced)
 Name[kn]=ಸೆಡ್
 Name[ne]=स्केड
@@ -29,6 +30,7 @@ GenericName[fr]=Modeleur de scène
 GenericName[fy]=Sêne-modelearprogramma
 GenericName[ga]=Insamhlóir Amhairc
 GenericName[gl]=Modelador de cenarios
+GenericName[gu]=સીન મોડેલર
 GenericName[he]=ממדל סצנות
 GenericName[hi]=सीन माडलर
 GenericName[hr]=Program za modeliranje scena

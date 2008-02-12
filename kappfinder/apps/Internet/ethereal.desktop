@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Ethereal
 Name[bn]=এথিরিয়েল
+Name[gu]=ઇથરનલ
 Name[hi]=एथरियल
 Name[kn]=ಇಥೀರಿಯಲ್
 Name[ne]=इथेरियल
@@ -34,6 +35,7 @@ GenericName[fr]=Analyseur réseau
 GenericName[fy]=Netwurkanalyze
 GenericName[ga]=Anailíseoir Líonra
 GenericName[gl]=Analisador da rede
+GenericName[gu]=નેટવર્ક એનલાઇઝર
 GenericName[he]=מאבחן רשת
 GenericName[hi]=नेटवर्क एनॉलाइज़र
 GenericName[hr]=Analizator mreže

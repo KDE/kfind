@@ -2,6 +2,7 @@
 Exec=eclipse
 Name=Eclipse
 Name[bn]=একলিপ্স
+Name[gu]=ઇક્લિપ્સ
 Name[hi]=एक्लिप्स
 Name[kn]=ಎಕ್ಲಿಪ್ಸ್
 Name[ku]=Girtin
@@ -28,6 +29,7 @@ GenericName[fi]=Eclipse-kehitysympäristö
 GenericName[fr]=Environnement de développement intégré Eclipse
 GenericName[ga]=IDE Eclipse
 GenericName[gl]=IDE Eclipse
+GenericName[gu]=ઇક્લિપ્સ IDE
 GenericName[he]=סביבת הפיתוח המשולבת Eclipse
 GenericName[hi]=एक्लिप्स आईडीई
 GenericName[is]=Eclipse forritunarumhverfi

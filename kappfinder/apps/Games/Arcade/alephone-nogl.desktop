@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Alephone
 Name[bn]=অ্যালিফোন
+Name[gu]=અલેફોન
 Name[hi]=एलिफोन
 Name[hu]=Alaphone
 Name[kn]=ಅಲೆಫೋನ್
@@ -34,6 +35,7 @@ Comment[fr]=Une version open source de Marathon Infinity pour SDL
 Comment[fy]=In Iepen boarne-ferzje fan Marathon Infinity foar SDL
 Comment[ga]=Leagan saorbhogearra de Marathon Infinity le haghaidh SDL
 Comment[gl]=Unha versión de código aberto de Marathon Infinity para SDL
+Comment[gu]=SDL માટે મેરેથોન ઇન્ફિનિટીની ઓપન સોર્સ આવૃત્તિ
 Comment[he]=גרסת קוד פתוח של Marathon Infinity עבור SDL
 Comment[hi]=एसडीएल के लिए मेराथन इनफिनिटी का ओपन सोर्स संस्करण
 Comment[hr]=Verzija Marathon Infinity za SDL, otvorenog koda

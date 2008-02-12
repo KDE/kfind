@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Slab
 Name[bn]=স্ল্যাব
+Name[gu]=સ્લાબ
 Name[hi]=स्लैब
 Name[ne]=स्ल्याब
 Name[sr]=Слаб
@@ -30,6 +31,7 @@ GenericName[fr]=Enregistreur audio
 GenericName[fy]=lûdsrekorder
 GenericName[ga]=Taifeadán Fuaime
 GenericName[gl]=Gravador de son
+GenericName[gu]=ઓડિઓ રેકોર્ડર
 GenericName[he]=רשמקול
 GenericName[hi]=ऑडियो रेकॉर्डर
 GenericName[hr]=Snimač zvuka

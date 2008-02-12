@@ -2,6 +2,7 @@
 Exec=jamin
 Icon=
 Name=Jamin
+Name[gu]=જામીન
 Name[hi]=जामिन
 Name[ku]=Jamaîka
 Name[ne]=जामिन
@@ -24,6 +25,7 @@ GenericName[fr]=Outil Jack
 GenericName[fy]=Jack Mastering Ark
 GenericName[ga]=Uirlis Mháistirchóipeála Jack
 GenericName[gl]=Ferramenta de maquetación de Jack
+GenericName[gu]=જેક માસ્ટરીંગ સાધન
 GenericName[hi]=जैक मास्टरिंग औज़ार
 GenericName[hu]=Jack mestereszköz
 GenericName[is]=Jack tónlistarforritið

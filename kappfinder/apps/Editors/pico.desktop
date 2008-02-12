@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Pico
 Name[bn]=পিকো
+Name[gu]=પીકો
 Name[hi]=पिको
 Name[kn]=ಪಿಕೋ
 Name[ne]=पिको
@@ -32,6 +33,7 @@ GenericName[fr]=Éditeur de texte
 GenericName[fy]=Tekstbewurker
 GenericName[ga]=Eagarthóir Téacs
 GenericName[gl]=Editor de textos
+GenericName[gu]=લખાણ સંપાદક
 GenericName[he]=עורך טקסט
 GenericName[hi]=पाठ संपादक
 GenericName[hr]=Uređivač teksta

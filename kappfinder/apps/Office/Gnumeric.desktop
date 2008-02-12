@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Gnumeric
 Name[bn]=গনিউমেরিক
+Name[gu]=જીન્યુમેરિક
 Name[hi]=जीन्यूमेरिक
 Name[ne]=जिन्युमेरिक
 Name[pa]=ਜੀ-ਸਾਰਣੀਕਾਰ
@@ -30,6 +31,7 @@ GenericName[fr]=Tableur
 GenericName[fy]=Rekkenblêd
 GenericName[ga]=Scarbhileog
 GenericName[gl]=Folla de cálculo
+GenericName[gu]=સ્પ્રેડ શીટ
 GenericName[he]=גיליון אלקטרוני
 GenericName[hi]=स्प्रेड शीट
 GenericName[hr]=Proračunska tablica

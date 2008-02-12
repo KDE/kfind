@@ -2,6 +2,7 @@
 Name=AbiWord
 Name[af]=Abiword
 Name[bn]=এবি-ওয়ার্ড
+Name[gu]=અબીવર્ડ
 Name[hi]=एबीवर्ड
 Name[ne]=एबीआई वर्ड
 Name[pa]=ਅਬੀਵਰਡ
@@ -34,6 +35,7 @@ GenericName[fr]=Traitement de texte
 GenericName[fy]=Tekstferwurker
 GenericName[ga]=Próiseálaí Focal
 GenericName[gl]=Procesador de textos
+GenericName[gu]=વર્ડ પ્રોસેસર
 GenericName[he]=מעבד תמלילים
 GenericName[hi]=वर्ड प्रोसेसर
 GenericName[hr]=Program za obrada teksta

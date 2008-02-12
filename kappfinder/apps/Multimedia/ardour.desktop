@@ -2,6 +2,7 @@
 Exec=ardour
 Icon=
 Name=Ardour
+Name[gu]=અર્ડોઉર
 Name[hi]=ऑरडर
 Name[ne]=उत्सुक
 Name[pa]=ਅਰਡੁਰ
@@ -23,6 +24,7 @@ GenericName[fr]=Studio audio multi pistes
 GenericName[fy]=Multyspoor Audio Studio
 GenericName[ga]=Stiúideo Fuaime Ilrian
 GenericName[gl]=Estudio de son multipista
+GenericName[gu]=મલ્ટિટ્રેક ઓડિઓ સ્ટુડિઓ
 GenericName[he]=סטודיו שמע מרובה רצועות
 GenericName[hi]=मल्टीट्रैक ऑडियो स्टूडियो
 GenericName[hu]=Többsávos hangstúdió
