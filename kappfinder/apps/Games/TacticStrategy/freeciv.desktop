@@ -2,6 +2,7 @@
 Version=1.0
 Name=Freeciv
 Name[bn]=ফ্রীসিভ
+Name[eo]=FreeCiv
 Name[hi]=फ्रीसिव
 Name[ne]=फ्रिसिभ
 Name[pa]=ਫਰੀਕਿਵ
@@ -27,6 +28,7 @@ GenericName[cy]=Gêm Strategaeth
 GenericName[da]=Strategispil
 GenericName[de]=Strategiespiel
 GenericName[el]=Παιχνίδι στρατηγικής
+GenericName[eo]=Strategiludo
 GenericName[es]=Juego de estrategia
 GenericName[et]=Strateegiamäng
 GenericName[eu]=Estrategia jokoa
