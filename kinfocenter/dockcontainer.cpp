@@ -227,7 +227,7 @@ i18n("There are unsaved changes in the active module.\n"
 
   ProxyWidget *widget = loadModule( module );
 
-  KCGlobal::repairAccels( topLevelWidget() );
+  KCGlobal::repairAccels( window() );
   return ( widget!=0 );
 }
 
