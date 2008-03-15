@@ -2,6 +2,7 @@ add_subdirectory( about )
 
 add_definitions (-DQT3_SUPPORT -DQT3_SUPPORT_WARNINGS)
 
+add_subdirectory( solidproc )
 add_subdirectory( info )
 add_subdirectory( nics )
 add_subdirectory( usbview )

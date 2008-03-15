@@ -1,0 +1,13 @@
+[Desktop Entry]
+Exec=kcmshell4 kcmsolidproc
+Type=Service
+X-KDE-ServiceTypes=KCModule
+X-DocPath=kinfocenter/solidproc/index.html
+Icon=cpu
+
+X-KDE-Library=kcm_solidproc
+X-KDE-ParentApp=kinfocenter
+
+Name=Processor Information
+
+Categories=Qt;KDE;X-KDE-information;
