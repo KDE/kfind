@@ -602,7 +602,6 @@ static Q3ListViewItem *get_gl_info(Display *dpy, int scrnum, Bool allowDirect,Q3
    }
    else {
       kDebug() << "Error: glXMakeCurrent failed\n";
-      glXDestroyContext(dpy, ctx);
    }
 
    glXDestroyContext(dpy, ctx);
