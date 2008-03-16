@@ -30,6 +30,7 @@
 #include <Qt3Support/Q3Header>
 #include <klocale.h>
 #include <QLayout>
+#include <QProcess>
 //Added by qt3to4:
 #include <QLabel>
 #include <QHBoxLayout>
@@ -438,20 +439,20 @@ KInfoListWidget::KInfoListWidget(const KComponentData &inst,const QString &_titl
 }
 
 
-
 /* Helper-function to read output from an external program */
 static int GetInfo_ReadfromPipe( Q3ListView *lBox, const char *FileName, bool WithEmptyLines = true )
 {
-    FILE *pipe;
+    QProcess proc;
     Q3ListViewItem* olditem = 0L;
     QString s;
-
-    if ((pipe = popen(FileName, "r")) == NULL) {
-	pclose(pipe);
-	return 0;
+    
+    proc.start(FileName, QIODevice::ReadOnly);
+    if (!proc.waitForFinished()) {
+        // Process hanged or did not start
+        return 0;
     }
 
-    QTextStream t(pipe, QIODevice::ReadOnly);
+    QTextStream t(&proc);
 
     while (!t.atEnd()) {
 	s = t.readLine();
@@ -459,8 +460,6 @@ static int GetInfo_ReadfromPipe( Q3ListView *lBox, const char *FileName, bool Wi
 		continue;
        	olditem = new Q3ListViewItem(lBox, olditem, s);
     }
-
-    pclose(pipe);
 
     return (lBox->childCount());
 }
