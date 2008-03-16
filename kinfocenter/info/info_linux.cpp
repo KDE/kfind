@@ -96,11 +96,11 @@ bool GetInfo_ReadfromFile(Q3ListView * lbox, const char *FileName,
 	return false;
     }
     QTextStream stream(&file);
-    QString line;
 
-    while (!stream.atEnd()) {
+    QString line = stream.readLine();
+
+    while (!line.isNull()) {
 	QString s1, s2;
-	line = stream.readLine();
 	if (!line.isEmpty()) {
 	    if (!splitChar.isNull()) {
 		int pos = line.indexOf(splitChar);
@@ -112,6 +112,7 @@ bool GetInfo_ReadfromFile(Q3ListView * lbox, const char *FileName,
 	}
 	lastitem = new Q3ListViewItem(lbox, lastitem, s1, s2);
 	added = true;
+	line = stream.readLine();
     }
 
     file.close();
@@ -150,14 +151,15 @@ bool GetInfo_DMA(Q3ListView * lBox)
 	QString line;
 	Q3ListViewItem *child=0L;
 
-	while (!stream.atEnd()) {
-	    line = stream.readLine();
+	line = stream.readLine();
+	while (!line.isNull()) {
 	    if (!line.isEmpty()) {
 		QRegExp rx("^\\s*(\\S+)\\s*:\\s*(\\S+)");
 		if (-1 != rx.indexIn(line)) {
 		    child = new Q3ListViewItem(lBox,child,rx.cap(1),rx.cap(2));
 		}
 	    }
+	    line = stream.readLine();
 	}
 	file.close();
     } else {
@@ -217,11 +219,11 @@ bool GetInfo_Devices(Q3ListView * lBox)
     file.setFileName(INFO_DEVICES);
     if (file.exists() && file.open(QIODevice::ReadOnly)) {
 	QTextStream stream(&file);
-	QString line;
 	Q3ListViewItem *parent=0L, *child=0L;
 
-	while (!stream.atEnd()) {
-	    line = stream.readLine();
+	QString line = stream.readLine();
+
+	while (!line.isNull()) {
 	    if (!line.isEmpty()) {
 		if (-1 != line.indexOf("character device",0,Qt::CaseInsensitive)) {
 		    parent = new Q3ListViewItem(lBox,parent,i18n("Character Devices"));
@@ -245,6 +247,7 @@ bool GetInfo_Devices(Q3ListView * lBox)
 		    }
 		}
 	    }
+	    line = stream.readLine();
 	}
 	file.close();
     } else {
@@ -254,21 +257,22 @@ bool GetInfo_Devices(Q3ListView * lBox)
     file.setFileName(INFO_MISC);
     if (misc && file.exists() && file.open(QIODevice::ReadOnly)) {
 	QTextStream stream(&file);
-	QString line;
 	Q3ListViewItem *child=0L;
 
 	misc->setText(0,i18n("Miscellaneous Devices"));
 	misc->setPixmap(0,SmallIcon("memory"));
 	misc->setOpen(true);
 
-	while (!stream.atEnd()) {
-	    line = stream.readLine();
+	QString line = stream.readLine();
+
+	while (!line.isNull()) {
 	    if (!line.isEmpty()) {
 		QRegExp rx("^\\s*(\\S+)\\s+(\\S+)");
 		if (-1 != rx.indexIn(line)) {
 		    child = new Q3ListViewItem(misc,child,rx.cap(2),"10",rx.cap(1));
 		}
 	    }
+	    line = stream.readLine();
 	}
 	file.close();
     }
