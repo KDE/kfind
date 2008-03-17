@@ -9,5 +9,6 @@ X-KDE-Library=kcm_solidproc
 X-KDE-ParentApp=kinfocenter
 
 Name=Processor Information
+Name[zh_TW]=處理器資訊
 
 Categories=Qt;KDE;X-KDE-information;
