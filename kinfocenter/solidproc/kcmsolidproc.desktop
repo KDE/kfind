@@ -12,6 +12,7 @@ Name=Processor Information
 Name[km]=ព័ត៌មាន​ប្រព័ន្ធ​ដំណើរការ
 Name[pt]=Informação do Processador
 Name[pt_BR]=Informação do Processador
+Name[uk]=Інформація про процесор
 Name[zh_TW]=處理器資訊
 
 Categories=Qt;KDE;X-KDE-information;
