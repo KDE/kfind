@@ -9,6 +9,7 @@ X-KDE-Library=kcm_solidproc
 X-KDE-ParentApp=kinfocenter
 
 Name=Processor Information
+Name[gu]=પ્રોસેસર માહિતી
 Name[km]=ព័ត៌មាន​ប្រព័ន្ធ​ដំណើរការ
 Name[pt]=Informação do Processador
 Name[pt_BR]=Informação do Processador
