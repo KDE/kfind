@@ -6,25 +6,24 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>397</height>
    </rect>
   </property>
   <property name="windowTitle" >
    <string>Form</string>
   </property>
-  <layout class="QHBoxLayout" >
+  <layout class="QVBoxLayout" >
    <item>
-    <widget class="Q3ListView" name="listView" />
+    <widget class="QTreeWidget" name="glinfoTreeWidget" >
+     <column>
+      <property name="text" >
+       <string>1</string>
+      </property>
+     </column>
+    </widget>
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>Q3ListView</class>
-   <extends>Q3Frame</extends>
-   <header>q3listview.h</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
