@@ -12,8 +12,7 @@ if(OPENGL_FOUND AND OPENGL_GLU_FOUND)
 
     kde4_add_plugin(kcm_opengl ${KCM_OPENGL_PART_SRCS} ${KCM_OPENGL_PART_UIS_H})
 
-    # FIXME: Remove need for Qt3Support
-    target_link_libraries(kcm_opengl ${KDE4_KDEUI_LIBS} ${QT_QTGUI_LIBRARY} ${QT_QT3SUPPORT_LIBRARY} ${X11_X11_LIB} ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
+    target_link_libraries(kcm_opengl ${KDE4_KDEUI_LIBS} ${QT_QTGUI_LIBRARY} ${X11_X11_LIB} ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
 
     install(TARGETS kcm_opengl  DESTINATION ${PLUGIN_INSTALL_DIR})
 

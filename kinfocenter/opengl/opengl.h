@@ -32,6 +32,9 @@ class KCMOpenGL: public KCModule, public Ui::OpenGL
     public:
         explicit KCMOpenGL(QWidget *parent = 0, const QVariantList &list = QVariantList() );
 
+    protected slots:
+        virtual void treeWidgetChanged();
+
 };
 
 #endif
