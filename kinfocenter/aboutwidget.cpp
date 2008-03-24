@@ -37,7 +37,7 @@
 
 static const char kcc_text[] = I18N_NOOP("KDE Control Center");
 
-static const char title_text[] = I18N_NOOP("Configure your desktop environment");
+static const char title_text[] = I18N_NOOP("Configure your desktop environment.");
 
 static const char intro_text[] = I18N_NOOP("Welcome to the \"KDE Control Center\", "
                                 "a central place to configure your "
