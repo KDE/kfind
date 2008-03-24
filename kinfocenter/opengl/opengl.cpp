@@ -1,54 +1,86 @@
-/***************************************************************************
- *                                                                         *
- *   Copyright (C) 2004 by Ilya Korniyko  <k_ilya@ukr.net>                 *
- *   Adapted from Brian Paul's glxinfo from Mesa demos (http:/www.mesa3d.org)
- *   Copyright (C) 1999-2002  Brian Paul                                   *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- *   This program is distributed in the hope that it will be useful,      *
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
- *   GNU General Public License for more details.                          *
- *                                                                         *
- *   You should have received a copy of the GNU General Public License     *
- *   along with this program; if not, write to the                         *
- *   Free Software Foundation, Inc.,                                      *
- *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.             *
- ***************************************************************************/
+/*
+ *  solidproc.cpp
+ *
+ *  Copyright (C) 2008 Ivo Anjo <knuckles@gmail.com>
+ *  Copyright (C) 2004 Ilya Korniyko <k_ilya@ukr.net>
+ *  Adapted from Brian Paul's glxinfo from Mesa demos (http:/www.mesa3d.org)
+ *  Copyright (C) 1999-2002 Brian Paul
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, write to the Free Software
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
 
-#if defined(INFO_OPENGL_AVAILABLE)
-
-#define KCMGL_DO_GLU
-
+#include <QtGui>
 #include <QRegExp>
-#include <q3listview.h>
 #include <QFile>
-
-//Added by qt3to4:
 #include <QTextStream>
 
+#include <KPluginFactory>
+#include <KPluginLoader>
+
+#include <kaboutdata.h>
+#include <kdialog.h>
 #include <klocale.h>
 #include <kmessagebox.h>
 #include <kdebug.h>
 
+// X11 includes
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 
-#ifdef KCMGL_DO_GLU
+// GLU includes
 #include <GL/glu.h>
-#endif
 
+// OpenGL includes
 #include <GL/gl.h>
 #include <GL/glext.h>
 #include <GL/glx.h>
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+// FIXME: Remove need for Qt3Support
+#include <Q3ListView>
+#include <Q3ListViewItem>
+
+#include "opengl.h"
+#include "opengl.moc"
+
+K_PLUGIN_FACTORY(KCMOpenGLFactory,
+    registerPlugin<KCMOpenGL>();
+)
+K_EXPORT_PLUGIN(KCMOpenGLFactory("kcmopengl"))
+
+// FIXME: Temporary!
+bool GetInfo_OpenGL(Q3ListView * lBox);
+
+KCMOpenGL::KCMOpenGL(QWidget *parent, const QVariantList &)
+    : KCModule(KCMOpenGLFactory::componentData(), parent)
+{
+    setupUi(this);
+    
+    GetInfo_OpenGL(listView);
+    
+    KAboutData *about =
+    new KAboutData(I18N_NOOP("kcmopengl"), 0,
+        ki18n("KCM OpenGL Information"),
+        0, KLocalizedString(), KAboutData::License_GPL,
+        ki18n("(c) 2008 Ivo Anjo\n(c) 2004 Ilya Korniyko\n(c) 1999-2002 Brian Paul"));
+
+    about->addAuthor(ki18n("Ivo Anjo"), KLocalizedString(), "knuckles@gmail.com");
+    about->addAuthor(ki18n("Ilya Korniyko"), KLocalizedString(), "k_ilya@ukr.net");
+    about->addCredit(ki18n("Helge Deller"), ki18n("Original Maintainer"), "deller@gmx.de");
+    about->addCredit(ki18n("Brian Paul"), ki18n("Author of glxinfo Mesa demos (http:/www.mesa3d.org)"));
+    setAboutData(about);
+}
 
 static bool IsDirect;
 
@@ -518,12 +550,10 @@ void print_glx_glu(Q3ListViewItem *l1, Q3ListViewItem *l2)
     l3 = new Q3ListViewItem(l2, l3, i18n("GLX extensions"));
     print_extension_list(gli.glxExtensions,l3);
 
-#ifdef KCMGL_DO_GLU
     l2 = new Q3ListViewItem(l1, l2, i18n("GLU"));
     l3 = new Q3ListViewItem(l2, i18n("GLU version"), gli.gluVersion);
     l3 = new Q3ListViewItem(l2, l3, i18n("GLU extensions"));
     print_extension_list(gli.gluExtensions,l3);
-#endif
 
 }
 
@@ -592,10 +622,9 @@ static Q3ListViewItem *get_gl_info(Display *dpy, int scrnum, Bool allowDirect,Q3
       gli.glVersion = (const char *) glGetString(GL_VERSION);
       gli.glExtensions = (const char *) glGetString(GL_EXTENSIONS);
       gli.displayName = NULL;
-#ifdef KCMGL_DO_GLU
       gli.gluVersion = (const char *) gluGetString(GLU_VERSION);
       gli.gluExtensions = (const char *) gluGetString(GLU_EXTENSIONS);
-#endif
+
       IsDirect = glXIsDirect(dpy, ctx);
 
       result = print_screen_info(l1, after);
@@ -662,6 +691,3 @@ bool GetInfo_OpenGL(Q3ListView * lBox)
 {
     return GetInfo_OpenGL_Generic(lBox);
 }
-
-#endif /* INFO_OPENGL_AVAILABLE */
-

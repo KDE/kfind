@@ -27,7 +27,6 @@ bool GetInfo_Devices( Q3ListView *lBox );
 bool GetInfo_SCSI( Q3ListView *lBox );
 bool GetInfo_Partitions( Q3ListView *lBox );
 bool GetInfo_XServer_and_Video( Q3ListView *lBox );
-extern bool GetInfo_OpenGL( Q3ListView *lBox );
 
 class KInfoListWidget : public KCModule
 {

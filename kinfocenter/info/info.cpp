@@ -491,7 +491,7 @@ static int GetInfo_ReadfromPipe( Q3ListView *lBox, const char *FileName, bool Wi
 #elif defined(__APPLE__)
 #include "info_osx.cpp"
 #else
-#include "info_generic.cpp"	/* Default for unsupportet systems.... */
+#include "info_generic.cpp"	/* Default for unsupported systems.... */
 #endif
 
 /*

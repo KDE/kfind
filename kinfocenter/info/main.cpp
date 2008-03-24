@@ -84,9 +84,6 @@ CREATE_FACTORY(Partitions, i18n("Partitions"))
 #ifdef INFO_XSERVER_AVAILABLE
 CREATE_FACTORY(XServer_and_Video, i18n("X-Server"))
 #endif
-#ifdef INFO_OPENGL_AVAILABLE
-CREATE_FACTORY(OpenGL, i18n("OpenGL"))
-#endif
 
 KInfoModulesFactory::KInfoModulesFactory(const char *componentName)
     : KPluginFactory(componentName)
@@ -122,9 +119,6 @@ KInfoModulesFactory::KInfoModulesFactory(const char *componentName)
 #endif
 #ifdef INFO_XSERVER_AVAILABLE
     registerPlugin<KXServer_and_VideoInfoWidget>("xserver");
-#endif
-#ifdef INFO_OPENGL_AVAILABLE
-    registerPlugin<KOpenGLInfoWidget>("opengl");
 #endif
 }
 
