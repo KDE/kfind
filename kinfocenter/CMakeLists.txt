@@ -6,6 +6,7 @@ add_subdirectory( solidproc )
 add_subdirectory( info )
 add_subdirectory( nics )
 add_subdirectory( usbview )
+add_subdirectory( opengl )
 
 macro_optional_find_package(RAW1394)
 macro_log_feature(RAW1394_FOUND "RAW1394" "library for direct access to IEEE 1394 bus" "http://www.linux1394.org/" FALSE "" "View FireWire devices in kinfocenter.")
