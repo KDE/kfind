@@ -23,7 +23,7 @@
    <item>
     <widget class="QGroupBox" name="groupProcInfo" >
      <property name="title" >
-      <string>Selected Processor:</string>
+      <string>Selected Processor</string>
      </property>
      <layout class="QGridLayout" >
       <item row="0" column="0" colspan="2" >
@@ -46,7 +46,7 @@
       <item row="1" column="0" >
        <widget class="QLabel" name="labelModel" >
         <property name="text" >
-         <string>Model</string>
+         <string>Model:</string>
         </property>
         <property name="buddy" >
          <cstring>lineModel</cstring>
@@ -80,7 +80,7 @@
       <item row="3" column="0" colspan="2" >
        <widget class="QLabel" name="labelExtensions" >
         <property name="text" >
-         <string>Supported Extensions</string>
+         <string>Supported extensions:</string>
         </property>
         <property name="buddy" >
          <cstring>lineExtensions</cstring>
