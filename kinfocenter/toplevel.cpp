@@ -125,6 +125,7 @@ TopLevel::TopLevel()
 
   // That one does the trick ...
   _splitter->setStretchFactor( _splitter->indexOf( _tab ), 0 );
+  _splitter->setStretchFactor( _splitter->indexOf( _dock ), 1); 
 
   connect(_dock, SIGNAL(newModule(const QString&, const QString&, const QString&)),
                   this, SLOT(newModule(const QString&, const QString&, const QString&)));
