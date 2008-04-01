@@ -61,7 +61,7 @@ static bool	sorting_allowed;	/* is sorting allowed by user ? */
 #elif defined(__hpux)
 # define DEFAULT_ERRORSTRING QString()
 #else
-#define DEFAULT_ERRORSTRING  i18n("Maybe this system is not completely supported yet :-(")
+#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
 #endif
 
 
