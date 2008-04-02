@@ -8,6 +8,8 @@ set(kappfinder_SRCS
     toplevel.cpp
     common.cpp)
 
+kde4_add_app_icon(kappfinder_SRCS "hi*-app-kappfinder.png")
+
 kde4_add_executable(kappfinder ${kappfinder_SRCS})
 
 target_link_libraries(kappfinder ${KDE4_KIO_LIBS})
