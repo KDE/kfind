@@ -345,7 +345,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool GetProcAddress
 
    const struct token_name texture_limits[] = {
       { 1, GL_MAX_TEXTURE_SIZE, 	i18n("Max. texture size") },
-      { 1, GL_MAX_TEXTURE_UNITS_ARB, 	i18n("Num. of texture units") },
+      { 1, GL_MAX_TEXTURE_UNITS_ARB, 	i18n("No. of texture units") },
       { 1, GL_MAX_3D_TEXTURE_SIZE, 		i18n("Max. 3D texture size") },
       { 1, GL_MAX_CUBE_MAP_TEXTURE_SIZE_ARB, 	i18n("Max. cube map texture size") },
 #ifdef GL_MAX_RECTANGLE_TEXTURE_SIZE_NV
@@ -353,7 +353,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool GetProcAddress
 #endif
       { 1 | KCMGL_FLOAT, GL_MAX_TEXTURE_LOD_BIAS_EXT, i18n("Max. texture LOD bias") },
       { 1, GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, 	i18n("Max. anisotropy filtering level") },
-      { 1, GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB, i18n("Num. of compressed texture formats") },
+      { 1, GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB, i18n("No. of compressed texture formats") },
       {0,0,0}
      };
 
