@@ -1,12 +1,32 @@
+
+add_definitions( -DKDE_DEFAULT_DEBUG_AREA=1208 )
+
 add_subdirectory( about ) 
 
-add_definitions (-DQT3_SUPPORT -DQT3_SUPPORT_WARNINGS)
-
 add_subdirectory( solidproc )
+
 add_subdirectory( info )
+
 add_subdirectory( nics )
 add_subdirectory( usbview )
-add_subdirectory( opengl )
+add_subdirectory( memory )
+
+macro_optional_find_package(OpenGL)
+macro_log_feature(OPENGL_FOUND "OpenGL" "API for developing portable, interactive 2D and 3D graphics applications" "http://mesa3d.sourceforge.net" FALSE "" "View OpenGL details in kinfocenter.")
+
+if(OPENGL_FOUND AND OPENGL_GLU_FOUND)
+    add_subdirectory( opengl )
+else(OPENGL_FOUND AND OPENGL_GLU_FOUND)
+    MESSAGE(STATUS "OpenGL information module has been disabled.")
+endif(OPENGL_FOUND AND OPENGL_GLU_FOUND)
+
+
+macro_optional_find_package(PCIUTILS)
+macro_log_feature(PCIUTILS_FOUND "PCIUTILS" "PciUtils is a library for direct access to PCI slots" "http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml" FALSE "" "View PCI details in kinfocenter.")
+
+if(NOT APPLE)
+    add_subdirectory( pci )
+endif(NOT APPLE)
 
 macro_optional_find_package(RAW1394)
 macro_log_feature(RAW1394_FOUND "RAW1394" "library for direct access to IEEE 1394 bus" "http://www.linux1394.org/" FALSE "" "View FireWire devices in kinfocenter.")
@@ -19,25 +39,13 @@ set(kinfocenter_SRCS
    main.cpp 
    toplevel.cpp 
    indexwidget.cpp 
-   helpwidget.cpp 
    dockcontainer.cpp 
    aboutwidget.cpp 
-   quickhelp.cpp 
    moduletreeview.cpp 
-   moduleiconview.cpp 
-   moduleIface.cpp 
    global.cpp 
    modules.cpp 
    proxywidget.cpp 
-   kcrootonly.cpp 
-   searchwidget.cpp )
-
-set(kinfocenter_adaptor ${KDEBASE_APPS_SOURCE_DIR}/kinfocenter/moduleIface.h)
-set(kinfocenter_xml ${CMAKE_CURRENT_BINARY_DIR}/org.kde.Kinfocenter.xml)
-ADD_CUSTOM_COMMAND(OUTPUT ${kinfocenter_xml}
-       COMMAND ${QT_DBUSCPP2XML_EXECUTABLE} ${kinfocenter_adaptor} > ${kinfocenter_xml}
-       DEPENDS ${kinfocenter_adaptor})
-QT4_ADD_DBUS_INTERFACE( kinfocenter_SRCS ${kinfocenter_xml} kinfocenter_interface )
+)
 
 set(kinfocenter_KDEINIT_SRCS ${kinfocenter_SRCS})
 

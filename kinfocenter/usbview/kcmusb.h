@@ -8,42 +8,36 @@
  *                                                                         *
  ***************************************************************************/
 
-
 #ifndef _KCMUSB_H
 #define _KCMUSB_H
 
-#include <Qt3Support/Q3IntDict>
+#include <QMap>
 
-#define KDE3_SUPPORT
 #include <kcmodule.h>
-#undef KDE3_SUPPORT
 
-class Q3ListView;
-class Q3ListViewItem;
+class QTreeWidget;
+class QTreeWidgetItem;
 class QTextEdit;
 
-
-class USBViewer : public KCModule
-{
-  Q_OBJECT
+class USBViewer : public KCModule {
+Q_OBJECT
 
 public:
 
-  explicit USBViewer(QWidget *parent = 0L, const QVariantList &list=QVariantList() );
+	explicit USBViewer(QWidget *parent = 0L, const QVariantList &list=QVariantList());
 
-  void load();
+	void load();
 
 protected Q_SLOTS:
 
-  void selectionChanged(Q3ListViewItem *item);
-  void refresh();
+	void selectionChanged(QTreeWidgetItem *item);
+	void refresh();
 
 private:
 
-  Q3IntDict<Q3ListViewItem> _items;
-  Q3ListView *_devices;
-  QTextEdit *_details;
+	QMap<int, QTreeWidgetItem*> _items;
+	QTreeWidget *_devices;
+	QTextEdit *_details;
 };
-
 
 #endif

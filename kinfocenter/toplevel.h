@@ -21,19 +21,18 @@
 #define __TOPLEVEL_H__
 
 #include <kxmlguiwindow.h>
-#include <Qt3Support/Q3CheckListItem>
 
 class QAction;
 class QSplitter;
 class QTabWidget;
+class QListWidgetItem;
 
 class KAboutData;
 class KToggleAction;
 
 class DockContainer;
 class IndexWidget;
-class SearchWidget;
-class HelpWidget;
+//class HelpWidget;
 class ConfigModule;
 class ConfigModuleList;
 class ModuleTitle;
@@ -49,45 +48,29 @@ public:
 protected:
   void setupActions();
 
-protected Q_SLOTS:
+protected slots:
   void activateModule(ConfigModule *);
-  void categorySelected(Q3ListViewItem *category);
-  void newModule(const QString &name, const QString& docPath, const QString &quickhelp);
-  void activateIconView();
-  void activateTreeView();
+  void activateGeneral();
 
   void reportBug();
   void aboutModule();
 
-  void activateSmallIcons();
-  void activateMediumIcons();
-  void activateLargeIcons();
-  void activateHugeIcons();
-
   void deleteDummyAbout();
 
-  void slotHelpRequest();
-
-  void changedModule(ConfigModule *changed);
-
-  bool queryClose();
 
 private:
 
   QString handleAmpersand( const QString &modName ) const;
 
   QSplitter      *_splitter;
-  QTabWidget     *_tab;
   DockContainer  *_dock;
-  ModuleTitle    *_title;
 
-  KToggleAction *tree_view, *icon_view;
-  KToggleAction *icon_small, *icon_medium, *icon_large, *icon_huge;
-  QAction *report_bug, *about_module;
+  QAction 		*report_bug, *about_module;
 
   IndexWidget  *_indextab;
-  SearchWidget *_searchtab;
+  /*
   HelpWidget   *_helptab;
+  */
 
   ConfigModule     *_active;
   ConfigModuleList *_modules;

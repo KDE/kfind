@@ -1,25 +1,22 @@
 /*
-  Copyright (c) 2000 Matthias Elter <elter@kde.org>
+ Copyright (c) 2000 Matthias Elter <elter@kde.org>
 
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation; either version 2 of the License, or
-  (at your option) any later version.
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License along
-  with this program; if not, write to the Free Software Foundation, Inc.,
-  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-*/
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
 
 #include "dockcontainer.h"
-#include "global.h"
-#include "modules.h"
-#include "proxywidget.h"
 
 #include <kapplication.h>
 #include <kmessagebox.h>
@@ -34,224 +31,158 @@
 #include <QFont>
 #include <QApplication>
 
+#include "global.h"
+#include "modules.h"
+#include "proxywidget.h"
+#include "aboutwidget.h"
+
 #include "dockcontainer.moc"
 
-class ModuleTitle : public KHBox
-{
-  public:
-    ModuleTitle( QWidget *parent );
-    ~ModuleTitle() {}
+ModuleTitle::ModuleTitle(QWidget *parent) :
+	KTitleWidget(parent) {
 
-    void showTitleFor( ConfigModule *module );
-    void clear();
-
-  protected:
-    QLabel *m_icon;
-    QLabel *m_name;
-};
-
-ModuleTitle::ModuleTitle( QWidget *parent )
-    : KHBox( parent )
-{
-  QWidget *spacer = new QWidget( this );
-  spacer->setFixedWidth( KDialog::marginHint()-KDialog::spacingHint() );
-  m_icon = new QLabel( this );
-  m_name = new QLabel( this );
-
-  QFont font = m_name->font();
-  font.setPointSize( font.pointSize()+1 );
-  font.setBold( true );
-  m_name->setFont( font );
-
-  setSpacing( KDialog::spacingHint() );
-  if ( QApplication::isRightToLeft() )
-  {
-      spacer = new QWidget( this );
-      setStretchFactor( spacer, 10 );
-  }
-  else
-      setStretchFactor( m_name, 10 );
 }
 
-void ModuleTitle::showTitleFor( ConfigModule *config )
-{
-  if ( !config )
-    return;
-
-  this->setWhatsThis( config->comment() );
-  KIconLoader *loader = KIconLoader::global();
-  QPixmap icon = loader->loadIcon( config->icon(), KIconLoader::NoGroup, 22 );
-  m_icon->setPixmap( icon );
-  m_name->setText( config->moduleName() );
-
-  show();
+ModuleTitle::~ModuleTitle() {
+	
 }
 
-void ModuleTitle::clear()
-{
-  m_icon->setPixmap( QPixmap() );
-  m_name->setText( QString() );
-  kapp->processEvents();
+void ModuleTitle::showTitleFor(ConfigModule* config) {
+	kDebug() << "Show title for" << endl;
+	if ( !config)
+		return;
+
+	setWhatsThis(config->comment() );
+	setCommentText(config->docPath(), config->comment(), config->module()->quickHelp());
+	setPixmap(config->realIcon(KIconLoader::SizeLarge));
+	setText(config->moduleName());
+	
+	kDebug() << "Show title for done" << endl;
 }
 
-class ModuleWidget : public QWidget
-{
-  public:
-    ModuleWidget( QWidget *parent, const char *name );
-    ~ModuleWidget() {}
-
-    ProxyWidget* load( ConfigModule *module );
-
-  protected:
-    QVBoxLayout *m_layout;
-    ModuleTitle *m_title;
-};
-
-ModuleWidget::ModuleWidget( QWidget *parent, const char * )
-    : QWidget( parent )
-    , m_layout (new QVBoxLayout (this))
-    , m_title (new ModuleTitle (this))
-{
-  m_layout->addWidget (m_title);
+void ModuleTitle::setCommentText(const QString& docPath, const QString& text, const QString& quickHelp) {
+	if (text.isEmpty() && docPath.isEmpty())
+		setCommentBaseText();
+	else if (docPath.isEmpty())
+		setComment(text);
+	else {
+		setComment(quickHelp + i18n("<p>Click here to consult the full <a href=\"%1\">Manual</a>.</p>", "help:/" + docPath));
+	}
 }
 
-ProxyWidget *ModuleWidget::load( ConfigModule *module )
-{
-  m_title->clear();
-  ProxyWidget *proxy = module->module();
-
-  if ( proxy )
-  {
-    proxy->setParent(this);
-    m_layout->addWidget (proxy);
-    proxy->show();
-    proxy->setSizePolicy (QSizePolicy (QSizePolicy::Expanding, QSizePolicy::Expanding));
-    m_title->showTitleFor( module );
-  }
-
-  return proxy;
+void ModuleTitle::setCommentBaseText() {
+	setComment(i18n("<h1>KDE Info Center</h1>"
+		"There is no quick help available for the active info module."
+		"<br /><br />"
+		"Click <a href = \"kinfocenter/index.html\">here</a> to read the general Info Center manual.") );
 }
 
-DockContainer::DockContainer(QWidget *parent)
-  : QStackedWidget(parent)
-  , _basew(0L)
-  , _module(0L)
-{
-  _busyw = new QLabel(i18n("<big><b>Loading...</b></big>"), this);
-  _busyw->setAlignment(Qt::AlignCenter);
-  _busyw->setTextFormat(Qt::RichText);
-  _busyw->setGeometry(0,0, width(), height());
-  addWidget( _busyw );
+DockContainer::DockContainer(AboutWidget* aboutWidget, QWidget *parent) :
+	QWidget(parent) {
+	
+	QVBoxLayout* mainLayout = new QVBoxLayout(this);
+	
+	_moduleTitle = new ModuleTitle(this);
+	mainLayout->addWidget(_moduleTitle);
+	
+	_moduleWidgets = new QStackedWidget(this);
+	mainLayout->addWidget(_moduleWidgets);
+	
+	_busyWidget = new QLabel(i18n("<big><b>Loading...</b></big>"), this);
+	_busyWidget->setAlignment(Qt::AlignCenter);
+	_busyWidget->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+	
+	_moduleWidgets->addWidget(_busyWidget);
+	
+	_generalWidget = aboutWidget;
+	_moduleWidgets->addWidget(_generalWidget);
 
-  _modulew = new ModuleWidget( this, "_modulew" );
-  addWidget( _modulew );
+	showAboutWidget();
 }
 
-DockContainer::~DockContainer()
-{
-  deleteModule();
+DockContainer::~DockContainer() {
+	
 }
 
-void DockContainer::setBaseWidget(QWidget *widget)
-{
-  removeWidget( _basew );
-  delete _basew;
-  _basew = 0;
-  if (!widget) return;
 
-  _basew = widget;
+ProxyWidget* DockContainer::initializeModule(ConfigModule * module) {
+	showBusyWidget();
 
-  addWidget( _basew );
-  setCurrentWidget( _basew );
+	QApplication::setOverrideCursor(Qt::WaitCursor);
 
-  emit newModule(widget->windowTitle(), "", "");
+	ProxyWidget* proxy = module->module();
+
+	if (proxy!=NULL) {
+		//If this module was not in the stack, add it.
+		if ( _moduleWidgets->indexOf(proxy) == -1) {
+			_moduleWidgets->addWidget(proxy);
+		}
+		
+	}
+
+	QApplication::restoreOverrideCursor();
+
+	return proxy;
 }
 
-ProxyWidget* DockContainer::loadModule( ConfigModule *module )
-{
-  QApplication::setOverrideCursor( Qt::WaitCursor );
+bool DockContainer::dockModule(ConfigModule *module) {
 
-  ProxyWidget *widget = _modulew->load( module );
+	ProxyWidget* widget = initializeModule(module);
+	
+	if (widget==NULL) {
+		kDebug() << "Failed to display module" << module->moduleName() << endl;
+		showAboutWidget();
+		
+		return false;
+		
+	}
+	
+	if (widget == _moduleWidgets->currentWidget()) {
+		kDebug() << "Module already displayed" << endl;
+		return true;
+	}
+	
+	if (widget->isChanged()) {
 
-  if (widget)
-  {
-    _module = module;
-    connect(_module, SIGNAL(childClosed()), SLOT(removeModule()));
-    connect(_module, SIGNAL(changed(ConfigModule *)),
-            SIGNAL(changedModule(ConfigModule *)));
-    connect(widget, SIGNAL(quickHelpChanged()), SLOT(quickHelpChanged()));
+		int res = KMessageBox::warningYesNoCancel(this, module ? i18n("There are unsaved changes in the active module.\n"
+			"Do you want to apply the changes before running "
+			"the new module or discard the changes?") : i18n("There are unsaved changes in the active module.\n"
+			"Do you want to apply the changes before exiting "
+			"the Control Center or discard the changes?"), i18n("Unsaved Changes"), KStandardGuiItem::apply(), KStandardGuiItem::discard());
+		if (res == KMessageBox::Cancel)
+			return false;
+	}
 
-    setCurrentWidget( _modulew );
-    emit newModule(widget->windowTitle(), module->docPath(), widget->quickHelp());
-  }
-  else
-  {
-    setCurrentWidget( _basew );
-    emit newModule(_basew->windowTitle(), "", "");
-  }
-
-  QApplication::restoreOverrideCursor();
-
-  return widget;
+	kDebug() << "Docking module..." << endl;
+	
+	showConfigWidget(module);
+	
+	return true;
 }
 
-bool DockContainer::dockModule(ConfigModule *module)
-{
-  if (module == _module) return true;
+void DockContainer::showAboutWidget() {
+	kDebug() << "Show About Widget" << endl;
+	_moduleWidgets->setCurrentWidget(_generalWidget);
+	
+	_moduleTitle->hide();
 
-  if (_module && _module->isChanged())
-    {
-
-      int res = KMessageBox::warningYesNoCancel(this,
-module ?
-i18n("There are unsaved changes in the active module.\n"
-     "Do you want to apply the changes before running "
-     "the new module or discard the changes?") :
-i18n("There are unsaved changes in the active module.\n"
-     "Do you want to apply the changes before exiting "
-     "the Control Center or discard the changes?"),
-                                          i18n("Unsaved Changes"),
-                                          KStandardGuiItem::apply(),
-                                          KStandardGuiItem::discard());
-      if (res == KMessageBox::Yes)
-        _module->module()->applyClicked();
-      if (res == KMessageBox::Cancel)
-        return false;
-    }
-
-  setCurrentWidget( _busyw );
-  kapp->processEvents();
-
-  deleteModule();
-  if (!module) return true;
-
-  ProxyWidget *widget = loadModule( module );
-
-  KCGlobal::repairAccels( window() );
-  return ( widget!=0 );
 }
 
-void DockContainer::removeModule()
-{
-  setCurrentWidget( _basew );
-  deleteModule();
+void DockContainer::showBusyWidget() {
+	kDebug() << "Show Busy Widget" << endl;
+	_moduleWidgets->setCurrentWidget(_busyWidget);
+	
+	_moduleTitle->hide();
 
-  if (_basew)
-      emit newModule(_basew->windowTitle(), "", "");
-  else
-      emit newModule("", "", "");
+	kapp->processEvents();
+
 }
 
-void DockContainer::deleteModule()
-{
-  if(_module) {
-	_module->deleteClient();
-	_module = 0;
-  }
-}
+void DockContainer::showConfigWidget(ConfigModule* module) {
+	kDebug() << "Show Config Widget" << endl;
+	
+	_moduleTitle->showTitleFor(module);
+	_moduleTitle->show();
 
-void DockContainer::quickHelpChanged()
-{
-  if (_module && _module->module())
-	emit newModule(_module->module()->windowTitle(), _module->docPath(), _module->module()->quickHelp());
+	_moduleWidgets->setCurrentWidget(module->module());
 }

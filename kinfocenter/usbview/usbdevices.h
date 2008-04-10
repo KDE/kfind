@@ -8,13 +8,10 @@
  *                                                                         *
  ***************************************************************************/
 
-
 #ifndef __USB_DEVICES_H__
 #define __USB_DEVICES_H__
 
-
-
-#include <Qt3Support/Q3PtrList>
+#include <QList>
 
 #if defined(__DragonFly__)
 #include <bus/usb/usb.h>
@@ -24,54 +21,62 @@
 
 class USBDB;
 
-
-class USBDevice
-{
+class USBDevice {
 public:
-  
-  USBDevice();
 
-  void parseLine(const QString &line);
-  void parseSysDir(int bus, int parent, int level, const QString &line);
+	USBDevice();
+	
+	~USBDevice();
 
-  int level() const { return _level; }
-  int device() const { return _device; }
-  int parent() const { return _parent; }
-  int bus() const { return _bus; }
-  QString product();
+	void parseLine(const QString &line);
+	void parseSysDir(int bus, int parent, int level, const QString &line);
 
-  QString dump();
+	int level() const {
+		return _level;
+	}
+	int device() const {
+		return _device;
+	}
+	int parent() const {
+		return _parent;
+	}
+	int bus() const {
+		return _bus;
+	}
+	QString product();
 
-  static Q3PtrList<USBDevice> &devices() { return _devices; }
-  static USBDevice *find(int bus, int device);
-  static bool parse(const QString& fname);
-  static bool parseSys(const QString& fname);
+	QString dump();
 
+	static QList<USBDevice*> &devices() {
+		return _devices;
+	}
+	static USBDevice *find(int bus, int device);
+	static bool parse(const QString& fname);
+	static bool parseSys(const QString& fname);
 
 private:
 
-  static Q3PtrList<USBDevice> _devices;
+	static QList<USBDevice*> _devices;
 
-  static USBDB *_db;
+	static USBDB *_db;
 
-  int _bus, _level, _parent, _port, _count, _device, _channels, _power;
-  float _speed;
+	int _bus, _level, _parent, _port, _count, _device, _channels, _power;
+	float _speed;
 
-  QString _manufacturer, _product, _serial;
+	QString _manufacturer, _product, _serial;
 
-  int _bwTotal, _bwUsed, _bwPercent, _bwIntr, _bwIso;
-  bool _hasBW;
+	int _bwTotal, _bwUsed, _bwPercent, _bwIntr, _bwIso;
+	bool _hasBW;
 
-  unsigned int _verMajor, _verMinor, _class, _sub, _prot, _maxPacketSize, _configs;
-  QString _className;
+	unsigned int _verMajor, _verMinor, _class, _sub, _prot, _maxPacketSize, _configs;
+	QString _className;
 
-  unsigned int _vendorID, _prodID, _revMajor, _revMinor;
+	unsigned int _vendorID, _prodID, _revMajor, _revMinor;
 
 #if defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
-  void collectData( int fd, int level, usb_device_info &di, int parent );
-  QStringList _devnodes;
+	void collectData( int fd, int level, usb_device_info &di, int parent );
+	QStringList _devnodes;
 #endif
 };
-
 
 #endif

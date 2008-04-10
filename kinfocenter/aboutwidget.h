@@ -20,7 +20,7 @@
 #define __aboutwidget_h__
 
 #include <QWidget>
-#include <Qt3Support/Q3CheckListItem>
+#include <QListWidgetItem>
 #include <QMap>
 #include <QPixmap>
 #include <kvbox.h>
@@ -29,21 +29,16 @@ class QPixmap;
 class ConfigModule;
 class KHTMLPart;
 class KUrl;
+class ConfigModuleList;
 
 class AboutWidget : public KHBox
 {
   Q_OBJECT
 
 public:
-  explicit AboutWidget(QWidget *parent, Q3ListViewItem* category=0, const QString &caption=QString());
+  explicit AboutWidget(QWidget *parent, ConfigModuleList* modules = NULL, const QString &caption=QString());
 
-    /**
-     * Set a new category without creating a new AboutWidget if there is
-     * one visible already (reduces flicker)
-     */
-    void setCategory( Q3ListViewItem* category, const QString& caption);
-
-Q_SIGNALS:
+signals:
     void moduleSelected(ConfigModule *);
 
 private Q_SLOTS:
@@ -56,8 +51,7 @@ private:
      */
     void updatePixmap();
 
-    bool    _moduleList;
-    Q3ListViewItem* _category;
+    ConfigModuleList * _configModules;
     QString _caption;
     KHTMLPart *_viewer;
     QMap<QString,ConfigModule*> _moduleMap;

@@ -14,7 +14,7 @@
     </property>
     <layout class="QVBoxLayout" >
       <item>
-        <widget class="Q3ListView" name="m_listview" >
+        <widget class="QTreeWidget" name="m_listview" >
           <property name="rootIsDecorated" >
             <bool>true</bool>
           </property>
