@@ -21,16 +21,15 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-
-
-#include "memory.h"
 #include <kcomponentdata.h>
 #include <KPluginFactory>
 #include <KPluginLoader>
  
 /* we have to include the info.cpp-file, to get the DEFINES about possible properties.
    example: we need the "define INFO_CPU_AVAILABLE" */
-#include "info.cpp"
+#include "info.h"
+
+#include "os_current.h"
 
 class KInfoModulesFactory : public KPluginFactory
 {
@@ -60,12 +59,6 @@ CREATE_FACTORY(CPU, i18n("Processor(s)"))
 #ifdef INFO_IRQ_AVAILABLE
 CREATE_FACTORY(IRQ, i18n("Interrupt"))
 #endif
-#ifdef INFO_PCI_AVAILABLE
-CREATE_FACTORY(PCI, i18n("PCI"))
-#endif
-#ifdef INFO_DMA_AVAILABLE
-CREATE_FACTORY(DMA, i18n("DMA-Channel"))
-#endif
 #ifdef INFO_IOPORTS_AVAILABLE
 CREATE_FACTORY(IO_Ports, i18n("I/O-Port"))
 #endif
@@ -74,6 +67,9 @@ CREATE_FACTORY(Sound, i18n("Soundcard"))
 #endif
 #ifdef INFO_SCSI_AVAILABLE
 CREATE_FACTORY(SCSI, i18n("SCSI"))
+#endif
+#ifdef INFO_DMA_AVAILABLE
+CREATE_FACTORY(DMA, i18n("DMA-Channel"))
 #endif
 #ifdef INFO_DEVICES_AVAILABLE
 CREATE_FACTORY(Devices, i18n("Devices"))
@@ -89,18 +85,12 @@ KInfoModulesFactory::KInfoModulesFactory(const char *componentName)
     : KPluginFactory(componentName)
 {
     s_instance = this;
-    registerPlugin<KMemoryWidget>("memory");
+
 #ifdef INFO_CPU_AVAILABLE
     registerPlugin<KCPUInfoWidget>("cpu");
 #endif
 #ifdef INFO_IRQ_AVAILABLE
     registerPlugin<KIRQInfoWidget>("irq");
-#endif
-#ifdef INFO_PCI_AVAILABLE
-    registerPlugin<KPCIInfoWidget>("pci");
-#endif
-#ifdef INFO_DMA_AVAILABLE
-    registerPlugin<KDMAInfoWidget>("dma");
 #endif
 #ifdef INFO_IOPORTS_AVAILABLE
     registerPlugin<KIO_PortsInfoWidget>("ioports");
@@ -110,6 +100,9 @@ KInfoModulesFactory::KInfoModulesFactory(const char *componentName)
 #endif
 #ifdef INFO_SCSI_AVAILABLE
     registerPlugin<KSCSIInfoWidget>("scsi");
+#endif
+#ifdef INFO_DMA_AVAILABLE
+    registerPlugin<KDMAInfoWidget>("dma");
 #endif
 #ifdef INFO_DEVICES_AVAILABLE
     registerPlugin<KDevicesInfoWidget>("devices");

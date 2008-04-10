@@ -1,60 +1,61 @@
 /*
-  Copyright (c) 2000 Matthias Elter <elter@kde.org>
+ Copyright (c) 2000 Matthias Elter <elter@kde.org>
 
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation; either version 2 of the License, or
-  (at your option) any later version.
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License along
-  with this program; if not, write to the Free Software Foundation, Inc.,
-  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-*/
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
 
 #ifndef __indexwidget_h__
 #define __indexwidget_h__
 
 #include "global.h"
 
-#include <QStackedWidget>
+#include <QWidget>
+
+class QListWidgetItem;
 
 class ConfigModuleList;
 class ConfigModule;
 class ModuleTreeView;
-class ModuleIconView;
-class Q3ListViewItem;
-class IndexWidget : public QStackedWidget
-{
-  Q_OBJECT
+class ModuleTreeItem;
+class ModuleWidgetSearchLine;
+
+class IndexWidget : public QWidget {
+Q_OBJECT
 
 public:
-  IndexWidget(ConfigModuleList *list, QWidget *parent, const char *name=0);
-  virtual ~IndexWidget();
+	IndexWidget(ConfigModuleList *list, QWidget *parent);
+	virtual ~IndexWidget();
 
-  Q3ListViewItem *firstTreeViewItem();
-public Q_SLOTS:
-  void makeVisible(ConfigModule *module);
-  void makeSelected(ConfigModule *module);
-  void activateView(IndexViewMode);
-  void reload();
+public slots:
+	void reload();
 
-protected Q_SLOTS:
-  void moduleSelected(ConfigModule *);
+	void selectGeneral();
+	void selectModule(ConfigModule *);
 
-Q_SIGNALS:
-  void moduleActivated(ConfigModule *module);
-  void categorySelected(Q3ListViewItem *);
+signals:
+	void generalActivated();
+	void moduleActivated(ConfigModule *module);
 
 private:
-  ModuleTreeView   *_tree;
-  ModuleIconView   *_icon;
-  ConfigModuleList *_modules;
-  IndexViewMode    viewMode;
+	
+	void connectTree();
+	void disconnectTree();
+	
+	ModuleTreeView *_tree;
+	
+	ModuleWidgetSearchLine* _searchLine;
 };
 
 #endif

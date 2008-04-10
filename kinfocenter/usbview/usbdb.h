@@ -8,32 +8,29 @@
  *                                                                         *
  ***************************************************************************/
 
-
 #ifndef __USB_DB_H__
 #define __USB_DB_H__
 
+#include <QMap>
+#include <QString>
 
-#include <Qt3Support/Q3Dict>
-
-
-class USBDB
-{
+class USBDB {
 public:
 
-  USBDB();
+	USBDB();
 
-  QString vendor(int id);
-  QString device(int vendor, int id);
+	QString vendor(int id);
+	QString device(int vendor, int id);
 
-  QString cls(int cls);
-  QString subclass(int cls, int sub);
-  QString protocol(int cls, int sub, int prot);
+	QString cls(int cls);
+	QString subclass(int cls, int sub);
+	QString protocol(int cls, int sub, int prot);
 
 private:
 
-  Q3Dict<QString> _classes, _ids;
+	QMap<QString, QString> _classes;
+	QMap<QString, QString> _ids;
 
 };
-
 
 #endif

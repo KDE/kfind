@@ -1,12 +1,11 @@
 [Desktop Entry]
-Exec=kcmshell4 kcmopengl
+Exec=kcmshell4 opengl
 Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/opengl/index.html
 Icon=kcmopengl
 
 X-KDE-Library=kcm_opengl
-X-KDE-PluginKeyword=opengl
 X-KDE-ParentApp=kinfocenter
 
 Name=OpenGL

@@ -1,30 +1,29 @@
 /*
-  Copyright (c) 1999 Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
-  Copyright (c) 2000 Matthias Elter <elter@kde.org>
+ Copyright (c) 1999 Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
+ Copyright (c) 2000 Matthias Elter <elter@kde.org>
 
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation; either version 2 of the License, or
-  (at your option) any later version.
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-  MA  02110-1301, USA.
-*/
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ MA  02110-1301, USA.
+ */
 
 #include "toplevel.h"
 #include "indexwidget.h"
-#include "searchwidget.h"
-#include "helpwidget.h"
 #include "aboutwidget.h"
 #include "proxywidget.h"
 #include "moduletreeview.h"
+#include "modules.h"
 
 #include <kaboutapplicationdialog.h>
 #include <kactioncollection.h>
@@ -42,6 +41,8 @@
 #include <kwindowsystem.h>
 #include <kxmlguifactory.h>
 
+#include <kdebug.h>
+
 #include <QTabWidget>
 #include <QSplitter>
 
@@ -49,438 +50,176 @@
 
 #include "toplevel.moc"
 
-TopLevel::TopLevel()
-  : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint  )
-  , _active(0), dummyAbout(0)
-{
-  setCaption(QString());
+TopLevel::TopLevel() :
+	KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint), _active(NULL), dummyAbout(NULL) {
+	setCaption(QString());
 
-  report_bug = 0;
+	report_bug = NULL;
 
-  // read settings
-  KConfigGroup config(KGlobal::config(), "Index");
-  QString viewmode = config.readEntry("ViewMode", "Tree");
+	// initialize the entries
+	_modules = new ConfigModuleList();
+	_modules->readDesktopEntries();
 
-  if (viewmode == "Tree")
-    KCGlobal::setViewMode(Tree);
-  else
-    KCGlobal::setViewMode(Icon);
+	// create the layout box
+	_splitter = new QSplitter( Qt::Horizontal, this );
+	_splitter->setContentsMargins(0, 0, 0, 0);
 
-  QString size = config.readEntry("IconSize", "Medium");
-  if (size == "Small")
-    KCGlobal::setIconSize(KIconLoader::SizeSmall);
-  else if (size == "Large")
-    KCGlobal::setIconSize(KIconLoader::SizeLarge);
-  else if (size == "Huge")
-    KCGlobal::setIconSize(KIconLoader::SizeHuge);
-  else
-    KCGlobal::setIconSize(KIconLoader::SizeMedium);
+	// index tab
+	_indextab = new IndexWidget(_modules, this);
+	connect(_indextab, SIGNAL(moduleActivated(ConfigModule*)), this, SLOT(activateModule(ConfigModule*)));
+	connect(_indextab, SIGNAL(generalActivated()), this, SLOT(activateGeneral()));
+	_splitter->addWidget(_indextab);
 
-  // initialize the entries
-  _modules = new ConfigModuleList();
-  _modules->readDesktopEntries();
+	_indextab->setSizePolicy(QSizePolicy(QSizePolicy::Maximum, QSizePolicy::Preferred) );
 
-  for ( ConfigModule* m = _modules->first(); m; m = _modules->next() )
-      connect( m, SIGNAL( helpRequest() ), this, SLOT( slotHelpRequest() ) );
+	// Restore sizes
+	KConfigGroup config = KConfigGroup(KGlobal::config(), "General");
+	QList<int> sizes = config.readEntry("SplitterSizes", QList<int>() );
+	if (!sizes.isEmpty())
+		_splitter->setSizes(sizes);
 
-  // create the layout box
-  _splitter = new QSplitter( Qt::Horizontal, this );
+	AboutWidget* aboutWidget = new AboutWidget( this, _modules);
+	connect(aboutWidget, SIGNAL( moduleSelected( ConfigModule * ) ), _indextab, SLOT(selectModule(ConfigModule*)));
 
-  // create the left hand side (the tab view)
-  _tab = new QTabWidget( _splitter );
+	// set up the right hand side (the docking area)
+	_dock = new DockContainer(aboutWidget, _splitter);
 
-  _tab->setWhatsThis( i18n("Choose between Index, Search and Quick Help") );
+	// That one does the trick ...
+	_splitter->setStretchFactor(_splitter->indexOf(_indextab), 0);
+	_splitter->setStretchFactor(_splitter->indexOf(_dock), 1);
 
-  // index tab
-  _indextab = new IndexWidget(_modules, 0L);
-  connect(_indextab, SIGNAL(moduleActivated(ConfigModule*)),
-                  this, SLOT(activateModule(ConfigModule*)));
-  _tab->addTab(_indextab, KIcon("kinfocenter"), i18n("&Index"));
+	connect(_indextab, SIGNAL(generalActivated()), _dock, SLOT(showAboutWidget()));
 
-  connect(_indextab, SIGNAL(categorySelected(Q3ListViewItem*)),
-                  this, SLOT(categorySelected(Q3ListViewItem*)));
+	// set the main view
+	setCentralWidget(_splitter);
 
-  // search tab
-  _searchtab = new SearchWidget(0L);
-  _searchtab->populateKeywordList(_modules);
-  connect(_searchtab, SIGNAL(moduleSelected(ConfigModule *)),
-                  this, SLOT(activateModule(ConfigModule *)));
+	// initialize the GUI actions
+	setupActions();
 
-  _tab->addTab(_searchtab, KIcon("edit-find"), i18n("Sear&ch"));
+	KWindowSystem::setIcons(winId(), KIconLoader::global()->loadIcon(KINFOCENTER_ICON_NAME, KIconLoader::NoGroup, 32), KIconLoader::global()->loadIcon("hwinfo", KIconLoader::NoGroup, 16) );
 
-  // help tab
-  _helptab = new HelpWidget(0L);
-  _tab->addTab(_helptab, KIcon("help-contents"), i18n("Hel&p"));
-
-  _tab->setSizePolicy( QSizePolicy( QSizePolicy::Maximum, QSizePolicy::Preferred ) );
-
- // Restore sizes
-  config = KConfigGroup(KGlobal::config(),"General");
-  QList<int> sizes = config.readEntry(  "SplitterSizes",QList<int>() );
-  if (!sizes.isEmpty())
-     _splitter->setSizes(sizes);
-
-  // set up the right hand side (the docking area)
-  _dock = new DockContainer( _splitter );
-
-  // That one does the trick ...
-  _splitter->setStretchFactor( _splitter->indexOf( _tab ), 0 );
-  _splitter->setStretchFactor( _splitter->indexOf( _dock ), 1); 
-
-  connect(_dock, SIGNAL(newModule(const QString&, const QString&, const QString&)),
-                  this, SLOT(newModule(const QString&, const QString&, const QString&)));
-  connect(_dock, SIGNAL(changedModule(ConfigModule*)),
-          SLOT(changedModule(ConfigModule*)));
-
-  // set the main view
-  setCentralWidget( _splitter );
-
-  // initialize the GUI actions
-  setupActions();
-
-  // activate defaults
-  if (KCGlobal::viewMode() == Tree)   {
-    activateTreeView();
-    tree_view->setChecked(true);
-  }
-  else {
-    activateIconView();
-    icon_view->setChecked(true);
-  }
-
-  // insert the about widget
-  if (KCGlobal::isInfoCenter())
-  {
-      AboutWidget *aw = new AboutWidget( this, _indextab->firstTreeViewItem());
-      connect( aw, SIGNAL( moduleSelected( ConfigModule * ) ),
-               SLOT( activateModule( ConfigModule * ) ) );
-      _dock->setBaseWidget( aw );
-      KWindowSystem::setIcons(  winId(),
-		       KIconLoader::global()->loadIcon("hwinfo", KIconLoader::NoGroup, 32 ),
-		       KIconLoader::global()->loadIcon("hwinfo", KIconLoader::NoGroup, 16 ) );
-  }
-  else
-  {
-      AboutWidget *aw = new AboutWidget(this);
-      connect( aw, SIGNAL( moduleSelected( ConfigModule * ) ),
-                   SLOT( activateModule( ConfigModule * ) ) );
-      _dock->setBaseWidget(aw);
-  }
+	_indextab->selectGeneral();
 }
 
-TopLevel::~TopLevel()
-{
-  KConfigGroup config(KGlobal::config(), "Index");
-  if (KCGlobal::viewMode() == Tree)
-    config.writeEntry("ViewMode", "Tree");
-  else
-    config.writeEntry("ViewMode", "Icon");
+TopLevel::~TopLevel() {
 
-  switch (KCGlobal::iconSize())
-    {
-    case KIconLoader::SizeSmall:
-      config.writeEntry("IconSize", "Small");
-      break;
-    case KIconLoader::SizeLarge:
-      config.writeEntry("IconSize", "Large");
-      break;
-    case KIconLoader::SizeHuge:
-      config.writeEntry("IconSize", "Huge");
-      break;
-    default:
-      config.writeEntry("IconSize", "Medium");
-      break;
-    }
+	KConfigGroup config = KConfigGroup(KGlobal::config(), "General");
+	config.writeEntry("SplitterSizes", _splitter->sizes());
 
-  config = KConfigGroup(KGlobal::config(),"General");
-  config.writeEntry("SplitterSizes", _splitter->sizes());
+	config.sync();
 
-  config.sync();
-
-  delete _modules;
+	delete _modules;
 }
 
-bool TopLevel::queryClose()
-{
-  return _dock->dockModule(0);
+void TopLevel::setupActions() {
+	KStandardAction::quit(this, SLOT(close()), actionCollection());
+	KStandardAction::keyBindings(guiFactory(), SLOT(configureShortcuts()), actionCollection());
+
+	about_module = actionCollection()->addAction("help_about_module");
+	about_module->setText(i18n("About Current Module"));
+	about_module->setVisible(false);
+	connect(about_module, SIGNAL(triggered(bool) ), SLOT(aboutModule()));
+
+	createGUI("kinfocenterui.rc");
+
+	report_bug = actionCollection()->action("help_report_bug");
+	report_bug->setText(i18n("&Report Bug..."));
+	report_bug->disconnect();
+	connect(report_bug, SIGNAL(activated()), SLOT(reportBug()));
 }
 
-void TopLevel::setupActions()
-{
-  KStandardAction::quit(this, SLOT(close()), actionCollection());
-  KStandardAction::keyBindings(guiFactory(), SLOT(configureShortcuts()),
-                          actionCollection());
+void TopLevel::activateModule(ConfigModule *configModule) {
+	kDebug() << "Activating module..." << endl;
 
-  QActionGroup* viewModeGroup = new QActionGroup(this);
+	_active=configModule;
 
-  icon_view = new KToggleAction(i18n("&Icon View"), this);
-  actionCollection()->addAction("activate_iconview", icon_view);
-  connect(icon_view, SIGNAL(triggered(bool) ), SLOT(activateIconView()));
-  icon_view->setActionGroup(viewModeGroup);
+	// dock it
+	if (!_dock->dockModule(configModule)) {
+		kDebug() << "Activating module by docking it." << endl;
 
-  tree_view = new KToggleAction(i18n("&Tree View"), this);
-  actionCollection()->addAction("activate_treeview", tree_view);
-  connect(tree_view, SIGNAL(triggered(bool) ), SLOT(activateTreeView()));
-  tree_view->setActionGroup(viewModeGroup);
+		return;
+	}
 
-  QActionGroup* iconSizeGroup = new QActionGroup(this);
+	kDebug() << "Modifying About Module." << endl;
 
-  icon_small = new KToggleAction(i18nc("@option activate small size icons", "&Small"), this);
-  actionCollection()->addAction("activate_smallicons", icon_small);
-  connect(icon_small, SIGNAL(triggered(bool) ), SLOT(activateSmallIcons()));
-  icon_small->setActionGroup(iconSizeGroup);
+	if (configModule->aboutData()) {
+		about_module->setText(i18nc("Help menu->about <modulename>", "About %1", handleAmpersand(configModule->moduleName())));
+		about_module->setIcon(configModule->realIcon(KIconLoader::SizeSmall));
+		about_module->setVisible(true);
+	} else {
+		about_module->setText(i18n("About Current Module"));
+		about_module->setIcon(KIcon());
+		about_module->setVisible(false);
+	}
 
-  icon_medium = new KToggleAction(i18nc("@option activate medium size icons", "&Medium"), this);
-  actionCollection()->addAction("activate_mediumicons", icon_medium);
-  connect(icon_medium, SIGNAL(triggered(bool) ), SLOT(activateMediumIcons()));
-  icon_medium->setActionGroup(iconSizeGroup);
+	setCaption(configModule->moduleName(), false);
 
-  icon_large = new KToggleAction(i18nc("@option activate large size icons", "&Large"), this);
-  actionCollection()->addAction("activate_largeicons", icon_large);
-  connect(icon_large, SIGNAL(triggered(bool) ), SLOT(activateLargeIcons()));
-  icon_large->setActionGroup(iconSizeGroup);
+	if (configModule->moduleName().isEmpty())
+		report_bug->setText(i18n("&Report Bug..."));
+	else
+		report_bug->setText(i18n("Report Bug on Module %1...", handleAmpersand(configModule->moduleName())));
 
-  icon_huge = new KToggleAction(i18nc("@option activate huge size icons", "&Huge"), this);
-  actionCollection()->addAction("activate_hugeicons", icon_huge);
-  connect(icon_huge, SIGNAL(triggered(bool) ), SLOT(activateHugeIcons()));
-  icon_huge->setActionGroup(iconSizeGroup);
 
-  about_module = actionCollection()->addAction("help_about_module");
-  about_module->setText(i18n("About Current Module"));
-  connect(about_module, SIGNAL(triggered(bool) ), SLOT(aboutModule()));
-  about_module->setEnabled(false);
-
-  createGUI("kinfocenterui.rc");
-
-  report_bug = actionCollection()->action("help_report_bug");
-  report_bug->setText(i18n("&Report Bug..."));
-  report_bug->disconnect();
-  connect(report_bug, SIGNAL(activated()), SLOT(reportBug()));
+	kDebug() << "Activating module done." << endl;
 }
 
-void TopLevel::activateIconView()
-{
-  KCGlobal::setViewMode(Icon);
-  _indextab->activateView(Icon);
-
-  icon_small->setEnabled(true);
-  icon_medium->setEnabled(true);
-  icon_large->setEnabled(true);
-  icon_huge->setEnabled(true);
-
-  switch(KCGlobal::iconSize())
-    {
-    case KIconLoader::SizeSmall:
-      icon_small->setChecked(true);
-      break;
-    case KIconLoader::SizeLarge:
-      icon_large->setChecked(true);
-      break;
-    case KIconLoader::SizeHuge:
-      icon_huge->setChecked(true);
-      break;
-    default:
-      icon_medium->setChecked(true);
-      break;
-    }
+void TopLevel::deleteDummyAbout() {
+	delete dummyAbout;
+	dummyAbout = 0;
 }
 
-void TopLevel::activateTreeView()
-{
-  KCGlobal::setViewMode(Tree);
-  _indextab->activateView(Tree);
+void TopLevel::reportBug() {
+	dummyAbout = NULL;
+	bool deleteit = false;
 
-  icon_small->setEnabled(false);
-  icon_medium->setEnabled(false);
-  icon_large->setEnabled(false);
-  icon_huge->setEnabled(false);
+	if (!_active) // report against kinfocenter
+		dummyAbout = const_cast<KAboutData*>(KGlobal::mainComponent().aboutData());
+	else {
+		if (_active->aboutData())
+			dummyAbout = const_cast<KAboutData*>(_active->aboutData());
+		else {
+			QString kcmLibrary = "kcm" + _active->library();
+			dummyAbout = new KAboutData(kcmLibrary.toLatin1(), 0, ki18n(_active->moduleName().toUtf8()), "2.0");
+			deleteit = true;
+		}
+	}
+	KBugReport *br = new KBugReport(this, false, dummyAbout);
+	if (deleteit)
+		connect(br, SIGNAL(finished()), SLOT(deleteDummyAbout()));
+	else
+		dummyAbout = NULL;
+	
+	br->show();
 }
 
-void TopLevel::activateSmallIcons()
-{
-  KCGlobal::setIconSize(KIconLoader::SizeSmall);
-  _indextab->reload();
+void TopLevel::aboutModule() {
+	kDebug() << "About " << _active->moduleName() << endl;
+	
+	KAboutApplicationDialog dlg(_active->aboutData());
+	dlg.exec();
 }
 
-void TopLevel::activateMediumIcons()
-{
-  KCGlobal::setIconSize(KIconLoader::SizeMedium);
-  _indextab->reload();
+QString TopLevel::handleAmpersand(const QString& modName) const {
+	QString modulename = modName;
+	// double it
+	if (modulename.contains( '&')) {
+		for (int i = modulename.length(); i >= 0; --i)
+			if (modulename[ i ] == '&')
+				modulename.insert(i, "&");
+	}
+	
+	return modulename;
 }
 
-void TopLevel::activateLargeIcons()
-{
-  KCGlobal::setIconSize(KIconLoader::SizeLarge);
-  _indextab->reload();
-}
+void TopLevel::activateGeneral() {
+	kDebug() << "Activating General..." << endl;
 
-void TopLevel::activateHugeIcons()
-{
-  KCGlobal::setIconSize(KIconLoader::SizeHuge);
-  _indextab->reload();
-}
+	about_module->setText(i18n("About Current Module"));
+	about_module->setIcon(KIcon());
+	about_module->setVisible(false);
 
-void TopLevel::newModule(const QString &name, const QString& docPath, const QString &quickhelp)
-{
-    setCaption(name, false);
+	setCaption(i18n("General Information"), false);
 
-  _helptab->setText( docPath, quickhelp );
-
-  if (!report_bug) return;
-
-  if(name.isEmpty())
-    report_bug->setText(i18n("&Report Bug..."));
-  else
-    report_bug->setText(i18n("Report Bug on Module %1...", handleAmpersand( name)));
-}
-
-void TopLevel::changedModule(ConfigModule *changed)
-{
-    if (!changed)
-        return;
-    setCaption(changed->moduleName(), changed->isChanged() );
-}
-
-void TopLevel::categorySelected(Q3ListViewItem *category)
-{
-  if (_active)
-  {
-    if (_active->isChanged())
-      {
-        int res = KMessageBox::warningYesNoCancel(this, _active ?
-             i18n("There are unsaved changes in the active module.\n"
-                  "Do you want to apply the changes before running "
-                  "the new module or discard the changes?") :
-             i18n("There are unsaved changes in the active module.\n"
-                  "Do you want to apply the changes before exiting "
-                  "the Control Center or discard the changes?"),
-                            i18n("Unsaved Changes"),
-                            KStandardGuiItem::apply(),
-                            KStandardGuiItem::discard());
-        if (res == KMessageBox::Yes)
-          _active->module()->applyClicked();
-        else if (res == KMessageBox::Cancel)
-          return;
-      }
-  }
-  _dock->removeModule();
-  about_module->setText( i18n( "About Current Module" ) );
-  about_module->setIcon( KIcon() );
-  about_module->setEnabled( false );
-
-  // insert the about widget
-  Q3ListViewItem *firstItem = category->firstChild();
-  QString caption = static_cast<ModuleTreeItem*>(category)->caption();
-  if( qstrcmp(_dock->baseWidget()->metaObject()->className(), "AboutWidget" ) == 0)
-  {
-    static_cast<AboutWidget *>( _dock->baseWidget() )->setCategory( firstItem, caption);
-  }
-  else
-  {
-    AboutWidget *aw = new AboutWidget( this, firstItem, caption );
-    connect( aw, SIGNAL( moduleSelected( ConfigModule * ) ),
-             SLOT( activateModule( ConfigModule * ) ) );
-    _dock->setBaseWidget( aw );
-  }
-}
-
-
-void TopLevel::activateModule(ConfigModule *mod)
-{
-  if ( _dock->module() == mod )
-     return;
-
-  // tell the index to display the module
-  _indextab->makeVisible(mod);
-
-  // tell the index to mark this module as loaded
-  _indextab->makeSelected(mod);
-
-  // dock it
-  if (!_dock->dockModule(mod))
-  {
-     if ( _dock->module() )
-     {
-       _indextab->makeVisible(_active);
-       _indextab->makeSelected(_active);
-     }
-     return;
-  }
-
-  _active=mod;
-
-  if (mod->aboutData())
-  {
-     about_module->setText(i18nc("Help menu->about <modulename>", "About %1",
-                             handleAmpersand( mod->moduleName())));
-     about_module->setIcon(KIcon(mod->icon()));
-     about_module->setEnabled(true);
-  }
-  else
-  {
-     about_module->setText(i18n("About Current Module"));
-     about_module->setIcon(KIcon());
-     about_module->setEnabled(false);
-  }
-}
-
-void TopLevel::deleteDummyAbout()
-{
-  delete dummyAbout;
-  dummyAbout = 0;
-}
-
-
-void TopLevel::slotHelpRequest()
-{
-    _tab->setCurrentIndex( _tab->indexOf( _helptab ) );
-}
-
-void TopLevel::reportBug()
-{
-    // this assumes the user only opens one bug report at a time
-    static char buffer[128];
-
-    dummyAbout = 0;
-    bool deleteit = false;
-
-    if (!_active) // report against kinfocenter
-        dummyAbout = const_cast<KAboutData*>(KGlobal::mainComponent().aboutData());
-    else
-    {
-        if (_active->aboutData())
-            dummyAbout = const_cast<KAboutData*>(_active->aboutData());
-        else
-        {
-            snprintf(buffer, sizeof(buffer), "kcm%s", _active->library().toLatin1().constData());
-            dummyAbout = new KAboutData(buffer, 0, ki18n(_active->moduleName().toUtf8()), "2.0");
-            deleteit = true;
-        }
-    }
-    KBugReport *br = new KBugReport(this, false, dummyAbout);
-    if (deleteit)
-        connect(br, SIGNAL(finished()), SLOT(deleteDummyAbout()));
-    else
-        dummyAbout = 0;
-    br->show();
-}
-
-void TopLevel::aboutModule()
-{
-    KAboutApplicationDialog dlg(_active->aboutData());
-    dlg.exec();
-}
-
-QString TopLevel::handleAmpersand( const QString &modName ) const
-{
-  QString modulename = modName;
-   if( modulename.contains( '&' )) // double it
-   {
-      for( int i = modulename.length();
-           i >= 0;
-           --i )
-         if( modulename[ i ] == '&' )
-             modulename.insert( i, "&" );
-   }
-   return modulename;
+	report_bug->setText(i18n("&Report Bug..."));
+	
 }

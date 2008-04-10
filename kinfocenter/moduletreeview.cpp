@@ -1,21 +1,21 @@
 /*
-  Copyright (c) 2000 Matthias Elter <elter@kde.org>
-  Copyright (c) 1999 Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
+ Copyright (c) 2000 Matthias Elter <elter@kde.org>
+ Copyright (c) 1999 Matthias Hoelzer-Kluepfel <hoelzer@kde.org>
 
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation; either version 2 of the License, or
-  (at your option) any later version.
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-  You should have received a copy of the GNU General Public License along
-  with this program; if not, write to the Free Software Foundation, Inc.,
-  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-*/
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
 
 #include "moduletreeview.h"
 #include "global.h"
@@ -25,353 +25,120 @@
 #include <kiconloader.h>
 #include <kservicegroup.h>
 #include <kdebug.h>
+#include <kicon.h>
 
-#include <Qt3Support/Q3Header>
-#include <Qt3Support/Q3WhatsThis>
-#include <QImage>
-#include <QPainter>
-#include <QBitmap>
-#include <QPixmap>
-#include <Q3PtrList>
-#include <QKeyEvent>
 
 #include "moduletreeview.moc"
 
-static QPixmap appIcon(const QString &iconName)
-{
-     QString path;
-     QPixmap normal = KIconLoader::global()->loadIcon(iconName, KIconLoader::Small, 0, KIconLoader::DefaultState, QStringList(), &path, true);
-     // make sure they are not larger than KIconLoader::SizeSmall
-     if (normal.width() > KIconLoader::SizeSmall || normal.height() > KIconLoader::SizeSmall)
-     {
-         QImage tmp = normal.toImage();
-         tmp = tmp.scaled(KIconLoader::SizeSmall, KIconLoader::SizeSmall, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
-         normal = QPixmap::fromImage(tmp);
-     }
-     return normal;
+ModuleTreeView::ModuleTreeView(ConfigModuleList *modules, QWidget * parent) :
+	QListWidget(parent), _modules(modules) {
+	
+	connect(this, SIGNAL(itemSelectionChanged()), this, SLOT(selectItem()));
+
+	 setSortingEnabled(false);
+	_generalItem = NULL;
 }
 
-class ModuleTreeWhatsThis : public Q3WhatsThis
-{
-public:
-    ModuleTreeWhatsThis( ModuleTreeView* tree)
-        : Q3WhatsThis( tree ), treeView( tree ) {}
-    ~ModuleTreeWhatsThis(){}
-
-
-    QString text( const QPoint & p) {
-        ModuleTreeItem* i = (ModuleTreeItem*)  treeView->itemAt( p );
-        if ( i && i->module() )  {
-            return i->module()->comment();
-        } else if ( i ) {
-            return i18n("The %1 configuration group. Click to open it.", i->text(0) );
-        }
-        return i18n("This treeview displays all available control modules. Click on one of the modules to receive more detailed information.");
-    }
-
-private:
-    ModuleTreeView* treeView;
-};
-
-ModuleTreeView::ModuleTreeView(ConfigModuleList *list, QWidget * parent)
-  : K3ListView(parent)
-  , _modules(list)
-{
-  addColumn(QString());
-  setColumnWidthMode (0, Q3ListView::Maximum);
-  setAllColumnsShowFocus(true);
-  setResizeMode(Q3ListView::AllColumns);
-  setRootIsDecorated(true);
-  setHScrollBarMode(AlwaysOff);
-  header()->hide();
-
-  new ModuleTreeWhatsThis( this );
-
-  connect(this, SIGNAL(clicked(Q3ListViewItem*)),
-                  this, SLOT(slotItemSelected(Q3ListViewItem*)));
+void ModuleTreeView::fill() {
+	_generalItem = new QListWidgetItem(KIcon(KINFOCENTER_ICON_NAME), i18n("General Information"), this);
+	
+	foreach(ConfigModule* configModule, *_modules) {
+		new ModuleTreeItem(this, configModule);
+	}
 }
 
-void ModuleTreeView::fill()
-{
-  clear();
-
-  QStringList subMenus = _modules->submenus(KCGlobal::baseGroup());
-  for(QStringList::ConstIterator it = subMenus.begin();
-      it != subMenus.end(); ++it)
-  {
-     QString path = *it;
-     ModuleTreeItem*  menu = new ModuleTreeItem(this);
-     menu->setGroup(path);
-     fill(menu, path);
-  }
-
-  ConfigModule *module;
-  Q3PtrList<ConfigModule> moduleList = _modules->modules(KCGlobal::baseGroup());
-  for (module=moduleList.first(); module != 0; module=moduleList.next())
-  {
-     new ModuleTreeItem(this, module);
-  }
-}
-
-void ModuleTreeView::fill(ModuleTreeItem *parent, const QString &parentPath)
-{
-  QStringList subMenus = _modules->submenus(parentPath);
-  for(QStringList::ConstIterator it = subMenus.begin();
-      it != subMenus.end(); ++it)
-  {
-     QString path = *it;
-     ModuleTreeItem*  menu = new ModuleTreeItem(parent);
-     menu->setGroup(path);
-     fill(menu, path);
-  }
-
-  ConfigModule *module;
-  Q3PtrList<ConfigModule> moduleList = _modules->modules(parentPath);
-  for (module=moduleList.first(); module != 0; module=moduleList.next())
-  {
-     new ModuleTreeItem(parent, module);
-  }
+void ModuleTreeView::selectItem() {
+	QListWidgetItem* item = this->currentItem();
+	if (item==NULL)
+		return;
+	
+	if (isGeneralItem(item)) {
+		kDebug() << "General Selected" << endl;
+		emit generalSelected();
+		return;
+	}
+	
+	kDebug() << "Select item" << endl;
+	ModuleTreeItem* moduleItem = static_cast<ModuleTreeItem*>(item);
+	
+	emit moduleSelected(moduleItem->module());
+	kDebug() << "Select item end" << endl;
 }
 
 
-
-QSize ModuleTreeView::sizeHint() const
-{
-    return Q3ListView::sizeHint().boundedTo(
-	QSize( fontMetrics().maxWidth()*35, QWIDGETSIZE_MAX) );
+bool ModuleTreeView::isGeneralItem(const QListWidgetItem* item) const {
+	if (item == _generalItem)
+		return true;
+	
+	return false;
 }
 
-void ModuleTreeView::makeSelected(ConfigModule *module)
-{
-  ModuleTreeItem *item = static_cast<ModuleTreeItem*>(firstChild());
-
-  updateItem(item, module);
+QListWidgetItem* ModuleTreeView::generalItem() const {
+	return _generalItem;
 }
 
-void ModuleTreeView::updateItem(ModuleTreeItem *item, ConfigModule *module)
-{
-  while (item)
-    {
-          if (item->childCount() != 0)
-                updateItem(static_cast<ModuleTreeItem*>(item->firstChild()), module);
-          if (item->module() == module)
-                {
-                  setSelected(item, true);
-                  break;
-                }
-          item = static_cast<ModuleTreeItem*>(item->nextSibling());
-    }
-}
+ModuleTreeItem* ModuleTreeView::findMatchingItem(ConfigModule* configModule) const {
+	for (int i = 0; i < count() ; ++i) {
+		QListWidgetItem* tempItem = item(i);
+		if (isGeneralItem(tempItem)) {
+			continue;
+		}
 
-/*
-void ModuleTreeView::expandItem(QListViewItem *item, QPtrList<QListViewItem> *parentList)
-{
-  while (item)
-    {
-      setOpen(item, parentList->contains(item));
+		ModuleTreeItem* moduleItem = static_cast<ModuleTreeItem*>(tempItem);
+		if (moduleItem->module()==configModule)
+			return moduleItem;
 
-          if (item->childCount() != 0)
-                expandItem(item->firstChild(), parentList);
-      item = item->nextSibling();
-    }
-}
-*/
-void ModuleTreeView::makeVisible(ConfigModule *module)
-{
-  QString path = _modules->findModule(module);
-  if (path.startsWith(KCGlobal::baseGroup()))
-     path = path.mid(KCGlobal::baseGroup().length());
+	}
 
-  QStringList groups = path.split( '/');
-
-  ModuleTreeItem *item = 0;
-  QStringList::ConstIterator it;
-  for (it=groups.begin(); it != groups.end(); ++it)
-  {
-     if (item)
-        item = static_cast<ModuleTreeItem*>(item->firstChild());
-     else
-        item = static_cast<ModuleTreeItem*>(firstChild());
-
-     while (item)
-     {
-        if (item->tag() == *it)
-        {
-           setOpen(item, true);
-           break;
-        }
-        item = static_cast<ModuleTreeItem*>(item->nextSibling());
-     }
-     if (!item)
-        break; // Not found (?)
-  }
-
-  // make the item visible
-  if (item)
-    ensureItemVisible(item);
-}
-
-void ModuleTreeView::slotItemSelected(Q3ListViewItem* item)
-{
-  if (!item) return;
-
-  if (static_cast<ModuleTreeItem*>(item)->module())
-    {
-      emit moduleSelected(static_cast<ModuleTreeItem*>(item)->module());
-      return;
-    }
-  else
-    {
-      emit categorySelected(item);
-    }
-
-  setOpen(item, !item->isOpen());
-
-  /*
-  else
-    {
-      QPtrList<QListViewItem> parents;
-
-      QListViewItem* i = item;
-      while(i)
-        {
-          parents.append(i);
-          i = i->parent();
-        }
-
-      //int oy1 = item->itemPos();
-      //int oy2 = mapFromGlobal(QCursor::pos()).y();
-      //int offset = oy2 - oy1;
-
-      expandItem(firstChild(), &parents);
-
-      //int x =mapFromGlobal(QCursor::pos()).x();
-      //int y = item->itemPos() + offset;
-      //QCursor::setPos(mapToGlobal(QPoint(x, y)));
-    }
-  */
-}
-
-void ModuleTreeView::keyPressEvent(QKeyEvent *e)
-{
-  if (!currentItem()) return;
-
-  if(e->key() == Qt::Key_Return
-     || e->key() == Qt::Key_Enter
-        || e->key() == Qt::Key_Space)
-    {
-      //QCursor::setPos(mapToGlobal(QPoint(10, currentItem()->itemPos()+5)));
-      slotItemSelected(currentItem());
-    }
-  else
-    K3ListView::keyPressEvent(e);
+	kDebug() << "Unable to find the matching item" << endl;
+	return NULL;
 }
 
 
-ModuleTreeItem::ModuleTreeItem(Q3ListViewItem *parent, ConfigModule *module)
-  : Q3ListViewItem(parent)
-  , _module(module)
-  , _tag(QString())
-  , _maxChildIconWidth(0)
-{
-  if (_module)
-        {
-          setText(0, ' ' + module->moduleName());
-          setPixmap(0, appIcon(module->icon()));
-        }
+ModuleTreeItem::ModuleTreeItem(QListWidget *parent, ConfigModule *module) :
+	QListWidgetItem(parent), _module(module) {
+
+	setText(module->moduleName());
+	
+	setIcon(module->realIcon(KIconLoader::SizeSmall));
+
 }
 
-ModuleTreeItem::ModuleTreeItem(Q3ListView *parent, ConfigModule *module)
-  : Q3ListViewItem(parent)
-  , _module(module)
-  , _tag(QString())
-  , _maxChildIconWidth(0)
-{
-  if (_module)
-        {
-          setText(0, ' ' + module->moduleName());
-          setPixmap(0, appIcon(module->icon()));
-        }
-}
-
-ModuleTreeItem::ModuleTreeItem(Q3ListViewItem *parent, const QString& text)
-  : Q3ListViewItem(parent, ' ' + text)
-  , _module(0)
-  , _tag(QString())
-  , _maxChildIconWidth(0)
-  {}
-
-ModuleTreeItem::ModuleTreeItem(Q3ListView *parent, const QString& text)
-  : Q3ListViewItem(parent, ' ' + text)
-  , _module(0)
-  , _tag(QString())
-  , _maxChildIconWidth(0)
-  {}
-
-void ModuleTreeItem::setPixmap(int column, const QPixmap& pm)
-{
-  if (!pm.isNull())
-  {
-    ModuleTreeItem* p = dynamic_cast<ModuleTreeItem*>(parent());
-    if (p)
-      p->regChildIconWidth(pm.width());
-  }
-
-  Q3ListViewItem::setPixmap(column, pm);
-}
-
-void ModuleTreeItem::regChildIconWidth(int width)
-{
-  if (width > _maxChildIconWidth)
-    _maxChildIconWidth = width;
-}
-
-void ModuleTreeItem::paintCell( QPainter * p, const QColorGroup & cg, int column, int width, int align )
-{
-  if (!pixmap(0))
-  {
-    int offset = 0;
-    ModuleTreeItem* parentItem = dynamic_cast<ModuleTreeItem*>(parent());
-    if (parentItem)
-    {
-      offset = parentItem->maxChildIconWidth();
-    }
-
-    if (offset > 0)
-    {
-      QPixmap pixmap(offset, offset);
-      pixmap.fill(Qt::color0);
-      pixmap.setMask(pixmap.createHeuristicMask());
-      QBitmap mask( pixmap.size() );
-      mask.clear();
-      pixmap.setMask( mask );
-      Q3ListViewItem::setPixmap(0, pixmap);
-    }
-  }
-
-  Q3ListViewItem::paintCell( p, cg, column, width, align );
+ConfigModule* ModuleTreeItem::module() const {
+	return _module;
 }
 
 
-void ModuleTreeItem::setGroup(const QString &path)
-{
-  KServiceGroup::Ptr group = KServiceGroup::group(path);
-  QString defName = path.left(path.length()-1);
-  int pos = defName.lastIndexOf('/');
-  if (pos >= 0)
-     defName = defName.mid(pos+1);
-  if (group && group->isValid())
-  {
-     setPixmap(0, appIcon(group->icon()));
-     setText(0, ' ' + group->caption());
-     setTag(defName);
-     setCaption(group->caption());
-  }
-  else
-  {
-     // Should not happen: Installation problem
-     // Let's try to fail softly.
-     setText(0, ' ' + defName);
-     setTag(defName);
-  }
+ModuleWidgetSearchLine::ModuleWidgetSearchLine(QWidget* parent, ModuleTreeView* listWidget) :
+	KListWidgetSearchLine(parent, listWidget) {
+	
+}
+
+bool ModuleWidgetSearchLine::itemMatches(const QListWidgetItem* item, const QString& search) const {
+	
+	const ModuleTreeView* moduleTree = static_cast<const ModuleTreeView*>(listWidget());
+	if (moduleTree->isGeneralItem(item)) {
+		return true;
+	}
+	
+	const ModuleTreeItem* moduleItem = static_cast<const ModuleTreeItem*>(item);
+	
+	QStringList itemMatches;
+	itemMatches << moduleItem->module()->moduleName();
+	//kDebug() << "Module name " << moduleItem->module()->moduleName() << endl;
+	
+	QStringList keywords = moduleItem->module()->keywords();
+	foreach(QString keyword, keywords) {
+		//kDebug() << "Key word " << keyword << endl;
+		itemMatches.append(keyword);
+	}
+	
+	
+	foreach(QString itemMatch, itemMatches) {
+		if (itemMatch.contains(search, Qt::CaseInsensitive)) {
+			return true;
+		}
+	}
+	
+	return false;
 }
