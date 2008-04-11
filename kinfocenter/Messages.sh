@@ -1,2 +1,2 @@
 #! /usr/bin/env bash
-$XGETTEXT *.cpp -o $podir/kinfocenter.pot
+$XGETTEXT base/*cpp *.cpp -o $podir/kinfocenter.pot
