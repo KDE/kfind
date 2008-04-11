@@ -53,10 +53,8 @@ kde4_add_kdeinit_executable( kinfocenter ${kinfocenter_KDEINIT_SRCS})
 
 target_link_libraries(kdeinit_kinfocenter  ${KDE4_KDE3SUPPORT_LIBS} ${KDE4_KHTML_LIBS} ${KDE4_KUTILS_LIBS} )
 
-install(TARGETS kdeinit_kinfocenter  DESTINATION ${INSTALL_TARGETS_DEFAULT_ARGS} )
-
-target_link_libraries( kinfocenter kdeinit_kinfocenter )
-install(TARGETS kinfocenter DESTINATION ${BIN_INSTALL_DIR})
+install(TARGETS kdeinit_kinfocenter  ${INSTALL_TARGETS_DEFAULT_ARGS} )
+install(TARGETS kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############
 
