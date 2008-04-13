@@ -1,7 +1,7 @@
 /* Retrive information about PCI subsystem trough libpci library from
    pciutils package. This should be possible on Linux, BSD and AIX.
    
-   Device classes, subclasses and programing interfaces are hardcoded
+   Device classes, subclasses and programming interfaces are hardcoded
    here, since there are only few of them, and they are important and
    should their names be translated.
    

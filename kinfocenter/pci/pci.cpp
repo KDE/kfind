@@ -1,9 +1,9 @@
-/* Retreive information about PCI subsystem trough libpci library from
+/* Retrieve information about PCI subsystem trough libpci library from
  pciutils package. This should be possible on Linux, BSD and AIX.
  
  This code is based on example.c, lspci.c and pci.ids from pciutils.
  
- Device classes, subclasses and programing interfaces are hardcoded
+ Device classes, subclasses and programming interfaces are hardcoded
  here, since there are only few of them, and they are important and
  should their names be translated.
  
@@ -757,7 +757,7 @@ bool GetInfo_PCIUtils(QTreeWidget* tree) {
 		deviceList << value.sprintf("%02X:%02X.%d", PCIDevice->bus, PCIDevice->dev, PCIDevice->func);
 		//create device tree
 		DeviceName=new QTreeWidgetItem(tree, deviceList);
-		//adding class, subclass and programing intrface info
+		//adding class, subclass and programming intrface info
 		after=addDeviceClass(DeviceName, NULL, &info);
 
 		//adding revision
@@ -793,7 +793,7 @@ bool GetInfo_PCIUtils(QTreeWidget* tree) {
 		after=addCardbusControl(DeviceName, after, &info);
 		//adding ROM
 		after=addRom(DeviceName, after, &info, PCIDevice);
-		//adding capabilites
+		//adding capabilities
 		after=addCaps(DeviceName, after, &info);
 
 		//adding interrupt info (IRQ, pin)
