@@ -9,7 +9,9 @@ X-KDE-Library=kcm_solidproc
 X-KDE-ParentApp=kinfocenter
 
 Name=Processor Information
+Name[ca]=Informació del processador
 Name[de]=Informationen zum Prozessor
+Name[el]=Πληροφορίες επεξεργαστή
 Name[es]=Información sobre el procesador
 Name[fi]=Tietoja prosessorista
 Name[ga]=Eolas Faoin Phróiseálaí
