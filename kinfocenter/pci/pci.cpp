@@ -282,7 +282,7 @@ static QTreeWidgetItem* addMapping(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 		if (is64b) { //skip one range
 			continue;
 		}//if
-		topLocalAfter=createTitle(after, i18n("Mapping %1").arg(i));
+		topLocalAfter=createTitle(after, i18n("Mapping %1", i));
 		localAfter=create(topLocalAfter, i18n("Space"), (info->mapping[i].baseAddressMap ? i18n("I/O") : i18n("Memory")));
 		if (info->mapping[i].baseAddressMap==0) { //memory only
 			localAfter=create(topLocalAfter, i18n("Type"), getNameById(mappingType, info->mapping[i].baseAddressType));
@@ -454,14 +454,14 @@ static QTreeWidgetItem* addCardbusResource(QTreeWidgetItem *parent, QTreeWidgetI
 		after=createTitle(parent, i18n("Memory windows"));
 		for (int i=0; i<2; i++) {
 			pref=(i ? info->cbControlPref1 : info->cbControlPref0);
-			topLocalAfter=createTitle(after, i18n("Window %1").arg(i));
+			topLocalAfter=createTitle(after, i18n("Window %1", i));
 			localAfter=create(topLocalAfter, i18n("Prefetchable"),(pref?i18n(strYes):i18n(strNo)));
 			localAfter=create(topLocalAfter, i18n("Base"),value.sprintf("0x%08X",info->cbMemory[i].cbMemoryBase));
 			localAfter=create(topLocalAfter, i18n("Limit"),value.sprintf("0x%08X",info->cbMemory[i].cbMemoryLimit));
 		}//for
 		after=createTitle(parent, i18n("I/O windows"));
 		for (int i=0; i<2; i++) {
-			topLocalAfter=createTitle(after, i18n("Window %1").arg(i));
+			topLocalAfter=createTitle(after, i18n("Window %1", i));
 			localAfter=create(topLocalAfter, i18n("Type"),(info->cbIo[i].cbIoBaseType?i18n("32 bit"):i18n("16 bit")));
 			if (info->cbIo[i].cbIoBaseType==1) {
 				localAfter=create(topLocalAfter, i18n("Base"),value.sprintf("0x%08X",info->cbIo[i].cbIoBase&0xFFFFFFFC));
