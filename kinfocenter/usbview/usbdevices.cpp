@@ -393,7 +393,7 @@ bool USBDevice::parse(const QString &fname)
 			error = true;
 #endif
 		}
-		controller.setName( QString::fromLocal8Bit("/dev/usb%1").arg(i++) );
+		controller.setFileName( QString::fromLocal8Bit("/dev/usb%1").arg(i++) );
 	}
 
 	if ( showErrorMessage && error ) {

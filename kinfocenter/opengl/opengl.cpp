@@ -212,7 +212,7 @@ static bool get_dri_device() {
 
 	QStringList pci_info;
 	if (ReadPipe("sysctl -n hw.dri.0.name",pci_info)) {
-		dri_info.module = pci_info[0].mid(0, pci_info[0].find(0x20));
+		dri_info.module = pci_info[0].mid(0, pci_info[0].indexOf(0x20));
 		}
 	return false;
 }
