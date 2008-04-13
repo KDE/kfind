@@ -18,7 +18,6 @@
 
 #include "kcm_pci.h"
 
-#include <QtGui>
 #include <QStringList>
 
 #include <KPluginFactory>
@@ -35,10 +34,10 @@
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QTreeWidget>
 
 #include <klocale.h>
 #include <kglobal.h>
-#include <kdialog.h>
 #include <kseparator.h>
 
 K_PLUGIN_FACTORY(KCMPciFactory,

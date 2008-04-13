@@ -23,6 +23,8 @@
 
 #include <kcmodule.h>
 
+#include <solid/device.h>
+
 #include "ui_solidproc.h"
 
 class QPushButton;
