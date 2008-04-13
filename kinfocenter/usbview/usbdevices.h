@@ -12,6 +12,7 @@
 #define __USB_DEVICES_H__
 
 #include <QList>
+#include <QString>
 
 #if defined(__DragonFly__)
 #include <bus/usb/usb.h>

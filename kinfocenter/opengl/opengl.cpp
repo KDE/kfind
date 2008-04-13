@@ -21,7 +21,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <QtGui>
+#include "opengl.h"
+
 #include <QRegExp>
 #include <QFile>
 #include <QTextStream>
@@ -47,7 +48,6 @@
 #include <GL/glext.h>
 #include <GL/glx.h>
 
-#include "opengl.h"
 #include "opengl.moc"
 
 K_PLUGIN_FACTORY(KCMOpenGLFactory,

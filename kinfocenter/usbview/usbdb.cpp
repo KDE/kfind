@@ -8,6 +8,8 @@
  *                                                                         *
  ***************************************************************************/
 
+#include "usbdb.h"
+
 #include <iostream>
 
 #include <QFile>
@@ -16,8 +18,6 @@
 #include <QTextStream>
 
 #include <kstandarddirs.h>
-
-#include "usbdb.h"
 
 USBDB::USBDB() {
 	QString db = "/usr/share/hwdata/usb.ids"; /* on Fedora */

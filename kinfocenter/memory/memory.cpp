@@ -20,9 +20,9 @@
 
 #include "memory.h"
 
-#include <QtGui>
 #include <QStringList>
 
+#include <QGroupBox>
 #include <QLayout>
 #include <QPainter>
 #include <QPixmap>
@@ -30,6 +30,7 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QLinearGradient>
+#include <QTreeWidget>
 
 #include <kaboutdata.h>
 #include <kdialog.h>
@@ -39,7 +40,6 @@
 
 #include <klocale.h>
 #include <kglobal.h>
-#include <kdialog.h>
 
 #include <KPluginFactory>
 #include <KPluginLoader>

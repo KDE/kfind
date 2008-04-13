@@ -8,6 +8,8 @@
  *                                                                         *
  ***************************************************************************/
 
+#include "usbdevices.h"
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -22,7 +24,6 @@
 #include <kmessagebox.h>
 
 #include "usbdb.h"
-#include "usbdevices.h"
 
 #include <math.h>
 

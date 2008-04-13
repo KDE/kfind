@@ -18,7 +18,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <QtGui>
+#include "solidproc.h"
+
 #include <QStringList>
 
 #include <KPluginFactory>
@@ -30,11 +31,9 @@
 
 // Solid includes
 #include <solid/devicenotifier.h>
-#include <solid/device.h>
 #include <solid/deviceinterface.h>
 #include <solid/processor.h>
 
-#include "solidproc.h"
 #include "solidproc.moc"
 
 K_PLUGIN_FACTORY(KCMSolidProcFactory,
