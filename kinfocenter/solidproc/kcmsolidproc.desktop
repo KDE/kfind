@@ -29,5 +29,10 @@ Name[zh_CN]=处理器信息
 Name[zh_TW]=處理器資訊
 
 Comment=Processor Information
+Comment[fi]=Tietoja prosessorista
+Comment[gu]=પ્રોસેસર માહિતી
+Comment[th]=ข้อมูลหน่วยประมวลผล
+Comment[zh_CN]=处理器信息
+Comment[zh_TW]=處理器資訊
 
 Categories=Qt;KDE;X-KDE-information;

@@ -82,6 +82,11 @@ Name[zh_CN]=USB 设备
 Name[zh_TW]=USB 裝置
 
 Comment=USB devices attached to this computer
+Comment[fi]=Näyttä tietokoneeseen liitetyt USB-laitteet
+Comment[gu]=આ કોમ્પ્યુટર સાથે જોડાયેલ USB સાધનો
+Comment[th]=ดูอุปกรณ์ USB ที่เชื่อมต่ออยู่กับคอมพิวเตอร์เครื่องนี้
+Comment[zh_CN]=连接到该计算机的 USB 设备
+Comment[zh_TW]=查看連接到這台電腦的 USB 裝置
 
 X-KDE-Keywords=USB,devices,viewer,control
 X-KDE-Keywords[be]=Прылады,Прагляд,Праглядальнік,Кіраванне,USB,devices,viewer,control
