@@ -108,9 +108,9 @@ KCMMemory::~KCMMemory() {
 }
 
 QString KCMMemory::quickHelp() const {
-	return i18n(" This display shows you the current memory usage of your system."
+	return i18n("This display shows you the current memory usage of your system."
 		" The values are updated on a regular basis and give you an"
-		" overview of the physical and virtual used memory.");
+		" overview of the physical and virtual memory being used.");
 }
 
 QGroupBox* KCMMemory::initializeText() {
