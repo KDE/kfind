@@ -23,25 +23,27 @@
 
 #ifndef kcmsambaimports_h_included
 #define kcmsambaimports_h_included
- 
+
 #include <QTimer>
 #include <Qt3Support/Q3CheckListItem>
 #include <kconfig.h>
 
-class ImportsView: public QWidget
-{
-   Q_OBJECT
-   public:
-      explicit ImportsView(QWidget *parent, KConfig *config=0);
-      virtual ~ImportsView() {}
-      void saveSettings() {}
-      void loadSettings() {}
+class ImportsView : public QWidget {
+Q_OBJECT
+public:
+	explicit ImportsView(QWidget *parent, KConfig *config=0);
+	virtual ~ImportsView() {
+	}
+	void saveSettings() {
+	}
+	void loadSettings() {
+	}
 private:
-   KConfig *configFile;
-   Q3ListView list;
-   QTimer timer;
+	KConfig *configFile;
+	Q3ListView list;
+	QTimer timer;
 private Q_SLOTS:
-   void updateList();
+	void updateList();
 };
 
 #endif // main_included

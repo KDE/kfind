@@ -31,66 +31,60 @@
 
 #include <stdio.h>
 
-ImportsView::ImportsView(QWidget * parent, KConfig *config )
-   : QWidget (parent)
-   ,configFile(config)
-   ,list(this)
-{
-    QBoxLayout *topLayout = new QVBoxLayout(this);
-    topLayout->setMargin(KDialog::marginHint());
-    topLayout->setSpacing(KDialog::spacingHint());
-    topLayout->addWidget(&list);
+ImportsView::ImportsView(QWidget * parent, KConfig *config) :
+	QWidget(parent), configFile(config), list(this) {
+	QBoxLayout *topLayout = new QVBoxLayout(this);
+	topLayout->setMargin(KDialog::marginHint());
+	topLayout->setSpacing(KDialog::spacingHint());
+	topLayout->addWidget(&list);
 
-    list.setAllColumnsShowFocus(true);
-    list.setShowSortIndicator(true);
-    list.setMinimumSize(425,200);
-    list.addColumn(i18n("Type"), 50);
-    list.addColumn(i18n("Resource"), 200);
-    list.addColumn(i18n("Mounted Under"), 190);
+	list.setAllColumnsShowFocus(true);
+	list.setShowSortIndicator(true);
+	list.setMinimumSize(425, 200);
+	list.addColumn(i18n("Type"), 50);
+	list.addColumn(i18n("Resource"), 200);
+	list.addColumn(i18n("Mounted Under"), 190);
 
-    this->setWhatsThis( i18n("This list shows the Samba and NFS shared"
-      " resources mounted on your system from other hosts. The \"Type\""
-      " column tells you whether the mounted resource is a Samba or an NFS"
-      " type of resource. The \"Resource\" column shows the descriptive name"
-      " of the shared resource. Finally, the third column, which is labeled"
-      " \"Mounted under\" shows the location on your system where the shared"
-      " resource is mounted.") );
- 
-    timer.start(10000);
-    QObject::connect(&timer, SIGNAL(timeout()), this, SLOT(updateList()));
-    updateList();
+	this->setWhatsThis(i18n("This list shows the Samba and NFS shared"
+		" resources mounted on your system from other hosts. The \"Type\""
+		" column tells you whether the mounted resource is a Samba or an NFS"
+		" type of resource. The \"Resource\" column shows the descriptive name"
+		" of the shared resource. Finally, the third column, which is labeled"
+		" \"Mounted under\" shows the location on your system where the shared"
+		" resource is mounted.") );
+
+	timer.start(10000);
+	QObject::connect(&timer, SIGNAL(timeout()), this, SLOT(updateList()));
+	updateList();
 }
 
-void ImportsView::updateList()
-{
-   list.clear();
-   char *e;
-   char buf[250];
-   QByteArray s(""),strSource, strMount, strType;
-   FILE *f=popen("mount","r");
-   if (f==0) return;
-   do
-   {
-      e=fgets(buf,250,f);
-      if (e!=0)
-      {
-         s=buf;
-         if ((s.contains(" nfs ")) || (s.contains(" smbfs ")))
-         {
-            strSource=s.left(s.indexOf(" on /"));
-            strMount=s.mid(s.indexOf(" on /")+4,s.length());
-            if ((s.contains(" nfs ")) || (s.contains("/remote on ")))
-               strType="NFS";
-            else if (s.contains(" smbfs "))
-               strType="SMB";
-            int pos(strMount.indexOf(" type "));
-            if (pos==-1) pos=strMount.indexOf(" read/");
-            strMount=strMount.left(pos);
-            new Q3ListViewItem(&list,strType,strSource,strMount);
-         };
-      };
-   }
-   while (!feof(f));
-   pclose(f);
+void ImportsView::updateList() {
+	list.clear();
+	char *e;
+	char buf[250];
+	QByteArray s(""), strSource, strMount, strType;
+	FILE *f=popen("mount", "r");
+	if (f==0)
+		return;
+	do {
+		e=fgets(buf, 250, f);
+		if (e!=0) {
+			s=buf;
+			if ((s.contains(" nfs ")) || (s.contains(" smbfs "))) {
+				strSource=s.left(s.indexOf(" on /"));
+				strMount=s.mid(s.indexOf(" on /")+4, s.length());
+				if ((s.contains(" nfs ")) || (s.contains("/remote on ")))
+					strType="NFS";
+				else if (s.contains(" smbfs "))
+					strType="SMB";
+				int pos(strMount.indexOf(" type "));
+				if (pos==-1)
+					pos=strMount.indexOf(" read/");
+				strMount=strMount.left(pos);
+				new Q3ListViewItem(&list,strType,strSource,strMount);
+			};
+		};
+	} while (!feof(f));
+	pclose(f);
 }
 

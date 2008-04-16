@@ -29,34 +29,35 @@
 
 class K3Process;
 
-class NetMon : public QWidget
-{
+class NetMon : public QWidget {
 Q_OBJECT
 public:
-   explicit NetMon(QWidget *parent, KConfig * config=0 );
-   void saveSettings() {}
-   void loadSettings() {}
+	explicit NetMon(QWidget *parent, KConfig * config=0);
+	void saveSettings() {
+	}
+	void loadSettings() {
+	}
 private:
-   KConfig *configFile;
-   K3Process *showmountProc;
-   Q3ListView *list;
-   QLabel *version;
-   QTimer *timer;
-   Q3ListViewItem *killrow;
-   int rownumber;
-   enum {header, connexions, locked_files, finished, nfs} readingpart;
-   int lo[65536];
-   int nrpid;
-   void processNFSLine(char *bufline, int linelen);
-   void processSambaLine(char *bufline, int linelen);
+	KConfig *configFile;
+	K3Process *showmountProc;
+	Q3ListView *list;
+	QLabel *version;
+	QTimer *timer;
+	Q3ListViewItem *killrow;
+	int rownumber;
+	enum {header, connexions, locked_files, finished, nfs} readingpart;
+	int lo[65536];
+	int nrpid;
+	void processNFSLine(char *bufline, int linelen);
+	void processSambaLine(char *bufline, int linelen);
 
-   QByteArray strShare, strUser, strGroup, strMachine, strSince, strPid;
-   int iUser, iGroup, iMachine, iPid;
+	QByteArray strShare, strUser, strGroup, strMachine, strSince, strPid;
+	int iUser, iGroup, iMachine, iPid;
 
 private Q_SLOTS:
-   void killShowmount();
-   void update();
-   void slotReceivedData(K3Process *proc, char *buffer, int buflen);
+	void killShowmount();
+	void update();
+	void slotReceivedData(K3Process *proc, char *buffer, int buflen);
 };
 
 #endif // main_included
