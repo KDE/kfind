@@ -33,25 +33,23 @@
 #include <klistwidget.h>
 #include <ktextbrowser.h>
 
-
-class KCMIOSlaveInfo : public KCModule
-{
-    Q_OBJECT
+class KCMIOSlaveInfo : public KCModule {
+Q_OBJECT
 public:
-    explicit KCMIOSlaveInfo(QWidget *parent = 0L, const QVariantList &lits=QVariantList() );
+	explicit KCMIOSlaveInfo(QWidget *parent = 0L, const QVariantList &lits=QVariantList());
 
 protected:
-    KListWidget *m_ioslavesLb;
-    KTextBrowser *m_info;
-    QByteArray helpData;
-    KIO::Job *m_tfj;
+	KListWidget *m_ioslavesLb;
+	KTextBrowser *m_info;
+	QByteArray helpData;
+	KIO::Job *m_tfj;
 
 protected Q_SLOTS:
 
-    void showInfo(const QString& protocol);
-    void showInfo();
-    void slaveHelp( KIO::Job *, const QByteArray &data);
-    void slotResult( KJob * );
+	void showInfo(const QString& protocol);
+	void showInfo();
+	void slaveHelp(KIO::Job *, const QByteArray &data);
+	void slotResult(KJob *);
 
 };
 #endif

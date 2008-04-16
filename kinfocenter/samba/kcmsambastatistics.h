@@ -35,73 +35,76 @@ class QPushButton;
 
 class KConfig;
 
-class SmallLogItem
-{
- public:
-  SmallLogItem():name(""),count(0){}
-  SmallLogItem(const QString &n):name(n),count(1){}
-  QString name;
-  int count;
-};
-
-class LogItem
-{
- public:
-  LogItem():name(""), accessed(),count(0) {}
-  LogItem(const QString &n, const QString &a):name(n), accessed(), count(1)
-	{
-	  accessed.setAutoDelete(true);
-	  accessed.append(new SmallLogItem(a));
-	}
-  QString name;
-  //QStrList accessedBy;
-  Q3PtrList<SmallLogItem> accessed;
-  int count;
-  SmallLogItem* itemInList(const QString &name);
-  void addItem (const QString &host);
-};
-
-class SambaLog
-{
- public:
-  SambaLog()
-	{
-	  items.setAutoDelete(true);
-	}
-  Q3PtrList<LogItem> items;
-  void addItem (const QString &share, const QString &host);
-  void printItems();
- private:
-  LogItem* itemInList(const QString &name);
-};
-
-class StatisticsView: public QWidget
-{
-  Q_OBJECT
+class SmallLogItem {
 public:
-  explicit StatisticsView(QWidget *parent=0, KConfig *config=0);
-  virtual ~StatisticsView() {}
-  void saveSettings() {}
-  void loadSettings() {}
-  public Q_SLOTS:
+	SmallLogItem() :
+		name(""), count(0) {
+	}
+	SmallLogItem(const QString &n) :
+		name(n), count(1) {
+	}
+	QString name;
+	int count;
+};
+
+class LogItem {
+public:
+	LogItem() :
+		name(""), accessed(), count(0) {
+	}
+	LogItem(const QString &n, const QString &a) :
+		name(n), accessed(), count(1) {
+		accessed.setAutoDelete(true);
+		accessed.append(new SmallLogItem(a));
+	}
+	QString name;
+	//QStrList accessedBy;
+	Q3PtrList<SmallLogItem> accessed;
+	int count;
+	SmallLogItem* itemInList(const QString &name);
+	void addItem(const QString &host);
+};
+
+class SambaLog {
+public:
+	SambaLog() {
+		items.setAutoDelete(true);
+	}
+	Q3PtrList<LogItem> items;
+	void addItem(const QString &share, const QString &host);
+	void printItems();
+private:
+	LogItem* itemInList(const QString &name);
+};
+
+class StatisticsView : public QWidget {
+Q_OBJECT
+public:
+	explicit StatisticsView(QWidget *parent=0, KConfig *config=0);
+	virtual ~StatisticsView() {
+	}
+	void saveSettings() {
+	}
+	void loadSettings() {
+	}
+public Q_SLOTS:
 	void setListInfo(Q3ListView *list, int nrOfFiles, int nrOfConnections);
 private:
-  KConfig *configFile;
-  Q3ListView *dataList;
-  Q3ListView* viewStatistics;
-  QLabel* connectionsL, *filesL;
-  QComboBox* eventCb;
-  QLabel* eventL;
-  QLineEdit* serviceLe;
-  QLabel* serviceL;
-  QLineEdit* hostLe;
-  QLabel* hostL;
-  QPushButton* calcButton, *clearButton;
-  QCheckBox* expandedInfoCb, *expandedUserCb;
-  int connectionsCount, filesCount, calcCount;
+	KConfig *configFile;
+	Q3ListView *dataList;
+	Q3ListView* viewStatistics;
+	QLabel* connectionsL, *filesL;
+	QComboBox* eventCb;
+	QLabel* eventL;
+	QLineEdit* serviceLe;
+	QLabel* serviceL;
+	QLineEdit* hostLe;
+	QLabel* hostL;
+	QPushButton* calcButton, *clearButton;
+	QCheckBox* expandedInfoCb, *expandedUserCb;
+	int connectionsCount, filesCount, calcCount;
 private Q_SLOTS:
 	void clearStatistics();
-  void calculate();
+	void calculate();
 };
 #endif // main_included
-
