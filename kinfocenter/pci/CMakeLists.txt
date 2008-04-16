@@ -8,13 +8,12 @@ include_directories(
 
 ########### next target ###############
 
-
 if(PCIUTILS_FOUND)
     MESSAGE(STATUS "Enabling PCI module based on pciutils library")
     
     add_definitions( -DHAVE_PCIUTILS )
 
-    set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp pci.cpp )
+    set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp kpci.cpp )
 
     kde4_add_plugin(kcm_pci ${KCM_PCI_PART_SRCS})
 
