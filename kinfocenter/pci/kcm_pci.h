@@ -18,8 +18,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#ifndef KCONTROL_PCI_H
-#define KCONTROL_PCI_H
+#ifndef KCONTROL_KCM_PCI_H
+#define KCONTROL_KCM_PCI_H
 
 #include <QWidget>
 #include <QLabel>

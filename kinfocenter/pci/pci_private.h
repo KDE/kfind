@@ -9,8 +9,8 @@
 
    Author: Konrad Rzepecki <hannibal@megapolis.pl>
 */
-#ifndef _PCI_PRIVATE_H_
-#define _PCI_PRIVATE_H_
+#ifndef KCONTROL_PCI_PRIVATE_H
+#define KCONTROL_PCI_PRIVATE_H
 
 #include "pci.h"
 
