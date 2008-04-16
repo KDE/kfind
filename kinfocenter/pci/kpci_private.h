@@ -9,10 +9,10 @@
 
    Author: Konrad Rzepecki <hannibal@megapolis.pl>
 */
-#ifndef KCONTROL_PCI_PRIVATE_H
-#define KCONTROL_PCI_PRIVATE_H
+#ifndef KCONTROL_KPCI_PRIVATE_H
+#define KCONTROL_KPCI_PRIVATE_H
 
-#include "pci.h"
+#include "kpci.h"
 
 #include <QString>
 
@@ -780,4 +780,4 @@ static const QString& getNameById(const id2name *const table,int id);
 static const QString& getNameBy2Id(const id3name *const table,int id,int id2);
 static const QString& getNameBy3Id(const id4name *const table,int id,int id2, int id3);
 
-#endif //_PCI_PRIVATE_H_
+#endif //KCONTROL_KPCI_PRIVATE_H

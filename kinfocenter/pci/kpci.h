@@ -4,11 +4,11 @@
    Author: Konrad Rzepecki <hannibal@megapolis.pl>
 */
 
-#ifndef KCONTROL_PCI_H
-#define KCONTROL_PCI_H
+#ifndef KCONTROL_KPCI_H
+#define KCONTROL_KPCI_H
 
 #include <QTreeWidget>
 
 bool GetInfo_PCIUtils(QTreeWidget* tree);
 
-#endif //KCONTROL_PCI_H
+#endif //KCONTROL_KPCI_H

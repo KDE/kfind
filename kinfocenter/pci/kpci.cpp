@@ -9,7 +9,7 @@
  
  Author: Konrad Rzepecki <hannibal@megapolis.pl>
  */
-#include "pci_private.h"
+#include "kpci_private.h"
 
 //extern "C" is needed to proper linking with libpci
 extern "C" {
