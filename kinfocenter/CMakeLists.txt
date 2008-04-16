@@ -11,6 +11,12 @@ add_subdirectory( nics )
 add_subdirectory( usbview )
 add_subdirectory( memory )
 
+if(NOT WIN32)
+  add_subdirectory( samba )
+endif(NOT WIN32)
+
+add_subdirectory( ioslaveinfo )
+
 macro_optional_find_package(OpenGL)
 macro_log_feature(OPENGL_FOUND "OpenGL" "API for developing portable, interactive 2D and 3D graphics applications" "http://mesa3d.sourceforge.net" FALSE "" "View OpenGL details in kinfocenter.")
 
