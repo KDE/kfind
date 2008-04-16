@@ -17,6 +17,7 @@
  */
 
 #include "kcm_pci.h"
+#include "pci.h"
 
 #include <QStringList>
 
@@ -79,7 +80,7 @@ KCMPci::~KCMPci() {
 
 void KCMPci::load() {
 	kDebug() << "Loading PCI information..." << endl;
-	GetInfo_PCI(tree);
+	GetInfo_PCIUtils(tree);
 }
 
 QString KCMPci::quickHelp() const {
