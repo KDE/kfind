@@ -28,8 +28,6 @@
 #include <kcmodule.h>
 #include <kaboutdata.h>
 
-#include "os_current.h"
-
 class QStringList;
 
 class QPushButton;
