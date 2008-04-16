@@ -83,6 +83,7 @@ Name[zh_TW]=USB 裝置
 
 Comment=USB devices attached to this computer
 Comment[fi]=Näyttä tietokoneeseen liitetyt USB-laitteet
+Comment[ga]=Gléasanna USB ceangailte leis an ríomhaire seo
 Comment[gu]=આ કોમ્પ્યુટર સાથે જોડાયેલ USB સાધનો
 Comment[th]=ดูอุปกรณ์ USB ที่เชื่อมต่ออยู่กับคอมพิวเตอร์เครื่องนี้
 Comment[zh_CN]=连接到该计算机的 USB 设备
