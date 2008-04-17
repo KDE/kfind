@@ -90,18 +90,29 @@ KCMIOSlaveInfo::KCMIOSlaveInfo(QWidget *parent, const QVariantList &) :
 
 void KCMIOSlaveInfo::slaveHelp(KIO::Job *, const QByteArray &data) {
 	if (data.size() == 0) { // EOF
-		int index = helpData.indexOf("<meta http-equiv=\"Content-Type\"");
-		index = helpData.indexOf("charset=", index) + 8;
-		QString charset = helpData.mid(index, helpData.indexOf( '\"', index) - index);
-		QString text = QTextCodec::codecForName(charset.toLatin1())->toUnicode(helpData);
-		index = text.indexOf("<div class=\"titlepage\">");
-		text = text.mid(index);
-		index = text.indexOf("<table width=\"100%\" class=\"bottom-nav\"");
-		text = text.left(index);
+		QString text = selectHelpBody();
 		m_info->setHtml(text);
+		kDebug() << helpData << endl;
 		return;
 	}
 	helpData += data;
+}
+
+/**
+ * Big Hack to only select content of the help documentation
+ * The HTML content is cut by recognizing header and footer
+ */
+QString KCMIOSlaveInfo::selectHelpBody() {
+	int index = helpData.indexOf("<meta http-equiv=\"Content-Type\"");
+	index = helpData.indexOf("charset=", index) + 8;
+	QString charset = helpData.mid(index, helpData.indexOf( '\"', index) - index);
+	QString text = QTextCodec::codecForName(charset.toLatin1())->toUnicode(helpData);
+	index = text.indexOf("<div class=\"titlepage\">"); //Start documentation "identifier"
+	text = text.mid(index);
+	index = text.indexOf("<div style=\"background-color: #white; color: black;                  margin-top: 20px; margin-left: 20px;                  margin-right: 20px;\"><div style=\"position: absolute; left: 20px;\">");  //End documentation "identifier"
+	text = text.left(index);
+
+	return text;
 }
 
 void KCMIOSlaveInfo::slotResult(KJob *) {

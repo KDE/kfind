@@ -51,5 +51,7 @@ protected Q_SLOTS:
 	void slaveHelp(KIO::Job *, const QByteArray &data);
 	void slotResult(KJob *);
 
+private:
+	QString selectHelpBody();
 };
 #endif

@@ -78,7 +78,7 @@ Name[x-test]=xxIEEE 1394 Devicesxx
 Name[zh_CN]=IEEE 1394 设备
 Name[zh_TW]=IEEE 1394 裝置
 
-Comment=View the IEEE 1394 devices attached to this computer
+Comment=Attached IEEE 1394 devices
 Comment[af]=Besigtig die IEEE 1394 toestelle wat aan hierdie rekenaar gekoppel is
 Comment[be]=Паказвае прылады IEEE 1394, далучаныя да гэтага камп'ютэра
 Comment[bg]=Информация за устройствата IEEE 1394
