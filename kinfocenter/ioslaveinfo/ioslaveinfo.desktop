@@ -2,7 +2,11 @@
 Comment=Information about available protocols
 Comment[ga]=Eolas faoi na prótacail atá ar fáil
 Comment[gu]=પ્રાપ્ત પ્રોટોકોલ્સ વિશે માહિતી
+Comment[ja]=利用可能なプロトコルの情報
+Comment[km]=ព័ត៌មាន​អំពី​ពិធីការ​ដែល​មាន
+Comment[sv]=Information om tillgängliga protokoll
 Comment[th]=ข้อมูลเกี่ยวกับโพรโตคอลที่มีอยู่
+Comment[tr]=Kullanılabilir protokoller hakkında bilgiler
 Comment[zh_CN]=可用协议的信息
 Comment[zh_TW]=可用協定的資訊
 X-DocPath=kinfocenter/protocols/index.html
