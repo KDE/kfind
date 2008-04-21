@@ -30,6 +30,7 @@
 #include <QTabWidget>
 #include <QTextCodec>
 #include <QWhatsThis>
+#include <QComboBox>
 
 #include <kconfig.h>
 #include <kdebug.h>
@@ -49,30 +50,37 @@ K_PLUGIN_FACTORY(SlaveFactory, registerPlugin<KCMIOSlaveInfo>();)
 K_EXPORT_PLUGIN( SlaveFactory("kcmioslaveinfo"))
 
 KCMIOSlaveInfo::KCMIOSlaveInfo(QWidget *parent, const QVariantList &) :
-	KCModule(SlaveFactory::componentData(), parent), m_ioslavesLb(NULL), m_tfj(NULL) {
+	KCModule(SlaveFactory::componentData(), parent), m_tfj(NULL) {
 	QVBoxLayout *layout=new QVBoxLayout(this);
 	layout->setMargin(0);
 
 	setQuickHelp(i18n("Overview of the installed ioslaves and supported protocols."));
 	setButtons(KCModule::Help);
-
-	QSplitter* splitter = new QSplitter();
-	layout->addWidget(splitter);
 	
-	m_ioslavesLb=new KListWidget(splitter);
-	splitter->addWidget(m_ioslavesLb);
-	connect(m_ioslavesLb, SIGNAL(itemSelectionChanged() ), SLOT( showInfo() ));
-	//TODO make something useful after 2.1 is released
-	m_info=new KTextBrowser(splitter);
-	splitter->addWidget(m_info);
+	QHBoxLayout* selectionLayout = new QHBoxLayout();
+	
+	ioSlaves = new QComboBox(this);
+	QLabel* ioSlavesLabel = new QLabel(i18n("Select the protocol documentation to display:"));
+	ioSlavesLabel->setBuddy(ioSlaves);
+	
+	connect(ioSlaves, SIGNAL(currentIndexChanged(const QString&) ), SLOT( showInfo(const QString&) ));
 
-	splitter->setStretchFactor(0, 1);
-	splitter->setStretchFactor(1, 4);
+	selectionLayout->addWidget(ioSlavesLabel);
+	selectionLayout->addWidget(ioSlaves);
+	
+	layout->addLayout(selectionLayout);
+	
+
+	//TODO make something useful after 2.1 is released
+	m_info=new KTextBrowser(this);
+	
+	layout->addWidget(m_info);
 
 	QStringList protocols=KProtocolInfo::protocols();
 	protocols.sort();
 	foreach(QString proto, protocols) {
-		m_ioslavesLb->addItem(new QListWidgetItem ( SmallIcon( KProtocolInfo::icon( proto )), proto, m_ioslavesLb));
+		//m_ioslavesLb->addItem(new QListWidgetItem ( SmallIcon( KProtocolInfo::icon( proto )), proto, m_ioslavesLb));
+		ioSlaves->addItem(SmallIcon( KProtocolInfo::icon( proto )), proto);
 	};
 	//m_ioslavesLb->sort();
 	//m_ioslavesLb->setSelected(0, true);
@@ -92,7 +100,6 @@ void KCMIOSlaveInfo::slaveHelp(KIO::Job *, const QByteArray &data) {
 	if (data.size() == 0) { // EOF
 		QString text = selectHelpBody();
 		m_info->setHtml(text);
-		kDebug() << helpData << endl;
 		return;
 	}
 	helpData += data;
@@ -134,15 +141,10 @@ void KCMIOSlaveInfo::showInfo(const QString& protocol) {
 		connect(m_tfj, SIGNAL( result( KJob * ) ), SLOT( slotResult( KJob * ) ));
 		return;
 	}
-	m_info->setPlainText(i18n("Some information about protocol '%1:/' ...", protocol));
+
+	m_info->setHtml(i18n("<html><body><p style='text-align:center'>Loading documentation of the '%1:/' protocol...</p></body></html>", protocol));
 }
 
-void KCMIOSlaveInfo::showInfo() {
-	QListWidgetItem *item = m_ioslavesLb->currentItem();
-	if (item==NULL)
-		return;
-	showInfo( item->text() );
-}
 
 #include "kcmioslaveinfo.moc"
 

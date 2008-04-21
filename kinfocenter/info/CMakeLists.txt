@@ -28,7 +28,6 @@ install(
 	sound.desktop 
 	devices.desktop 
 	scsi.desktop 
-	partitions.desktop 
 	xserver.desktop  
 	DESTINATION  ${SERVICES_INSTALL_DIR} 
 )
