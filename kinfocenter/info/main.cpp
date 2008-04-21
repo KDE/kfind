@@ -74,9 +74,6 @@ CREATE_FACTORY(DMA, i18n("DMA-Channel"))
 #ifdef INFO_DEVICES_AVAILABLE
 CREATE_FACTORY(Devices, i18n("Devices"))
 #endif
-#ifdef INFO_PARTITIONS_AVAILABLE
-CREATE_FACTORY(Partitions, i18n("Partitions"))
-#endif
 #ifdef INFO_XSERVER_AVAILABLE
 CREATE_FACTORY(XServer_and_Video, i18n("X-Server"))
 #endif
@@ -106,9 +103,6 @@ KInfoModulesFactory::KInfoModulesFactory(const char *componentName)
 #endif
 #ifdef INFO_DEVICES_AVAILABLE
     registerPlugin<KDevicesInfoWidget>("devices");
-#endif
-#ifdef INFO_PARTITIONS_AVAILABLE
-    registerPlugin<KPartitionsInfoWidget>("partitions");
 #endif
 #ifdef INFO_XSERVER_AVAILABLE
     registerPlugin<KXServer_and_VideoInfoWidget>("xserver");

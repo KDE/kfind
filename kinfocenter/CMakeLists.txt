@@ -11,6 +11,8 @@ add_subdirectory( nics )
 add_subdirectory( usbview )
 add_subdirectory( memory )
 
+add_subdirectory( partition )
+
 if(NOT WIN32)
   add_subdirectory( samba )
 endif(NOT WIN32)
@@ -53,13 +55,11 @@ set(kinfocenter_SRCS
    proxywidget.cpp 
 )
 
-set(kinfocenter_KDEINIT_SRCS ${kinfocenter_SRCS})
+kde4_add_kdeinit_executable( kinfocenter ${kinfocenter_SRCS})
 
-kde4_add_kdeinit_executable( kinfocenter ${kinfocenter_KDEINIT_SRCS})
+target_link_libraries(kdeinit_kinfocenter ${KDE4_KIO_LIBS} ${KDE4_KHTML_LIBS} ${KDE4_KUTILS_LIBS} )
 
-target_link_libraries(kdeinit_kinfocenter  ${KDE4_KDE3SUPPORT_LIBS} ${KDE4_KHTML_LIBS} ${KDE4_KUTILS_LIBS} )
-
-install(TARGETS kdeinit_kinfocenter  ${INSTALL_TARGETS_DEFAULT_ARGS} )
+install(TARGETS kdeinit_kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS})
 install(TARGETS kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############

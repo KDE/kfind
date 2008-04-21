@@ -1,15 +1,12 @@
 [Desktop Entry]
-Exec=kcmshell4 partitions
-Icon=kcmpartitions
+Exec=kcmshell4 kcm_partition
+Icon=drive-harddisk
 Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/partitions/index.html
 
-
-X-KDE-Library=kcm_info
-X-KDE-PluginKeyword=partitions
+X-KDE-Library=kcm_partition
 X-KDE-ParentApp=kinfocenter
-
 
 Name=Partitions
 Name[af]=Partisies

@@ -125,7 +125,7 @@ void TopLevel::setupActions() {
 	report_bug = actionCollection()->action("help_report_bug");
 	report_bug->setText(i18n("&Report Bug..."));
 	report_bug->disconnect();
-	connect(report_bug, SIGNAL(activated()), SLOT(reportBug()));
+	connect(report_bug, SIGNAL(triggered()), SLOT(reportBug()));
 }
 
 void TopLevel::activateModule(ConfigModule *configModule) {

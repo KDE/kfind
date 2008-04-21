@@ -39,15 +39,16 @@ public:
 	explicit KCMIOSlaveInfo(QWidget *parent = 0L, const QVariantList &lits=QVariantList());
 
 protected:
-	KListWidget *m_ioslavesLb;
+
+	QComboBox* ioSlaves;
+
 	KTextBrowser *m_info;
 	QByteArray helpData;
 	KIO::Job *m_tfj;
 
-protected Q_SLOTS:
+protected slots:
 
 	void showInfo(const QString& protocol);
-	void showInfo();
 	void slaveHelp(KIO::Job *, const QByteArray &data);
 	void slotResult(KJob *);
 

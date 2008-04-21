@@ -1,5 +1,5 @@
 [Desktop Entry]
-Icon=usb
+Icon=drive-removable-media-usb-pendrive
 Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/usb/index.html
