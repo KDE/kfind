@@ -80,7 +80,9 @@ Name[zh_TW]=IEEE 1394 裝置
 
 Comment=Attached IEEE 1394 devices
 Comment[ga]=Gléasanna ceangailte IEEE 1394
+Comment[km]=បាន​ភ្ជាប់​ឧបករណ៍ IEEE 1394
 Comment[sv]=Anslutna IEEE 1394-enheter
+Comment[zh_TW]=已加上 IEEE 1394 裝置
 
 X-KDE-Keywords=1394,Firewire,devices,viewer,control
 X-KDE-Keywords[be]=Прылады,Прылада,Прагляд,Праглядальнік,Кіраванне,1394,Firewire,devices,viewer,control
