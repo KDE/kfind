@@ -78,7 +78,7 @@ KCMIOSlaveInfo::KCMIOSlaveInfo(QWidget *parent, const QVariantList &) :
 
 	QStringList protocols=KProtocolInfo::protocols();
 	protocols.sort();
-	foreach(QString proto, protocols) {
+	foreach(const QString &proto, protocols) {
 		//m_ioslavesLb->addItem(new QListWidgetItem ( SmallIcon( KProtocolInfo::icon( proto )), proto, m_ioslavesLb));
 		ioSlaves->addItem(SmallIcon( KProtocolInfo::icon( proto )), proto);
 	};

@@ -171,7 +171,7 @@ void KCMPartition::load() {
 	tree->sortItems(0, Qt::AscendingOrder);
 	
 	//Do this later to be sure all UsedSizeWidget will be ready
-	foreach(QString accessPath, accessPaths) {
+	foreach(const QString &accessPath, accessPaths) {
 		connect(KDiskFreeSpace::findUsageInfo(accessPath), SIGNAL(foundMountPoint (const QString&, quint64, quint64, quint64)), this, SLOT(mountPointInfo(const QString&, quint64, quint64, quint64)) );
 	}
 
