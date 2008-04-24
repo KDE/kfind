@@ -128,13 +128,13 @@ bool ModuleWidgetSearchLine::itemMatches(const QListWidgetItem* item, const QStr
 	//kDebug() << "Module name " << moduleItem->module()->moduleName() << endl;
 	
 	QStringList keywords = moduleItem->module()->keywords();
-	foreach(QString keyword, keywords) {
+	foreach(const QString &keyword, keywords) {
 		//kDebug() << "Key word " << keyword << endl;
 		itemMatches.append(keyword);
 	}
 	
 	
-	foreach(QString itemMatch, itemMatches) {
+	foreach(const QString &itemMatch, itemMatches) {
 		if (itemMatch.contains(search, Qt::CaseInsensitive)) {
 			return true;
 		}
