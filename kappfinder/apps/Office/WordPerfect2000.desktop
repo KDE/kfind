@@ -12,6 +12,7 @@ Name[se]=Word Perfect 2000
 Name[sr]=Вордперфект 2000
 Name[sv]=Wordperfect 2000
 Name[ta]=வேர்ட்பர்பெக்ட் 2000
+Name[te]=వర్డ్ పెర్ఫెక్ట్ 2000
 Name[x-test]=xxWordPerfect 2000xx
 MimeType=application/vnd.wordperfect;application/msword;application/x-winword97;
 Exec=wordperfect

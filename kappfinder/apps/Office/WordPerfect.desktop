@@ -11,6 +11,7 @@ Name[se]=Word Perfect
 Name[sr]=Вордперфект
 Name[sv]=Wordperfect
 Name[ta]=வேர்ட் பர்பெக்ட்
+Name[te]=వర్డ్ పెర్ఫెక్ట్
 Name[x-test]=xxWordPerfectxx
 MimeType=application/vnd.wordperfect;
 Exec=xwp
