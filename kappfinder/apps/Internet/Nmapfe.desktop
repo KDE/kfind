@@ -2,6 +2,7 @@
 Name=Nmapfe
 Name[hi]=एन-मैफे
 Name[kn]=ನ್ಮಾಪ್ಫೇ
+Name[ml]=എന്‍മാപ്എഫ്ഇ
 Name[sr]=Нмапфе
 Name[ta]=நமாபே
 Name[te]=ఎన్ మాప్ఎఫ్ఇ
@@ -46,6 +47,7 @@ GenericName[ku]=Skenkera Portan
 GenericName[lt]=Prievadų skeneris
 GenericName[lv]=Portu skeneris
 GenericName[mk]=Скенер на порти
+GenericName[ml]=പോര്‍ട്ട് സ്കാനര്‍
 GenericName[ms]=Pengesan Port
 GenericName[nb]=Portskanner
 GenericName[nds]=Porten-Aftaster

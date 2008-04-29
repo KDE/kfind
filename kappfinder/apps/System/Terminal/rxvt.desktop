@@ -54,6 +54,7 @@ Exec=rxvt
 Icon=konsole
 Name=RXVT
 Name[hi]=आरएक्सवीटी
+Name[ml]=ആര്‍എക്സ്‌വിടി
 Name[sr]=РИксВТ
 Name[x-test]=xxRXVTxx
 Type=Application
