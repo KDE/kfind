@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2008 Ivo Anjo <knuckles@gmail.com>
  *  Copyright (C) 2004 Ilya Korniyko <k_ilya@ukr.net>
- *  Adapted from Brian Paul's glxinfo from Mesa demos (http:/www.mesa3d.org)
+ *  Adapted from Brian Paul's glxinfo from Mesa demos (http://www.mesa3d.org)
  *  Copyright (C) 1999-2002 Brian Paul
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -78,7 +78,7 @@ KCMOpenGL::KCMOpenGL(QWidget *parent, const QVariantList &)
     about->addAuthor(ki18n("Ivo Anjo"), KLocalizedString(), "knuckles@gmail.com");
     about->addAuthor(ki18n("Ilya Korniyko"), KLocalizedString(), "k_ilya@ukr.net");
     about->addCredit(ki18n("Helge Deller"), ki18n("Original Maintainer"), "deller@gmx.de");
-    about->addCredit(ki18n("Brian Paul"), ki18n("Author of glxinfo Mesa demos (http:/www.mesa3d.org)"));
+    about->addCredit(ki18n("Brian Paul"), ki18n("Author of glxinfo Mesa demos (http://www.mesa3d.org)"));
     setAboutData(about);
 }
 
