@@ -114,7 +114,7 @@ QString KCMMemory::quickHelp() const {
 }
 
 QGroupBox* KCMMemory::initializeText() {
-	QGroupBox* informationGroup = new QGroupBox("Memory");
+	QGroupBox* informationGroup = new QGroupBox(i18n("Memory"));
 
 	QHBoxLayout *hbox = new QHBoxLayout(informationGroup);
 
@@ -201,7 +201,7 @@ QGroupBox* KCMMemory::initializeText() {
 }
 
 QGroupBox* KCMMemory::initializeCharts() {
-	QGroupBox* chartsGroup = new QGroupBox("Charts");
+	QGroupBox* chartsGroup = new QGroupBox(i18n("Charts"));
 
 	QHBoxLayout* chartsLayout = new QHBoxLayout(chartsGroup);
 	chartsLayout->setSpacing(1);
