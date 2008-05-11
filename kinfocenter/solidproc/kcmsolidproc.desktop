@@ -35,6 +35,7 @@ Name[zh_CN]=处理器信息
 Name[zh_TW]=處理器資訊
 
 Comment=Processor Information
+Comment[ca]=Informació quant al processador
 Comment[el]=Πληροφορίες επεξεργαστή
 Comment[et]=Protsessori info
 Comment[fi]=Tietoja prosessorista

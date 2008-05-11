@@ -82,6 +82,7 @@ Name[zh_CN]=USB 设备
 Name[zh_TW]=USB 裝置
 
 Comment=USB devices attached to this computer
+Comment[ca]=Dispositius USB connectats a aquest ordinador
 Comment[el]=Συνδεδεμένες στο σύστημα συσκευές USB
 Comment[et]=Arvutiga ühendatud USB-seadmed
 Comment[fi]=Näyttä tietokoneeseen liitetyt USB-laitteet
