@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=Sylpheed
-Name[af]=Sylfeed
 Name[gu]=સ્લાફિડ
 Name[hi]=सिलफीड
 Name[kn]=ಸಿಲ್ಫೀಡ್
@@ -77,7 +76,8 @@ GenericName[tg]=Коргири почтаи эллектроникӣ
 GenericName[th]=โปรแกรมรับส่งอีเมล
 GenericName[tr]=E-posta İstemcisi
 GenericName[uk]=Клієнт електронної пошти
-GenericName[uz]=Хат-хабар клиенти
+GenericName[uz]=Xat-xabar klienti
+GenericName[uz@cyrillic]=Хат-хабар клиенти
 GenericName[vi]=Trình thư
 GenericName[wa]=Cliyint d' emilaedje
 GenericName[x-test]=xxMail Clientxx

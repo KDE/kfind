@@ -1,6 +1,6 @@
 [Desktop Entry]
 GenericName=Card Game
-GenericName[af]=Kaart Speletjie
+GenericName[af]=Kaartspeletjie
 GenericName[ar]=ألعاب الورق
 GenericName[be]=Картачная гульня
 GenericName[bg]=Игри с карти
@@ -65,7 +65,8 @@ GenericName[tg]=Бозии Корт
 GenericName[th]=เกมไพ่
 GenericName[tr]=İskambil Oyunu
 GenericName[uk]=Карти
-GenericName[uz]=Қарта ўйини
+GenericName[uz]=Qarta oʻyini
+GenericName[uz@cyrillic]=Қарта ўйини
 GenericName[vi]=Trò chơi bài
 GenericName[wa]=Cwårdjeu
 GenericName[x-test]=xxCard Gamexx

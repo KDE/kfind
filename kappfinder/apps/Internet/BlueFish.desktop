@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=BlueFish
-Name[af]=Blou-vis
 Name[ar]=السمكة الزرقاء
 Name[bn]=ব্লু-ফিশ
 Name[gu]=બ્લ્યુફિશ
@@ -18,7 +17,7 @@ Name[te]=బ్లూఫిష్
 Name[tg]=Моҳии обӣ
 Name[x-test]=xxBlueFishxx
 GenericName=HTML Editor
-GenericName[af]=Html Redigeerder
+GenericName[af]=HTML-redigeerder
 GenericName[ar]=HTML محرر
 GenericName[be]=Рэдактар HTML
 GenericName[bg]=HTML редактор
@@ -83,7 +82,8 @@ GenericName[tg]=Муҳаррири HTML
 GenericName[th]=เครื่องมือแก้ไข HTML
 GenericName[tr]=HTML Düzenleyici
 GenericName[uk]=Редактор HTML
-GenericName[uz]=HTML таҳрирчи
+GenericName[uz]=HTML tahrirchi
+GenericName[uz@cyrillic]=HTML таҳрирчи
 GenericName[vi]=Bộ biên soạn HTML
 GenericName[wa]=Aspougneu di pådjes HTML
 GenericName[x-test]=xxHTML Editorxx

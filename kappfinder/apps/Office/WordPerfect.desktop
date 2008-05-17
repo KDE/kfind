@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=WordPerfect
-Name[af]=Wordperfect
 Name[bn]=ওয়ার্ড-পারফেক্ট
 Name[gu]=વર્ડપરફેક્ટ
 Name[hi]=वर्डपरफेक्ट
@@ -21,7 +20,7 @@ X-DocPath=
 Type=Application
 Terminal=false
 GenericName=Word Processor
-GenericName[af]=Woord Verwerker
+GenericName[af]=Woordverwerker
 GenericName[ar]=معالج نصوص
 GenericName[be]=Тэкставы працэсар
 GenericName[bg]=Текстообработваща програма
@@ -84,7 +83,8 @@ GenericName[tg]=Протсессори матн
 GenericName[th]=โปรแกรมประมวลผลคำ
 GenericName[tr]=Kelime İşlemci
 GenericName[uk]=Текстовий процесор
-GenericName[uz]=Матн процессори
+GenericName[uz]=Matn protsessori
+GenericName[uz@cyrillic]=Матн процессори
 GenericName[vi]=Bộ xử lý văn bản
 GenericName[wa]=Aspougneu d' mot
 GenericName[x-test]=xxWord Processorxx

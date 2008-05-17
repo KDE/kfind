@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=GPhoto
-Name[af]=Gfoto
+Name[af]=GFoto
 Name[bn]=জি-ফোটো
 Name[cy]=GFfoto
 Name[eo]=G-Foto
@@ -18,7 +18,7 @@ Name[te]=జిఫొటొ
 Name[wa]=GFoto
 Name[x-test]=xxGPhotoxx
 GenericName=Digital Camera Program
-GenericName[af]=Digitaal Kamera Program
+GenericName[af]=Digitale Kamera Program
 GenericName[ar]=برنامج الكاميرا الرقمية
 GenericName[be]=Праграма для працы з лічбавай камерай
 GenericName[bg]=Програма за цифрови камери
@@ -83,7 +83,8 @@ GenericName[tg]=Барномаи дурбини Digital
 GenericName[th]=โปรแกรมกล้องดิจิทัล
 GenericName[tr]=Dijital Kamera Programı
 GenericName[uk]=Програма для цифрового фотоапарата
-GenericName[uz]=Фотоапарат учун дастур
+GenericName[uz]=Fotoaparat uchun dastur
+GenericName[uz@cyrillic]=Фотоапарат учун дастур
 GenericName[vi]=Chương trình máy ảnh số
 GenericName[wa]=Programe po didjitå aparey foto
 GenericName[x-test]=xxDigital Camera Programxx

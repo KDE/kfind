@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=XsLite
-Name[af]=Xslite
 Name[cy]=XsYsgafn
 Name[hi]=एक्सएस-लाइट
 Name[ml]=എക്സ്എസ് ലൈറ്റ്
@@ -15,7 +14,7 @@ X-DocPath=
 Type=Application
 Terminal=false
 GenericName=Spread Sheet
-GenericName[af]=Sprei Staat
+GenericName[af]=Sigblad
 GenericName[be]=Электронныя табліцы
 GenericName[bg]=Електронна таблица
 GenericName[bn]=স্প্রেড-শিট
@@ -76,7 +75,8 @@ GenericName[tg]=Ҷадвали электронӣ
 GenericName[th]=กระดาษคำนวณ
 GenericName[tr]=Hesap Çizelgesi
 GenericName[uk]=Електронна таблиця
-GenericName[uz]=Электрон жадвал
+GenericName[uz]=Elektron jadval
+GenericName[uz@cyrillic]=Электрон жадвал
 GenericName[vi]=Bộ tính bảng
 GenericName[wa]=Tåvleu
 GenericName[x-test]=xxSpread Sheetxx

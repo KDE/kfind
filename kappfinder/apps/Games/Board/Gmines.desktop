@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=GNOME Mines
-Name[af]=Gnome Myne
+Name[af]=Gnome Landmyne
 Name[ar]=ألغام جنوم
 Name[be]=Міны GNOME
 Name[bg]=Мини (GNOME)
@@ -45,7 +45,8 @@ Name[te]=గ్నొమ్ గనులు
 Name[tg]=Сапёр GNOME
 Name[tr]=GNOME Mayınlar
 Name[uk]=Сапер для GNOME
-Name[uz]=Gnome миналар
+Name[uz]=Gnome minalar
+Name[uz@cyrillic]=Gnome миналар
 Name[vi]=Dò mìn GNOME
 Name[wa]=Dismineu di Gnome
 Name[x-test]=xxGNOME Minesxx
@@ -117,7 +118,8 @@ GenericName[tg]=Бозии логикӣ
 GenericName[th]=เกมตรรกะ
 GenericName[tr]=Mantık Oyunu
 GenericName[uk]=Гра на логіку
-GenericName[uz]=Мантиқий ўйин
+GenericName[uz]=Mantiqiy oʻyin
+GenericName[uz@cyrillic]=Мантиқий ўйин
 GenericName[vi]=Trò chơi lôgíc
 GenericName[wa]=Djeu di lodjike
 GenericName[x-test]=xxLogic Gamexx

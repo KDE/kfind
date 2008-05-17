@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=ZAngband
-Name[af]=Zangband
 Name[gu]=Zએનગ્બેન્ડ
 Name[hi]=जेड-एंगबैंण्ड
 Name[ml]=സിആങ്ബാന്‍ഡ്
@@ -75,7 +74,8 @@ GenericName[tg]=Мори Хаосро ғолиб шавед
 GenericName[th]=เอาชนะอสรพิษแห่งกลียุค
 GenericName[tr]=Kaos İblisini mağlub edin
 GenericName[uk]=Переможіть гадюку хаосу
-GenericName[uz]=Хаос илонини енгиб чиқиш
+GenericName[uz]=Xaos ilonini yengib chiqish
+GenericName[uz@cyrillic]=Хаос илонини енгиб чиқиш
 GenericName[vi]=Đánh bại con Rắn Hỗn loạn
 GenericName[wa]=Sitriyîz l' Sierpint do Ståraedje
 GenericName[x-test]=xxDefeat the Serpent of Chaosxx

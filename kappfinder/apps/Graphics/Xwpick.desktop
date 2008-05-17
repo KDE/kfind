@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=Xwpick
-Name[af]=Xw-kies
 Name[hi]=एक्सडब्ल्यूपिक
 Name[kn]=ಕ್ಸ್ವೂಪಿಕ್
 Name[ml]=എസ്ക്ഡബ്ലിയുപിക്ക്
@@ -10,7 +9,7 @@ Name[ta]=எக்ஸ்பிக்
 Name[te]=ఎక్స్ డబ్ల్యుపిక్
 Name[x-test]=xxXwpickxx
 GenericName=Screen Capture Program
-GenericName[af]=Skerm Vang Program
+GenericName[af]=Skermvang Program
 GenericName[ar]=برنامج التقاط الشاشة
 GenericName[be]=Праграма захопу экрана
 GenericName[bg]=Програма за снимки на екрана
@@ -73,7 +72,8 @@ GenericName[tg]=Барномаи аккоси экран
 GenericName[th]=โปรแกรมจับภาพหน้าจอ
 GenericName[tr]=Ekran Yakalama Programı
 GenericName[uk]=Захоплювач екрана
-GenericName[uz]=Экрандан расм олиш дастури
+GenericName[uz]=Ekrandan rasm olish dasturi
+GenericName[uz@cyrillic]=Экрандан расм олиш дастури
 GenericName[vi]=Trình chụp màn hình
 GenericName[wa]=Programe po fé des waitroûlêyes
 GenericName[x-test]=xxScreen Capture Programxx
