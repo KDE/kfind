@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=Penguin Command
-Name[af]=Pikkewyn Opdrag
+Name[af]=Pikkewyn Beheerstasie
 Name[ar]=قيادة البطريق
 Name[bn]=পেঙ্গুইন কমান্ড
 Name[br]=Urzhiad penn-gwenn
@@ -97,7 +97,8 @@ GenericName[tg]=Бозии Arcade
 GenericName[th]=เกมอาเขต
 GenericName[tr]=Macera oyunu
 GenericName[uk]=Гра "Arcade"
-GenericName[uz]=Аркада ўйини
+GenericName[uz]=Arkada oʻyini
+GenericName[uz@cyrillic]=Аркада ўйини
 GenericName[vi]=Trò chơi mái vòm
 GenericName[wa]=Djeu d' årcåde
 GenericName[x-test]=xxArcade Gamexx

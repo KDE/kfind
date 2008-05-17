@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=Gabber
-Name[af]=Gryper
 Name[bn]=গ্যাবার
 Name[gu]=જબાર
 Name[hi]=गेबर
@@ -13,7 +12,7 @@ Name[ta]=காப்பர்
 Name[te]=జాబర్
 Name[x-test]=xxGabberxx
 GenericName=Instant Messenger
-GenericName[af]=Oombliklike Boodskapper
+GenericName[af]=Kitsboodskapper
 GenericName[ar]=مرسال فوري
 GenericName[be]=Імгненны абвеснік
 GenericName[bg]=Програма за чат
@@ -75,7 +74,8 @@ GenericName[tg]=Иввази иттилоот
 GenericName[th]=โปรแกรมส่งข้อความด่วนทันใจ
 GenericName[tr]=Hızlı Mesajlaşma Uygulaması
 GenericName[uk]=Кур'єр повідомлень
-GenericName[uz]=Хабар алмашиш воситаси
+GenericName[uz]=Xabar almashish vositasi
+GenericName[uz@cyrillic]=Хабар алмашиш воситаси
 GenericName[vi]=Trình nhắn tin nhanh
 GenericName[wa]=Messaedjî sol moumint
 GenericName[x-test]=xxInstant Messengerxx

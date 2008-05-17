@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Rocks n Diamonds
-Name[af]=Klippe n Diamante
+Name[af]=Klippe en Diamante
 Name[be]=Скалы і алмазы
 Name[bn]=হীরে-পাথর
 Name[csb]=Kamë ë diamańtë
@@ -30,7 +30,8 @@ Name[sr@latin]=Kamenje i dijamanti
 Name[ta]=ராக்ஸ் அண்டு டைமண்டஸ்
 Name[te]=రాళ్ళు మరయూ వజ్రాలు
 Name[uk]=Камені та діаманти
-Name[uz]=Тошлар ва олмослар
+Name[uz]=Toshlar va olmoslar
+Name[uz@cyrillic]=Тошлар ва олмослар
 Name[vi]=Đá và Kim cương
 Name[x-test]=xxRocks n Diamondsxx
 Name[zh_CN]=岩石和钻石
@@ -99,7 +100,8 @@ GenericName[tg]=Бозии тактикӣ
 GenericName[th]=เกมวางแผน
 GenericName[tr]=Taktik oyunu
 GenericName[uk]=Тактична гра
-GenericName[uz]=Тактик ўйини
+GenericName[uz]=Taktik oʻyini
+GenericName[uz@cyrillic]=Тактик ўйини
 GenericName[vi]=Trò chơi chiến thuật
 GenericName[wa]=Djeu di tactike
 GenericName[x-test]=xxTactical Gamexx

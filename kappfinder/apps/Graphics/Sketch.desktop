@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Sketch
-Name[af]=Teken
+Name[af]=Skets
 Name[ar]=ارسم
 Name[bn]=স্কেচ
 Name[csb]=Céchùnk
@@ -24,7 +24,7 @@ Name[vi]=Vẽ phác
 Name[x-test]=xxSketchxx
 Name[xh]=Umzobo
 GenericName=Vector-based Drawing Program
-GenericName[af]=Vector-based Teken Program
+GenericName[af]=Vektor-basis Tekenprogram
 GenericName[be]=Рэдактар вектарнай графікі
 GenericName[bg]=Програма за векторна графика
 GenericName[bn]=ভেক্টর-ভিত্তিক অঙ্কন প্রোগ্রাম
@@ -87,7 +87,8 @@ GenericName[tg]=Барномаи расмбардорӣ
 GenericName[th]=โปรแกรมวาดภาพแบบเวกเตอร์
 GenericName[tr]=Vektör Tabanlı Çizim Programı
 GenericName[uk]=Програма створення векторних зображень
-GenericName[uz]=Вектор асосидаги расм чизиш дастури
+GenericName[uz]=Vektor asosidagi rasm chizish dasturi
+GenericName[uz@cyrillic]=Вектор асосидаги расм чизиш дастури
 GenericName[vi]=Trình vẽ dựa vào véctơ
 GenericName[wa]=Programe di dessinaedje pa royes
 GenericName[x-test]=xxVector-based Drawing Programxx

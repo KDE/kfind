@@ -1,6 +1,6 @@
 [Desktop Entry]
 GenericName=VideoText Viewer
-GenericName[af]=Video Teks Aansig
+GenericName[af]=Video teks bekyker
 GenericName[ar]=عارض نص مرئي
 GenericName[be]=Праглядальнік VideoText
 GenericName[bg]=Преглед на видео текст
@@ -64,7 +64,8 @@ GenericName[tg]=Барномаи намоиши VideoText
 GenericName[th]=โปรแกรมดูข้อความวิดีโอ
 GenericName[tr]=VideoText Gösterici
 GenericName[uk]=Переглядач відеотекстів
-GenericName[uz]=VideoText кўрувчи
+GenericName[uz]=VideoText koʻruvchi
+GenericName[uz@cyrillic]=VideoText кўрувчи
 GenericName[vi]=Bộ xem văn bản ảnh động
 GenericName[wa]=Håyneu di pådjes VideoText
 GenericName[x-test]=xxVideoText Viewerxx
@@ -74,7 +75,6 @@ GenericName[zh_TW]=VideoText 檢視器
 Exec=alevt
 Icon=alevt
 Name=AleVT
-Name[af]=Alevt
 Name[hi]=एएलईवीटी
 Name[ml]=അലെവിടി
 Name[sr]=АлеВТ

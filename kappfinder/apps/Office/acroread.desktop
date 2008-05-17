@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Acrobat Reader
-Name[af]=Acrobat Leser
+Name[af]=Acrobat-leser
 Name[ar]=قارئ أكروبات
 Name[bn]=অ্যাক্রোব্যাট রিডার
 Name[br]=Lenner Acrobat
@@ -29,7 +29,7 @@ Exec=acroread %f
 Type=Application
 X-DocPath=
 GenericName=PDF Viewer
-GenericName[af]=Pdf Aansig
+GenericName[af]=PDF-bekyker
 GenericName[ar]=PDF عارض ملفات
 GenericName[be]=Праглядальнік PDF
 GenericName[bg]=Преглед на PDF документи
@@ -93,7 +93,8 @@ GenericName[tg]=Намоишгари PDF
 GenericName[th]=เครื่องมือแสดงเอกสาร PDF
 GenericName[tr]=PDF Görüntüleyici
 GenericName[uk]=Переглядач PDF
-GenericName[uz]=PDF кўрувчи
+GenericName[uz]=PDF koʻruvchi
+GenericName[uz@cyrillic]=PDF кўрувчи
 GenericName[vi]=Trình xem PDF
 GenericName[wa]=Håyneu di documints PDF
 GenericName[x-test]=xxPDF Viewerxx

@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=GV
-Name[af]=Gv
 Name[bn]=জি-ভি
 Name[fr]=Gv
 Name[hi]=जीवी
@@ -12,7 +11,7 @@ Name[te]=జివి
 Name[x-test]=xxGVxx
 MimeType=application/pdf;application/postscript;image/x-eps;application/illustrator;
 GenericName=Postscript Viewer
-GenericName[af]=Postscript Aansig
+GenericName[af]=Postscript bekyker
 GenericName[ar]=Postscript عارض
 GenericName[be]=Праглядальнік Postscript
 GenericName[bg]=Преглед на Postscript документи
@@ -77,7 +76,8 @@ GenericName[tg]=Намоишгари Postscript
 GenericName[th]=แสดงแฟ้มโพสต์สคริปต์
 GenericName[tr]=Postscript Görüntüleyici
 GenericName[uk]=Переглядач PostScript
-GenericName[uz]=PostScript кўрувчи
+GenericName[uz]=PostScript koʻruvchi
+GenericName[uz@cyrillic]=PostScript кўрувчи
 GenericName[vi]=Bộ xem tập tin Postscript (đuôi .PS)
 GenericName[wa]=Håyneu di documints PostScript
 GenericName[x-test]=xxPostscript Viewerxx

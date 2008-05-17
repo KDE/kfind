@@ -1,6 +1,6 @@
 [Desktop Entry]
 GenericName=Chess Game
-GenericName[af]=Skaak Speletjie
+GenericName[af]=Skaakspel
 GenericName[ar]=لعبة شطرنج
 GenericName[be]=Шахматы
 GenericName[bg]=Шах
@@ -64,7 +64,8 @@ GenericName[tg]=Бозии Шоҳмот
 GenericName[th]=เกมหมากรุก
 GenericName[tr]=Satranç oyunu
 GenericName[uk]=Шахи
-GenericName[uz]=Шахмат ўйини
+GenericName[uz]=Shaxmat oʻyini
+GenericName[uz@cyrillic]=Шахмат ўйини
 GenericName[vi]=Đánh cờ
 GenericName[wa]=Daegne di rowes
 GenericName[x-test]=xxChess Gamexx

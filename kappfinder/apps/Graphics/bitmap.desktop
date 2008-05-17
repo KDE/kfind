@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=X Bitmap
-Name[af]=X Biskaart
 Name[ar]=X صورة نقطية
 Name[bn]=এক্স বিটম্যাপ
 Name[cy]=Didfap X
@@ -91,7 +90,8 @@ GenericName[tg]=Созандаи нақшаи бит
 GenericName[th]=เครื่องมือสร้างภาพบิตแมพ
 GenericName[tr]=Bitmap oluşturucu
 GenericName[uk]=Редактор Bitmap
-GenericName[uz]=BMP яратувчи
+GenericName[uz]=BMP yaratuvchi
+GenericName[uz@cyrillic]=BMP яратувчи
 GenericName[vi]=Bộ tạo mảng ảnh
 GenericName[wa]=Fijheu di bitmaps
 GenericName[x-test]=xxBitmap Creatorxx

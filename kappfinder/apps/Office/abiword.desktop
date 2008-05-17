@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=AbiWord
-Name[af]=Abiword
 Name[bn]=এবি-ওয়ার্ড
 Name[gu]=અબીવર્ડ
 Name[hi]=एबीवर्ड
@@ -14,7 +13,7 @@ Name[ta]=அபிவேர்ட்
 Name[te]=అభివర్డ్
 Name[x-test]=xxAbiWordxx
 GenericName=Word Processor
-GenericName[af]=Woord Verwerker
+GenericName[af]=Woordverwerker
 GenericName[ar]=معالج نصوص
 GenericName[be]=Тэкставы працэсар
 GenericName[bg]=Текстообработваща програма
@@ -77,7 +76,8 @@ GenericName[tg]=Протсессори матн
 GenericName[th]=โปรแกรมประมวลผลคำ
 GenericName[tr]=Kelime İşlemci
 GenericName[uk]=Текстовий процесор
-GenericName[uz]=Матн процессори
+GenericName[uz]=Matn protsessori
+GenericName[uz@cyrillic]=Матн процессори
 GenericName[vi]=Bộ xử lý văn bản
 GenericName[wa]=Aspougneu d' mot
 GenericName[x-test]=xxWord Processorxx
