@@ -85,6 +85,7 @@ Name[zh_TW]=USB 裝置
 Comment=USB devices attached to this computer
 Comment[af]=USB toestelle gekoppel aan hierdie rekenaar
 Comment[ca]=Dispositius USB connectats a aquest ordinador
+Comment[de]=Angeschlossene USB-Geräte
 Comment[el]=Συνδεδεμένες στο σύστημα συσκευές USB
 Comment[et]=Arvutiga ühendatud USB-seadmed
 Comment[fi]=Näyttä tietokoneeseen liitetyt USB-laitteet
