@@ -14,7 +14,7 @@ kde4_add_executable(kappfinder ${kappfinder_SRCS})
 
 target_link_libraries(kappfinder ${KDE4_KIO_LIBS})
 
-install(TARGETS kappfinder DESTINATION ${BIN_INSTALL_DIR})
+install(TARGETS kappfinder ${INSTALL_TARGETS_DEFAULT_ARGS})
 
 set(kappfinder_install_SRCS
     main_install.cpp
