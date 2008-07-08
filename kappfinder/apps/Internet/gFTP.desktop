@@ -2,7 +2,6 @@
 Name=gFTP
 Name[bn]=জি-এফ-টি-পি
 Name[eo]=G-Ftp
-Name[fr]=GFTP
 Name[hi]=जीएफटीपी
 Name[kn]=ಜಿFTP
 Name[ml]=ജിഎഫ്‌ടിപി
@@ -16,6 +15,7 @@ GenericName[ar]=FTP متصفح
 GenericName[be]=Кліент FTP
 GenericName[bg]=FTP браузър
 GenericName[bn]=এফ-টি-পি ব্রাউজার
+GenericName[bn_IN]=FTP ব্রাউজার
 GenericName[br]=Furcher FTP
 GenericName[ca]=Navegador FTP
 GenericName[cs]=FTP prohlížeč
