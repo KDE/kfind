@@ -3,7 +3,6 @@ Exec=gkrellm
 Icon=gnome-app
 Name=GKrellM
 Name[hi]=जी-क्रेल-एम
-Name[ml]=ജിക്രെല്‍ഐഎം
 Name[sr]=Гкрелм
 Name[x-test]=xxGKrellMxx
 GenericName=GNU Krell Monitors
