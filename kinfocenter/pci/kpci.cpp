@@ -239,30 +239,30 @@ static QTreeWidgetItem* addBist(QTreeWidgetItem *parent, QTreeWidgetItem *after,
 
 static QTreeWidgetItem* addSize(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciaddr_t size) {
 	if (size<0x400) {
-		after=create(parent, i18n("Size"), QString::QString("%1 B").arg(static_cast<unsigned long>(size)));
+		after=create(parent, i18n("Size"), QString("%1 B").arg(static_cast<unsigned long>(size)));
 	}//if
 	else if (size<0x100000) {
-		after=create(parent, i18n("Size"), QString::QString("%1 kiB").arg(static_cast<unsigned long>(size/0x400)));
+		after=create(parent, i18n("Size"), QString("%1 kiB").arg(static_cast<unsigned long>(size/0x400)));
 	}//elif
 	else if (size<0x40000000) {
-		after=create(parent, i18n("Size"), QString::QString("%1 MiB").arg(static_cast<unsigned long>(size/0x100000)));
+		after=create(parent, i18n("Size"), QString("%1 MiB").arg(static_cast<unsigned long>(size/0x100000)));
 	}//elif
 
 #ifdef HAVE_PCIADDR_T64
 
 	else if (size<0x10000000000LL) {
-		after=create(parent, i18n("Size"),QString::QString("%1 GiB").arg(static_cast<unsigned long>(size/0x40000000)));
+		after=create(parent, i18n("Size"),QString("%1 GiB").arg(static_cast<unsigned long>(size/0x40000000)));
 	}//elif
 	else if (size<0x4000000000000LL) {
-		after=create(parent, i18n("Size"),QString::QString("%1 PiB").arg(static_cast<unsigned long>(size/0x10000000000LL)));
+		after=create(parent, i18n("Size"),QString("%1 PiB").arg(static_cast<unsigned long>(size/0x10000000000LL)));
 	}//elif
 	else if (size<0x1000000000000000LL) {
-		after=create(parent, i18n("Size"),QString::QString("%1 EiB").arg(static_cast<unsigned long>(size/0x4000000000000LL)));
+		after=create(parent, i18n("Size"),QString("%1 EiB").arg(static_cast<unsigned long>(size/0x4000000000000LL)));
 	}//elif
 
 #else //HAVE_PCIADDR_T64
 	else {
-		after=create(parent, i18n("Size"), QString::QString("%1 GiB").arg(static_cast<unsigned long>(size/0x40000000)));
+		after=create(parent, i18n("Size"), QString("%1 GiB").arg(static_cast<unsigned long>(size/0x40000000)));
 	}//else
 
 #endif //HAVE_PCIADDR_T64
@@ -559,7 +559,7 @@ static QTreeWidgetItem* addCapsAgp(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 	if ((offset+2+sizeof(agpInfo))<256) {
 		memcpy(reinterpret_cast<void*>(&infoAgp.raw[0]), reinterpret_cast<void*>(&info->raw[offset+2]), sizeof(agpInfo));
 		//		after=create(parent, i18n("Revision"),value.sprintf("%i.%i",infoAgp.revMaior,infoAgp.revMinor));
-		after=create(parent, i18n("Revision"),QString::QString("%1.%2").arg(infoAgp.revMaior).arg(infoAgp.revMinor));
+		after=create(parent, i18n("Revision"),QString("%1.%2").arg(infoAgp.revMaior).arg(infoAgp.revMinor));
 		after=create(parent, i18n("Status"),value.sprintf("0x%08X",infoAgp.status));
 		localAfter=create(after, i18n("Rate"),getNameById(agpRate,infoAgp.statusEnhRate));
 		localAfter=create(after, i18n("AGP 3.0 mode"),(infoAgp.statusMode?i18n(strEnabled):i18n(strDisabled)));
