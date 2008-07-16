@@ -29,7 +29,7 @@ else(PCIUTILS_FOUND)
 
     kde4_add_plugin(kcm_pci ${KCM_PCI_PART_SRCS})
     
-    target_link_libraries(kcm_pci  ${KDE4_KDEUI_LIBS} ${QT_QTGUI_LIBRARY} )
+    target_link_libraries(kcm_pci  ${KDE4_KDEUI_LIBS} ${QT_QTGUI_LIBRARY} ${X11_LIBRARIES} )
 endif(PCIUTILS_FOUND)
 
 install(TARGETS kcm_pci  DESTINATION ${PLUGIN_INSTALL_DIR})
