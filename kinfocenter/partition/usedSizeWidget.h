@@ -11,11 +11,7 @@
 #ifndef USED_SIZE_WIDGET_H
 #define USED_SIZE_WIDGET_H
 
-#include <QWidget>
 #include <QFrame>
-#include <QString>
-#include <QColor>
-#include <QList>
 
 class QLabel;
 class QWidget;
