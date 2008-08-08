@@ -13,9 +13,6 @@
 
 #include <QFrame>
 
-class QLabel;
-class QWidget;
-
 class UsedSizeWidget : public QWidget {
 	Q_OBJECT
 public:

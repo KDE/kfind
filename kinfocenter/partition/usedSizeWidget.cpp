@@ -12,11 +12,8 @@
 #include "usedSizeWidget.h"
 
 #include <QVBoxLayout>
-#include <QLinearGradient>
 #include <QLabel>
 #include <QPainter>
-#include <QPen>
-#include <QColor>
 
 #include <klocale.h>
 #include <kdebug.h>
