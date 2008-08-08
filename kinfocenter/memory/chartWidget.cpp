@@ -47,6 +47,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 	QPainter paint(this);
 
 	QPen pen(QColor(0, 0, 0));
+	paint.setPen(pen);
 
 	if (total == NO_MEMORY_INFO) {
 		paint.fillRect(1, 1, width() - 2, height() - 2, QBrush(QColor(128, 128, 128)));
@@ -96,7 +97,6 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 	}
 
 	// draw surrounding box
-	paint.setPen(pen);
 	QRect r = rect();
 	qDrawShadePanel(&paint, r.x(), r.y(), r.width(), r.height(), palette(), true, 1);
 
