@@ -56,7 +56,10 @@ void UsedSizeWidget::paintEvent(QPaintEvent* /*event*/) {
 	
 	if (percent > 0.5)
 		gradient.setColorAt(0.5, QColor(0x5E, 0xD9, 0x35));
-	
+
+	if (percent > 0.6)
+		paint.setPen(Qt::black);
+
 	if (percent > 0.75)
 		gradient.setColorAt(0.75, QColor(0xF7, 0xB6, 0x3D));
 	
