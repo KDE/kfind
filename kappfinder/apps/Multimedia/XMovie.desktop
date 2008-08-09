@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=XMovie
+Name[ar]=افلام x
 Name[bn]=এক্স-মুভি
 Name[eo]=X-Movie
 Name[hi]=एक्समूवी
@@ -16,7 +17,7 @@ Name[vi]=Phim X
 Name[x-test]=xxXMoviexx
 GenericName=Video Player
 GenericName[af]=Video Speler
-GenericName[ar]=قارئ المرئيات
+GenericName[ar]=مشغل الفديو
 GenericName[be]=Відэапрайгравальнік
 GenericName[bg]=Видео плеър
 GenericName[bn]=ভিডিও প্রদর্শক

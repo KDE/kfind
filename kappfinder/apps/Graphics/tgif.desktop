@@ -2,6 +2,7 @@
 Exec=tgif
 Type=Application
 Name=TGif
+Name[ar]=برنامج الصور المتجهة TGif
 Name[bn]=টি-জিফ
 Name[hi]=टी-जिफ़
 Name[kn]=ಟಿಜಿಫ್
@@ -14,7 +15,7 @@ Name[te]=టిజిఫ్
 Name[x-test]=xxTGifxx
 GenericName=Drawing Program
 GenericName[af]=Tekenprogram
-GenericName[ar]=برنامج الرسم
+GenericName[ar]=برامج رسم
 GenericName[be]=Праграма для малявання
 GenericName[bg]=Програма за рисуване
 GenericName[bn]=অঙ্কন প্রোগ্রাম

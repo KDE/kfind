@@ -2,6 +2,7 @@
 Exec=zynaddsubfx
 Icon=
 Name=ZynaddsubFX
+Name[ar]=مازج ZynaddsubFX
 Name[hi]=जैडनाडसबएफएक्स
 Name[lt]=Cynosure
 Name[mr]=जैडनाडसबएफएक्स
@@ -9,6 +10,7 @@ Name[sr]=Зинадсуб‑ФИкс
 Name[sv]=Zynaddsubfx
 Name[x-test]=xxZynaddsubFXxx
 GenericName=Soft Synth
+GenericName[ar]=منظم البرامج
 GenericName[bn_IN]=সফ্ট সিন্থ
 GenericName[ca]=Programa sintetitzador
 GenericName[cs]=Softwérová syntéza

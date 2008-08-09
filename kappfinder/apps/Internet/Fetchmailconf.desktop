@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Fetchmailconf
 Name[af]=Fetchmail-conf
+Name[ar]=اعداد جلب البريد
 Name[csb]=Kònfigùracëjo Fetchmaila
 Name[fr]=FetchmailConf
 Name[gu]=ફેચમેલકોન્ફ
@@ -16,7 +17,7 @@ Name[vi]=Cấu hình Fetchmail
 Name[x-test]=xxFetchmailconfxx
 GenericName=Fetchmail Configuration
 GenericName[af]=Fetchmail Opstelling
-GenericName[ar]=ضبط Fetchmail
+GenericName[ar]=اعداد جلب البريد
 GenericName[be]=Настаўленні Fetchmail
 GenericName[bg]=Настройване на Fetchmail
 GenericName[bn]=ফেচ-মেইল কনফিগারেশন

@@ -3,6 +3,7 @@ Exec=vmstat 2
 Icon=
 Type=Application
 Name=Vmstat
+Name[ar]=حالة Vm
 Name[de]=VM-Stat
 Name[eo]=Memorostatistiko
 Name[hi]=वीएमस्टेट

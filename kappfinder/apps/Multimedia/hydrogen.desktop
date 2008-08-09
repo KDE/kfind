@@ -2,6 +2,7 @@
 Exec=hydrogen
 Icon=
 Name=Hydrogen
+Name[ar]=طبل Hydrogen
 Name[bn]=হাইড্রোজেন
 Name[cs]=Vodík
 Name[gu]=હાઇડ્રોજન
@@ -16,6 +17,7 @@ Name[ta]=ஹைட்ரஜன்
 Name[wa]=Hidrodjinne
 Name[x-test]=xxHydrogenxx
 GenericName=Drum Machine
+GenericName[ar]=الطبال
 GenericName[bg]=Барабани
 GenericName[bn_IN]=ড্রাম মেশিন
 GenericName[ca]=Màquina de percussió

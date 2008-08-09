@@ -2,6 +2,7 @@
 Exec=vkeybd
 Icon=
 Name=vkeybd
+Name[ar]=لوحة الموسيقى vkeybd
 Name[hi]=वीकीबोर्ड
 Name[ml]=വികീബിഡി
 Name[mr]=वीकीबोर्ड
@@ -9,6 +10,7 @@ Name[sr]=Вкибд
 Name[sv]=Vkeybd
 Name[x-test]=xxvkeybdxx
 GenericName=Virtual MIDI Keyboard
+GenericName[ar]=لوحة مفاتيح موسيقية
 GenericName[bg]=Виртуални MIDI клавиши
 GenericName[bn_IN]=ভার্চুয়াল MIDI কি-বোর্ড
 GenericName[ca]=Teclat virtual MIDI

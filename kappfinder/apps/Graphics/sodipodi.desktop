@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Sodipodi
-Name[ar]=سودي بودي
+Name[ar]=برنامج الرسوم المتجهة Sodipodi
 Name[bn]=সোডিপোডি
 Name[gu]=સોડીપોડી
 Name[hi]=सोडिपोडी
@@ -17,6 +17,7 @@ Name[x-test]=xxSodipodixx
 MimeType=
 GenericName=Vector Drawing
 GenericName[af]=Vektor-Teken
+GenericName[ar]=رسوميات متجهية
 GenericName[be]=Вектарная графіка
 GenericName[bg]=Векторна графика
 GenericName[bn]=ভেক্টর ড্রয়িং
