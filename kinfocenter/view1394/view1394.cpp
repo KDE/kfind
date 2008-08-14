@@ -64,7 +64,7 @@ K_EXPORT_PLUGIN(View1394Factory("kcmview1394"))
 View1394::View1394(QWidget *parent, const QVariantList &) :
 	KCModule(View1394Factory::componentData(), parent), m_insideRescanBus(false) {
 	setQuickHelp(i18n("<qt>On the right hand side you can see some information about "
-		"your IEEE 1394 configuration."
+		"your IEEE 1394 configuration. "
 		"The meaning of the columns:"
 		"<ul>"
 		"<li><b>Name</b>: port or node name, the number can change with each bus reset</li>"
