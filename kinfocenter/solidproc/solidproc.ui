@@ -28,6 +28,9 @@
         <property name="text" >
          <string>Vendor</string>
         </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
         <property name="buddy" >
          <cstring>lineVendor</cstring>
         </property>
@@ -40,10 +43,13 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="0" >
+      <item row="1" column="0" colspan="2" >
        <widget class="QLabel" name="labelModel" >
         <property name="text" >
          <string>Model:</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
         <property name="buddy" >
          <cstring>lineModel</cstring>
@@ -57,10 +63,13 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="0" >
+      <item row="2" column="0" colspan="2" >
        <widget class="QLabel" name="labelSpeed" >
         <property name="text" >
-         <string>Speed</string>
+         <string>Speed:</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
         <property name="buddy" >
          <cstring>lineSpeed</cstring>
@@ -78,6 +87,9 @@
        <widget class="QLabel" name="labelExtensions" >
         <property name="text" >
          <string>Supported extensions:</string>
+        </property>
+        <property name="alignment" >
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
         </property>
         <property name="buddy" >
          <cstring>lineExtensions</cstring>
