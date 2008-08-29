@@ -28,6 +28,10 @@ void SwapMemoryChart::paintEvent(QPaintEvent* /*event*/) {
 	/* display graphical output (ram, hdd, at last: HDD+RAM) */
 	/* be careful ! Maybe we have not all info available ! */
 
+	// First check swap see bug 167608
+	if (memoryInfos[SWAP_MEM] == Q_INT64_C(0))
+		memoryInfos[SWAP_MEM] = NO_MEMORY_INFO;
+
 	// SWAP usage: 
 	 
 	t_memsize freeSwap = ZERO_IF_NO_INFO(memoryInfos[FREESWAP_MEM]);
