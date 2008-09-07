@@ -27,6 +27,7 @@ Name[x-test]=xxAlsaMixerGuixx
 GenericName=Alsa Mixer Frontend
 GenericName[af]=Alsa Menger Voorkant
 GenericName[be]=Праграма для міксера Alsa
+GenericName[be@latin]=Hrafičny interfejs dla miksera systemy „ALSA”
 GenericName[bg]=Alsa аудио миксер
 GenericName[bn]=আলসা মিক্সার ইন্টারফেস
 GenericName[bn_IN]=Alsa মিক্সারের প্রেক্ষাপট

@@ -12,6 +12,7 @@ Name=USB Devices
 Name[af]=USB Toestelle
 Name[ar]=أجهزة USB
 Name[be]=USB прылады
+Name[be@latin]=Pryłady USB
 Name[bg]=USB устройства
 Name[bn]=ইউ-এস-বি ডিভাইস
 Name[bn_IN]=USB ডিভাইস
@@ -87,6 +88,7 @@ Name[zh_TW]=USB 裝置
 
 Comment=USB devices attached to this computer
 Comment[af]=USB toestelle gekoppel aan hierdie rekenaar
+Comment[be@latin]=Padłučanyja pryłady USB
 Comment[bg]=Информация за USB устройствата
 Comment[bn_IN]=কম্পিউটারের সাথে যুক্ত USB ডিভাইস
 Comment[ca]=Dispositius USB connectats a aquest ordinador
