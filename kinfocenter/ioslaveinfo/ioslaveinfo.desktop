@@ -1,6 +1,7 @@
 [Desktop Entry]
 Comment=Information about available protocols
 Comment[af]=Informasie oor beskikbare protokolle
+Comment[be@latin]=Źviestki pra najaŭnyja pratakoły
 Comment[bg]=Информация за поддържаните протоколи
 Comment[bn_IN]=উপলব্ধ প্রোটোকল সংক্রান্ত তথ্য
 Comment[ca]=Informació sobre els protocols disponibles
@@ -121,6 +122,7 @@ Name=Protocols
 Name[af]=Protokolle
 Name[ar]=البروتوكولات
 Name[be]=Пратаколы
+Name[be@latin]=Pratakoły
 Name[bg]=Протоколи
 Name[bn]=প্রোটোকল
 Name[bn_IN]=প্রোটোকল
