@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=FreeCiv Server
+Name=Freeciv Server
 Name[af]=Freeciv Bediener
 Name[ar]=خادم FreeCiv
 Name[be]=Сервер для FreeCiv
@@ -71,7 +71,7 @@ Name[xh]=Umncedisi we FreeCiv
 Name[zh_CN]=FreeCiv 服务器
 Name[zh_TW]=FreeCiv 伺服器
 Type=Application
-Comment=A server for Free Civ
+Comment=A server for Freeciv
 Comment[af]='n Bediener vir FreeCiv
 Comment[be]=Сервер для Свабоднай Цывілізацыі
 Comment[be@latin]=Server hulni „FreeCiv”
