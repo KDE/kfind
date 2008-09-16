@@ -1,25 +1,5 @@
 [Desktop Entry]
 Name=GIMP
-Name[ar]=جِمب
-Name[bn]=জিম্প
-Name[de]=GIMP
-Name[es]=GIMP
-Name[fr]=The Gimp
-Name[gu]=જીમ્પ
-Name[hi]=गिम्प
-Name[hu]=GIMP
-Name[kn]=ಜಿಂಪ್
-Name[ko]=김프
-Name[mk]=Гимп
-Name[ml]=ജിമ്പ്
-Name[mr]=जीम्प
-Name[ne]=गिम्प
-Name[pa]=ਜੈਮਪ
-Name[sr]=Гимп
-Name[ta]=கிம்ப்
-Name[te]=జింప్
-Name[wa]=Li GIMP
-Name[x-test]=xxGimpxx
 Exec=gimp %F
 Icon=gimp
 Type=Application
