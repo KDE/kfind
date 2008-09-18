@@ -98,7 +98,7 @@ void USBDevice::parseSysDir(int bus, int parent, int level, const QString& dname
 	dir.setFilter(QDir::Dirs);
 	QStringList list = dir.entryList();
 
-	for (QStringList::Iterator it = list.begin(); it != list.end(); ++it) {
+	for (QStringList::const_iterator it = list.begin(); it != list.end(); ++it) {
 		if ((*it).contains(':'))
 			continue;
 
@@ -206,7 +206,7 @@ QString USBDevice::dump() {
 	r += i18n("<tr><td><i>Power Consumption</i></td><td>self powered</td></tr>");
 	r += i18n("<tr><td><i>Attached Devicenodes</i></td><td>%1</td></tr>", _devnodes.at(0));
 	if ( _devnodes.count() > 1 ) {
-		QStringList::Iterator it = _devnodes.begin();
+		QStringList::const_iterator it = _devnodes.begin();
 		++it;
 		for (; it != _devnodes.end(); ++it )
 		r += "<tr><td></td><td>" + *it + "</td></tr>";
@@ -276,7 +276,7 @@ bool USBDevice::parseSys(const QString &dname) {
 	d.setNameFilters(QStringList() << "usb*");
 	QStringList list = d.entryList();
 
-	for (QStringList::Iterator it = list.begin(); it != list.end(); ++it) {
+	for (QStringList::const_iterator it = list.begin(); it != list.end(); ++it) {
 		USBDevice* device = new USBDevice();
 
 		int bus = 0;

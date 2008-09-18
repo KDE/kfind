@@ -48,7 +48,7 @@ int main( int argc, char *argv[] )
 
   QList<AppLnkCache*> appCache;
 
-  QStringList::Iterator it;
+  QStringList::const_iterator it;
   for ( it = templates.begin(); it != templates.end(); ++it )
     scanDesktopFile( appCache, *it, dir );
 
