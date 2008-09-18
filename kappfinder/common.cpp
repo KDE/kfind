@@ -143,7 +143,7 @@ void decorateDirs( QString destDir )
 
   QStringList dirs = KGlobal::dirs()->findAllResources( "data", "kappfinder/apps/*.directory", KStandardDirs::Recursive );
 
-  QStringList::Iterator it;
+  QStringList::const_iterator it;
   for ( it = dirs.begin(); it != dirs.end(); ++it ) {
     // find out the name of the file to store
     QString destName = *it;

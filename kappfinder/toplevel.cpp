@@ -169,7 +169,7 @@ void TopLevel::slotScan()
 
   mListView->clear();
 
-  QStringList::Iterator it;
+  QStringList::const_iterator it;
   for ( it = mTemplates.begin(); it != mTemplates.end(); ++it ) {
     // eye candy
     mProgress->setValue( mProgress->value() + 1 );
@@ -207,7 +207,7 @@ void TopLevel::slotScan()
       QTreeWidgetItem *dirItem = 0;
       QString tmpRelPath = QString();
 
-      QStringList::Iterator tmpIt;
+      QStringList::const_iterator tmpIt;
       for ( tmpIt = dirList.begin(); tmpIt != dirList.end(); ++tmpIt ) {
         dirItem = addGroupItem( dirItem, tmpRelPath, *tmpIt );
         tmpRelPath += *tmpIt + '/';
