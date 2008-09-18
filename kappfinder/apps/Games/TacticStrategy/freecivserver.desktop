@@ -1,7 +1,21 @@
 [Desktop Entry]
 Version=1.0
 Name=Freeciv Server
+Name[km]=ម៉ាស៊ីន​បម្រើ Freeciv
+Name[nds]=Freeciv-Server
+Name[pt]=Servidor do Freeciv
+Name[pt_BR]=Servidor do Freeciv
+Name[sv]=Freeciv-server
+Name[uk]=Сервер Freeciv
+Name[zh_TW]=Freeciv 伺服器
 Type=Application
 Comment=A server for Freeciv
+Comment[km]=ម៉ាស៊ីន​បម្រើ​សម្រាប់ Freeciv
+Comment[nds]=En Server för Freeciv
+Comment[pt]=Um servidor para o Freeciv
+Comment[pt_BR]=Um servidor para o Freeciv
+Comment[sv]=Server för Freeciv
+Comment[uk]=Сервер для Freeсiv
+Comment[zh_TW]=給 Freeciv 使用的伺服器
 Exec=civserver
 Terminal=true

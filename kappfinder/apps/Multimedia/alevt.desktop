@@ -1,5 +1,12 @@
 [Desktop Entry]
 GenericName=Videotext Viewer
+GenericName[km]=កម្មវិធី​មើល Videotext
+GenericName[nds]=Videotext-Kieker
+GenericName[pt]=Visualizador de Vídeo-texto
+GenericName[pt_BR]=Visualizador de Vídeo-texto
+GenericName[sv]=Videotext-visare
+GenericName[uk]=Переглядач відеотекстів
+GenericName[zh_TW]=Videotext 檢視器
 Exec=alevt
 Icon=alevt
 Name=AleVT
