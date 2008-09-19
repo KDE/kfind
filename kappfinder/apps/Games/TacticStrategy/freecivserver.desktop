@@ -1,6 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=Freeciv Server
+Name[be@latin]=Server hulni „Freeciv”
 Name[km]=ម៉ាស៊ីន​បម្រើ Freeciv
 Name[nds]=Freeciv-Server
 Name[pt]=Servidor do Freeciv
@@ -10,6 +11,7 @@ Name[uk]=Сервер Freeciv
 Name[zh_TW]=Freeciv 伺服器
 Type=Application
 Comment=A server for Freeciv
+Comment[be@latin]=Server hulni „Freeciv”
 Comment[km]=ម៉ាស៊ីន​បម្រើ​សម្រាប់ Freeciv
 Comment[nds]=En Server för Freeciv
 Comment[pt]=Um servidor para o Freeciv
