@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=GIMP
+Name[x-test]=xxGIMPxx
 Exec=gimp %F
 Icon=gimp
 Type=Application
