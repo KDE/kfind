@@ -2,6 +2,7 @@
 Version=1.0
 Name=Freeciv Server
 Name[be@latin]=Server hulni „Freeciv”
+Name[el]=Εξυπηρετητής Freeciv
 Name[gl]=Servidor de Freeciv
 Name[gu]=ફ્રીસિવ સર્વર
 Name[kk]=Freeciv сервері
@@ -18,6 +19,7 @@ Name[zh_TW]=Freeciv 伺服器
 Type=Application
 Comment=A server for Freeciv
 Comment[be@latin]=Server hulni „Freeciv”
+Comment[el]=Ένας εξυπηρετητής για το Freeciv
 Comment[gl]=Un servidor de Freeciv
 Comment[gu]=ફ્રીસિવ માટે સર્વર
 Comment[kk]=Freeciv-ке арналған сервер
