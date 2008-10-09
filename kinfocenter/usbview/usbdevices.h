@@ -16,6 +16,7 @@
 
 #if defined(__DragonFly__)
 #include <bus/usb/usb.h>
+#include <QStringList>
 #elif defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
 #include <dev/usb/usb.h>
 #include <QStringList>
