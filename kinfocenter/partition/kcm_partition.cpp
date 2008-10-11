@@ -95,12 +95,12 @@ void KCMPartition::load() {
 	QList<Solid::Device> devices = Solid::Device::listFromType(Solid::DeviceInterface::StorageDrive, QString());
 
 	//Root Devices (Hard Disks, CD-Rom drives,...)
-	foreach(Solid::Device device, devices) {
+	foreach(const Solid::Device &device, devices) {
 		if(device.is<Solid::StorageDrive>() == false) {
 			continue;
 		}
 		
-		Solid::StorageDrive* drive = device.as<Solid::StorageDrive>();
+		const Solid::StorageDrive* drive = device.as<Solid::StorageDrive>();
 		
 		QStringList itemContent;
 		
@@ -117,18 +117,18 @@ void KCMPartition::load() {
 	QList<Solid::Device> storageVolumes = Solid::Device::listFromType(Solid::DeviceInterface::StorageVolume, QString());
 	QList<QString> accessPaths;
 
-	foreach(Solid::Device device, storageVolumes) {
+	foreach(const Solid::Device &device, storageVolumes) {
 		
 		if(device.is<Solid::StorageVolume>() == false) {
 			continue;
 		}
 		
-		Solid::StorageVolume* volume = device.as<Solid::StorageVolume>();
+		const Solid::StorageVolume* volume = device.as<Solid::StorageVolume>();
 
 		QStringList itemContent;
 		
 		if (device.is<Solid::StorageAccess>()) {
-			Solid::StorageAccess* access = device.as<Solid::StorageAccess>();
+			const Solid::StorageAccess* access = device.as<Solid::StorageAccess>();
 			itemContent << access->filePath();
 			
 			accessPaths.append(access->filePath());
@@ -177,7 +177,7 @@ void KCMPartition::load() {
 
 }
 
-QString KCMPartition::findBusType(Solid::StorageDrive* drive) const {
+QString KCMPartition::findBusType(const Solid::StorageDrive* drive) const {
 	switch (drive->bus()) {
 	case Solid::StorageDrive::Ide:
 		return i18n("IDE");
@@ -196,7 +196,7 @@ QString KCMPartition::findBusType(Solid::StorageDrive* drive) const {
 	return i18n("Unknown Bus");
 }
 
-QString KCMPartition::findDriveType(Solid::StorageDrive* drive) const {
+QString KCMPartition::findDriveType(const Solid::StorageDrive* drive) const {
 	switch (drive->driveType()) {
 	case Solid::StorageDrive::HardDisk:
 		return i18n("Hard Disk");
