@@ -54,8 +54,8 @@ private slots:
 	void mountPointInfo(const QString &mountPoint, quint64 kibSize, quint64 kibUsed, quint64 kibAvail);
 	
 private:
-	QString findDriveType(Solid::StorageDrive* drive) const;
-	QString findBusType(Solid::StorageDrive* drive) const;
+	QString findDriveType(const Solid::StorageDrive* drive) const;
+	QString findBusType(const Solid::StorageDrive* drive) const;
 	void resizeContent() const;
 
 	QTreeWidget* tree;
