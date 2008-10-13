@@ -10,8 +10,14 @@ qt4_wrap_ui(KCM_OPENGL_PART_UIS_H ${KCM_OPENGL_PART_UIS})
 
 kde4_add_plugin(kcm_opengl ${KCM_OPENGL_PART_SRCS} ${KCM_OPENGL_PART_UIS_H})
 
-target_link_libraries(kcm_opengl ${KDE4_KDEUI_LIBS} ${QT_QTGUI_LIBRARY} ${X11_X11_LIB}
-                      ${DL_LIBRARY}  ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
+target_link_libraries(kcm_opengl ${KDE4_KDEUI_LIBS} ${QT_QTGUI_LIBRARY} ${X11_X11_LIB})
+
+find_library(DL_LIBRARY dl)
+if (DL_LIBRARY)
+  target_link_libraries(kcm_opengl ${DL_LIBRARY})
+endif(DL_LIBRARY)
+
+target_link_libraries(kcm_opengl ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
 
 install(TARGETS kcm_opengl  DESTINATION ${PLUGIN_INSTALL_DIR})
 
