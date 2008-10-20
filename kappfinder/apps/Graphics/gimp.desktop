@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=GIMP
 Name[kn]=ಜಿಂಪ್
+Name[pa]=ਜੈਮਪ
 Name[x-test]=xxGIMPxx
 Exec=gimp %F
 Icon=gimp
