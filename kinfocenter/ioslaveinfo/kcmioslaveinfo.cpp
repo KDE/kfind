@@ -144,7 +144,7 @@ void KCMIOSlaveInfo::showInfo(const QString& protocol) {
 	}
 
 	m_info->begin();
-	m_info->write(i18n("<html><body><p style='text-align:center'>Loading documentation of the '%1:/' protocol...</p></body></html>", protocol));
+	m_info->write(i18n("<html><body><p style='text-align:center'>No documentation available for the '%1:/' protocol.</p></body></html>", protocol));
 	m_info->end();
 }
 
