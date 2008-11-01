@@ -62,6 +62,7 @@ KCMOpenGL::KCMOpenGL(QWidget *parent, const QVariantList &)
     : KCModule(KCMOpenGLFactory::componentData(), parent)
 {
     setupUi(this);
+    layout()->setMargin(0);
     
     GetInfo_OpenGL(glinfoTreeWidget);
 

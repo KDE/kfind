@@ -45,6 +45,7 @@ KCMSolidProc::KCMSolidProc(QWidget *parent, const QVariantList &)
     : KCModule(KCMSolidProcFactory::componentData(), parent)
 {
     setupUi(this);
+    layout()->setMargin(0);
     
     solidProcList = Solid::Device::listFromType(Solid::DeviceInterface::Processor, QString());
 
