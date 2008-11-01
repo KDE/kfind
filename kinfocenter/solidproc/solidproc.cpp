@@ -96,7 +96,7 @@ void KCMSolidProc::rowSelected(int newRow)
     if (extensions & Solid::Processor::IntelMmx)  ext << "MMX";
     if (extensions & Solid::Processor::IntelSse)  ext << "SSE";
     if (extensions & Solid::Processor::IntelSse2) ext << "SSE2";
-    if (extensions & Solid::Processor::IntelSse2) ext << "SSE3";
+    if (extensions & Solid::Processor::IntelSse3) ext << "SSE3";
     if (extensions & Solid::Processor::IntelSse4) ext << "SSE4";
     if (extensions & Solid::Processor::Amd3DNow)  ext << "3DNow!";
     if (extensions & Solid::Processor::AltiVec)   ext << "AltiVec";
