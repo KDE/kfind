@@ -24,14 +24,10 @@
 #ifndef kcmioslaveinfo_h_included
 #define kcmioslaveinfo_h_included
 
-//Added by qt3to4:
-#include <QByteArray>
-
 #include <kaboutdata.h>
 #include <kcmodule.h>
-#include <kio/job.h>
-#include <klistwidget.h>
-#include <ktextbrowser.h>
+
+class KHTMLPart;
 
 class KCMIOSlaveInfo : public KCModule {
 Q_OBJECT
@@ -42,17 +38,15 @@ protected:
 
 	QComboBox* ioSlaves;
 
-	KTextBrowser *m_info;
-	QByteArray helpData;
-	KIO::Job *m_tfj;
+	KHTMLPart *m_info;
 
 protected slots:
 
 	void showInfo(const QString& protocol);
-	void slaveHelp(KIO::Job *, const QByteArray &data);
-	void slotResult(KJob *);
+	void loadingCompleted();
+	void openUrl(const KUrl& url, const KParts::OpenUrlArguments&, const KParts::BrowserArguments&);
 
 private:
-	QString selectHelpBody();
+	void selectHelpBody();
 };
 #endif

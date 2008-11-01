@@ -3,6 +3,7 @@
  *
  * Copyright 2001 Alexander Neundorf <neundorf@kde.org>
  * Copyright 2001 George Staikos  <staikos@kde.org>
+ * Copyright 2008 Pino Toscano <pino@kde.org>
  *
  * Requires the Qt widget libraries, available at no cost at
  * http://www.troll.no/
@@ -22,14 +23,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <QFile>
 #include <QLabel>
 #include <QLayout>
-#include <QSpinBox>
-#include <QSplitter>
-#include <QTabWidget>
-#include <QTextCodec>
-#include <QWhatsThis>
 #include <QComboBox>
 
 #include <kconfig.h>
@@ -37,12 +32,16 @@
 #include <kdialog.h>
 #include <kglobal.h>
 #include <kiconloader.h>
-#include <kio/job.h>
 #include <klocale.h>
 #include <kprotocolinfo.h>
 #include <kstandarddirs.h>
+#include <ktoolinvocation.h>
 #include <kpluginfactory.h>
 #include <kpluginloader.h>
+#include <khtml_part.h>
+#include <khtmlview.h>
+#include <dom/dom_node.h>
+#include <dom/html_element.h>
 
 #include "kcmioslaveinfo.h"
 
@@ -50,7 +49,7 @@ K_PLUGIN_FACTORY(SlaveFactory, registerPlugin<KCMIOSlaveInfo>();)
 K_EXPORT_PLUGIN( SlaveFactory("kcmioslaveinfo"))
 
 KCMIOSlaveInfo::KCMIOSlaveInfo(QWidget *parent, const QVariantList &) :
-	KCModule(SlaveFactory::componentData(), parent), m_tfj(NULL) {
+	KCModule(SlaveFactory::componentData(), parent) {
 	QVBoxLayout *layout=new QVBoxLayout(this);
 	layout->setMargin(0);
 
@@ -71,10 +70,17 @@ KCMIOSlaveInfo::KCMIOSlaveInfo(QWidget *parent, const QVariantList &) :
 	layout->addLayout(selectionLayout);
 	
 
-	//TODO make something useful after 2.1 is released
-	m_info=new KTextBrowser(this);
+	m_info = new KHTMLPart(this, this);
+	m_info->setJScriptEnabled(false);
+	m_info->setJavaEnabled(false);
+	m_info->setMetaRefreshEnabled(false);
+	m_info->setPluginsEnabled(false);
+
+	connect(m_info, SIGNAL(completed()), this, SLOT(loadingCompleted()));
+	connect(m_info->browserExtension(), SIGNAL(openUrlRequestDelayed(const KUrl&, const KParts::OpenUrlArguments&, const KParts::BrowserArguments&)),
+	        this, SLOT(openUrl(const KUrl&, const KParts::OpenUrlArguments&, const KParts::BrowserArguments&)));
 	
-	layout->addWidget(m_info);
+	layout->addWidget(m_info->view());
 
 	QStringList protocols=KProtocolInfo::protocols();
 	protocols.sort();
@@ -96,55 +102,63 @@ KCMIOSlaveInfo::KCMIOSlaveInfo(QWidget *parent, const QVariantList &) :
 
 }
 
-void KCMIOSlaveInfo::slaveHelp(KIO::Job *, const QByteArray &data) {
-	if (data.size() == 0) { // EOF
-		QString text = selectHelpBody();
-		m_info->setHtml(text);
-		return;
-	}
-	helpData += data;
-}
-
 /**
  * Big Hack to only select content of the help documentation
- * The HTML content is cut by recognizing header and footer
+ * The HTML content is cut by removing the all DIV blocks but the class="article" one
  */
-QString KCMIOSlaveInfo::selectHelpBody() {
-	int index = helpData.indexOf("<meta http-equiv=\"Content-Type\"");
-	index = helpData.indexOf("charset=", index) + 8;
-	QString charset = helpData.mid(index, helpData.indexOf( '\"', index) - index);
-	QString text = QTextCodec::codecForName(charset.toLatin1())->toUnicode(helpData);
-	index = text.indexOf("<div class=\"titlepage\">"); //Start documentation "identifier"
-	text = text.mid(index);
-	index = text.indexOf("<div style=\"background-color: #white; color: black;                  margin-top: 20px; margin-left: 20px;                  margin-right: 20px;\"><div style=\"position: absolute; left: 20px;\">");  //End documentation "identifier"
-	text = text.left(index);
-
-	return text;
-}
-
-void KCMIOSlaveInfo::slotResult(KJob *) {
-	m_tfj = NULL;
+void KCMIOSlaveInfo::selectHelpBody() {
+	DOM::Document document = m_info->document();
+	m_info->view()->setUpdatesEnabled(true);
+	if (document.isNull()) {
+		return;
+	}
+	const DOM::NodeList bodylist = document.getElementsByTagName("body");
+	if (bodylist.length() != 1) {
+		return;
+	}
+	DOM::Node body = bodylist.item(0);
+	const DOM::NodeList bodyChildren = body.childNodes();
+	for (unsigned long i = 0; i < bodyChildren.length(); ++i) {
+		const DOM::Node child = bodyChildren.item(i);
+		if ((child.nodeType() != DOM::Node::ELEMENT_NODE)
+		    || (child.nodeName().lower() != DOM::DOMString("div"))) {
+			continue;
+		}
+		const DOM::HTMLElement el = child;
+		if (el.className() == DOM::DOMString("article")) {
+			continue;
+		}
+		--i;
+		body.removeChild(child);
+	}
 }
 
 void KCMIOSlaveInfo::showInfo(const QString& protocol) {
 	QString file = QString("kioslave/%1.docbook").arg(protocol);
 	file = KGlobal::locale()->langLookup(file);
-	if (m_tfj) {
-		m_tfj->kill();
-		m_tfj = NULL;
-	}
 
 	if (!file.isEmpty()) {
-		helpData.clear();
-		m_tfj = KIO::get(KUrl(QString("help:/kioslave/%1.html").arg(protocol) ), KIO::Reload, KIO::HideProgressInfo);
-		connect(m_tfj, SIGNAL( data( KIO::Job *, const QByteArray &) ), SLOT( slaveHelp( KIO::Job *, const QByteArray &) ));
-		connect(m_tfj, SIGNAL( result( KJob * ) ), SLOT( slotResult( KJob * ) ));
+		m_info->view()->setUpdatesEnabled(false);
+		m_info->openUrl(KUrl(QString("help:/kioslave/%1.html").arg(protocol)));
 		return;
 	}
 
-	m_info->setHtml(i18n("<html><body><p style='text-align:center'>Loading documentation of the '%1:/' protocol...</p></body></html>", protocol));
+	m_info->begin();
+	m_info->write(i18n("<html><body><p style='text-align:center'>Loading documentation of the '%1:/' protocol...</p></body></html>", protocol));
+	m_info->end();
 }
 
+void KCMIOSlaveInfo::loadingCompleted() {
+	selectHelpBody();
+}
+
+void KCMIOSlaveInfo::openUrl(const KUrl& url, const KParts::OpenUrlArguments&, const KParts::BrowserArguments&) {
+	if (url.protocol() == QLatin1String("mailto")) {
+		KToolInvocation::invokeMailer(url);
+	} else {
+		KToolInvocation::invokeBrowser(url.url());
+	}
+}
 
 #include "kcmioslaveinfo.moc"
 
