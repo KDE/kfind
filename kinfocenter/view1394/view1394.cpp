@@ -92,6 +92,7 @@ View1394::View1394(QWidget *parent, const QVariantList &) :
 	m_view->m_listview->setColumnAlignment(9, Qt::AlignRight);
 	*/
 	box->addWidget(m_view);
+	m_view->layout()->setMargin(0);
 	connect(m_view->m_busResetPb, SIGNAL(clicked()), this, SLOT(generateBusReset()));
 	connect(&m_rescanTimer, SIGNAL(timeout()), this, SLOT(rescanBus()));
 	rescanBus();
