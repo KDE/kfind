@@ -121,7 +121,7 @@ QTreeWidgetItem* TopLevel::addGroupItem( QTreeWidgetItem *parent, const QString 
   KServiceGroup::List list = root->entries();
 
   KServiceGroup::List::ConstIterator it;
-  for ( it = list.begin(); it != list.end(); ++it ) {
+  for ( it = list.constBegin(); it != list.constEnd(); ++it ) {
     const KSycocaEntry *p = (*it).data();
     if ( p->isType( KST_KServiceGroup ) ) {
       const KServiceGroup* serviceGroup = static_cast<const KServiceGroup*>( p );
@@ -170,7 +170,7 @@ void TopLevel::slotScan()
   mListView->clear();
 
   QStringList::const_iterator it;
-  for ( it = mTemplates.begin(); it != mTemplates.end(); ++it ) {
+  for ( it = mTemplates.constBegin(); it != mTemplates.constEnd(); ++it ) {
     // eye candy
     mProgress->setValue( mProgress->value() + 1 );
 
@@ -208,7 +208,7 @@ void TopLevel::slotScan()
       QString tmpRelPath = QString();
 
       QStringList::const_iterator tmpIt;
-      for ( tmpIt = dirList.begin(); tmpIt != dirList.end(); ++tmpIt ) {
+      for ( tmpIt = dirList.constBegin(); tmpIt != dirList.constEnd(); ++tmpIt ) {
         dirItem = addGroupItem( dirItem, tmpRelPath, *tmpIt );
         tmpRelPath += *tmpIt + '/';
       }
