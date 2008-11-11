@@ -141,10 +141,10 @@ void decorateDirs( QString destDir )
   else
     destDir += '/';
 
-  QStringList dirs = KGlobal::dirs()->findAllResources( "data", "kappfinder/apps/*.directory", KStandardDirs::Recursive );
+  const QStringList dirs = KGlobal::dirs()->findAllResources( "data", "kappfinder/apps/*.directory", KStandardDirs::Recursive );
 
   QStringList::const_iterator it;
-  for ( it = dirs.begin(); it != dirs.end(); ++it ) {
+  for ( it = dirs.constBegin(); it != dirs.constEnd(); ++it ) {
     // find out the name of the file to store
     QString destName = *it;
     int pos = destName.indexOf( "kappfinder/apps/" );
