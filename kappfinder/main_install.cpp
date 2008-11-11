@@ -42,14 +42,14 @@ int main( int argc, char *argv[] )
     return -1;
   }
 
-  QStringList templates = KGlobal::dirs()->findAllResources( "data", "kappfinder/apps/*.desktop", KStandardDirs::Recursive );
+  const QStringList templates = KGlobal::dirs()->findAllResources( "data", "kappfinder/apps/*.desktop", KStandardDirs::Recursive );
 
   QString dir = QString( argv[ 1 ] ) + '/';
 
   QList<AppLnkCache*> appCache;
 
   QStringList::const_iterator it;
-  for ( it = templates.begin(); it != templates.end(); ++it )
+  for ( it = templates.constBegin(); it != templates.constEnd(); ++it )
     scanDesktopFile( appCache, *it, dir );
 
   createDesktopFiles( appCache, added );
