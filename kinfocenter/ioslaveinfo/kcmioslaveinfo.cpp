@@ -138,25 +138,13 @@ void KCMIOSlaveInfo::showInfo(const QString& protocol) {
 	file = KGlobal::locale()->langLookup(file);
 
 	if (!file.isEmpty()) {
-//<<<<<<< .mine
-//		helpData.clear();
-//		m_tfj = KIO::get(KUrl(QString("help:/kioslave/%1/index.html").arg(protocol) ), KIO::Reload, KIO::HideProgressInfo);
-//		connect(m_tfj, SIGNAL( data( KIO::Job *, const QByteArray &) ), SLOT( slaveHelp( KIO::Job *, const QByteArray &) ));
-//		connect(m_tfj, SIGNAL( result( KJob * ) ), SLOT( slotResult( KJob * ) ));
-//=======
 		m_info->view()->setUpdatesEnabled(false);
 		m_info->openUrl(KUrl(QString("help:/kioslave/%1/index.html").arg(protocol)));
-//>>>>>>> .r879193
 		return;
 	}
-
-//<<<<<<< .mine
-//	m_info->setHtml(i18n("<html><body><p style='text-align:center'>No documentation for the '%1:/' protocol...</p></body></html>", protocol));
-//=======
 	m_info->begin();
 	m_info->write(i18n("<html><body><p style='text-align:center'>No documentation available for the '%1:/' protocol.</p></body></html>", protocol));
 	m_info->end();
-//>>>>>>> .r879193
 }
 
 void KCMIOSlaveInfo::loadingCompleted() {
