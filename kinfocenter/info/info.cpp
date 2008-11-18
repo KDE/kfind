@@ -23,7 +23,7 @@
 
 KInfoListWidget::KInfoListWidget(const KComponentData &inst, const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
 	KCModule(inst, parent), title(_title) {
-	KAboutData *about = new KAboutData(I18N_NOOP("kcminfo"), 0,
+	KAboutData *about = new KAboutData("kcminfo", 0,
 			ki18n("KDE Panel System Information Control Module"),
 			0, KLocalizedString(), KAboutData::License_GPL,
 			ki18n(	"(c) 2008 Nicolas Ternisien\n"
