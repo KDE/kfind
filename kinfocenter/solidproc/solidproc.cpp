@@ -67,7 +67,7 @@ KCMSolidProc::KCMSolidProc(QWidget *parent, const QVariantList &)
     listWidgetProcessors->setCurrentItem(listWidgetProcessors->item(0));
     
     KAboutData *about =
-    new KAboutData(I18N_NOOP("kcmsolidproc"), 0,
+    new KAboutData("kcmsolidproc", 0,
         ki18n("KCM Solid Processor Information"),
         0, KLocalizedString(), KAboutData::License_GPL,
         ki18n("(c) 2008 Ivo Anjo"));
