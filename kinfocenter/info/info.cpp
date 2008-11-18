@@ -66,7 +66,7 @@ void KInfoListWidget::load() {
 	//TODO Remove tree content before clear it
 	tree->clear();
 
-	errorString = i18n("No information available about %1.", title) + QLatin1String("\n\n") + DEFAULT_ERRORSTRING;
+	errorString = i18nc("%1 is one of the modules of the kinfocenter, cpu info, os info, etc", "No information available about %1.", title) + QLatin1String("\n\n") + DEFAULT_ERRORSTRING;
 
 	/* No Sorting per default */
 	tree->setSortingEnabled(false); 
