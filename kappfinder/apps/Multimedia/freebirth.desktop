@@ -2,6 +2,7 @@
 Exec=freebirth
 Icon=
 Name=FreeBirth
+Name[ar]=ولادة طبيعية
 Name[hi]=फ्री-बर्थ
 Name[km]=FreeDB
 Name[kn]=ಫ್ರೀಬರ್ತ್
@@ -13,6 +14,7 @@ Name[sv]=Freebirth
 Name[te]=ఫ్రీబర్త్
 Name[x-test]=xxFreeBirthxx
 GenericName=Drum Machine
+GenericName[ar]=الطبال
 GenericName[be@latin]=Bubnovaja systema
 GenericName[bg]=Барабани
 GenericName[bn_IN]=ড্রাম মেশিন

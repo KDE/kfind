@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=X-Gnokii
+Name[ar]=جنوم نوكيا
 Name[hi]=एक्स-ग्नोकी
 Name[ja]=Gnokii 携帯電話ツール
 Name[kn]=ಕ್ಸ-ಗ್ನೋಕೀ
@@ -12,7 +13,7 @@ Name[th]=X-Gnokil
 Name[x-test]=xxX-Gnokiixx
 GenericName=Mobile Phone Management Tool
 GenericName[af]=Selfoon Bestuurder
-GenericName[ar]=أداة إدارة الهواتف النقالة
+GenericName[ar]=إدارة الهاتف النقال
 GenericName[be]=Інструмент кіравання мабільным тэлефонам
 GenericName[be@latin]=Pryłada dla kiravańnia mabilnym telefonam
 GenericName[bg]=Връзка с мобилен телефон

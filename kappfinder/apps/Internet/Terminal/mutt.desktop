@@ -3,6 +3,7 @@ Exec=mutt
 Icon=email
 Type=Application
 Name=Mutt
+Name[ar]=برنامج البريد Mutt
 Name[bn]=মাট
 Name[gu]=મટ્ટ
 Name[hi]=मट

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=XScorch
-Name[ar]=إكس إسكورش
+Name[ar]=لعبة الدبابات
 Name[hi]=एक्स-स्क्रॉच
 Name[kn]=ಕ್ಸಸ್ಕಾರ್ಚ್
 Name[ml]=എക്സ്സ്കോര്‍ച്ച്
@@ -16,6 +16,7 @@ Name[x-test]=xxXScorchxx
 Type=Application
 Comment=A free Scorched Earth clone for UNIX and X
 Comment[af]='n Gratis 'Scorched Earth' nabootsing vir UNIX en X
+Comment[ar]=لعبة ارض الدبابات
 Comment[be]=Свабодны клон Scorched Earth для UNIX і X
 Comment[be@latin]=Svabodnaja versija hulni „Scorched Earth” dla systemaŭ UNIX i X
 Comment[bg]=Безплатен вариант на играта Scorched Earth за UNIX и X

@@ -9,6 +9,7 @@ X-KDE-Library=kcm_opengl
 X-KDE-ParentApp=kinfocenter
 
 Name=OpenGL
+Name[ar]=مكتبة الرسوميات المفتوحة  OpenGL
 Name[bn]=ওপেন-জি-এল
 Name[hi]=ओपन-जीएल
 Name[kn]=ಓಪನ್ ಜೆಎಲ್

@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Grip
+Name[ar]=القبضه
 Name[bn]=গ্রিপ
 Name[fa]=چنگ زدن
 Name[fr]=GRip
@@ -15,6 +16,7 @@ Name[te]=గ్రిప్
 Name[x-test]=xxGripxx
 GenericName=CD Player/Ripper
 GenericName[af]=CD Speler/Ripper
+GenericName[ar]=قارئ القرص المدمج
 GenericName[be]=Прайгравальнік/выціскальнік гуку для CD
 GenericName[be@latin]=Prajhravańnik i kapijavańnik dla CD-dyskaŭ
 GenericName[bg]=CD плеър/Записвачка

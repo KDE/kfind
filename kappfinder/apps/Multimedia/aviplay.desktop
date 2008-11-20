@@ -80,6 +80,7 @@ Exec=aviplay %f
 Icon=video
 MimeType=video/x-ms-asf;video/mpeg;video/quicktime;video/x-flic;video/x-msvideo;
 Name=Aviplay
+Name[ar]=مشغل افلام Avi
 Name[bn]=এ.ভি.আই-প্লে
 Name[eo]=AVI-legilo
 Name[hi]=एवीआईप्ले

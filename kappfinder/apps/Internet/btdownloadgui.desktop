@@ -65,6 +65,7 @@ Icon=xapp
 InitialPreference=2
 MimeType=application/x-bittorrent;
 Name=BitTorrent Python wxGTK GUI
+Name[ar]=الواجهة الرسومية لبت تورنت بايثون wxGTK
 Name[be]=Графічны кліент BitTorrent на Python з wxGTK
 Name[be@latin]=„wxGTK”-interfejs dla prahramy „BitTorrent”
 Name[bn]=বিট-টরেন্ট পাইথন wxGTK গুই

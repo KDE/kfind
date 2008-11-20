@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Angband
+Name[ar]=لعبة Angband
 Name[gu]=એનગ્બેન્ડ
 Name[hi]=एंगबैंड
 Name[kk]=Ангбанд
@@ -17,6 +18,7 @@ Name[uk]=Анґбанд
 Name[x-test]=xxAngbandxx
 Comment=Dive into Angband and defeat Morgoth
 Comment[af]=Duik binne-in Angband en oorwin Morgoth
+Comment[ar]=اغطس وحارب Morgoth
 Comment[be]=Вандроўка ў Ангбанд, бойка з Моргатам
 Comment[be@latin]=Prajdzi praz Angband i pieramažy Morgotha
 Comment[bg]=Гмурнете се в Ангбанд и победете Моргот

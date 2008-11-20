@@ -1,6 +1,7 @@
 [Desktop Entry]
 GenericName=Tetris-Like Game
 GenericName[af]=Tetris tipe Speletjie
+GenericName[ar]=لعبة Tetris
 GenericName[be]=Гульня тыпу Tetris
 GenericName[be@latin]=Hulnia ŭ styli „Tetris”
 GenericName[bg]=Тетрис
@@ -79,6 +80,7 @@ GenericName[zh_TW]=Tetris-Like 遊戲
 Exec=frozen-bubble
 Icon=frozen_bubble
 Name=Frozen Bubble
+Name[ar]=الفقاعة المتجمدة
 Name[bn]=ফ্রোজেন বাবল
 Name[bn_IN]=ফ্রোজোন বাবল
 Name[csb]=Zamrozoné bąbelczi
