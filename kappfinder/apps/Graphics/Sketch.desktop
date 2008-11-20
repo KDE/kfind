@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Sketch
 Name[af]=Skets
-Name[ar]=ارسم
+Name[ar]=رسام Sketch
 Name[bn]=স্কেচ
 Name[csb]=Céchùnk
 Name[fa]=طرح
@@ -26,6 +26,7 @@ Name[x-test]=xxSketchxx
 Name[xh]=Umzobo
 GenericName=Vector-based Drawing Program
 GenericName[af]=Vektor-basis Tekenprogram
+GenericName[ar]=رسم البرنامج المتجه
 GenericName[be]=Рэдактар вектарнай графікі
 GenericName[be@latin]=Prahrama dla vektarnaha malavańnia
 GenericName[bg]=Програма за векторна графика

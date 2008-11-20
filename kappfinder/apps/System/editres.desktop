@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=EditXRes
 Name[af]=RedigeerXRes
+Name[ar]=محرر XRes
 Name[csb]=Editora dostónków XWindow
 Name[cy]=GolyguXRes
 Name[eo]=Aspektoredaktilo
@@ -15,6 +16,7 @@ Name[sv]=Editxres
 Name[x-test]=xxEditXResxx
 GenericName=X Resource Editor
 GenericName[af]=X Hulpbron Redigeerder
+GenericName[ar]=محرر الموارد X
 GenericName[be]=Рэдактар рэсурсаў X
 GenericName[be@latin]=Redaktar resursaŭ dla systemy X
 GenericName[bg]=Редактор на X ресурс

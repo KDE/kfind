@@ -27,6 +27,7 @@ Name[wa]=Eterface grafike do maxheu d' son Alsa
 Name[x-test]=xxAlsaMixerGuixx
 GenericName=Alsa Mixer Frontend
 GenericName[af]=Alsa Menger Voorkant
+GenericName[ar]=متحكم الصوت Alsa
 GenericName[be]=Праграма для міксера Alsa
 GenericName[be@latin]=Hrafičny interfejs dla miksera systemy „ALSA”
 GenericName[bg]=Alsa аудио миксер

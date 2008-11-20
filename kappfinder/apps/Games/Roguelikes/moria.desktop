@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Moria
+Name[ar]=لعبة Moria
 Name[bn]=মোরিয়া
 Name[eo]=Morio
 Name[gu]=મોરિયા
@@ -20,6 +21,7 @@ Name[uk]=Морія
 Name[x-test]=xxMoriaxx
 Comment=Dive into Moria and defeat the Balrog
 Comment[af]=Duik binne-in Moria en oorwin die Balrog
+Comment[ar]=اغطس في Moria واهزم Balrog
 Comment[be]=Вандроўка ў Морыю, бойка з Балрагам
 Comment[be@latin]=Prajdzi praz Moria i pieramažy Barloga
 Comment[bg]=Влезте в Мория и победете балрога

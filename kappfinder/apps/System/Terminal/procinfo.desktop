@@ -3,6 +3,7 @@ Exec=procinfo -f
 Icon=kpm
 Type=Application
 Name=Procinfo
+Name[ar]=معلومات المعالجة
 Name[csb]=Wëdowiédzô ò procesach
 Name[eo]=Procezoinformo
 Name[gu]=પ્રોકઇન્ફો

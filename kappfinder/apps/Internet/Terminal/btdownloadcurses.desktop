@@ -65,6 +65,7 @@ Icon=xapp
 InitialPreference=1
 MimeType=application/x-bittorrent;
 Name=BitTorrent Python Curses GUI
+Name[ar]=الواجهة الرسومية لبت تورنت بايثون Curses
 Name[be]=Графічны кліент BitTorrent на Python
 Name[be@latin]=Curses-interfejs dla prahramy „BitTorrent”
 Name[bn]=বিট-টরেন্ট পাইথন কার্সেস গুই

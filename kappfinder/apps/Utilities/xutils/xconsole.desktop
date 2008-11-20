@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=X Console
 Name[af]=X Konsole
+Name[ar]=اللوحة X
 Name[be]=Кансоль X
 Name[be@latin]=Kansol X
 Name[bn]=এক্স-কনসোল
@@ -59,6 +60,7 @@ Name[zh_TW]=X 控制台
 MimeType=
 GenericName=Console Message Viewer
 GenericName[af]=Konsole Boodskap-bekyker
+GenericName[ar]=مستعرض الرسائل
 GenericName[be]=Праглядальнік кансольных паведамленняў
 GenericName[be@latin]=Prahladnik kansolnych paviedamleńniaŭ
 GenericName[bg]=Преглед на съобщенията в конзолата

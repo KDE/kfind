@@ -2,11 +2,13 @@
 Exec=gkrellm
 Icon=gnome-app
 Name=GKrellM
+Name[ar]=معلومات النظام GKrellM
 Name[hi]=जी-क्रेल-एम
 Name[kn]=ಜಿಕ್ರಲ್ಐಎಮ್
 Name[sr]=Гкрелм
 Name[x-test]=xxGKrellMxx
 GenericName=GNU Krell Monitors
+GenericName[ar]=شاشة GNU Krell
 GenericName[be]=Назіральнікі GNU Krell
 GenericName[be@latin]=Prahrama dla vyjaŭleńnia systemnych manitoraŭ „GNU Krell”
 GenericName[bg]=Монитори GNU Krell

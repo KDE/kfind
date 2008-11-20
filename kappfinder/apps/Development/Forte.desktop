@@ -1,5 +1,6 @@
 [Desktop Entry]
 GenericName=Java IDE
+GenericName[ar]=مطور جافا
 GenericName[be@latin]=Asiarodździa prahramavańnia ŭ movie Java
 GenericName[bn]=জাভা IDE
 GenericName[ca]=IDE per a Java
@@ -53,6 +54,7 @@ GenericName[zh_TW]=Java 整合開發環境
 Exec=runide.sh
 Icon=ksmiletris
 Name=Forte
+Name[ar]=الجودة
 Name[bn]=ফোর্টে
 Name[gu]=ફોર્ટે
 Name[hi]=फोर्ट

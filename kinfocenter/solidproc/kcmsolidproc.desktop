@@ -10,6 +10,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Processor Information
 Name[af]=Verwerker informasie 
+Name[ar]=معلومات المعالج
 Name[be@latin]=Źviestki ab pracesary
 Name[bg]=Информация за процесора
 Name[bn_IN]=প্রসেসর সংক্রান্ত তথ্য
@@ -72,6 +73,7 @@ Name[zh_TW]=處理器資訊
 
 Comment=Processor Information
 Comment[af]=Verwerker informasie 
+Comment[ar]=معلومات المعالج
 Comment[be@latin]=Źviestki ab pracesary
 Comment[bg]=Информация за процесора
 Comment[bn_IN]=প্রসেসর সংক্রান্ত

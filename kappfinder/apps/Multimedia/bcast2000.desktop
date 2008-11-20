@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Broadcast 2000
+Name[ar]=بث إذاعي 2000
 Name[bn]=ব্রডকাস্ট ২০০০
 Name[eo]=Dissendo 2000
 Name[fa]=پخش ۲۰۰۰
@@ -19,6 +20,7 @@ Name[x-test]=xxBroadcast 2000xx
 Name[xh]=Usasazo 2000
 GenericName=Audio and Video IDE
 GenericName[af]=Audio en Video ontwikkel-omgewing
+GenericName[ar]=بيئة التطوير المتكاملة للصوت والفيديو
 GenericName[be]=Інтэграванае асяроддзе для гуку і відэафайлаў
 GenericName[be@latin]=Asiarodździe dla videa- i hukavoj vytvorčaści
 GenericName[bg]=Аудио и видео редактор
