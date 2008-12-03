@@ -1,5 +1,7 @@
 [Desktop Entry]
 Name=GIMP
+Name[ar]=جمب
+Name[hi]=गिम्प
 Name[kn]=ಜಿಂಪ್
 Name[ml]=ജിംപ്പ് (GIMP)
 Name[pa]=ਜੈਮਪ
@@ -9,7 +11,7 @@ Icon=gimp
 Type=Application
 GenericName=Image Manipulation Program
 GenericName[af]=Beeldmanipulasieprogram
-GenericName[ar]=برنامج تلاعب بالصورة
+GenericName[ar]=برنامج تحرير الصورة
 GenericName[be]=Адмысловы рэдактар відарысаў
 GenericName[be@latin]=Prahrama dla redahavańnia vyjavaŭ
 GenericName[bg]=Редактор за графични изображения
