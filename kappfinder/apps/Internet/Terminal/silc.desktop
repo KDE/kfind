@@ -78,6 +78,7 @@ GenericName[zh_TW]=SILC 客戶端程式
 Exec=silc %u
 Icon=konsole
 Name=SILC
+Name[hi]=एसआईएलसी
 Name[x-test]=xxSILCxx
 Terminal=true
 Type=Application

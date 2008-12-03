@@ -1,5 +1,6 @@
 [Desktop Entry]
 GenericName=Videotext Viewer
+GenericName[ar]=عارض نص الفيديو
 GenericName[be@latin]=Prahladnik dla „Videotext”
 GenericName[ca]=Un visor de videotext
 GenericName[de]=Videotext-Betrachter
@@ -9,6 +10,7 @@ GenericName[et]=Videoteksti näitaja
 GenericName[gl]=Visor de Videotext
 GenericName[gu]=વિડીઓટેકસ્ટ દર્શક
 GenericName[he]=מציג Videotext
+GenericName[hi]=वीडियो-पाठ प्रदर्शक
 GenericName[hsb]=Přehladowar za widejotekst
 GenericName[is]=Videotext birtir
 GenericName[it]=Visore televideo

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Exec=wine %f
 Name=Wine
+Name[ar]=واين
 Name[bn]=ওয়াইন
 Name[gu]=વાઇન
 Name[hi]=वाइन
