@@ -78,7 +78,6 @@ USBViewer::USBViewer(QWidget *parent, const QVariantList &) :
 	about->addCredit(ki18n("Leo Savernik"), ki18n("Live Monitoring of USB Bus"), "l.savernik@aon.at");
 	setAboutData(about);
 
-	load();
 }
 
 void USBViewer::load() {
