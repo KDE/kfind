@@ -527,9 +527,13 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
 {
    	QTreeWidgetItem *l2 = NULL, *l3 = NULL;
 
-   	if (after) l1 = newItem(l1, after, IsDirect ? i18n("Direct Rendering") : i18n("Indirect Rendering"));
-         	else l1 = newItem(l1, IsDirect ? i18n("Direct Rendering") : i18n("Indirect Rendering"));
-   	if (IsDirect)
+   	if (after) {
+        l1 = newItem(l1, after, IsDirect ? i18n("Direct Rendering") : i18n("Indirect Rendering"));
+    } else {
+        l1 = newItem(l1, IsDirect ? i18n("Direct Rendering") : i18n("Indirect Rendering"));
+    }
+    
+   	if (IsDirect) {
    	 	if (get_dri_device())  {
       			l2 = newItem(l1, i18n("3D Accelerator"));
      			l2->setExpanded(true);
@@ -537,11 +541,18 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
    			l3 = newItem(l2, l3, i18n("Device"), dri_info.device);
    			l3 = newItem(l2, l3, i18n("Subvendor"), dri_info.subvendor);
    			l3 = newItem(l2, l3, i18n("Revision"), dri_info.rev);
-		}
-		else l2 = newItem(l1, l2, i18n("3D Accelerator"), i18n("unknown"));
-    	if (l2) l2 = newItem(l1, l2, i18n("Driver"));
-       		else l2 = newItem(l1, i18n("Driver"));
-     	l2->setExpanded(true);
+		} else {
+            l2 = newItem(l1, l2, i18n("3D Accelerator"), i18n("unknown"));
+        }
+    }
+    
+    if (l2) {
+        l2 = newItem(l1, l2, i18n("Driver"));
+    }else{
+        l2 = newItem(l1, i18n("Driver"));
+    }
+
+    l2->setExpanded(true);
 
   	l3 = newItem(l2, i18n("Vendor"), gli.glVendor);
     	l3 = newItem(l2, l3, i18n("Renderer"), gli.glRenderer);
