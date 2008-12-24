@@ -2,6 +2,7 @@
 Exec=freqtweak
 Icon=
 Name=FreqTweak
+Name[bn]=ফ্রিক-টুইক
 Name[hi]=फ्रीक्वें.-ट्वीक
 Name[kn]=ಫ್ರೀಕ್ ಟ್ವೀಕ್
 Name[ml]=ഫ്രീക്ക്ട്വീക്ക്
@@ -16,6 +17,7 @@ GenericName[ar]=مؤثرات لجاك
 GenericName[be]=Эфенты для Jack
 GenericName[be@latin]=Efekty dla systemy „Jack”
 GenericName[bg]=Ефекти за Jack
+GenericName[bn]=জ্যাক-এর জন্য এফেক্ট
 GenericName[bn_IN]=Jack-র ইফেক্ট
 GenericName[ca]=Efectes pel Jack
 GenericName[cs]=Efekty pro Jack

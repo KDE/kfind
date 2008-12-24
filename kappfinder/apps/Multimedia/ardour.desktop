@@ -2,6 +2,7 @@
 Exec=ardour
 Icon=
 Name=Ardour
+Name[bn]=আর্ডর
 Name[gu]=અર્ડોઉર
 Name[hi]=ऑरडर
 Name[kn]=ಆರ್ಡೂರ್
@@ -17,6 +18,7 @@ GenericName=Multitrack Audio Studio
 GenericName[af]=Multisnit Oudio Studio
 GenericName[ar]=استوديو المسارات المتعددة
 GenericName[be@latin]=Hukavaja studyja dla niekalkich ściežak
+GenericName[bn]=মাল্টিট্র্যাক অডিও স্টুডিও
 GenericName[bn_IN]=মাল্টি-ট্র্যাক অডিও স্টুডিও
 GenericName[ca]=Estudi d'àudio multipista
 GenericName[csb]=Wielostegnowé Aùdio Studio
