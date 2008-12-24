@@ -2,6 +2,7 @@
 Exec=djplay
 Icon=
 Name=DJPlay
+Name[bn]=ডি-জে-প্লে
 Name[hi]=डीजीप्ले
 Name[kn]=ಡಿಜೆಪ್ಲೇ
 Name[ml]=ഡിജെപ്ലേ
@@ -19,6 +20,7 @@ GenericName[ar]=المازج و مشغل DJ
 GenericName[be]=DJ-міксер і прайгравальнік
 GenericName[be@latin]=Mikser i prajhravańnik dla DJ
 GenericName[bg]=DJ-миксер и плеър
+GenericName[bn]=ডি-জে মিক্সার এবং প্লেয়ার
 GenericName[bn_IN]=DJ-মিক্সার ও প্লেয়ার
 GenericName[ca]=Mesclador per a DJ i reproductor
 GenericName[cs]=DJ směšovač a přehrávač
