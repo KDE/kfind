@@ -2,7 +2,6 @@
 Exec=qsynth
 Icon=qsynth
 Name=QSynth
-Name[fi]=Synth
 Name[hi]=क्यूसिंथ
 Name[kn]=ಕ್ಯೂಸಿಂಥ್
 Name[ml]=ക്യുസിന്ത്
@@ -27,7 +26,6 @@ GenericName[eo]=Kontrolo de FluidSynth
 GenericName[es]=Control de FluidSynth
 GenericName[et]=FluidSynthi juhtimine
 GenericName[eu]=FluidSynth-endako kontrola
-GenericName[fi]=FluidSynth-ohjauskeskus
 GenericName[fr]=Contrôle pour FluidSynth
 GenericName[fy]=Kontrôle foar FluidSynth
 GenericName[ga]=Rialtán FluidSynth
