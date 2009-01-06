@@ -2,6 +2,7 @@
 Name=X Editor
 Name[af]=X Redigeerder
 Name[ar]=X محرر
+Name[as]=X সম্পাদক
 Name[be]=Рэдактар X
 Name[be@latin]=Redaktar X
 Name[bn]=এক্স সম্পাদক
@@ -59,6 +60,7 @@ Name[zh_TW]=X 編輯器
 GenericName=Text Editor
 GenericName[af]=Teks Redigeerder
 GenericName[ar]=محرر نصوص
+GenericName[as]=লিপি সম্পাদক
 GenericName[be]=Тэкставы рэдактар
 GenericName[be@latin]=Tekstavy redaktar
 GenericName[bg]=Текстов редактор

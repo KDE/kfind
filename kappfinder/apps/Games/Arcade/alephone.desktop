@@ -73,6 +73,7 @@ Name[zh_CN]=Alephone - 无 OpenGL
 Name[zh_TW]=Alephone - 無 OpenGL
 Comment=An open source version of Marathon Infinity for SDL that has OpenGL disabled
 Comment[ar]=إصدارة مفتوحة المصدر من مارثون انفنتي بدون دعم OpenGL
+Comment[as]=SDL ৰ কাৰণে Marathon Infinity ৰ এটা মুক্ত উৎসৰ সংস্কৰণ য'ত OpenGL নিষ্ক্ৰীয়
 Comment[be@latin]=Svabodnaja versija hulni „Marathon Infinity” dla systemy „SDL” z vyklučanym „OpenGL”
 Comment[bg]=Версия с отворен код на играта Marathon Infinity за SDL без поддръжка на OpenGL
 Comment[bn]=এস.ডি.এল-এর জন্য ম্যারাথন ইনফিনিটির একটি ওপেন সোর্স সংস্করণ, যাতে OpenGL নিষ্ক্রিয় করা আছে
