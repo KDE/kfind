@@ -10,6 +10,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Samba Status
 Name[ar]=حالة السامبا
+Name[as]=Samba ৰ অৱস্থা
 Name[be]=Стан Samba
 Name[be@latin]=Stanovišča słužby „Samba”
 Name[bg]=Сървър Samba
@@ -88,6 +89,7 @@ Name[zh_TW]=Samba 狀態
 
 Comment=Samba status monitor
 Comment[ar]=مراقب حالة السامبا
+Comment[as]=Samba ৰ অৱস্থাৰ নিৰীক্ষণ
 Comment[be]=Назіральнік стану Samba
 Comment[be@latin]=Nazirańnik za stanoviščam słužby „Samba”
 Comment[bg]=Информация за състоянието на сървъра Samba

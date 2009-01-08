@@ -80,6 +80,7 @@ Exec=silc %u
 Icon=konsole
 Name=SILC
 Name[hi]=एसआईएलसी
+Name[sr]=СИЛЦ
 Name[x-test]=xxSILCxx
 Terminal=true
 Type=Application
