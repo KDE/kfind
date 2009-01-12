@@ -20,7 +20,7 @@ Conversion to kcontrol applet:
   Matthias Hoelzer <hoelzer@physik.uni-wuerzburg.de>
   
 
-Added more informations for Linux and HP-UX (empty functions for the other systems):
+Added more information for Linux and HP-UX (empty functions for the other systems):
 
   Helge Deller <deller@gmx.de>
   (Added: pci, dma, interrupts, sound, X-server, devices, ioports, partitions, SCSI)
