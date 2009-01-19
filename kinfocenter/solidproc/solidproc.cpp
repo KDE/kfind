@@ -56,8 +56,8 @@ KCMSolidProc::KCMSolidProc(QWidget *parent, const QVariantList &)
             kDebug() << "Device " << device.udi().toLatin1().constData() << " is not a processor.";
         }
         
-        new QListWidgetItem(device.vendor() + (device.vendor().isEmpty()?" ":"") \
-                            + device.product() + " (#" + QString::number(i) + ")", listWidgetProcessors);
+        new QListWidgetItem(device.vendor() + (device.vendor().isEmpty()?"":" ") + \
+                            device.product() + " (#" + QString::number(i) + ')', listWidgetProcessors);
     }
     
     // Connect signals to slots
