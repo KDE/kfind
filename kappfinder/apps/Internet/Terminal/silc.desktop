@@ -80,6 +80,7 @@ GenericName[zh_TW]=SILC 客戶端程式
 Exec=silc %u
 Icon=konsole
 Name=SILC
+Name[fy]=Silc
 Name[hi]=एसआईएलसी
 Name[sr]=СИЛЦ
 Name[x-test]=xxSILCxx
