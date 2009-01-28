@@ -1,11 +1,13 @@
 [Desktop Entry]
 Name=X PDF
 Name[bn]=এক্স পি-ডি-এফ
+Name[de]=X-PDF
 Name[eo]=XPDF
 Name[es]=PDF para X
 Name[fr]=XPDF
 Name[hi]=एक्स पीडीएफ
 Name[kn]=ಕ್ಸಪಿಡಿಎಫ್
+Name[mai]=एक्स पीडीएफ
 Name[ml]=എക്സ് പിഡിഎഫ്
 Name[mr]=एक्स पीडीएफ
 Name[nds]=X-PDF
@@ -57,6 +59,7 @@ GenericName[ko]=PDF 뷰어
 GenericName[ku]=Nîşandêra PDF
 GenericName[lt]=PDF Žiūriklis
 GenericName[lv]=PDF skatītājs
+GenericName[mai]=पीडीएफ प्रदर्शक
 GenericName[mk]=Прегледувач на PDF
 GenericName[ml]=പിഡിഎഫ് ഫയലുകള്‍ തുറക്കാന്‍
 GenericName[mr]=पीडीएफ प्रदर्शक

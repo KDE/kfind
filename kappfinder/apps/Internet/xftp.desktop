@@ -1,11 +1,13 @@
 [Desktop Entry]
 Name=X FTP
 Name[bn]=এক্স এফ-টি-পি
+Name[de]=X-FTP
 Name[eo]=X-FTP
 Name[es]=FTP para X
 Name[fr]=XFTP
 Name[hi]=एक्स एफटीपी
 Name[kn]=ಕ್ಸ FTP
+Name[mai]=एक्स एफटीपी
 Name[ml]=എക്സ് എഫ്‌ടിപി
 Name[mr]=एक्स FTP
 Name[nds]=X-FTP
@@ -60,6 +62,7 @@ GenericName[ko]=FTP 탐색기
 GenericName[ku]=Geroka FTP
 GenericName[lt]=FTP naršyklė
 GenericName[lv]=Tīmekļa pārlūks
+GenericName[mai]=एफटीपी ब्राउजर
 GenericName[mk]=FTP-прелистувач
 GenericName[ml]=FTP ബ്രൌസര്‍
 GenericName[mr]=FTP ब्राउजर
