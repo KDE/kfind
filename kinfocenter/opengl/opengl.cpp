@@ -227,7 +227,7 @@ static bool get_dri_device() { return false; }
 static void
 mesa_hack(Display *dpy, int scrnum)
 {
-   static int attribs[] = {
+   static const int attribs[] = {
       GLX_RGBA,
       GLX_RED_SIZE, 1,
       GLX_GREEN_SIZE, 1,
@@ -243,7 +243,7 @@ mesa_hack(Display *dpy, int scrnum)
    };
    XVisualInfo *visinfo;
 
-   visinfo = glXChooseVisual(dpy, scrnum, attribs);
+   visinfo = glXChooseVisual(dpy, scrnum, const_cast<int*>(attribs));
    if (visinfo)
       XFree(visinfo);
 }
@@ -599,13 +599,13 @@ void print_glx_glu(QTreeWidgetItem *l1, QTreeWidgetItem *l2)
 static QTreeWidgetItem *get_gl_info(Display *dpy, int scrnum, Bool allowDirect, QTreeWidgetItem *l1, QTreeWidgetItem *after)
 {
    Window win;
-   int attribSingle[] = {
+   const int attribSingle[] = {
       GLX_RGBA,
       GLX_RED_SIZE, 1,
       GLX_GREEN_SIZE, 1,
       GLX_BLUE_SIZE, 1,
       None };
-   int attribDouble[] = {
+   const int attribDouble[] = {
       GLX_RGBA,
       GLX_RED_SIZE, 1,
       GLX_GREEN_SIZE, 1,
@@ -623,9 +623,9 @@ static QTreeWidgetItem *get_gl_info(Display *dpy, int scrnum, Bool allowDirect, 
 
    root = RootWindow(dpy, scrnum);
 
-   visinfo = glXChooseVisual(dpy, scrnum, attribSingle);
+   visinfo = glXChooseVisual(dpy, scrnum, const_cast<int*>(attribSingle));
    if (!visinfo) {
-      visinfo = glXChooseVisual(dpy, scrnum, attribDouble);
+      visinfo = glXChooseVisual(dpy, scrnum, const_cast<int*>(attribDouble));
       if (!visinfo) {
 		   kDebug() << "Error: couldn't find RGB GLX visual\n";
          return result;
