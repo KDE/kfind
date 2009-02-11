@@ -2,6 +2,7 @@
 Name=Sylpheed
 Name[gu]=સ્લાફિડ
 Name[hi]=सिलफीड
+Name[hne]=सिलफीड
 Name[kn]=ಸಿಲ್ಫೀಡ್
 Name[mai]=सिल्फीड
 Name[ml]=സില്‍ഫീഡ്
@@ -42,6 +43,7 @@ GenericName[gl]=Cliente de correo
 GenericName[gu]=મેઇલ ક્લાયન્ટ
 GenericName[he]=תוכנית דואר
 GenericName[hi]=डाकिया
+GenericName[hne]=डाकिया
 GenericName[hr]=Klijent e-pošte
 GenericName[hsb]=emejlowy program
 GenericName[hu]=Levelezőprogram

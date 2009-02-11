@@ -2,6 +2,7 @@
 Exec=muse
 Name=MusE
 Name[hi]=म्यूज़
+Name[hne]=म्यूज
 Name[km]=Mures
 Name[kn]=ಮ್ಯೂಸ್
 Name[mai]=म्यूज
@@ -37,6 +38,7 @@ GenericName[ga]=Seicheamhóir Ceoil
 GenericName[gl]=Secuenciador de música
 GenericName[gu]=મ્યુઝિક સિક્વન્સસર
 GenericName[hi]=संगीत सीक्वेंसर
+GenericName[hne]=संगीत सीक्वेंसर
 GenericName[hr]=Uređivač glazbe
 GenericName[hu]=Zeneszekvencer
 GenericName[is]=Tónlistarrunutól

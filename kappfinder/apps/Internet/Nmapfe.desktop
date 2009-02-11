@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Nmapfe
 Name[hi]=एन-मैफे
+Name[hne]=एन-मैफे
 Name[kn]=ನ್ಮಾಪ್ಫೇ
 Name[mai]=एन-मैफे
 Name[ml]=എന്‍മാപ്എഫ്ഇ
@@ -36,6 +37,7 @@ GenericName[gl]=Escáner de portos
 GenericName[gu]=પોર્ટ ચકાસનાર
 GenericName[he]=סורק יציאות
 GenericName[hi]=पोर्ट स्कैनर
+GenericName[hne]=पोर्ट स्कैनर
 GenericName[hr]=Pretraživač portova
 GenericName[hu]=Portscanner
 GenericName[is]=Gáttarskanni
