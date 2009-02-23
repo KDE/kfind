@@ -205,7 +205,7 @@ void TopLevel::slotScan()
       QStringList dirList = relPath.split( '/');
 
       QTreeWidgetItem *dirItem = 0;
-      QString tmpRelPath = QString();
+      QString tmpRelPath;
 
       QStringList::const_iterator tmpIt;
       for ( tmpIt = dirList.constBegin(); tmpIt != dirList.constEnd(); ++tmpIt ) {
