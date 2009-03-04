@@ -269,8 +269,7 @@ void KCMMemory::updateMemoryText() {
 		if (memoryInfos[i] == NO_MEMORY_INFO)
 			label->clear();
 		else
-			label->setText(i18np("%1 byte =", "%1 bytes =", KGlobal::locale()->
-			formatNumber(memoryInfos[i], 0)));
+			label->setText(i18np("%1 byte =", "%1 bytes =", memoryInfos[i]));
 	}
 
 	/* update the MB-strings */
