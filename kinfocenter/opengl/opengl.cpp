@@ -289,7 +289,7 @@ extern "C" {
 #endif
 
 static void
-print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool GetProcAddress)
+print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress)
 {
  /*  TODO
       GL_SAMPLE_BUFFERS
@@ -480,8 +480,10 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool GetProcAddress
    };
 
 #if defined(GLX_ARB_get_proc_address) && defined(PFNGLGETPROGRAMIVARBPROC)
-   if (GetProcAddress && strstr(glExtensions, "GL_ARB_vertex_program"))
+   if (getProcAddress && strstr(glExtensions, "GL_ARB_vertex_program"))
    kcm_glGetProgramivARB = (PFNGLGETPROGRAMIVARBPROC) glXGetProcAddressARB((const GLubyte *)"glGetProgramivARB");
+#else
+   Q_UNUSED(getProcAddress);
 #endif
 
    for (uint i = 0; i<KCMGL_SIZE(groups); i++) {
