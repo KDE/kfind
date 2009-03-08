@@ -2,6 +2,7 @@
 Name=NcFTP
 Name[eo]=NcFtp
 Name[hi]=एनसीएफटीपी
+Name[hne]=एनसीएफटीपी
 Name[hu]=ncFTP
 Name[mai]=एनसीएफटीपी
 Name[mr]=एनसीFTP
@@ -39,6 +40,7 @@ GenericName[gl]=Cliente FTP
 GenericName[gu]=FTP ક્લાયન્ટ
 GenericName[he]=תוכנית FTP
 GenericName[hi]=एफटीपी क्लाएंट
+GenericName[hne]=एफटीपी क्लायंट
 GenericName[hr]=FTP klijent
 GenericName[hu]=FTP-kliens
 GenericName[is]=FTP forrit

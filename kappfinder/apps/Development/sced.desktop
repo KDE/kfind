@@ -2,6 +2,7 @@
 Name=Sced
 Name[gu]=સ્કેડ
 Name[hi]=सेड(Sced)
+Name[hne]=सेड
 Name[kn]=ಸ್ಕೆಡ್
 Name[mai]=सेड(Sced)
 Name[ml]=സെഡ്
@@ -40,6 +41,7 @@ GenericName[gl]=Modelador de escenarios
 GenericName[gu]=સીન મોડેલર
 GenericName[he]=ממדל סצנות
 GenericName[hi]=सीन माडलर
+GenericName[hne]=सीन माडलर
 GenericName[hr]=Program za modeliranje scena
 GenericName[hu]=Grafikus modellező
 GenericName[is]=Sviðshönnuður
