@@ -1,5 +1,8 @@
 [Desktop Entry]
 Name=Netscape Address Book
+Name[sv]=Netscape adressbok
+Name[uk]=Адресна книга Nescape
+Name[zh_TW]=Netscape 通訊錄
 Exec=netscape +addresses
 Terminal=false
 Icon=kab
