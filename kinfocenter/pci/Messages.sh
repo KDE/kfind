@@ -1,2 +1,2 @@
 #! /usr/bin/env bash
-$XGETTEXT *.cpp -o $podir/kcm_pci.pot
+$XGETTEXT *.cpp *.h -o $podir/kcm_pci.pot
