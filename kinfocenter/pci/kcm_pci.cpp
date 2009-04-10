@@ -80,6 +80,11 @@ KCMPci::~KCMPci() {
 void KCMPci::load() {
 	kDebug() << "Loading PCI information..." << endl;
 	GetInfo_PCI(tree);
+
+	//Resize the column width to the maximum needed
+	tree->expandAll();
+	tree->resizeColumnToContents( 0 );
+	tree->collapseAll();
 }
 
 QString KCMPci::quickHelp() const {
