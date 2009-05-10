@@ -109,9 +109,9 @@ static QTreeWidgetItem* addVendor(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 					if (info->headerType==PCI_HEADER_TYPE_BRIDGE) {
 						isSub=true;
 					}//if
-					else if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR|PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->vendor, info->device, subvendor, subdevice)!=NULL) {
+					else if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->vendor, info->device, subvendor, subdevice)!=NULL) {
 						//						line.setAscii(nameBuffer); //not work, workaround below
-						line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR|PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->vendor, info->device, subvendor, subdevice));
+						line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->vendor, info->device, subvendor, subdevice));
 						if (line.contains("Unknown")==0) {
 							isSub=true;
 							after=create(parent, i18n("Subsystem"), line+value.sprintf(" (0x%04X:0x%04X)", subvendor, subdevice));
