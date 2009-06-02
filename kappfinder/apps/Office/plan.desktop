@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Plan
+Name[bg]=План
 Name[bn]=প্ল্যান
 Name[fa]=نقشه
 Name[ga]=Plean
@@ -34,7 +35,7 @@ GenericName[ar]=مدير التقويم
 GenericName[as]=বৰ্ষপঞ্জিকাৰ পৰিচালক
 GenericName[be]=Кіраўнік календароў
 GenericName[be@latin]=Kiraŭnik dla kalendara
-GenericName[bg]=Календар
+GenericName[bg]=Управление на календара
 GenericName[bn]=ক্যালেণ্ডার ম্যানেজার
 GenericName[bn_IN]=বর্ষপঞ্জি পরিচালন ব্যবস্থা
 GenericName[br]=Merour deiziadur
