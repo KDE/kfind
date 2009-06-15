@@ -62,15 +62,15 @@ static QTreeWidgetItem* createTitle(QTreeWidgetItem* parent, const QString& titl
 static QTreeWidgetItem* addDeviceClass(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QString value;
 	QTreeWidgetItem *localAfter=NULL;
-	after=create(parent, i18n("Device Class"), getNameById(devClass, info->devClass)+value.sprintf(" (0x%02X)", info->devClass));
-	after=create(parent, i18n("Device Subclass"), getNameBy2Id(devSubclass, info->devClass, info->devSubClass)+value.sprintf(" (0x%02X)", info->devSubClass));
-	after=create(parent, i18n("Device Programming Interface"), getNameBy3Id(devInterface, info->devClass, info->devSubClass, info->devProgIface)+value.sprintf(" (0x%02X)", info->devProgIface));
-	if ((info->devClass==0x01)&&(info->devSubClass==0x01)) { //programming interface for IDE
-		localAfter=create(after, i18n("Master IDE Device"), (info->progIdeMaster ? i18n(strYes) : i18n(strNo)));
-		localAfter=create(after, i18n("Secondary programmable indicator"), (info->progSecProgInd ? i18n(strYes) : i18n(strNo)));
-		localAfter=create(after, i18n("Secondary operating mode"), (info->progSecOperMode ? i18n(strYes) : i18n(strNo)));
-		localAfter=create(after, i18n("Primary programmable indicator"), (info->progPriProgInd ? i18n(strYes) : i18n(strNo)));
-		localAfter=create(after, i18n("Primary operating mode"), (info->progPriOperMode ? i18n(strYes) : i18n(strNo)));
+	after=create(parent, i18n("Device Class"), getNameById(devClass, info->cooked.devClass)+value.sprintf(" (0x%02X)", info->cooked.devClass));
+	after=create(parent, i18n("Device Subclass"), getNameBy2Id(devSubclass, info->cooked.devClass, info->cooked.devSubClass)+value.sprintf(" (0x%02X)", info->cooked.devSubClass));
+	after=create(parent, i18n("Device Programming Interface"), getNameBy3Id(devInterface, info->cooked.devClass, info->cooked.devSubClass, info->cooked.devProgIface.devProgIface)+value.sprintf(" (0x%02X)", info->cooked.devProgIface.devProgIface));
+	if ((info->cooked.devClass==0x01)&&(info->cooked.devSubClass==0x01)) { //programming interface for IDE
+		localAfter=create(after, i18n("Master IDE Device"), (info->cooked.devProgIface.devProgIface_bits.progIdeMaster ? i18n(strYes) : i18n(strNo)));
+		localAfter=create(after, i18n("Secondary programmable indicator"), (info->cooked.devProgIface.devProgIface_bits.progSecProgInd ? i18n(strYes) : i18n(strNo)));
+		localAfter=create(after, i18n("Secondary operating mode"), (info->cooked.devProgIface.devProgIface_bits.progSecOperMode ? i18n(strYes) : i18n(strNo)));
+		localAfter=create(after, i18n("Primary programmable indicator"), (info->cooked.devProgIface.devProgIface_bits.progPriProgInd ? i18n(strYes) : i18n(strNo)));
+		localAfter=create(after, i18n("Primary operating mode"), (info->cooked.devProgIface.devProgIface_bits.progPriOperMode ? i18n(strYes) : i18n(strNo)));
 	}//if
 	return after;
 }//addDeviceClass
@@ -82,36 +82,36 @@ static QTreeWidgetItem* addVendor(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 	bool isVendor=false, isDevice=false, isSub=false;
 
 	memset((void*)nameBuffer, 0, NAME_BUFFER_SIZE);
-	if (info->headerType==PCI_HEADER_TYPE_CARDBUS) {
-		subvendor=info->cbSubVendor;
-		subdevice=info->cbSubDevice;
+	if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_CARDBUS) {
+		subvendor=info->cooked.header.header2.cbSubVendor;
+		subdevice=info->cooked.header.header2.cbSubDevice;
 	}//if
 	else {
-		subvendor=info->subVendor;
-		subdevice=info->subDevice;
+		subvendor=info->cooked.header.header0.subVendor;
+		subdevice=info->cooked.header.header0.subDevice;
 	}//else
 
 	//WARNING all pci_lookup_name calls should have 4 extra args for compatibility with older pcilib !
-	if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, info->vendor, 0, 0, 0)!=NULL) {
+	if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, info->cooked.vendor, 0, 0, 0)!=NULL) {
 		//		line.setAscii(nameBuffer); //not work, workaround below
-		line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, info->vendor, 0, 0, 0));
+		line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, info->cooked.vendor, 0, 0, 0));
 		if (line.contains("Unknown")==0) {
 			isVendor=true;
 			topname=line;
-			after=create(parent, i18n("Vendor"), line+value.sprintf(" (0x%04X)", info->vendor));
-			if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE, info->vendor, info->device, 0, 0)!=NULL) {
+			after=create(parent, i18n("Vendor"), line+value.sprintf(" (0x%04X)", info->cooked.vendor));
+			if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE, info->cooked.vendor, info->cooked.device, 0, 0)!=NULL) {
 				//				line.setAscii(nameBuffer); //not work, workaround below
-				line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE, info->vendor, info->device, 0, 0));
+				line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE, info->cooked.vendor, info->cooked.device, 0, 0));
 				if (line.contains("Unknown")==0) {
 					isDevice=true;
 					topname+=QString(" ")+line;
-					after=create(parent, i18n("Device"), line+value.sprintf(" (0x%04X)", info->device));
-					if (info->headerType==PCI_HEADER_TYPE_BRIDGE) {
+					after=create(parent, i18n("Device"), line+value.sprintf(" (0x%04X)", info->cooked.device));
+					if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_BRIDGE) {
 						isSub=true;
 					}//if
-					else if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->vendor, info->device, subvendor, subdevice)!=NULL) {
+					else if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->cooked.vendor, info->cooked.device, subvendor, subdevice)!=NULL) {
 						//						line.setAscii(nameBuffer); //not work, workaround below
-						line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->vendor, info->device, subvendor, subdevice));
+						line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->cooked.vendor, info->cooked.device, subvendor, subdevice));
 						if (line.contains("Unknown")==0) {
 							isSub=true;
 							after=create(parent, i18n("Subsystem"), line+value.sprintf(" (0x%04X:0x%04X)", subvendor, subdevice));
@@ -122,13 +122,13 @@ static QTreeWidgetItem* addVendor(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 		}//if
 	}//if
 	if (!isVendor) {
-		after=create(parent, i18n("Vendor"), i18n(strUnknown)+value.sprintf(" (0x%04X)", info->vendor));
+		after=create(parent, i18n("Vendor"), i18n(strUnknown)+value.sprintf(" (0x%04X)", info->cooked.vendor));
 		if (!isDevice) {
-			after=create(parent, i18n("Device"), i18n(strUnknown)+value.sprintf(" (0x%04X)", info->device));
+			after=create(parent, i18n("Device"), i18n(strUnknown)+value.sprintf(" (0x%04X)", info->cooked.device));
 		}//if
 		topname=i18n(strUnknown);
 	}//if
-	if ((!isSub)&&(info->headerType!=PCI_HEADER_TYPE_BRIDGE)) { //if entire subsytem was not found, search at least for subvendor
+	if ((!isSub)&&(info->cooked.headerType.headerType_bits.headerType!=PCI_HEADER_TYPE_BRIDGE)) { //if entire subsytem was not found, search at least for subvendor
 		if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, subvendor, 0, 0, 0)!=NULL) {
 			//			line.setAscii(nameBuffer); //not work, workaround below
 			line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, subvendor, 0, 0, 0));
@@ -161,56 +161,56 @@ static QTreeWidgetItem* addInterrupt(QTreeWidgetItem *parent, QTreeWidgetItem *a
 static QTreeWidgetItem* addControl(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	after=create(parent, i18n("Control"), value.sprintf("0x%04X", info->command));
-	localAfter=create(after, i18n("Response in I/O space"), (info->comIo ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Response in memory space"), (info->comMemory ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Bus mastering"), (info->comMaster ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Response to special cycles"), (info->comSpecial ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Memory write and invalidate"), (info->comInvalidate ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Palette snooping"), (info->comVgaPalette ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Parity checking"), (info->comParity ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Address/data stepping"), (info->comWait ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("System error"), (info->comSerr ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Back-to-back writes"), (info->comFastBack ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Interrupt"), (info->comInterrupt ? i18n(strDisabled) : i18n(strEnabled))); //reverse order is intentional
+	after=create(parent, i18n("Control"), value.sprintf("0x%04X", info->cooked.command.command));
+	localAfter=create(after, i18n("Response in I/O space"), (info->cooked.command.command_bits.comIo ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Response in memory space"), (info->cooked.command.command_bits.comMemory ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Bus mastering"), (info->cooked.command.command_bits.comMaster ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Response to special cycles"), (info->cooked.command.command_bits.comSpecial ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Memory write and invalidate"), (info->cooked.command.command_bits.comInvalidate ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Palette snooping"), (info->cooked.command.command_bits.comVgaPalette ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Parity checking"), (info->cooked.command.command_bits.comParity ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Address/data stepping"), (info->cooked.command.command_bits.comWait ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("System error"), (info->cooked.command.command_bits.comSerr ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Back-to-back writes"), (info->cooked.command.command_bits.comFastBack ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Interrupt"), (info->cooked.command.command_bits.comInterrupt ? i18n(strDisabled) : i18n(strEnabled))); //reverse order is intentional
 	return after;
 }//addControl
 
 static QTreeWidgetItem* addStatus(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	after=create(parent, i18n("Status"), value.sprintf("0x%04X", info->status));
-	localAfter=create(after, i18n("Interrupt status"), (info->statCapList ? i18n(strEnabled) : i18n(strDisabled)));
-	localAfter=create(after, i18n("Capability list"), (info->statCapList ? i18n(strYes) : i18n(strNo)));
-	localAfter=create(after, i18n("66 MHz PCI 2.1 bus"), (info->stat66MHz ? i18n(strYes) : i18n(strNo)));
-	localAfter=create(after, i18n("User-definable features"), (info->statUdf ? i18n(strYes) : i18n(strNo)));
-	localAfter=create(after, i18n("Accept fast back-to-back"), (info->statFastBack ? i18n(strYes) : i18n(strNo)));
-	localAfter=create(after, i18n("Data parity error"), (info->statParity ? i18n(strYes) : i18n(strNo)));
-	localAfter=create(after, i18n("Device selection timing"), getNameById(devSel, info->statDevsel));
-	localAfter=create(after, i18n("Signaled target abort"), (info->statSigTargetAbort ? i18n(strYes) : i18n(strNo)));
-	localAfter=create(after, i18n("Received target abort"), (info->statRecTargetAbort ? i18n(strYes) : i18n(strNo)));
-	localAfter=create(after, i18n("Received master abort"), (info->statRecMasterAbort ? i18n(strYes) : i18n(strNo)));
-	localAfter=create(after, i18n("Signaled system error"), (info->statSigSystemError ? i18n(strYes) : i18n(strNo)));
-	localAfter=create(after, i18n("Parity error"), (info->statDetectedParity ? i18n(strYes) : i18n(strNo)));
+	after=create(parent, i18n("Status"), value.sprintf("0x%04X", info->cooked.status.status));
+	localAfter=create(after, i18n("Interrupt status"), (info->cooked.status.status_bits.statCapList ? i18n(strEnabled) : i18n(strDisabled)));
+	localAfter=create(after, i18n("Capability list"), (info->cooked.status.status_bits.statCapList ? i18n(strYes) : i18n(strNo)));
+	localAfter=create(after, i18n("66 MHz PCI 2.1 bus"), (info->cooked.status.status_bits.stat66MHz ? i18n(strYes) : i18n(strNo)));
+	localAfter=create(after, i18n("User-definable features"), (info->cooked.status.status_bits.statUdf ? i18n(strYes) : i18n(strNo)));
+	localAfter=create(after, i18n("Accept fast back-to-back"), (info->cooked.status.status_bits.statFastBack ? i18n(strYes) : i18n(strNo)));
+	localAfter=create(after, i18n("Data parity error"), (info->cooked.status.status_bits.statParity ? i18n(strYes) : i18n(strNo)));
+	localAfter=create(after, i18n("Device selection timing"), getNameById(devSel, info->cooked.status.status_bits.statDevsel));
+	localAfter=create(after, i18n("Signaled target abort"), (info->cooked.status.status_bits.statSigTargetAbort ? i18n(strYes) : i18n(strNo)));
+	localAfter=create(after, i18n("Received target abort"), (info->cooked.status.status_bits.statRecTargetAbort ? i18n(strYes) : i18n(strNo)));
+	localAfter=create(after, i18n("Received master abort"), (info->cooked.status.status_bits.statRecMasterAbort ? i18n(strYes) : i18n(strNo)));
+	localAfter=create(after, i18n("Signaled system error"), (info->cooked.status.status_bits.statSigSystemError ? i18n(strYes) : i18n(strNo)));
+	localAfter=create(after, i18n("Parity error"), (info->cooked.status.status_bits.statDetectedParity ? i18n(strYes) : i18n(strNo)));
 	return after;
 }//addStatus
 
 static QTreeWidgetItem* addLatency(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	after=create(parent, i18n("Latency"), value.sprintf("%u", info->latencyTimer));
-	if (info->headerType==PCI_HEADER_TYPE_NORMAL) {
-		if (info->minGnt==0) {
+	after=create(parent, i18n("Latency"), value.sprintf("%u", info->cooked.latencyTimer));
+	if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_NORMAL) {
+		if (info->cooked.header.header0.minGnt==0) {
 			localAfter=create(after, i18n("MIN_GNT"), i18n("No major requirements (0x00)"));
 		}//if
 		else {
-			localAfter=create(after, i18n("MIN_GNT"), value.sprintf("%u ns (0x%02X)", info->minGnt*250, info->minGnt));
+			localAfter=create(after, i18n("MIN_GNT"), value.sprintf("%u ns (0x%02X)", info->cooked.header.header0.minGnt*250, info->cooked.header.header0.minGnt));
 		}//else
-		if (info->maxLat==0) {
+		if (info->cooked.header.header0.maxLat==0) {
 			localAfter=create(after, i18n("MAX_LAT"), i18n("No major requirements (0x00)"));
 		}//if
 		else {
-			localAfter=create(after, i18n("MAX_LAT"), value.sprintf("%u ns (0x%02X)", info->maxLat*250, info->maxLat));
+			localAfter=create(after, i18n("MAX_LAT"), value.sprintf("%u ns (0x%02X)", info->cooked.header.header0.maxLat*250, info->cooked.header.header0.maxLat));
 		}//else
 	}//if
 	return after;
@@ -219,20 +219,20 @@ static QTreeWidgetItem* addLatency(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 static QTreeWidgetItem* addHeaderType(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	after=create(parent, i18n("Header"),value.sprintf("0x%02X",info->headerTypeFull));
-	localAfter=create(after, i18n("Type"),getNameById(headerType,info->headerType)+value.sprintf(" (0x%02X)",info->headerType));
-	localAfter=create(after, i18n("Multifunctional"),(info->multifunctional?i18n(strYes):i18n(strNo)));
+	after=create(parent, i18n("Header"),value.sprintf("0x%02X",info->cooked.headerType.headerTypeFull));
+	localAfter=create(after, i18n("Type"),getNameById(headerType,info->cooked.headerType.headerType_bits.headerType)+value.sprintf(" (0x%02X)",info->cooked.headerType.headerType_bits.headerType));
+	localAfter=create(after, i18n("Multifunctional"),(info->cooked.headerType.headerType_bits.multifunctional?i18n(strYes):i18n(strNo)));
 	return after;
 }//addHeaderType
 
 static QTreeWidgetItem* addBist(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	after=create(parent, i18n("Build-in self test"), value.sprintf("0x%02X", info->bist));
-	localAfter=create(after, i18n("BIST Capable"), (info->bistCapable ? i18n(strYes) : i18n(strNo)));
-	if (info->bistCapable==1) {
-		localAfter=create(after, i18n("BIST Start"), (info->bistStart ? i18n(strYes) : i18n(strNo)));
-		localAfter=create(after, i18n("Completion code"), value.sprintf("0x%01X", info->bistCode));
+	after=create(parent, i18n("Build-in self test"), value.sprintf("0x%02X", info->cooked.bist.bist));
+	localAfter=create(after, i18n("BIST Capable"), (info->cooked.bist.bist_bits.bistCapable ? i18n(strYes) : i18n(strNo)));
+	if (info->cooked.bist.bist_bits.bistCapable==1) {
+		localAfter=create(after, i18n("BIST Start"), (info->cooked.bist.bist_bits.bistStart ? i18n(strYes) : i18n(strNo)));
+		localAfter=create(after, i18n("Completion code"), value.sprintf("0x%01X", info->cooked.bist.bist_bits.bistCode));
 	}//if
 	return after;
 }//addBist
@@ -276,43 +276,43 @@ static QTreeWidgetItem* addMapping(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 	bool is64b=false;
 	after=createTitle(parent, i18n("Address mappings"));
 	for (int i=0; i<6; i++) {
-		if (((info->headerType==PCI_HEADER_TYPE_BRIDGE)&&(i>1))||((info->headerType==PCI_HEADER_TYPE_CARDBUS)&&(i>0))) {
+		if (((info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_BRIDGE)&&(i>1))||((info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_CARDBUS)&&(i>0))) {
 			break;
 		}//if
 		if (is64b) { //skip one range
 			continue;
 		}//if
 		topLocalAfter=createTitle(after, i18n("Mapping %1", i));
-		localAfter=create(topLocalAfter, i18n("Space"), (info->mapping[i].baseAddressMap ? i18n("I/O") : i18n("Memory")));
-		if (info->mapping[i].baseAddressMap==0) { //memory only
-			localAfter=create(topLocalAfter, i18n("Type"), getNameById(mappingType, info->mapping[i].baseAddressType));
-			localAfter=create(topLocalAfter, i18n("Prefetchable"), (info->mapping[i].baseAddressPref ? i18n(strYes) : i18n(strNo)));
+		localAfter=create(topLocalAfter, i18n("Space"), (info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? i18n("I/O") : i18n("Memory")));
+		if (info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap==0) { //memory only
+			localAfter=create(topLocalAfter, i18n("Type"), getNameById(mappingType, info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressType));
+			localAfter=create(topLocalAfter, i18n("Prefetchable"), (info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressPref ? i18n(strYes) : i18n(strNo)));
 		}//if
 		if (is64b) { //there is no long long support in Qt so we need compose value
-			topLocalAfter->setText(1, value.sprintf("0x%08X%08X", info->mapping[i+1].baseAddress, info->mapping[i].baseAddress));
-			if (info->mapping[i+1].baseAddress==0) { //no top 4 bytes
-				if ((info->mapping[i].baseAddress&(~(info->mapping[i].baseAddressMap ? 0x3 : 0xF)))==0) { //no address at all
+			topLocalAfter->setText(1, value.sprintf("0x%08X%08X", info->cooked.header.header0.mapping[i+1].baseAddress, info->cooked.header.header0.mapping[i].baseAddress));
+			if (info->cooked.header.header0.mapping[i+1].baseAddress==0) { //no top 4 bytes
+				if ((info->cooked.header.header0.mapping[i].baseAddress&(~(info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? 0x3 : 0xF)))==0) { //no address at all
 					localAfter=create(topLocalAfter, i18n("Address"), i18n("Unassigned"));
 					localAfter=create(topLocalAfter, i18n("Size"), i18n("Unassigned"));
 				}//if
 				else {
-					localAfter=create(topLocalAfter, i18n("Address"), value.sprintf("0x%X", (info->mapping[i].baseAddress&(~(info->mapping[i].baseAddressMap ? 0x3 : 0xF)))));
+					localAfter=create(topLocalAfter, i18n("Address"), value.sprintf("0x%X", (info->cooked.header.header0.mapping[i].baseAddress&(~(info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? 0x3 : 0xF)))));
 					localAfter=addSize(topLocalAfter, localAfter, PCIDevice->size[i]);
 				}//else
 			}//if
 			else {
-				localAfter=create(topLocalAfter, i18n("Address"), value.sprintf("0x%X%08X", info->mapping[i+1].baseAddress, (~(info->mapping[i].baseAddress&(info->mapping[i].baseAddressMap ? 0x3 : 0xF)))));
+				localAfter=create(topLocalAfter, i18n("Address"), value.sprintf("0x%X%08X", info->cooked.header.header0.mapping[i+1].baseAddress, (~(info->cooked.header.header0.mapping[i].baseAddress&(info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? 0x3 : 0xF)))));
 				localAfter=addSize(topLocalAfter, localAfter, PCIDevice->size[i]);
 			}//else
 		}//if
 		else {
-			topLocalAfter->setText(1, value.sprintf("0x%08X", info->mapping[i].baseAddress));
-			if ((info->mapping[i].baseAddress&(~(info->mapping[i].baseAddressMap ? 0x3 : 0xF)))==0) { //no address at all
+			topLocalAfter->setText(1, value.sprintf("0x%08X", info->cooked.header.header0.mapping[i].baseAddress));
+			if ((info->cooked.header.header0.mapping[i].baseAddress&(~(info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? 0x3 : 0xF)))==0) { //no address at all
 				localAfter=create(topLocalAfter, i18n("Address"), i18n("Unassigned"));
 				localAfter=create(topLocalAfter, i18n("Size"), i18n("Unassigned"));
 			}//if
 			else {
-				localAfter=create(topLocalAfter, i18n("Address"), value.sprintf("0x%X", (info->mapping[i].baseAddress&(~(info->mapping[i].baseAddressMap ? 0x3 : 0xF)))));
+				localAfter=create(topLocalAfter, i18n("Address"), value.sprintf("0x%X", (info->cooked.header.header0.mapping[i].baseAddress&(~(info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? 0x3 : 0xF)))));
 				localAfter=addSize(topLocalAfter, localAfter, PCIDevice->size[i]);
 			}//else
 		}//else
@@ -323,19 +323,19 @@ static QTreeWidgetItem* addMapping(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 static QTreeWidgetItem* addBus(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	if (info->headerType==PCI_HEADER_TYPE_BRIDGE) {
+	if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_BRIDGE) {
 		after=createTitle(parent, i18n("Bus"));
-		localAfter=create(after, i18n("Primary bus number"), value.sprintf("0x%02X", info->primaryBus));
-		localAfter=create(after, i18n("Secondary bus number"), value.sprintf("0x%02X", info->secondaryBus));
-		localAfter=create(after, i18n("Subordinate bus number"), value.sprintf("0x%02X", info->subordinateBus));
-		localAfter=create(after, i18n("Secondary latency timer"), value.sprintf("0x%02X", info->secLatencyTimer));
+		localAfter=create(after, i18n("Primary bus number"), value.sprintf("0x%02X", info->cooked.header.header1.primaryBus));
+		localAfter=create(after, i18n("Secondary bus number"), value.sprintf("0x%02X", info->cooked.header.header1.secondaryBus));
+		localAfter=create(after, i18n("Subordinate bus number"), value.sprintf("0x%02X", info->cooked.header.header1.subordinateBus));
+		localAfter=create(after, i18n("Secondary latency timer"), value.sprintf("0x%02X", info->cooked.header.header1.secLatencyTimer));
 	}//if
-	else if (info->headerType==PCI_HEADER_TYPE_CARDBUS) { //should be checked
+	else if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_CARDBUS) { //should be checked
 		after=createTitle(parent, i18n("Bus"));
-		localAfter=create(after, i18n("Primary bus number"), value.sprintf("0x%02X", info->cbPrimaryBus));
-		localAfter=create(after, i18n("CardBus number"), value.sprintf("0x%02X", info->cbCardBus));
-		localAfter=create(after, i18n("Subordinate bus number"), value.sprintf("0x%02X", info->cbSubordinateBus));
-		localAfter=create(after, i18n("CardBus latency timer"), value.sprintf("0x%02X", info->cbLatencyTimer));
+		localAfter=create(after, i18n("Primary bus number"), value.sprintf("0x%02X", info->cooked.header.header2.cbPrimaryBus));
+		localAfter=create(after, i18n("CardBus number"), value.sprintf("0x%02X", info->cooked.header.header2.cbCardBus));
+		localAfter=create(after, i18n("Subordinate bus number"), value.sprintf("0x%02X", info->cooked.header.header2.cbSubordinateBus));
+		localAfter=create(after, i18n("CardBus latency timer"), value.sprintf("0x%02X", info->cooked.header.header2.cbLatencyTimer));
 	}//elif
 	return after;
 }//addBus
@@ -343,35 +343,35 @@ static QTreeWidgetItem* addBus(QTreeWidgetItem *parent, QTreeWidgetItem *after, 
 static QTreeWidgetItem* addSecStatus(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	if (info->headerType==PCI_HEADER_TYPE_BRIDGE) {
-		after=create(parent, i18n("Secondary status"), value.sprintf("0x%04X", info->secStatus));
-		localAfter=create(after, i18n("Interrupt status"),(info->secStatCapList?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Capability list"),(info->secStatCapList?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("66 MHz PCI 2.1 bus"),(info->secStat66MHz?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("User-definable features"),(info->secStatUdf?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Accept fast back-to-back"),(info->secStatFastBack?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Data parity error"),(info->secStatParity?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Device selection timing"),getNameById(devSel,info->secStatDevsel));
-		localAfter=create(after, i18n("Signaled target abort"),(info->secStatSigTargetAbort?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Received target abort"),(info->secStatRecTargetAbort?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Received master abort"),(info->secStatRecMasterAbort?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Signaled system error"),(info->secStatSigSystemError?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Parity error"),(info->secStatDetectedParity?i18n(strYes):i18n(strNo)));
+	if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_BRIDGE) {
+		after=create(parent, i18n("Secondary status"), value.sprintf("0x%04X", info->cooked.header.header1.secStatus.secStatus));
+		localAfter=create(after, i18n("Interrupt status"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatCapList?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Capability list"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatCapList?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("66 MHz PCI 2.1 bus"),(info->cooked.header.header1.secStatus.secStatus_bits.secStat66MHz?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("User-definable features"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatUdf?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Accept fast back-to-back"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatFastBack?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Data parity error"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatParity?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Device selection timing"),getNameById(devSel,info->cooked.header.header1.secStatus.secStatus_bits.secStatDevsel));
+		localAfter=create(after, i18n("Signaled target abort"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatSigTargetAbort?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Received target abort"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatRecTargetAbort?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Received master abort"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatRecMasterAbort?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Signaled system error"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatSigSystemError?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Parity error"),(info->cooked.header.header1.secStatus.secStatus_bits.secStatDetectedParity?i18n(strYes):i18n(strNo)));
 	}//if		
-	else if (info->headerType==PCI_HEADER_TYPE_CARDBUS) { //should be checked
-		after=create(parent,i18n("Secondary status"),value.sprintf("0x%04X",info->cbSecStatus));
-		localAfter=create(after, i18n("Interrupt status"),(info->cbSecStatCapList?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Capability list"),(info->cbSecStatCapList?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("66 MHz PCI 2.1 bus"),(info->cbSecStat66MHz?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("User-definable features"),(info->cbSecStatUdf?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Accept fast back-to-back"),(info->cbSecStatFastBack?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Data parity error"),(info->cbSecStatParity?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Device selection timing"),getNameById(devSel,info->cbSecStatDevsel));
-		localAfter=create(after, i18n("Signaled target abort"),(info->cbSecStatSigTargetAbort?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Received target abort"),(info->cbSecStatRecTargetAbort?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Received master abort"),(info->cbSecStatRecMasterAbort?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Signaled system error"),(info->cbSecStatSigSystemError?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Parity error"),(info->cbSecStatDetectedParity?i18n(strYes):i18n(strNo)));
+	else if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_CARDBUS) { //should be checked
+		after=create(parent,i18n("Secondary status"),value.sprintf("0x%04X",info->cooked.header.header2.cbSecStatus.cbSecStatus));
+		localAfter=create(after, i18n("Interrupt status"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatCapList?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Capability list"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatCapList?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("66 MHz PCI 2.1 bus"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStat66MHz?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("User-definable features"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatUdf?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Accept fast back-to-back"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatFastBack?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Data parity error"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatParity?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Device selection timing"),getNameById(devSel,info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatDevsel));
+		localAfter=create(after, i18n("Signaled target abort"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatSigTargetAbort?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Received target abort"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatRecTargetAbort?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Received master abort"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatRecMasterAbort?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Signaled system error"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatSigSystemError?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Parity error"),(info->cooked.header.header2.cbSecStatus.cbSecStatus_bits.cbSecStatDetectedParity?i18n(strYes):i18n(strNo)));
 	}//elif		
 	return after;
 }//addSecStatus
@@ -379,29 +379,29 @@ static QTreeWidgetItem* addSecStatus(QTreeWidgetItem *parent, QTreeWidgetItem *a
 static QTreeWidgetItem* addBridgeBehind(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	if (info->headerType==PCI_HEADER_TYPE_BRIDGE) {
+	if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_BRIDGE) {
 		after=createTitle(parent, i18n("I/O behind bridge"));
-		localAfter=create(after, i18n("32-bit"),(info->ioBaseType?i18n(strYes):i18n(strNo)));
-		if (info->ioBaseType==0) {
-			localAfter=create(after, i18n("Base"),value.sprintf("0x%04X",info->ioBase&0xFFF0));
-			localAfter=create(after, i18n("Limit"),value.sprintf("0x%04X",info->ioLimit|0x0F));
+		localAfter=create(after, i18n("32-bit"),(info->cooked.header.header1.ioBase.ioBase_bits.ioBaseType?i18n(strYes):i18n(strNo)));
+		if (info->cooked.header.header1.ioBase.ioBase_bits.ioBaseType==0) {
+			localAfter=create(after, i18n("Base"),value.sprintf("0x%04X",info->cooked.header.header1.ioBase.ioBase&0xFFF0));
+			localAfter=create(after, i18n("Limit"),value.sprintf("0x%04X",info->cooked.header.header1.ioLimit|0x0F));
 		}//if
 		else {
-			localAfter=create(after, i18n("Base"),value.sprintf("0x%04X%04X",info->ioBaseUpper16,info->ioBase&0xFFF0));
-			localAfter=create(after, i18n("Limit"),value.sprintf("0x%04X%04X",info->ioLimitUpper16,info->ioLimit|0x0F));
+			localAfter=create(after, i18n("Base"),value.sprintf("0x%04X%04X",info->cooked.header.header1.ioBaseUpper16,info->cooked.header.header1.ioBase.ioBase&0xFFF0));
+			localAfter=create(after, i18n("Limit"),value.sprintf("0x%04X%04X",info->cooked.header.header1.ioLimitUpper16,info->cooked.header.header1.ioLimit|0x0F));
 		}//else
 		after=createTitle(parent, i18n("Memory behind bridge"));
-		localAfter=create(after, i18n("Base"),value.sprintf("0x%08X",(info->memoryBase<<16)&0xFFFFFFF0));
-		localAfter=create(after, i18n("Limit"),value.sprintf("0x%08X",(info->memoryLimit<<16)|0x0FFFFF));
+		localAfter=create(after, i18n("Base"),value.sprintf("0x%08X",(info->cooked.header.header1.memoryBase.memoryBase<<16)&0xFFFFFFF0));
+		localAfter=create(after, i18n("Limit"),value.sprintf("0x%08X",(info->cooked.header.header1.memoryLimit<<16)|0x0FFFFF));
 		after=createTitle(parent, i18n("Prefetchable memory behind bridge"));
-		localAfter=create(after, i18n("64-bit"),(info->ioBaseType?i18n(strYes):i18n(strNo)));
-		if (info->ioBaseType==0) {
-			localAfter=create(after, i18n("Base"),value.sprintf("0x%08X",(info->prefMemoryBase<<16)&0xFFFFFFF0));
-			localAfter=create(after, i18n("Limit"),value.sprintf("0x%08X",(info->prefMemoryLimit<<16)|0x0FFFFF));
+		localAfter=create(after, i18n("64-bit"),(info->cooked.header.header1.ioBase.ioBase_bits.ioBaseType?i18n(strYes):i18n(strNo)));
+		if (info->cooked.header.header1.ioBase.ioBase_bits.ioBaseType==0) {
+			localAfter=create(after, i18n("Base"),value.sprintf("0x%08X",(info->cooked.header.header1.prefMemoryBase.prefMemoryBase<<16)&0xFFFFFFF0));
+			localAfter=create(after, i18n("Limit"),value.sprintf("0x%08X",(info->cooked.header.header1.prefMemoryLimit<<16)|0x0FFFFF));
 		}//if
 		else {
-			localAfter=create(after, i18n("Base"),value.sprintf("0x%08X%08X",info->prefBaseUpper32,(info->prefMemoryBase<<16)&0xFFFFFFF0));
-			localAfter=create(after, i18n("Limit"),value.sprintf("0x%0x8X%08X",info->prefLimitUpper32,(info->prefMemoryLimit<<16)|0x0FFFFF));
+			localAfter=create(after, i18n("Base"),value.sprintf("0x%08X%08X",info->cooked.header.header1.prefBaseUpper32,(info->cooked.header.header1.prefMemoryBase.prefMemoryBase<<16)&0xFFFFFFF0));
+			localAfter=create(after, i18n("Limit"),value.sprintf("0x%0x8X%08X",info->cooked.header.header1.prefLimitUpper32,(info->cooked.header.header1.prefMemoryLimit<<16)|0x0FFFFF));
 		}//else
 	}//if		
 	return after;
@@ -410,19 +410,19 @@ static QTreeWidgetItem* addBridgeBehind(QTreeWidgetItem *parent, QTreeWidgetItem
 static QTreeWidgetItem* addBridgeControl(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	if (info->headerType==PCI_HEADER_TYPE_BRIDGE) {
-		after=create(parent, i18n("Bridge control"),value.sprintf("0x%04X",info->bridgeControl));
-		localAfter=create(after, i18n("Secondary parity checking"),(info->bridgeControlParity?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Secondary system error"),(info->bridgeControlSerr?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("ISA ports forwarding"),(info->bridgeControlIsa?i18n(strDisabled):i18n(strEnabled))); //reverse order is intentional
-		localAfter=create(after, i18n("VGA forwarding"),(info->bridgeControlVga?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Master abort"),(info->bridgeControlMasterAbort?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Secondary bus reset"),(info->bridgeControlBusReset?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Secondary back-to-back writes"),(info->bridgeControlFastBack?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Primary discard timer counts"),(info->bridgeControlPriDisTim?i18n("2e10 PCI clocks"):i18n("2e15 PCI clocks")));
-		localAfter=create(after, i18n("Secondary discard timer counts"),(info->bridgeControlSecDisTim?i18n("2e10 PCI clocks"):i18n("2e15 PCI clocks")));
-		localAfter=create(after, i18n("Discard timer error"),(info->bridgeControlDisTimStat?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Discard timer system error"),(info->bridgeControlDisTimeSerr?i18n(strEnabled):i18n(strDisabled)));
+	if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_BRIDGE) {
+		after=create(parent, i18n("Bridge control"),value.sprintf("0x%04X",info->cooked.header.header1.bridgeControl.bridgeControl));
+		localAfter=create(after, i18n("Secondary parity checking"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlParity?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Secondary system error"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlSerr?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("ISA ports forwarding"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlIsa?i18n(strDisabled):i18n(strEnabled))); //reverse order is intentional
+		localAfter=create(after, i18n("VGA forwarding"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlVga?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Master abort"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlMasterAbort?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Secondary bus reset"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlBusReset?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Secondary back-to-back writes"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlFastBack?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Primary discard timer counts"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlPriDisTim?i18n("2e10 PCI clocks"):i18n("2e15 PCI clocks")));
+		localAfter=create(after, i18n("Secondary discard timer counts"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlSecDisTim?i18n("2e10 PCI clocks"):i18n("2e15 PCI clocks")));
+		localAfter=create(after, i18n("Discard timer error"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlDisTimStat?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Discard timer system error"),(info->cooked.header.header1.bridgeControl.bridgeControl_bits.bridgeControlDisTimeSerr?i18n(strEnabled):i18n(strDisabled)));
 	}//if		
 	return after;
 }//addBridgeControl
@@ -430,9 +430,9 @@ static QTreeWidgetItem* addBridgeControl(QTreeWidgetItem *parent, QTreeWidgetIte
 static QTreeWidgetItem* addRom(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info, pci_dev* PCIDevice) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	if ((info->headerType==PCI_HEADER_TYPE_NORMAL)||(info->headerType==PCI_HEADER_TYPE_BRIDGE)) {
+	if ((info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_NORMAL)||(info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_BRIDGE)) {
 		after=createTitle(parent, i18n("Expansion ROM"));
-		localAfter=create(after, i18n("Status"),(info->romEnabled?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Status"),(info->cooked.header.header0.romAddress.romAddress_bits.romEnabled?i18n(strEnabled):i18n(strDisabled)));
 		if (PCIDevice->rom_base_addr==0) { //no address at all
 			localAfter=create(after, i18n("Address"),i18n("Unassigned"));
 			localAfter=create(after, i18n("Size"),i18n("Unassigned"));
@@ -450,29 +450,29 @@ static QTreeWidgetItem* addCardbusResource(QTreeWidgetItem *parent, QTreeWidgetI
 	QTreeWidgetItem *topLocalAfter=NULL;
 	QString value;
 	int pref=0;
-	if (info->headerType==PCI_HEADER_TYPE_CARDBUS) {
+	if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_CARDBUS) {
 		after=createTitle(parent, i18n("Memory windows"));
 		for (int i=0; i<2; i++) {
-			pref=(i ? info->cbControlPref1 : info->cbControlPref0);
+			pref=(i ? info->cooked.header.header2.cbControl.cbControl_bits.cbControlPref1 : info->cooked.header.header2.cbControl.cbControl_bits.cbControlPref0);
 			topLocalAfter=createTitle(after, i18n("Window %1", i));
 			localAfter=create(topLocalAfter, i18n("Prefetchable"),(pref?i18n(strYes):i18n(strNo)));
-			localAfter=create(topLocalAfter, i18n("Base"),value.sprintf("0x%08X",info->cbMemory[i].cbMemoryBase));
-			localAfter=create(topLocalAfter, i18n("Limit"),value.sprintf("0x%08X",info->cbMemory[i].cbMemoryLimit));
+			localAfter=create(topLocalAfter, i18n("Base"),value.sprintf("0x%08X",info->cooked.header.header2.cbMemory[i].cbMemoryBase));
+			localAfter=create(topLocalAfter, i18n("Limit"),value.sprintf("0x%08X",info->cooked.header.header2.cbMemory[i].cbMemoryLimit));
 		}//for
 		after=createTitle(parent, i18n("I/O windows"));
 		for (int i=0; i<2; i++) {
 			topLocalAfter=createTitle(after, i18n("Window %1", i));
-			localAfter=create(topLocalAfter, i18n("Type"),(info->cbIo[i].cbIoBaseType?i18n("32-bit"):i18n("16-bit")));
-			if (info->cbIo[i].cbIoBaseType==1) {
-				localAfter=create(topLocalAfter, i18n("Base"),value.sprintf("0x%08X",info->cbIo[i].cbIoBase&0xFFFFFFFC));
-				localAfter=create(topLocalAfter, i18n("Limit"),value.sprintf("0x%08X",info->cbIo[i].cbIoLimit|0x03));
+			localAfter=create(topLocalAfter, i18n("Type"),(info->cooked.header.header2.cbIo[i].cbIoBase.cbIoBase_bits.cbIoBaseType?i18n("32-bit"):i18n("16-bit")));
+			if (info->cooked.header.header2.cbIo[i].cbIoBase.cbIoBase_bits.cbIoBaseType==1) {
+				localAfter=create(topLocalAfter, i18n("Base"),value.sprintf("0x%08X",info->cooked.header.header2.cbIo[i].cbIoBase.cbIoBase&0xFFFFFFFC));
+				localAfter=create(topLocalAfter, i18n("Limit"),value.sprintf("0x%08X",info->cooked.header.header2.cbIo[i].cbIoLimit|0x03));
 			}//if
 			else {
-				localAfter=create(topLocalAfter, i18n("Base"),value.sprintf("0x%04X",info->cbIo[i].cbIoBase&0xFFFC));
-				localAfter=create(topLocalAfter, i18n("Limit"),value.sprintf("0x%04X",(info->cbIo[i].cbIoLimit&0xFFFF)|0x03));
+				localAfter=create(topLocalAfter, i18n("Base"),value.sprintf("0x%04X",info->cooked.header.header2.cbIo[i].cbIoBase.cbIoBase&0xFFFC));
+				localAfter=create(topLocalAfter, i18n("Limit"),value.sprintf("0x%04X",(info->cooked.header.header2.cbIo[i].cbIoLimit&0xFFFF)|0x03));
 			}//else
 		}//for
-		after=create(parent, i18n("16-bit legacy interface ports"),value.sprintf("0x%04X",info->cbLegacyModeBase));
+		after=create(parent, i18n("16-bit legacy interface ports"),value.sprintf("0x%04X",info->cooked.header.header2.cbLegacyModeBase));
 	}//if
 	return after;
 }//addCardbusResource
@@ -480,17 +480,17 @@ static QTreeWidgetItem* addCardbusResource(QTreeWidgetItem *parent, QTreeWidgetI
 static QTreeWidgetItem* addCardbusControl(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciInfo *info) {
 	QTreeWidgetItem *localAfter=NULL;
 	QString value;
-	if (info->headerType==PCI_HEADER_TYPE_CARDBUS) {
-		after=create(parent, i18n("CardBus control"),value.sprintf("0x%04X",info->cbControl));
-		localAfter=create(after, i18n("Secondary parity checking"),(info->cbControlParity?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Secondary system error"),(info->cbControlSerr?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("ISA ports forwarding"),(info->cbControlIsa?i18n(strDisabled):i18n(strEnabled))); //reverse order is intentional
-		localAfter=create(after, i18n("VGA forwarding"),(info->cbControlVga?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Master abort"),(info->cbControlMasterAbort?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Interrupts for 16-bit cards"),(info->cbControl16Int?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Window 0 prefetchable memory"),(info->cbControlPref0?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Window 1 prefetchable memory"),(info->cbControlPref1?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Post writes"),(info->cbControlPostWrites?i18n(strEnabled):i18n(strDisabled)));
+	if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_CARDBUS) {
+		after=create(parent, i18n("CardBus control"),value.sprintf("0x%04X",info->cooked.header.header2.cbControl.cbControl));
+		localAfter=create(after, i18n("Secondary parity checking"),(info->cooked.header.header2.cbControl.cbControl_bits.cbControlParity?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Secondary system error"),(info->cooked.header.header2.cbControl.cbControl_bits.cbControlSerr?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("ISA ports forwarding"),(info->cooked.header.header2.cbControl.cbControl_bits.cbControlIsa?i18n(strDisabled):i18n(strEnabled))); //reverse order is intentional
+		localAfter=create(after, i18n("VGA forwarding"),(info->cooked.header.header2.cbControl.cbControl_bits.cbControlVga?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Master abort"),(info->cooked.header.header2.cbControl.cbControl_bits.cbControlMasterAbort?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Interrupts for 16-bit cards"),(info->cooked.header.header2.cbControl.cbControl_bits.cbControl16Int?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Window 0 prefetchable memory"),(info->cooked.header.header2.cbControl.cbControl_bits.cbControlPref0?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Window 1 prefetchable memory"),(info->cooked.header.header2.cbControl.cbControl_bits.cbControlPref1?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Post writes"),(info->cooked.header.header2.cbControl.cbControl_bits.cbControlPostWrites?i18n(strEnabled):i18n(strDisabled)));
 	}//if		
 	return after;
 }//addCardbusControl
@@ -520,34 +520,34 @@ static QTreeWidgetItem* addCapsPm(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 	pmInfo infoPm;
 	if ((offset+2+sizeof(pmInfo))<256) {
 		memcpy(reinterpret_cast<void*>(&infoPm.raw[0]), reinterpret_cast<void*>(&info->raw[offset+2]), sizeof(pmInfo));
-		after=create(parent, i18n("Capabilities"),value.sprintf("0x%04X",infoPm.caps));
-		localAfter=create(after, i18n("Version"),QString::number(infoPm.capsVer));
-		localAfter=create(after, i18n("Clock required for PME generation"),(infoPm.capsClock?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Device-specific initialization required"),(infoPm.capsDsi?i18n(strYes):i18n(strNo)));
-		localAfter=create(after, i18n("Maximum auxiliary current required in D3 cold"),getNameById(auxCur,infoPm.capsAuxCur));
-		localAfter=create(after, i18n("D1 support"),(infoPm.capsD1Supp?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("D2 support"),(infoPm.capsD2Supp?i18n(strEnabled):i18n(strDisabled)));
+		after=create(parent, i18n("Capabilities"),value.sprintf("0x%04X",infoPm.cooked.caps.caps));
+		localAfter=create(after, i18n("Version"),QString::number(infoPm.cooked.caps.caps_bits.capsVer));
+		localAfter=create(after, i18n("Clock required for PME generation"),(infoPm.cooked.caps.caps_bits.capsClock?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Device-specific initialization required"),(infoPm.cooked.caps.caps_bits.capsDsi?i18n(strYes):i18n(strNo)));
+		localAfter=create(after, i18n("Maximum auxiliary current required in D3 cold"),getNameById(auxCur,infoPm.cooked.caps.caps_bits.capsAuxCur));
+		localAfter=create(after, i18n("D1 support"),(infoPm.cooked.caps.caps_bits.capsD1Supp?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("D2 support"),(infoPm.cooked.caps.caps_bits.capsD2Supp?i18n(strEnabled):i18n(strDisabled)));
 		localAfter=createTitle(after, i18n("Power management events"));
-		subLocalAfter=create(localAfter, i18n("D0"),(infoPm.capsPmeD0?i18n(strEnabled):i18n(strDisabled)));
-		subLocalAfter=create(localAfter, i18n("D1"),(infoPm.capsPmeD1?i18n(strEnabled):i18n(strDisabled)));
-		subLocalAfter=create(localAfter, i18n("D2"),(infoPm.capsPmeD2?i18n(strEnabled):i18n(strDisabled)));
-		subLocalAfter=create(localAfter, i18n("D3 hot"),(infoPm.capsPmeD3hot?i18n(strEnabled):i18n(strDisabled)));
-		subLocalAfter=create(localAfter, i18n("D3 cold"),(infoPm.capsPmeD3cold?i18n(strEnabled):i18n(strDisabled)));
+		subLocalAfter=create(localAfter, i18n("D0"),(infoPm.cooked.caps.caps_bits.capsPmeD0?i18n(strEnabled):i18n(strDisabled)));
+		subLocalAfter=create(localAfter, i18n("D1"),(infoPm.cooked.caps.caps_bits.capsPmeD1?i18n(strEnabled):i18n(strDisabled)));
+		subLocalAfter=create(localAfter, i18n("D2"),(infoPm.cooked.caps.caps_bits.capsPmeD2?i18n(strEnabled):i18n(strDisabled)));
+		subLocalAfter=create(localAfter, i18n("D3 hot"),(infoPm.cooked.caps.caps_bits.capsPmeD3hot?i18n(strEnabled):i18n(strDisabled)));
+		subLocalAfter=create(localAfter, i18n("D3 cold"),(infoPm.cooked.caps.caps_bits.capsPmeD3cold?i18n(strEnabled):i18n(strDisabled)));
 		localAfter=NULL;
-		after=create(parent, i18n("Status"),value.sprintf("0x%04X",infoPm.status));
-		localAfter=create(after, i18n("Power state"),getNameById(powerState,infoPm.statPower));
-		localAfter=create(after, i18n("Power management"),(infoPm.statPme?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Data select"),QString::number(infoPm.statDataSelect));
-		localAfter=create(after, i18n("Data scale"),QString::number(infoPm.statDataScale));
-		localAfter=create(after, i18n("Power management status"),(infoPm.statPmeStat?i18n(strEnabled):i18n(strDisabled)));
-		if ((info->devClass==0x06)&&(info->devSubClass==0x04)) { //PCI bridge
+		after=create(parent, i18n("Status"),value.sprintf("0x%04X",infoPm.cooked.status.status));
+		localAfter=create(after, i18n("Power state"),getNameById(powerState,infoPm.cooked.status.status_bits.statPower));
+		localAfter=create(after, i18n("Power management"),(infoPm.cooked.status.status_bits.statPme?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Data select"),QString::number(infoPm.cooked.status.status_bits.statDataSelect));
+		localAfter=create(after, i18n("Data scale"),QString::number(infoPm.cooked.status.status_bits.statDataScale));
+		localAfter=create(after, i18n("Power management status"),(infoPm.cooked.status.status_bits.statPmeStat?i18n(strEnabled):i18n(strDisabled)));
+		if ((info->cooked.devClass==0x06)&&(info->cooked.devSubClass==0x04)) { //PCI bridge
 			subLocalAfter=NULL;
-			localAfter=create(after, i18n("Bridge status"),value.sprintf("0x%02X",infoPm.statusBridge));
-			subLocalAfter=create(localAfter, i18n("Secondary bus state in D3 hot"),(infoPm.statBridgeBx?i18n("B2"):i18n("B3")));
-			subLocalAfter=create(localAfter, i18n("Secondary bus power & clock control"),(infoPm.statBridgeClock?i18n(strEnabled):i18n(strDisabled)));
+			localAfter=create(after, i18n("Bridge status"),value.sprintf("0x%02X",infoPm.cooked.statusBridge.statusBridge));
+			subLocalAfter=create(localAfter, i18n("Secondary bus state in D3 hot"),(infoPm.cooked.statusBridge.statusBridge_bits.statBridgeBx?i18n("B2"):i18n("B3")));
+			subLocalAfter=create(localAfter, i18n("Secondary bus power & clock control"),(infoPm.cooked.statusBridge.statusBridge_bits.statBridgeClock?i18n(strEnabled):i18n(strDisabled)));
 		}//if
 	}//if
-	after=create(parent, i18n("Data"),value.sprintf("0x%02X",infoPm.data));
+	after=create(parent, i18n("Data"),value.sprintf("0x%02X",infoPm.cooked.data));
 	return after;
 }//addCapsPm
 
@@ -559,45 +559,45 @@ static QTreeWidgetItem* addCapsAgp(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 	if ((offset+2+sizeof(agpInfo))<256) {
 		memcpy(reinterpret_cast<void*>(&infoAgp.raw[0]), reinterpret_cast<void*>(&info->raw[offset+2]), sizeof(agpInfo));
 		//		after=create(parent, i18n("Revision"),value.sprintf("%i.%i",infoAgp.revMaior,infoAgp.revMinor));
-		after=create(parent, i18n("Revision"),QString("%1.%2").arg(infoAgp.revMaior).arg(infoAgp.revMinor));
-		after=create(parent, i18n("Status"),value.sprintf("0x%08X",infoAgp.status));
-		localAfter=create(after, i18n("Rate"),getNameById(agpRate,infoAgp.statusEnhRate));
-		localAfter=create(after, i18n("AGP 3.0 mode"),(infoAgp.statusMode?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Fast Writes"),(infoAgp.statusFastWrite?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Address over 4 GiB"),(infoAgp.statusOver4gb?i18n(strEnabled):i18n(strDisabled)));
-		if (infoAgp.statusMode==1) {
-			localAfter=create(after, i18n("Translation of host processor access"),(infoAgp.statusHtrans?i18n(strDisabled):i18n(strEnabled))); //reverse order is intentional
-			localAfter=create(after, i18n("64-bit GART"),(infoAgp.statusGart64b?i18n(strEnabled):i18n(strDisabled)));
-			localAfter=create(after, i18n("Cache Coherency"),(infoAgp.statusItaCoh?i18n(strEnabled):i18n(strDisabled)));
+		after=create(parent, i18n("Revision"),QString("%1.%2").arg(infoAgp.cooked.revision.revMaior).arg(infoAgp.cooked.revision.revMinor));
+		after=create(parent, i18n("Status"),value.sprintf("0x%08X",infoAgp.cooked.status.status));
+		localAfter=create(after, i18n("Rate"),getNameById(agpRate,infoAgp.cooked.status.status_bits0.statusEnhRate));
+		localAfter=create(after, i18n("AGP 3.0 mode"),(infoAgp.cooked.status.status_bits1.statusMode?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Fast Writes"),(infoAgp.cooked.status.status_bits1.statusFastWrite?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Address over 4 GiB"),(infoAgp.cooked.status.status_bits1.statusOver4gb?i18n(strEnabled):i18n(strDisabled)));
+		if (infoAgp.cooked.status.status_bits1.statusMode==1) {
+			localAfter=create(after, i18n("Translation of host processor access"),(infoAgp.cooked.status.status_bits1.statusHtrans?i18n(strDisabled):i18n(strEnabled))); //reverse order is intentional
+			localAfter=create(after, i18n("64-bit GART"),(infoAgp.cooked.status.status_bits1.statusGart64b?i18n(strEnabled):i18n(strDisabled)));
+			localAfter=create(after, i18n("Cache Coherency"),(infoAgp.cooked.status.status_bits1.statusItaCoh?i18n(strEnabled):i18n(strDisabled)));
 		}//if
-		localAfter=create(after, i18n("Side-band addressing"),(infoAgp.statusSba?i18n(strEnabled):i18n(strDisabled)));
-		if (infoAgp.statusMode==1) {
-			localAfter=create(after, i18n("Calibrating cycle"),getNameById(calCycle,infoAgp.statusCalCycle));
-			for (i=0, cycleSize=1; i<(infoAgp.statusOptReqSize+4); i++) {
+		localAfter=create(after, i18n("Side-band addressing"),(infoAgp.cooked.status.status_bits1.statusSba?i18n(strEnabled):i18n(strDisabled)));
+		if (infoAgp.cooked.status.status_bits1.statusMode==1) {
+			localAfter=create(after, i18n("Calibrating cycle"),getNameById(calCycle,infoAgp.cooked.status.status_bits1.statusCalCycle));
+			for (i=0, cycleSize=1; i<(infoAgp.cooked.status.status_bits1.statusOptReqSize+4); i++) {
 				cycleSize*=2;
 			}//for
-			localAfter=create(after, i18n("Optimum asynchronous request size"),value.sprintf("%i (0x%02X)",cycleSize,infoAgp.statusOptReqSize));
-			localAfter=create(after, i18n("Isochronous transactions"),(infoAgp.statusIsochSupp?i18n(strEnabled):i18n(strDisabled)));
+			localAfter=create(after, i18n("Optimum asynchronous request size"),value.sprintf("%i (0x%02X)",cycleSize,infoAgp.cooked.status.status_bits1.statusOptReqSize));
+			localAfter=create(after, i18n("Isochronous transactions"),(infoAgp.cooked.status.status_bits1.statusIsochSupp?i18n(strEnabled):i18n(strDisabled)));
 		}//if
-		localAfter=create(after, i18n("Maximum number of AGP command"),value.sprintf("%i (0x%02X)",infoAgp.statusReq+1,infoAgp.statusReq));
+		localAfter=create(after, i18n("Maximum number of AGP command"),value.sprintf("%i (0x%02X)",infoAgp.cooked.status.status_bits1.statusReq+1,infoAgp.cooked.status.status_bits1.statusReq));
 		localAfter=NULL;
-		after=create(parent, i18n("Configuration"),value.sprintf("0x%08X",infoAgp.config));
-		localAfter=create(after, i18n("Rate"),getNameById(agpRate,infoAgp.configEnhRate));
-		localAfter=create(after, i18n("Fast Writes"),(infoAgp.configFastWrite?i18n(strEnabled):i18n(strDisabled)));
-		if (infoAgp.statusMode==1) {
-			localAfter=create(after, i18n("Address over 4 GiB"),(infoAgp.configOver4gb?i18n(strEnabled):i18n(strDisabled)));
-			localAfter=create(after, i18n("64-bit GART"),(infoAgp.configGart64b?i18n(strEnabled):i18n(strDisabled)));
+		after=create(parent, i18n("Configuration"),value.sprintf("0x%08X",infoAgp.cooked.config));
+		localAfter=create(after, i18n("Rate"),getNameById(agpRate,infoAgp.cooked.config.config_bits0.configEnhRate));
+		localAfter=create(after, i18n("Fast Writes"),(infoAgp.cooked.config.config_bits1.configFastWrite?i18n(strEnabled):i18n(strDisabled)));
+		if (infoAgp.cooked.status.status_bits1.statusMode==1) {
+			localAfter=create(after, i18n("Address over 4 GiB"),(infoAgp.cooked.config.config_bits1.configOver4gb?i18n(strEnabled):i18n(strDisabled)));
+			localAfter=create(after, i18n("64-bit GART"),(infoAgp.cooked.config.config_bits1.configGart64b?i18n(strEnabled):i18n(strDisabled)));
 		}//if
-		localAfter=create(after, i18n("AGP"),(infoAgp.configAgp?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Side-band addressing"),(infoAgp.configSba?i18n(strEnabled):i18n(strDisabled)));
-		if (infoAgp.statusMode==1) {
-			localAfter=create(after, i18n("Calibrating cycle"),getNameById(calCycle,infoAgp.configCalCycle));
-			for (i=0, cycleSize=1; i<(infoAgp.configOptReqSize+4); i++) {
+		localAfter=create(after, i18n("AGP"),(infoAgp.cooked.config.config_bits1.configAgp?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Side-band addressing"),(infoAgp.cooked.config.config_bits1.configSba?i18n(strEnabled):i18n(strDisabled)));
+		if (infoAgp.cooked.status.status_bits1.statusMode==1) {
+			localAfter=create(after, i18n("Calibrating cycle"),getNameById(calCycle,infoAgp.cooked.config.config_bits1.configCalCycle));
+			for (i=0, cycleSize=1; i<(infoAgp.cooked.config.config_bits1.configOptReqSize+4); i++) {
 				cycleSize*=2;
 			}//for
-			localAfter=create(after, i18n("Optimum asynchronous request size"),value.sprintf("%i (0x%02X)",cycleSize,infoAgp.configOptReqSize));
+			localAfter=create(after, i18n("Optimum asynchronous request size"),value.sprintf("%i (0x%02X)",cycleSize,infoAgp.cooked.config.config_bits1.configOptReqSize));
 		}//if
-		localAfter=create(after, i18n("Maximum number of AGP command"),value.sprintf("%i (0x%02X)",infoAgp.configReq+1,infoAgp.configReq));
+		localAfter=create(after, i18n("Maximum number of AGP command"),value.sprintf("%i (0x%02X)",infoAgp.cooked.config.config_bits1.configReq+1,infoAgp.cooked.config.config_bits1.configReq));
 	}//if
 	return after;
 }//addCapsAgp
@@ -607,9 +607,9 @@ static QTreeWidgetItem* addCapsVpd(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 	vpdInfo infoVpd;
 	if ((offset+2+sizeof(vpdInfo))<256) {
 		memcpy(reinterpret_cast<void*>(&infoVpd.raw[0]), reinterpret_cast<void*>(&info->raw[offset+2]), sizeof(vpdInfo));
-		after=create(parent, i18n("Data address"),value.sprintf("0x%04X",infoVpd.vpdAddress));
-		after=create(parent, i18n("Transfer completed"),(infoVpd.vpdTransfer?i18n(strYes):i18n(strNo)));
-		after=create(parent, i18n("Data"),value.sprintf("0x%08X",infoVpd.vpdData));
+		after=create(parent, i18n("Data address"),value.sprintf("0x%04X",infoVpd.cooked.vpdAddress));
+		after=create(parent, i18n("Transfer completed"),(infoVpd.cooked.vpdTransfer?i18n(strYes):i18n(strNo)));
+		after=create(parent, i18n("Data"),value.sprintf("0x%08X",infoVpd.cooked.vpdData));
 	}//if
 	return after;
 }//addCapsVpd
@@ -621,29 +621,29 @@ static QTreeWidgetItem* addCapsMsi(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 	int size=10;
 	if ((offset+4)<256) { //copy control only (for now)
 		memcpy(reinterpret_cast<void*>(&infoMsi.raw[0]), reinterpret_cast<void*>(&info->raw[offset+2]), 2);
-		after=create(parent, i18n("Message control"),value.sprintf("0x%04X",infoMsi.msiControl));
-		localAfter=create(after, i18n("Message signaled interrupts"),(infoMsi.msiEnable?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Multiple message capable"),getNameById(multipleMessage,infoMsi.msiMmCapable));
-		localAfter=create(after, i18n("Multiple message enable"),getNameById(multipleMessage,infoMsi.msiMmEnable));
-		localAfter=create(after, i18n("64-bit address"),(infoMsi.msi64bit?i18n(strEnabled):i18n(strDisabled)));
-		localAfter=create(after, i18n("Per vector masking"),(infoMsi.msiPerVector?i18n(strEnabled):i18n(strDisabled)));
-		size+=(infoMsi.msi64bit ? 4 : 0)+(infoMsi.msiPerVector ? 8 : 0);
+		after=create(parent, i18n("Message control"),value.sprintf("0x%04X",infoMsi.cooked.msiControl.msiControl));
+		localAfter=create(after, i18n("Message signaled interrupts"),(infoMsi.cooked.msiControl.msiControl_bits.msiEnable?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Multiple message capable"),getNameById(multipleMessage,infoMsi.cooked.msiControl.msiControl_bits.msiMmCapable));
+		localAfter=create(after, i18n("Multiple message enable"),getNameById(multipleMessage,infoMsi.cooked.msiControl.msiControl_bits.msiMmEnable));
+		localAfter=create(after, i18n("64-bit address"),(infoMsi.cooked.msiControl.msiControl_bits.msi64bit?i18n(strEnabled):i18n(strDisabled)));
+		localAfter=create(after, i18n("Per vector masking"),(infoMsi.cooked.msiControl.msiControl_bits.msiPerVector?i18n(strEnabled):i18n(strDisabled)));
+		size+=(infoMsi.cooked.msiControl.msiControl_bits.msi64bit ? 4 : 0)+(infoMsi.cooked.msiControl.msiControl_bits.msiPerVector ? 8 : 0);
 		if ((offset+size)<256) { //copy all MSI data
 			memcpy(reinterpret_cast<void*>(&infoMsi.raw[0]), reinterpret_cast<void*>(&info->raw[offset+size]), 2);
-			if (infoMsi.msi64bit==1) {
-				after=create(parent, i18n("Address"),value.sprintf("0x%08X%08X",infoMsi.msiUpperAddress,infoMsi.msiAddress));
-				after=create(parent, i18n("Data"),value.sprintf("0x%04X",infoMsi.msiData64));
-				if (infoMsi.msiPerVector==1) {
-					after=create(parent, i18n("Mask"),value.sprintf("0x%08X",infoMsi.msiMask64));
-					after=create(parent, i18n("Pending"),value.sprintf("0x%08X",infoMsi.msiPending64));
+			if (infoMsi.cooked.msiControl.msiControl_bits.msi64bit==1) {
+				after=create(parent, i18n("Address"),value.sprintf("0x%08X%08X",infoMsi.cooked.payload.address.msiUpperAddress,infoMsi.cooked.msiAddress));
+				after=create(parent, i18n("Data"),value.sprintf("0x%04X",infoMsi.cooked.payload.address.msiData64));
+				if (infoMsi.cooked.msiControl.msiControl_bits.msiPerVector==1) {
+					after=create(parent, i18n("Mask"),value.sprintf("0x%08X",infoMsi.cooked.payload.address.msiMask64));
+					after=create(parent, i18n("Pending"),value.sprintf("0x%08X",infoMsi.cooked.payload.address.msiPending64));
 				}//if
 			}//if
 			else {
-				after=create(parent, i18n("Address"),value.sprintf("0x%08X",infoMsi.msiAddress));
-				after=create(parent, i18n("Data"),value.sprintf("0x%04X",infoMsi.msiData));
-				if (infoMsi.msiPerVector==1) {
-					after=create(parent, i18n("Mask"),value.sprintf("0x%08X",infoMsi.msiMask));
-					after=create(parent, i18n("Pending"),value.sprintf("0x%08X",infoMsi.msiPending));
+				after=create(parent, i18n("Address"),value.sprintf("0x%08X",infoMsi.cooked.msiAddress));
+				after=create(parent, i18n("Data"),value.sprintf("0x%04X",infoMsi.cooked.payload.data.msiData));
+				if (infoMsi.cooked.msiControl.msiControl_bits.msiPerVector==1) {
+					after=create(parent, i18n("Mask"),value.sprintf("0x%08X",infoMsi.cooked.payload.data.msiMask));
+					after=create(parent, i18n("Pending"),value.sprintf("0x%08X",infoMsi.cooked.payload.data.msiPending));
 				}//if
 			}//else
 		}//if
@@ -680,11 +680,11 @@ static QTreeWidgetItem* addCaps(QTreeWidgetItem *parent, QTreeWidgetItem *after,
 	QTreeWidgetItem *topLocalAfter=NULL;
 	QString value;
 	unsigned char offset;
-	if ((info->headerType==PCI_HEADER_TYPE_NORMAL)||(info->headerType==PCI_HEADER_TYPE_BRIDGE)) {
-		if ((info->capabilityList!=0)&&(info->statCapList!=0)) {
-			after=create(parent, i18n("Capabilities"),value.sprintf("0x%02X",info->capabilityList));
+	if ((info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_NORMAL)||(info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_BRIDGE)) {
+		if ((info->cooked.header.header0.capabilityList!=0)&&(info->cooked.status.status_bits.statCapList!=0)) {
+			after=create(parent, i18n("Capabilities"),value.sprintf("0x%02X",info->cooked.header.header0.capabilityList));
 			if (getuid()==0) {
-				for (offset=info->capabilityList; offset!=0; offset=info->raw[offset+1]) {
+				for (offset=info->cooked.header.header0.capabilityList; offset!=0; offset=info->raw[offset+1]) {
 					topLocalAfter=create(after, getNameById(capNames,info->raw[offset]),value.sprintf("0x%02X",info->raw[offset]));
 					localAfter=create(topLocalAfter, i18n("Next"),(info->raw[offset+1]==0?i18n("0x00 (None)"):value.sprintf("0x%02X",info->raw[offset+1])));
 					switch (info->raw[offset]) {
@@ -761,7 +761,7 @@ bool GetInfo_PCIUtils(QTreeWidget* tree) {
 		after=addDeviceClass(DeviceName, NULL, &info);
 
 		//adding revision
-		after=create(DeviceName, i18n("Revision"), value.sprintf("0x%02X", info.revision));
+		after=create(DeviceName, i18n("Revision"), value.sprintf("0x%02X", info.cooked.revision));
 		//adding vendor, device, and subvendor/sudevice info
 		after=addVendor(DeviceName, after, &info, PCIAccess);
 		//adding control
@@ -770,7 +770,7 @@ bool GetInfo_PCIUtils(QTreeWidget* tree) {
 		after=addStatus(DeviceName, after, &info);
 
 		//adding cache line size
-		after=create(DeviceName, i18n("Cache line size"), value.sprintf("0x%02X", info.cacheLineSize));
+		after=create(DeviceName, i18n("Cache line size"), value.sprintf("0x%02X", info.cooked.cacheLineSize));
 		//adding latency
 		after=addLatency(DeviceName, after, &info);
 		//adding header type
@@ -797,7 +797,7 @@ bool GetInfo_PCIUtils(QTreeWidget* tree) {
 		after=addCaps(DeviceName, after, &info);
 
 		//adding interrupt info (IRQ, pin)
-		after=addInterrupt(DeviceName, after, PCIDevice->irq, info.interruptPin); //PCI data have wrong IRQ ?!?
+		after=addInterrupt(DeviceName, after, PCIDevice->irq, info.cooked.header.header0.interruptPin); //PCI data have wrong IRQ ?!?
 		//add raw PCI config data
 		after=addRaw(DeviceName, after, &info);
 	}//for
