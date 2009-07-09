@@ -1,6 +1,7 @@
 [Desktop Entry]
 Exec=linguist
 Name=Qt Linguist
+Name[ar]= لسانيات Qt
 Name[bn]=কিউ-টি লিঙ্গুইস্ট
 Name[ca]=Lingüista Qt
 Name[ca@valencia]=Lingüista Qt
