@@ -54,7 +54,6 @@ TopLevel::TopLevel( const QString &destDir, QWidget *parent )
   setMainWidget( frame );
 
   QVBoxLayout *layout = new QVBoxLayout( frame );
-  layout->setMargin( marginHint() );
 
   QLabel *label = new QLabel( i18n( "The application finder looks for non-KDE "
                                     "applications on your system and adds "
@@ -92,7 +91,7 @@ TopLevel::TopLevel( const QString &destDir, QWidget *parent )
   
 
   layout->addWidget( label );
-  layout->addSpacing( 5 );
+  layout->addSpacing( spacingHint() );
   layout->addWidget( mListView );
   layout->addWidget( mProgress );
   layout->addWidget( mSummary );
@@ -100,6 +99,7 @@ TopLevel::TopLevel( const QString &destDir, QWidget *parent )
   connect( kapp, SIGNAL( lastWindowClosed() ), kapp, SLOT( quit() ) );
 
   adjustSize();
+  resize( 2 * width(), height() );
   setMinimumSize(minimumSizeHint());
 
   mDestDir = destDir;
