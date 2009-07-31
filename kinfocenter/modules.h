@@ -26,11 +26,9 @@
 #include <kcmoduleinfo.h>
 #include <kiconloader.h>
 
-class QStringList;
 class KAboutData;
 class KCModule;
 class ProxyWidget;
-class QX11EmbedWidget;
 class QVBoxLayout;
 class KVBox;
 

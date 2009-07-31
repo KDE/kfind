@@ -24,18 +24,14 @@
 
 class QAction;
 class QSplitter;
-class QTabWidget;
-class QListWidgetItem;
 
 class KAboutData;
-class KToggleAction;
 
 class DockContainer;
 class IndexWidget;
 //class HelpWidget;
 class ConfigModule;
 class ConfigModuleList;
-class ModuleTitle;
 
 class TopLevel : public KXmlGuiWindow
 {

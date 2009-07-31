@@ -32,9 +32,7 @@
 #include "base.h"
 
 class QGroupBox;
-class QStringList;
 class QPushButton;
-class QTreeWidget;
 class ChartWidget;
 
 class KCMMemory : public KCModule {
