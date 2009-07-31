@@ -32,7 +32,6 @@
 
 #include <libraw1394/raw1394.h>
 
-class QStringList;
 
 class OuiDb {
 public:

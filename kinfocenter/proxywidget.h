@@ -20,9 +20,7 @@
 #ifndef __PROXYWIDGET_H__
 #define __PROXYWIDGET_H__
 
-class QPushButton;
 
-class KSeparator;
 class KCModule;
 class KAboutData;
 

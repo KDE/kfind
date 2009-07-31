@@ -23,12 +23,10 @@
 
 #include <QWidget>
 
-class QListWidgetItem;
 
 class ConfigModuleList;
 class ConfigModule;
 class ModuleTreeView;
-class ModuleTreeItem;
 class ModuleWidgetSearchLine;
 
 class IndexWidget : public QWidget {

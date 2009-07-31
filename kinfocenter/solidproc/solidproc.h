@@ -27,8 +27,6 @@
 
 #include "ui_solidproc.h"
 
-class QPushButton;
-class QTreeWidget;
 
 class KCMSolidProc: public KCModule, public Ui::Solidproc
 {

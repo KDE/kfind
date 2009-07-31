@@ -30,7 +30,6 @@
 
 #include "os_current.h"
 
-class QStringList;
 
 class QPushButton;
 class QTreeWidget;

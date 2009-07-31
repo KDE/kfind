@@ -33,12 +33,10 @@
 #include <solid/storageaccess.h>
 #include <solid/storagedrive.h>
 
-class QStringList;
 
 class QPushButton;
 class QTreeWidget;
 
-class UsedSizeWidget;
 
 class KCMPartition : public KCModule {
 	Q_OBJECT
