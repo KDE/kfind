@@ -36,7 +36,7 @@
 #include <kstandarddirs.h>
 #include <kconfiggroup.h>
 
-#define DBG_CODE 1213
+#define DBG_CODE 0
 
 void copyFile( const QString &inFileName, const QString &outFileName )
 {
