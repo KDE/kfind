@@ -85,6 +85,7 @@ GenericName[zh_TW]=FTP 客戶端程式
 Exec=lftp %u
 Icon=konsole
 Name=Lftp
+Name[de]=LFTP
 Name[eo]=L-FTP
 Name[fr]=LFTP
 Name[hi]=एलएफटीपी
