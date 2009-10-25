@@ -23,7 +23,6 @@
 #include <kapplication.h>
 #include <kdebug.h>
 #include <kservicegroup.h>
-#include <k3process.h>
 #include <klocale.h>
 #include <kstandarddirs.h>
 #include <kauthorized.h>
