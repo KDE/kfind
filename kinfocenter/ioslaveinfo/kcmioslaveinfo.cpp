@@ -134,12 +134,16 @@ void KCMIOSlaveInfo::selectHelpBody() {
 }
 
 void KCMIOSlaveInfo::showInfo(const QString& protocol) {
-	QString file = QString("kioslave/%1/index.docbook").arg(protocol);
+	//get X-DocPath entry "foo/index.html" from .protocol file
+	QString docPath=KProtocolInfo::docPath (protocol);
+	QString file = docPath;
+	//check for "foo/index.docbook" to get rid of the error dialog from KShortUriFilter
+	//the error message is displayed in the dialog window here
+	file.replace ( QString(".html"), QString(".docbook") );
 	file = KGlobal::locale()->langLookup(file);
-
 	if (!file.isEmpty()) {
 		m_info->view()->setUpdatesEnabled(false);
-		m_info->openUrl(KUrl(QString("help:/kioslave/%1/index.html").arg(protocol)));
+		m_info->openUrl(KUrl(QString( "help:/%1" ).arg(docPath)));
 		return;
 	}
 	m_info->begin();
