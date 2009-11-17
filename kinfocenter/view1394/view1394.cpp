@@ -63,7 +63,7 @@ K_EXPORT_PLUGIN(View1394Factory("kcmview1394"))
 
 View1394::View1394(QWidget *parent, const QVariantList &) :
 	KCModule(View1394Factory::componentData(), parent), m_insideRescanBus(false) {
-	setQuickHelp(i18n("<qt>On the right hand side you can see some information about "
+	setQuickHelp(i18n("<qt>Here you can see some information about "
 		"your IEEE 1394 configuration. "
 		"The meaning of the columns:"
 		"<ul>"
@@ -77,6 +77,7 @@ View1394::View1394(QWidget *parent, const QVariantList &) :
 		"<li><b>PM</b>: checked if the node is power management capable</li>"
 		"<li><b>Acc</b>: the cycle clock accuracy of the node, valid from 0 to 100</li>"
 		"<li><b>Speed</b>: the speed of the node</li>"
+                "<li><b>Vendor</b>: the vendor of the device</li>"
 		"</ul></qt>"
 		));
 
