@@ -148,7 +148,7 @@ bool DockContainer::dockModule(ConfigModule *module) {
 			"Do you want to apply the changes before running "
 			"the new module or discard the changes?") : i18n("There are unsaved changes in the active module.\n"
 			"Do you want to apply the changes before exiting "
-			"the Control Center or discard the changes?"), i18n("Unsaved Changes"), KStandardGuiItem::apply(), KStandardGuiItem::discard());
+			"the System Settings or discard the changes?"), i18n("Unsaved Changes"), KStandardGuiItem::apply(), KStandardGuiItem::discard());
 		if (res == KMessageBox::Cancel)
 			return false;
 	}
