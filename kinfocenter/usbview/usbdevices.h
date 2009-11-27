@@ -18,8 +18,14 @@
 #include <bus/usb/usb.h>
 #include <QStringList>
 #elif defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
-#include <dev/usb/usb.h>
-#include <QStringList>
+#include <sys/param.h>
+# if defined(__FreeBSD_version) && __FreeBSD_version >= 800100
+#  define DISABLE_USBDEVICES_FREEBSD
+#  warning "The USB subsystem has changed in 8.0. Disabling."
+# else
+#  include <dev/usb/usb.h>
+#  include <QStringList>
+# endif
 #endif
 
 class USBDB;
@@ -76,7 +82,7 @@ private:
 
 	unsigned int _vendorID, _prodID, _revMajor, _revMinor;
 
-#if defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
+#if (defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)) && !defined(DISABLE_USBDEVICES_FREEBSD)
 	void collectData( int fd, int level, usb_device_info &di, int parent );
 	QStringList _devnodes;
 #endif

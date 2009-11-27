@@ -199,7 +199,7 @@ QString USBDevice::dump() {
 
 	r += i18n("<tr><td><i>Speed</i></td><td>%1 Mbit/s</td></tr>", _speed);
 	r += i18n("<tr><td><i>Channels</i></td><td>%1</td></tr>", _channels);
-#if defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
+#if (defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)) && !defined(DISABLE_USBDEVICES_FREEBSD)
 	if ( _power )
 	r += i18n("<tr><td><i>Power Consumption</i></td><td>%1 mA</td></tr>", _power);
 	else
@@ -290,7 +290,11 @@ bool USBDevice::parseSys(const QString &dname) {
 	return d.count();
 }
 
-#else
+#elif (defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)) && !defined(DISABLE_USBDEVICES_FREEBSD)
+/*
+ * FIXME: The USB subsystem has changed a lot in FreeBSD 8.0
+ *        Support for it must be written.
+ */
 
 /*
  * FreeBSD support by Markus Brueffer <markus@brueffer.de>
