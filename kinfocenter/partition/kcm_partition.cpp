@@ -134,7 +134,7 @@ void KCMPartition::load() {
 			accessPaths.append(access->filePath());
 		}
 		else {
-			itemContent << i18n("none");
+			itemContent << i18nc("no storage volume", "none");
 		}
 		
 		itemContent << volume->label() << volume->fsType() << KGlobal::locale()->formatByteSize(volume->size());
