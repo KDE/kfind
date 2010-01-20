@@ -1,2 +1,2 @@
-install( FILES top-right-kinfocenter.png  	main.html  	kinfocenter.css  DESTINATION  ${DATA_INSTALL_DIR}/kinfocenter/about )
+install( FILES main.html  	kinfocenter.css  DESTINATION  ${DATA_INSTALL_DIR}/kinfocenter/about )
 
