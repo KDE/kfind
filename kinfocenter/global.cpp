@@ -50,10 +50,11 @@ void KCGlobal::init() {
 	if (!gethostname(buf, sizeof(buf)))
 		buf[sizeof(buf)-1] ='\0';
 	QString hostname(buf);
-
 	setHostName(hostname);
-	setUserName(KUser().loginName());
-	setRoot(getuid() == 0);
+
+	KUser user;
+	setUserName(user.loginName());
+	setRoot(user.isSuperUser());
 
 	setKDEVersion(KDE::versionString());
 
