@@ -22,12 +22,12 @@
 #define NAME_BUFFER_SIZE 256
 
 //common used strings
-static const char* strCtxt="state of PCI item";
-static const char* strEnabled=I18N_NOOP2("state of PCI item", "Enabled");
-static const char* strDisabled=I18N_NOOP2("state of PCI item", "Disabled");
-static const char* strYes=I18N_NOOP2("state of PCI item", "Yes");
-static const char* strNo=I18N_NOOP2("state of PCI item", "No");
-static const char* strUnknown=I18N_NOOP2("state of PCI item", "Unknown");
+static const char strCtxt[]="state of PCI item";
+static const char strEnabled[]=I18N_NOOP2("state of PCI item", "Enabled");
+static const char strDisabled[]=I18N_NOOP2("state of PCI item", "Disabled");
+static const char strYes[]=I18N_NOOP2("state of PCI item", "Yes");
+static const char strNo[]=I18N_NOOP2("state of PCI item", "No");
+static const char strUnknown[]=I18N_NOOP2("state of PCI item", "Unknown");
 
 struct id2name {
 	int id;
