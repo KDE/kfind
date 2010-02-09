@@ -56,6 +56,11 @@ set(kinfocenter_SRCS
 
 kde4_add_kdeinit_executable( kinfocenter ${kinfocenter_SRCS})
 
+if(${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
+    find_library(KVM_LIBRARY kvm)
+    target_link_libraries(kinfocenter ${KVM_LIBRARY})
+endif(${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
+
 target_link_libraries(kdeinit_kinfocenter ${KDE4_KIO_LIBS} ${KDE4_KHTML_LIBS} ${KDE4_KUTILS_LIBS} )
 
 install(TARGETS kdeinit_kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS})
