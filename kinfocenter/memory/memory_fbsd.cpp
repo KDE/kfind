@@ -1,90 +1,67 @@
-
 #include <sys/types.h>
 #include <sys/sysctl.h>
 #include <sys/vmmeter.h>
 
 #include <vm/vm_param.h>
+#include <kvm.h>
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <fcntl.h>
+#include <paths.h>
 #include <unistd.h>
 
 void KCMMemory::fetchValues()
 {
-    char blah[10], buf[80], *used_str, *total_str;
     /* Stuff for sysctl */
-    int memory;
     size_t len;
-    /* Stuff for swap display */
-    int used, total, _free;
-    FILE *pipe;
 
-    len=sizeof(memory);
+    unsigned long memory;
+    len = sizeof(memory);
     sysctlbyname("hw.physmem", &memory, &len, NULL, 0);
   
-    snprintf(blah, 10, "%d", memory);
     // Numerical values
 
     // total physical memory (without swap space)
     memoryInfos[TOTAL_MEM] = MEMORY(memory);
+ 
+    unsigned int cached;
+    len = sizeof(cached);
+    if (sysctlbyname("vm.stats.vm.v_cache_count", &cached, &len, NULL, 0) == -1 || !len)
+        memoryInfos[CACHED_MEM] = NO_MEMORY_INFO;
+    else
+        memoryInfos[CACHED_MEM] = MEMORY(cached) * PAGE_SIZE;
+
+    unsigned int free;
+    len = sizeof(free);
+    if (sysctlbyname("vm.stats.vm.v_free_count", &free, &len, NULL, 0) == -1 || !len)
+        memoryInfos[FREE_MEM] = NO_MEMORY_INFO;
+    else
+        memoryInfos[FREE_MEM] = MEMORY(free) * PAGE_SIZE;
 
     // added by Brad Hughes bhughes@trolltech.com
     struct vmtotal vmem;
-#ifdef __GNUC__ 
-    #warning "FIXME: memoryInfos[CACHED_MEM]"
-#endif    
-    memoryInfos[CACHED_MEM] = NO_MEMORY_INFO;
-
-    // The sysctls don't work in a nice manner under FreeBSD v2.2.x
-    // so we assume that if sysctlbyname doesn't return what we
-    // prefer, assume it's the old data types.   FreeBSD prior
-    // to 4.0-R isn't supported by the rest of KDE, so what is
-    // this code doing here.
 
     len = sizeof(vmem);
-    if (sysctlbyname("vm.vmmeter", &vmem, &len, NULL, 0) == 0) 
-	memoryInfos[SHARED_MEM]   = MEMORY(vmem.t_armshr) * PAGE_SIZE;
-    else 
-        memoryInfos[SHARED_MEM]   = NO_MEMORY_INFO;
+    if (sysctlbyname("vm.vmtotal", &vmem, &len, NULL, 0) == -1 || !len)
+        memoryInfos[SHARED_MEM] = NO_MEMORY_INFO;
+    else
+         memoryInfos[SHARED_MEM] = MEMORY(vmem.t_armshr) * PAGE_SIZE;
 
-    int buffers;
-    len = sizeof (buffers);
+    long buffers;
+    len = sizeof(buffers);
     if ((sysctlbyname("vfs.bufspace", &buffers, &len, NULL, 0) == -1) || !len)
-	memoryInfos[BUFFER_MEM]   = NO_MEMORY_INFO;
+        memoryInfos[BUFFER_MEM] = NO_MEMORY_INFO;
     else
-	memoryInfos[BUFFER_MEM]   = MEMORY(buffers);
+        memoryInfos[BUFFER_MEM] = MEMORY(buffers);
 
-    // total free physical memory (without swap space)
-    int free;
-    len = sizeof (buffers);
-    if ((sysctlbyname("vm.stats.vm.v_free_count", &free, &len, NULL, 0) == -1) || !len)
-	memoryInfos[FREE_MEM]     = NO_MEMORY_INFO;
-    else
-	memoryInfos[FREE_MEM]     = MEMORY(free) * getpagesize();
+    struct kvm_swap swap[1];
+    kvm_t *kvm_handle;
+    kvm_handle = kvm_open(NULL, _PATH_DEVNULL, NULL, O_RDONLY, "kvm_open");
 
-    // Q&D hack for swap display. Borrowed from xsysinfo-1.4
-    if ((pipe = popen("/usr/sbin/pstat -ks", "r")) == NULL) {
-	used = total = 1;
-	return;
+    if (kvm_handle != NULL && kvm_getswapinfo(kvm_handle, swap, 1, 0) != -1) {
+        memoryInfos[SWAP_MEM]     = MEMORY(swap[0].ksw_total) * PAGE_SIZE;
+        memoryInfos[FREESWAP_MEM] = MEMORY(swap[0].ksw_total - swap[0].ksw_used) * PAGE_SIZE;
     }
 
-    fgets(buf, sizeof(buf), pipe);
-    fgets(buf, sizeof(buf), pipe);
-    fgets(buf, sizeof(buf), pipe);
-    fgets(buf, sizeof(buf), pipe);
-    pclose(pipe);
-
-    strtok(buf, " ");
-    total_str = strtok(NULL, " ");
-    used_str = strtok(NULL, " ");
-    used = atoi(used_str);
-    total = atoi(total_str);
-
-    _free=total-used;
-
-    // total size of all swap-partitions
-    memoryInfos[SWAP_MEM] = MEMORY(total) * 1024;
-
-    // free memory in swap-partitions
-    memoryInfos[FREESWAP_MEM] = MEMORY(_free) * 1024;
+    if (kvm_handle != NULL)
+        kvm_close(kvm_handle);
 }
