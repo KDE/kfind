@@ -59,7 +59,7 @@ bool scanDesktopFile( QList<AppLnkCache*> &appCache, const QString &templ,
 
   // find out where to put the .desktop files
   QString destName;
-  if ( destDir.isNull() )
+  if ( destDir.isEmpty() )
     destDir = KGlobal::dirs()->saveLocation( "apps" );
   else
     destDir += '/';
@@ -136,7 +136,7 @@ void createDesktopFiles( QList<AppLnkCache*> &appCache, int &added )
 void decorateDirs( QString destDir )
 {
   // find out where to put the .directory files
-  if ( destDir.isNull() )
+  if ( destDir.isEmpty() )
     destDir = KGlobal::dirs()->saveLocation( "apps" );
   else
     destDir += '/';
