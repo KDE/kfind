@@ -20,10 +20,10 @@
 
 #include "kdatecombo.moc"
 
-#include <QtCore/QTimer>
+#include <QTimer>
 //Added by qt3to4:
 #include <QKeyEvent>
-#include <QtCore/QEvent>
+#include <QEvent>
 
 #include <kglobal.h>
 #include <klocale.h>

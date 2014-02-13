@@ -20,10 +20,10 @@
 
 #include <stdlib.h>
 
-#include <QtCore/QFileInfo>
-#include <QtCore/QTextCodec>
-#include <QtCore/QTextStream>
-#include <QtCore/QList>
+#include <QFileInfo>
+#include <QTextCodec>
+#include <QTextStream>
+#include <QList>
 #include <kdebug.h>
 #include <kmimetype.h>
 #include <kfileitem.h>

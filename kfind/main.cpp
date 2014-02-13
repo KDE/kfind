@@ -16,8 +16,8 @@
 * 
 ******************************************************************/
 
-#include <QtCore/QDir>
-#include <QtCore/QFile>
+#include <QDir>
+#include <QFile>
 
 #include <kapplication.h>
 #include <klocale.h>

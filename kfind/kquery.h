@@ -21,13 +21,13 @@
 
 #include <time.h>
 
-#include <QtCore/QObject>
-#include <QtCore/QRegExp>
-#include <QtCore/QQueue>
-#include <QtCore/QList>
-#include <QtCore/QDir>
-#include <QtCore/QPair>
-#include <QtCore/QStringList>
+#include <QObject>
+#include <QRegExp>
+#include <QQueue>
+#include <QList>
+#include <QDir>
+#include <QPair>
+#include <QStringList>
 
 #include <kio/job.h>
 #include <kurl.h>

@@ -21,13 +21,13 @@
 
 #include "kfinddlg.h"
 
-#include <QtCore/QTextStream>
-#include <QtCore/QTextCodec>
-#include <QtCore/QFileInfo>
+#include <QTextStream>
+#include <QTextCodec>
+#include <QFileInfo>
 #include <QClipboard>
 #include <QHeaderView>
 #include <QApplication>
-#include <QtCore/QDate>
+#include <QDate>
 
 #include <kfiledialog.h>
 #include <klocale.h>
