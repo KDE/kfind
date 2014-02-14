@@ -50,7 +50,7 @@ class KFindItem
         QString         m_matchingLine;
         QString         m_subDir;
         QString         m_permission;
-        KIcon           m_icon;
+        QIcon           m_icon;
 };
  
 class KFindItemModel: public QAbstractTableModel

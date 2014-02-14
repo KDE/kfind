@@ -43,6 +43,8 @@
 #include <kservicetypetrader.h>
 #include <kparts/componentfactory.h>
 #include <kstandarddirs.h>
+#include <kdialog.h>
+#include <kconfiggroup.h>
 
 #include "kdatecombo.h"
 #include "kquery.h"

@@ -102,7 +102,7 @@ void KFindItemModel::insertFileItems( const QList< QPair<KFileItem,QString> > & 
         {
             QPair<KFileItem,QString> pair = *it;
 
-            QString subDir = m_view->reducedDir(pair.first.url().directory(KUrl::AppendTrailingSlash));
+            QString subDir = m_view->reducedDir(pair.first.url().adjusted(QUrl::RemoveFilename).path());
             m_itemList.append( KFindItem( pair.first, subDir, pair.second ) );
         }
 
@@ -238,7 +238,7 @@ KFindItem::KFindItem( const KFileItem & _fileItem, const QString & subDir, const
             
         m_permission = i18n(perm[perm_index]);
         
-        m_icon = KIcon( m_fileItem.iconName() );
+        m_icon = QIcon::fromTheme( m_fileItem.iconName() );
     }
 }
 
@@ -259,7 +259,7 @@ QVariant KFindItem::data( int column, int role ) const
         switch( column )
         {
             case 0:
-                return m_fileItem.url().fileName(KUrl::ObeyTrailingSlash);
+                return m_fileItem.url().fileName();
             case 1:
                 return m_subDir;
             case 2:
@@ -344,22 +344,22 @@ KFindTreeView::KFindTreeView( QWidget *parent,  KfindDlg * findDialog )
     m_actionCollection = new KActionCollection( this );
     m_actionCollection->addAssociatedWidget(this);
 
-    KAction * open = KStandardAction::open(this, SLOT(slotExecuteSelected()), this);
+    QAction * open = KStandardAction::open(this, SLOT(slotExecuteSelected()), this);
     m_actionCollection->addAction( "file_open", open );
     
-    KAction * copy = KStandardAction::copy(this, SLOT(copySelection()), this);
+    QAction * copy = KStandardAction::copy(this, SLOT(copySelection()), this);
     m_actionCollection->addAction( "edit_copy", copy );
     
-    KAction * openFolder = new KAction( KIcon("window-new"), i18n("&Open containing folder(s)"), this );
+    QAction * openFolder = new KAction( KIcon("window-new"), i18n("&Open containing folder(s)"), this );
     connect( openFolder, SIGNAL(triggered()), this, SLOT(openContainingFolder()) );
     m_actionCollection->addAction( "openfolder", openFolder );
     
-    KAction * del = new KAction( KIcon("edit-delete"), i18n("&Delete"), this );
+    QAction * del = new KAction( KIcon("edit-delete"), i18n("&Delete"), this );
     connect( del, SIGNAL(triggered()), this, SLOT(deleteSelectedFiles()) );
     del->setShortcut(Qt::SHIFT + Qt::Key_Delete);
     m_actionCollection->addAction( "del", del );
    
-    KAction * trash = new KAction( KIcon("user-trash"), i18n("&Move to Trash"), this );
+    QAction * trash = new KAction( KIcon("user-trash"), i18n("&Move to Trash"), this );
     connect( trash, SIGNAL(triggered()), this, SLOT(moveToTrashSelectedFiles()) );
     trash->setShortcut(Qt::Key_Delete);
     m_actionCollection->addAction( "trash", trash );
@@ -442,7 +442,7 @@ void KFindTreeView::saveResults()
 {
     KFileDialog *dlg = new KFileDialog(QString(), QString(), this);
     dlg->setOperationMode (KFileDialog::Saving);
-    dlg->setCaption( i18nc("@title:window", "Save Results As") );
+    dlg->setWindowTitle( i18nc("@title:window", "Save Results As") );
     dlg->setFilter( QString("*.html|%1\n*.txt|%2").arg( i18n("HTML page"), i18n("Text file") ) );
     dlg->setConfirmOverwrite(true);    
     
@@ -485,7 +485,7 @@ void KFindTreeView::saveResults()
             {
                 const KFileItem fileItem = item.getFileItem();
                 stream << QString::fromLatin1("<dt><a href=\"%1\">%2</a></dt>\n").arg( 
-                    fileItem.url().url(), fileItem.url().prettyUrl() );
+                    fileItem.url().url(), fileItem.url().toDisplayString() );
 
             }
             stream << QString::fromLatin1("</dl>\n</body>\n</html>\n");
@@ -536,7 +536,7 @@ void KFindTreeView::slotExecuteSelected()
         {
             KFindItem item = m_model->itemAtIndex( index );
             if ( item.isValid() )
-                item.getFileItem().run();
+                new KRun(item.getFileItem().targetUrl(), this);
         }
     }
 }
@@ -554,7 +554,7 @@ void KFindTreeView::slotExecute( const QModelIndex & index )
             
         KFindItem item = m_model->itemAtIndex( realIndex );
         if ( item.isValid() )
-            item.getFileItem().run();
+            new KRun(item.getFileItem().targetUrl(), this);
     }        
 }
 

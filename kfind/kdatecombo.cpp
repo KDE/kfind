@@ -21,6 +21,8 @@
 #include "kdatecombo.moc"
 
 #include <QTimer>
+#include <QApplication>
+#include <QDesktopWidget>
 //Added by qt3to4:
 #include <QKeyEvent>
 #include <QEvent>
@@ -28,7 +30,6 @@
 #include <kglobal.h>
 #include <klocale.h>
 #include <kdatepicker.h>
-#include <kdatetable.h>
 #include <kdebug.h>
 
 KDateCombo::KDateCombo(QWidget *parent) : KComboBox(parent)
@@ -49,12 +50,15 @@ KDateCombo::KDateCombo(const QDate & date, QWidget *parent) : KComboBox(parent)
 void KDateCombo::initObject(const QDate & date)
 {
   setValidator(0);
-  popupFrame = new KPopupFrame(this);
+  popupFrame = new QFrame(this, Qt::Popup);
+  popupFrame->setFrameStyle(QFrame::Box | QFrame::Raised);
+  popupFrame->setMidLineWidth(2);
   popupFrame->installEventFilter(this);
   datePicker = new KDatePicker(date, popupFrame);
   datePicker->setMinimumSize(datePicker->sizeHint());
   datePicker->installEventFilter(this);
-  popupFrame->setMainWidget(datePicker);
+  popupFrame->resize(datePicker->width() + 2 * popupFrame->frameWidth(),
+                     datePicker->height() + 2 * popupFrame->frameWidth());
   setDate(date);
 
   connect(datePicker, SIGNAL(dateSelected(QDate)), this, SLOT(dateEnteredEvent(QDate)));
@@ -112,7 +116,32 @@ void KDateCombo::mousePressEvent (QMouseEvent * e)
       QDate tempDate;
       getDate(& tempDate);
       datePicker->setDate(tempDate);
-      popupFrame->popup(mapToGlobal(QPoint(0, height())));
+
+        // Make sure the whole popup is visible.
+        const QPoint pos = mapToGlobal(QPoint(0, height()));
+        QRect desktopGeometry = QApplication::desktop()->screenGeometry(pos);
+
+        int x = pos.x();
+        int y = pos.y();
+        int w = popupFrame->width();
+        int h = popupFrame->height();
+        if ( x + w > desktopGeometry.x() + desktopGeometry.width() ) {
+            x = desktopGeometry.width() - w;
+        }
+        if ( y + h > desktopGeometry.y() + desktopGeometry.height() ) {
+            y = desktopGeometry.height() - h;
+        }
+        if ( x < desktopGeometry.x() ) {
+            x = 0;
+        }
+        if ( y < desktopGeometry.y() ) {
+            y = 0;
+        }
+
+        // Pop the thingy up.
+        popupFrame->move( x, y );
+        popupFrame->show();
+        datePicker->setFocus();
     }
   }
 }

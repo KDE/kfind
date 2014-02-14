@@ -32,6 +32,7 @@
 #include <kstandarddirs.h>
 #include <khelpmenu.h>
 #include <kmenu.h>
+#include <kcomponentdata.h>
 
 #include "kftabdlg.h"
 #include "kquery.h"
@@ -98,7 +99,7 @@ KfindDlg::KfindDlg(const KUrl & url, QWidget *parent)
     connect(query, SIGNAL(result(int)), SLOT(slotResult(int)));
     connect(query, SIGNAL(foundFileList(QList<QPair<KFileItem,QString> >)), SLOT(addFiles(QList<QPair<KFileItem,QString> >)));
 
-  KHelpMenu *helpMenu = new KHelpMenu(this, KGlobal::mainComponent().aboutData(), true);
+  KHelpMenu *helpMenu = new KHelpMenu(this, KAboutData::applicationData(), true);
   setButtonMenu( Help, helpMenu->menu() );
   dirwatch=NULL;
 }
@@ -254,7 +255,7 @@ void KfindDlg::copySelection()
 
 void  KfindDlg::about ()
 {
-  KAboutApplicationDialog dlg(0, this);
+  KAboutApplicationDialog dlg(KAboutData::applicationData(), 0, this);
   dlg.exec ();
 }
 

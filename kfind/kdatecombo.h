@@ -29,7 +29,7 @@
   */
 
 class KDatePicker;
-class KPopupFrame;
+class QFrame;
 
 class KDateCombo : public KComboBox  {
    Q_OBJECT
@@ -43,7 +43,7 @@ public:
 	bool setDate(const QDate & newDate);
 
 private:
-   KPopupFrame * popupFrame;
+   QFrame * popupFrame;
    KDatePicker * datePicker;
 
    void initObject(const QDate & date);
