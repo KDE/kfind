@@ -41,7 +41,6 @@
 #include <kfiledialog.h>
 #include <kregexpeditorinterface.h>
 #include <kservicetypetrader.h>
-#include <kparts/componentfactory.h>
 #include <kstandarddirs.h>
 #include <kdialog.h>
 #include <kconfiggroup.h>
