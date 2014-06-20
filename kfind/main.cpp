@@ -24,6 +24,7 @@
 #include <kcmdlineargs.h>
 #include <k4aboutdata.h>
 #include <kurl.h>
+#include <KLocalizedString>
 
 #include "kfinddlg.h"
 #include "version.h"
@@ -32,6 +33,8 @@ static const char description[] = I18N_NOOP("KDE file find utility");
 
 int main( int argc, char ** argv )
 {
+    KLocalizedString::setApplicationDomain("kfind");
+
   K4AboutData aboutData( "kfind", "kfindpart", ki18n("KFind"),
       KFIND_VERSION, ki18n(description), K4AboutData::License_GPL,
       ki18n("(c) 1998-2003, The KDE Developers"));
