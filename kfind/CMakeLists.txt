@@ -9,7 +9,7 @@ kde4_add_app_icon(kfind_SRCS "hi*-app-kfind.png")
 
 add_executable(kfind ${kfind_SRCS})
 
-target_link_libraries(kfind konq KF5::Archive)
+target_link_libraries(kfind KF5::Konq KF5::Archive)
 
 install(TARGETS kfind ${INSTALL_TARGETS_DEFAULT_ARGS})
 
