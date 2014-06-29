@@ -17,7 +17,6 @@
 ******************************************************************/
 
 #include "kfinddlg.h"
-#include "kfinddlg.moc"
 
 #include <QLayout>
 #include <QPushButton>

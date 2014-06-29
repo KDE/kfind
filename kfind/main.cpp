@@ -27,7 +27,7 @@
 #include <KLocalizedString>
 
 #include "kfinddlg.h"
-#include "version.h"
+#include "kfind_version.h"
 
 static const char description[] = I18N_NOOP("KDE file find utility");
 
@@ -36,7 +36,7 @@ int main( int argc, char ** argv )
     KLocalizedString::setApplicationDomain("kfind");
 
   K4AboutData aboutData( "kfind", "kfindpart", ki18n("KFind"),
-      KFIND_VERSION, ki18n(description), K4AboutData::License_GPL,
+      KFIND_VERSION_STRING, ki18n(description), K4AboutData::License_GPL,
       ki18n("(c) 1998-2003, The KDE Developers"));
 
   aboutData.addAuthor(ki18n("Eric Coquelle"), ki18n("Current Maintainer"), "coquelle@caramail.com");

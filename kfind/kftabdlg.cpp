@@ -962,5 +962,3 @@ QSize KfindTabWidget::sizeHint() const
     sz.setWidth( screenWidth / 2 );
   return sz;
 }
-
-#include "kftabdlg.moc"

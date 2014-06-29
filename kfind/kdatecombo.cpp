@@ -18,8 +18,6 @@
 
 #include "kdatecombo.h"
 
-#include "kdatecombo.moc"
-
 #include <QTimer>
 #include <QApplication>
 #include <QDesktopWidget>
