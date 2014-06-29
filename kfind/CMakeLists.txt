@@ -20,7 +20,7 @@ ecm_setup_version(${KFIND_VERSION} VARIABLE_PREFIX KFIND
 )
 
 # Build dependencies
-find_package(KF5 REQUIRED COMPONENTS KDELibs4Support Archive)
+find_package(KF5 REQUIRED COMPONENTS KDELibs4Support Archive DocTools)
 
 if("${CMAKE_SOURCE_DIR}" STREQUAL "${Kfind_SOURCE_DIR}")
   find_package(KF5Konq CONFIG REQUIRED)
@@ -53,6 +53,7 @@ install(TARGETS kfind ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 install(PROGRAMS kfind.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
 
 add_subdirectory(icons)
+add_subdirectory(docs)
 
 if("${CMAKE_SOURCE_DIR}" STREQUAL "${Kfind_SOURCE_DIR}")
   feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
