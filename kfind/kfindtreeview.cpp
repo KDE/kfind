@@ -38,11 +38,12 @@
 #include <kdebug.h>
 #include <kiconloader.h>
 #include <kglobalsettings.h>
+#include <kjobwidgets.h>
 
 #include <kio/netaccess.h>
 #include <kio/copyjob.h>
 #include <kio/deletejob.h>
-#include <kjobuidelegate.h>
+#include <kio/jobuidelegate.h>
 
 #include <konq_operations.h>
 #include <knewfilemenu.h>
@@ -626,10 +627,11 @@ void KFindTreeView::deleteSelectedFiles()
         return;
     }
 
-    bool done = KonqOperations::askDeleteConfirmation( uris, KonqOperations::DEL, KonqOperations::FORCE_CONFIRMATION, this );
-    if ( done )
-    {
-        KJob * deleteJob = KIO::del( uris );
+    KIO::JobUiDelegate uiDelegate;
+    uiDelegate.setWindow(this);
+    if (uiDelegate.askDeleteConfirmation(uris, KIO::JobUiDelegate::Delete, KIO::JobUiDelegate::ForceConfirmation)) {
+        KJob * deleteJob = KIO::del(uris);
+        KJobWidgets::setWindow(deleteJob, this);
         deleteJob->uiDelegate()->setAutoErrorHandlingEnabled(true);
     }
 }
@@ -641,10 +643,11 @@ void KFindTreeView::moveToTrashSelectedFiles()
         return;
     }
 
-    bool done = KonqOperations::askDeleteConfirmation( uris, KonqOperations::TRASH, KonqOperations::FORCE_CONFIRMATION, this );
-    if ( done )
-    {
-        KJob * trashJob = KIO::trash( uris );
+    KIO::JobUiDelegate uiDelegate;
+    uiDelegate.setWindow(this);
+    if (uiDelegate.askDeleteConfirmation(uris, KIO::JobUiDelegate::Trash, KIO::JobUiDelegate::ForceConfirmation)) {
+        KJob * trashJob = KIO::trash(uris);
+        KJobWidgets::setWindow(trashJob, this);
         trashJob->uiDelegate()->setAutoErrorHandlingEnabled(true);
     }
 }
