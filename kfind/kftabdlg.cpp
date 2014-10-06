@@ -164,14 +164,11 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
 
     // Signals
 
-    connect( browseB, SIGNAL(clicked()),
-             this, SLOT(getDirectory()) );
+    connect(browseB, &QPushButton::clicked, this, &KfindTabWidget::getDirectory);
 
-    connect( nameBox, SIGNAL(returnPressed()),
-             this, SIGNAL(startSearch()));
+    connect(nameBox, static_cast<void (KComboBox::*)()>(&KComboBox::returnPressed), this, &KfindTabWidget::startSearch);
 
-    connect( dirBox, SIGNAL(returnPressed()),
-             this, SIGNAL(startSearch()));
+    connect(dirBox, static_cast<void (KUrlComboBox::*)()>(&KUrlComboBox::returnPressed), this, &KfindTabWidget::startSearch);
     
     // ************ Page Two
 
@@ -283,12 +280,12 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     grid1->setRowStretch(6,1);
 
     // Connect
-    connect( findCreated, SIGNAL(toggled(bool)),  SLOT(fixLayout()) );
-    connect( bg, SIGNAL(buttonClicked(QAbstractButton*)), this,  SLOT(fixLayout()) );
-    connect( sizeBox, SIGNAL(activated(int)), this, SLOT(slotSizeBoxChanged(int)));
-    connect( timeBox, SIGNAL(valueChanged(int)), this, SLOT(slotUpdateDateLabelsForNumber(int)));
-    connect( betweenType, SIGNAL(currentIndexChanged(int)), this, SLOT(slotUpdateDateLabelsForType(int)));
-    connect( sizeEdit, SIGNAL(valueChanged(int)), this, SLOT(slotUpdateByteComboBox(int)));
+    connect(findCreated, &QCheckBox::toggled, this, &KfindTabWidget::fixLayout);
+    connect(bg, static_cast<void (QButtonGroup::*)(QAbstractButton *)>(&QButtonGroup::buttonClicked), this, &KfindTabWidget::fixLayout);
+    connect(sizeBox, static_cast<void (KComboBox::*)(int)>(&KComboBox::activated), this, &KfindTabWidget::slotSizeBoxChanged);
+    connect(timeBox, static_cast<void (KIntSpinBox::*)(int)>(&KIntSpinBox::valueChanged), this, &KfindTabWidget::slotUpdateDateLabelsForNumber);
+    connect(betweenType, static_cast<void (KComboBox::*)(int)>(&KComboBox::currentIndexChanged), this, &KfindTabWidget::slotUpdateDateLabelsForType);
+    connect(sizeEdit, static_cast<void (KIntSpinBox::*)(int)>(&KIntSpinBox::valueChanged), this, &KfindTabWidget::slotUpdateByteComboBox);
 
 
     // ************ Page Three
@@ -307,7 +304,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     QLabel * textL   =new QLabel(i18n("C&ontaining text:"), pages[2]);
     textL->setBuddy( textEdit );
 
-    connect( textEdit, SIGNAL(returnPressed(QString)), SIGNAL(startSearch()));
+    connect(textEdit, &KLineEdit::returnPressed, this, &KfindTabWidget::startSearch);
 
     const QString containingtext
       = i18n("<qt>If specified, only files that contain this text"
@@ -369,9 +366,9 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
 
     if ( editRegExp ) {
       // The editor was available, so lets use it.
-      connect( regexpContentCb, SIGNAL(toggled(bool)), editRegExp, SLOT(setEnabled(bool)) );
+      connect(regexpContentCb, &QCheckBox::toggled, editRegExp, &QPushButton::setEnabled);
       editRegExp->setEnabled(false);
-      connect( editRegExp, SIGNAL(clicked()), this, SLOT(slotEditRegExp()) );
+      connect(editRegExp, &QPushButton::clicked, this, &KfindTabWidget::slotEditRegExp);
     }
     else
         regexpContentCb->hide();

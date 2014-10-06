@@ -28,7 +28,7 @@
 #include <kglobal.h>
 #include <klocale.h>
 #include <kdatepicker.h>
-#include <kdebug.h>
+#include <QDebug>
 
 KDateCombo::KDateCombo(QWidget *parent) : KComboBox(parent)
 {

@@ -27,7 +27,7 @@
 
 #include <kurl.h>
 #include <kicon.h>
-#include <kdebug.h>
+#include <QDebug>
 #include <kfileitem.h>
 #include <konq_popupmenu.h>
 

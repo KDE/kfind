@@ -24,7 +24,7 @@
 #include <QTextCodec>
 #include <QTextStream>
 #include <QList>
-#include <kdebug.h>
+#include <QDebug>
 #include <kmimetype.h>
 #include <kfileitem.h>
 #include <kfilemetainfo.h>
@@ -348,7 +348,7 @@ void KQuery::processQuery( const KFileItem &file)
         return;
         
     if( !m_search_binary && ignore_mimetypes.indexOf(file.mimetype()) != -1 ) {
-      kDebug() << "ignoring, mime type is in exclusion list: " << file.url();
+      //qDebug() << "ignoring, mime type is in exclusion list: " << file.url();
       return;
     }
 
@@ -381,7 +381,7 @@ void KQuery::processQuery( const KFileItem &file)
           zipfileEntry = (KZipFileEntry*)zipfileContent->entry("content.xml"); //for OpenOffice.org
 
         if(!zipfileEntry) {
-          kWarning() << "Expected XML file not found in ZIP archive " << file.url() ;
+          qWarning() << "Expected XML file not found in ZIP archive " << file.url() ;
           return;
         }
 
@@ -392,13 +392,13 @@ void KQuery::processQuery( const KFileItem &file)
         stream->setCodec("UTF-8");
         isZippedOfficeDocument = true;
       } else {
-        kWarning() << "Cannot open supposed ZIP file " << file.url() ;
+        qWarning() << "Cannot open supposed ZIP file " << file.url() ;
       }
       
     } else if( !m_search_binary && !file.mimetype().startsWith( QString("text/") ) &&
         file.url().isLocalFile() && !file.url().path().startsWith( QString("/dev") ) ) {
       if ( KMimeType::isBinaryData(file.url().path()) ) {
-        kDebug() << "ignoring, not a text file: " << file.url();
+        //qDebug() << "ignoring, not a text file: " << file.url();
         return;
       }
     }

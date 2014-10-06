@@ -35,7 +35,7 @@
 #include <krun.h>
 #include <kmessagebox.h>
 #include <kglobal.h>
-#include <kdebug.h>
+#include <QDebug>
 #include <kiconloader.h>
 #include <kglobalsettings.h>
 #include <kjobwidgets.h>
@@ -331,15 +331,14 @@ KFindTreeView::KFindTreeView( QWidget *parent,  KfindDlg * findDialog )
     setDragEnabled( true );
     setContextMenuPolicy( Qt::CustomContextMenu );
 
-    connect( this, SIGNAL(customContextMenuRequested(QPoint)),
-                 this, SLOT(contextMenuRequested(QPoint)));
+    connect(this, &KFindTreeView::customContextMenuRequested, this, &KFindTreeView::contextMenuRequested);
            
     //Mouse single/double click settings
-    connect( KGlobalSettings::self(), SIGNAL(settingsChanged(int)), this, SLOT(reconfigureMouseSettings()) );
+    connect(KGlobalSettings::self(), &KGlobalSettings::settingsChanged, this, &KFindTreeView::reconfigureMouseSettings);
     reconfigureMouseSettings();
     
     // TODO: this is a workaround until  Qt-issue 176832 has been fixed (from Dolphin)
-    connect(this, SIGNAL(pressed(QModelIndex)), this, SLOT(updateMouseButtons()));
+    connect(this, &KFindTreeView::pressed, this, &KFindTreeView::updateMouseButtons);
                 
     //Generate popup menu actions
     m_actionCollection = new KActionCollection( this );
@@ -352,17 +351,16 @@ KFindTreeView::KFindTreeView( QWidget *parent,  KfindDlg * findDialog )
     m_actionCollection->addAction( "edit_copy", copy );
     
     QAction * openFolder = new KAction( KIcon("window-new"), i18n("&Open containing folder(s)"), this );
-    connect( openFolder, SIGNAL(triggered()), this, SLOT(openContainingFolder()) );
+    connect(openFolder, &QAction::triggered, this, &KFindTreeView::openContainingFolder);
     m_actionCollection->addAction( "openfolder", openFolder );
     
     QAction * del = new KAction( KIcon("edit-delete"), i18n("&Delete"), this );
-    connect( del, SIGNAL(triggered()), this, SLOT(deleteSelectedFiles()) );
-    del->setShortcut(Qt::SHIFT + Qt::Key_Delete);
-    m_actionCollection->addAction( "del", del );
+    connect(del, &QAction::triggered, this, &KFindTreeView::deleteSelectedFiles);
+    m_actionCollection->setDefaultShortcut(del, Qt::SHIFT + Qt::Key_Delete);
    
     QAction * trash = new KAction( KIcon("user-trash"), i18n("&Move to Trash"), this );
-    connect( trash, SIGNAL(triggered()), this, SLOT(moveToTrashSelectedFiles()) );
-    trash->setShortcut(Qt::Key_Delete);
+    connect(trash, &QAction::triggered, this, &KFindTreeView::moveToTrashSelectedFiles);
+    m_actionCollection->setDefaultShortcut(trash, Qt::Key_Delete);
     m_actionCollection->addAction( "trash", trash );
     
     header()->setStretchLastSection( true );
@@ -397,7 +395,7 @@ QString KFindTreeView::reducedDir(const QString& fullDir)
 
 void KFindTreeView::beginSearch(const KUrl& baseUrl)
 {
-    kDebug() << QString("beginSearch in: %1").arg(baseUrl.path());
+    //qDebug() << QString("beginSearch in: %1").arg(baseUrl.path());
     m_baseDir = baseUrl.path(KUrl::AddTrailingSlash);
     m_model->clear();
 }
@@ -659,9 +657,9 @@ void KFindTreeView::reconfigureMouseSettings()
     
     if ( KGlobalSettings::singleClick() ) 
     {
-        connect( this, SIGNAL(clicked(QModelIndex)), this, SLOT(slotExecute(QModelIndex)) );
+        connect(this, &KFindTreeView::clicked, this, &KFindTreeView::slotExecute);
     } else {
-        connect( this, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(slotExecute(QModelIndex)) );
+        connect(this, &KFindTreeView::doubleClicked, this, &KFindTreeView::slotExecute);
     }
 }
 

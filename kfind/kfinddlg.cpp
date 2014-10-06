@@ -26,7 +26,7 @@
 #include <kguiitem.h>
 #include <kstatusbar.h>
 #include <kmessagebox.h>
-#include <kdebug.h>
+#include <QDebug>
 #include <kaboutapplicationdialog.h>
 #include <kstandarddirs.h>
 #include <khelpmenu.h>
@@ -214,7 +214,7 @@ void KfindDlg::slotResult(int errorCode)
   }
   else
   {
-     kDebug()<<"KIO error code: "<<errorCode;
+     //qDebug()<<"KIO error code: "<<errorCode;
      setStatusMsg(i18n("Error."));
   };
 
@@ -260,7 +260,7 @@ void  KfindDlg::about ()
 
 void KfindDlg::slotDeleteItem(const QString& file)
 {
-  kDebug()<<QString("Will remove one item: %1").arg(file);
+  //qDebug()<<QString("Will remove one item: %1").arg(file);
   
   KUrl url;
   url.setPath( file );
@@ -273,7 +273,7 @@ void KfindDlg::slotDeleteItem(const QString& file)
 
 void KfindDlg::slotNewItems( const QString& file )
 {
-    kDebug()<<QString("Will add this item") << file;
+    //qDebug()<<QString("Will add this item") << file;
     
     if( file.indexOf(query->url().path(KUrl::AddTrailingSlash))==0 )
     {

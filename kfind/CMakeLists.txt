@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.12)
 project(Kfind)
 
 # ECM setup
-find_package(ECM 0.0.14 CONFIG REQUIRED)
+find_package(ECM 1.2.0 CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(ECMSetupVersion)
@@ -50,7 +50,7 @@ install(TARGETS kfind ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############
 
-install(PROGRAMS kfind.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
+install(PROGRAMS org.kde.kfind.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
 install(FILES kfind.appdata.xml DESTINATION ${SHARE_INSTALL_PREFIX}/appdata)
 
 add_subdirectory(icons)
