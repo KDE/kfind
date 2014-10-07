@@ -19,12 +19,16 @@
 #include <QDir>
 #include <QFile>
 
-#include <kapplication.h>
+
 #include <klocale.h>
-#include <kcmdlineargs.h>
-#include <k4aboutdata.h>
+
+
 #include <kurl.h>
 #include <KLocalizedString>
+#include <QApplication>
+#include <KAboutData>
+#include <QCommandLineParser>
+#include <QCommandLineOption>
 
 #include "kfinddlg.h"
 #include "kfind_version.h"
@@ -35,45 +39,49 @@ int main( int argc, char ** argv )
 {
     KLocalizedString::setApplicationDomain("kfind");
 
-  K4AboutData aboutData( "kfind", "kfindpart", ki18n("KFind"),
-      KFIND_VERSION_STRING, ki18n(description), K4AboutData::License_GPL,
-      ki18n("(c) 1998-2003, The KDE Developers"));
+  KAboutData aboutData( QLatin1String("kfind"), i18n("KFind"),
+      QLatin1String(KFIND_VERSION_STRING), i18n(description), KAboutLicense::GPL,
+      i18n("(c) 1998-2003, The KDE Developers"));
 
-  aboutData.addAuthor(ki18n("Eric Coquelle"), ki18n("Current Maintainer"), "coquelle@caramail.com");
-  aboutData.addAuthor(ki18n("Mark W. Webb"), ki18n("Developer"), "markwebb@adelphia.net");
-  aboutData.addAuthor(ki18n("Beppe Grimaldi"), ki18n("UI Design & more search options"), "grimalkin@ciaoweb.it");
-  aboutData.addAuthor(ki18n("Martin Hartig"));
-  aboutData.addAuthor(ki18n("Stephan Kulow"), KLocalizedString(), "coolo@kde.org");
-  aboutData.addAuthor(ki18n("Mario Weilguni"),KLocalizedString(), "mweilguni@sime.com");
-  aboutData.addAuthor(ki18n("Alex Zepeda"),KLocalizedString(), "zipzippy@sonic.net");
-  aboutData.addAuthor(ki18n("Miroslav Flídr"),KLocalizedString(), "flidr@kky.zcu.cz");
-  aboutData.addAuthor(ki18n("Harri Porten"),KLocalizedString(), "porten@kde.org");
-  aboutData.addAuthor(ki18n("Dima Rogozin"),KLocalizedString(), "dima@mercury.co.il");
-  aboutData.addAuthor(ki18n("Carsten Pfeiffer"),KLocalizedString(), "pfeiffer@kde.org");
-  aboutData.addAuthor(ki18n("Hans Petter Bieker"), KLocalizedString(), "bieker@kde.org");
-  aboutData.addAuthor(ki18n("Waldo Bastian"), ki18n("UI Design"), "bastian@kde.org");
-  aboutData.addAuthor(ki18n("Alexander Neundorf"), KLocalizedString(), "neundorf@kde.org");
-  aboutData.addAuthor(ki18n("Clarence Dang"), KLocalizedString(), "dang@kde.org");
+  aboutData.addAuthor(i18n("Eric Coquelle"), i18n("Current Maintainer"), "coquelle@caramail.com");
+  aboutData.addAuthor(i18n("Mark W. Webb"), i18n("Developer"), "markwebb@adelphia.net");
+  aboutData.addAuthor(i18n("Beppe Grimaldi"), i18n("UI Design & more search options"), "grimalkin@ciaoweb.it");
+  aboutData.addAuthor(i18n("Martin Hartig"));
+  aboutData.addAuthor(i18n("Stephan Kulow"), QString(), "coolo@kde.org");
+  aboutData.addAuthor(i18n("Mario Weilguni"),QString(), "mweilguni@sime.com");
+  aboutData.addAuthor(i18n("Alex Zepeda"),QString(), "zipzippy@sonic.net");
+  aboutData.addAuthor(i18n("Miroslav Flídr"),QString(), "flidr@kky.zcu.cz");
+  aboutData.addAuthor(i18n("Harri Porten"),QString(), "porten@kde.org");
+  aboutData.addAuthor(i18n("Dima Rogozin"),QString(), "dima@mercury.co.il");
+  aboutData.addAuthor(i18n("Carsten Pfeiffer"),QString(), "pfeiffer@kde.org");
+  aboutData.addAuthor(i18n("Hans Petter Bieker"), QString(), "bieker@kde.org");
+  aboutData.addAuthor(i18n("Waldo Bastian"), i18n("UI Design"), "bastian@kde.org");
+  aboutData.addAuthor(i18n("Alexander Neundorf"), QString(), "neundorf@kde.org");
+  aboutData.addAuthor(i18n("Clarence Dang"), QString(), "dang@kde.org");
 
-  KCmdLineArgs::init( argc, argv, &aboutData );
+    QApplication app(argc, argv);
+    QCommandLineParser parser;
+    KAboutData::setApplicationData(aboutData);
+    parser.addVersionOption();
+    parser.addHelpOption();
+    parser.addOption(QCommandLineOption(QStringList() <<  QLatin1String("+[searchpath]"), i18n("Path(s) to search")));
 
-  KCmdLineOptions options;
-  options.add("+[searchpath]", ki18n("Path(s) to search"));
-  KCmdLineArgs::addCmdLineOptions( options );
+    //PORTING SCRIPT: adapt aboutdata variable if necessary
+    aboutData.setupCommandLine(&parser);
+    parser.process(app);
+    aboutData.processCommandLine(&parser);
 
-  KApplication app;
-
-  KCmdLineArgs *args= KCmdLineArgs::parsedArgs();
 
   KUrl url;
-  if (args->count() > 0)
-    url = args->url(0);
+  if (parser.positionalArguments().count() > 0)
+    url = parser.positionalArguments().at(0);
   if (url.isEmpty())
     url = QDir::currentPath();
   if (url.isEmpty())
     url = QDir::homePath();
-  args->clear();
+  
 
   KfindDlg kfinddlg(url);
   return kfinddlg.exec();
 }
+

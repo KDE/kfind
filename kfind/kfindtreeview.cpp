@@ -350,15 +350,15 @@ KFindTreeView::KFindTreeView( QWidget *parent,  KfindDlg * findDialog )
     QAction * copy = KStandardAction::copy(this, SLOT(copySelection()), this);
     m_actionCollection->addAction( "edit_copy", copy );
     
-    QAction * openFolder = new KAction( KIcon("window-new"), i18n("&Open containing folder(s)"), this );
+    QAction * openFolder = new QAction( QIcon::fromTheme("window-new"), i18n("&Open containing folder(s)"), this );
     connect(openFolder, &QAction::triggered, this, &KFindTreeView::openContainingFolder);
     m_actionCollection->addAction( "openfolder", openFolder );
     
-    QAction * del = new KAction( KIcon("edit-delete"), i18n("&Delete"), this );
+    QAction * del = new QAction( QIcon::fromTheme("edit-delete"), i18n("&Delete"), this );
     connect(del, &QAction::triggered, this, &KFindTreeView::deleteSelectedFiles);
     m_actionCollection->setDefaultShortcut(del, Qt::SHIFT + Qt::Key_Delete);
    
-    QAction * trash = new KAction( KIcon("user-trash"), i18n("&Move to Trash"), this );
+    QAction * trash = new QAction( QIcon::fromTheme("user-trash"), i18n("&Move to Trash"), this );
     connect(trash, &QAction::triggered, this, &KFindTreeView::moveToTrashSelectedFiles);
     m_actionCollection->setDefaultShortcut(trash, Qt::Key_Delete);
     m_actionCollection->addAction( "trash", trash );

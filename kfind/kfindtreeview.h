@@ -26,7 +26,7 @@
 #include <QDragMoveEvent>
 
 #include <kurl.h>
-#include <kicon.h>
+#include <qicon.h>
 #include <QDebug>
 #include <kfileitem.h>
 #include <konq_popupmenu.h>

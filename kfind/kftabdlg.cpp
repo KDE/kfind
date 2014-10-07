@@ -187,7 +187,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     betweenType->setCurrentIndex(1);
     updateDateLabels(1, 1);
 
-    QDate dt = KGlobal::locale()->calendar()->addYears(QDate::currentDate(), -1);
+    QDate dt = KLocale::global()->calendar()->addYears(QDate::currentDate(), -1);
 
     fromDate = new KDateCombo(dt, pages[1] );
     fromDate->setObjectName( QLatin1String( "fromDate" ) );
@@ -441,7 +441,7 @@ KfindTabWidget::~KfindTabWidget()
 
 void KfindTabWidget::setURL( const KUrl & url )
 {
-  KConfigGroup conf(KGlobal::config(), "History");
+  KConfigGroup conf(KSharedConfig::openConfig(), "History");
   m_url = url;
   QStringList sl = conf.readPathEntry("Directories", QStringList());
   dirBox->clear(); // make sure there is no old Stuff in there
@@ -516,7 +516,7 @@ void KfindTabWidget::saveHistory()
 void KfindTabWidget::loadHistory()
 {
   // Load pattern history
-  KConfigGroup conf(KGlobal::config(), "History");
+  KConfigGroup conf(KSharedConfig::openConfig(), "History");
   QStringList sl = conf.readEntry("Patterns", QStringList());
   if(!sl.isEmpty())
     nameBox->addItems(sl);
@@ -581,7 +581,7 @@ void KfindTabWidget::slotSizeBoxChanged(int index)
 
 void KfindTabWidget::setDefaults()
 {
-    QDate dt = KGlobal::locale()->calendar()->addYears(QDate::currentDate(), -1);
+    QDate dt = KLocale::global()->calendar()->addYears(QDate::currentDate(), -1);
 
     fromDate ->setDate(dt);
     toDate ->setDate(QDate::currentDate());
@@ -789,11 +789,11 @@ void KfindTabWidget::setQuery(KQuery *query)
 }
 
 QString KfindTabWidget::date2String(const QDate & date) {
-  return(KGlobal::locale()->formatDate(date, KLocale::ShortDate));
+  return(KLocale::global()->formatDate(date, KLocale::ShortDate));
 }
 
 QDate &KfindTabWidget::string2Date(const QString & str, QDate *qd) {
-  return *qd = KGlobal::locale()->readDate(str);
+  return *qd = KLocale::global()->readDate(str);
 }
 
 void KfindTabWidget::getDirectory()
@@ -942,7 +942,7 @@ static void save_pattern(KComboBox *obj,
     }
   }
 
-  KConfigGroup conf(KGlobal::config(), group);
+  KConfigGroup conf(KSharedConfig::openConfig(), group);
   conf.writePathEntry(entry, sl);
 }
 

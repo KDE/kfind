@@ -21,14 +21,12 @@
 #include <QLayout>
 #include <QPushButton>
 
-#include <klocale.h>
-#include <kglobal.h>
+#include <KLocalizedString>
 #include <kguiitem.h>
 #include <kstatusbar.h>
 #include <kmessagebox.h>
 #include <QDebug>
 #include <kaboutapplicationdialog.h>
-#include <kstandarddirs.h>
 #include <khelpmenu.h>
 #include <kmenu.h>
 #include <kcomponentdata.h>
