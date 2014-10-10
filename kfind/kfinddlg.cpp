@@ -28,7 +28,7 @@
 #include <QDebug>
 #include <kaboutapplicationdialog.h>
 #include <khelpmenu.h>
-#include <kmenu.h>
+#include <qmenu.h>
 #include <kcomponentdata.h>
 
 #include "kftabdlg.h"
