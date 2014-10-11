@@ -20,15 +20,13 @@
 #include <QFile>
 
 
-#include <klocale.h>
-
-
 #include <kurl.h>
 #include <KLocalizedString>
 #include <QApplication>
 #include <KAboutData>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
+#include <Kdelibs4ConfigMigrator>
 
 #include "kfinddlg.h"
 #include "kfind_version.h"
@@ -37,6 +35,10 @@ static const char description[] = I18N_NOOP("KDE file find utility");
 
 int main( int argc, char ** argv )
 {
+    Kdelibs4ConfigMigrator migrate(QStringLiteral("kfind"));
+    migrate.setConfigFiles(QStringList() << QStringLiteral("kfindrc"));
+    migrate.migrate();
+
     KLocalizedString::setApplicationDomain("kfind");
 
   KAboutData aboutData( QLatin1String("kfind"), i18n("KFind"),
