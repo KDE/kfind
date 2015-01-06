@@ -45,7 +45,6 @@
 #include <kio/deletejob.h>
 #include <kio/jobuidelegate.h>
 
-#include <konq_operations.h>
 #include <knewfilemenu.h>
 
 // Permission strings
