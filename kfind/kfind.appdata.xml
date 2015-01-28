@@ -6,11 +6,15 @@
   <name>KFind</name>
   <name xml:lang="ca">KFind</name>
   <name xml:lang="cs">KFind</name>
+  <name xml:lang="da">KFind</name>
   <name xml:lang="de">KFind</name>
+  <name xml:lang="el">KFind</name>
   <name xml:lang="en-GB">KFind</name>
   <name xml:lang="es">KFind</name>
   <name xml:lang="fi">KFind</name>
+  <name xml:lang="fr">KFind</name>
   <name xml:lang="ia">KFind</name>
+  <name xml:lang="it">KFind</name>
   <name xml:lang="ko">KFind</name>
   <name xml:lang="nb">KFind</name>
   <name xml:lang="nds">KFind</name>
@@ -19,22 +23,28 @@
   <name xml:lang="pt">KFind</name>
   <name xml:lang="pt-BR">KFind</name>
   <name xml:lang="sk">KFind</name>
+  <name xml:lang="sl">KFind</name>
   <name xml:lang="sr">К‑налазач</name>
   <name xml:lang="sr-Latn">K‑nalazač</name>
   <name xml:lang="sr-ijekavian">К‑налазач</name>
   <name xml:lang="sr-ijekavianlatin">K‑nalazač</name>
   <name xml:lang="sv">Kfind</name>
+  <name xml:lang="tr">KFind</name>
   <name xml:lang="uk">KFind</name>
   <name xml:lang="x-test">xxKFindxx</name>
   <name xml:lang="zh-TW">KFind</name>
   <summary>Find Files/Folders</summary>
   <summary xml:lang="ca">Cerca de fitxers/carpetes</summary>
   <summary xml:lang="cs">Najít soubory/složky</summary>
+  <summary xml:lang="da">Find filer/mapper</summary>
   <summary xml:lang="de">Dateien/Ordner suchen</summary>
+  <summary xml:lang="el">Αναζητήστε αρχεία/φακέλους</summary>
   <summary xml:lang="en-GB">Find Files/Folders</summary>
   <summary xml:lang="es">Buscar archivos o carpetas</summary>
   <summary xml:lang="fi">Etsi tiedostoja tai kansioita</summary>
+  <summary xml:lang="fr">Recherche des fichiers ou des dossiers</summary>
   <summary xml:lang="ia">Cerca Files/Dossieres</summary>
+  <summary xml:lang="it">Trova file/cartelle</summary>
   <summary xml:lang="ko">파일/폴더 찾기</summary>
   <summary xml:lang="nb">Finn filer/mapper</summary>
   <summary xml:lang="nds">Dateien/Ornern söken</summary>
@@ -43,11 +53,13 @@
   <summary xml:lang="pt">Procurar nos Ficheiros/Pastas</summary>
   <summary xml:lang="pt-BR">Procurar arquivos/pastas</summary>
   <summary xml:lang="sk">Nájsť súbory/priečinky</summary>
+  <summary xml:lang="sl">Najdi datoteke in mape</summary>
   <summary xml:lang="sr">Тражење фајлова и фасцикли</summary>
   <summary xml:lang="sr-Latn">Traženje fajlova i fascikli</summary>
   <summary xml:lang="sr-ijekavian">Тражење фајлова и фасцикли</summary>
   <summary xml:lang="sr-ijekavianlatin">Traženje fajlova i fascikli</summary>
   <summary xml:lang="sv">Sök efter filer och kataloger</summary>
+  <summary xml:lang="tr">Dosya/Dizin Bul</summary>
   <summary xml:lang="uk">Програма для пошуку файлів і тек</summary>
   <summary xml:lang="x-test">xxFind Files/Foldersxx</summary>
   <summary xml:lang="zh-TW">尋找檔案/資料夾</summary>
@@ -57,10 +69,15 @@
       as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.
     </p>
     <p xml:lang="ca">El KFind es pot usar com una eina de cerca independent, llançar-la des del KRunner o des del menú. També està integrada al Konqueror com a «Cerca fitxers» al menú «Eines». Permet cercar fitxers per nom, tipus o contingut.</p>
+    <p xml:lang="da">KFind kan bruges som et selvstændigt søgeværktøj, som kan startes fra KRunner eller fra startmenuen. Det er også integreret i Konqueror som "Find fil" i menuen "Værktøjer". Det lader dig altid finde dine filer via navn, type eller indhold.</p>
     <p xml:lang="de">KFind kann als eigenständiges Suchprogramm benutzt und durch KRunner oder aus dem Menü gestartet werden. Es ist auch in Konqueror als Aktion „Dateien suchen“ im Menü „Extras“ integriert. Es ermöglicht die Dateisuche nach Namen, Art oder Inhalt.</p>
+    <p xml:lang="el">Το KFind χρησιμεύει ως ένα ανεξάρτητο εργαλείο αναζήτησης, το οποίο εκτελείται από το KRunner ή από το μενού σας. Επίσης είναι ενσωματωμένο στο Konqueror ως"Αναζήτηση αρχείου" στο μενού "Εργαλεία". Σας επιτρέπει να αναζητείτε αρχεία με όνομα, είδος ή περιεχόμενο.</p>
     <p xml:lang="en-GB">KFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.</p>
     <p xml:lang="es">KFind se puede utilizar como herramienta de búsqueda independiente, lanzada por KRunner o desde el menú. También está integrada en Konqueror como «Buscar archivo» en el menú «Herramientas». Permite buscar archivos por nombre, tipo o contenido.</p>
     <p xml:lang="fi">KFindia voi käyttää itsenäisenä hakuohjelmana KRunnerista tai valikosta käynnistettäessä, mutta se on myös integroitu Konqueroriin Työkalut-valikon ”Etsi tiedosto” -toimintona. Voit etsiä tiedostoja nimen, tyypin tai sisällön mukaan.</p>
+    <p xml:lang="fr">KFind peut être utilisé comme outil de recherche autonome, lancé depuis KRunner ou depuis le menu. Il s'intègre également dans Konqueror, comme option « Chercher un fichier » dans le menu « Outils ». Il vous permet de rechercher les fichiers selon leur nom, leur type ou leur contenu.</p>
+    <p xml:lang="ia">KFind pote esser usate como singule instrumento de cerca, lanceate per KRunner o ab tu menu. Anque il pote esser integrate in Konqueror como "Cerca file" in le menu de "Instrumentos". Il permitte te trovar files per nomine, typo o contento.</p>
+    <p xml:lang="it">KFind può essere utilizzato come uno strumento autonomo di ricerca, avviato da KRunner o dal proprio menu. È integrato anche in Konqueror come «Trova file» nel menu «Strumenti». Consente di trovare i file per nome, tipo o contenuto.</p>
     <p xml:lang="ko">KFind는 KRunner나 메뉴에서 단독 실행 가능한 검색 도구로 사용될 수 있습니다. Konqueror의 "도구" 메뉴에서 "파일 찾기" 명령을 통하여 실행할 수도 있습니다. 파일을 이름, 형식 및 내용으로 검색할 수 있습니다.</p>
     <p xml:lang="nb">KFind kan brukes som et selvstendig søkeverktøy, startet fra KRunner eller fra menyen. Det er også innebygget i Konqueror som «Finn fil» i  «Verktøy»-menyen. Den kan finne filer etter navn, type eller innhold.</p>
     <p xml:lang="nds">KFind lett sik för sik as Söökwarktüüch bruken un vun KRunner oder över't Menü opropen. Dat arbeidt ok binnen Konqueror, binnen dat Warktüüch-Menü is dat de Punkt „Datei söken“. Du kannst dor mit na Dateinaams, -typ un -inholt söken.</p>
@@ -69,11 +86,13 @@
     <p xml:lang="pt">O KFind pode ser usado como uma ferramenta de pesquisa independente, invocado pelo KRunner ou a partir do seu menu. Também está integrado no Konqueror e no Dolphin como "Procurar no Ficheiro" do menu "Ferramentas". Permite-lhe procurar ficheiros pelo seu nome, tipo ou conteúdo.</p>
     <p xml:lang="pt-BR">O KFind pode ser usado como uma ferramenta de pesquisa independente, que pode ser executado a partir do KRunner ou do menu. Ele também é integrado ao Konqueror como "Localizar arquivo" no menu "Ferramentas". Permite-lhe localizar arquivos pelo nome, tipo ou conteúdo.</p>
     <p xml:lang="sk">KFind sa môže použiť ako samostatný vyhľadávací nástroj, spustený cez KRunner alebo z vášho menu. Je tiež integrovaný v Konquerore ako "Nájsť súbor" v ponuke "Nástroje". Umožní vám nájsť súbor podľa názvu, typu alebo obsahu.</p>
+    <p xml:lang="sl">KFind lahko uporabite kot samostojen iskalnik, tako da ga zaženete s pomočjo KRunner-ja ali iz vašega menija. Vgrajen je tudi v Konqueror-jev meni »Orodja« kot »Najdi datoteko«. Datoteke lahko iščete po imenu, vrsti ali vsebini.</p>
     <p xml:lang="sr">К‑налазач може да се користи као самостална алатка за претрагу, кад се покрене преко К‑извођача или менија. Такође је уклопљена у К‑освајач, под ставком „Нађи фајл...“ менија „Алатке“. Омогућава тражење фајлова по имену, типу и садржају.</p>
     <p xml:lang="sr-Latn">K‑nalazač može da se koristi kao samostalna alatka za pretragu, kad se pokrene preko K‑izvođača ili menija. Takođe je uklopljena u K‑osvajač, pod stavkom „Nađi fajl...“ menija „Alatke“. Omogućava traženje fajlova po imenu, tipu i sadržaju.</p>
     <p xml:lang="sr-ijekavian">К‑налазач може да се користи као самостална алатка за претрагу, кад се покрене преко К‑извођача или менија. Такође је уклопљена у К‑освајач, под ставком „Нађи фајл...“ менија „Алатке“. Омогућава тражење фајлова по имену, типу и садржају.</p>
     <p xml:lang="sr-ijekavianlatin">K‑nalazač može da se koristi kao samostalna alatka za pretragu, kad se pokrene preko K‑izvođača ili menija. Takođe je uklopljena u K‑osvajač, pod stavkom „Nađi fajl...“ menija „Alatke“. Omogućava traženje fajlova po imenu, tipu i sadržaju.</p>
     <p xml:lang="sv">Kfind kan användas som ett fristående sökverktyg, startat via Kör program eller från menyn. Det är också integrerat i Konqueror som "Sök fil" i menyn "Verktyg". Det låter dig söka efter filer enligt namn, typ eller innehåll.</p>
+    <p xml:lang="tr">KFind, KRunner tarafından çalıştırılan bağımsız bir arama aracı olarak kullanılabildiği gibi menüden de çalıştırılabilir. Konqueror'ın "Dosya Bul" ve "Araçlar" menüleriyle de tümleşik haldedir. Dosyaları isimleriyle, türleriyle veya içerikleriyle bulmanıza imkan verir.</p>
     <p xml:lang="uk">KFind можна скористатися як окремою програмою для пошуку даних, запустивши її за допомогою KRunner або меню. Крім того, програму вбудовано до Konqueror. Нею можна скористатися за допомогою пункту «Знайти файл» у меню «Інструменти». Передбачено пошук файлів за назвою, типом і вмістом.</p>
     <p xml:lang="x-test">xxKFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.xx</p>
     <p xml:lang="zh-TW">KFind 可以做成獨立的搜尋工具，從 KRunner 或是您的選單中開啟。它也可以整合到 Konqueror「工具」選單中的「尋找檔案」。它可以讓您依檔名、檔案型態或內容來搜尋。</p>
