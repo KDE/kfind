@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.12)
 project(Kfind)
 
 # ECM setup
-find_package(ECM 1.2.0 CONFIG REQUIRED)
+find_package(ECM 1.7.0 CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(ECMSetupVersion)
@@ -12,7 +12,7 @@ include(FeatureSummary)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings)
-
+include(ECMAddAppIcon)
 set(KFIND_VERSION "2.0.0")
 
 ecm_setup_version(${KFIND_VERSION} VARIABLE_PREFIX KFIND
@@ -35,8 +35,8 @@ set(kfind_SRCS main.cpp
                kdatecombo.cpp
                kfindtreeview.cpp)
 
-# FIXME
-# kde4_add_app_icon(kfind_SRCS "icons/*-app-kfind.png")
+file(GLOB ICONS_SRCS "icons/*-apps-kfind.png")
+ecm_add_app_icon(kfind_SRCS ICONS ${ICONS_SRCS})
 
 add_executable(kfind ${kfind_SRCS})
 
