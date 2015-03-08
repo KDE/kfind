@@ -50,8 +50,8 @@ install(TARGETS kfind ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############
 
-install(PROGRAMS org.kde.kfind.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
-install(FILES kfind.appdata.xml DESTINATION ${SHARE_INSTALL_PREFIX}/appdata)
+install(PROGRAMS org.kde.kfind.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(FILES kfind.appdata.xml DESTINATION ${KDE_INSTALL_DATAROOTDIR}/appdata)
 
 add_subdirectory(icons)
 add_subdirectory(docs)
