@@ -146,7 +146,7 @@ QVariant KFindItemModel::data ( const QModelIndex & index, int role ) const
     return QVariant();
 }
 
-void KFindItemModel::removeItem( const KUrl & url )
+void KFindItemModel::removeItem( const QUrl & url )
 {
     int itemCount = m_itemList.size();
     for ( int i = 0; i < itemCount; i++)
@@ -162,7 +162,7 @@ void KFindItemModel::removeItem( const KUrl & url )
     }
 }
 
-bool KFindItemModel::isInserted( const KUrl & url )
+bool KFindItemModel::isInserted( const QUrl & url )
 {
     int itemCount = m_itemList.size();
     for ( int i = 0; i < itemCount; i++)
@@ -193,7 +193,7 @@ Qt::ItemFlags KFindItemModel::flags(const QModelIndex &index) const
  
 QMimeData * KFindItemModel::mimeData(const QModelIndexList &indexes) const
 {
-    KUrl::List uris;
+    QList<QUrl> uris;
     
     foreach ( const QModelIndex & index, indexes )
     {
@@ -210,7 +210,7 @@ QMimeData * KFindItemModel::mimeData(const QModelIndexList &indexes) const
         return 0;
 
     QMimeData * mimeData = new QMimeData();
-    uris.populateMimeData( mimeData );
+    mimeData->setUrls(uris);
     
     return mimeData;
 }
@@ -409,9 +409,9 @@ void KFindTreeView::insertItems (const QList< QPair<KFileItem,QString> > & pairs
     m_model->insertFileItems( pairs );
 }
 
-void KFindTreeView::removeItem(const KUrl & url)
+void KFindTreeView::removeItem(const QUrl & url)
 {
-    KUrl::List list = selectedUrls();
+    QList<QUrl> list = selectedUrls();
     if ( list.contains(url) )
     {
         //Close menu
@@ -446,7 +446,7 @@ void KFindTreeView::saveResults()
     
     dlg->exec();
 
-    KUrl u = dlg->selectedUrl();
+    QUrl u = dlg->selectedUrl();
     
     QString filter = dlg->currentFilter();
     delete dlg;
@@ -505,19 +505,18 @@ void KFindTreeView::saveResults()
 
 void KFindTreeView::openContainingFolder()
 {
-    KUrl::List uris = selectedUrls();
-    QMap<KUrl, int> folderMaps;
+    QList<QUrl> uris = selectedUrls();
+    QMap<QUrl, int> folderMaps;
     
     //Generate *unique* folders
-    Q_FOREACH( const KUrl & url, uris )
+    Q_FOREACH( const QUrl & url, uris )
     {
-        KUrl dir = url;
-        dir.setFileName( QString() );
+        QUrl dir = url.adjusted(QUrl::RemoveFilename);
         folderMaps.insert( dir, 0 );
     }
 
     //TODO if >1 add a warn ?
-    Q_FOREACH( const KUrl & url, folderMaps.keys() )
+    Q_FOREACH( const QUrl & url, folderMaps.keys() )
     {
         (void) new KRun(url, this);
     }
@@ -594,14 +593,14 @@ void KFindTreeView::contextMenuRequested( const QPoint & p)
         delete m_contextMenu;
         m_contextMenu = 0;
     }
-    m_contextMenu = new KonqPopupMenu( fileList, KUrl(), *m_actionCollection, new KNewFileMenu( m_actionCollection, "new_menu", this), 0, flags, this, 0, actionGroups);
+    m_contextMenu = new KonqPopupMenu( fileList, QUrl(), *m_actionCollection, new KNewFileMenu( m_actionCollection, "new_menu", this), 0, flags, this, 0, actionGroups);
 
     m_contextMenu->exec( this->mapToGlobal( p ) );
 }
 
-KUrl::List KFindTreeView::selectedUrls()
+QList<QUrl> KFindTreeView::selectedUrls()
 {
-    KUrl::List uris;
+    QList<QUrl> uris;
     
     QModelIndexList indexes = m_proxyModel->mapSelectionToSource( selectionModel()->selection() ).indexes();
     Q_FOREACH( const QModelIndex & index, indexes )
@@ -619,7 +618,7 @@ KUrl::List KFindTreeView::selectedUrls()
 
 void KFindTreeView::deleteSelectedFiles()
 {
-    KUrl::List uris = selectedUrls();
+    QList<QUrl> uris = selectedUrls();
     if ( uris.isEmpty() ) {
         return;
     }
@@ -635,7 +634,7 @@ void KFindTreeView::deleteSelectedFiles()
 
 void KFindTreeView::moveToTrashSelectedFiles()
 {
-    KUrl::List uris = selectedUrls();
+    QList<QUrl> uris = selectedUrls();
     if ( uris.isEmpty() ) {
         return;
     }

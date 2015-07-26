@@ -20,16 +20,16 @@
 #ifndef KFINDTREEVIEW__H
 #define KFINDTREEVIEW__H
 
-#include <QTreeView>
-#include <QAbstractTableModel>
-#include <QSortFilterProxyModel>
-#include <QDragMoveEvent>
-
 #include <kurl.h>
-#include <qicon.h>
-#include <QDebug>
 #include <kfileitem.h>
 #include <konq_popupmenu.h>
+
+#include <QAbstractTableModel>
+#include <QDragMoveEvent>
+#include <QIcon>
+#include <QSortFilterProxyModel>
+#include <QTreeView>
+#include <QUrl>
 
 class KFindTreeView;
 class KActionCollection;
@@ -60,8 +60,8 @@ class KFindItemModel: public QAbstractTableModel
 
         void insertFileItems( const QList< QPair<KFileItem,QString> > &);
 
-        void removeItem(const KUrl &);
-        bool isInserted(const KUrl &);
+        void removeItem(const QUrl &);
+        bool isInserted(const QUrl &);
         
         void clear();
         
@@ -108,21 +108,20 @@ class KFindTreeView: public QTreeView
         void endSearch();
 
         void insertItems(const QList< QPair<KFileItem,QString> > &);
-        void removeItem(const KUrl & url);
+        void removeItem(const QUrl & url);
         
-        bool isInserted(const KUrl & url) { return m_model->isInserted( url ); }
+        bool isInserted(const QUrl & url) { return m_model->isInserted( url ); }
         
         QString reducedDir(const QString& fullDir);
         
         int itemCount() { return m_model->rowCount(); }
-        
+        QList<QUrl> selectedUrls();
+
     public Q_SLOTS:
         void copySelection();
         void contextMenuRequested( const QPoint & p );
 
     private Q_SLOTS:
-        KUrl::List selectedUrls();
-        
         void deleteSelectedFiles();
         void moveToTrashSelectedFiles();
         

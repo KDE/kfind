@@ -35,7 +35,7 @@
 #include "kquery.h"
 #include "kfindtreeview.h"
 
-KfindDlg::KfindDlg(const KUrl & url, QWidget *parent)
+KfindDlg::KfindDlg(const QUrl & url, QWidget *parent)
   : KDialog( parent )
 {
   setButtons( User1 | User2 | User3 | Close | Help );
@@ -260,10 +260,7 @@ void KfindDlg::slotDeleteItem(const QString& file)
 {
   //qDebug()<<QString("Will remove one item: %1").arg(file);
   
-  KUrl url;
-  url.setPath( file );
-  
-  win->removeItem( url );
+  win->removeItem( QUrl::fromLocalFile(file) );
   
   QString str = i18np("one file found", "%1 files found", win->itemCount());
   setProgressMsg( str );
@@ -275,9 +272,7 @@ void KfindDlg::slotNewItems( const QString& file )
     
     if( file.indexOf(query->url().path(KUrl::AddTrailingSlash))==0 )
     {
-        KUrl url;
-        url.setPath ( file );
-        if ( !win->isInserted( url ) )
+        if ( !win->isInserted( QUrl::fromLocalFile(file) ) )
             query->slotListEntries( QStringList() << file );
     }
 }
