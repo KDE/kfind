@@ -51,30 +51,30 @@ KQuery::KQuery(QObject *parent)
   // Files with these mime types can be ignored, even if
   // findFormatByFileContent() in some cases may claim that
   // these are text files:
-  ignore_mimetypes.append("application/pdf");
-  ignore_mimetypes.append("application/postscript");
+  ignore_mimetypes.append(QLatin1String("application/pdf"));
+  ignore_mimetypes.append(QLatin1String("application/postscript"));
 
   // PLEASE update the documentation when you add another
   // file type here:
-  ooo_mimetypes.append("application/vnd.sun.xml.writer");
-  ooo_mimetypes.append("application/vnd.sun.xml.calc");
-  ooo_mimetypes.append("application/vnd.sun.xml.impress");
+  ooo_mimetypes.append(QLatin1String("application/vnd.sun.xml.writer"));
+  ooo_mimetypes.append(QLatin1String("application/vnd.sun.xml.calc"));
+  ooo_mimetypes.append(QLatin1String("application/vnd.sun.xml.impress"));
   // OASIS mimetypes, used by OOo-2.x and KOffice >= 1.4
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.chart");
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.graphics");
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.graphics-template");
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.formula");
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.image");
-  ooo_mimetypes.append("application/vnd.oasis.opendocument.presentation-template");
-  ooo_mimetypes.append("application/vnd.oasis.opendocument.presentation");
-  ooo_mimetypes.append("application/vnd.oasis.opendocument.spreadsheet-template");
-  ooo_mimetypes.append("application/vnd.oasis.opendocument.spreadsheet");
-  ooo_mimetypes.append("application/vnd.oasis.opendocument.text-template");
-  ooo_mimetypes.append("application/vnd.oasis.opendocument.text");
+  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.presentation-template"));
+  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.presentation"));
+  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.spreadsheet-template"));
+  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.spreadsheet"));
+  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.text-template"));
+  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.text"));
   // KOffice-1.3 mimetypes
-  koffice_mimetypes.append("application/x-kword");
-  koffice_mimetypes.append("application/x-kspread");
-  koffice_mimetypes.append("application/x-kpresenter");
+  koffice_mimetypes.append(QLatin1String("application/x-kword"));
+  koffice_mimetypes.append(QLatin1String("application/x-kspread"));
+  koffice_mimetypes.append(QLatin1String("application/x-kpresenter"));
 }
 
 KQuery::~KQuery()
@@ -109,7 +109,7 @@ void KQuery::start()
     m_url.cleanPath();
 
     processLocate->clearProgram();
-    processLocate->setProgram( "locate", QStringList() <<  m_url.path( KUrl::AddTrailingSlash ) );
+    processLocate->setProgram( QLatin1String("locate"), QStringList() <<  m_url.toLocalFile() );
 
     processLocate->setOutputChannelMode(KProcess::SeparateChannels);
     processLocate->start();
@@ -210,7 +210,7 @@ void KQuery::slotListEntries( QStringList list )
 
   m_foundFilesList.clear();
   for (; it != end; ++it)
-    processQuery( KFileItem( KFileItem::Unknown, KFileItem::Unknown, KUrl(*it)) );
+    processQuery( KFileItem( KFileItem::Unknown, KFileItem::Unknown, QUrl::fromLocalFile(*it)) );
 
   if( m_foundFilesList.size() > 0 )
     emit foundFileList( m_foundFilesList );
@@ -220,7 +220,7 @@ void KQuery::slotListEntries( QStringList list )
 /* Check if file meets the find's requirements*/
 void KQuery::processQuery( const KFileItem &file)
 {
-  if ( file.name() == "." || file.name() == ".." )
+  if ( file.name() == QLatin1String(".") || file.name() == QLatin1String("..") )
     return;
     
   if ( !m_showHiddenFiles && file.isHidden() )
@@ -316,7 +316,7 @@ void KQuery::processQuery( const KFileItem &file)
       bool foundmeta=false;
       QString filename = file.url().path();
 
-      if(filename.startsWith( QString("/dev/") ))
+      if(filename.startsWith( QLatin1String("/dev/") ))
         return;
 
       KFileMetaInfo metadatas(filename);
@@ -376,9 +376,9 @@ void KQuery::processQuery( const KFileItem &file)
         const KArchiveDirectory *zipfileContent = zipfile.directory();
 
         if( koffice_mimetypes.indexOf(file.mimetype()) != -1 )
-          zipfileEntry = (KZipFileEntry*)zipfileContent->entry("maindoc.xml");
+          zipfileEntry = (KZipFileEntry*)zipfileContent->entry(QLatin1String("maindoc.xml"));
         else
-          zipfileEntry = (KZipFileEntry*)zipfileContent->entry("content.xml"); //for OpenOffice.org
+          zipfileEntry = (KZipFileEntry*)zipfileContent->entry(QLatin1String("content.xml")); //for OpenOffice.org
 
         if(!zipfileEntry) {
           qWarning() << "Expected XML file not found in ZIP archive " << file.url() ;
@@ -386,7 +386,7 @@ void KQuery::processQuery( const KFileItem &file)
         }
 
         zippedXmlFileContent = zipfileEntry->data();
-        xmlTags.setPattern("<.*>");
+        xmlTags.setPattern(QLatin1String("<.*>"));
         xmlTags.setMinimal(true);
         stream = new QTextStream(zippedXmlFileContent, QIODevice::ReadOnly);
         stream->setCodec("UTF-8");
@@ -395,8 +395,8 @@ void KQuery::processQuery( const KFileItem &file)
         qWarning() << "Cannot open supposed ZIP file " << file.url() ;
       }
       
-    } else if( !m_search_binary && !file.mimetype().startsWith( QString("text/") ) &&
-        file.url().isLocalFile() && !file.url().path().startsWith( QString("/dev") ) ) {
+    } else if( !m_search_binary && !file.mimetype().startsWith( QLatin1String("text/") ) &&
+        file.url().isLocalFile() && !file.url().path().startsWith( QLatin1String("/dev") ) ) {
       if ( KMimeType::isBinaryData(file.url().path()) ) {
         //qDebug() << "ignoring, not a text file: " << file.url();
         return;
@@ -406,7 +406,7 @@ void KQuery::processQuery( const KFileItem &file)
     if(!isZippedOfficeDocument) //any other file or non-compressed KWord
     {
       filename = file.url().path();
-      if(filename.startsWith(QString("/dev/")))
+      if(filename.startsWith(QLatin1String("/dev/")))
         return;
       qf.setFileName(filename);
       qf.open(QIODevice::ReadOnly);
@@ -429,7 +429,7 @@ void KQuery::processQuery( const KFileItem &file)
       {
         if (m_regexp.indexIn(str)>=0)
         {
-          matchingLine=QString::number(matchingLineNumber)+": "+str;
+          matchingLine=QString::number(matchingLineNumber)+QStringLiteral(": ")+str;
           found = true;
           break;
         }
@@ -438,7 +438,7 @@ void KQuery::processQuery( const KFileItem &file)
       {
         if (str.indexOf(m_context, 0, m_casesensitive?Qt::CaseSensitive:Qt::CaseInsensitive) != -1)
         {
-          matchingLine=QString::number(matchingLineNumber)+": "+str;
+          matchingLine=QString::number(matchingLineNumber)+QStringLiteral(": ")+str;
           found = true;
           break;
         }
@@ -516,7 +516,7 @@ void KQuery::setGroupname(const QString &groupname)
 void KQuery::setRegExp(const QString &regexp, bool caseSensitive)
 {
   QRegExp *regExp;
-  QRegExp sep(";");
+  QRegExp sep(QStringLiteral(";"));
   const QStringList strList=regexp.split( sep, QString::SkipEmptyParts);
   //  QRegExp globChars ("[\\*\\?\\[\\]]", TRUE, FALSE);
   while (!m_regexps.isEmpty())
@@ -568,7 +568,7 @@ void KQuery::slotendProcessLocate(int code, QProcess::ExitStatus)
     {
       QString str = QString::fromLocal8Bit(bufferLocate);
       bufferLocate.clear();
-      slotListEntries(str.split('\n', QString::SkipEmptyParts));
+      slotListEntries(str.split(QLatin1Char('\n'), QString::SkipEmptyParts));
     }
   }
   emit result(0);

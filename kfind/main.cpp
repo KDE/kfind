@@ -45,21 +45,21 @@ int main( int argc, char ** argv )
       QLatin1String(KFIND_VERSION_STRING), i18n(description), KAboutLicense::GPL,
       i18n("(c) 1998-2003, The KDE Developers"));
 
-  aboutData.addAuthor(i18n("Eric Coquelle"), i18n("Current Maintainer"), "coquelle@caramail.com");
-  aboutData.addAuthor(i18n("Mark W. Webb"), i18n("Developer"), "markwebb@adelphia.net");
-  aboutData.addAuthor(i18n("Beppe Grimaldi"), i18n("UI Design & more search options"), "grimalkin@ciaoweb.it");
+  aboutData.addAuthor(i18n("Eric Coquelle"), i18n("Current Maintainer"), QLatin1String("coquelle@caramail.com"));
+  aboutData.addAuthor(i18n("Mark W. Webb"), i18n("Developer"), QLatin1String("markwebb@adelphia.net"));
+  aboutData.addAuthor(i18n("Beppe Grimaldi"), i18n("UI Design & more search options"), QLatin1String("grimalkin@ciaoweb.it"));
   aboutData.addAuthor(i18n("Martin Hartig"));
-  aboutData.addAuthor(i18n("Stephan Kulow"), QString(), "coolo@kde.org");
-  aboutData.addAuthor(i18n("Mario Weilguni"),QString(), "mweilguni@sime.com");
-  aboutData.addAuthor(i18n("Alex Zepeda"),QString(), "zipzippy@sonic.net");
-  aboutData.addAuthor(i18n("Miroslav Flídr"),QString(), "flidr@kky.zcu.cz");
-  aboutData.addAuthor(i18n("Harri Porten"),QString(), "porten@kde.org");
-  aboutData.addAuthor(i18n("Dima Rogozin"),QString(), "dima@mercury.co.il");
-  aboutData.addAuthor(i18n("Carsten Pfeiffer"),QString(), "pfeiffer@kde.org");
-  aboutData.addAuthor(i18n("Hans Petter Bieker"), QString(), "bieker@kde.org");
-  aboutData.addAuthor(i18n("Waldo Bastian"), i18n("UI Design"), "bastian@kde.org");
-  aboutData.addAuthor(i18n("Alexander Neundorf"), QString(), "neundorf@kde.org");
-  aboutData.addAuthor(i18n("Clarence Dang"), QString(), "dang@kde.org");
+  aboutData.addAuthor(i18n("Stephan Kulow"), QString(), QLatin1String("coolo@kde.org"));
+  aboutData.addAuthor(i18n("Mario Weilguni"),QString(), QLatin1String("mweilguni@sime.com"));
+  aboutData.addAuthor(i18n("Alex Zepeda"),QString(), QLatin1String("zipzippy@sonic.net"));
+  aboutData.addAuthor(i18n("Miroslav Flídr"),QString(), QLatin1String("flidr@kky.zcu.cz"));
+  aboutData.addAuthor(i18n("Harri Porten"),QString(), QLatin1String("porten@kde.org"));
+  aboutData.addAuthor(i18n("Dima Rogozin"),QString(), QLatin1String("dima@mercury.co.il"));
+  aboutData.addAuthor(i18n("Carsten Pfeiffer"),QString(), QLatin1String("pfeiffer@kde.org"));
+  aboutData.addAuthor(i18n("Hans Petter Bieker"), QString(), QLatin1String("bieker@kde.org"));
+  aboutData.addAuthor(i18n("Waldo Bastian"), i18n("UI Design"), QLatin1String("bastian@kde.org"));
+  aboutData.addAuthor(i18n("Alexander Neundorf"), QString(), QLatin1String("neundorf@kde.org"));
+  aboutData.addAuthor(i18n("Clarence Dang"), QString(), QLatin1String("dang@kde.org"));
 
     QApplication app(argc, argv);
 

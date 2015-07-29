@@ -67,7 +67,7 @@ KfindDlg::KfindDlg(const QUrl & url, QWidget *parent)
   win = new KFindTreeView(frame, this);
 
   mStatusBar = new KStatusBar(frame);
-  mStatusBar->insertItem("AMiddleLengthText...", 0);
+  mStatusBar->insertItem(QLatin1String("AMiddleLengthText..."), 0);
   setStatusMsg( i18nc("the application is currently idle, there is no active search", "Idle.") );
   mStatusBar->setItemAlignment(0, Qt::AlignLeft | Qt::AlignVCenter);
   mStatusBar->insertPermanentItem(QString(), 1, 1);
@@ -287,9 +287,9 @@ QStringList KfindDlg::getAllSubdirs(QDir d)
 
   for(QStringList::const_iterator it = dirs.constBegin(); it != dirs.constEnd(); ++it)
   {
-    if((*it==".")||(*it==".."))
+    if((*it==QLatin1String(".")) || (*it==QLatin1String("..")))
       continue;
-    subdirs.append(d.path()+'/'+*it);
+    subdirs.append(d.path()+QLatin1Char('/')+*it);
     subdirs+=getAllSubdirs(QString(d.path()+QLatin1Char('/')+*it));
   }
   return subdirs;

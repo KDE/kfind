@@ -97,7 +97,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     caseSensCb->setChecked(false);
     useLocateCb->setChecked(false);
     hiddenFilesCb->setChecked(false);
-    if(KStandardDirs::findExe("locate").isEmpty())
+    if(KStandardDirs::findExe(QLatin1String("locate")).isEmpty())
         useLocateCb->setEnabled(false);
 
     nameBox->setDuplicatesEnabled(false);
@@ -232,7 +232,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     sizeUnitBox ->addItem( i18n("GiB") );
     sizeUnitBox ->setCurrentIndex(1);
 
-    int tmp = sizeEdit->fontMetrics().width(" 000000000 ");
+    int tmp = sizeEdit->fontMetrics().width(QLatin1String(" 000000000 "));
     sizeEdit->setMinimumSize(tmp, sizeEdit->sizeHint().height());
 
     m_usernameBox->setDuplicatesEnabled(false);
@@ -326,7 +326,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     binaryContextCb->setToolTip(binaryTooltip);
 
     QPushButton* editRegExp = 0;
-    if ( !KServiceTypeTrader::self()->query("KRegExpEditor/KRegExpEditor").isEmpty() ) {
+    if ( !KServiceTypeTrader::self()->query(QStringLiteral("KRegExpEditor/KRegExpEditor")).isEmpty() ) {
         // The editor is available, so lets use it.
         editRegExp = new QPushButton(i18n("&Edit..."), pages[2]);
         editRegExp->setObjectName( QLatin1String( "editRegExp" ) );
@@ -374,7 +374,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
         regexpContentCb->hide();
 
     // Layout
-    tmp = sizeEdit->fontMetrics().width(" 00000 ");
+    tmp = sizeEdit->fontMetrics().width(QLatin1String(" 00000 "));
     sizeEdit->setMinimumSize(tmp, sizeEdit->sizeHint().height());
 
     QGridLayout *grid2 = new QGridLayout( pages[2] );
@@ -393,7 +393,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     grid2->addWidget( textMetaInfo, 4, 2, Qt::AlignHCenter  );
     grid2->addWidget( metainfoEdit, 4, 3 );
 
-    metainfokeyEdit->setText("*");
+    metainfokeyEdit->setText(QLatin1String("*"));
 
     if ( editRegExp ) {
       // The editor was available, so lets use it.
@@ -459,17 +459,17 @@ void KfindTabWidget::setURL( const KUrl & url )
       dirBox->setCurrentIndex(indx);
   }
   else {
-    QDir m_dir("/lib");
+    QDir m_dir(QStringLiteral("/lib"));
     dirBox ->insertItem( 0, m_url.prettyUrl() );
-    dirBox ->addItem( "file:" + QDir::homePath() );
-    dirBox ->addItem( "file:/" );
-    dirBox ->addItem( "file:/usr" );
+    dirBox ->addItem( QStringLiteral("file:") + QDir::homePath() );
+    dirBox ->addItem( QStringLiteral("file:/") );
+    dirBox ->addItem( QStringLiteral("file:/usr") );
     if (m_dir.exists())
-      dirBox ->addItem( "file:/lib" );
-    dirBox ->addItem( "file:/home" );
-    dirBox ->addItem( "file:/etc" );
-    dirBox ->addItem( "file:/var" );
-    dirBox ->addItem( "file:/mnt" );
+      dirBox ->addItem( QStringLiteral("file:/lib") );
+    dirBox ->addItem( QStringLiteral("file:/home") );
+    dirBox ->addItem( QStringLiteral("file:/etc") );
+    dirBox ->addItem( QStringLiteral("file:/var") );
+    dirBox ->addItem( QStringLiteral("file:/mnt") );
     dirBox->setCurrentIndex(0);
   }
 }
@@ -480,8 +480,8 @@ void KfindTabWidget::initMimeTypes()
     foreach ( const KMimeType::Ptr &type, KMimeType::allMimeTypes() )
     {
       if ( (!type->comment().isEmpty())
-           && (!type->name().startsWith( QString("kdedevice/") ))
-           && (!type->name().startsWith( QString("all/") )) )
+           && (!type->name().startsWith( QLatin1String("kdedevice/") ))
+           && (!type->name().startsWith( QLatin1String("all/") )) )
         sortedList.append(type);
     }
     qSort( sortedList.begin(), sortedList.end(), LessMimeType_ByComment() );
@@ -497,11 +497,11 @@ void KfindTabWidget::initSpecialMimeTypes()
 	  const KMimeType* type = (*it).data();
 
       if(!type->comment().isEmpty()) {
-        if(type->name().startsWith( QString("image/") ))
+        if(type->name().startsWith( QLatin1String("image/") ))
            m_ImageTypes.append(type->name());
-        else if(type->name().startsWith( QString("video/") ))
+        else if(type->name().startsWith( QLatin1String("video/") ))
           m_VideoTypes.append(type->name());
-        else if(type->name().startsWith( QString("audio/") ))
+        else if(type->name().startsWith( QLatin1String("audio/") ))
           m_AudioTypes.append(type->name());
       }
     }
@@ -509,21 +509,21 @@ void KfindTabWidget::initSpecialMimeTypes()
 
 void KfindTabWidget::saveHistory()
 {
-  save_pattern(nameBox, "History", "Patterns");
-  save_pattern(dirBox, "History", "Directories");
+  save_pattern(nameBox, QLatin1String("History"), QLatin1String("Patterns"));
+  save_pattern(dirBox, QLatin1String("History"), QLatin1String("Directories"));
 }
 
 void KfindTabWidget::loadHistory()
 {
   // Load pattern history
-  KConfigGroup conf(KSharedConfig::openConfig(), "History");
-  QStringList sl = conf.readEntry("Patterns", QStringList());
+  KConfigGroup conf(KSharedConfig::openConfig(), QLatin1String("History"));
+  QStringList sl = conf.readEntry(QLatin1String("Patterns"), QStringList());
   if(!sl.isEmpty())
     nameBox->addItems(sl);
   else
-    nameBox->addItem("*");
+    nameBox->addItem(QLatin1String("*"));
 
-  sl = conf.readPathEntry("Directories", QStringList());
+  sl = conf.readPathEntry(QLatin1String("Directories"), QStringList());
   if(!sl.isEmpty()) {
     dirBox->addItems(sl);
     // If the _searchPath already exists in the list we do not
@@ -537,17 +537,17 @@ void KfindTabWidget::loadHistory()
       dirBox->setCurrentIndex(indx);
   }
   else {
-    QDir m_dir("/lib");
+    QDir m_dir(QStringLiteral("/lib"));
     dirBox ->insertItem( 0, m_url.prettyUrl() );
-    dirBox ->addItem( "file:" + QDir::homePath() );
-    dirBox ->addItem( "file:/" );
-    dirBox ->addItem( "file:/usr" );
+    dirBox ->addItem( QStringLiteral("file:") + QDir::homePath() );
+    dirBox ->addItem( QStringLiteral("file:/") );
+    dirBox ->addItem( QStringLiteral("file:/usr") );
     if (m_dir.exists())
-      dirBox ->addItem( "file:/lib" );
-    dirBox ->addItem( "file:/home" );
-    dirBox ->addItem( "file:/etc" );
-    dirBox ->addItem( "file:/var" );
-    dirBox ->addItem( "file:/mnt" );
+      dirBox ->addItem( QStringLiteral("file:/lib") );
+    dirBox ->addItem( QStringLiteral("file:/home") );
+    dirBox ->addItem( QStringLiteral("file:/etc") );
+    dirBox ->addItem( QStringLiteral("file:/var") );
+    dirBox ->addItem( QStringLiteral("file:/mnt") );
     dirBox ->setCurrentIndex(0);
   }
 }
@@ -555,7 +555,7 @@ void KfindTabWidget::loadHistory()
 void KfindTabWidget::slotEditRegExp()
 {
   if ( ! regExpDialog )
-    regExpDialog = KServiceTypeTrader::createInstanceFromQuery<KDialog>( "KRegExpEditor/KRegExpEditor", QString(), this );
+    regExpDialog = KServiceTypeTrader::createInstanceFromQuery<KDialog>( QLatin1String("KRegExpEditor/KRegExpEditor"), QString(), this );
 
   KRegExpEditorInterface *iface = qobject_cast<KRegExpEditorInterface *>( regExpDialog );
   if ( !iface )
@@ -649,7 +649,7 @@ void KfindTabWidget::setQuery(KQuery *query)
   if (!itemAlreadyContained)
      dirBox->addItem(dirBox->currentText().trimmed(),0);
 
-  QString regex = nameBox->currentText().isEmpty() ? "*" : nameBox->currentText();
+  QString regex = nameBox->currentText().isEmpty() ? QLatin1String("*") : nameBox->currentText();
   query->setRegExp(regex, caseSensCb->isChecked());
   itemAlreadyContained=false;
   for (int idx=0; idx<nameBox->count(); idx++)
@@ -879,10 +879,10 @@ void KfindTabWidget::slotUpdateDateLabelsForType(int index)
 
 void KfindTabWidget::updateDateLabels(int type, int value)
 {
-  QString typeKey(type == 0 ? 'i' : type == 1 ? 'h' : type == 2 ? 'd' : type == 3 ? 'm' : 'y');
+  QString typeKey(type == 0 ? QLatin1Char('i') : type == 1 ? QLatin1Char('h') : type == 2 ? QLatin1Char('d') : type == 3 ? QLatin1Char('m') : QLatin1Char('y'));
   rb[1]->setText(ki18ncp("during the previous minute(s)/hour(s)/...; "
                          "dynamic context 'type': 'i' minutes, 'h' hours, 'd' days, 'm' months, 'y' years",
-                         "&during the previous", "&during the previous").subs(value).inContext("type", typeKey).toString());
+                         "&during the previous", "&during the previous").subs(value).inContext(QLatin1String("type"), typeKey).toString());
   betweenType->setItemText(0, i18ncp("use date ranges to search files by modified time", "minute", "minutes", value));
   betweenType->setItemText(1, i18ncp("use date ranges to search files by modified time", "hour", "hours", value));
   betweenType->setItemText(2, i18ncp("use date ranges to search files by modified time", "day", "days", value));
@@ -902,7 +902,7 @@ void KfindTabWidget::slotUpdateByteComboBox(int value)
 KDigitValidator::KDigitValidator( QWidget * parent )
   : QValidator( parent )
 {
-  r = new QRegExp("^[0-9]*$");
+  r = new QRegExp(QStringLiteral("^[0-9]*$"));
 }
 
 KDigitValidator::~KDigitValidator()
