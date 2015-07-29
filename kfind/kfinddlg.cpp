@@ -269,10 +269,11 @@ void KfindDlg::slotDeleteItem(const QString& file)
 void KfindDlg::slotNewItems( const QString& file )
 {
     //qDebug()<<QString("Will add this item") << file;
+    const QUrl url = QUrl::fromLocalFile(file);
     
-    if( file.indexOf(query->url().path(KUrl::AddTrailingSlash))==0 )
+    if( query->url().isParentOf(url) )
     {
-        if ( !win->isInserted( QUrl::fromLocalFile(file) ) )
+        if ( !win->isInserted( url ) )
             query->slotListEntries( QStringList() << file );
     }
 }

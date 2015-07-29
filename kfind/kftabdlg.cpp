@@ -439,7 +439,7 @@ KfindTabWidget::~KfindTabWidget()
   delete bg;
 }
 
-void KfindTabWidget::setURL( const KUrl & url )
+void KfindTabWidget::setURL( const QUrl & url )
 {
   KConfigGroup conf(KSharedConfig::openConfig(), "History");
   m_url = url;
@@ -450,9 +450,9 @@ void KfindTabWidget::setURL( const KUrl & url )
     dirBox->addItems(sl);
     // If the _searchPath already exists in the list we do not
     // want to add it again
-    int indx = sl.indexOf(m_url.prettyUrl());
+    int indx = sl.indexOf(m_url.toDisplayString());
     if(indx == -1) {
-      dirBox->insertItem(0, m_url.prettyUrl()); // make it the first one
+      dirBox->insertItem(0, m_url.toDisplayString()); // make it the first one
       dirBox->setCurrentIndex(0);
     }
     else
@@ -460,7 +460,7 @@ void KfindTabWidget::setURL( const KUrl & url )
   }
   else {
     QDir m_dir(QStringLiteral("/lib"));
-    dirBox ->insertItem( 0, m_url.prettyUrl() );
+    dirBox ->insertItem( 0, m_url.toDisplayString() );
     dirBox ->addItem( QStringLiteral("file:") + QDir::homePath() );
     dirBox ->addItem( QStringLiteral("file:/") );
     dirBox ->addItem( QStringLiteral("file:/usr") );
@@ -528,9 +528,9 @@ void KfindTabWidget::loadHistory()
     dirBox->addItems(sl);
     // If the _searchPath already exists in the list we do not
     // want to add it again
-    int indx = sl.indexOf(m_url.prettyUrl());
+    int indx = sl.indexOf(m_url.toDisplayString());
     if(indx == -1) {
-      dirBox->insertItem(0, m_url.prettyUrl()); // make it the first one
+      dirBox->insertItem(0, m_url.toDisplayString()); // make it the first one
       dirBox->setCurrentIndex(0);
     }
     else
@@ -538,7 +538,7 @@ void KfindTabWidget::loadHistory()
   }
   else {
     QDir m_dir(QStringLiteral("/lib"));
-    dirBox ->insertItem( 0, m_url.prettyUrl() );
+    dirBox ->insertItem( 0, m_url.toDisplayString() );
     dirBox ->addItem( QStringLiteral("file:") + QDir::homePath() );
     dirBox ->addItem( QStringLiteral("file:/") );
     dirBox ->addItem( QStringLiteral("file:/usr") );
@@ -640,7 +640,11 @@ void KfindTabWidget::setQuery(KQuery *query)
   // only start if we have valid dates
   if (!isDateValid()) return;
 
-  query->setPath(KUrl(dirBox->currentText().trimmed()));
+#if QT_VERSION >= QT_VERSION_CHECK(5,4,0)
+  query->setPath(QUrl::fromUserInput(dirBox->currentText().trimmed(), m_url.toLocalFile(), QUrl::AssumeLocalFile));
+#else
+  query->setPath(QUrl::fromUserInput(dirBox->currentText().trimmed()));
+#endif
 
   for (int idx=0; idx<dirBox->count(); idx++)
      if (dirBox->itemText(idx)==dirBox->currentText())

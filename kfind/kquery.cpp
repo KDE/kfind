@@ -106,7 +106,7 @@ void KQuery::start()
   if( m_useLocate ) //Use "locate" instead of the internal search method
   {
     bufferLocate.clear();
-    m_url.cleanPath();
+    m_url = m_url.adjusted(QUrl::NormalizePathSegments);
 
     processLocate->clearProgram();
     processLocate->setProgram( QLatin1String("locate"), QStringList() <<  m_url.toLocalFile() );
@@ -535,7 +535,7 @@ void KQuery::setRecursive(bool recursive)
   m_recursive = recursive;
 }
 
-void KQuery::setPath(const KUrl &url)
+void KQuery::setPath(const QUrl &url)
 {
   m_url = url;
 }

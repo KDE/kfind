@@ -25,6 +25,7 @@
 #include <konq_popupmenu.h>
 
 #include <QAbstractTableModel>
+#include <QDir>
 #include <QDragMoveEvent>
 #include <QIcon>
 #include <QSortFilterProxyModel>
@@ -104,7 +105,7 @@ class KFindTreeView: public QTreeView
         KFindTreeView( QWidget * parent, KfindDlg * findDialog);
         ~KFindTreeView();
 
-        void beginSearch(const KUrl& baseUrl);
+        void beginSearch(const QUrl& baseUrl);
         void endSearch();
 
         void insertItems(const QList< QPair<KFileItem,QString> > &);
@@ -143,7 +144,7 @@ class KFindTreeView: public QTreeView
     private:
         void resizeToContents();
         
-        QString                     m_baseDir;
+        QDir                        m_baseDir;
         
         KFindItemModel *            m_model;
         KFindSortFilterProxyModel * m_proxyModel;

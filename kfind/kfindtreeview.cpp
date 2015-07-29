@@ -384,18 +384,16 @@ void KFindTreeView::resizeToContents()
 
 QString KFindTreeView::reducedDir(const QString& fullDir)
 {
-    if (fullDir.indexOf(m_baseDir)==0)
-    {
-        QString tmp=fullDir.mid(m_baseDir.length());
-        return tmp;
-    };
+    QString relDir = m_baseDir.relativeFilePath(fullDir);
+    if (!relDir.startsWith(QLatin1String("..")))
+        return relDir;
     return fullDir;
 }
 
-void KFindTreeView::beginSearch(const KUrl& baseUrl)
+void KFindTreeView::beginSearch(const QUrl& baseUrl)
 {
     //qDebug() << QString("beginSearch in: %1").arg(baseUrl.path());
-    m_baseDir = baseUrl.path(KUrl::AddTrailingSlash);
+    m_baseDir = QDir(baseUrl.toLocalFile());
     m_model->clear();
 }
 

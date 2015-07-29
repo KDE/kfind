@@ -78,14 +78,17 @@ int main( int argc, char ** argv )
     aboutData.processCommandLine(&parser);
 
 
-  KUrl url;
+  QUrl url;
   if (parser.positionalArguments().count() > 0)
-    url = parser.positionalArguments().at(0);
+#if QT_VERSION >= QT_VERSION_CHECK(5,4,0)
+    url = QUrl::fromUserInput(parser.positionalArguments().at(0), QDir::currentPath(), QUrl::AssumeLocalFile);
+#else
+    url = QUrl::fromUserInput(parser.positionalArguments().at(0));
+#endif
   if (url.isEmpty())
-    url = QDir::currentPath();
+    url = QUrl::fromLocalFile(QDir::currentPath());
   if (url.isEmpty())
-    url = QDir::homePath();
-
+    url = QUrl::fromLocalFile(QDir::homePath());
 
   KfindDlg kfinddlg(url);
   return kfinddlg.exec();
