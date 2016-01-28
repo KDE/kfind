@@ -11,7 +11,7 @@ include(ECMInstallIcons)
 include(FeatureSummary)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
-include(KDEFrameworkCompilerSettings)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMAddAppIcon)
 set(KFIND_VERSION "2.0.0")
 
