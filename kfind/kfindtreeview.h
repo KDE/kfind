@@ -91,7 +91,7 @@ class KFindSortFilterProxyModel: public QSortFilterProxyModel
     
     public:
         KFindSortFilterProxyModel(QObject * parent = 0):
-            QSortFilterProxyModel(parent){};
+            QSortFilterProxyModel(parent){}
 
     protected:
         bool lessThan(const QModelIndex &left, const QModelIndex &right) const;
