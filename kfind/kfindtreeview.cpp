@@ -29,6 +29,7 @@
 #include <QApplication>
 #include <QDate>
 
+#include <KActionCollection>
 #include <kfiledialog.h>
 #include <klocale.h>
 #include <kapplication.h>
