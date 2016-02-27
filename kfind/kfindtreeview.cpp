@@ -592,7 +592,8 @@ void KFindTreeView::contextMenuRequested( const QPoint & p)
         delete m_contextMenu;
         m_contextMenu = 0;
     }
-    m_contextMenu = new KonqPopupMenu( fileList, QUrl(), *m_actionCollection, new KNewFileMenu( m_actionCollection, QLatin1String("new_menu"), this), flags, this, 0, actionGroups);
+    m_contextMenu = new KonqPopupMenu( fileList, QUrl(), *m_actionCollection, new KNewFileMenu( m_actionCollection, QLatin1String("new_menu"), this), flags, this);
+    m_contextMenu->setActionGroups(actionGroups);
 
     m_contextMenu->exec( this->mapToGlobal( p ) );
 }
