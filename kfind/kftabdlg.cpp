@@ -823,12 +823,17 @@ void KfindTabWidget::beginSearch()
 ///  dirlister->openUrl(KUrl(dirBox->currentText().trimmed()));
 
   saveHistory();
-  setEnabled( false );
+
+  for (uint i = 0; i < sizeof(pages) / sizeof(pages[0]); ++i) {
+      pages[i]->setEnabled(false);
+  }
 }
 
 void KfindTabWidget::endSearch()
 {
-  setEnabled( true );
+    for (uint i = 0; i < sizeof(pages) / sizeof(pages[0]); ++i) {
+        pages[i]->setEnabled(true);
+    }
 }
 
 /*
