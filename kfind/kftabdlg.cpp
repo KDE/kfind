@@ -44,6 +44,7 @@
 #include <kstandarddirs.h>
 #include <kdialog.h>
 #include <kconfiggroup.h>
+#include <KShell>
 
 #include "kdatecombo.h"
 #include "kquery.h"
@@ -640,11 +641,10 @@ void KfindTabWidget::setQuery(KQuery *query)
   // only start if we have valid dates
   if (!isDateValid()) return;
 
-#if QT_VERSION >= QT_VERSION_CHECK(5,4,0)
-  query->setPath(QUrl::fromUserInput(dirBox->currentText().trimmed(), m_url.toLocalFile(), QUrl::AssumeLocalFile));
-#else
-  query->setPath(QUrl::fromUserInput(dirBox->currentText().trimmed()));
-#endif
+  const QString trimmedDirBoxText = dirBox->currentText().trimmed();
+  const QString tildeExpandedPath = KShell::tildeExpand(trimmedDirBoxText);
+
+  query->setPath(QUrl::fromUserInput(tildeExpandedPath, m_url.toLocalFile(), QUrl::AssumeLocalFile));
 
   for (int idx=0; idx<dirBox->count(); idx++)
      if (dirBox->itemText(idx)==dirBox->currentText())
