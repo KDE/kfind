@@ -146,7 +146,7 @@ void KfindDlg::startSearch()
   dirwatch=new KDirWatch();
   connect(dirwatch, SIGNAL(created(QString)), this, SLOT(slotNewItems(QString)));
   connect(dirwatch, SIGNAL(deleted(QString)), this, SLOT(slotDeleteItem(QString)));
-  dirwatch->addDir(query->url().path(), KDirWatch::WatchFiles);
+  dirwatch->addDir(query->url().toLocalFile(), KDirWatch::WatchFiles);
 
 #if 0
   // waba: Watching for updates is disabled for now because even with FAM it causes too
