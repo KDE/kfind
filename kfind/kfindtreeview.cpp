@@ -437,7 +437,7 @@ void KFindTreeView::copySelection()
 
 void KFindTreeView::saveResults()
 {
-    KFileDialog *dlg = new KFileDialog(QString(), QString(), this);
+    KFileDialog *dlg = new KFileDialog(QUrl(), QString(), this);
     dlg->setOperationMode (KFileDialog::Saving);
     dlg->setWindowTitle( i18nc("@title:window", "Save Results As") );
     dlg->setFilter( QString::fromLatin1("*.html|%1\n*.txt|%2").arg( i18n("HTML page"), i18n("Text file") ) );

@@ -803,8 +803,7 @@ QDate &KfindTabWidget::string2Date(const QString & str, QDate *qd) {
 void KfindTabWidget::getDirectory()
 {
   QString result =
-  KFileDialog::getExistingDirectory( dirBox->currentText().trimmed(),
-                                     this );
+      KFileDialog::getExistingDirectory(QUrl::fromUserInput(dirBox->currentText().trimmed()), this );
 
   if (!result.isEmpty())
   {
