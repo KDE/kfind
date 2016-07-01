@@ -45,6 +45,7 @@
 #include <kio/copyjob.h>
 #include <kio/deletejob.h>
 #include <kio/jobuidelegate.h>
+#include <KIO/OpenFileManagerWindowJob>
 
 #include <knewfilemenu.h>
 
@@ -504,21 +505,7 @@ void KFindTreeView::saveResults()
 
 void KFindTreeView::openContainingFolder()
 {
-    QList<QUrl> uris = selectedUrls();
-    QMap<QUrl, int> folderMaps;
-    
-    //Generate *unique* folders
-    Q_FOREACH( const QUrl & url, uris )
-    {
-        QUrl dir = url.adjusted(QUrl::RemoveFilename);
-        folderMaps.insert( dir, 0 );
-    }
-
-    //TODO if >1 add a warn ?
-    Q_FOREACH( const QUrl & url, folderMaps.keys() )
-    {
-        (void) new KRun(url, this);
-    }
+    KIO::highlightInFileManager(selectedUrls());
 }
 
 void KFindTreeView::slotExecuteSelected()
