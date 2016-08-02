@@ -23,11 +23,13 @@
 #include <kdirlister.h>
 #include <kdirwatch.h>
 
-class QString;
-class QDir;
+#include <qglobal.h>
+
+QT_FORWARD_DECLARE_CLASS(QDir)
+QT_FORWARD_DECLARE_CLASS(QString)
+QT_FORWARD_DECLARE_CLASS(QUrl)
 
 class KQuery;
-class KUrl;
 class KFileItem;
 class KfindTabWidget;
 class KFindTreeView;
@@ -38,7 +40,7 @@ class KfindDlg: public KDialog
 Q_OBJECT
 
 public:
-  explicit KfindDlg(const KUrl & url, QWidget * parent = 0);
+  explicit KfindDlg(const QUrl & url, QWidget * parent = 0);
   ~KfindDlg();
   void copySelection();
 

@@ -21,16 +21,15 @@
 
 #include <time.h>
 
-#include <QtCore/QObject>
-#include <QtCore/QRegExp>
-#include <QtCore/QQueue>
-#include <QtCore/QList>
-#include <QtCore/QDir>
-#include <QtCore/QPair>
-#include <QtCore/QStringList>
+#include <QObject>
+#include <QRegExp>
+#include <QQueue>
+#include <QList>
+#include <QDir>
+#include <QPair>
+#include <QStringList>
 
 #include <kio/job.h>
-#include <kurl.h>
 #include <kprocess.h>
 
 class KFileItem;
@@ -48,7 +47,7 @@ class KQuery : public QObject
   void setTimeRange( time_t from, time_t to );
   void setRegExp( const QString &regexp, bool caseSensitive );
   void setRecursive( bool recursive );
-  void setPath(const KUrl & url );
+  void setPath(const QUrl & url );
   void setFileType( int filetype );
   void setMimeType( const QStringList & mimetype );
   void setContext( const QString & context, bool casesensitive,
@@ -61,7 +60,7 @@ class KQuery : public QObject
 
   void start();
   void kill();
-  const KUrl& url()              {return m_url;}
+  const QUrl& url()              {return m_url;}
 
  private:
   /* Check if file meets the find's requirements*/
@@ -92,7 +91,7 @@ class KQuery : public QObject
   int m_sizemode;
   KIO::filesize_t m_sizeboundary1;
   KIO::filesize_t m_sizeboundary2;
-  KUrl m_url;
+  QUrl m_url;
   time_t m_timeFrom;
   time_t m_timeTo;
   QRegExp m_regexp;// regexp for file content

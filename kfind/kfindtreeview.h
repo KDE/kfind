@@ -20,16 +20,17 @@
 #ifndef KFINDTREEVIEW__H
 #define KFINDTREEVIEW__H
 
-#include <QTreeView>
-#include <QtCore/QAbstractTableModel>
-#include <QSortFilterProxyModel>
-#include <QDragMoveEvent>
-
 #include <kurl.h>
-#include <kicon.h>
-#include <kdebug.h>
 #include <kfileitem.h>
 #include <konq_popupmenu.h>
+
+#include <QAbstractTableModel>
+#include <QDir>
+#include <QDragMoveEvent>
+#include <QIcon>
+#include <QSortFilterProxyModel>
+#include <QTreeView>
+#include <QUrl>
 
 class KFindTreeView;
 class KActionCollection;
@@ -50,7 +51,7 @@ class KFindItem
         QString         m_matchingLine;
         QString         m_subDir;
         QString         m_permission;
-        KIcon           m_icon;
+        QIcon           m_icon;
 };
  
 class KFindItemModel: public QAbstractTableModel
@@ -60,8 +61,8 @@ class KFindItemModel: public QAbstractTableModel
 
         void insertFileItems( const QList< QPair<KFileItem,QString> > &);
 
-        void removeItem(const KUrl &);
-        bool isInserted(const KUrl &);
+        void removeItem(const QUrl &);
+        bool isInserted(const QUrl &);
         
         void clear();
         
@@ -90,7 +91,7 @@ class KFindSortFilterProxyModel: public QSortFilterProxyModel
     
     public:
         KFindSortFilterProxyModel(QObject * parent = 0):
-            QSortFilterProxyModel(parent){};
+            QSortFilterProxyModel(parent){}
 
     protected:
         bool lessThan(const QModelIndex &left, const QModelIndex &right) const;
@@ -104,25 +105,24 @@ class KFindTreeView: public QTreeView
         KFindTreeView( QWidget * parent, KfindDlg * findDialog);
         ~KFindTreeView();
 
-        void beginSearch(const KUrl& baseUrl);
+        void beginSearch(const QUrl& baseUrl);
         void endSearch();
 
         void insertItems(const QList< QPair<KFileItem,QString> > &);
-        void removeItem(const KUrl & url);
+        void removeItem(const QUrl & url);
         
-        bool isInserted(const KUrl & url) { return m_model->isInserted( url ); }
+        bool isInserted(const QUrl & url) { return m_model->isInserted( url ); }
         
         QString reducedDir(const QString& fullDir);
         
         int itemCount() { return m_model->rowCount(); }
-        
+        QList<QUrl> selectedUrls();
+
     public Q_SLOTS:
         void copySelection();
         void contextMenuRequested( const QPoint & p );
 
     private Q_SLOTS:
-        KUrl::List selectedUrls();
-        
         void deleteSelectedFiles();
         void moveToTrashSelectedFiles();
         
@@ -144,7 +144,7 @@ class KFindTreeView: public QTreeView
     private:
         void resizeToContents();
         
-        QString                     m_baseDir;
+        QDir                        m_baseDir;
         
         KFindItemModel *            m_model;
         KFindSortFilterProxyModel * m_proxyModel;

@@ -21,30 +21,32 @@
 
 #include "kfinddlg.h"
 
-#include <QtCore/QTextStream>
-#include <QtCore/QTextCodec>
-#include <QtCore/QFileInfo>
+#include <QTextStream>
+#include <QTextCodec>
+#include <QFileInfo>
 #include <QClipboard>
 #include <QHeaderView>
 #include <QApplication>
-#include <QtCore/QDate>
+#include <QDate>
 
+#include <KActionCollection>
 #include <kfiledialog.h>
 #include <klocale.h>
 #include <kapplication.h>
 #include <krun.h>
 #include <kmessagebox.h>
 #include <kglobal.h>
-#include <kdebug.h>
+#include <QDebug>
 #include <kiconloader.h>
 #include <kglobalsettings.h>
+#include <kjobwidgets.h>
 
 #include <kio/netaccess.h>
 #include <kio/copyjob.h>
 #include <kio/deletejob.h>
-#include <kjobuidelegate.h>
+#include <kio/jobuidelegate.h>
+#include <KIO/OpenFileManagerWindowJob>
 
-#include <konq_operations.h>
 #include <knewfilemenu.h>
 
 // Permission strings
@@ -102,7 +104,7 @@ void KFindItemModel::insertFileItems( const QList< QPair<KFileItem,QString> > & 
         {
             QPair<KFileItem,QString> pair = *it;
 
-            QString subDir = m_view->reducedDir(pair.first.url().directory(KUrl::AppendTrailingSlash));
+            QString subDir = m_view->reducedDir(pair.first.url().adjusted(QUrl::RemoveFilename).path());
             m_itemList.append( KFindItem( pair.first, subDir, pair.second ) );
         }
 
@@ -146,7 +148,7 @@ QVariant KFindItemModel::data ( const QModelIndex & index, int role ) const
     return QVariant();
 }
 
-void KFindItemModel::removeItem( const KUrl & url )
+void KFindItemModel::removeItem( const QUrl & url )
 {
     int itemCount = m_itemList.size();
     for ( int i = 0; i < itemCount; i++)
@@ -162,7 +164,7 @@ void KFindItemModel::removeItem( const KUrl & url )
     }
 }
 
-bool KFindItemModel::isInserted( const KUrl & url )
+bool KFindItemModel::isInserted( const QUrl & url )
 {
     int itemCount = m_itemList.size();
     for ( int i = 0; i < itemCount; i++)
@@ -193,7 +195,7 @@ Qt::ItemFlags KFindItemModel::flags(const QModelIndex &index) const
  
 QMimeData * KFindItemModel::mimeData(const QModelIndexList &indexes) const
 {
-    KUrl::List uris;
+    QList<QUrl> uris;
     
     foreach ( const QModelIndex & index, indexes )
     {
@@ -210,7 +212,7 @@ QMimeData * KFindItemModel::mimeData(const QModelIndexList &indexes) const
         return 0;
 
     QMimeData * mimeData = new QMimeData();
-    uris.populateMimeData( mimeData );
+    mimeData->setUrls(uris);
     
     return mimeData;
 }
@@ -238,7 +240,7 @@ KFindItem::KFindItem( const KFileItem & _fileItem, const QString & subDir, const
             
         m_permission = i18n(perm[perm_index]);
         
-        m_icon = KIcon( m_fileItem.iconName() );
+        m_icon = QIcon::fromTheme( m_fileItem.iconName() );
     }
 }
 
@@ -259,7 +261,7 @@ QVariant KFindItem::data( int column, int role ) const
         switch( column )
         {
             case 0:
-                return m_fileItem.url().fileName(KUrl::ObeyTrailingSlash);
+                return m_fileItem.url().fileName();
             case 1:
                 return m_subDir;
             case 2:
@@ -330,39 +332,37 @@ KFindTreeView::KFindTreeView( QWidget *parent,  KfindDlg * findDialog )
     setDragEnabled( true );
     setContextMenuPolicy( Qt::CustomContextMenu );
 
-    connect( this, SIGNAL(customContextMenuRequested(QPoint)),
-                 this, SLOT(contextMenuRequested(QPoint)));
+    connect(this, &KFindTreeView::customContextMenuRequested, this, &KFindTreeView::contextMenuRequested);
            
     //Mouse single/double click settings
-    connect( KGlobalSettings::self(), SIGNAL(settingsChanged(int)), this, SLOT(reconfigureMouseSettings()) );
+    connect(KGlobalSettings::self(), &KGlobalSettings::settingsChanged, this, &KFindTreeView::reconfigureMouseSettings);
     reconfigureMouseSettings();
     
     // TODO: this is a workaround until  Qt-issue 176832 has been fixed (from Dolphin)
-    connect(this, SIGNAL(pressed(QModelIndex)), this, SLOT(updateMouseButtons()));
+    connect(this, &KFindTreeView::pressed, this, &KFindTreeView::updateMouseButtons);
                 
     //Generate popup menu actions
     m_actionCollection = new KActionCollection( this );
     m_actionCollection->addAssociatedWidget(this);
 
-    KAction * open = KStandardAction::open(this, SLOT(slotExecuteSelected()), this);
-    m_actionCollection->addAction( "file_open", open );
+    QAction * open = KStandardAction::open(this, SLOT(slotExecuteSelected()), this);
+    m_actionCollection->addAction( QLatin1String("file_open"), open );
     
-    KAction * copy = KStandardAction::copy(this, SLOT(copySelection()), this);
-    m_actionCollection->addAction( "edit_copy", copy );
+    QAction * copy = KStandardAction::copy(this, SLOT(copySelection()), this);
+    m_actionCollection->addAction( QLatin1String("edit_copy"), copy );
     
-    KAction * openFolder = new KAction( KIcon("window-new"), i18n("&Open containing folder(s)"), this );
-    connect( openFolder, SIGNAL(triggered()), this, SLOT(openContainingFolder()) );
-    m_actionCollection->addAction( "openfolder", openFolder );
+    QAction * openFolder = new QAction( QIcon::fromTheme(QLatin1String("window-new")), i18n("&Open containing folder(s)"), this );
+    connect(openFolder, &QAction::triggered, this, &KFindTreeView::openContainingFolder);
+    m_actionCollection->addAction( QLatin1String("openfolder"), openFolder );
     
-    KAction * del = new KAction( KIcon("edit-delete"), i18n("&Delete"), this );
-    connect( del, SIGNAL(triggered()), this, SLOT(deleteSelectedFiles()) );
-    del->setShortcut(Qt::SHIFT + Qt::Key_Delete);
-    m_actionCollection->addAction( "del", del );
+    QAction * del = new QAction( QIcon::fromTheme(QLatin1String("edit-delete")), i18n("&Delete"), this );
+    connect(del, &QAction::triggered, this, &KFindTreeView::deleteSelectedFiles);
+    m_actionCollection->setDefaultShortcut(del, Qt::SHIFT + Qt::Key_Delete);
    
-    KAction * trash = new KAction( KIcon("user-trash"), i18n("&Move to Trash"), this );
-    connect( trash, SIGNAL(triggered()), this, SLOT(moveToTrashSelectedFiles()) );
-    trash->setShortcut(Qt::Key_Delete);
-    m_actionCollection->addAction( "trash", trash );
+    QAction * trash = new QAction( QIcon::fromTheme(QLatin1String("user-trash")), i18n("&Move to Trash"), this );
+    connect(trash, &QAction::triggered, this, &KFindTreeView::moveToTrashSelectedFiles);
+    m_actionCollection->setDefaultShortcut(trash, Qt::Key_Delete);
+    m_actionCollection->addAction( QLatin1String("trash"), trash );
     
     header()->setStretchLastSection( true );
     
@@ -386,18 +386,16 @@ void KFindTreeView::resizeToContents()
 
 QString KFindTreeView::reducedDir(const QString& fullDir)
 {
-    if (fullDir.indexOf(m_baseDir)==0)
-    {
-        QString tmp=fullDir.mid(m_baseDir.length());
-        return tmp;
-    };
+    QString relDir = m_baseDir.relativeFilePath(fullDir);
+    if (!relDir.startsWith(QLatin1String("..")))
+        return relDir;
     return fullDir;
 }
 
-void KFindTreeView::beginSearch(const KUrl& baseUrl)
+void KFindTreeView::beginSearch(const QUrl& baseUrl)
 {
-    kDebug() << QString("beginSearch in: %1").arg(baseUrl.path());
-    m_baseDir = baseUrl.path(KUrl::AddTrailingSlash);
+    //qDebug() << QString("beginSearch in: %1").arg(baseUrl.path());
+    m_baseDir = QDir(baseUrl.toLocalFile());
     m_model->clear();
 }
 
@@ -411,9 +409,9 @@ void KFindTreeView::insertItems (const QList< QPair<KFileItem,QString> > & pairs
     m_model->insertFileItems( pairs );
 }
 
-void KFindTreeView::removeItem(const KUrl & url)
+void KFindTreeView::removeItem(const QUrl & url)
 {
-    KUrl::List list = selectedUrls();
+    QList<QUrl> list = selectedUrls();
     if ( list.contains(url) )
     {
         //Close menu
@@ -440,15 +438,15 @@ void KFindTreeView::copySelection()
 
 void KFindTreeView::saveResults()
 {
-    KFileDialog *dlg = new KFileDialog(QString(), QString(), this);
+    KFileDialog *dlg = new KFileDialog(QUrl(), QString(), this);
     dlg->setOperationMode (KFileDialog::Saving);
-    dlg->setCaption( i18nc("@title:window", "Save Results As") );
-    dlg->setFilter( QString("*.html|%1\n*.txt|%2").arg( i18n("HTML page"), i18n("Text file") ) );
+    dlg->setWindowTitle( i18nc("@title:window", "Save Results As") );
+    dlg->setFilter( QString::fromLatin1("*.html|%1\n*.txt|%2").arg( i18n("HTML page"), i18n("Text file") ) );
     dlg->setConfirmOverwrite(true);    
     
     dlg->exec();
 
-    KUrl u = dlg->selectedUrl();
+    QUrl u = dlg->selectedUrl();
     
     QString filter = dlg->currentFilter();
     delete dlg;
@@ -471,7 +469,7 @@ void KFindTreeView::saveResults()
         stream.setCodec( QTextCodec::codecForLocale() );
         
         QList<KFindItem> itemList = m_model->getItemList();
-        if ( filter == "*.html" ) 
+        if ( filter == QLatin1String("*.html") ) 
         {
             stream << QString::fromLatin1("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\""
             "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\">\n"
@@ -487,7 +485,7 @@ void KFindTreeView::saveResults()
             {
                 const KFileItem fileItem = item.getFileItem();
                 stream << QString::fromLatin1("<dt><a href=\"%1\">%2</a></dt>\n").arg( 
-                    fileItem.url().url(), fileItem.url().prettyUrl() );
+                    fileItem.url().url(), fileItem.url().toDisplayString() );
 
             }
             stream << QString::fromLatin1("</dl>\n</body>\n</html>\n");
@@ -507,22 +505,7 @@ void KFindTreeView::saveResults()
 
 void KFindTreeView::openContainingFolder()
 {
-    KUrl::List uris = selectedUrls();
-    QMap<KUrl, int> folderMaps;
-    
-    //Generate *unique* folders
-    Q_FOREACH( const KUrl & url, uris )
-    {
-        KUrl dir = url;
-        dir.setFileName( QString() );
-        folderMaps.insert( dir, 0 );
-    }
-
-    //TODO if >1 add a warn ?
-    Q_FOREACH( const KUrl & url, folderMaps.keys() )
-    {
-        (void) new KRun(url, this);
-    }
+    KIO::highlightInFileManager(selectedUrls());
 }
 
 void KFindTreeView::slotExecuteSelected()
@@ -538,7 +521,7 @@ void KFindTreeView::slotExecuteSelected()
         {
             KFindItem item = m_model->itemAtIndex( index );
             if ( item.isValid() )
-                item.getFileItem().run();
+                new KRun(item.getFileItem().targetUrl(), this);
         }
     }
 }
@@ -556,7 +539,7 @@ void KFindTreeView::slotExecute( const QModelIndex & index )
             
         KFindItem item = m_model->itemAtIndex( realIndex );
         if ( item.isValid() )
-            item.getFileItem().run();
+            new KRun(item.getFileItem().targetUrl(), this);
     }        
 }
 
@@ -578,17 +561,17 @@ void KFindTreeView::contextMenuRequested( const QPoint & p)
         }
     }
     
-    KParts::BrowserExtension::PopupFlags flags = KParts::BrowserExtension::ShowProperties; // | KParts::BrowserExtension::ShowUrlOperations;
+    KonqPopupMenu::Flags flags = KonqPopupMenu::ShowProperties; // | KonqPopupMenu::ShowUrlOperations;
     
     QList<QAction*> editActions;
-    editActions.append(m_actionCollection->action("file_open"));
-    editActions.append(m_actionCollection->action("openfolder"));
-    editActions.append(m_actionCollection->action("edit_copy"));
-    editActions.append(m_actionCollection->action("del"));
-    editActions.append(m_actionCollection->action("trash"));
+    editActions.append(m_actionCollection->action(QLatin1String("file_open")));
+    editActions.append(m_actionCollection->action(QLatin1String("openfolder")));
+    editActions.append(m_actionCollection->action(QLatin1String("edit_copy")));
+    editActions.append(m_actionCollection->action(QLatin1String("del")));
+    editActions.append(m_actionCollection->action(QLatin1String("trash")));
     
-    KParts::BrowserExtension::ActionGroupMap actionGroups;
-    actionGroups.insert("editactions", editActions);
+    KonqPopupMenu::ActionGroupMap actionGroups;
+    actionGroups.insert(KonqPopupMenu::EditActions, editActions);
     
     if( m_contextMenu )
     {
@@ -596,14 +579,16 @@ void KFindTreeView::contextMenuRequested( const QPoint & p)
         delete m_contextMenu;
         m_contextMenu = 0;
     }
-    m_contextMenu = new KonqPopupMenu( fileList, KUrl(), *m_actionCollection, new KNewFileMenu( m_actionCollection, "new_menu", this), 0, flags, this, 0, actionGroups);
+    m_contextMenu = new KonqPopupMenu( fileList, QUrl(), *m_actionCollection, flags, this);
+    m_contextMenu->setNewFileMenu(new KNewFileMenu( m_actionCollection, QLatin1String("new_menu"), this));
+    m_contextMenu->setActionGroups(actionGroups);
 
     m_contextMenu->exec( this->mapToGlobal( p ) );
 }
 
-KUrl::List KFindTreeView::selectedUrls()
+QList<QUrl> KFindTreeView::selectedUrls()
 {
-    KUrl::List uris;
+    QList<QUrl> uris;
     
     QModelIndexList indexes = m_proxyModel->mapSelectionToSource( selectionModel()->selection() ).indexes();
     Q_FOREACH( const QModelIndex & index, indexes )
@@ -621,30 +606,32 @@ KUrl::List KFindTreeView::selectedUrls()
 
 void KFindTreeView::deleteSelectedFiles()
 {
-    KUrl::List uris = selectedUrls();
+    QList<QUrl> uris = selectedUrls();
     if ( uris.isEmpty() ) {
         return;
     }
 
-    bool done = KonqOperations::askDeleteConfirmation( uris, KonqOperations::DEL, KonqOperations::FORCE_CONFIRMATION, this );
-    if ( done )
-    {
-        KJob * deleteJob = KIO::del( uris );
+    KIO::JobUiDelegate uiDelegate;
+    uiDelegate.setWindow(this);
+    if (uiDelegate.askDeleteConfirmation(uris, KIO::JobUiDelegate::Delete, KIO::JobUiDelegate::ForceConfirmation)) {
+        KJob * deleteJob = KIO::del(uris);
+        KJobWidgets::setWindow(deleteJob, this);
         deleteJob->uiDelegate()->setAutoErrorHandlingEnabled(true);
     }
 }
 
 void KFindTreeView::moveToTrashSelectedFiles()
 {
-    KUrl::List uris = selectedUrls();
+    QList<QUrl> uris = selectedUrls();
     if ( uris.isEmpty() ) {
         return;
     }
 
-    bool done = KonqOperations::askDeleteConfirmation( uris, KonqOperations::TRASH, KonqOperations::FORCE_CONFIRMATION, this );
-    if ( done )
-    {
-        KJob * trashJob = KIO::trash( uris );
+    KIO::JobUiDelegate uiDelegate;
+    uiDelegate.setWindow(this);
+    if (uiDelegate.askDeleteConfirmation(uris, KIO::JobUiDelegate::Trash, KIO::JobUiDelegate::ForceConfirmation)) {
+        KJob * trashJob = KIO::trash(uris);
+        KJobWidgets::setWindow(trashJob, this);
         trashJob->uiDelegate()->setAutoErrorHandlingEnabled(true);
     }
 }
@@ -656,9 +643,9 @@ void KFindTreeView::reconfigureMouseSettings()
     
     if ( KGlobalSettings::singleClick() ) 
     {
-        connect( this, SIGNAL(clicked(QModelIndex)), this, SLOT(slotExecute(QModelIndex)) );
+        connect(this, &KFindTreeView::clicked, this, &KFindTreeView::slotExecute);
     } else {
-        connect( this, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(slotExecute(QModelIndex)) );
+        connect(this, &KFindTreeView::doubleClicked, this, &KFindTreeView::slotExecute);
     }
 }
 
@@ -668,5 +655,3 @@ void KFindTreeView::updateMouseButtons()
 }
 
 //END KFindTreeView
-
-#include "kfindtreeview.moc"

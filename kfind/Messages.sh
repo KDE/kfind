@@ -1,2 +1,2 @@
 #! /usr/bin/env bash
-$XGETTEXT *.cpp *.h -o $podir/kfindpart.pot
+$XGETTEXT *.cpp *.h -o $podir/kfind.pot

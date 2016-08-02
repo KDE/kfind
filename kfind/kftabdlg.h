@@ -60,7 +60,7 @@ public:
   void saveHistory();
   bool isSearchRecursive();
 
-  void setURL( const KUrl & url );
+  void setURL( const QUrl & url );
 
   virtual QSize sizeHint() const;
 
@@ -131,7 +131,7 @@ private:
   QCheckBox *regexpContentCb;
   KDialog *regExpDialog;
 
-  KUrl m_url;
+  QUrl m_url;
 
   KMimeType::List m_types;
   QStringList m_ImageTypes;

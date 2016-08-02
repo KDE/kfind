@@ -1,8 +1,6 @@
 <?xml version="1.0" ?>
-<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN"
-"dtd/kdex.dtd" [
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
   <!ENTITY kappname "&kfind;">
-  <!ENTITY package "kdebase">
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"> 
 ]>
@@ -26,12 +24,12 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2013-05-29</date>
-<releaseinfo>&kde; 4.11</releaseinfo>
+<date>2015-09-28</date>
+<releaseinfo>Applications 15.08</releaseinfo>
 
 <abstract>
 <para>
-&kfind; is &kde;'s file find utility.
+&kfind; is a file find utility by &kde;.
 </para>
 </abstract>
 
@@ -48,7 +46,7 @@
 <title>Introduction</title>
 
 <para>
-&kfind; is the &kde; file find utility.
+&kfind; is a file find utility by &kde;.
 </para>
 
 <sect1 id="starting">
@@ -365,34 +363,6 @@ Documentation copyright 2001 &Dirk.Doerflinger;
 &underGPL;               <!-- GPL License -->
 
 </chapter>
-
-<appendix id="installation">
-<title>Installation</title>
-
-<sect1 id="getting-kfind">
-<title>How to obtain &kfind;</title>
-
-&install.intro.documentation;
-
-</sect1>
-
-<sect1 id="requirements">
-<title>Requirements</title>
-
-<para>
-In order to successfully use &kfind;, you need &kde; 4.x.
-</para>
-
-</sect1>
-
-<sect1 id="compilation">
-<title>Compilation and Installation</title>
-
-&install.compile.documentation;
-
-</sect1>
-
-</appendix>
 
 &documentation.index;
 

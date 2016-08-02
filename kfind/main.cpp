@@ -1,75 +1,96 @@
 /*******************************************************************
 * main.cpp
-* 
+*
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public License as
-* published by the Free Software Foundation; either version 2 of 
+* published by the Free Software Foundation; either version 2 of
 * the License, or (at your option) any later version.
-* 
+*
 * This program is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-* 
+*
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
-* 
+*
 ******************************************************************/
 
-#include <QtCore/QDir>
-#include <QtCore/QFile>
+#include <QDir>
+#include <QFile>
 
-#include <kapplication.h>
-#include <klocale.h>
-#include <kcmdlineargs.h>
-#include <kaboutdata.h>
+
+#include <kurl.h>
+#include <KLocalizedString>
+#include <QApplication>
+#include <KAboutData>
+#include <QCommandLineParser>
+#include <QCommandLineOption>
+#include <Kdelibs4ConfigMigrator>
 
 #include "kfinddlg.h"
-#include "version.h"
+#include "kfind_version.h"
 
 static const char description[] = I18N_NOOP("KDE file find utility");
 
 int main( int argc, char ** argv )
 {
-  KAboutData aboutData( "kfind", "kfindpart", ki18n("KFind"),
-      KFIND_VERSION, ki18n(description), KAboutData::License_GPL,
-      ki18n("(c) 1998-2003, The KDE Developers"));
+    Kdelibs4ConfigMigrator migrate(QStringLiteral("kfind"));
+    migrate.setConfigFiles(QStringList() << QStringLiteral("kfindrc"));
+    migrate.migrate();
 
-  aboutData.addAuthor(ki18n("Eric Coquelle"), ki18n("Current Maintainer"), "coquelle@caramail.com");
-  aboutData.addAuthor(ki18n("Mark W. Webb"), ki18n("Developer"), "markwebb@adelphia.net");
-  aboutData.addAuthor(ki18n("Beppe Grimaldi"), ki18n("UI Design & more search options"), "grimalkin@ciaoweb.it");
-  aboutData.addAuthor(ki18n("Martin Hartig"));
-  aboutData.addAuthor(ki18n("Stephan Kulow"), KLocalizedString(), "coolo@kde.org");
-  aboutData.addAuthor(ki18n("Mario Weilguni"),KLocalizedString(), "mweilguni@sime.com");
-  aboutData.addAuthor(ki18n("Alex Zepeda"),KLocalizedString(), "zipzippy@sonic.net");
-  aboutData.addAuthor(ki18n("Miroslav Flídr"),KLocalizedString(), "flidr@kky.zcu.cz");
-  aboutData.addAuthor(ki18n("Harri Porten"),KLocalizedString(), "porten@kde.org");
-  aboutData.addAuthor(ki18n("Dima Rogozin"),KLocalizedString(), "dima@mercury.co.il");
-  aboutData.addAuthor(ki18n("Carsten Pfeiffer"),KLocalizedString(), "pfeiffer@kde.org");
-  aboutData.addAuthor(ki18n("Hans Petter Bieker"), KLocalizedString(), "bieker@kde.org");
-  aboutData.addAuthor(ki18n("Waldo Bastian"), ki18n("UI Design"), "bastian@kde.org");
-  aboutData.addAuthor(ki18n("Alexander Neundorf"), KLocalizedString(), "neundorf@kde.org");
-  aboutData.addAuthor(ki18n("Clarence Dang"), KLocalizedString(), "dang@kde.org");
+    KLocalizedString::setApplicationDomain("kfind");
 
-  KCmdLineArgs::init( argc, argv, &aboutData );
+  KAboutData aboutData( QLatin1String("kfind"), i18n("KFind"),
+      QLatin1String(KFIND_VERSION_STRING), i18n(description), KAboutLicense::GPL,
+      i18n("(c) 1998-2003, The KDE Developers"));
 
-  KCmdLineOptions options;
-  options.add("+[searchpath]", ki18n("Path(s) to search"));
-  KCmdLineArgs::addCmdLineOptions( options );
+  aboutData.addAuthor(i18n("Eric Coquelle"), i18n("Current Maintainer"), QLatin1String("coquelle@caramail.com"));
+  aboutData.addAuthor(i18n("Mark W. Webb"), i18n("Developer"), QLatin1String("markwebb@adelphia.net"));
+  aboutData.addAuthor(i18n("Beppe Grimaldi"), i18n("UI Design & more search options"), QLatin1String("grimalkin@ciaoweb.it"));
+  aboutData.addAuthor(i18n("Martin Hartig"));
+  aboutData.addAuthor(i18n("Stephan Kulow"), QString(), QLatin1String("coolo@kde.org"));
+  aboutData.addAuthor(i18n("Mario Weilguni"),QString(), QLatin1String("mweilguni@sime.com"));
+  aboutData.addAuthor(i18n("Alex Zepeda"),QString(), QLatin1String("zipzippy@sonic.net"));
+  aboutData.addAuthor(i18n("Miroslav Flídr"),QString(), QLatin1String("flidr@kky.zcu.cz"));
+  aboutData.addAuthor(i18n("Harri Porten"),QString(), QLatin1String("porten@kde.org"));
+  aboutData.addAuthor(i18n("Dima Rogozin"),QString(), QLatin1String("dima@mercury.co.il"));
+  aboutData.addAuthor(i18n("Carsten Pfeiffer"),QString(), QLatin1String("pfeiffer@kde.org"));
+  aboutData.addAuthor(i18n("Hans Petter Bieker"), QString(), QLatin1String("bieker@kde.org"));
+  aboutData.addAuthor(i18n("Waldo Bastian"), i18n("UI Design"), QLatin1String("bastian@kde.org"));
+  aboutData.addAuthor(i18n("Alexander Neundorf"), QString(), QLatin1String("neundorf@kde.org"));
+  aboutData.addAuthor(i18n("Clarence Dang"), QString(), QLatin1String("dang@kde.org"));
 
-  KApplication app;
+    QApplication app(argc, argv);
 
-  KCmdLineArgs *args= KCmdLineArgs::parsedArgs();
+    // enable high dpi support
+    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
-  KUrl url;
-  if (args->count() > 0)
-    url = args->url(0);
+    QCommandLineParser parser;
+    KAboutData::setApplicationData(aboutData);
+    parser.addVersionOption();
+    parser.addHelpOption();
+    parser.addOption(QCommandLineOption(QStringList() <<  QLatin1String("+[searchpath]"), i18n("Path(s) to search")));
+
+    //PORTING SCRIPT: adapt aboutdata variable if necessary
+    aboutData.setupCommandLine(&parser);
+    parser.process(app);
+    aboutData.processCommandLine(&parser);
+
+
+  QUrl url;
+  if (parser.positionalArguments().count() > 0)
+#if QT_VERSION >= QT_VERSION_CHECK(5,4,0)
+    url = QUrl::fromUserInput(parser.positionalArguments().at(0), QDir::currentPath(), QUrl::AssumeLocalFile);
+#else
+    url = QUrl::fromUserInput(parser.positionalArguments().at(0));
+#endif
   if (url.isEmpty())
-    url = QDir::currentPath();
+    url = QUrl::fromLocalFile(QDir::currentPath());
   if (url.isEmpty())
-    url = QDir::homePath();
-  args->clear();
+    url = QUrl::fromLocalFile(QDir::homePath());
 
   KfindDlg kfinddlg(url);
   return kfinddlg.exec();
 }
+

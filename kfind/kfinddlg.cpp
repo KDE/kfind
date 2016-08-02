@@ -17,27 +17,25 @@
 ******************************************************************/
 
 #include "kfinddlg.h"
-#include "kfinddlg.moc"
 
 #include <QLayout>
 #include <QPushButton>
 
-#include <klocale.h>
-#include <kglobal.h>
+#include <KLocalizedString>
 #include <kguiitem.h>
 #include <kstatusbar.h>
 #include <kmessagebox.h>
-#include <kdebug.h>
+#include <QDebug>
 #include <kaboutapplicationdialog.h>
-#include <kstandarddirs.h>
 #include <khelpmenu.h>
-#include <kmenu.h>
+#include <qmenu.h>
+#include <kcomponentdata.h>
 
 #include "kftabdlg.h"
 #include "kquery.h"
 #include "kfindtreeview.h"
 
-KfindDlg::KfindDlg(const KUrl & url, QWidget *parent)
+KfindDlg::KfindDlg(const QUrl & url, QWidget *parent)
   : KDialog( parent )
 {
   setButtons( User1 | User2 | User3 | Close | Help );
@@ -69,7 +67,7 @@ KfindDlg::KfindDlg(const KUrl & url, QWidget *parent)
   win = new KFindTreeView(frame, this);
 
   mStatusBar = new KStatusBar(frame);
-  mStatusBar->insertItem("AMiddleLengthText...", 0);
+  mStatusBar->insertItem(QLatin1String("AMiddleLengthText..."), 0);
   setStatusMsg( i18nc("the application is currently idle, there is no active search", "Idle.") );
   mStatusBar->setItemAlignment(0, Qt::AlignLeft | Qt::AlignVCenter);
   mStatusBar->insertPermanentItem(QString(), 1, 1);
@@ -98,7 +96,7 @@ KfindDlg::KfindDlg(const KUrl & url, QWidget *parent)
     connect(query, SIGNAL(result(int)), SLOT(slotResult(int)));
     connect(query, SIGNAL(foundFileList(QList<QPair<KFileItem,QString> >)), SLOT(addFiles(QList<QPair<KFileItem,QString> >)));
 
-  KHelpMenu *helpMenu = new KHelpMenu(this, KGlobal::mainComponent().aboutData(), true);
+  KHelpMenu *helpMenu = new KHelpMenu(this, KAboutData::applicationData(), true);
   setButtonMenu( Help, helpMenu->menu() );
   dirwatch=NULL;
 }
@@ -148,7 +146,7 @@ void KfindDlg::startSearch()
   dirwatch=new KDirWatch();
   connect(dirwatch, SIGNAL(created(QString)), this, SLOT(slotNewItems(QString)));
   connect(dirwatch, SIGNAL(deleted(QString)), this, SLOT(slotDeleteItem(QString)));
-  dirwatch->addDir(query->url().path(), KDirWatch::WatchFiles);
+  dirwatch->addDir(query->url().toLocalFile(), KDirWatch::WatchFiles);
 
 #if 0
   // waba: Watching for updates is disabled for now because even with FAM it causes too
@@ -214,7 +212,7 @@ void KfindDlg::slotResult(int errorCode)
   }
   else
   {
-     kDebug()<<"KIO error code: "<<errorCode;
+     //qDebug()<<"KIO error code: "<<errorCode;
      setStatusMsg(i18n("Error."));
   };
 
@@ -254,18 +252,15 @@ void KfindDlg::copySelection()
 
 void  KfindDlg::about ()
 {
-  KAboutApplicationDialog dlg(0, this);
+  KAboutApplicationDialog dlg(KAboutData::applicationData(), 0, this);
   dlg.exec ();
 }
 
 void KfindDlg::slotDeleteItem(const QString& file)
 {
-  kDebug()<<QString("Will remove one item: %1").arg(file);
+  //qDebug()<<QString("Will remove one item: %1").arg(file);
   
-  KUrl url;
-  url.setPath( file );
-  
-  win->removeItem( url );
+  win->removeItem( QUrl::fromLocalFile(file) );
   
   QString str = i18np("one file found", "%1 files found", win->itemCount());
   setProgressMsg( str );
@@ -273,12 +268,11 @@ void KfindDlg::slotDeleteItem(const QString& file)
 
 void KfindDlg::slotNewItems( const QString& file )
 {
-    kDebug()<<QString("Will add this item") << file;
+    //qDebug()<<QString("Will add this item") << file;
+    const QUrl url = QUrl::fromLocalFile(file);
     
-    if( file.indexOf(query->url().path(KUrl::AddTrailingSlash))==0 )
+    if( query->url().isParentOf(url) )
     {
-        KUrl url;
-        url.setPath ( file );
         if ( !win->isInserted( url ) )
             query->slotListEntries( QStringList() << file );
     }
@@ -294,9 +288,9 @@ QStringList KfindDlg::getAllSubdirs(QDir d)
 
   for(QStringList::const_iterator it = dirs.constBegin(); it != dirs.constEnd(); ++it)
   {
-    if((*it==".")||(*it==".."))
+    if((*it==QLatin1String(".")) || (*it==QLatin1String("..")))
       continue;
-    subdirs.append(d.path()+'/'+*it);
+    subdirs.append(d.path()+QLatin1Char('/')+*it);
     subdirs+=getAllSubdirs(QString(d.path()+QLatin1Char('/')+*it));
   }
   return subdirs;
