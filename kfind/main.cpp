@@ -31,18 +31,16 @@
 #include "kfinddlg.h"
 #include "kfind_version.h"
 
-static const char description[] = I18N_NOOP("KDE file find utility");
-
 int main( int argc, char ** argv )
 {
     Kdelibs4ConfigMigrator migrate(QStringLiteral("kfind"));
     migrate.setConfigFiles(QStringList() << QStringLiteral("kfindrc"));
     migrate.migrate();
-
+    QApplication app(argc, argv);
     KLocalizedString::setApplicationDomain("kfind");
 
   KAboutData aboutData( QLatin1String("kfind"), i18n("KFind"),
-      QLatin1String(KFIND_VERSION_STRING), i18n(description), KAboutLicense::GPL,
+      QLatin1String(KFIND_VERSION_STRING), i18n("KDE file find utility"), KAboutLicense::GPL,
       i18n("(c) 1998-2003, The KDE Developers"));
 
   aboutData.addAuthor(i18n("Eric Coquelle"), i18n("Current Maintainer"), QLatin1String("coquelle@caramail.com"));
@@ -60,9 +58,7 @@ int main( int argc, char ** argv )
   aboutData.addAuthor(i18n("Waldo Bastian"), i18n("UI Design"), QLatin1String("bastian@kde.org"));
   aboutData.addAuthor(i18n("Alexander Neundorf"), QString(), QLatin1String("neundorf@kde.org"));
   aboutData.addAuthor(i18n("Clarence Dang"), QString(), QLatin1String("dang@kde.org"));
-
-    QApplication app(argc, argv);
-
+  aboutData.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
     // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
