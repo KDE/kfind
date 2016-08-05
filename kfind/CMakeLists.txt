@@ -26,7 +26,7 @@ if("${CMAKE_SOURCE_DIR}" STREQUAL "${Kfind_SOURCE_DIR}")
   find_package(KF5Konq CONFIG REQUIRED)
 endif()
 
-remove_definitions(-DQT_NO_URL_CAST_FROM_STRING)
+add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 
 set(kfind_SRCS main.cpp
                kfinddlg.cpp
