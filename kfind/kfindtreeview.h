@@ -22,7 +22,6 @@
 
 #include <kurl.h>
 #include <kfileitem.h>
-#include <konq_popupmenu.h>
 
 #include <QAbstractTableModel>
 #include <QDir>
@@ -32,6 +31,7 @@
 #include <QTreeView>
 #include <QUrl>
 
+class QMenu;
 class KFindTreeView;
 class KActionCollection;
 class KfindDlg;
@@ -149,7 +149,7 @@ class KFindTreeView: public QTreeView
         KFindItemModel *            m_model;
         KFindSortFilterProxyModel * m_proxyModel;
         KActionCollection *         m_actionCollection;
-        KonqPopupMenu *             m_contextMenu;
+        QMenu *                     m_contextMenu;
         
         Qt::MouseButtons            m_mouseButtons;
 

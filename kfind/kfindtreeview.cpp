@@ -28,6 +28,7 @@
 #include <QHeaderView>
 #include <QApplication>
 #include <QDate>
+#include <QMenu>
 
 #include <KActionCollection>
 #include <kfiledialog.h>
@@ -40,14 +41,15 @@
 #include <kiconloader.h>
 #include <kglobalsettings.h>
 #include <kjobwidgets.h>
+#include <KFileItemActions>
+#include <KFileItemListProperties>
+#include <KPropertiesDialog>
 
 #include <kio/netaccess.h>
 #include <kio/copyjob.h>
 #include <kio/deletejob.h>
 #include <kio/jobuidelegate.h>
 #include <KIO/OpenFileManagerWindowJob>
-
-#include <knewfilemenu.h>
 
 // Permission strings
 static const char* const perm[4] = {
@@ -316,7 +318,7 @@ bool KFindSortFilterProxyModel::lessThan(const QModelIndex &left, const QModelIn
 
 KFindTreeView::KFindTreeView( QWidget *parent,  KfindDlg * findDialog )
     : QTreeView( parent ) ,
-    m_contextMenu(0),
+    m_contextMenu(Q_NULLPTR),
     m_kfindDialog(findDialog)
 {
     //Configure model and proxy model
@@ -417,7 +419,6 @@ void KFindTreeView::removeItem(const QUrl & url)
         //Close menu
         if( m_contextMenu )
         {
-            m_contextMenu->hide();
             delete m_contextMenu;
             m_contextMenu = 0;
         }
@@ -560,28 +561,34 @@ void KFindTreeView::contextMenuRequested( const QPoint & p)
                 fileList.append( item.getFileItem() );
         }
     }
-    
-    KonqPopupMenu::Flags flags = KonqPopupMenu::ShowProperties; // | KonqPopupMenu::ShowUrlOperations;
-    
-    QList<QAction*> editActions;
-    editActions.append(m_actionCollection->action(QLatin1String("file_open")));
-    editActions.append(m_actionCollection->action(QLatin1String("openfolder")));
-    editActions.append(m_actionCollection->action(QLatin1String("edit_copy")));
-    editActions.append(m_actionCollection->action(QLatin1String("del")));
-    editActions.append(m_actionCollection->action(QLatin1String("trash")));
-    
-    KonqPopupMenu::ActionGroupMap actionGroups;
-    actionGroups.insert(KonqPopupMenu::EditActions, editActions);
-    
-    if( m_contextMenu )
-    {
-        m_contextMenu->hide();
-        delete m_contextMenu;
-        m_contextMenu = 0;
+
+    delete m_contextMenu;
+    m_contextMenu = new QMenu(this);
+    m_contextMenu->addAction(m_actionCollection->action(QLatin1String("file_open")));
+    m_contextMenu->addAction(m_actionCollection->action(QLatin1String("openfolder")));
+    m_contextMenu->addAction(m_actionCollection->action(QLatin1String("edit_copy")));
+    //m_contextMenu->addAction(m_actionCollection->action(QLatin1String("del")));
+    m_contextMenu->addAction(m_actionCollection->action(QLatin1String("trash")));
+    m_contextMenu->addSeparator();
+
+    // Open With...
+    KFileItemActions menuActions;
+    KFileItemListProperties fileProperties(fileList);
+    menuActions.setItemListProperties(fileProperties);
+    menuActions.addOpenWithActionsTo(m_contextMenu);
+    // Actions
+    menuActions.addServiceActionsTo(m_contextMenu);
+    m_contextMenu->addSeparator();
+
+    // Properties
+    if (KPropertiesDialog::canDisplay(fileList)) {
+        QAction *act = new QAction(m_contextMenu);
+        act->setText(i18n("&Properties"));
+        QObject::connect(act, &QAction::triggered, [this, fileList]() {
+                KPropertiesDialog::showDialog(fileList, this, false /*non modal*/);
+        });
+        m_contextMenu->addAction(act);
     }
-    m_contextMenu = new KonqPopupMenu( fileList, QUrl(), *m_actionCollection, flags, this);
-    m_contextMenu->setNewFileMenu(new KNewFileMenu( m_actionCollection, QLatin1String("new_menu"), this));
-    m_contextMenu->setActionGroups(actionGroups);
 
     m_contextMenu->exec( this->mapToGlobal( p ) );
 }

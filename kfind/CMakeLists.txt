@@ -22,10 +22,6 @@ ecm_setup_version(${KFIND_VERSION} VARIABLE_PREFIX KFIND
 # Build dependencies
 find_package(KF5 REQUIRED COMPONENTS KDELibs4Support Archive DocTools)
 
-if("${CMAKE_SOURCE_DIR}" STREQUAL "${Kfind_SOURCE_DIR}")
-  find_package(KF5Konq CONFIG REQUIRED)
-endif()
-
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 
 set(kfind_SRCS main.cpp
@@ -41,7 +37,6 @@ ecm_add_app_icon(kfind_SRCS ICONS ${ICONS_SRCS})
 add_executable(kfind ${kfind_SRCS})
 
 target_link_libraries(kfind
-KF5::Konq
 KF5::Archive
 KF5::KDELibs4Support
 )
