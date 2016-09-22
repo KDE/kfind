@@ -20,6 +20,7 @@
 
 #include <stdlib.h>
 
+#include <QCoreApplication>
 #include <QFileInfo>
 #include <QTextCodec>
 #include <QTextStream>
@@ -28,7 +29,6 @@
 #include <kmimetype.h>
 #include <kfileitem.h>
 #include <kfilemetainfo.h>
-#include <kapplication.h>
 #include <kmessagebox.h>
 #include <klocale.h>
 #include <kstandarddirs.h>
@@ -175,7 +175,7 @@ void KQuery::checkEntries()
     processQuery( m_fileItems.dequeue() );
     processingCount++;
     
-    /* This is a workaround. As the kapp->processEvents() call inside processQuery
+    /* This is a workaround. As the qApp->processEvents() call inside processQuery
      * will bring more KIO entries, m_fileItems will increase even inside this loop
      * and that will lead to a big loop, it will take time to report found items to the GUI
      * so we are going to force emit results every 100 files processed */
@@ -443,7 +443,7 @@ void KQuery::processQuery( const KFileItem &file)
           break;
         }
       }
-      kapp->processEvents();
+      qApp->processEvents();
     }
     
     delete stream;

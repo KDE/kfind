@@ -33,7 +33,6 @@
 #include <KActionCollection>
 #include <kfiledialog.h>
 #include <klocale.h>
-#include <kapplication.h>
 #include <krun.h>
 #include <kmessagebox.h>
 #include <kglobal.h>
@@ -432,7 +431,7 @@ void KFindTreeView::copySelection()
     QMimeData * mime = m_model->mimeData( m_proxyModel->mapSelectionToSource( selectionModel()->selection() ).indexes() );
     if (mime)
     {
-        QClipboard * cb = kapp->clipboard();
+        QClipboard * cb = qApp->clipboard();
         cb->setMimeData( mime );
     }
 }
