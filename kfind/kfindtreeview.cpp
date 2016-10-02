@@ -49,6 +49,7 @@
 #include <kio/deletejob.h>
 #include <kio/jobuidelegate.h>
 #include <KIO/OpenFileManagerWindowJob>
+#include <kio_version.h>
 
 // Permission strings
 static const char* const perm[4] = {
