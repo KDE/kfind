@@ -575,8 +575,13 @@ void KFindTreeView::contextMenuRequested( const QPoint & p)
     KFileItemListProperties fileProperties(fileList);
     menuActions.setItemListProperties(fileProperties);
     menuActions.addOpenWithActionsTo(m_contextMenu);
-    // Actions
+    // 'Actions' submenu
     menuActions.addServiceActionsTo(m_contextMenu);
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 27, 0)
+    // Plugins
+    menuActions.addPluginActionsTo(m_contextMenu);
+#endif
+
     m_contextMenu->addSeparator();
 
     // Properties
