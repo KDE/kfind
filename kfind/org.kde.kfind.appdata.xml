@@ -41,6 +41,7 @@
   <name xml:lang="tr">KFind</name>
   <name xml:lang="uk">KFind</name>
   <name xml:lang="x-test">xxKFindxx</name>
+  <name xml:lang="zh-CN">KFind</name>
   <name xml:lang="zh-TW">KFind</name>
   <summary>Find Files/Folders</summary>
   <summary xml:lang="bs">Traženje datoteka i fascikli</summary>
@@ -79,6 +80,7 @@
   <summary xml:lang="tr">Dosya/Dizin Bul</summary>
   <summary xml:lang="uk">Програма для пошуку файлів і тек</summary>
   <summary xml:lang="x-test">xxFind Files/Foldersxx</summary>
+  <summary xml:lang="zh-CN">查找文件/文件夹</summary>
   <summary xml:lang="zh-TW">尋找檔案/資料夾</summary>
   <description>
     <p>
