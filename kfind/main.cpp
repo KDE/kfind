@@ -41,9 +41,10 @@ int main( int argc, char ** argv )
 
   KAboutData aboutData( QLatin1String("kfind"), i18n("KFind"),
       QLatin1String(KFIND_VERSION_STRING), i18n("KDE file find utility"), KAboutLicense::GPL,
-      i18n("(c) 1998-2003, The KDE Developers"));
+      i18n("(c) 1998-2016, The KDE Developers"));
 
-  aboutData.addAuthor(i18n("Eric Coquelle"), i18n("Current Maintainer"), QLatin1String("coquelle@caramail.com"));
+  aboutData.addAuthor(i18n("Kai-Uwe Broulik"), i18n("Current Maintainer"), QLatin1String("kde@privat.broulik.de"));
+  aboutData.addAuthor(i18n("Eric Coquelle"), i18n("Former Maintainer"), QLatin1String("coquelle@caramail.com"));
   aboutData.addAuthor(i18n("Mark W. Webb"), i18n("Developer"), QLatin1String("markwebb@adelphia.net"));
   aboutData.addAuthor(i18n("Beppe Grimaldi"), i18n("UI Design & more search options"), QLatin1String("grimalkin@ciaoweb.it"));
   aboutData.addAuthor(i18n("Martin Hartig"));
@@ -68,7 +69,6 @@ int main( int argc, char ** argv )
     parser.addHelpOption();
     parser.addOption(QCommandLineOption(QStringList() <<  QLatin1String("+[searchpath]"), i18n("Path(s) to search")));
 
-    //PORTING SCRIPT: adapt aboutdata variable if necessary
     aboutData.setupCommandLine(&parser);
     parser.process(app);
     aboutData.processCommandLine(&parser);
