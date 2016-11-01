@@ -66,15 +66,15 @@ class KFindItemModel: public QAbstractTableModel
         
         void clear();
         
-        Qt::DropActions supportedDropActions() const { return Qt::CopyAction | Qt::MoveAction; }
+        Qt::DropActions supportedDropActions() const Q_DECL_OVERRIDE { return Qt::CopyAction | Qt::MoveAction; }
         
-        Qt::ItemFlags flags(const QModelIndex &) const;
-        QMimeData * mimeData(const QModelIndexList &) const;
+        Qt::ItemFlags flags(const QModelIndex &) const Q_DECL_OVERRIDE;
+        QMimeData * mimeData(const QModelIndexList &) const Q_DECL_OVERRIDE;
         
-        int columnCount ( const QModelIndex & parent = QModelIndex() ) const {  Q_UNUSED(parent); return 6; }
-        int rowCount ( const QModelIndex & parent = QModelIndex() ) const;
-        QVariant data ( const QModelIndex & index, int role = Qt::DisplayRole ) const;
-        QVariant headerData(int section, Qt::Orientation orientation, int role) const;
+        int columnCount ( const QModelIndex & parent = QModelIndex() ) const Q_DECL_OVERRIDE {  Q_UNUSED(parent); return 6; }
+        int rowCount ( const QModelIndex & parent = QModelIndex() ) const Q_DECL_OVERRIDE;
+        QVariant data ( const QModelIndex & index, int role = Qt::DisplayRole ) const Q_DECL_OVERRIDE;
+        QVariant headerData(int section, Qt::Orientation orientation, int role) const Q_DECL_OVERRIDE;
         
         KFindItem itemAtIndex( const QModelIndex & index ) const;
         
@@ -94,7 +94,7 @@ class KFindSortFilterProxyModel: public QSortFilterProxyModel
             QSortFilterProxyModel(parent){}
 
     protected:
-        bool lessThan(const QModelIndex &left, const QModelIndex &right) const;
+        bool lessThan(const QModelIndex &left, const QModelIndex &right) const Q_DECL_OVERRIDE;
 
 };
 
@@ -136,7 +136,7 @@ class KFindTreeView: public QTreeView
         void updateMouseButtons();
    
     protected:
-        void dragMoveEvent( QDragMoveEvent *e ) { e->accept(); }
+        void dragMoveEvent( QDragMoveEvent *e ) Q_DECL_OVERRIDE { e->accept(); }
 
     Q_SIGNALS:
         void resultSelected(bool);

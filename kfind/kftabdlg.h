@@ -62,7 +62,7 @@ public:
 
   void setURL( const QUrl & url );
 
-  virtual QSize sizeHint() const;
+  QSize sizeHint() const Q_DECL_OVERRIDE;
 
 public Q_SLOTS:
   void setFocus();
@@ -147,7 +147,7 @@ public:
   KDigitValidator(QWidget * parent);
   ~KDigitValidator();
 
-  QValidator::State validate(QString & input, int &) const;
+  QValidator::State validate(QString & input, int &) const Q_DECL_OVERRIDE;
 
  private:
   QRegExp *r;
