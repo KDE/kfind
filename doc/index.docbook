@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
-  <!ENTITY kappname "&kfind;">
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"> 
 ]>
@@ -24,8 +23,8 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2015-09-28</date>
-<releaseinfo>Applications 15.08</releaseinfo>
+<date>2016-11-05</date>
+<releaseinfo>Applications 16.12</releaseinfo>
 
 <abstract>
 <para>
@@ -35,7 +34,7 @@
 
 <keywordset>
 <keyword>KDE</keyword>
-<keyword>kdeutils</keyword>
+<keyword>file</keyword>
 <keyword>kfind</keyword>
 <keyword>find</keyword>
 <keyword>search</keyword>

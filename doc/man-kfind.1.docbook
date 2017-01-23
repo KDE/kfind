@@ -7,8 +7,8 @@
 <refentryinfo>
 <title>kfind User's Manual</title>
 <author>&Lauri.Watts; &Lauri.Watts.mail;</author>
-<date>2015-09-28</date>
-<releaseinfo>Applications 15.08</releaseinfo>
+<date>2016-11-05</date>
+<releaseinfo>Applications 16.12</releaseinfo>
 <productname>KDE Applications</productname>
 </refentryinfo>
 
@@ -47,9 +47,8 @@ line.</para>
 <variablelist>
 <varlistentry>
 <term><option>searchpath</option></term>
-<listitem><para>You may optionally supply a colon separated path to prefill
-the dialog.  You might use this ability to set up different icons on your
-panel or desktop to quickly run searches in different locations.</para>
+<listitem><para>You may optionally supply a path to prefill
+the dialog where to start the search.</para>
 </listitem>
 </varlistentry>
 </variablelist>
@@ -58,11 +57,15 @@ panel or desktop to quickly run searches in different locations.</para>
 
 <refsect1>
 <title>See Also</title>
-<para>More detailed user documentation is available from <ulink
+<simplelist>
+<member>More detailed user documentation is available from <ulink
 url="help:/kfind">help:/kfind</ulink>
 (either enter this <acronym>URL</acronym> into &konqueror;, or run
 <userinput><command>khelpcenter</command>
-<parameter>help:/kfind</parameter></userinput>).</para>
+<parameter>help:/kfind</parameter></userinput>).</member>
+<member>kf5options(7)</member>
+<member>qt5options(7)</member>
+</simplelist>
 </refsect1>
 
 <refsect1>
