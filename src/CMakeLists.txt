@@ -2,7 +2,6 @@ set(kfind_SRCS main.cpp
                kfinddlg.cpp
                kftabdlg.cpp
                kquery.cpp
-               kdatecombo.cpp
                kfindtreeview.cpp)
 
 file(GLOB ICONS_SRCS "../icons/*-apps-kfind.png")

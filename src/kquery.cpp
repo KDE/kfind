@@ -29,8 +29,8 @@
 #include <kmimetype.h>
 #include <kfileitem.h>
 #include <kfilemetainfo.h>
+#include <KLocalizedString>
 #include <kmessagebox.h>
-#include <klocale.h>
 #include <kstandarddirs.h>
 #include <kzip.h>
 

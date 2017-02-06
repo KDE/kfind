@@ -34,13 +34,13 @@ class KLineEdit;
 class QString;
 class QDate;
 class QRegExp;
+class KDateComboBox;
 class KDialog;
 class KComboBox;
 class KIntSpinBox;
 class QLabel;
 
 class KfDirDialog;
-class KDateCombo;
 
 class KfindTabWidget: public KTabWidget
 {
@@ -100,9 +100,6 @@ public:
 private:
   bool isDateValid();
 
-  QString date2String(const QDate &);
-  QDate &string2Date(const QString &, QDate * );
-
   void updateDateLabels(int type, int value);
 
   QWidget *pages[3];
@@ -118,8 +115,8 @@ private:
   QLabel      *andL;
   QButtonGroup *bg;
   QRadioButton *rb[2];
-  KDateCombo * fromDate;
-  KDateCombo * toDate;
+  KDateComboBox * fromDate;
+  KDateComboBox * toDate;
   KIntSpinBox *timeBox;
 
   //3rd page

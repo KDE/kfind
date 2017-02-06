@@ -32,7 +32,6 @@
 
 #include <KActionCollection>
 #include <kfiledialog.h>
-#include <klocale.h>
 #include <krun.h>
 #include <kmessagebox.h>
 #include <kglobal.h>

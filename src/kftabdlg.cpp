@@ -30,12 +30,12 @@
 #include <QDesktopWidget>
 
 #include <kcalendarsystem.h>
+#include <KDateComboBox>
 #include <kglobal.h>
 #include <kcombobox.h>
 #include <kurlcombobox.h>
 #include <kurlcompletion.h>
 #include <klineedit.h>
-#include <klocale.h>
 #include <kmessagebox.h>
 #include <KNumInput>
 #include <kfiledialog.h>
@@ -46,7 +46,6 @@
 #include <kconfiggroup.h>
 #include <KShell>
 
-#include "kdatecombo.h"
 #include "kquery.h"
 // Static utility functions
 static void save_pattern(KComboBox *, const QString &, const QString &);
@@ -188,11 +187,12 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     betweenType->setCurrentIndex(1);
     updateDateLabels(1, 1);
 
-    QDate dt = KLocale::global()->calendar()->addYears(QDate::currentDate(), -1);
+    const QDate dt = QDate::currentDate().addYears(-1);
 
-    fromDate = new KDateCombo(dt, pages[1] );
+    fromDate = new KDateComboBox(pages[1]);
     fromDate->setObjectName( QLatin1String( "fromDate" ) );
-    toDate = new KDateCombo(pages[1] );
+    fromDate->setDate(dt);
+    toDate = new KDateComboBox(pages[1] );
     toDate->setObjectName( QLatin1String( "toDate" ) );
     timeBox = new KIntSpinBox( pages[1] );
     timeBox->setRange( 1, 60 );
@@ -582,7 +582,7 @@ void KfindTabWidget::slotSizeBoxChanged(int index)
 
 void KfindTabWidget::setDefaults()
 {
-    QDate dt = KLocale::global()->calendar()->addYears(QDate::currentDate(), -1);
+    const QDate dt = QDate::currentDate().addYears(-1);
 
     fromDate ->setDate(dt);
     toDate ->setDate(QDate::currentDate());
@@ -615,16 +615,17 @@ bool KfindTabWidget::isDateValid()
 
   // If we can not parse either of the dates or
   // "from" date is bigger than "to" date return false.
-  QDate hi1, hi2;
+  const QDate from = fromDate->date();
+  const QDate to = toDate->date();
 
   QString str;
-  if ( ! fromDate->getDate(&hi1).isValid() ||
-       ! toDate->getDate(&hi2).isValid() )
-    str = i18n("The date is not valid.");
-  else if ( hi1 > hi2 )
-    str = i18n("Invalid date range.");
-  else if ( QDate::currentDate() < hi1 )
-    str = i18n("Unable to search dates in the future.");
+  if (!from.isValid() || !to.isValid()) {
+      str = i18n("The date is not valid.");
+  } else if (from > to) {
+      str = i18n("Invalid date range.");
+  } else if (from > QDate::currentDate()) {
+      str = i18n("Unable to search dates in the future.");
+  }
 
   if (!str.isEmpty()) {
     KMessageBox::sorry(0, str);
@@ -711,13 +712,12 @@ void KfindTabWidget::setQuery(KQuery *query)
   // Add date predicate
   if (findCreated->isChecked()) { // Modified
     if (rb[0]->isChecked()) { // Between dates
-      QDate q1, q2;
-      fromDate->getDate(&q1);
-      toDate->getDate(&q2);
+      const QDate &from = fromDate->date();
+      const QDate &to = toDate->date();
 
       // do not generate negative numbers .. find doesn't handle that
-      time_t time1 = epoch.secsTo(QDateTime(q1));
-      time_t time2 = epoch.secsTo(QDateTime(q2.addDays(1))) - 1; // Include the last day
+      time_t time1 = epoch.secsTo(QDateTime(from));
+      time_t time2 = epoch.secsTo(QDateTime(to.addDays(1))) - 1; // Include the last day
 
       query->setTimeRange(time1, time2);
     }
@@ -790,14 +790,6 @@ void KfindTabWidget::setQuery(KQuery *query)
   
   query->setContext(textEdit->text(), caseContextCb->isChecked(),
   	binaryContextCb->isChecked(), regexpContentCb->isChecked());
-}
-
-QString KfindTabWidget::date2String(const QDate & date) {
-  return(KLocale::global()->formatDate(date, KLocale::ShortDate));
-}
-
-QDate &KfindTabWidget::string2Date(const QString & str, QDate *qd) {
-  return *qd = KLocale::global()->readDate(str);
 }
 
 void KfindTabWidget::getDirectory()
