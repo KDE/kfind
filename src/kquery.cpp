@@ -429,7 +429,7 @@ void KQuery::processQuery( const KFileItem &file)
       {
         if (m_regexp.indexIn(str)>=0)
         {
-          matchingLine=QString::number(matchingLineNumber)+QStringLiteral(": ")+str;
+          matchingLine=QString::number(matchingLineNumber)+QStringLiteral(": ")+str.trimmed();
           found = true;
           break;
         }
@@ -438,7 +438,7 @@ void KQuery::processQuery( const KFileItem &file)
       {
         if (str.indexOf(m_context, 0, m_casesensitive?Qt::CaseSensitive:Qt::CaseInsensitive) != -1)
         {
-          matchingLine=QString::number(matchingLineNumber)+QStringLiteral(": ")+str;
+          matchingLine=QString::number(matchingLineNumber)+QStringLiteral(": ")+str.trimmed();
           found = true;
           break;
         }
