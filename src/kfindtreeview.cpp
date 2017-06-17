@@ -565,10 +565,8 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
     menuActions.addOpenWithActionsTo(m_contextMenu);
     // 'Actions' submenu
     menuActions.addServiceActionsTo(m_contextMenu);
-#if KIO_VERSION >= QT_VERSION_CHECK(5, 27, 0)
     // Plugins
     menuActions.addPluginActionsTo(m_contextMenu);
-#endif
 
     m_contextMenu->addSeparator();
 

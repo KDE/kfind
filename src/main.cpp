@@ -74,15 +74,9 @@ int main(int argc, char **argv)
 
     QUrl url;
     if (parser.positionalArguments().count() > 0)
-#if QT_VERSION >= QT_VERSION_CHECK(5, 4, 0)
     {
         url = QUrl::fromUserInput(parser.positionalArguments().at(0), QDir::currentPath(), QUrl::AssumeLocalFile);
     }
-#else
-    {
-        url = QUrl::fromUserInput(parser.positionalArguments().at(0));
-    }
-#endif
     if (url.isEmpty()) {
         url = QUrl::fromLocalFile(QDir::currentPath());
     }
