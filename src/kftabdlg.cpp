@@ -555,7 +555,7 @@ void KfindTabWidget::loadHistory()
 void KfindTabWidget::slotEditRegExp()
 {
     if (!regExpDialog) {
-        regExpDialog = KServiceTypeTrader::createInstanceFromQuery<KDialog>(QStringLiteral("KRegExpEditor/KRegExpEditor"), QString(), this);
+        regExpDialog = KServiceTypeTrader::createInstanceFromQuery<QDialog>(QStringLiteral("KRegExpEditor/KRegExpEditor"), QString(), this);
     }
 
     KRegExpEditorInterface *iface = qobject_cast<KRegExpEditorInterface *>(regExpDialog);
@@ -564,8 +564,7 @@ void KfindTabWidget::slotEditRegExp()
     }
 
     iface->setRegExp(textEdit->text());
-    bool ok = regExpDialog->exec();
-    if (ok) {
+    if (regExpDialog->exec()) {
         textEdit->setText(iface->regExp());
     }
 }

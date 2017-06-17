@@ -126,7 +126,7 @@ private:
     QCheckBox *caseContextCb;
     QCheckBox *binaryContextCb;
     QCheckBox *regexpContentCb;
-    KDialog *regExpDialog;
+    QDialog *regExpDialog;
 
     QUrl m_url;
 
