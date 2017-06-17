@@ -39,7 +39,7 @@ class KQuery : public QObject
     Q_OBJECT
 
 public:
-    KQuery(QObject *parent = 0);
+    explicit KQuery(QObject *parent = nullptr);
     ~KQuery();
 
     /* Functions to set Query requirements */
@@ -83,7 +83,7 @@ protected Q_SLOTS:
     void slotendProcessLocate(int, QProcess::ExitStatus);
 
 Q_SIGNALS:
-    void foundFileList(QList< QPair<KFileItem, QString> >);
+    void foundFileList(const QList< QPair<KFileItem, QString> > &);
     void result(int);
 
 private:

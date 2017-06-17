@@ -40,7 +40,7 @@ class KfindDlg : public KDialog
     Q_OBJECT
 
 public:
-    explicit KfindDlg(const QUrl &url, QWidget *parent = 0);
+    explicit KfindDlg(const QUrl &url, QWidget *parent = nullptr);
     ~KfindDlg();
     void copySelection();
 

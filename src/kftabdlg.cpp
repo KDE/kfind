@@ -632,7 +632,7 @@ bool KfindTabWidget::isDateValid()
     }
 
     if (!str.isEmpty()) {
-        KMessageBox::sorry(0, str);
+        KMessageBox::sorry(nullptr, str);
         return false;
     }
     return true;

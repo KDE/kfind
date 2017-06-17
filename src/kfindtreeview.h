@@ -64,7 +64,7 @@ private:
 class KFindItemModel : public QAbstractTableModel
 {
 public:
-    KFindItemModel(KFindTreeView *parent);
+    explicit KFindItemModel(KFindTreeView *parent);
 
     void insertFileItems(const QList< QPair<KFileItem, QString> > &);
 
@@ -108,7 +108,7 @@ class KFindSortFilterProxyModel : public QSortFilterProxyModel
     Q_OBJECT
 
 public:
-    KFindSortFilterProxyModel(QObject *parent = 0)
+    explicit KFindSortFilterProxyModel(QObject *parent = nullptr)
         : QSortFilterProxyModel(parent)
     {
     }
@@ -121,7 +121,7 @@ class KFindTreeView : public QTreeView
 {
     Q_OBJECT
 public:
-    KFindTreeView(QWidget *parent, KfindDlg *findDialog);
+    explicit KFindTreeView(QWidget *parent, KfindDlg *findDialog);
     ~KFindTreeView();
 
     void beginSearch(const QUrl &baseUrl);

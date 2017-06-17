@@ -47,7 +47,7 @@ class KfindTabWidget : public KTabWidget
     Q_OBJECT
 
 public:
-    KfindTabWidget(QWidget *parent = 0);
+    explicit KfindTabWidget(QWidget *parent = nullptr);
     virtual ~KfindTabWidget();
     void initMimeTypes();
     void initSpecialMimeTypes();
@@ -141,7 +141,7 @@ class KDigitValidator : public QValidator
     Q_OBJECT
 
 public:
-    KDigitValidator(QWidget *parent);
+    explicit KDigitValidator(QWidget *parent);
     ~KDigitValidator();
 
     QValidator::State validate(QString &input, int &) const Q_DECL_OVERRIDE;
