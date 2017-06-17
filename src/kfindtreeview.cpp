@@ -347,23 +347,23 @@ KFindTreeView::KFindTreeView( QWidget *parent,  KfindDlg * findDialog )
     m_actionCollection->addAssociatedWidget(this);
 
     QAction * open = KStandardAction::open(this, SLOT(slotExecuteSelected()), this);
-    m_actionCollection->addAction( QLatin1String("file_open"), open );
+    m_actionCollection->addAction( QStringLiteral("file_open"), open );
     
     QAction * copy = KStandardAction::copy(this, SLOT(copySelection()), this);
-    m_actionCollection->addAction( QLatin1String("edit_copy"), copy );
+    m_actionCollection->addAction( QStringLiteral("edit_copy"), copy );
     
-    QAction * openFolder = new QAction( QIcon::fromTheme(QLatin1String("window-new")), i18n("&Open containing folder(s)"), this );
+    QAction * openFolder = new QAction( QIcon::fromTheme(QStringLiteral("window-new")), i18n("&Open containing folder(s)"), this );
     connect(openFolder, &QAction::triggered, this, &KFindTreeView::openContainingFolder);
-    m_actionCollection->addAction( QLatin1String("openfolder"), openFolder );
+    m_actionCollection->addAction( QStringLiteral("openfolder"), openFolder );
     
-    QAction * del = new QAction( QIcon::fromTheme(QLatin1String("edit-delete")), i18n("&Delete"), this );
+    QAction * del = new QAction( QIcon::fromTheme(QStringLiteral("edit-delete")), i18n("&Delete"), this );
     connect(del, &QAction::triggered, this, &KFindTreeView::deleteSelectedFiles);
     m_actionCollection->setDefaultShortcut(del, Qt::SHIFT + Qt::Key_Delete);
    
-    QAction * trash = new QAction( QIcon::fromTheme(QLatin1String("user-trash")), i18n("&Move to Trash"), this );
+    QAction * trash = new QAction( QIcon::fromTheme(QStringLiteral("user-trash")), i18n("&Move to Trash"), this );
     connect(trash, &QAction::triggered, this, &KFindTreeView::moveToTrashSelectedFiles);
     m_actionCollection->setDefaultShortcut(trash, Qt::Key_Delete);
-    m_actionCollection->addAction( QLatin1String("trash"), trash );
+    m_actionCollection->addAction( QStringLiteral("trash"), trash );
     
     header()->setStretchLastSection( true );
     
@@ -441,7 +441,7 @@ void KFindTreeView::saveResults()
     KFileDialog *dlg = new KFileDialog(QUrl(), QString(), this);
     dlg->setOperationMode (KFileDialog::Saving);
     dlg->setWindowTitle( i18nc("@title:window", "Save Results As") );
-    dlg->setFilter( QString::fromLatin1("*.html|%1\n*.txt|%2").arg( i18n("HTML page"), i18n("Text file") ) );
+    dlg->setFilter( QStringLiteral("*.html|%1\n*.txt|%2").arg( i18n("HTML page"), i18n("Text file") ) );
     dlg->setConfirmOverwrite(true);    
     
     dlg->exec();
@@ -484,11 +484,11 @@ void KFindTreeView::saveResults()
             Q_FOREACH( const KFindItem & item, itemList )
             {
                 const KFileItem fileItem = item.getFileItem();
-                stream << QString::fromLatin1("<dt><a href=\"%1\">%2</a></dt>\n").arg( 
+                stream << QStringLiteral("<dt><a href=\"%1\">%2</a></dt>\n").arg( 
                     fileItem.url().url(), fileItem.url().toDisplayString() );
 
             }
-            stream << QString::fromLatin1("</dl>\n</body>\n</html>\n");
+            stream << QStringLiteral("</dl>\n</body>\n</html>\n");
         }
         else 
         {
@@ -563,11 +563,11 @@ void KFindTreeView::contextMenuRequested( const QPoint & p)
 
     delete m_contextMenu;
     m_contextMenu = new QMenu(this);
-    m_contextMenu->addAction(m_actionCollection->action(QLatin1String("file_open")));
-    m_contextMenu->addAction(m_actionCollection->action(QLatin1String("openfolder")));
-    m_contextMenu->addAction(m_actionCollection->action(QLatin1String("edit_copy")));
+    m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("file_open")));
+    m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("openfolder")));
+    m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("edit_copy")));
     //m_contextMenu->addAction(m_actionCollection->action(QLatin1String("del")));
-    m_contextMenu->addAction(m_actionCollection->action(QLatin1String("trash")));
+    m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("trash")));
     m_contextMenu->addSeparator();
 
     // Open With...

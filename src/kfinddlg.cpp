@@ -67,7 +67,7 @@ KfindDlg::KfindDlg(const QUrl & url, QWidget *parent)
   win = new KFindTreeView(frame, this);
 
   mStatusBar = new KStatusBar(frame);
-  mStatusBar->insertItem(QLatin1String("AMiddleLengthText..."), 0);
+  mStatusBar->insertItem(QStringLiteral("AMiddleLengthText..."), 0);
   setStatusMsg( i18nc("the application is currently idle, there is no active search", "Idle.") );
   mStatusBar->setItemAlignment(0, Qt::AlignLeft | Qt::AlignVCenter);
   mStatusBar->insertPermanentItem(QString(), 1, 1);

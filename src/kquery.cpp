@@ -51,30 +51,30 @@ KQuery::KQuery(QObject *parent)
   // Files with these mime types can be ignored, even if
   // findFormatByFileContent() in some cases may claim that
   // these are text files:
-  ignore_mimetypes.append(QLatin1String("application/pdf"));
-  ignore_mimetypes.append(QLatin1String("application/postscript"));
+  ignore_mimetypes.append(QStringLiteral("application/pdf"));
+  ignore_mimetypes.append(QStringLiteral("application/postscript"));
 
   // PLEASE update the documentation when you add another
   // file type here:
-  ooo_mimetypes.append(QLatin1String("application/vnd.sun.xml.writer"));
-  ooo_mimetypes.append(QLatin1String("application/vnd.sun.xml.calc"));
-  ooo_mimetypes.append(QLatin1String("application/vnd.sun.xml.impress"));
+  ooo_mimetypes.append(QStringLiteral("application/vnd.sun.xml.writer"));
+  ooo_mimetypes.append(QStringLiteral("application/vnd.sun.xml.calc"));
+  ooo_mimetypes.append(QStringLiteral("application/vnd.sun.xml.impress"));
   // OASIS mimetypes, used by OOo-2.x and KOffice >= 1.4
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.chart");
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.graphics");
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.graphics-template");
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.formula");
   //ooo_mimetypes.append("application/vnd.oasis.opendocument.image");
-  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.presentation-template"));
-  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.presentation"));
-  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.spreadsheet-template"));
-  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.spreadsheet"));
-  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.text-template"));
-  ooo_mimetypes.append(QLatin1String("application/vnd.oasis.opendocument.text"));
+  ooo_mimetypes.append(QStringLiteral("application/vnd.oasis.opendocument.presentation-template"));
+  ooo_mimetypes.append(QStringLiteral("application/vnd.oasis.opendocument.presentation"));
+  ooo_mimetypes.append(QStringLiteral("application/vnd.oasis.opendocument.spreadsheet-template"));
+  ooo_mimetypes.append(QStringLiteral("application/vnd.oasis.opendocument.spreadsheet"));
+  ooo_mimetypes.append(QStringLiteral("application/vnd.oasis.opendocument.text-template"));
+  ooo_mimetypes.append(QStringLiteral("application/vnd.oasis.opendocument.text"));
   // KOffice-1.3 mimetypes
-  koffice_mimetypes.append(QLatin1String("application/x-kword"));
-  koffice_mimetypes.append(QLatin1String("application/x-kspread"));
-  koffice_mimetypes.append(QLatin1String("application/x-kpresenter"));
+  koffice_mimetypes.append(QStringLiteral("application/x-kword"));
+  koffice_mimetypes.append(QStringLiteral("application/x-kspread"));
+  koffice_mimetypes.append(QStringLiteral("application/x-kpresenter"));
 }
 
 KQuery::~KQuery()
@@ -109,7 +109,7 @@ void KQuery::start()
     m_url = m_url.adjusted(QUrl::NormalizePathSegments);
 
     processLocate->clearProgram();
-    processLocate->setProgram( QLatin1String("locate"), QStringList() <<  m_url.toLocalFile() );
+    processLocate->setProgram( QStringLiteral("locate"), QStringList() <<  m_url.toLocalFile() );
 
     processLocate->setOutputChannelMode(KProcess::SeparateChannels);
     processLocate->start();
@@ -376,9 +376,9 @@ void KQuery::processQuery( const KFileItem &file)
         const KArchiveDirectory *zipfileContent = zipfile.directory();
 
         if( koffice_mimetypes.indexOf(file.mimetype()) != -1 )
-          zipfileEntry = (KZipFileEntry*)zipfileContent->entry(QLatin1String("maindoc.xml"));
+          zipfileEntry = (KZipFileEntry*)zipfileContent->entry(QStringLiteral("maindoc.xml"));
         else
-          zipfileEntry = (KZipFileEntry*)zipfileContent->entry(QLatin1String("content.xml")); //for OpenOffice.org
+          zipfileEntry = (KZipFileEntry*)zipfileContent->entry(QStringLiteral("content.xml")); //for OpenOffice.org
 
         if(!zipfileEntry) {
           qWarning() << "Expected XML file not found in ZIP archive " << file.url() ;
@@ -386,7 +386,7 @@ void KQuery::processQuery( const KFileItem &file)
         }
 
         zippedXmlFileContent = zipfileEntry->data();
-        xmlTags.setPattern(QLatin1String("<.*>"));
+        xmlTags.setPattern(QStringLiteral("<.*>"));
         xmlTags.setMinimal(true);
         stream = new QTextStream(zippedXmlFileContent, QIODevice::ReadOnly);
         stream->setCodec("UTF-8");
