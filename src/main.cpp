@@ -73,7 +73,7 @@ int main(int argc, char **argv)
     aboutData.processCommandLine(&parser);
 
     QUrl url;
-    if (parser.positionalArguments().count() > 0)
+    if (!parser.positionalArguments().isEmpty())
     {
         url = QUrl::fromUserInput(parser.positionalArguments().at(0), QDir::currentPath(), QUrl::AssumeLocalFile);
     }

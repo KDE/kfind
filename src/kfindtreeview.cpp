@@ -205,8 +205,8 @@ QMimeData *KFindItemModel::mimeData(const QModelIndexList &indexes) const
         }
     }
 
-    if (uris.count() <= 0) {
-        return 0;
+    if (uris.isEmpty()) {
+        return nullptr;
     }
 
     QMimeData *mimeData = new QMimeData();
@@ -414,7 +414,7 @@ void KFindTreeView::removeItem(const QUrl &url)
         //Close menu
         if (m_contextMenu) {
             delete m_contextMenu;
-            m_contextMenu = 0;
+            m_contextMenu = nullptr;
         }
     }
     m_model->removeItem(url);
@@ -496,8 +496,8 @@ void KFindTreeView::openContainingFolder()
 
 void KFindTreeView::slotExecuteSelected()
 {
-    QModelIndexList selected = m_proxyModel->mapSelectionToSource(selectionModel()->selection()).indexes();
-    if (selected.size() == 0) {
+    const QModelIndexList selected = m_proxyModel->mapSelectionToSource(selectionModel()->selection()).indexes();
+    if (selected.isEmpty()) {
         return;
     }
 
@@ -535,8 +535,8 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
 {
     KFileItemList fileList;
 
-    QModelIndexList selected = m_proxyModel->mapSelectionToSource(selectionModel()->selection()).indexes();
-    if (selected.size() == 0) {
+    const QModelIndexList selected = m_proxyModel->mapSelectionToSource(selectionModel()->selection()).indexes();
+    if (selected.isEmpty()) {
         return;
     }
 
@@ -587,7 +587,7 @@ QList<QUrl> KFindTreeView::selectedUrls()
 {
     QList<QUrl> uris;
 
-    QModelIndexList indexes = m_proxyModel->mapSelectionToSource(selectionModel()->selection()).indexes();
+    const QModelIndexList indexes = m_proxyModel->mapSelectionToSource(selectionModel()->selection()).indexes();
     Q_FOREACH (const QModelIndex &index, indexes) {
         if (index.column() == 0 && index.isValid()) {
             KFindItem item = m_model->itemAtIndex(index);

@@ -22,7 +22,6 @@
 #include <QPushButton>
 
 #include <KLocalizedString>
-#include <kguiitem.h>
 #include <kstatusbar.h>
 #include <kmessagebox.h>
 #include <QDebug>
@@ -87,7 +86,7 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     connect(this, SIGNAL(user1Clicked()),
             win, SLOT(saveResults()));
 
-    connect(this, SIGNAL(closeClicked()), this, SLOT(finishAndClose()));
+    connect(this, &KDialog::closeClicked, this, &KfindDlg::finishAndClose);
 
     connect(win, SIGNAL(resultSelected(bool)),
             this, SIGNAL(resultSelected(bool)));
@@ -228,7 +227,7 @@ void KfindDlg::addFiles(const QList< QPair<KFileItem, QString> > &pairs)
         isResultReported = true;
     }
 
-    QString str = i18np("one file found", "%1 files found", win->itemCount());
+    const QString str = i18np("one file found", "%1 files found", win->itemCount());
     setProgressMsg(str);
 }
 
@@ -254,7 +253,7 @@ void KfindDlg::slotDeleteItem(const QString &file)
 
     win->removeItem(QUrl::fromLocalFile(file));
 
-    QString str = i18np("one file found", "%1 files found", win->itemCount());
+    const QString str = i18np("one file found", "%1 files found", win->itemCount());
     setProgressMsg(str);
 }
 

@@ -142,7 +142,7 @@ void KQuery::slotResult(KJob *_job)
     if (job != _job) {
         return;
     }
-    job = 0;
+    job = nullptr;
 
     m_result = _job->error();
     checkEntries();
@@ -153,7 +153,7 @@ void KQuery::slotCanceled(KJob *_job)
     if (job != _job) {
         return;
     }
-    job = 0;
+    job = nullptr;
 
     m_fileItems.clear();
 
@@ -229,7 +229,7 @@ void KQuery::slotListEntries(QStringList list)
         processQuery(KFileItem(KFileItem::Unknown, KFileItem::Unknown, QUrl::fromLocalFile(*it)));
     }
 
-    if (m_foundFilesList.size() > 0) {
+    if (!m_foundFilesList.isEmpty()) {
         emit foundFileList(m_foundFilesList);
     }
 }
@@ -251,7 +251,7 @@ void KQuery::processQuery(const KFileItem &file)
     while (nextItem.hasNext())
     {
         QRegExp *reg = nextItem.next();
-        matched = matched || (reg == 0L) || (reg->exactMatch(file.url().adjusted(QUrl::StripTrailingSlash).fileName()));
+        matched = matched || (reg == nullptr) || (reg->exactMatch(file.url().adjusted(QUrl::StripTrailingSlash).fileName()));
     }
     if (!matched) {
         return;
@@ -551,7 +551,7 @@ void KQuery::setGroupname(const QString &groupname)
 
 void KQuery::setRegExp(const QString &regexp, bool caseSensitive)
 {
-    QRegExp *regExp;
+    QRegExp *regExp = nullptr;
     QRegExp sep(QStringLiteral(";"));
     const QStringList strList = regexp.split(sep, QString::SkipEmptyParts);
     //  QRegExp globChars ("[\\*\\?\\[\\]]", TRUE, FALSE);

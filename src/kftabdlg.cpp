@@ -62,7 +62,7 @@ struct LessMimeType_ByComment
 
 KfindTabWidget::KfindTabWidget(QWidget *parent)
     : KTabWidget(parent)
-    , regExpDialog(0)
+    , regExpDialog(nullptr)
 {
     // This validator will be used for all numeric edit fields
     //KDigitValidator *digitV = new KDigitValidator(this);
@@ -327,7 +327,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
                "program files and images).</qt>");
     binaryContextCb->setToolTip(binaryTooltip);
 
-    QPushButton *editRegExp = 0;
+    QPushButton *editRegExp = nullptr;
     if (!KServiceTypeTrader::self()->query(QStringLiteral("KRegExpEditor/KRegExpEditor")).isEmpty()) {
         // The editor is available, so lets use it.
         editRegExp = new QPushButton(i18n("&Edit..."), pages[2]);
