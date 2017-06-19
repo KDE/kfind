@@ -38,7 +38,7 @@
 #include <klineedit.h>
 #include <kmessagebox.h>
 #include <KNumInput>
-#include <kfiledialog.h>
+#include <QFileDialog>
 #include <kregexpeditorinterface.h>
 #include <kservicetypetrader.h>
 #include <kstandarddirs.h>
@@ -796,8 +796,8 @@ void KfindTabWidget::setQuery(KQuery *query)
 
 void KfindTabWidget::getDirectory()
 {
-    QString result
-        = KFileDialog::getExistingDirectory(QUrl::fromUserInput(dirBox->currentText().trimmed()), this);
+    const QString result
+        = QFileDialog::getExistingDirectory(this, QString(), dirBox->currentText().trimmed());
 
     if (!result.isEmpty()) {
         for (int i = 0; i < dirBox->count(); i++) {

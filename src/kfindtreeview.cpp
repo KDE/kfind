@@ -31,7 +31,7 @@
 #include <QMenu>
 
 #include <KActionCollection>
-#include <kfiledialog.h>
+#include <QFileDialog>
 #include <krun.h>
 #include <kmessagebox.h>
 #include <kglobal.h>
@@ -430,18 +430,12 @@ void KFindTreeView::copySelection()
 
 void KFindTreeView::saveResults()
 {
-    KFileDialog *dlg = new KFileDialog(QUrl(), QString(), this);
-    dlg->setOperationMode(KFileDialog::Saving);
-    dlg->setWindowTitle(i18nc("@title:window", "Save Results As"));
-    dlg->setFilter(QStringLiteral("*.html|%1\n*.txt|%2").arg(i18n("HTML page"), i18n("Text file")));
-    dlg->setConfirmOverwrite(true);
+    QString selectedFilter;
+    QUrl u = QFileDialog::getSaveFileUrl(this,
+                                     i18nc("@title:window", "Save Results As"),
+                                     QUrl(), QStringLiteral("*.html|%1\n*.txt|%2").arg(i18n("HTML page"), i18n("Text file")),
+                                     &selectedFilter);
 
-    dlg->exec();
-
-    QUrl u = dlg->selectedUrl();
-
-    QString filter = dlg->currentFilter();
-    delete dlg;
 
     if (!u.isValid() || !u.isLocalFile()) {
         return;
@@ -458,8 +452,8 @@ void KFindTreeView::saveResults()
         QTextStream stream(&file);
         stream.setCodec(QTextCodec::codecForLocale());
 
-        QList<KFindItem> itemList = m_model->getItemList();
-        if (filter == QLatin1String("*.html")) {
+        const QList<KFindItem> itemList = m_model->getItemList();
+        if (selectedFilter == QLatin1String("*.html")) {
             stream << QString::fromLatin1("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\""
                                           "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\">\n"
                                           "<head>\n"
@@ -470,14 +464,14 @@ void KFindTreeView::saveResults()
                 .arg(QString::fromLatin1(QTextCodec::codecForLocale()->name()))
                 .arg(i18n("KFind Results File"));
 
-            Q_FOREACH (const KFindItem &item, itemList) {
+            for (const KFindItem &item : itemList) {
                 const KFileItem fileItem = item.getFileItem();
                 stream << QStringLiteral("<dt><a href=\"%1\">%2</a></dt>\n").arg(
                     fileItem.url().url(), fileItem.url().toDisplayString());
             }
             stream << QStringLiteral("</dl>\n</body>\n</html>\n");
         } else {
-            Q_FOREACH (const KFindItem &item, itemList) {
+            for (const KFindItem &item : itemList) {
                 stream << item.getFileItem().url().url() << endl;
             }
         }
