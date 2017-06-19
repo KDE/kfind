@@ -1,8 +1,13 @@
+
 set(kfind_SRCS main.cpp
                kfinddlg.cpp
                kftabdlg.cpp
                kquery.cpp
                kfindtreeview.cpp)
+
+ecm_qt_declare_logging_category(kfind_SRCS HEADER kfind_debug.h IDENTIFIER
+               KFING_LOG CATEGORY_NAME org.kde.kfind)
+
 
 file(GLOB ICONS_SRCS "../icons/*-apps-kfind.png")
 ecm_add_app_icon(kfind_SRCS ICONS ${ICONS_SRCS})

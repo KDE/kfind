@@ -24,7 +24,6 @@
 #include <KLocalizedString>
 #include <kstatusbar.h>
 #include <kmessagebox.h>
-#include <QDebug>
 #include <kaboutapplicationdialog.h>
 #include <khelpmenu.h>
 #include <qmenu.h>
@@ -205,7 +204,6 @@ void KfindDlg::slotResult(int errorCode)
         setStatusMsg(i18n("Error."));
         KMessageBox::sorry(this, i18n("Could not find the specified folder."));
     } else {
-        //qDebug()<<"KIO error code: "<<errorCode;
         setStatusMsg(i18n("Error."));
     }
 
@@ -249,8 +247,6 @@ void KfindDlg::about()
 
 void KfindDlg::slotDeleteItem(const QString &file)
 {
-    //qDebug()<<QString("Will remove one item: %1").arg(file);
-
     win->removeItem(QUrl::fromLocalFile(file));
 
     const QString str = i18np("one file found", "%1 files found", win->itemCount());
@@ -259,7 +255,6 @@ void KfindDlg::slotDeleteItem(const QString &file)
 
 void KfindDlg::slotNewItems(const QString &file)
 {
-    //qDebug()<<QString("Will add this item") << file;
     const QUrl url = QUrl::fromLocalFile(file);
 
     if (query->url().isParentOf(url)) {
@@ -277,7 +272,8 @@ QStringList KfindDlg::getAllSubdirs(QDir d)
     d.setFilter(QDir::Dirs);
     dirs = d.entryList();
 
-    for (QStringList::const_iterator it = dirs.constBegin(); it != dirs.constEnd(); ++it) {
+    const QStringList::const_iterator end(dirs.constEnd());
+    for (QStringList::const_iterator it = dirs.constBegin(); it != end; ++it) {
         if ((*it == QLatin1String(".")) || (*it == QLatin1String(".."))) {
             continue;
         }

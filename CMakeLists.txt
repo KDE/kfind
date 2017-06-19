@@ -15,6 +15,8 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMAddAppIcon)
+include(ECMQtDeclareLoggingCategory)
+
 
 # KDE Application Version, managed by release script
 set (KDE_APPLICATIONS_VERSION_MAJOR "17")
@@ -36,5 +38,7 @@ add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 add_subdirectory(src)
 add_subdirectory(icons)
 add_subdirectory(doc)
+
+install( FILES kfind.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

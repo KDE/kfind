@@ -35,7 +35,6 @@
 #include <krun.h>
 #include <kmessagebox.h>
 #include <kglobal.h>
-#include <QDebug>
 #include <kiconloader.h>
 #include <kglobalsettings.h>
 #include <kjobwidgets.h>
@@ -392,7 +391,6 @@ QString KFindTreeView::reducedDir(const QString &fullDir)
 
 void KFindTreeView::beginSearch(const QUrl &baseUrl)
 {
-    //qDebug() << QString("beginSearch in: %1").arg(baseUrl.path());
     m_baseDir = QDir(baseUrl.toLocalFile());
     m_model->clear();
 }
