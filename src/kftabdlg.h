@@ -21,9 +21,9 @@
 
 #include <QValidator> // for KDigitValidator
 
-#include <kurl.h>
 #include <ktabwidget.h>
 #include <kmimetype.h>
+#include <QUrl>
 
 class KUrlComboBox;
 class QButtonGroup;
@@ -37,7 +37,7 @@ class QRegExp;
 class KDateComboBox;
 class KDialog;
 class KComboBox;
-class KIntSpinBox;
+class QSpinBox;
 class QLabel;
 
 class KfDirDialog;
@@ -117,12 +117,12 @@ private:
     QRadioButton *rb[2];
     KDateComboBox *fromDate;
     KDateComboBox *toDate;
-    KIntSpinBox *timeBox;
+    QSpinBox *timeBox;
 
     //3rd page
     KComboBox *sizeBox;
     KComboBox *sizeUnitBox;
-    KIntSpinBox *sizeEdit;
+    QSpinBox *sizeEdit;
     QCheckBox *caseContextCb;
     QCheckBox *binaryContextCb;
     QCheckBox *regexpContentCb;

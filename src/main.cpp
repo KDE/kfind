@@ -18,8 +18,8 @@
 
 #include <QDir>
 #include <QFile>
+#include <QUrl>
 
-#include <kurl.h>
 #include <KLocalizedString>
 #include <QApplication>
 #include <KAboutData>

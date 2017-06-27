@@ -37,7 +37,7 @@
 #include <kurlcompletion.h>
 #include <klineedit.h>
 #include <kmessagebox.h>
-#include <KNumInput>
+#include <QSpinBox>
 #include <QFileDialog>
 #include <kregexpeditorinterface.h>
 #include <kservicetypetrader.h>
@@ -196,7 +196,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     fromDate->setDate(dt);
     toDate = new KDateComboBox(pages[1]);
     toDate->setObjectName(QStringLiteral("toDate"));
-    timeBox = new KIntSpinBox(pages[1]);
+    timeBox = new QSpinBox(pages[1]);
     timeBox->setRange(1, 60);
     timeBox->setSingleStep(1);
     timeBox->setObjectName(QStringLiteral("timeBox"));
@@ -205,7 +205,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     sizeBox->setObjectName(QStringLiteral("sizeBox"));
     QLabel *sizeL = new QLabel(i18n("File &size is:"), pages[1]);
     sizeL->setBuddy(sizeBox);
-    sizeEdit = new KIntSpinBox(pages[1]);
+    sizeEdit = new QSpinBox(pages[1]);
     sizeEdit->setRange(0, INT_MAX);
     sizeEdit->setSingleStep(1);
     sizeEdit->setObjectName(QStringLiteral("sizeEdit"));
@@ -286,9 +286,9 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     connect(findCreated, &QCheckBox::toggled, this, &KfindTabWidget::fixLayout);
     connect(bg, static_cast<void (QButtonGroup::*)(QAbstractButton *)>(&QButtonGroup::buttonClicked), this, &KfindTabWidget::fixLayout);
     connect(sizeBox, static_cast<void (KComboBox::*)(int)>(&KComboBox::activated), this, &KfindTabWidget::slotSizeBoxChanged);
-    connect(timeBox, static_cast<void (KIntSpinBox::*)(int)>(&KIntSpinBox::valueChanged), this, &KfindTabWidget::slotUpdateDateLabelsForNumber);
+    connect(timeBox, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &KfindTabWidget::slotUpdateDateLabelsForNumber);
     connect(betweenType, static_cast<void (KComboBox::*)(int)>(&KComboBox::currentIndexChanged), this, &KfindTabWidget::slotUpdateDateLabelsForType);
-    connect(sizeEdit, static_cast<void (KIntSpinBox::*)(int)>(&KIntSpinBox::valueChanged), this, &KfindTabWidget::slotUpdateByteComboBox);
+    connect(sizeEdit, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &KfindTabWidget::slotUpdateByteComboBox);
 
     // ************ Page Three
 
