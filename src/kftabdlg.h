@@ -99,6 +99,7 @@ public:
 
 private:
     bool isDateValid();
+    void fillDirBox();
 
     void updateDateLabels(int type, int value);
 

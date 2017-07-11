@@ -457,20 +457,25 @@ void KfindTabWidget::setURL(const QUrl &url)
             dirBox->setCurrentIndex(indx);
         }
     } else {
-        QDir m_dir(QStringLiteral("/lib"));
-        dirBox->insertItem(0, m_url.toDisplayString());
-        dirBox->addItem(QStringLiteral("file:") + QDir::homePath());
-        dirBox->addItem(QStringLiteral("file:/"));
-        dirBox->addItem(QStringLiteral("file:/usr"));
-        if (m_dir.exists()) {
-            dirBox->addItem(QStringLiteral("file:/lib"));
-        }
-        dirBox->addItem(QStringLiteral("file:/home"));
-        dirBox->addItem(QStringLiteral("file:/etc"));
-        dirBox->addItem(QStringLiteral("file:/var"));
-        dirBox->addItem(QStringLiteral("file:/mnt"));
-        dirBox->setCurrentIndex(0);
+        fillDirBox();
     }
+}
+
+void KfindTabWidget::fillDirBox()
+{
+    QDir m_dir(QStringLiteral("/lib"));
+    dirBox->insertItem(0, m_url.toDisplayString());
+    dirBox->addUrl(QUrl::fromLocalFile(QDir::homePath()));
+    dirBox->addUrl(QUrl::fromLocalFile("/"));
+    dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("/usr")));
+    if (m_dir.exists()) {
+        dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("lib")));
+    }
+    dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("/home")));
+    dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("/etc")));
+    dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("/var")));
+    dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("/mnt")));
+    dirBox->setCurrentIndex(0);
 }
 
 void KfindTabWidget::initMimeTypes()
@@ -536,19 +541,7 @@ void KfindTabWidget::loadHistory()
             dirBox->setCurrentIndex(indx);
         }
     } else {
-        QDir m_dir(QStringLiteral("/lib"));
-        dirBox->insertItem(0, m_url.toDisplayString());
-        dirBox->addItem(QStringLiteral("file:") + QDir::homePath());
-        dirBox->addItem(QStringLiteral("file:/"));
-        dirBox->addItem(QStringLiteral("file:/usr"));
-        if (m_dir.exists()) {
-            dirBox->addItem(QStringLiteral("file:/lib"));
-        }
-        dirBox->addItem(QStringLiteral("file:/home"));
-        dirBox->addItem(QStringLiteral("file:/etc"));
-        dirBox->addItem(QStringLiteral("file:/var"));
-        dirBox->addItem(QStringLiteral("file:/mnt"));
-        dirBox->setCurrentIndex(0);
+        fillDirBox();
     }
 }
 
