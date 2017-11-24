@@ -430,13 +430,23 @@ void KFindTreeView::copySelection()
 
 void KFindTreeView::saveResults()
 {
-    QString selectedFilter;
-    QUrl u = QFileDialog::getSaveFileUrl(this,
-                                     i18nc("@title:window", "Save Results As"),
-                                     QUrl(), QStringLiteral("*.html|%1\n*.txt|%2").arg(i18n("HTML page"), i18n("Text file")),
-                                     &selectedFilter);
+    QFileDialog dialog;
+    dialog.setAcceptMode(QFileDialog::AcceptSave);
+    dialog.setWindowTitle(i18nc("@title:window", "Save Results As"));
+    dialog.setMimeTypeFilters({
+        QStringLiteral("text/html"),
+        QStringLiteral("text/plain")
+    });
 
+    if (!dialog.exec()) {
+        return;
+    }
 
+    if (dialog.selectedUrls().isEmpty()) {
+        return;
+    }
+
+    const QUrl u = dialog.selectedUrls().constFirst();
     if (!u.isValid() || !u.isLocalFile()) {
         return;
     }
@@ -453,7 +463,7 @@ void KFindTreeView::saveResults()
         stream.setCodec(QTextCodec::codecForLocale());
 
         const QList<KFindItem> itemList = m_model->getItemList();
-        if (selectedFilter == QLatin1String("*.html")) {
+        if (dialog.selectedMimeTypeFilter() == QLatin1String("text/html")) {
             stream << QString::fromLatin1("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\""
                                           "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\">\n"
                                           "<head>\n"
