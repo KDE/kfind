@@ -6,7 +6,7 @@ project(Kfind)
 find_package(ECM 5.28.0 CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 set(QT_REQUIRED_VERSION "5.6.0")
-find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets)
+find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Concurrent)
 
 include(ECMSetupVersion)
 include(ECMInstallIcons)

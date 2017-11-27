@@ -15,6 +15,7 @@ ecm_add_app_icon(kfind_SRCS ICONS ${ICONS_SRCS})
 add_executable(kfind ${kfind_SRCS})
 
 target_link_libraries(kfind
+Qt5::Concurrent
 KF5::Archive
 KF5::KDELibs4Support
 )

@@ -46,18 +46,24 @@
 #include <kconfiggroup.h>
 #include <KShell>
 
+#include <QtConcurrent/QtConcurrentRun>
+#include <QFutureWatcher>
+
+#include <algorithm>
+
 #include "kquery.h"
+
 // Static utility functions
 static void save_pattern(KComboBox *, const QString &, const QString &);
 
-#define SPECIAL_TYPES 7
+static const int specialMimeTypeCount = 10;
 
-struct LessMimeType_ByComment
+struct MimeTypes
 {
-    bool operator()(const KMimeType::Ptr &lhs, const KMimeType::Ptr &rhs) const
-    {
-        return lhs->comment() < rhs->comment();
-    }
+    KMimeType::List all;
+    QStringList image;
+    QStringList video;
+    QStringList audio;
 };
 
 KfindTabWidget::KfindTabWidget(QWidget *parent)
@@ -352,18 +358,51 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     typeBox->addItem(i18n("All Images"));
     typeBox->addItem(i18n("All Video"));
     typeBox->addItem(i18n("All Sounds"));
+    typeBox->insertSeparator(typeBox->count()); // append separator
 
-    initMimeTypes();
-    initSpecialMimeTypes();
+    auto mimeTypeFuture = QtConcurrent::run([this] {
+        MimeTypes mimeTypes;
 
-    for (KMimeType::List::ConstIterator it = m_types.constBegin();
-         it != m_types.constEnd(); ++it) {
-        KMimeType::Ptr typ = *it;
-// TODO: needs to move to thread (increases startup time to bizzare amount)
-//       and replaced with a better concept 16x16 icons don't cut the cheese
-//       typeBox->addItem(KIconLoader::global()->loadMimeTypeIcon( typ->iconName(), KIconLoader::Small ), typ->comment());
-        typeBox->addItem(typ->comment());
-    }
+        foreach (const KMimeType::Ptr &type, KMimeType::allMimeTypes()) {
+            if ((!type->comment().isEmpty())
+                && (!type->name().startsWith(QLatin1String("kdedevice/")))
+                && (!type->name().startsWith(QLatin1String("all/")))) {
+                mimeTypes.all.append(type);
+
+                if (type->name().startsWith(QLatin1String("image/"))) {
+                    mimeTypes.image.append(type->name());
+                } else if (type->name().startsWith(QLatin1String("video/"))) {
+                    mimeTypes.video.append(type->name());
+                } else if (type->name().startsWith(QLatin1String("audio/"))) {
+                    mimeTypes.audio.append(type->name());
+                }
+            }
+        }
+
+        std::sort(mimeTypes.all.begin(), mimeTypes.all.end(), [](const KMimeType::Ptr &lhs, const KMimeType::Ptr &rhs) {
+            return lhs->comment() < rhs->comment();
+        });
+
+        return mimeTypes;
+    });
+
+    auto *watcher = new QFutureWatcher<MimeTypes>(this);
+    watcher->setFuture(mimeTypeFuture);
+    connect(watcher, &QFutureWatcher<MimeTypes>::finished, this, [this, watcher] {
+        const MimeTypes &mimeTypes = watcher->result();
+
+        for (const auto &mime : qAsConst(mimeTypes.all)) {
+            typeBox->addItem(mime->comment());
+        }
+
+        m_types = mimeTypes.all;
+
+        m_ImageTypes = mimeTypes.image;
+        m_VideoTypes = mimeTypes.video;
+        m_AudioTypes = mimeTypes.audio;
+
+        watcher->deleteLater();
+    });
 
     if (editRegExp) {
         // The editor was available, so lets use it.
@@ -476,39 +515,6 @@ void KfindTabWidget::fillDirBox()
     dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("/var")));
     dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("/mnt")));
     dirBox->setCurrentIndex(0);
-}
-
-void KfindTabWidget::initMimeTypes()
-{
-    KMimeType::List sortedList;
-    foreach (const KMimeType::Ptr &type, KMimeType::allMimeTypes()) {
-        if ((!type->comment().isEmpty())
-            && (!type->name().startsWith(QLatin1String("kdedevice/")))
-            && (!type->name().startsWith(QLatin1String("all/")))) {
-            sortedList.append(type);
-        }
-    }
-    qSort(sortedList.begin(), sortedList.end(), LessMimeType_ByComment());
-    m_types += sortedList;
-}
-
-void KfindTabWidget::initSpecialMimeTypes()
-{
-    const KMimeType::List tmp = KMimeType::allMimeTypes();
-
-    for (KMimeType::List::ConstIterator it = tmp.constBegin(); it != tmp.constEnd(); ++it) {
-        const KMimeType *type = (*it).data();
-
-        if (!type->comment().isEmpty()) {
-            if (type->name().startsWith(QLatin1String("image/"))) {
-                m_ImageTypes.append(type->name());
-            } else if (type->name().startsWith(QLatin1String("video/"))) {
-                m_VideoTypes.append(type->name());
-            } else if (type->name().startsWith(QLatin1String("audio/"))) {
-                m_AudioTypes.append(type->name());
-            }
-        }
-    }
 }
 
 void KfindTabWidget::saveHistory()
@@ -755,17 +761,17 @@ void KfindTabWidget::setQuery(KQuery *query)
 
     query->setFileType(typeBox->currentIndex());
 
-    int id = typeBox->currentIndex()-10;
+    int id = typeBox->currentIndex() - specialMimeTypeCount - 1 /*the separator*/;
 
-    if ((id >= -3) && (id < (int)m_types.count())) {
+    if ((id >= -4) && (id < (int)m_types.count())) {
         switch (id) {
-        case -3:
+        case -4:
             query->setMimeType(m_ImageTypes);
             break;
-        case -2:
+        case -3:
             query->setMimeType(m_VideoTypes);
             break;
-        case -1:
+        case -2:
             query->setMimeType(m_AudioTypes);
             break;
         default:

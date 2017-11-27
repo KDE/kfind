@@ -49,8 +49,6 @@ class KfindTabWidget : public KTabWidget
 public:
     explicit KfindTabWidget(QWidget *parent = nullptr);
     virtual ~KfindTabWidget();
-    void initMimeTypes();
-    void initSpecialMimeTypes();
     void setQuery(class KQuery *query);
     void setDefaults();
 
