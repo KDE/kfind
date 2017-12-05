@@ -127,10 +127,10 @@
     <p xml:lang="zh-TW">KFind 可以做成獨立的搜尋工具，從 KRunner 或是您的選單中開啟。它也可以整合到 Konqueror「工具」選單中的「尋找檔案」。它可以讓您依檔名、檔案型態或內容來搜尋。</p>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kfind</url>
-  <url type="help">http://docs.kde.org/stable/en/applications/kfind/index.html</url>
+  <url type="help">https://docs.kde.org/?application=kfind</url>
   <screenshots>
     <screenshot type="default">
-      <image>http://kde.org/images/screenshots/kfind.png</image>
+      <image>https://kde.org/images/screenshots/kfind.png</image>
     </screenshot>
   </screenshots>
   <project_group>KDE</project_group>
