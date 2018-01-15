@@ -130,7 +130,7 @@ void KfindDlg::startSearch()
     isResultReported = false;
 
     // Reset count - use the same i18n as below
-    setProgressMsg(i18np("one file found", "%1 files found", 0));
+    setProgressMsg(i18np("one item found", "%1 items found", 0));
 
     emit resultSelected(false);
     emit haveResults(false);
@@ -225,7 +225,7 @@ void KfindDlg::addFiles(const QList< QPair<KFileItem, QString> > &pairs)
         isResultReported = true;
     }
 
-    const QString str = i18np("one file found", "%1 files found", win->itemCount());
+    const QString str = i18np("one item found", "%1 items found", win->itemCount());
     setProgressMsg(str);
 }
 
@@ -249,7 +249,7 @@ void KfindDlg::slotDeleteItem(const QString &file)
 {
     win->removeItem(QUrl::fromLocalFile(file));
 
-    const QString str = i18np("one file found", "%1 files found", win->itemCount());
+    const QString str = i18np("one item found", "%1 items found", win->itemCount());
     setProgressMsg(str);
 }
 
