@@ -23,6 +23,7 @@
 #include <QLabel>
 #include <QLayout>
 #include <QCheckBox>
+#include <QMimeDatabase>
 #include <QWhatsThis>
 
 #include <QPushButton>
@@ -60,7 +61,7 @@ static const int specialMimeTypeCount = 10;
 
 struct MimeTypes
 {
-    KMimeType::List all;
+    QVector<QMimeType> all;
     QStringList image;
     QStringList video;
     QStringList audio;
@@ -363,24 +364,25 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     auto mimeTypeFuture = QtConcurrent::run([this] {
         MimeTypes mimeTypes;
 
-        foreach (const KMimeType::Ptr &type, KMimeType::allMimeTypes()) {
-            if ((!type->comment().isEmpty())
-                && (!type->name().startsWith(QLatin1String("kdedevice/")))
-                && (!type->name().startsWith(QLatin1String("all/")))) {
+        const auto types = QMimeDatabase().allMimeTypes();
+        foreach (const QMimeType &type, types) {
+            if ((!type.comment().isEmpty())
+                && (!type.name().startsWith(QLatin1String("kdedevice/")))
+                && (!type.name().startsWith(QLatin1String("all/")))) {
                 mimeTypes.all.append(type);
 
-                if (type->name().startsWith(QLatin1String("image/"))) {
-                    mimeTypes.image.append(type->name());
-                } else if (type->name().startsWith(QLatin1String("video/"))) {
-                    mimeTypes.video.append(type->name());
-                } else if (type->name().startsWith(QLatin1String("audio/"))) {
-                    mimeTypes.audio.append(type->name());
+                if (type.name().startsWith(QLatin1String("image/"))) {
+                    mimeTypes.image.append(type.name());
+                } else if (type.name().startsWith(QLatin1String("video/"))) {
+                    mimeTypes.video.append(type.name());
+                } else if (type.name().startsWith(QLatin1String("audio/"))) {
+                    mimeTypes.audio.append(type.name());
                 }
             }
         }
 
-        std::sort(mimeTypes.all.begin(), mimeTypes.all.end(), [](const KMimeType::Ptr &lhs, const KMimeType::Ptr &rhs) {
-            return lhs->comment() < rhs->comment();
+        std::sort(mimeTypes.all.begin(), mimeTypes.all.end(), [](const QMimeType &lhs, const QMimeType &rhs) {
+            return lhs.comment() < rhs.comment();
         });
 
         return mimeTypes;
@@ -392,7 +394,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
         const MimeTypes &mimeTypes = watcher->result();
 
         for (const auto &mime : qAsConst(mimeTypes.all)) {
-            typeBox->addItem(mime->comment());
+            typeBox->addItem(mime.comment());
         }
 
         m_types = mimeTypes.all;
@@ -775,7 +777,7 @@ void KfindTabWidget::setQuery(KQuery *query)
             query->setMimeType(m_AudioTypes);
             break;
         default:
-            query->setMimeType(QStringList() += m_types[id]->name());
+            query->setMimeType(QStringList() += m_types.value(id).name());
         }
     } else {
         query->setMimeType(QStringList());

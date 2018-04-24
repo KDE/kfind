@@ -19,10 +19,10 @@
 #ifndef KFTABDLG_H
 #define KFTABDLG_H
 
+#include <QMimeType>
 #include <QValidator> // for KDigitValidator
 
 #include <ktabwidget.h>
-#include <kmimetype.h>
 #include <QUrl>
 
 class KUrlComboBox;
@@ -129,7 +129,7 @@ private:
 
     QUrl m_url;
 
-    KMimeType::List m_types;
+    QVector<QMimeType> m_types;
     QStringList m_ImageTypes;
     QStringList m_VideoTypes;
     QStringList m_AudioTypes;
