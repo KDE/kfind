@@ -64,8 +64,6 @@ int main(int argc, char **argv)
 
     QCommandLineParser parser;
     KAboutData::setApplicationData(aboutData);
-    parser.addVersionOption();
-    parser.addHelpOption();
     parser.addOption(QCommandLineOption(QStringList() <<  QStringLiteral("+[searchpath]"), i18n("Path(s) to search")));
 
     aboutData.setupCommandLine(&parser);
