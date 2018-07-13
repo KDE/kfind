@@ -2,8 +2,9 @@ cmake_minimum_required(VERSION 2.8.12)
 
 project(Kfind)
 
+set (KF5_MIN_VERSION "5.28.0")
 # ECM setup
-find_package(ECM 5.28.0 CONFIG REQUIRED)
+find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 set(QT_REQUIRED_VERSION "5.9.0")
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Concurrent)
@@ -31,7 +32,7 @@ ecm_setup_version(${KFIND_VERSION} VARIABLE_PREFIX KFIND
 )
 
 # Build dependencies
-find_package(KF5 REQUIRED COMPONENTS KDELibs4Support Archive DocTools WidgetsAddons)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS KDELibs4Support Archive DocTools WidgetsAddons)
 
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 
