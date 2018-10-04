@@ -224,7 +224,7 @@ void KQuery::slotListEntries(QStringList list)
 
     m_foundFilesList.clear();
     for (; it != end; ++it) {
-        processQuery(KFileItem(KFileItem::Unknown, KFileItem::Unknown, QUrl::fromLocalFile(*it)));
+        processQuery(KFileItem(QUrl::fromLocalFile(*it)));
     }
 
     if (!m_foundFilesList.isEmpty()) {
