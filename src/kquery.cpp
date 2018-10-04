@@ -30,7 +30,6 @@
 #include <kfilemetainfo.h>
 #include <KLocalizedString>
 #include <kmessagebox.h>
-#include <kstandarddirs.h>
 #include <kzip.h>
 
 KQuery::KQuery(QObject *parent)

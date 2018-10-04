@@ -22,7 +22,7 @@
 #include <QMimeType>
 #include <QValidator> // for KDigitValidator
 
-#include <ktabwidget.h>
+#include <QTabWidget>
 #include <QUrl>
 
 class KUrlComboBox;
@@ -42,7 +42,7 @@ class QLabel;
 
 class KfDirDialog;
 
-class KfindTabWidget : public KTabWidget
+class KfindTabWidget : public QTabWidget
 {
     Q_OBJECT
 

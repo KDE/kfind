@@ -29,6 +29,7 @@
 #include <QPushButton>
 #include <QApplication>
 #include <QDesktopWidget>
+#include <QStandardPaths>
 
 #include <kcalendarsystem.h>
 #include <KDateComboBox>
@@ -42,7 +43,6 @@
 #include <QFileDialog>
 #include <kregexpeditorinterface.h>
 #include <kservicetypetrader.h>
-#include <kstandarddirs.h>
 #include <kdialog.h>
 #include <kconfiggroup.h>
 #include <KShell>
@@ -68,7 +68,7 @@ struct MimeTypes
 };
 
 KfindTabWidget::KfindTabWidget(QWidget *parent)
-    : KTabWidget(parent)
+    : QTabWidget(parent)
     , regExpDialog(nullptr)
 {
     // This validator will be used for all numeric edit fields
@@ -105,7 +105,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     caseSensCb->setChecked(false);
     useLocateCb->setChecked(false);
     hiddenFilesCb->setChecked(false);
-    if (KStandardDirs::findExe(QStringLiteral("locate")).isEmpty()) {
+    if (QStandardPaths::findExecutable(QStringLiteral("locate")).isEmpty()) {
         useLocateCb->setEnabled(false);
     }
 
@@ -954,7 +954,7 @@ QSize KfindTabWidget::sizeHint() const
     // Like in minicli, we changed the combobox size policy so that they can resize down,
     // and then we simply provide a reasonable size hint for the whole window, depending
     // on the screen width.
-    QSize sz = KTabWidget::sizeHint();
+    QSize sz = QTabWidget::sizeHint();
     KfindTabWidget *me = const_cast<KfindTabWidget *>(this);
     const int screenWidth = qApp->desktop()->screenGeometry(me).width();
     if (sz.width() > screenWidth / 2) {
