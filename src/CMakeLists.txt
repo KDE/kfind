@@ -17,6 +17,7 @@ add_executable(kfind ${kfind_SRCS})
 target_link_libraries(kfind
 Qt5::Concurrent
 KF5::Archive
+KF5::FileMetaData
 KF5::KDELibs4Support
 )
 

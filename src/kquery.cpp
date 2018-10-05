@@ -27,10 +27,16 @@
 #include <QList>
 #include <kmimetype.h>
 #include <kfileitem.h>
-#include <kfilemetainfo.h>
 #include <KLocalizedString>
 #include <kmessagebox.h>
 #include <kzip.h>
+
+#include <QMimeDatabase>
+
+#include <KFileMetaData/Extractor>
+#include <KFileMetaData/ExtractorCollection>
+#include <KFileMetaData/PropertyInfo>
+#include <KFileMetaData/SimpleExtractionResult>
 
 KQuery::KQuery(QObject *parent)
     : QObject(parent)
@@ -355,19 +361,29 @@ void KQuery::processQuery(const KFileItem &file)
             return;
         }
 
-        KFileMetaInfo metadatas(filename);
-        QStringList metakeys;
+        QMimeDatabase mimeDb;
+        QString mimetype = mimeDb.mimeTypeForFile(filename).name();
         QString strmetakeycontent;
 
-        metakeys = metadatas.supportedKeys();
-        for (QStringList::const_iterator it = metakeys.constBegin(); it != metakeys.constEnd(); ++it) {
-            if (!metaKeyRx.exactMatch(*it)) {
-                continue;
-            }
-            strmetakeycontent = metadatas.item(*it).value().toString();
-            if (strmetakeycontent.indexOf(m_metainfo) != -1) {
-                foundmeta = true;
-                break;
+        KFileMetaData::ExtractorCollection extractors;
+        QList<KFileMetaData::Extractor*> exList = extractors.fetchExtractors(mimetype);
+
+        Q_FOREACH (KFileMetaData::Extractor* ex, exList) {
+            KFileMetaData::SimpleExtractionResult result(filename, mimetype,
+                                                         KFileMetaData::ExtractionResult::ExtractMetaData);
+            ex->extract(&result);
+
+            KFileMetaData::PropertyMap properties = result.properties();
+            KFileMetaData::PropertyMap::const_iterator it = properties.constBegin();
+            for (; it != properties.constEnd(); it++) {
+                if (!metaKeyRx.exactMatch(KFileMetaData::PropertyInfo(it.key()).displayName())) {
+                    continue;
+                }
+                strmetakeycontent = it.value().toString();
+                if (strmetakeycontent.indexOf(m_metainfo) != -1) {
+                    foundmeta = true;
+                    break;
+                }
             }
         }
         if (!foundmeta) {

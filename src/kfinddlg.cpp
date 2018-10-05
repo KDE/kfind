@@ -130,7 +130,7 @@ void KfindDlg::startSearch()
     isResultReported = false;
 
     // Reset count - use the same i18n as below
-    setProgressMsg(i18np("one item found", "%1 items found", 0));
+    setProgressMsg(i18n("0 items found"));
 
     emit resultSelected(false);
     emit haveResults(false);
