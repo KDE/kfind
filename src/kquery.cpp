@@ -46,7 +46,7 @@ KQuery::KQuery(QObject *parent)
     , m_regexpForContent(false)
     , m_useLocate(false)
     , m_showHiddenFiles(false)
-    , job(0)
+    , job(nullptr)
     , m_insideCheckEntries(false)
     , m_result(0)
 {
@@ -206,7 +206,7 @@ void KQuery::checkEntries()
         emit foundFileList(m_foundFilesList);
     }
 
-    if (job == 0) {
+    if (job == nullptr) {
         emit result(m_result);
     }
 

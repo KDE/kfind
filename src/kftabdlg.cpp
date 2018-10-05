@@ -308,7 +308,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     QLabel *typeL = new QLabel(i18nc("label for the file type combobox", "File &type:"), pages[2]);
     typeL->setBuddy(typeBox);
     textEdit = new KLineEdit(pages[2]);
-    textEdit->setClearButtonShown(true);
+    textEdit->setClearButtonEnabled(true);
     textEdit->setObjectName(QStringLiteral("textEdit"));
     QLabel *textL = new QLabel(i18n("C&ontaining text:"), pages[2]);
     textL->setBuddy(textEdit);
