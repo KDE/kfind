@@ -241,7 +241,7 @@ void KfindDlg::copySelection()
 
 void KfindDlg::about()
 {
-    KAboutApplicationDialog dlg(KAboutData::applicationData(), 0, this);
+    KAboutApplicationDialog dlg(KAboutData::applicationData(), nullptr, this);
     dlg.exec();
 }
 

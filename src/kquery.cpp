@@ -410,7 +410,7 @@ void KQuery::processQuery(const KFileItem &file)
         // FIXME: doesn't work with non local files
 
         QString filename;
-        QTextStream *stream = 0;
+        QTextStream *stream = nullptr;
         QFile qf;
         QRegExp xmlTags;
         QByteArray zippedXmlFileContent;
