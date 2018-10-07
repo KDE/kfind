@@ -36,7 +36,6 @@
 #include <kmessagebox.h>
 #include <kglobal.h>
 #include <kiconloader.h>
-#include <kglobalsettings.h>
 #include <kjobwidgets.h>
 #include <KFileItemActions>
 #include <KFileItemListProperties>
@@ -331,7 +330,6 @@ KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
     connect(this, &KFindTreeView::customContextMenuRequested, this, &KFindTreeView::contextMenuRequested);
 
     //Mouse single/double click settings
-    connect(KGlobalSettings::self(), &KGlobalSettings::settingsChanged, this, &KFindTreeView::reconfigureMouseSettings);
     reconfigureMouseSettings();
 
     // TODO: this is a workaround until  Qt-issue 176832 has been fixed (from Dolphin)
