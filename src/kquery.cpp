@@ -133,10 +133,10 @@ void KQuery::start()
             job = KIO::listDir(m_url, KIO::HideProgressInfo);
         }
 
-        connect(job, SIGNAL(entries(KIO::Job *,KIO::UDSEntryList)),
-                SLOT(slotListEntries(KIO::Job *,KIO::UDSEntryList)));
-        connect(job, SIGNAL(result(KJob *)), SLOT(slotResult(KJob *)));
-        connect(job, SIGNAL(canceled(KJob *)), SLOT(slotCanceled(KJob *)));
+        connect(job, SIGNAL(entries(KIO::Job*,KIO::UDSEntryList)),
+                SLOT(slotListEntries(KIO::Job*,KIO::UDSEntryList)));
+        connect(job, SIGNAL(result(KJob*)), SLOT(slotResult(KJob*)));
+        connect(job, SIGNAL(canceled(KJob*)), SLOT(slotCanceled(KJob*)));
     }
 }
 
