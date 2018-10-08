@@ -18,36 +18,34 @@
 
 #include "kftabdlg.h"
 
+#include <QApplication>
 #include <QButtonGroup>
-#include <QRadioButton>
+#include <QCheckBox>
+#include <QDesktopWidget>
+#include <QFileDialog>
 #include <QLabel>
 #include <QLayout>
-#include <QCheckBox>
 #include <QMimeDatabase>
-#include <QWhatsThis>
-
 #include <QPushButton>
-#include <QApplication>
-#include <QDesktopWidget>
-#include <QStandardPaths>
-
-#include <kcalendarsystem.h>
-#include <KDateComboBox>
-#include <kglobal.h>
-#include <kcombobox.h>
-#include <kurlcombobox.h>
-#include <kurlcompletion.h>
-#include <klineedit.h>
-#include <kmessagebox.h>
+#include <QRadioButton>
 #include <QSpinBox>
-#include <QFileDialog>
-#include <kregexpeditorinterface.h>
-#include <kservicetypetrader.h>
-#include <kconfiggroup.h>
-#include <KShell>
-
+#include <QStandardPaths>
+#include <QWhatsThis>
 #include <QtConcurrent/QtConcurrentRun>
 #include <QFutureWatcher>
+
+#include <KComboBox>
+#include <KConfigGroup>
+#include <KDateComboBox>
+#include <KLineEdit>
+#include <KLocalizedString>
+#include <KMessageBox>
+#include <KRegExpEditorInterface>
+#include <KServiceTypeTrader>
+#include <KSharedConfig>
+#include <KShell>
+#include <KUrlComboBox>
+#include <KUrlCompletion>
 
 #include <algorithm>
 
@@ -499,7 +497,7 @@ void KfindTabWidget::fillDirBox()
     QDir m_dir(QStringLiteral("/lib"));
     dirBox->insertItem(0, m_url.toDisplayString());
     dirBox->addUrl(QUrl::fromLocalFile(QDir::homePath()));
-    dirBox->addUrl(QUrl::fromLocalFile("/"));
+    dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("/")));
     dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("/usr")));
     if (m_dir.exists()) {
         dirBox->addUrl(QUrl::fromLocalFile(QStringLiteral("lib")));

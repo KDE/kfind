@@ -21,16 +21,16 @@
 
 #include <time.h>
 
-#include <QObject>
-#include <QRegExp>
-#include <QQueue>
-#include <QList>
 #include <QDir>
+#include <QList>
+#include <QObject>
 #include <QPair>
+#include <QQueue>
+#include <QRegExp>
 #include <QStringList>
 
-#include <kio/job.h>
-#include <kprocess.h>
+#include <KIO/Job>
+#include <KProcess>
 
 class KFileItem;
 

@@ -16,15 +16,15 @@
 *
 ******************************************************************/
 
+#include <QApplication>
+#include <QCommandLineOption>
+#include <QCommandLineParser>
 #include <QDir>
 #include <QFile>
 #include <QUrl>
 
-#include <KLocalizedString>
-#include <QApplication>
 #include <KAboutData>
-#include <QCommandLineParser>
-#include <QCommandLineOption>
+#include <KLocalizedString>
 #include <Kdelibs4ConfigMigrator>
 
 #include "kfinddlg.h"

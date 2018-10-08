@@ -20,10 +20,9 @@
 #define KFTABDLG_H
 
 #include <QMimeType>
-#include <QValidator> // for KDigitValidator
-
 #include <QTabWidget>
 #include <QUrl>
+#include <QValidator> // for KDigitValidator
 
 class KUrlComboBox;
 class QButtonGroup;

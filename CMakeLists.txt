@@ -32,7 +32,16 @@ ecm_setup_version(${KFIND_VERSION} VARIABLE_PREFIX KFIND
 )
 
 # Build dependencies
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS KDELibs4Support Archive DocTools FileMetaData WidgetsAddons)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+    Archive
+    CoreAddons
+    DocTools
+    FileMetaData
+    I18n
+    KIO
+    TextWidgets
+    WidgetsAddons
+)
 
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 

@@ -16,9 +16,15 @@ add_executable(kfind ${kfind_SRCS})
 
 target_link_libraries(kfind
 Qt5::Concurrent
+Qt5::Widgets
 KF5::Archive
+KF5::CoreAddons
 KF5::FileMetaData
-KF5::KDELibs4Support
+KF5::I18n
+KF5::KIOWidgets
+KF5::TextWidgets
+KF5::WidgetsAddons
+KF5::XmlGui
 )
 
 install(TARGETS kfind ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})

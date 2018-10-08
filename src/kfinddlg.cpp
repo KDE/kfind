@@ -18,20 +18,21 @@
 
 #include "kfinddlg.h"
 
+#include <QApplication>
 #include <QDialogButtonBox>
 #include <QHBoxLayout>
 #include <QLayout>
 #include <QMenu>
 #include <QPushButton>
+#include <QStatusBar>
 
 #include <KAboutApplicationDialog>
-#include <KComponentData>
+#include <KAboutData>
 #include <KConfigGroup>
 #include <KGuiItem>
 #include <KHelpMenu>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KStatusBar>
 
 #include "kftabdlg.h"
 #include "kquery.h"

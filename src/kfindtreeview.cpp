@@ -18,33 +18,31 @@
 ******************************************************************/
 
 #include "kfindtreeview.h"
-
 #include "kfinddlg.h"
 
-#include <QTextStream>
-#include <QTextCodec>
-#include <QFileInfo>
-#include <QClipboard>
-#include <QHeaderView>
 #include <QApplication>
+#include <QClipboard>
 #include <QDate>
+#include <QFileDialog>
+#include <QFileInfo>
+#include <QHeaderView>
 #include <QMenu>
+#include <QMimeData>
+#include <QTextCodec>
+#include <QTextStream>
 
 #include <KActionCollection>
-#include <QFileDialog>
-#include <krun.h>
-#include <kmessagebox.h>
-#include <kglobal.h>
-#include <kiconloader.h>
-#include <kjobwidgets.h>
 #include <KFileItemActions>
 #include <KFileItemListProperties>
+#include <KJobWidgets>
+#include <KLocalizedString>
+#include <KMessageBox>
 #include <KPropertiesDialog>
+#include <KRun>
 
-#include <kio/netaccess.h>
-#include <kio/copyjob.h>
-#include <kio/deletejob.h>
-#include <kio/jobuidelegate.h>
+#include <KIO/CopyJob>
+#include <KIO/DeleteJob>
+#include <KIO/JobUiDelegate>
 #include <KIO/OpenFileManagerWindowJob>
 #include <kio_version.h>
 

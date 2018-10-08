@@ -22,15 +22,15 @@
 
 #include <QCoreApplication>
 #include <QFileInfo>
+#include <QList>
+#include <QMimeDatabase>
 #include <QTextCodec>
 #include <QTextStream>
-#include <QList>
-#include <kfileitem.h>
+ 
+#include <KFileItem>
 #include <KLocalizedString>
-#include <kmessagebox.h>
-#include <kzip.h>
-
-#include <QMimeDatabase>
+#include <KMessageBox>
+#include <KZip>
 
 #include <KFileMetaData/Extractor>
 #include <KFileMetaData/ExtractorCollection>
