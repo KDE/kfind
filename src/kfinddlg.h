@@ -20,10 +20,11 @@
 #define KFINDDLG_H
 
 #include <QDialog>
+#include <QLabel>
+#include <QtGlobal>
+
 #include <KDirLister>
 #include <KDirWatch>
-
-#include <qglobal.h>
 
 QT_FORWARD_DECLARE_CLASS(QDir)
 QT_FORWARD_DECLARE_CLASS(QString)
@@ -33,8 +34,9 @@ class KQuery;
 class KFileItem;
 class KfindTabWidget;
 class KFindTreeView;
-class KStatusBar;
+class QLabel;
 class QPushButton;
+class QStatusBar;
 
 class KfindDlg : public QDialog
 {
@@ -76,10 +78,12 @@ private:
     QPushButton *m_saveAsButton;
     QPushButton *m_stopButton;
     QPushButton *m_findButton;
+    QStatusBar *mStatusBar;
+    QLabel *m_labelStatus;
+    QLabel *m_labelProgress;
 
     bool isResultReported;
     KQuery *query;
-    KStatusBar *mStatusBar;
     KDirLister *dirlister;
     KDirWatch *dirwatch;
 };

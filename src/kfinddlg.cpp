@@ -59,14 +59,19 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     // prepare window for find results
     win = new KFindTreeView(frame, this);
 
-    mStatusBar = new KStatusBar(frame);
-    mainLayout->addWidget(mStatusBar);
-    mStatusBar->insertItem(QStringLiteral("AMiddleLengthText..."), 0);
-    setStatusMsg(i18nc("the application is currently idle, there is no active search", "Idle."));
-    mStatusBar->setItemAlignment(0, Qt::AlignLeft | Qt::AlignVCenter);
-    mStatusBar->insertPermanentItem(QString(), 1, 1);
-    mStatusBar->setItemAlignment(1, Qt::AlignRight | Qt::AlignVCenter);
+    mStatusBar = new QStatusBar(frame);
+    
+    m_labelStatus = new QLabel(mStatusBar);
+    m_labelStatus->setAlignment (Qt::AlignLeft | Qt::AlignVCenter);
+    m_labelStatus->setText(i18nc("the application is currently idle, there is no active search", "Idle."));
 
+    m_labelProgress = new QLabel(mStatusBar);
+    m_labelProgress->setAlignment (Qt::AlignRight | Qt::AlignVCenter);
+    m_labelProgress->setText(QString());
+    
+    mStatusBar->addWidget(m_labelStatus, 1);
+    mStatusBar->addWidget(m_labelProgress, 0);
+    
     QVBoxLayout *vBox = new QVBoxLayout(frame);
     vBox->addWidget(tabWidget, 0);
     vBox->addWidget(win, 1);
@@ -126,12 +131,12 @@ void KfindDlg::finishAndClose()
 
 void KfindDlg::setProgressMsg(const QString &msg)
 {
-    mStatusBar->changeItem(msg, 1);
+    m_labelProgress->setText(msg);
 }
 
 void KfindDlg::setStatusMsg(const QString &msg)
 {
-    mStatusBar->changeItem(msg, 0);
+    m_labelStatus->setText(msg);
 }
 
 void KfindDlg::startSearch()
