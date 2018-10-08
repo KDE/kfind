@@ -25,7 +25,6 @@
 #include <QTextCodec>
 #include <QTextStream>
 #include <QList>
-#include <kmimetype.h>
 #include <kfileitem.h>
 #include <KLocalizedString>
 #include <kmessagebox.h>
@@ -445,8 +444,17 @@ void KQuery::processQuery(const KFileItem &file)
             }
         } else if (!m_search_binary && !file.mimetype().startsWith(QLatin1String("text/"))
                    && file.url().isLocalFile() && !file.url().path().startsWith(QLatin1String("/dev"))) {
-            if (KMimeType::isBinaryData(file.url().path())) {
-                return;
+            QFile binfile(file.url().toLocalFile());
+            if (!binfile.open(QIODevice::ReadOnly)) {
+                return; // err, whatever
+            }
+            // Check the first 32 bytes (see shared-mime spec)
+            const QByteArray bindata = binfile.read(32);
+            const char* pbin = bindata.data();
+            const int end = qMin(32, bindata.size());
+            for (int i = 0; i < end; ++i) {
+                if ((unsigned char)(pbin[i]) < 32 && pbin[i] != 9 && pbin[i] != 10 && pbin[i] != 13) // ASCII control character
+                    return;
             }
         }
 
