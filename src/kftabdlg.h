@@ -35,7 +35,7 @@ class QString;
 class QDate;
 class QRegExp;
 class KDateComboBox;
-class KDialog;
+class QDialog;
 class KComboBox;
 class QSpinBox;
 class QLabel;

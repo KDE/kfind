@@ -146,6 +146,7 @@ public:
 public Q_SLOTS:
     void copySelection();
     void contextMenuRequested(const QPoint &p);
+    void saveResults();
 
 private Q_SLOTS:
     void deleteSelectedFiles();
@@ -155,7 +156,6 @@ private Q_SLOTS:
     void slotExecuteSelected();
 
     void openContainingFolder();
-    void saveResults();
 
     void reconfigureMouseSettings();
     void updateMouseButtons();

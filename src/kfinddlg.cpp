@@ -18,46 +18,41 @@
 
 #include "kfinddlg.h"
 
+#include <QDialogButtonBox>
+#include <QHBoxLayout>
 #include <QLayout>
+#include <QMenu>
 #include <QPushButton>
 
+#include <KAboutApplicationDialog>
+#include <KComponentData>
+#include <KConfigGroup>
+#include <KGuiItem>
+#include <KHelpMenu>
 #include <KLocalizedString>
-#include <kstatusbar.h>
-#include <kmessagebox.h>
-#include <kaboutapplicationdialog.h>
-#include <khelpmenu.h>
-#include <qmenu.h>
-#include <kcomponentdata.h>
+#include <KMessageBox>
+#include <KStatusBar>
 
 #include "kftabdlg.h"
 #include "kquery.h"
 #include "kfindtreeview.h"
 
 KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
-    : KDialog(parent)
+    : QDialog(parent)
 {
-    setButtons(User1 | User2 | User3 | Close | Help);
-    setDefaultButton(User3);
+    QHBoxLayout *mainLayout = new QHBoxLayout;
+    setLayout(mainLayout);
     setModal(true);
-
-    setButtonGuiItem(User3, KStandardGuiItem::find());
-    setButtonGuiItem(User2, KStandardGuiItem::stop());
-    setButtonGuiItem(User1, KStandardGuiItem::saveAs());
-
     QWidget::setWindowTitle(i18nc("@title:window", "Find Files/Folders"));
-    setButtonsOrientation(Qt::Vertical);
-
-    enableButton(User3, true); // Enable "Find"
-    enableButton(User2, false); // Disable "Stop"
-    enableButton(User1, false); // Disable "Save As..."
 
     isResultReported = false;
 
     QFrame *frame = new QFrame;
-    setMainWidget(frame);
+    mainLayout->addWidget(frame);
 
     // create tabwidget
     tabWidget = new KfindTabWidget(frame);
+    mainLayout->addWidget(tabWidget);
     tabWidget->setURL(url);
     tabWidget->setFocus();
 
@@ -65,6 +60,7 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     win = new KFindTreeView(frame, this);
 
     mStatusBar = new KStatusBar(frame);
+    mainLayout->addWidget(mStatusBar);
     mStatusBar->insertItem(QStringLiteral("AMiddleLengthText..."), 0);
     setStatusMsg(i18nc("the application is currently idle, there is no active search", "Idle."));
     mStatusBar->setItemAlignment(0, Qt::AlignLeft | Qt::AlignVCenter);
@@ -76,26 +72,41 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     vBox->addWidget(win, 1);
     vBox->addWidget(mStatusBar, 0);
 
-    connect(tabWidget, SIGNAL(startSearch()),
-            this, SLOT(startSearch()));
-    connect(this, SIGNAL(user3Clicked()),
-            this, SLOT(startSearch()));
-    connect(this, SIGNAL(user2Clicked()),
-            this, SLOT(stopSearch()));
-    connect(this, SIGNAL(user1Clicked()),
-            win, SLOT(saveResults()));
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Help | QDialogButtonBox::Close, this);
+    m_findButton = new QPushButton;
+    buttonBox->addButton(m_findButton, QDialogButtonBox::ActionRole);
+    m_stopButton = new QPushButton;
+    buttonBox->addButton(m_stopButton, QDialogButtonBox::ActionRole);
+    m_saveAsButton = new QPushButton;
+    buttonBox->addButton(m_saveAsButton, QDialogButtonBox::ActionRole);
+    buttonBox->setOrientation(Qt::Vertical);
+    m_findButton->setDefault(true);
 
-    connect(this, &KDialog::closeClicked, this, &KfindDlg::finishAndClose);
+    KGuiItem::assign(m_findButton, KStandardGuiItem::find());
+    KGuiItem::assign(m_stopButton, KStandardGuiItem::stop());
+    KGuiItem::assign(m_saveAsButton, KStandardGuiItem::saveAs());
 
-    connect(win, SIGNAL(resultSelected(bool)),
-            this, SIGNAL(resultSelected(bool)));
+    m_findButton->setEnabled(true); // Enable "Find"
+    m_stopButton->setEnabled(false); // Disable "Stop"
+    m_saveAsButton->setEnabled(false); // Disable "Save As..."
+
+    mainLayout->addWidget(buttonBox);
+
+    connect(tabWidget, &KfindTabWidget::startSearch, this, &KfindDlg::startSearch);
+    connect(m_findButton, &QPushButton::clicked, this, &KfindDlg::startSearch);
+    connect(m_stopButton, &QPushButton::clicked, this, &KfindDlg::stopSearch);
+    connect(m_saveAsButton, &QPushButton::clicked, win, &KFindTreeView::saveResults);
+
+    connect(buttonBox->button(QDialogButtonBox::Close), &QPushButton::clicked, this, &KfindDlg::finishAndClose);
+
+    connect(win, &KFindTreeView::resultSelected, this, &KfindDlg::resultSelected);
 
     query = new KQuery(frame);
     connect(query, SIGNAL(result(int)), SLOT(slotResult(int)));
     connect(query, SIGNAL(foundFileList(QList<QPair<KFileItem,QString> >)), SLOT(addFiles(QList<QPair<KFileItem,QString> >)));
 
     KHelpMenu *helpMenu = new KHelpMenu(this, KAboutData::applicationData(), true);
-    setButtonMenu(Help, helpMenu->menu());
+    buttonBox->button(QDialogButtonBox::Help)->setMenu(helpMenu->menu());
     dirwatch = NULL;
 }
 
@@ -135,9 +146,9 @@ void KfindDlg::startSearch()
     emit resultSelected(false);
     emit haveResults(false);
 
-    enableButton(User3, false); // Disable "Find"
-    enableButton(User2, true); // Enable "Stop"
-    enableButton(User1, false); // Disable "Save As..."
+    m_findButton->setEnabled(false); // Disable "Find"
+    m_stopButton->setEnabled(true); // Enable "Stop"
+    m_saveAsButton->setEnabled(false); // Disable "Save As..."
 
     delete dirwatch;
     dirwatch = new KDirWatch();
@@ -207,9 +218,9 @@ void KfindDlg::slotResult(int errorCode)
         setStatusMsg(i18n("Error."));
     }
 
-    enableButton(User3, true); // Enable "Find"
-    enableButton(User2, false); // Disable "Stop"
-    enableButton(User1, true); // Enable "Save As..."
+    m_findButton->setEnabled(true); // Enable "Find"
+    m_stopButton->setEnabled(false); // Disable "Stop"
+    m_saveAsButton->setEnabled(true); // Enable "Save As..."
 
     win->endSearch();
     tabWidget->endSearch();

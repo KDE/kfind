@@ -43,7 +43,6 @@
 #include <QFileDialog>
 #include <kregexpeditorinterface.h>
 #include <kservicetypetrader.h>
-#include <kdialog.h>
 #include <kconfiggroup.h>
 #include <KShell>
 
@@ -147,8 +146,6 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     // Layout
 
     QGridLayout *grid = new QGridLayout(pages[0]);
-    grid->setMargin(KDialog::marginHint());
-    grid->setSpacing(KDialog::spacingHint());
     QVBoxLayout *subgrid = new QVBoxLayout();
     grid->addWidget(namedL, 0, 0);
     grid->addWidget(nameBox, 0, 1, 1, 3);
@@ -258,11 +255,8 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     // Layout
 
     QGridLayout *grid1 = new QGridLayout(pages[1]);
-    grid1->setMargin(KDialog::marginHint());
-    grid1->setSpacing(KDialog::spacingHint());
 
     grid1->addWidget(findCreated, 0, 0, 1, 3);
-    grid1->addItem(new QSpacerItem(KDialog::spacingHint(), 0), 0, 0);
 
     grid1->addWidget(rb[0], 1, 1);
     grid1->addWidget(fromDate, 1, 2);
@@ -420,8 +414,6 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     sizeEdit->setMinimumSize(tmp, sizeEdit->sizeHint().height());
 
     QGridLayout *grid2 = new QGridLayout(pages[2]);
-    grid2->setMargin(KDialog::marginHint());
-    grid2->setSpacing(KDialog::spacingHint());
     grid2->addWidget(typeL, 0, 0);
     grid2->addWidget(textL, 1, 0);
     grid2->addWidget(typeBox, 0, 1, 1, 3);

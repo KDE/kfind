@@ -19,9 +19,9 @@
 #ifndef KFINDDLG_H
 #define KFINDDLG_H
 
-#include <kdialog.h>
-#include <kdirlister.h>
-#include <kdirwatch.h>
+#include <QDialog>
+#include <KDirLister>
+#include <KDirWatch>
 
 #include <qglobal.h>
 
@@ -34,8 +34,9 @@ class KFileItem;
 class KfindTabWidget;
 class KFindTreeView;
 class KStatusBar;
+class QPushButton;
 
-class KfindDlg : public KDialog
+class KfindDlg : public QDialog
 {
     Q_OBJECT
 
@@ -72,6 +73,9 @@ Q_SIGNALS:
 private:
     KfindTabWidget *tabWidget;
     KFindTreeView *win;
+    QPushButton *m_saveAsButton;
+    QPushButton *m_stopButton;
+    QPushButton *m_findButton;
 
     bool isResultReported;
     KQuery *query;
