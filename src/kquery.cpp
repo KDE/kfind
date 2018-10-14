@@ -448,12 +448,12 @@ void KQuery::processQuery(const KFileItem &file)
             if (!binfile.open(QIODevice::ReadOnly)) {
                 return; // err, whatever
             }
-            // Check the first 32 bytes (see shared-mime spec)
-            const QByteArray bindata = binfile.read(32);
+            // Check the first 128 bytes (see shared-mime spec)
+            const QByteArray bindata = binfile.read(128);
             const char* pbin = bindata.data();
-            const int end = qMin(32, bindata.size());
+            const int end = qMin(128, bindata.size());
             for (int i = 0; i < end; ++i) {
-                if ((unsigned char)(pbin[i]) < 32 && pbin[i] != 9 && pbin[i] != 10 && pbin[i] != 13) // ASCII control character
+                if ((unsigned char)(pbin[i]) < 128 && pbin[i] != 9 && pbin[i] != 10 && pbin[i] != 13) // ASCII control character
                     return;
             }
         }
