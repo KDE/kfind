@@ -353,7 +353,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     typeBox->addItem(i18n("All Sounds"));
     typeBox->insertSeparator(typeBox->count()); // append separator
 
-    auto mimeTypeFuture = QtConcurrent::run([this] {
+    auto mimeTypeFuture = QtConcurrent::run([] {
         MimeTypes mimeTypes;
 
         const auto types = QMimeDatabase().allMimeTypes();
