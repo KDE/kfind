@@ -453,7 +453,7 @@ void KQuery::processQuery(const KFileItem &file)
             const char* pbin = bindata.data();
             const int end = qMin(128, bindata.size());
             for (int i = 0; i < end; ++i) {
-                if ((unsigned char)(pbin[i]) < 128 && pbin[i] != 9 && pbin[i] != 10 && pbin[i] != 13) // ASCII control character
+                if ((unsigned char)(pbin[i]) < 32 && pbin[i] != 9 && pbin[i] != 10 && pbin[i] != 13) // ASCII control character
                     return;
             }
         }
