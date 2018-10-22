@@ -55,7 +55,6 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     tabWidget = new KfindTabWidget(frame);
     mainLayout->addWidget(tabWidget);
     tabWidget->setURL(url);
-    tabWidget->setFocus();
 
     // prepare window for find results
     win = new KFindTreeView(frame, this);
@@ -114,6 +113,8 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     KHelpMenu *helpMenu = new KHelpMenu(this, KAboutData::applicationData(), true);
     buttonBox->button(QDialogButtonBox::Help)->setMenu(helpMenu->menu());
     dirwatch = NULL;
+    
+    setFocus();
 }
 
 KfindDlg::~KfindDlg()
