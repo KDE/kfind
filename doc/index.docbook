@@ -23,8 +23,8 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2016-11-05</date>
-<releaseinfo>Applications 16.12</releaseinfo>
+<date>2018-10-22</date>
+<releaseinfo>Applications 18.12</releaseinfo>
 
 <abstract>
 <para>
@@ -237,17 +237,44 @@ usually do not contain text (for example program files and images).</para>
 </listitem>
 </varlistentry>
 
-<!-- FIXME: "Search metainfo sections" 
-Search within files' specific comments/metainfo<br />These are some "
-"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
-"title, an album</li><li><b>Images (png...)</b> Search images with a special "
-"resolution, comment...</li></ul></qt>"
-
-"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
-"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
-"Search only in Resolution, Bitdepth...</li></ul></qt>"
-Broken in 4.11? kfile4 + kfilemetadatareader give no output
--->
+<varlistentry>
+<term><guilabel>Search metainfo sections</guilabel></term>
+<listitem>
+<para>
+These two fields can be used to search within files' specific comments or metainfo.
+</para>
+<para>
+    Here are some major cases:
+</para>
+<itemizedlist>
+    <listitem>
+        <para>
+            <emphasis>Video files (avi, mp4, &etc;)</emphasis>: specify some tag (<userinput>Bitrate</userinput>, <userinput>Duration</userinput>, &etc;) and its value to find items which have the specified parameter value in their metadata.
+        </para>
+    </listitem>
+    <listitem>
+        <para>
+            <emphasis>Images (png, jpeg, &etc;)</emphasis>: specify some tag (<userinput>Width</userinput>, <userinput>Height</userinput>, &etc;) and its value to find items which have the specified parameter value in their metadata.
+        </para>
+    </listitem>
+    <listitem>
+        <para>
+            <emphasis>Audio files (mp3, flac, &etc;)</emphasis>: specify some tag (<userinput>Title</userinput>, <userinput>Album</userinput>, &etc;) and its value to find items which have the specified parameter value in their metadata.
+        </para>
+    </listitem>
+    <listitem>
+        <para>
+            <emphasis>Ebooks (epub, azw, fb2, &etc;)</emphasis>: specify some tag (<userinput>Title</userinput>, <userinput>Author</userinput>, &etc;) and its value to find items which have the specified parameter value in their metadata.
+        </para>
+    </listitem>
+</itemizedlist>
+<note>
+    <para>
+        If there is a translation of the tags into your language you can use the localized tag names in the search criterion.
+    </para>
+</note>
+</listitem>
+</varlistentry>
 </variablelist>
 
 </sect1>
