@@ -76,7 +76,6 @@ protected Q_SLOTS:
     /* List of files found using KIO */
     void slotListEntries(KIO::Job *, const KIO::UDSEntryList &);
     void slotResult(KJob *);
-    void slotCanceled(KJob *);
 
     void slotreadyReadStandardOutput();
     void slotreadyReadStandardError();

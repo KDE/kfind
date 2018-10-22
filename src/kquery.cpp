@@ -56,9 +56,9 @@ KQuery::KQuery(QObject *parent)
     , m_result(0)
 {
     processLocate = new KProcess(this);
-    connect(processLocate, SIGNAL(readyReadStandardOutput()), this, SLOT(slotreadyReadStandardOutput()));
-    connect(processLocate, SIGNAL(readyReadStandardError()), this, SLOT(slotreadyReadStandardError()));
-    connect(processLocate, SIGNAL(finished(int,QProcess::ExitStatus)), this, SLOT(slotendProcessLocate(int,QProcess::ExitStatus)));
+    connect(processLocate, &KProcess::readyReadStandardOutput, this, &KQuery::slotreadyReadStandardOutput);
+    connect(processLocate, &KProcess::readyReadStandardError, this, &KQuery::slotreadyReadStandardError);
+    connect(processLocate, QOverload<int, QProcess::ExitStatus>::of(&KProcess::finished), this, &KQuery::slotendProcessLocate);
 
     // Files with these mime types can be ignored, even if
     // findFormatByFileContent() in some cases may claim that
@@ -135,8 +135,7 @@ void KQuery::start()
 
         connect(job, SIGNAL(entries(KIO::Job*,KIO::UDSEntryList)),
                 SLOT(slotListEntries(KIO::Job*,KIO::UDSEntryList)));
-        connect(job, SIGNAL(result(KJob*)), SLOT(slotResult(KJob*)));
-        connect(job, SIGNAL(canceled(KJob*)), SLOT(slotCanceled(KJob*)));
+        connect(job, &KIO::ListJob::result, this, &KQuery::slotResult);
     }
 }
 
@@ -148,19 +147,9 @@ void KQuery::slotResult(KJob *_job)
     job = nullptr;
 
     m_result = _job->error();
-    checkEntries();
-}
-
-void KQuery::slotCanceled(KJob *_job)
-{
-    if (job != _job) {
-        return;
+    if (m_result == KIO::ERR_USER_CANCELED) {
+        m_fileItems.clear();
     }
-    job = nullptr;
-
-    m_fileItems.clear();
-
-    m_result = KIO::ERR_USER_CANCELED;
     checkEntries();
 }
 

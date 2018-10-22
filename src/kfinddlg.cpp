@@ -108,8 +108,8 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     connect(win, &KFindTreeView::resultSelected, this, &KfindDlg::resultSelected);
 
     query = new KQuery(frame);
-    connect(query, SIGNAL(result(int)), SLOT(slotResult(int)));
-    connect(query, SIGNAL(foundFileList(QList<QPair<KFileItem,QString> >)), SLOT(addFiles(QList<QPair<KFileItem,QString> >)));
+    connect(query, &KQuery::result, this, &KfindDlg::slotResult);
+    connect(query, &KQuery::foundFileList, this, &KfindDlg::addFiles);
 
     KHelpMenu *helpMenu = new KHelpMenu(this, KAboutData::applicationData(), true);
     buttonBox->button(QDialogButtonBox::Help)->setMenu(helpMenu->menu());
@@ -158,8 +158,8 @@ void KfindDlg::startSearch()
 
     delete dirwatch;
     dirwatch = new KDirWatch();
-    connect(dirwatch, SIGNAL(created(QString)), this, SLOT(slotNewItems(QString)));
-    connect(dirwatch, SIGNAL(deleted(QString)), this, SLOT(slotDeleteItem(QString)));
+    connect(dirwatch, &KDirWatch::created, this, &KfindDlg::slotNewItems);
+    connect(dirwatch, &KDirWatch::deleted, this, &KfindDlg::slotDeleteItem);
     dirwatch->addDir(query->url().toLocalFile(), KDirWatch::WatchFiles);
 
 #if 0
