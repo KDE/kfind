@@ -137,6 +137,13 @@
   <screenshots>
     <screenshot type="default">
       <caption>KFind main window</caption>
+      <caption xml:lang="ca">Finestra principal del KFind</caption>
+      <caption xml:lang="gl">Xanela principal de KFind</caption>
+      <caption xml:lang="nl">Hoofdvenster van KFind</caption>
+      <caption xml:lang="pt">Janela principal do KFind</caption>
+      <caption xml:lang="sv">Huvudfönstret i Kfind</caption>
+      <caption xml:lang="uk">Головне вікно KFind</caption>
+      <caption xml:lang="x-test">xxKFind main windowxx</caption>
       <image>https://kde.org/images/screenshots/kfind.png</image>
     </screenshot>
   </screenshots>
