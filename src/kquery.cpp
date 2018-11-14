@@ -133,8 +133,7 @@ void KQuery::start()
             job = KIO::listDir(m_url, KIO::HideProgressInfo);
         }
 
-        connect(job, SIGNAL(entries(KIO::Job*,KIO::UDSEntryList)),
-                SLOT(slotListEntries(KIO::Job*,KIO::UDSEntryList)));
+        connect(job, &KIO::ListJob::entries, this, QOverload<KIO::Job*, const KIO::UDSEntryList&>::of(&KQuery::slotListEntries));
         connect(job, &KIO::ListJob::result, this, &KQuery::slotResult);
     }
 }

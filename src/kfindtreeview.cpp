@@ -632,8 +632,8 @@ void KFindTreeView::moveToTrashSelectedFiles()
 
 void KFindTreeView::reconfigureMouseSettings()
 {
-    disconnect(SIGNAL(clicked(QModelIndex)));
-    disconnect(SIGNAL(doubleClicked(QModelIndex)));
+    disconnect(this, &KFindTreeView::clicked, this, &KFindTreeView::slotExecute);
+    disconnect(this, &KFindTreeView::doubleClicked, this, &KFindTreeView::slotExecute);
 
     if (m_kfindDialog->style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick)) {
         connect(this, &KFindTreeView::clicked, this, &KFindTreeView::slotExecute);
