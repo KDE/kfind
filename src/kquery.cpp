@@ -207,7 +207,7 @@ void KQuery::checkEntries()
 }
 
 /* List of files found using slocate */
-void KQuery::slotListEntries(QStringList list)
+void KQuery::slotListEntries(const QStringList &list)
 {
     metaKeyRx = QRegExp(m_metainfokey);
     metaKeyRx.setPatternSyntax(QRegExp::Wildcard);
@@ -597,7 +597,7 @@ void KQuery::setShowHiddenFiles(bool showHidden)
 
 void KQuery::slotreadyReadStandardError()
 {
-    KMessageBox::error(NULL, QString::fromLocal8Bit(processLocate->readAllStandardOutput()), i18nc("@title:window", "Error while using locate"));
+    KMessageBox::error(nullptr, QString::fromLocal8Bit(processLocate->readAllStandardOutput()), i18nc("@title:window", "Error while using locate"));
 }
 
 void KQuery::slotreadyReadStandardOutput()

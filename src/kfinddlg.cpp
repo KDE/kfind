@@ -112,7 +112,7 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
 
     KHelpMenu *helpMenu = new KHelpMenu(this, KAboutData::applicationData(), true);
     buttonBox->button(QDialogButtonBox::Help)->setMenu(helpMenu->menu());
-    dirwatch = NULL;
+    dirwatch = nullptr;
     
     setFocus();
 }

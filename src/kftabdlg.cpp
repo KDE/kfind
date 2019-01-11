@@ -721,7 +721,7 @@ void KfindTabWidget::setQuery(KQuery *query)
 
             query->setTimeRange(time1, time2);
         } else {
-            time_t cur = time(NULL);
+            time_t cur = time(nullptr);
             time_t minutes = cur;
 
             switch (betweenType->currentIndex()) {

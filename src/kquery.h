@@ -70,7 +70,7 @@ private:
 
 public Q_SLOTS:
     /* List of files found using slocate */
-    void slotListEntries(QStringList);
+    void slotListEntries(const QStringList&);
 
 protected Q_SLOTS:
     /* List of files found using KIO */
