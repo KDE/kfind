@@ -22,7 +22,6 @@
 
 #include <QApplication>
 #include <QClipboard>
-#include <QDate>
 #include <QFileDialog>
 #include <QFileInfo>
 #include <QHeaderView>

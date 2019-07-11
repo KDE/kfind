@@ -24,7 +24,6 @@
 #include <QDesktopWidget>
 #include <QFileDialog>
 #include <QLabel>
-#include <QLayout>
 #include <QMimeDatabase>
 #include <QPushButton>
 #include <QRadioButton>
@@ -33,6 +32,7 @@
 #include <QWhatsThis>
 #include <QtConcurrent/QtConcurrentRun>
 #include <QFutureWatcher>
+#include <QGridLayout>
 
 #include <KComboBox>
 #include <KConfigGroup>

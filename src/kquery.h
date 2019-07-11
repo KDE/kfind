@@ -21,7 +21,6 @@
 
 #include <time.h>
 
-#include <QDir>
 #include <QList>
 #include <QObject>
 #include <QPair>

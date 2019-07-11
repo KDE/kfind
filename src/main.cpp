@@ -20,7 +20,6 @@
 #include <QCommandLineOption>
 #include <QCommandLineParser>
 #include <QDir>
-#include <QFile>
 #include <QUrl>
 
 #include <KAboutData>

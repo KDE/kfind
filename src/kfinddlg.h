@@ -21,7 +21,6 @@
 
 #include <QDialog>
 #include <QLabel>
-#include <QtGlobal>
 
 #include <KDirLister>
 #include <KDirWatch>
