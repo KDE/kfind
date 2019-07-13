@@ -237,7 +237,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     sizeUnitBox->addItem(i18n("GiB"));
     sizeUnitBox->setCurrentIndex(1);
 
-    int tmp = sizeEdit->fontMetrics().width(QStringLiteral(" 000000000 "));
+    int tmp = sizeEdit->fontMetrics().boundingRect(QStringLiteral(" 000000000 ")).width();
     sizeEdit->setMinimumSize(tmp, sizeEdit->sizeHint().height());
 
     m_usernameBox->setDuplicatesEnabled(false);
@@ -408,7 +408,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     }
 
     // Layout
-    tmp = sizeEdit->fontMetrics().width(QStringLiteral(" 00000 "));
+    tmp = sizeEdit->fontMetrics().boundingRect(QStringLiteral(" 00000 ")).width();
     sizeEdit->setMinimumSize(tmp, sizeEdit->sizeHint().height());
 
     QGridLayout *grid2 = new QGridLayout(pages[2]);
