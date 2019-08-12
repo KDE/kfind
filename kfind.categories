@@ -1,1 +1,2 @@
-org.kde.kfind KFind
+org.kde.kfind KFind IDENTIFIER [KFING_LOG]
+
