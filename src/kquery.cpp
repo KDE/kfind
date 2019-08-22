@@ -21,7 +21,6 @@
 #include <stdlib.h>
 
 #include <QCoreApplication>
-#include <QFileInfo>
 #include <QList>
 #include <QMimeDatabase>
 #include <QTextCodec>
