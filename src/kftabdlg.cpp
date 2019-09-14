@@ -707,7 +707,7 @@ void KfindTabWidget::setQuery(KQuery *query)
 
     // dates
     QDateTime epoch;
-    epoch.setTime_t(0);
+    epoch.setSecsSinceEpoch(0);
 
     // Add date predicate
     if (findCreated->isChecked()) { // Modified

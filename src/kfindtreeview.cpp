@@ -275,7 +275,7 @@ QVariant KFindItem::data(int column, int role) const
         case 2:
             return m_fileItem.size();
         case 3:
-            return m_fileItem.time(KFileItem::ModificationTime).toTime_t();
+            return m_fileItem.time(KFileItem::ModificationTime).toSecsSinceEpoch();
         default:
             return QVariant();
         }

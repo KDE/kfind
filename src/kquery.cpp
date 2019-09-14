@@ -277,10 +277,10 @@ void KQuery::processQuery(const KFileItem &file)
 
     // make sure it's in the correct date range
     // what about 0 times?
-    if (m_timeFrom && ((uint)m_timeFrom) > file.time(KFileItem::ModificationTime).toTime_t()) {
+    if (m_timeFrom && ((uint)m_timeFrom) > file.time(KFileItem::ModificationTime).toSecsSinceEpoch()) {
         return;
     }
-    if (m_timeTo && ((uint)m_timeTo) < file.time(KFileItem::ModificationTime).toTime_t()) {
+    if (m_timeTo && ((uint)m_timeTo) < file.time(KFileItem::ModificationTime).toSecsSinceEpoch()) {
         return;
     }
 
