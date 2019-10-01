@@ -808,15 +808,15 @@ void KfindTabWidget::beginSearch()
 
     saveHistory();
 
-    for (uint i = 0; i < sizeof(pages) / sizeof(pages[0]); ++i) {
-        pages[i]->setEnabled(false);
+    for(QWidget *page : pages) {
+        page->setEnabled(false);
     }
 }
 
 void KfindTabWidget::endSearch()
 {
-    for (uint i = 0; i < sizeof(pages) / sizeof(pages[0]); ++i) {
-        pages[i]->setEnabled(true);
+    for(QWidget *page : pages) {
+        page->setEnabled(true);
     }
 }
 
