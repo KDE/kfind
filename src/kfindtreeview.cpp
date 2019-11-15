@@ -27,6 +27,7 @@
 #include <QHeaderView>
 #include <QMenu>
 #include <QMimeData>
+#include <QScrollBar>
 #include <QTextCodec>
 #include <QTextStream>
 
@@ -395,9 +396,43 @@ void KFindTreeView::endSearch()
     resizeToContents();
 }
 
+QList<QPersistentModelIndex> KFindTreeView::selectedVisibleIndexes() {
+    QModelIndexList selected = selectedIndexes();
+    if (selected.empty()) {
+        return QList<QPersistentModelIndex>();
+    }
+    QModelIndex index = indexAt(QPoint(0, 0));
+    QModelIndex bottomIndex = indexAt(viewport()->rect().bottomLeft());
+    QList<QPersistentModelIndex> result;
+    while (index.isValid()) {
+        if (selected.contains(index)) {
+            result.append(QPersistentModelIndex(index));
+        }
+        if (index == bottomIndex) {
+            break;
+        }
+        index = indexBelow(index);
+    }
+    return result;
+}
+
 void KFindTreeView::insertItems(const QList< QPair<KFileItem, QString> > &pairs)
 {
+    auto hScroll = horizontalScrollBar()->value();
+    QPersistentModelIndex topIndex(indexAt(rect().topLeft()));
+    QList<QPersistentModelIndex> selectedVisible = selectedVisibleIndexes();
+
     m_model->insertFileItems(pairs);
+
+    if (topIndex.isValid()) {
+        if (verticalScrollBar()->value() > 0) {
+            scrollTo(topIndex, QAbstractItemView::PositionAtTop);
+        }
+    }
+    if (!selectedVisible.empty()) {
+        scrollTo(selectedVisible.last());
+    }
+    horizontalScrollBar()->setValue(hScroll);
 }
 
 void KFindTreeView::removeItem(const QUrl &url)

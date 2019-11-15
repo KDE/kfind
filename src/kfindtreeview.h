@@ -172,6 +172,8 @@ Q_SIGNALS:
 private:
     void resizeToContents();
 
+    QList<QPersistentModelIndex> selectedVisibleIndexes();
+
     QDir m_baseDir;
 
     KFindItemModel *m_model;
