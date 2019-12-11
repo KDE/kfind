@@ -20,7 +20,7 @@
 #ifndef KFINDTREEVIEW__H
 #define KFINDTREEVIEW__H
 
-#include <kfileitem.h>
+#include <KFileItem>
 
 #include <QAbstractTableModel>
 #include <QDir>
