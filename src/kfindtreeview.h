@@ -72,23 +72,23 @@ public:
 
     void clear();
 
-    Qt::DropActions supportedDropActions() const Q_DECL_OVERRIDE
+    Qt::DropActions supportedDropActions() const override
     {
         return Qt::CopyAction | Qt::MoveAction;
     }
 
-    Qt::ItemFlags flags(const QModelIndex &) const Q_DECL_OVERRIDE;
-    QMimeData *mimeData(const QModelIndexList &) const Q_DECL_OVERRIDE;
+    Qt::ItemFlags flags(const QModelIndex &) const override;
+    QMimeData *mimeData(const QModelIndexList &) const override;
 
-    int columnCount(const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE
+    int columnCount(const QModelIndex &parent = QModelIndex()) const override
     {
         Q_UNUSED(parent);
         return 6;
     }
 
-    int rowCount(const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;
-    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
-    QVariant headerData(int section, Qt::Orientation orientation, int role) const Q_DECL_OVERRIDE;
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
 
     KFindItem itemAtIndex(const QModelIndex &index) const;
 
@@ -113,7 +113,7 @@ public:
     }
 
 protected:
-    bool lessThan(const QModelIndex &left, const QModelIndex &right) const Q_DECL_OVERRIDE;
+    bool lessThan(const QModelIndex &left, const QModelIndex &right) const override;
 };
 
 class KFindTreeView : public QTreeView
@@ -161,7 +161,7 @@ private Q_SLOTS:
     void updateMouseButtons();
 
 protected:
-    void dragMoveEvent(QDragMoveEvent *e) Q_DECL_OVERRIDE
+    void dragMoveEvent(QDragMoveEvent *e) override
     {
         e->accept();
     }
