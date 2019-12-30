@@ -512,7 +512,13 @@ void KFindTreeView::saveResults()
             stream << QStringLiteral("</dl>\n</body>\n</html>\n");
         } else {
             for (const KFindItem &item : itemList) {
-                stream << item.getFileItem().url().url() << endl;
+                stream << item.getFileItem().url().url()
+          #if (QT_VERSION < QT_VERSION_CHECK(5, 15, 0))
+                       << endl
+          #else
+                       << Qt::endl
+          #endif
+                          ;
             }
         }
 
