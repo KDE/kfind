@@ -718,8 +718,8 @@ void KfindTabWidget::setQuery(KQuery *query)
             const QDate &to = toDate->date();
 
             // do not generate negative numbers .. find doesn't handle that
-            time_t time1 = epoch.secsTo(QDateTime(from));
-            time_t time2 = epoch.secsTo(QDateTime(to.addDays(1))) - 1; // Include the last day
+            time_t time1 = epoch.secsTo(QDateTime(from.startOfDay()));
+            time_t time2 = epoch.secsTo(QDateTime(to.addDays(1).startOfDay())) - 1; // Include the last day
 
             query->setTimeRange(time1, time2);
         } else {
