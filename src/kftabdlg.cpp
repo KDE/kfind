@@ -286,7 +286,11 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     connect(bg, static_cast<void (QButtonGroup::*)(QAbstractButton *)>(&QButtonGroup::buttonClicked), this, &KfindTabWidget::fixLayout);
     connect(sizeBox, static_cast<void (KComboBox::*)(int)>(&KComboBox::activated), this, &KfindTabWidget::slotSizeBoxChanged);
     connect(timeBox, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &KfindTabWidget::slotUpdateDateLabelsForNumber);
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
     connect(betweenType, static_cast<void (KComboBox::*)(int)>(&KComboBox::currentIndexChanged), this, &KfindTabWidget::slotUpdateDateLabelsForType);
+#else
+    connect(betweenType, static_cast<void (KComboBox::*)(int, const QString &)>(&KComboBox::currentIndexChanged), this, &KfindTabWidget::slotUpdateDateLabelsForType);
+#endif
     connect(sizeEdit, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &KfindTabWidget::slotUpdateByteComboBox);
 
     // ************ Page Three
