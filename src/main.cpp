@@ -41,7 +41,7 @@ int main(int argc, char **argv)
                          QStringLiteral(KFIND_VERSION_STRING), i18n("KDE file find utility"), KAboutLicense::GPL,
                          i18n("(c) 1998-2017, The KDE Developers"));
 
-    aboutData.addAuthor(i18n("Kai-Uwe Broulik"), i18n("Current Maintainer"), QStringLiteral("kde@privat.broulik.de"));
+    aboutData.addAuthor(i18n("Kai Uwe Broulik"), i18n("Current Maintainer"), QStringLiteral("kde@privat.broulik.de"));
     aboutData.addAuthor(i18n("Eric Coquelle"), i18n("Former Maintainer"), QStringLiteral("coquelle@caramail.com"));
     aboutData.addAuthor(i18n("Mark W. Webb"), i18n("Developer"), QStringLiteral("markwebb@adelphia.net"));
     aboutData.addAuthor(i18n("Beppe Grimaldi"), i18n("UI Design & more search options"), QStringLiteral("grimalkin@ciaoweb.it"));
