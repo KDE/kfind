@@ -44,6 +44,7 @@
   <name xml:lang="sv">Kfind</name>
   <name xml:lang="tr">KFind</name>
   <name xml:lang="uk">KFind</name>
+  <name xml:lang="x-test">xxKFindxx</name>
   <name xml:lang="zh-CN">KFind</name>
   <name xml:lang="zh-TW">KFind</name>
   <summary>Find Files/Folders</summary>
@@ -87,6 +88,7 @@
   <summary xml:lang="sv">Sök efter filer och kataloger</summary>
   <summary xml:lang="tr">Dosya/Dizin Bul</summary>
   <summary xml:lang="uk">Програма для пошуку файлів і тек</summary>
+  <summary xml:lang="x-test">xxFind Files/Foldersxx</summary>
   <summary xml:lang="zh-CN">查找文件/文件夹</summary>
   <summary xml:lang="zh-TW">尋找檔案/資料夾</summary>
   <description>
@@ -132,6 +134,7 @@
     <p xml:lang="sv">Kfind kan användas som ett fristående sökverktyg, startat via Kör program eller från menyn. Det är också integrerat i Konqueror som "Sök fil" i menyn "Verktyg". Det låter dig söka efter filer enligt namn, typ eller innehåll.</p>
     <p xml:lang="tr">KFind, KRunner tarafından çalıştırılan bağımsız bir arama aracı olarak kullanılabildiği gibi menüden de çalıştırılabilir. Konqueror'ın "Dosya Bul" ve "Araçlar" menüleriyle de tümleşik haldedir. Dosyaları isimleriyle, türleriyle veya içerikleriyle bulmanıza imkan verir.</p>
     <p xml:lang="uk">KFind можна скористатися як окремою програмою для пошуку даних, запустивши її за допомогою KRunner або меню. Крім того, програму вбудовано до Konqueror. Нею можна скористатися за допомогою пункту «Знайти файл» у меню «Інструменти». Передбачено пошук файлів за назвою, типом і вмістом.</p>
+    <p xml:lang="x-test">xxKFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.xx</p>
     <p xml:lang="zh-CN">KFind 可以用作独立的搜索工具，也可以从 KRunner 或者菜单加载。它也被集成在 Konqueror 里作为“工具”菜单里的“查找文件”。</p>
     <p xml:lang="zh-TW">KFind 可以做成獨立的搜尋工具，從 KRunner 或是您的選單中開啟。它也可以整合到 Konqueror「工具」選單中的「尋找檔案」。它可以讓您依檔名、檔案型態或內容來搜尋。</p>
   </description>
@@ -169,6 +172,7 @@
       <caption xml:lang="sk">KFind hlavné okno</caption>
       <caption xml:lang="sv">Huvudfönstret i Kfind</caption>
       <caption xml:lang="uk">Головне вікно KFind</caption>
+      <caption xml:lang="x-test">xxKFind main windowxx</caption>
       <caption xml:lang="zh-CN">KFind 主窗口</caption>
       <caption xml:lang="zh-TW">KFind 主視窗</caption>
       <image>https://kde.org/images/screenshots/kfind.png</image>
