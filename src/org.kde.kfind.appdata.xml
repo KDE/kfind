@@ -34,6 +34,7 @@
   <name xml:lang="pl">KFind</name>
   <name xml:lang="pt">KFind</name>
   <name xml:lang="pt-BR">KFind</name>
+  <name xml:lang="ro">KFind</name>
   <name xml:lang="ru">KFind</name>
   <name xml:lang="sk">KFind</name>
   <name xml:lang="sl">KFind</name>
@@ -78,6 +79,7 @@
   <summary xml:lang="pl">Wyszukiwanie plików/katalogów</summary>
   <summary xml:lang="pt">Procurar nos Ficheiros/Pastas</summary>
   <summary xml:lang="pt-BR">Procurar arquivos/pastas</summary>
+  <summary xml:lang="ro">Găsește fișiere/dosare</summary>
   <summary xml:lang="ru">Программа для поиска файлов и папок</summary>
   <summary xml:lang="sk">Nájsť súbory/priečinky</summary>
   <summary xml:lang="sl">Poiščite datoteke in mape</summary>
@@ -169,6 +171,7 @@
       <caption xml:lang="pl">Główne okno KFind</caption>
       <caption xml:lang="pt">Janela principal do KFind</caption>
       <caption xml:lang="pt-BR">Janela principal do KFind</caption>
+      <caption xml:lang="ro">Fereastra principală KFind</caption>
       <caption xml:lang="ru">Главное окно KFind</caption>
       <caption xml:lang="sk">KFind hlavné okno</caption>
       <caption xml:lang="sl">Glavno okno KFind</caption>
