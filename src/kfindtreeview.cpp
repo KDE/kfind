@@ -175,9 +175,11 @@ bool KFindItemModel::isInserted(const QUrl &url)
 
 void KFindItemModel::clear()
 {
-    beginRemoveRows(QModelIndex(), 0, m_itemList.size());
-    m_itemList.clear();
-    endRemoveRows();
+    if (m_itemList.size() > 0) {
+        beginRemoveRows(QModelIndex(), 0, m_itemList.size());
+        m_itemList.clear();
+        endRemoveRows();
+    }
 }
 
 Qt::ItemFlags KFindItemModel::flags(const QModelIndex &index) const

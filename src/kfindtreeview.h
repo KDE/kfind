@@ -37,6 +37,7 @@ class KfindDlg;
 
 class KFindItem
 {
+    Q_OBJECT
 public:
     explicit KFindItem(const KFileItem & = KFileItem(), const QString &subDir = QString(), const QString &matchingLine = QString());
 
@@ -62,6 +63,7 @@ private:
 
 class KFindItemModel : public QAbstractTableModel
 {
+    Q_OBJECT
 public:
     explicit KFindItemModel(KFindTreeView *parent);
 
