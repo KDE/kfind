@@ -34,11 +34,11 @@
 #include <KActionCollection>
 #include <KFileItemActions>
 #include <KFileItemListProperties>
+#include <KIO/OpenUrlJob>
 #include <KJobWidgets>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KPropertiesDialog>
-#include <KRun>
 
 #include <KIO/CopyJob>
 #include <KIO/DeleteJob>
@@ -544,7 +544,10 @@ void KFindTreeView::slotExecuteSelected()
         if (index.column() == 0) {
             KFindItem item = m_model->itemAtIndex(index);
             if (item.isValid()) {
-                new KRun(item.getFileItem().targetUrl(), this);
+                auto *job = new KIO::OpenUrlJob(item.getFileItem().targetUrl());
+                job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, m_kfindDialog));
+                job->setShowOpenOrExecuteDialog(true);
+                job->start();
             }
         }
     }
@@ -564,7 +567,10 @@ void KFindTreeView::slotExecute(const QModelIndex &index)
 
         KFindItem item = m_model->itemAtIndex(realIndex);
         if (item.isValid()) {
-            new KRun(item.getFileItem().targetUrl(), this);
+            auto *job = new KIO::OpenUrlJob(item.getFileItem().targetUrl());
+            job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, m_kfindDialog));
+            job->setShowOpenOrExecuteDialog(true);
+            job->start();
         }
     }
 }
