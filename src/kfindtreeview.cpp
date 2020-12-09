@@ -349,7 +349,7 @@ KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
 
     QAction *del = new QAction(QIcon::fromTheme(QStringLiteral("edit-delete")), i18n("&Delete"), this);
     connect(del, &QAction::triggered, this, &KFindTreeView::deleteSelectedFiles);
-    m_actionCollection->setDefaultShortcut(del, Qt::SHIFT + Qt::Key_Delete);
+    m_actionCollection->setDefaultShortcut(del, Qt::SHIFT | Qt::Key_Delete);
 
     QAction *trash = new QAction(QIcon::fromTheme(QStringLiteral("user-trash")), i18n("&Move to Trash"), this);
     connect(trash, &QAction::triggered, this, &KFindTreeView::moveToTrashSelectedFiles);
