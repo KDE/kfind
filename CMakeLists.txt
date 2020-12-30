@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
 # KDE Application Version, managed by release script
 set (RELEASE_SERVICE_VERSION_MAJOR "21")
@@ -8,11 +8,11 @@ set (RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE
 
 project(kfind VERSION ${RELEASE_SERVICE_VERSION})
 
-set (KF5_MIN_VERSION "5.28.0")
+set (KF5_MIN_VERSION "5.68.0")
 # ECM setup
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
-set(QT_REQUIRED_VERSION "5.9.0")
+set(QT_REQUIRED_VERSION "5.12.0")
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Concurrent)
 
 include(KDEInstallDirs)
@@ -49,10 +49,6 @@ add_subdirectory(src)
 add_subdirectory(icons)
 add_subdirectory(doc)
 
-if (${ECM_VERSION} STRGREATER "5.58.0")
-    install(FILES kfind.categories  DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
-else()
-    install(FILES kfind.categories  DESTINATION ${KDE_INSTALL_CONFDIR})
-endif()
+install(FILES kfind.categories  DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
