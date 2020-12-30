@@ -6,7 +6,7 @@ set(kfind_SRCS main.cpp
                kfindtreeview.cpp)
 
 ecm_qt_declare_logging_category(kfind_SRCS HEADER kfind_debug.h IDENTIFIER
-               KFING_LOG CATEGORY_NAME org.kde.kfind)
+	KFING_LOG CATEGORY_NAME org.kde.kfind DESCRIPTION "KFind" EXPORT KFIND)
 
 
 file(GLOB ICONS_SRCS "../icons/*-apps-kfind.png")
