@@ -49,7 +49,7 @@
   <name xml:lang="zh-CN">KFind</name>
   <name xml:lang="zh-TW">KFind</name>
   <summary>Find Files/Folders</summary>
-  <summary xml:lang="ast">Alcuentra ficheros/carpetes</summary>
+  <summary xml:lang="ast">Atopa ficheros/carpetes</summary>
   <summary xml:lang="bs">Traženje datoteka i fascikli</summary>
   <summary xml:lang="ca">Cerca de fitxers i carpetes</summary>
   <summary xml:lang="ca-valencia">Cerca de fitxers i carpetes</summary>
@@ -98,7 +98,7 @@
       KFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror
       as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.
     </p>
-    <p xml:lang="ast">KFind pue usase como una ferramienta independiente de busca, llanzáu por KRunner o dende'l menú. Tamién ta integráu en Konqueror como «Alcontrar ficheru» nel menú «Ferramientes». Permítete alcontrar ficheros pel nome, tipu o conteníu.</p>
+    <p xml:lang="ast">KFind pue usase como una ferramienta independiente de busca, llanzáu por KRunner o dende'l menú. Tamién ta integráu en Konqueror como «Atopar ficheru» nel menú «Ferramientes». Permítete atopar ficheros pel nome, tipu o conteníu.</p>
     <p xml:lang="bs">KFind se može koristiti kao samostalni alat za pretragu, koju je pokrenula KRunner ili iz menija. On je takođe integrisan u Konqueror kao "Pronađi Datoteku" u meniju "Alati". To vam omogućava da pronađete datoteke po imenu, tipu ili sadržaju.</p>
     <p xml:lang="ca">El KFind es pot usar com una eina de cerca independent, llançar-la des del KRunner o des del menú. També està integrada al Konqueror com a «Cerca el fitxer» al menú «Eines». Permet cercar fitxers per nom, tipus o contingut.</p>
     <p xml:lang="ca-valencia">El KFind es pot usar com una eina de cerca independent, llançar-la des del KRunner o des del menú. També està integrada al Konqueror com a «Cerca el fitxer» al menú «Eines». Permet cercar fitxers per nom, tipus o contingut.</p>
