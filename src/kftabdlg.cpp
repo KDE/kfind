@@ -159,9 +159,9 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
 
     connect(browseB, &QPushButton::clicked, this, &KfindTabWidget::getDirectory);
 
-    connect(nameBox, static_cast<void (KComboBox::*)()>(&KComboBox::returnPressed), this, &KfindTabWidget::startSearch);
+    connect(nameBox, QOverload<const QString &>::of(&KComboBox::returnPressed), this, &KfindTabWidget::startSearch);
 
-    connect(dirBox, static_cast<void (KUrlComboBox::*)()>(&KUrlComboBox::returnPressed), this, &KfindTabWidget::startSearch);
+    connect(dirBox, QOverload<const QString &>::of(&KUrlComboBox::returnPressed), this, &KfindTabWidget::startSearch);
 
     // ************ Page Two
 
@@ -294,7 +294,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     QLabel *textL = new QLabel(i18n("C&ontaining text:"), pages[2]);
     textL->setBuddy(textEdit);
 
-    connect(textEdit, &KLineEdit::returnPressed, this, &KfindTabWidget::startSearch);
+    connect(textEdit, &QLineEdit::returnPressed, this, &KfindTabWidget::startSearch);
 
     const QString containingtext
         = i18n("<qt>If specified, only files that contain this text"
