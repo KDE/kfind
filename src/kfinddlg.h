@@ -11,7 +11,6 @@
 #include <QDialog>
 #include <QLabel>
 
-#include <KDirLister>
 #include <KDirWatch>
 
 QT_FORWARD_DECLARE_CLASS(QDir)
@@ -72,7 +71,6 @@ private:
 
     bool isResultReported;
     KQuery *query;
-    KDirLister *dirlister;
     KDirWatch *dirwatch;
 };
 
