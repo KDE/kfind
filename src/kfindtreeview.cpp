@@ -27,12 +27,12 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KPropertiesDialog>
-#include <KRun>
 
 #include <KIO/CopyJob>
 #include <KIO/DeleteJob>
 #include <KIO/JobUiDelegate>
 #include <KIO/OpenFileManagerWindowJob>
+#include <KIO/OpenUrlJob>
 #include <kio_version.h>
 
 // Permission strings
@@ -535,7 +535,9 @@ void KFindTreeView::slotExecuteSelected()
         if (index.column() == 0) {
             KFindItem item = m_model->itemAtIndex(index);
             if (item.isValid()) {
-                new KRun(item.getFileItem().targetUrl(), this);
+                auto *job = new KIO::OpenUrlJob(item.getFileItem().targetUrl());
+                job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
+                job->start();
             }
         }
     }
@@ -543,7 +545,7 @@ void KFindTreeView::slotExecuteSelected()
 
 void KFindTreeView::slotExecute(const QModelIndex &index)
 {
-    if ((m_mouseButtons &Qt::LeftButton) && QApplication::keyboardModifiers() == Qt::NoModifier) {
+    if ((m_mouseButtons & Qt::LeftButton) && QApplication::keyboardModifiers() == Qt::NoModifier) {
         if (!index.isValid()) {
             return;
         }
@@ -553,9 +555,11 @@ void KFindTreeView::slotExecute(const QModelIndex &index)
             return;
         }
 
-        KFindItem item = m_model->itemAtIndex(realIndex);
+        const KFindItem item = m_model->itemAtIndex(realIndex);
         if (item.isValid()) {
-            new KRun(item.getFileItem().targetUrl(), this);
+            auto *job = new KIO::OpenUrlJob(item.getFileItem().targetUrl());
+            job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
+            job->start();
         }
     }
 }
