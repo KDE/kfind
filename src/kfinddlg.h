@@ -21,7 +21,6 @@ class KQuery;
 class KFileItem;
 class KfindTabWidget;
 class KFindTreeView;
-class QLabel;
 class QPushButton;
 class QStatusBar;
 
