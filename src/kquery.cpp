@@ -548,11 +548,7 @@ void KQuery::setRegExp(const QString &regexp, bool caseSensitive)
 {
     QRegExp *regExp = nullptr;
     QRegExp sep(QStringLiteral(";"));
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
-    const QStringList strList = regexp.split(sep, QString::SkipEmptyParts);
-#else
     const QStringList strList = regexp.split(sep, Qt::SkipEmptyParts);
-#endif
     //  QRegExp globChars ("[\\*\\?\\[\\]]", TRUE, FALSE);
     while (!m_regexps.isEmpty()) {
         delete m_regexps.takeFirst();
@@ -602,11 +598,7 @@ void KQuery::slotendProcessLocate(int code, QProcess::ExitStatus)
         if (!bufferLocate.isEmpty()) {
             QString str = QString::fromLocal8Bit(bufferLocate);
             bufferLocate.clear();
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
-            slotListEntries(str.split(QLatin1Char('\n'), QString::SkipEmptyParts));
-#else
             slotListEntries(str.split(QLatin1Char('\n'), Qt::SkipEmptyParts));
-#endif
         }
     }
     emit result(0);
