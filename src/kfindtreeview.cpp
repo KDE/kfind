@@ -492,8 +492,7 @@ void KFindTreeView::saveResults()
                                           "<meta charset=\"%1\">\n"
                                           "<body>\n<h1>%2</h1>\n"
                                           "<dl>\n")
-                .arg(QString::fromLatin1(QTextCodec::codecForLocale()->name()))
-                .arg(i18n("KFind Results File"));
+                .arg(QString::fromLatin1(QTextCodec::codecForLocale()->name()), i18n("KFind Results File"));
 
             for (const KFindItem &item : itemList) {
                 const KFileItem fileItem = item.getFileItem();
