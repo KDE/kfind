@@ -590,9 +590,7 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
     menuActions.setItemListProperties(fileProperties);
     menuActions.addOpenWithActionsTo(m_contextMenu);
     // 'Actions' submenu
-    menuActions.addServiceActionsTo(m_contextMenu);
-    // Plugins
-    menuActions.addPluginActionsTo(m_contextMenu);
+    menuActions.addActionsTo(m_contextMenu);
 
     m_contextMenu->addSeparator();
 
