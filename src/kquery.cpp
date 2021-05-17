@@ -172,22 +172,22 @@ void KQuery::checkEntries()
         /* This is a workaround. As the qApp->processEvents() call inside processQuery
          * will bring more KIO entries, m_fileItems will increase even inside this loop
          * and that will lead to a big loop, it will take time to report found items to the GUI
-         * so we are going to force emit results every 100 files processed */
+         * so we are going to force Q_EMIT results every 100 files processed */
         if (processingCount == 100) {
             processingCount = 0;
             if (m_foundFilesList.size() > 0) {
-                emit foundFileList(m_foundFilesList);
+                Q_EMIT foundFileList(m_foundFilesList);
                 m_foundFilesList.clear();
             }
         }
     }
 
     if (m_foundFilesList.size() > 0) {
-        emit foundFileList(m_foundFilesList);
+        Q_EMIT foundFileList(m_foundFilesList);
     }
 
     if (job == nullptr) {
-        emit result(m_result);
+        Q_EMIT result(m_result);
     }
 
     m_insideCheckEntries = false;
@@ -208,7 +208,7 @@ void KQuery::slotListEntries(const QStringList &list)
     }
 
     if (!m_foundFilesList.isEmpty()) {
-        emit foundFileList(m_foundFilesList);
+        Q_EMIT foundFileList(m_foundFilesList);
     }
 }
 
@@ -340,9 +340,9 @@ void KQuery::processQuery(const KFileItem &file)
         QString strmetakeycontent;
 
         KFileMetaData::ExtractorCollection extractors;
-        QList<KFileMetaData::Extractor*> exList = extractors.fetchExtractors(mimetype);
+        const QList<KFileMetaData::Extractor*> exList = extractors.fetchExtractors(mimetype);
 
-        Q_FOREACH (KFileMetaData::Extractor* ex, exList) {
+        for (KFileMetaData::Extractor* ex : exList) {
             KFileMetaData::SimpleExtractionResult result(filename, mimetype,
                                                          KFileMetaData::ExtractionResult::ExtractMetaData);
             ex->extract(&result);
@@ -601,5 +601,5 @@ void KQuery::slotendProcessLocate(int code, QProcess::ExitStatus)
             slotListEntries(str.split(QLatin1Char('\n'), Qt::SkipEmptyParts));
         }
     }
-    emit result(0);
+    Q_EMIT result(0);
 }

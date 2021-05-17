@@ -135,8 +135,8 @@ void KfindDlg::startSearch()
     // Reset count - use the same i18n as below
     setProgressMsg(i18n("0 items found"));
 
-    emit resultSelected(false);
-    emit haveResults(false);
+    Q_EMIT resultSelected(false);
+    Q_EMIT haveResults(false);
 
     m_findButton->setEnabled(false); // Disable "Find"
     m_stopButton->setEnabled(true); // Enable "Stop"
@@ -155,7 +155,7 @@ void KfindDlg::startSearch()
     // 1) addDir() keeps looping on recursive symlinks
     // 2) addDir() scans all subdirectories, so it basically does the same as the process that
     // is started by KQuery but in-process, undoing the advantages of using a separate find process
-    // A solution could be to let KQuery emit all the directories it has searched in.
+    // A solution could be to let KQuery Q_EMIT all the directories it has searched in.
     // Either way, putting dirwatchers on a whole file system is probably just too much.
     // 3) FAM has a tendency to deadlock with so many files (See BR77854) This has hopefully
     // been fixed in KDirWatch, but that has not yet been confirmed.
@@ -188,8 +188,8 @@ void KfindDlg::newSearch()
 
     tabWidget->setDefaults();
 
-    emit haveResults(false);
-    emit resultSelected(false);
+    Q_EMIT haveResults(false);
+    Q_EMIT resultSelected(false);
 
     setFocus();
 }
@@ -224,7 +224,7 @@ void KfindDlg::addFiles(const QList< QPair<KFileItem, QString> > &pairs)
     win->insertItems(pairs);
 
     if (!isResultReported) {
-        emit haveResults(true);
+        Q_EMIT haveResults(true);
         isResultReported = true;
     }
 

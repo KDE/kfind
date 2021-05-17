@@ -184,7 +184,7 @@ QMimeData *KFindItemModel::mimeData(const QModelIndexList &indexes) const
 {
     QList<QUrl> uris;
 
-    foreach (const QModelIndex &index, indexes) {
+    for (const QModelIndex &index : indexes) {
         if (index.isValid()) {
             if (index.column() == 0) { //Only use the first column item
                 uris.append(m_itemList.at(index.row()).getFileItem().url());
@@ -300,7 +300,7 @@ bool KFindSortFilterProxyModel::lessThan(const QModelIndex &left, const QModelIn
 
 KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
     : QTreeView(parent)
-    , m_contextMenu(Q_NULLPTR)
+    , m_contextMenu(nullptr)
     , m_kfindDialog(findDialog)
 {
     //Configure model and proxy model
@@ -524,7 +524,7 @@ void KFindTreeView::slotExecuteSelected()
     }
 
     //TODO if >X add a warn ?
-    Q_FOREACH (const QModelIndex &index, selected) {
+    for (const QModelIndex &index : selected) {
         if (index.column() == 0) {
             KFindItem item = m_model->itemAtIndex(index);
             if (item.isValid()) {
@@ -566,7 +566,7 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
         return;
     }
 
-    Q_FOREACH (const QModelIndex &index, selected) {
+    for (const QModelIndex &index : selected) {
         if (index.column() == 0) {
             const KFindItem item = m_model->itemAtIndex(index);
             if (item.isValid()) {
@@ -612,7 +612,7 @@ QList<QUrl> KFindTreeView::selectedUrls()
     QList<QUrl> uris;
 
     const QModelIndexList indexes = m_proxyModel->mapSelectionToSource(selectionModel()->selection()).indexes();
-    Q_FOREACH (const QModelIndex &index, indexes) {
+    for (const QModelIndex &index : indexes) {
         if (index.column() == 0 && index.isValid()) {
             KFindItem item = m_model->itemAtIndex(index);
             if (item.isValid()) {
