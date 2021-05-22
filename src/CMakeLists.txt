@@ -22,7 +22,6 @@ KF5::CoreAddons
 KF5::FileMetaData
 KF5::I18n
 KF5::KIOWidgets
-KF5::TextWidgets
 KF5::WidgetsAddons
 KF5::XmlGui
 )

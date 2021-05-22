@@ -35,7 +35,6 @@ KQuery::KQuery(QObject *parent)
     , m_recursive(false)
     , m_casesensitive(false)
     , m_search_binary(false)
-    , m_regexpForContent(false)
     , m_useLocate(false)
     , m_showHiddenFiles(false)
     , job(nullptr)
@@ -458,19 +457,11 @@ void KQuery::processQuery(const KFileItem &file)
                 str.remove(xmlTags);
             }
 
-            if (m_regexpForContent) {
-                if (m_regexp.indexIn(str) >= 0) {
-                    matchingLine = QString::number(matchingLineNumber)+QStringLiteral(": ")+str.trimmed();
-                    found = true;
-                    break;
-                }
-            } else {
-                if (str.indexOf(m_context, 0, m_casesensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) != -1) {
-                    matchingLine = QString::number(matchingLineNumber)+QStringLiteral(": ")+str.trimmed();
-                    found = true;
-                    break;
-                }
-            }
+	if (str.indexOf(m_context, 0, m_casesensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) != -1) {
+	    matchingLine = QString::number(matchingLineNumber)+QStringLiteral(": ")+str.trimmed();
+	    found = true;
+	    break;
+	}
             qApp->processEvents();
         }
 
@@ -484,24 +475,16 @@ void KQuery::processQuery(const KFileItem &file)
     m_foundFilesList.append(QPair<KFileItem, QString>(file, matchingLine));
 }
 
-void KQuery::setContext(const QString &context, bool casesensitive, bool search_binary, bool useRegexp)
+void KQuery::setContext(const QString &context, bool casesensitive, bool search_binary)
 {
     m_context = context;
     m_casesensitive = casesensitive;
     m_search_binary = search_binary;
-    m_regexpForContent = useRegexp;
-    if (!m_regexpForContent) {
-        m_regexp.setPatternSyntax(QRegExp::Wildcard);
-    } else {
-        m_regexp.setPatternSyntax(QRegExp::RegExp);
-    }
+    m_regexp.setPatternSyntax(QRegExp::Wildcard);
     if (casesensitive) {
         m_regexp.setCaseSensitivity(Qt::CaseSensitive);
     } else {
         m_regexp.setCaseSensitivity(Qt::CaseInsensitive);
-    }
-    if (m_regexpForContent) {
-        m_regexp.setPattern(m_context);
     }
 }
 

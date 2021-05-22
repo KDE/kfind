@@ -23,7 +23,6 @@ class QString;
 class QDate;
 class QRegExp;
 class KDateComboBox;
-class QDialog;
 class KComboBox;
 class QSpinBox;
 class QLabel;
@@ -60,7 +59,6 @@ private Q_SLOTS:
     void getDirectory();
     void fixLayout();
     void slotSizeBoxChanged(int);
-    void slotEditRegExp();
 
 Q_SIGNALS:
     void startSearch();
@@ -112,8 +110,6 @@ private:
     QSpinBox *sizeEdit;
     QCheckBox *caseContextCb;
     QCheckBox *binaryContextCb;
-    QCheckBox *regexpContentCb;
-    QDialog *regExpDialog;
 
     QUrl m_url;
 

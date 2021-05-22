@@ -38,7 +38,7 @@ public:
     void setPath(const QUrl &url);
     void setFileType(int filetype);
     void setMimeType(const QStringList &mimetype);
-    void setContext(const QString &context, bool casesensitive, bool search_binary, bool useRegexp);
+    void setContext(const QString &context, bool casesensitive, bool search_binary);
     void setUsername(const QString &username);
     void setGroupname(const QString &groupname);
     void setMetaInfo(const QString &metainfo, const QString &metainfokey);
@@ -93,7 +93,6 @@ private:
     QString m_metainfokey;
     bool m_casesensitive;
     bool m_search_binary;
-    bool m_regexpForContent;
     bool m_useLocate;
     bool m_showHiddenFiles;
     QByteArray bufferLocate;

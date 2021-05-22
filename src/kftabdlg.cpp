@@ -29,8 +29,6 @@
 #include <KLineEdit>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KRegExpEditorInterface>
-#include <KServiceTypeTrader>
 #include <KSharedConfig>
 #include <KShell>
 #include <KUrlComboBox>
@@ -55,7 +53,6 @@ struct MimeTypes
 
 KfindTabWidget::KfindTabWidget(QWidget *parent)
     : QTabWidget(parent)
-    , regExpDialog(nullptr)
 {
     // This validator will be used for all numeric edit fields
     //KDigitValidator *digitV = new KDigitValidator(this);
@@ -307,20 +304,12 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
 
     caseContextCb = new QCheckBox(i18n("Case s&ensitive"), pages[2]);
     binaryContextCb = new QCheckBox(i18n("Include &binary files"), pages[2]);
-    regexpContentCb = new QCheckBox(i18n("Regular e&xpression"), pages[2]);
 
     const QString binaryTooltip
         = i18n("<qt>This lets you search in any type of file, "
                "even those that usually do not contain text (for example "
                "program files and images).</qt>");
     binaryContextCb->setToolTip(binaryTooltip);
-
-    QPushButton *editRegExp = nullptr;
-    if (!KServiceTypeTrader::self()->query(QStringLiteral("KRegExpEditor/KRegExpEditor")).isEmpty()) {
-        // The editor is available, so lets use it.
-        editRegExp = new QPushButton(i18n("&Edit..."), pages[2]);
-        editRegExp->setObjectName(QStringLiteral("editRegExp"));
-    }
 
     metainfokeyEdit = new KLineEdit(pages[2]);
     metainfoEdit = new KLineEdit(pages[2]);
@@ -387,15 +376,6 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
         watcher->deleteLater();
     });
 
-    if (editRegExp) {
-        // The editor was available, so lets use it.
-        connect(regexpContentCb, &QCheckBox::toggled, editRegExp, &QPushButton::setEnabled);
-        editRegExp->setEnabled(false);
-        connect(editRegExp, &QPushButton::clicked, this, &KfindTabWidget::slotEditRegExp);
-    } else {
-        regexpContentCb->hide();
-    }
-
     // Layout
     tmp = sizeEdit->fontMetrics().boundingRect(QStringLiteral(" 00000 ")).width();
     sizeEdit->setMinimumSize(tmp, sizeEdit->sizeHint().height());
@@ -405,7 +385,6 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     grid2->addWidget(textL, 1, 0);
     grid2->addWidget(typeBox, 0, 1, 1, 3);
     grid2->addWidget(textEdit, 1, 1, 1, 3);
-    grid2->addWidget(regexpContentCb, 2, 2);
     grid2->addWidget(caseContextCb, 2, 1);
     grid2->addWidget(binaryContextCb, 3, 1);
 
@@ -415,11 +394,6 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     grid2->addWidget(metainfoEdit, 4, 3);
 
     metainfokeyEdit->setText(QStringLiteral("*"));
-
-    if (editRegExp) {
-        // The editor was available, so lets use it.
-        grid2->addWidget(editRegExp, 2, 3);
-    }
 
     addTab(pages[0], i18n("Name/&Location"));
     addTab(pages[2], i18nc("tab name: search by contents", "C&ontents"));
@@ -530,25 +504,6 @@ void KfindTabWidget::loadHistory()
     } else {
         fillDirBox();
     }
-}
-
-void KfindTabWidget::slotEditRegExp()
-{
-#if 0
-    if (!regExpDialog) {
-        regExpDialog = KServiceTypeTrader::createInstanceFromQuery<QDialog>(QStringLiteral("KRegExpEditor/KRegExpEditor"), QString(), this);
-    }
-
-    KRegExpEditorInterface *iface = qobject_cast<KRegExpEditorInterface *>(regExpDialog);
-    if (!iface) {
-        return;
-    }
-
-    iface->setRegExp(textEdit->text());
-    if (regExpDialog->exec()) {
-        textEdit->setText(iface->regExp());
-    }
-#endif
 }
 
 void KfindTabWidget::setFocus()
@@ -771,8 +726,7 @@ void KfindTabWidget::setQuery(KQuery *query)
 
     query->setShowHiddenFiles(hiddenFilesCb->isChecked());
 
-    query->setContext(textEdit->text(), caseContextCb->isChecked(),
-                      binaryContextCb->isChecked(), regexpContentCb->isChecked());
+    query->setContext(textEdit->text(), caseContextCb->isChecked(), binaryContextCb->isChecked());
 }
 
 void KfindTabWidget::getDirectory()
