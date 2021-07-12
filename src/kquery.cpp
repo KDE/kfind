@@ -77,9 +77,6 @@ KQuery::KQuery(QObject *parent)
 
 KQuery::~KQuery()
 {
-    while (!m_regexps.isEmpty()) {
-        delete m_regexps.takeFirst();
-    }
     m_fileItems.clear();
     if (processLocate->state() == QProcess::Running) {
         disconnect(processLocate);
@@ -157,8 +154,7 @@ void KQuery::checkEntries()
 
     m_insideCheckEntries = true;
 
-    metaKeyRx = QRegExp(m_metainfokey);
-    metaKeyRx.setPatternSyntax(QRegExp::Wildcard);
+    metaKeyRx = QRegularExpression(m_metainfokey);
 
     m_foundFilesList.clear();
 
@@ -195,8 +191,7 @@ void KQuery::checkEntries()
 /* List of files found using slocate */
 void KQuery::slotListEntries(const QStringList &list)
 {
-    metaKeyRx = QRegExp(m_metainfokey);
-    metaKeyRx.setPatternSyntax(QRegExp::Wildcard);
+    metaKeyRx = QRegularExpression(m_metainfokey);
 
     QStringList::const_iterator it = list.constBegin();
     QStringList::const_iterator end = list.constEnd();
@@ -222,15 +217,7 @@ void KQuery::processQuery(const KFileItem &file)
         return;
     }
 
-    bool matched = false;
-
-    QListIterator<QRegExp *> nextItem(m_regexps);
-    while (nextItem.hasNext())
-    {
-        QRegExp *reg = nextItem.next();
-        matched = matched || (reg == nullptr) || (reg->exactMatch(file.url().adjusted(QUrl::StripTrailingSlash).fileName()));
-    }
-    if (!matched) {
+    if (!m_regex.isValid() && !m_regex.match(file.url().adjusted(QUrl::StripTrailingSlash).fileName()).hasMatch()) {
         return;
     }
 
@@ -349,7 +336,7 @@ void KQuery::processQuery(const KFileItem &file)
             KFileMetaData::PropertyMap properties = result.properties();
             KFileMetaData::PropertyMap::const_iterator it = properties.constBegin();
             for (; it != properties.constEnd(); it++) {
-                if (!metaKeyRx.exactMatch(KFileMetaData::PropertyInfo(it.key()).displayName())) {
+                if (!metaKeyRx.match(KFileMetaData::PropertyInfo(it.key()).displayName()).hasMatch()) {
                     continue;
                 }
                 strmetakeycontent = it.value().toString();
@@ -366,7 +353,8 @@ void KQuery::processQuery(const KFileItem &file)
 
     // match contents...
     QString matchingLine;
-    if (!m_context.isEmpty()) {
+    if (m_contentRegex.isValid() && !m_contentRegex.pattern().isEmpty()) {
+
         //Avoid sequential files (fifo,char devices)
         if (!file.isRegularFile()) {
             return;
@@ -385,7 +373,7 @@ void KQuery::processQuery(const KFileItem &file)
         QString filename;
         QTextStream *stream = nullptr;
         QFile qf;
-        QRegExp xmlTags;
+        QRegularExpression xmlTags;
         QByteArray zippedXmlFileContent;
 
         // KWord's and OpenOffice.org's files are zipped...
@@ -408,8 +396,7 @@ void KQuery::processQuery(const KFileItem &file)
                 }
 
                 zippedXmlFileContent = zipfileEntry->data();
-                xmlTags.setPattern(QStringLiteral("<.*>"));
-                xmlTags.setMinimal(true);
+                xmlTags.setPattern(QStringLiteral("<.*?>"));
                 stream = new QTextStream(zippedXmlFileContent, QIODevice::ReadOnly);
                 stream->setCodec("UTF-8");
                 isZippedOfficeDocument = true;
@@ -443,8 +430,7 @@ void KQuery::processQuery(const KFileItem &file)
             stream->setCodec(QTextCodec::codecForLocale());
         }
 
-        while (!stream->atEnd())
-        {
+        while (!stream->atEnd()) {
             QString str = stream->readLine();
             matchingLineNumber++;
 
@@ -457,11 +443,12 @@ void KQuery::processQuery(const KFileItem &file)
                 str.remove(xmlTags);
             }
 
-	if (str.indexOf(m_context, 0, m_casesensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) != -1) {
-	    matchingLine = QString::number(matchingLineNumber)+QStringLiteral(": ")+str.trimmed();
-	    found = true;
-	    break;
-	}
+            if (m_contentRegex.match(str).hasMatch()) {
+                matchingLine = QString::number(matchingLineNumber) + QLatin1String(": ") + str.trimmed();
+                found = true;
+                break;
+            }
+
             qApp->processEvents();
         }
 
@@ -477,15 +464,11 @@ void KQuery::processQuery(const KFileItem &file)
 
 void KQuery::setContext(const QString &context, bool casesensitive, bool search_binary)
 {
-    m_context = context;
+    m_contentRegex.setPattern(context);
+    m_contentRegex.setPatternOptions(!casesensitive ? QRegularExpression::CaseInsensitiveOption : QRegularExpression::NoPatternOption);
+
     m_casesensitive = casesensitive;
     m_search_binary = search_binary;
-    m_regexp.setPatternSyntax(QRegExp::Wildcard);
-    if (casesensitive) {
-        m_regexp.setCaseSensitivity(Qt::CaseSensitive);
-    } else {
-        m_regexp.setCaseSensitivity(Qt::CaseInsensitive);
-    }
 }
 
 void KQuery::setMetaInfo(const QString &metainfo, const QString &metainfokey)
@@ -527,22 +510,10 @@ void KQuery::setGroupname(const QString &groupname)
     m_groupname = groupname;
 }
 
-void KQuery::setRegExp(const QString &regexp, bool caseSensitive)
+void KQuery::setRegExp(const QString &pattern, bool caseSensitive)
 {
-    QRegExp *regExp = nullptr;
-    QRegExp sep(QStringLiteral(";"));
-    const QStringList strList = regexp.split(sep, Qt::SkipEmptyParts);
-    //  QRegExp globChars ("[\\*\\?\\[\\]]", TRUE, FALSE);
-    while (!m_regexps.isEmpty()) {
-        delete m_regexps.takeFirst();
-    }
-
-    //  m_regexpsContainsGlobs.clear();
-    for (QStringList::ConstIterator it = strList.constBegin(); it != strList.constEnd(); ++it) {
-        regExp = new QRegExp((*it), (caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive), QRegExp::Wildcard);
-        //m_regexpsContainsGlobs.append(regExp->pattern().contains(globChars));
-        m_regexps.append(regExp);
-    }
+    m_regex.setPattern(pattern);
+    m_regex.setPatternOptions(!caseSensitive ? QRegularExpression::CaseInsensitiveOption : QRegularExpression::NoPatternOption);
 }
 
 void KQuery::setRecursive(bool recursive)

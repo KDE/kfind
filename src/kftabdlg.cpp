@@ -393,7 +393,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     grid2->addWidget(textMetaInfo, 4, 2, Qt::AlignHCenter);
     grid2->addWidget(metainfoEdit, 4, 3);
 
-    metainfokeyEdit->setText(QStringLiteral("*"));
+    metainfokeyEdit->setText(QStringLiteral(".*"));
 
     addTab(pages[0], i18n("Name/&Location"));
     addTab(pages[2], i18nc("tab name: search by contents", "C&ontents"));
@@ -486,7 +486,7 @@ void KfindTabWidget::loadHistory()
     if (!sl.isEmpty()) {
         nameBox->addItems(sl);
     } else {
-        nameBox->addItem(QStringLiteral("*"));
+        nameBox->addItem(QStringLiteral(".*"));
     }
 
     sl = conf.readPathEntry(QStringLiteral("Directories"), QStringList());
@@ -600,7 +600,7 @@ void KfindTabWidget::setQuery(KQuery *query)
         dirBox->addItem(dirBox->currentText().trimmed(), 0);
     }
 
-    QString regex = nameBox->currentText().isEmpty() ? QStringLiteral("*") : nameBox->currentText();
+    QString regex = nameBox->currentText().isEmpty() ? QStringLiteral(".*") : nameBox->currentText();
     query->setRegExp(regex, caseSensCb->isChecked());
     itemAlreadyContained = false;
     for (int idx = 0; idx < nameBox->count(); idx++) {

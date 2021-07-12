@@ -14,7 +14,7 @@
 #include <QObject>
 #include <QPair>
 #include <QQueue>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QStringList>
 
 #include <KIO/Job>
@@ -83,10 +83,10 @@ private:
     QUrl m_url;
     time_t m_timeFrom;
     time_t m_timeTo;
-    QRegExp m_regexp;// regexp for file content
+    QRegularExpression m_contentRegex; // regex for file content
     bool m_recursive;
     QStringList m_mimetype;
-    QString m_context;
+
     QString m_username;
     QString m_groupname;
     QString m_metainfo;
@@ -98,12 +98,11 @@ private:
     QByteArray bufferLocate;
     QStringList locateList;
     KProcess *processLocate;
-    QList<QRegExp *> m_regexps;// regexps for file name
-//  QValueList<bool> m_regexpsContainsGlobs;  // what should this be good for ? Alex
+    QRegularExpression m_regex; // regex for file name
     KIO::ListJob *job;
     bool m_insideCheckEntries;
     QQueue<KFileItem> m_fileItems;
-    QRegExp metaKeyRx;
+    QRegularExpression metaKeyRx;
     int m_result;
     QStringList ignore_mimetypes;
     QStringList ooo_mimetypes;   // OpenOffice.org mimetypes
