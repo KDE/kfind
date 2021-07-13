@@ -13,6 +13,7 @@
 #include <QDesktopWidget>
 #include <QFileDialog>
 #include <QLabel>
+#include <QMenu>
 #include <QMimeDatabase>
 #include <QPushButton>
 #include <QRadioButton>
@@ -51,6 +52,36 @@ struct MimeTypes
     QStringList audio;
 };
 
+static void regexHelperActOnAction(QAction *resultAction, QLineEdit *lineEdit)
+{
+    if (!resultAction) {
+        return;
+    }
+
+    const int cursorPos = lineEdit->cursorPosition();
+    const QString actText = resultAction->text();
+    const QString specialChars = actText.mid(0, actText.indexOf(QLatin1Char('\t')));
+
+    lineEdit->insert(specialChars);
+    lineEdit->setCursorPosition(cursorPos + specialChars.size());
+    lineEdit->setFocus();
+}
+
+static void addRegexHelperActions(QMenu *menu)
+{
+    menu->addAction(QLatin1String(".") + QLatin1Char('\t') + i18n("Any single character"));
+    menu->addAction(QLatin1String("\\.") + QLatin1Char('\t') + i18n("Literal dot"));
+
+    menu->addSeparator();
+    menu->addAction(QLatin1String("+") + QLatin1Char('\t') + i18n("One or more occurrences"));
+    menu->addAction(QLatin1String("*") + QLatin1Char('\t') + i18n("Zero or more occurrences"));
+    menu->addAction(QLatin1String("?") + QLatin1Char('\t') + i18n("Zero or one occurrences"));
+
+    menu->addSeparator();
+    menu->addAction(QLatin1String("|") + QLatin1Char('\t') + i18n("Or"));
+    menu->addAction(QLatin1String("[]") + QLatin1Char('\t') + i18n("Set of characters"));
+}
+
 KfindTabWidget::KfindTabWidget(QWidget *parent)
     : QTabWidget(parent)
 {
@@ -65,10 +96,22 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     nameBox = new KComboBox(pages[0]);
     nameBox->setEditable(true);
     nameBox->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);  // allow smaller than widest entry
+
+    QAction *nameRegexHelperButton =
+        nameBox->lineEdit()->addAction(QIcon::fromTheme(QStringLiteral("code-context"), QIcon::fromTheme(QStringLiteral("edit-find-replace"))),
+                                       QLineEdit::TrailingPosition);
+
+    connect(nameRegexHelperButton, &QAction::triggered, this, [this]() {
+        QMenu menu;
+        addRegexHelperActions(&menu);
+        auto *action = menu.exec(QCursor::pos());
+        regexHelperActOnAction(action, nameBox->lineEdit());
+    });
+
     QLabel *namedL = new QLabel(i18nc("this is the label for the name textfield", "&Named:"), pages[0]);
     namedL->setBuddy(nameBox);
     namedL->setObjectName(QStringLiteral("named"));
-    namedL->setToolTip(i18n("You can use wildcard matching and \";\" for separating multiple names"));
+    namedL->setToolTip(i18n("You can use regular expression matching and \"|\" for separating multiple search patterns"));
     dirBox = new KUrlComboBox(KUrlComboBox::Directories, pages[0]);
     dirBox->setEditable(true);
     dirBox->setCompletionObject(new KUrlCompletion(KUrlCompletion::DirCompletion));
@@ -99,25 +142,17 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     nameBox->setInsertPolicy(QComboBox::InsertAtTop);
     dirBox->setInsertPolicy(QComboBox::InsertAtTop);
 
-    const QString nameWhatsThis
-        = i18n("<qt>Enter the filename you are looking for. <br />"
-               "Alternatives may be separated by a semicolon \";\".<br />"
-               "<br />"
-               "The filename may contain the following special characters:"
-               "<ul>"
-               "<li><b>?</b> matches any single character</li>"
-               "<li><b>*</b> matches zero or more of any characters</li>"
-               "<li><b>[...]</b> matches any of the characters between the braces</li>"
-               "</ul>"
-               "<br />"
-               "Example searches:"
-               "<ul>"
-               "<li><b>*.kwd;*.txt</b> finds all files ending with .kwd or .txt</li>"
-               "<li><b>go[dt]</b> finds god and got</li>"
-               "<li><b>Hel?o</b> finds all files that start with \"Hel\" and end with \"o\", "
-               "having one character in between</li>"
-               "<li><b>My Document.kwd</b> finds a file of exactly that name</li>"
-               "</ul></qt>");
+    const QString nameWhatsThis = i18n(
+        "Enter the filename you are looking for. <br />"
+        "Alternatives may be separated by a \"|\".<br />"
+        "<br />"
+        "Examples:<br />"
+        "<b>.*\\.kwd|.*\\*.txt</b> finds all files ending with .kwd or .txt<br />"
+        "<b>go[dt]</b> finds god and got<br />"
+        "<b>Hel.o</b> finds all files that start with \"Hel\" and end with \"o\", "
+        "having one character in between<br />"
+        "<b>My Document.kwd</b> finds a file of exactly that name<br /><br />"
+        "See the HandBook for more details and examples.");
     nameBox->setWhatsThis(nameWhatsThis);
     namedL->setWhatsThis(nameWhatsThis);
     const QString whatsfileindex
@@ -288,6 +323,17 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     textEdit = new KLineEdit(pages[2]);
     textEdit->setClearButtonEnabled(true);
     textEdit->setObjectName(QStringLiteral("textEdit"));
+    QAction *ContentRegexHelperButton =
+        textEdit->addAction(QIcon::fromTheme(QStringLiteral("code-context"), QIcon::fromTheme(QStringLiteral("edit-find-replace"))),
+                            QLineEdit::TrailingPosition);
+
+    connect(ContentRegexHelperButton, &QAction::triggered, this, [this]() {
+        QMenu menu;
+        addRegexHelperActions(&menu);
+        auto *action = menu.exec(QCursor::pos());
+        regexHelperActOnAction(action, textEdit);
+    });
+
     QLabel *textL = new QLabel(i18n("C&ontaining text:"), pages[2]);
     textL->setBuddy(textEdit);
 
@@ -300,7 +346,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
                " for a list of supported file types."
                "</qt>");
     textEdit->setToolTip(containingtext);
-    textL->setWhatsThis(containingtext);
+    textEdit->setWhatsThis(containingtext);
 
     caseContextCb = new QCheckBox(i18n("Case s&ensitive"), pages[2]);
     binaryContextCb = new QCheckBox(i18n("Include &binary files"), pages[2]);
