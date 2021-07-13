@@ -11,7 +11,6 @@
 #include <QMimeType>
 #include <QTabWidget>
 #include <QUrl>
-#include <QValidator> // for KDigitValidator
 
 class KUrlComboBox;
 class QButtonGroup;
@@ -21,7 +20,6 @@ class QCheckBox;
 class KLineEdit;
 class QString;
 class QDate;
-class QRegExp;
 class KDateComboBox;
 class KComboBox;
 class QSpinBox;
@@ -117,20 +115,6 @@ private:
     QStringList m_ImageTypes;
     QStringList m_VideoTypes;
     QStringList m_AudioTypes;
-};
-
-class KDigitValidator : public QValidator
-{
-    Q_OBJECT
-
-public:
-    explicit KDigitValidator(QWidget *parent);
-    ~KDigitValidator();
-
-    QValidator::State validate(QString &input, int &) const override;
-
-private:
-    QRegExp *r;
 };
 
 #endif

@@ -54,9 +54,6 @@ struct MimeTypes
 KfindTabWidget::KfindTabWidget(QWidget *parent)
     : QTabWidget(parent)
 {
-    // This validator will be used for all numeric edit fields
-    //KDigitValidator *digitV = new KDigitValidator(this);
-
     // ************ Page One ************
 
     pages[0] = new QWidget;
@@ -831,31 +828,6 @@ void KfindTabWidget::updateDateLabels(int type, int value)
 void KfindTabWidget::slotUpdateByteComboBox(int value)
 {
     sizeUnitBox->setItemText(0, i18np("Byte", "Bytes", value));
-}
-
-/**
-   Digit validator. Allows only digits to be typed.
-**/
-KDigitValidator::KDigitValidator(QWidget *parent)
-    : QValidator(parent)
-{
-    r = new QRegExp(QStringLiteral("^[0-9]*$"));
-}
-
-KDigitValidator::~KDigitValidator()
-{
-    delete r;
-}
-
-QValidator::State KDigitValidator::validate(QString &input, int &) const
-{
-    if (r->indexIn(input) < 0) {
-        // Beep on user if he enters non-digit
-        QApplication::beep();
-        return QValidator::Invalid;
-    } else {
-        return QValidator::Acceptable;
-    }
 }
 
 //*******************************************************
