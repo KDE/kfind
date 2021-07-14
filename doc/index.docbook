@@ -76,8 +76,8 @@ If you want to use &kfind; as a standalone search tool, launch it by using &krun
 <para>
 When starting &kfind;, you will see a quite simple window. Type in the
 name of the file you are searching for in the text box labeled
-<guilabel>Named:</guilabel>. You can use wildcard matching and 
-a semicolon (<quote>;</quote>) for separating multiple names.</para>
+<guilabel>Named:</guilabel>. You can use regular experssions; a <quote>|</quote>
+character can be used for separating multiple search patterns.</para>
 <para>Choose a folder where you want to search
 by typing it in the field <guilabel>Look in:</guilabel>
 or by clicking <guibutton>Browse...</guibutton> (you can toggle the 
@@ -98,35 +98,52 @@ Selecting <guilabel>Use files index</guilabel> lets you use the
 files' index created by the <quote>locate</quote> package 
 to speed-up the search.</para>
 <para>
-You can use the following wildcards for file or folder names:
+The following meta characters have special meaning in a regular expression:
 </para>
 
 <variablelist>
 <varlistentry>
-<term>The Asterisk <quote><keycap>*</keycap></quote></term>
+<term>Dot <quote><keycap>.</keycap></quote></term>
 <listitem>
 <para>
-The asterisk stands for any number of missing characters (even zero),
-that means &eg; searching for <userinput>marc*</userinput> may find the
-files <filename>marc</filename>, <filename>marc.png</filename> and
-<filename> marc_must_not_read_this.kwd</filename>. 
-<userinput>mar*.kwd</userinput> may find
-<filename>marketplace.kwd</filename> and
-<filename>marc_must_not_read_this.kwd</filename>.
+A dot '.' can match any single character, &eg; searching for <userinput>flas.</userinput>
+will match <userinput>flask</userinput> and <userinput>flash</userinput>.
+</para>
+<para>
+To match a literal '.' character, use '\.', &ie; escape it with a backslash.
 </para>
 </listitem>
 </varlistentry>
 
 <varlistentry>
-<term>The Question Mark <quote><keycap>?</keycap></quote></term>
+<term><quote><keycap>.?</keycap></quote></term>
 <listitem>
 <para>
-In contrast to the asterisk, the question mark stands for exactly one
-character, so <userinput>mar?</userinput> will find
-<filename>marc</filename>, but <userinput>marc?</userinput> will not find
-anything, as our files are called <filename>marc</filename> and
-<filename>marc.png</filename>. You can put as many question marks in the
-term as you want, it will find exactly that number of characters.
+Matches exactly zero or any one character, &eg; <userinput>tim.?</userinput>
+will match <userinput>tim</userinput> and <userinput>time</userinput>, but
+not <userinput>timely</userinput>.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><quote><keycap>.*</keycap></quote></term>
+<listitem>
+<para>
+Matches zero or more characters, &eg; <userinput>hel.*</userinput>
+will match <userinput>hel</userinput>, <userinput>help</userinput>, and
+<userinput>hello</userinput>.
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><quote><keycap>.+</keycap></quote></term>
+<listitem>
+<para>
+Matches one or more characters, &eg; <userinput>tim.+</userinput>
+will match <userinput>time</userinput>, <userinput>timely</userinput> and
+<userinput>timeserver</userinput>, but not <userinput>tim</userinput>.
 </para>
 </listitem>
 </varlistentry>
@@ -140,10 +157,28 @@ This matches any of the characters between the braces.
 </listitem>
 </varlistentry>
 
+<varlistentry>
+<term>Matching multiple patterns using<quote><keycap>|</keycap></quote></term>
+<listitem>
+<para>
+A '|' means "or", &eg; <userinput>blue\.txt|white\.txt</userinput> will match
+<filename>blue.txt</filename> and <filename>white.txt</filename> (note that to
+match a literal '.', a backslash was used '\.').
+</para>
+</listitem>
+</varlistentry>
+
 </variablelist>
 
 <para>
-Of course you can combine two or more wildcard symbols in a search term.
+Of course you can combine any of these characters to create very powerful search
+patterns.
+</para>
+
+<para>
+For more information and further reading about regular expressions, see
+https://perldoc.perl.org/perlre (the seach in &kfind; is implemented using
+QRegularExperssion which uses PCRE).
 </para>
 
 <para>
