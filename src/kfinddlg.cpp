@@ -30,8 +30,6 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     setModal(true);
     QWidget::setWindowTitle(i18nc("@title:window", "Find Files/Folders"));
 
-    isResultReported = false;
-
     QFrame *frame = new QFrame;
     mainLayout->addWidget(frame);
 

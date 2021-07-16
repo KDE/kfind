@@ -31,15 +31,9 @@ public:
 
     QVariant data(int column, int role) const;
 
-    KFileItem getFileItem() const
-    {
-        return m_fileItem;
-    }
+    KFileItem getFileItem() const;
 
-    bool isValid() const
-    {
-        return !m_fileItem.isNull();
-    }
+    bool isValid() const;
 
 private:
     KFileItem m_fileItem;
@@ -61,19 +55,12 @@ public:
 
     void clear();
 
-    Qt::DropActions supportedDropActions() const override
-    {
-        return Qt::CopyAction | Qt::MoveAction;
-    }
+    Qt::DropActions supportedDropActions() const override;
 
     Qt::ItemFlags flags(const QModelIndex &) const override;
     QMimeData *mimeData(const QModelIndexList &) const override;
 
-    int columnCount(const QModelIndex &parent = QModelIndex()) const override
-    {
-        Q_UNUSED(parent);
-        return 6;
-    }
+    int columnCount(const QModelIndex &parent = QModelIndex()) const override;
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
@@ -81,10 +68,7 @@ public:
 
     KFindItem itemAtIndex(const QModelIndex &index) const;
 
-    QList<KFindItem> getItemList() const
-    {
-        return m_itemList;
-    }
+    QList<KFindItem> getItemList() const;
 
 private:
     QList<KFindItem> m_itemList;
@@ -110,7 +94,7 @@ class KFindTreeView : public QTreeView
     Q_OBJECT
 public:
     explicit KFindTreeView(QWidget *parent, KfindDlg *findDialog);
-    ~KFindTreeView();
+    ~KFindTreeView() override;
 
     void beginSearch(const QUrl &baseUrl);
     void endSearch();
@@ -118,19 +102,13 @@ public:
     void insertItems(const QList< QPair<KFileItem, QString> > &);
     void removeItem(const QUrl &url);
 
-    bool isInserted(const QUrl &url)
-    {
-        return m_model->isInserted(url);
-    }
+    bool isInserted(const QUrl &url) const;
 
     QString reducedDir(const QString &fullDir);
 
-    int itemCount()
-    {
-        return m_model->rowCount();
-    }
+    int itemCount() const;
 
-    QList<QUrl> selectedUrls();
+    QList<QUrl> selectedUrls() const;
 
 public Q_SLOTS:
     void copySelection();
@@ -150,10 +128,7 @@ private Q_SLOTS:
     void updateMouseButtons();
 
 protected:
-    void dragMoveEvent(QDragMoveEvent *e) override
-    {
-        e->accept();
-    }
+    void dragMoveEvent(QDragMoveEvent *e) override;
 
 Q_SIGNALS:
     void resultSelected(bool);
@@ -165,14 +140,14 @@ private:
 
     QDir m_baseDir;
 
-    KFindItemModel *m_model = nullptr;
-    KFindSortFilterProxyModel *m_proxyModel = nullptr;
+    KFindItemModel *const m_model;
+    KFindSortFilterProxyModel *const m_proxyModel;
     KActionCollection *m_actionCollection = nullptr;
     QMenu *m_contextMenu = nullptr;
 
     Qt::MouseButtons m_mouseButtons;
 
-    KfindDlg *m_kfindDialog = nullptr;
+    KfindDlg *const m_kfindDialog;
 };
 
 #endif

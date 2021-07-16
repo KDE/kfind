@@ -33,7 +33,7 @@ class KfindTabWidget : public QTabWidget
 
 public:
     explicit KfindTabWidget(QWidget *parent = nullptr);
-    virtual ~KfindTabWidget();
+    ~KfindTabWidget() override;
     void setQuery(class KQuery *query);
     void setDefaults();
 

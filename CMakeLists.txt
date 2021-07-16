@@ -41,8 +41,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     WidgetsAddons
 )
 
-add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
-
 
 add_subdirectory(src)
 add_subdirectory(icons)

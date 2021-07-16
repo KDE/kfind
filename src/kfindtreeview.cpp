@@ -89,7 +89,7 @@ void KFindItemModel::insertFileItems(const QList< QPair<KFileItem, QString> > &p
         for (; it != end; ++it) {
             QPair<KFileItem, QString> pair = *it;
 
-            QString subDir = m_view->reducedDir(pair.first.url().adjusted(QUrl::RemoveFilename).path());
+            const QString subDir = m_view->reducedDir(pair.first.url().adjusted(QUrl::RemoveFilename).path());
             m_itemList.append(KFindItem(pair.first, subDir, pair.second));
         }
 
@@ -113,6 +113,11 @@ KFindItem KFindItemModel::itemAtIndex(const QModelIndex &index) const
     }
 
     return KFindItem();
+}
+
+QList<KFindItem> KFindItemModel::getItemList() const
+{
+    return m_itemList;
 }
 
 QVariant KFindItemModel::data(const QModelIndex &index, int role) const
@@ -171,9 +176,14 @@ void KFindItemModel::clear()
     }
 }
 
+Qt::DropActions KFindItemModel::supportedDropActions() const
+{
+    return Qt::CopyAction | Qt::MoveAction;
+}
+
 Qt::ItemFlags KFindItemModel::flags(const QModelIndex &index) const
 {
-    Qt::ItemFlags defaultFlags = Qt::ItemIsSelectable | Qt::ItemIsEnabled;
+    const Qt::ItemFlags defaultFlags = Qt::ItemIsSelectable | Qt::ItemIsEnabled;
     if (index.isValid()) {
         return Qt::ItemIsDragEnabled | defaultFlags;
     }
@@ -200,6 +210,12 @@ QMimeData *KFindItemModel::mimeData(const QModelIndexList &indexes) const
     mimeData->setUrls(uris);
 
     return mimeData;
+}
+
+int KFindItemModel::columnCount(const QModelIndex &parent) const
+{
+    Q_UNUSED(parent);
+    return 6;
 }
 
 //END KFindItemModel
@@ -276,6 +292,16 @@ QVariant KFindItem::data(int column, int role) const
     return QVariant();
 }
 
+KFileItem KFindItem::getFileItem() const
+{
+    return m_fileItem;
+}
+
+bool KFindItem::isValid() const
+{
+    return !m_fileItem.isNull();
+}
+
 //END KFindItem
 
 //BEGIN KFindSortFilterProxyModel
@@ -300,11 +326,10 @@ bool KFindSortFilterProxyModel::lessThan(const QModelIndex &left, const QModelIn
 
 KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
     : QTreeView(parent)
+    , m_model(new KFindItemModel(this))
+    , m_proxyModel(new KFindSortFilterProxyModel(this))
     , m_kfindDialog(findDialog)
 {
-    //Configure model and proxy model
-    m_model = new KFindItemModel(this);
-    m_proxyModel = new KFindSortFilterProxyModel(this);
     m_proxyModel->setSourceModel(m_model);
     setModel(m_proxyModel);
 
@@ -375,6 +400,11 @@ QString KFindTreeView::reducedDir(const QString &fullDir)
     return fullDir;
 }
 
+int KFindTreeView::itemCount() const
+{
+    return m_model->rowCount();
+}
+
 void KFindTreeView::beginSearch(const QUrl &baseUrl)
 {
     m_baseDir = QDir(baseUrl.toLocalFile());
@@ -434,6 +464,11 @@ void KFindTreeView::removeItem(const QUrl &url)
         m_contextMenu = nullptr;
     }
     m_model->removeItem(url);
+}
+
+bool KFindTreeView::isInserted(const QUrl &url) const
+{
+    return m_model->isInserted(url);
 }
 
 // copy to clipboard
@@ -604,7 +639,7 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
     m_contextMenu->exec(this->mapToGlobal(p));
 }
 
-QList<QUrl> KFindTreeView::selectedUrls()
+QList<QUrl> KFindTreeView::selectedUrls() const
 {
     QList<QUrl> uris;
 
@@ -668,6 +703,11 @@ void KFindTreeView::reconfigureMouseSettings()
 void KFindTreeView::updateMouseButtons()
 {
     m_mouseButtons = QApplication::mouseButtons();
+}
+
+void KFindTreeView::dragMoveEvent(QDragMoveEvent *e)
+{
+    e->accept();
 }
 
 //END KFindTreeView

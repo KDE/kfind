@@ -28,7 +28,7 @@ class KQuery : public QObject
 
 public:
     explicit KQuery(QObject *parent = nullptr);
-    ~KQuery();
+    ~KQuery() override;
 
     /* Functions to set Query requirements */
     void setSizeRange(int mode, KIO::filesize_t value1, KIO::filesize_t value2);

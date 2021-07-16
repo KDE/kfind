@@ -30,7 +30,7 @@ class KfindDlg : public QDialog
 
 public:
     explicit KfindDlg(const QUrl &url, QWidget *parent = nullptr);
-    ~KfindDlg();
+    ~KfindDlg() override;
     void copySelection();
 
     void setStatusMsg(const QString &);
@@ -59,18 +59,18 @@ Q_SIGNALS:
     void resultSelected(bool);
 
 private:
-    KfindTabWidget *tabWidget;
-    KFindTreeView *win;
-    QPushButton *m_saveAsButton;
-    QPushButton *m_stopButton;
-    QPushButton *m_findButton;
-    QStatusBar *mStatusBar;
-    QLabel *m_labelStatus;
-    QLabel *m_labelProgress;
+    KfindTabWidget *tabWidget = nullptr;
+    KFindTreeView *win = nullptr;
+    QPushButton *m_saveAsButton = nullptr;
+    QPushButton *m_stopButton = nullptr;
+    QPushButton *m_findButton = nullptr;
+    QStatusBar *mStatusBar = nullptr;
+    QLabel *m_labelStatus = nullptr;
+    QLabel *m_labelProgress = nullptr;
 
-    bool isResultReported;
-    KQuery *query;
-    KDirWatch *dirwatch;
+    bool isResultReported = false;
+    KQuery *query = nullptr;
+    KDirWatch *dirwatch = nullptr;
 };
 
 #endif
