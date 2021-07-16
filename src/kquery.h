@@ -97,7 +97,7 @@ private:
     bool m_showHiddenFiles;
     QByteArray bufferLocate;
     QStringList locateList;
-    KProcess *processLocate;
+    KProcess *processLocate = nullptr;
     QList<QRegExp *> m_regexps;// regexps for file name
 //  QValueList<bool> m_regexpsContainsGlobs;  // what should this be good for ? Alex
     KIO::ListJob *job;

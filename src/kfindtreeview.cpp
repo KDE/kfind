@@ -80,7 +80,7 @@ QVariant KFindItemModel::headerData(int section, Qt::Orientation orientation, in
 
 void KFindItemModel::insertFileItems(const QList< QPair<KFileItem, QString> > &pairs)
 {
-    if (pairs.size() > 0) {
+    if (!pairs.isEmpty()) {
         beginInsertRows(QModelIndex(), m_itemList.size(), m_itemList.size()+pairs.size()-1);
 
         QList< QPair<KFileItem, QString> >::const_iterator it = pairs.constBegin();
@@ -138,7 +138,7 @@ QVariant KFindItemModel::data(const QModelIndex &index, int role) const
 
 void KFindItemModel::removeItem(const QUrl &url)
 {
-    int itemCount = m_itemList.size();
+    const int itemCount = m_itemList.size();
     for (int i = 0; i < itemCount; i++) {
         KFindItem item = m_itemList.at(i);
         if (item.getFileItem().url() == url) {
@@ -152,7 +152,7 @@ void KFindItemModel::removeItem(const QUrl &url)
 
 bool KFindItemModel::isInserted(const QUrl &url)
 {
-    int itemCount = m_itemList.size();
+    const int itemCount = m_itemList.size();
     for (int i = 0; i < itemCount; i++) {
         KFindItem item = m_itemList.at(i);
         if (item.getFileItem().url() == url) {
@@ -300,12 +300,11 @@ bool KFindSortFilterProxyModel::lessThan(const QModelIndex &left, const QModelIn
 
 KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
     : QTreeView(parent)
-    , m_contextMenu(nullptr)
     , m_kfindDialog(findDialog)
 {
     //Configure model and proxy model
     m_model = new KFindItemModel(this);
-    m_proxyModel = new KFindSortFilterProxyModel();
+    m_proxyModel = new KFindSortFilterProxyModel(this);
     m_proxyModel->setSourceModel(m_model);
     setModel(m_proxyModel);
 
@@ -431,10 +430,8 @@ void KFindTreeView::removeItem(const QUrl &url)
     QList<QUrl> list = selectedUrls();
     if (list.contains(url)) {
         //Close menu
-        if (m_contextMenu) {
-            delete m_contextMenu;
-            m_contextMenu = nullptr;
-        }
+        delete m_contextMenu;
+        m_contextMenu = nullptr;
     }
     m_model->removeItem(url);
 }
@@ -588,7 +585,7 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
     KFileItemActions menuActions;
     KFileItemListProperties fileProperties(fileList);
     menuActions.setItemListProperties(fileProperties);
-    menuActions.addOpenWithActionsTo(m_contextMenu);
+    menuActions.insertOpenWithActionsTo(nullptr, m_contextMenu, QStringList());
     // 'Actions' submenu
     menuActions.addActionsTo(m_contextMenu);
 

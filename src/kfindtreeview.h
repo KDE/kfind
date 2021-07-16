@@ -165,14 +165,14 @@ private:
 
     QDir m_baseDir;
 
-    KFindItemModel *m_model;
-    KFindSortFilterProxyModel *m_proxyModel;
-    KActionCollection *m_actionCollection;
-    QMenu *m_contextMenu;
+    KFindItemModel *m_model = nullptr;
+    KFindSortFilterProxyModel *m_proxyModel = nullptr;
+    KActionCollection *m_actionCollection = nullptr;
+    QMenu *m_contextMenu = nullptr;
 
     Qt::MouseButtons m_mouseButtons;
 
-    KfindDlg *m_kfindDialog;
+    KfindDlg *m_kfindDialog = nullptr;
 };
 
 #endif

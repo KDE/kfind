@@ -26,8 +26,7 @@
 KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     : QDialog(parent)
 {
-    QHBoxLayout *mainLayout = new QHBoxLayout;
-    setLayout(mainLayout);
+    QHBoxLayout *mainLayout = new QHBoxLayout(this);
     setModal(true);
     QWidget::setWindowTitle(i18nc("@title:window", "Find Files/Folders"));
 
