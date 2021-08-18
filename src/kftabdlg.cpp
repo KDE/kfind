@@ -360,7 +360,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     connect(watcher, &QFutureWatcher<MimeTypes>::finished, this, [this, watcher] {
         const MimeTypes &mimeTypes = watcher->result();
 
-        for (const auto &mime : qAsConst(mimeTypes.all)) {
+        for (const auto &mime : std::as_const(mimeTypes.all)) {
             typeBox->addItem(mime.comment());
         }
 
