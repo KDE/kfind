@@ -1,18 +1,18 @@
+add_executable(kfind)
 
-set(kfind_SRCS main.cpp
+target_sources(kfind PRIVATE main.cpp
                kfinddlg.cpp
                kftabdlg.cpp
                kquery.cpp
                kfindtreeview.cpp)
 
-ecm_qt_declare_logging_category(kfind_SRCS HEADER kfind_debug.h IDENTIFIER
+ecm_qt_declare_logging_category(kfind HEADER kfind_debug.h IDENTIFIER
 	KFING_LOG CATEGORY_NAME org.kde.kfind DESCRIPTION "KFind" EXPORT KFIND)
 
 
 file(GLOB ICONS_SRCS "../icons/*-apps-kfind.png")
 ecm_add_app_icon(kfind_SRCS ICONS ${ICONS_SRCS})
 
-add_executable(kfind ${kfind_SRCS})
 
 target_link_libraries(kfind
 Qt::Concurrent
