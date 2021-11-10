@@ -1,10 +1,14 @@
 add_executable(kfind)
 
-target_sources(kfind PRIVATE main.cpp
-               kfinddlg.cpp
-               kftabdlg.cpp
-               kquery.cpp
-               kfindtreeview.cpp)
+target_sources(kfind PRIVATE kfinddlg.cpp
+    kfinddlg.h
+    kfindtreeview.cpp
+    kfindtreeview.h
+    kftabdlg.cpp
+    kftabdlg.h
+    kquery.cpp
+    kquery.h
+    main.cpp)
 
 ecm_qt_declare_logging_category(kfind HEADER kfind_debug.h IDENTIFIER
 	KFING_LOG CATEGORY_NAME org.kde.kfind DESCRIPTION "KFind" EXPORT KFIND)
