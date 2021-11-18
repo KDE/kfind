@@ -36,7 +36,18 @@
 #include <kio_version.h>
 
 // Permission strings
+#include <ki18n_version.h>
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <KLazyLocalizedString>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
+
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
 static const char *const perm[4] = {
+#else
+const KLazyLocalizedString perm[4] = {
+#endif
     I18N_NOOP("Read-write"),
     I18N_NOOP("Read-only"),
     I18N_NOOP("Write-only"),
@@ -238,8 +249,11 @@ KFindItem::KFindItem(const KFileItem &_fileItem, const QString &subDir, const QS
         } else {
             perm_index = fileInfo.isWritable() ? WO : NA;
         }
-
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         m_permission = i18n(perm[perm_index]);
+#else
+        m_permission = KLocalizedString(perm[perm_index]).toString();
+#endif
 
         m_icon = QIcon::fromTheme(m_fileItem.iconName());
     }
