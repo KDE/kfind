@@ -22,6 +22,7 @@
   <name xml:lang="hu">KFind</name>
   <name xml:lang="ia">KFind</name>
   <name xml:lang="id">KFind</name>
+  <name xml:lang="is">KFind</name>
   <name xml:lang="it">KFind</name>
   <name xml:lang="ko">KFind</name>
   <name xml:lang="lt">KFind</name>
@@ -67,6 +68,7 @@
   <summary xml:lang="hu">Fájl- és mappakereső</summary>
   <summary xml:lang="ia">Cerca Files/Dossieres</summary>
   <summary xml:lang="id">Temukan File/Folder</summary>
+  <summary xml:lang="is">Finna skrár/möppur</summary>
   <summary xml:lang="it">Trova file/cartelle</summary>
   <summary xml:lang="ko">파일/폴더 찾기</summary>
   <summary xml:lang="lt">Rasti failus/aplankus</summary>
@@ -164,6 +166,7 @@
       <caption xml:lang="hu">A KFind főablaka</caption>
       <caption xml:lang="ia">Fenestra principal de KFind</caption>
       <caption xml:lang="id">Window utama KFind</caption>
+      <caption xml:lang="is">Aðalgluggi KFind</caption>
       <caption xml:lang="it">Finestra principale di KFind</caption>
       <caption xml:lang="ko">KFind 주 창</caption>
       <caption xml:lang="lt">KFind pagrindinis langas</caption>
