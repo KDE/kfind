@@ -33,7 +33,6 @@
 #include <KIO/JobUiDelegate>
 #include <KIO/OpenFileManagerWindowJob>
 #include <KIO/OpenUrlJob>
-#include <kio_version.h>
 
 // Permission strings
 #include <ki18n_version.h>
