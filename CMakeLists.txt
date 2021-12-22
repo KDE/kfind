@@ -34,11 +34,15 @@ ecm_setup_version(${KFIND_VERSION} VARIABLE_PREFIX KFIND
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Archive
     CoreAddons
-    DocTools
     FileMetaData
     I18n
     KIO
     WidgetsAddons
+)
+find_package(KF5DocTools ${KF5_MIN_VERSION})
+set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
+    "Tools to generate documentation"
+    TYPE OPTIONAL
 )
 add_definitions(
     -DQT_DISABLE_DEPRECATED_BEFORE=0x050e00
@@ -49,10 +53,13 @@ add_definitions(
 
 add_subdirectory(src)
 add_subdirectory(icons)
-add_subdirectory(doc)
 
 ecm_qt_install_logging_categories(EXPORT KFIND FILE kfind.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+
 ki18n_install(po)
-kdoctools_install(po)
+if (KF5DocTools_FOUND)
+    kdoctools_install(po)
+    add_subdirectory(doc)
+endif()
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
