@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KFind</name>
+  <name xml:lang="ar">بحثك</name>
   <name xml:lang="ast">KFind</name>
   <name xml:lang="bs">KFind</name>
   <name xml:lang="ca">KFind</name>
@@ -50,6 +51,7 @@
   <name xml:lang="zh-CN">KFind</name>
   <name xml:lang="zh-TW">KFind</name>
   <summary>Find Files/Folders</summary>
+  <summary xml:lang="ar">اعثر على ملفات/مجلدات</summary>
   <summary xml:lang="ast">Atopa ficheros/carpetes</summary>
   <summary xml:lang="bs">Traženje datoteka i fascikli</summary>
   <summary xml:lang="ca">Cerca de fitxers i carpetes</summary>
@@ -100,6 +102,7 @@
       KFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror
       as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.
     </p>
+    <p xml:lang="ar">يمكن استخدام بحثك كأداة بحث قائمة بذاتها، يتم إطلاقها بواسطة "مشغلك" أو من القائمة الخاصة بك. تم دمجه أيضًا في كونكيورر كـ "اعثر على ملف" في قائمة "الأدوات". يسمح لك بالعثور على الملفات بالاسم أو النوع أو المحتوى.</p>
     <p xml:lang="ast">KFind pue usase como una ferramienta independiente de busca, llanzáu por KRunner o dende'l menú. Tamién ta integráu en Konqueror como «Atopar ficheru» nel menú «Ferramientes». Permítete atopar ficheros pel nome, tipu o conteníu.</p>
     <p xml:lang="bs">KFind se može koristiti kao samostalni alat za pretragu, koju je pokrenula KRunner ili iz menija. On je takođe integrisan u Konqueror kao "Pronađi Datoteku" u meniju "Alati". To vam omogućava da pronađete datoteke po imenu, tipu ili sadržaju.</p>
     <p xml:lang="ca">El KFind es pot usar com una eina de cerca independent, llançar-la des del KRunner o des del menú. També està integrada al Konqueror com a «Cerca el fitxer» al menú «Eines». Permet cercar fitxers per nom, tipus o contingut.</p>
@@ -151,6 +154,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>KFind main window</caption>
+      <caption xml:lang="ar">النافذة الرئيسة لبحثك</caption>
       <caption xml:lang="ast">Ventana principal de KFind</caption>
       <caption xml:lang="ca">Finestra principal del KFind</caption>
       <caption xml:lang="ca-valencia">Finestra principal del KFind</caption>
