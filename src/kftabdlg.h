@@ -19,7 +19,6 @@ class QRadioButton;
 class QCheckBox;
 class KLineEdit;
 class QString;
-class QDate;
 class KDateComboBox;
 class KComboBox;
 class QSpinBox;
