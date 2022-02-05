@@ -19,8 +19,8 @@ ecm_add_app_icon(kfind_SRCS ICONS ${ICONS_SRCS})
 
 
 target_link_libraries(kfind
-Qt::Concurrent
-Qt::Widgets
+Qt${QT_MAJOR_VERSION}::Concurrent
+Qt${QT_MAJOR_VERSION}::Widgets
 KF5::Archive
 KF5::CoreAddons
 KF5::FileMetaData
