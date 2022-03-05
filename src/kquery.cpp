@@ -11,6 +11,7 @@
 
 #include <QCoreApplication>
 #include <QMimeDatabase>
+#include <QStandardPaths>
 #include <QTextCodec>
 #include <QTextStream>
  
@@ -108,7 +109,7 @@ void KQuery::start()
         m_url = m_url.adjusted(QUrl::NormalizePathSegments);
 
         processLocate->clearProgram();
-        processLocate->setProgram(QStringLiteral("locate"), QStringList() <<  m_url.toLocalFile());
+        processLocate->setProgram(QStandardPaths::findExecutable(QStringLiteral("locate")), QStringList{m_url.toLocalFile()});
 
         processLocate->setOutputChannelMode(KProcess::SeparateChannels);
         processLocate->start();
