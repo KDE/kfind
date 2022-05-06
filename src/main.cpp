@@ -13,7 +13,10 @@
 
 #include <KAboutData>
 #include <KLocalizedString>
+
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <Kdelibs4ConfigMigrator>
+#endif
 
 #include "kfinddlg.h"
 #include "kfind_version.h"
@@ -21,9 +24,13 @@
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
+
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     Kdelibs4ConfigMigrator migrate(QStringLiteral("kfind"));
     migrate.setConfigFiles(QStringList() << QStringLiteral("kfindrc"));
     migrate.migrate();
+#endif
+
     KLocalizedString::setApplicationDomain("kfind");
 
     KAboutData aboutData(QStringLiteral("kfind"), i18n("KFind"),
