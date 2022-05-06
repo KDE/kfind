@@ -467,11 +467,11 @@ void KQuery::processQuery(const KFileItem &file)
                 str.remove(xmlTags);
             }
 
-	if (str.indexOf(m_context, 0, m_casesensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) != -1) {
-	    matchingLine = QString::number(matchingLineNumber)+QStringLiteral(": ")+str.trimmed();
-	    found = true;
-	    break;
-	}
+            if (str.indexOf(m_context, 0, m_casesensitive ? Qt::CaseSensitive : Qt::CaseInsensitive) != -1) {
+                matchingLine = QString::number(matchingLineNumber) + QStringLiteral(": ") + str.trimmed();
+                found = true;
+                break;
+            }
             qApp->processEvents();
         }
 
