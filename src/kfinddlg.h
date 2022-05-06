@@ -12,13 +12,13 @@
 #include <QLabel>
 
 #include <KDirWatch>
+#include <KFileItem>
 
 QT_FORWARD_DECLARE_CLASS(QDir)
 QT_FORWARD_DECLARE_CLASS(QString)
 QT_FORWARD_DECLARE_CLASS(QUrl)
 
 class KQuery;
-class KFileItem;
 class KfindTabWidget;
 class KFindTreeView;
 class QPushButton;
