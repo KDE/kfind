@@ -10,12 +10,12 @@
 #include <QApplication>
 #include <QButtonGroup>
 #include <QCheckBox>
-#include <QDesktopWidget>
 #include <QFileDialog>
 #include <QLabel>
 #include <QMimeDatabase>
 #include <QPushButton>
 #include <QRadioButton>
+#include <QScreen>
 #include <QSpinBox>
 #include <QStandardPaths>
 #include <QWhatsThis>
@@ -861,10 +861,9 @@ QSize KfindTabWidget::sizeHint() const
     // and then we simply provide a reasonable size hint for the whole window, depending
     // on the screen width.
     QSize sz = QTabWidget::sizeHint();
-    KfindTabWidget *me = const_cast<KfindTabWidget *>(this);
-    const int screenWidth = qApp->desktop()->screenGeometry(me).width();
-    if (sz.width() > screenWidth / 2) {
-        sz.setWidth(screenWidth / 2);
+    const int halfScreenWidth = screen()->availableGeometry().width() / 2;
+    if (sz.width() > halfScreenWidth) {
+        sz.setWidth(halfScreenWidth);
     }
     return sz;
 }
