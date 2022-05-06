@@ -347,9 +347,8 @@ void KQuery::processQuery(const KFileItem &file)
                                                          KFileMetaData::ExtractionResult::ExtractMetaData);
             ex->extract(&result);
 
-            KFileMetaData::PropertyMap properties = result.properties();
-            KFileMetaData::PropertyMap::const_iterator it = properties.constBegin();
-            for (; it != properties.constEnd(); it++) {
+            const KFileMetaData::PropertyMultiMap properties = result.properties();
+            for (auto it = properties.cbegin(); it != properties.cend(); ++it) {
                 if (!metaKeyRx.exactMatch(KFileMetaData::PropertyInfo(it.key()).displayName())) {
                     continue;
                 }
