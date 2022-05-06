@@ -514,7 +514,11 @@ void KFindTreeView::saveResults()
                            i18n("Unable to save results."));
     } else {
         QTextStream stream(&file);
+        #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+        stream.setEncoding(QStringConverter::System);
+        #else
         stream.setCodec(QTextCodec::codecForLocale());
+        #endif
 
         const QList<KFindItem> itemList = m_model->getItemList();
         if (dialog.selectedMimeTypeFilter() == QLatin1String("text/html")) {
