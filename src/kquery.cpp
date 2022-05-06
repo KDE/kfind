@@ -11,6 +11,7 @@
 
 #include <QCoreApplication>
 #include <QMimeDatabase>
+#include <QRegularExpression>
 #include <QStandardPaths>
 #include <QTextCodec>
 #include <QTextStream>
@@ -382,10 +383,10 @@ void KQuery::processQuery(const KFileItem &file)
 
         // FIXME: doesn't work with non local files
 
+        const QRegularExpression xmlTags(QStringLiteral("<.*?>"));
         QString filename;
         QTextStream *stream = nullptr;
         QFile qf;
-        QRegExp xmlTags;
         QByteArray zippedXmlFileContent;
 
         // KWord's and OpenOffice.org's files are zipped...
@@ -408,8 +409,6 @@ void KQuery::processQuery(const KFileItem &file)
                 }
 
                 zippedXmlFileContent = zipfileEntry->data();
-                xmlTags.setPattern(QStringLiteral("<.*>"));
-                xmlTags.setMinimal(true);
                 stream = new QTextStream(zippedXmlFileContent, QIODevice::ReadOnly);
 
                 // QTextStream default encoding is UTF-8 in Qt6
@@ -539,8 +538,7 @@ void KQuery::setGroupname(const QString &groupname)
 void KQuery::setRegExp(const QString &regexp, bool caseSensitive)
 {
     QRegExp *regExp = nullptr;
-    QRegExp sep(QStringLiteral(";"));
-    const QStringList strList = regexp.split(sep, Qt::SkipEmptyParts);
+    const QStringList strList = regexp.split(QLatin1Char(';'), Qt::SkipEmptyParts);
     //  QRegExp globChars ("[\\*\\?\\[\\]]", TRUE, FALSE);
     while (!m_regexps.isEmpty()) {
         delete m_regexps.takeFirst();
