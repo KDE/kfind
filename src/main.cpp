@@ -54,9 +54,10 @@ int main(int argc, char **argv)
     aboutData.addAuthor(i18n("Alexander Neundorf"), QString(), QStringLiteral("neundorf@kde.org"));
     aboutData.addAuthor(i18n("Clarence Dang"), QString(), QStringLiteral("dang@kde.org"));
     aboutData.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     // enable high dpi support
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-
+#endif
     QCommandLineParser parser;
     KAboutData::setApplicationData(aboutData);
     parser.addOption(QCommandLineOption(QStringList() <<  QStringLiteral("+[searchpath]"), i18n("Path(s) to search")));
