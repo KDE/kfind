@@ -266,19 +266,14 @@ void KfindDlg::slotNewItems(const QString &file)
 
 QStringList KfindDlg::getAllSubdirs(QDir d)
 {
-    QStringList dirs;
-    QStringList subdirs;
-
     d.setFilter(QDir::Dirs);
-    dirs = d.entryList();
+    const QStringList dirs = d.entryList(QDir::NoDotAndDotDot);
+    QStringList subdirs;
+    subdirs.reserve(dirs.size());
 
-    const QStringList::const_iterator end(dirs.constEnd());
-    for (QStringList::const_iterator it = dirs.constBegin(); it != end; ++it) {
-        if ((*it == QLatin1String(".")) || (*it == QLatin1String(".."))) {
-            continue;
-        }
-        subdirs.append(d.path()+QLatin1Char('/')+*it);
-        subdirs += getAllSubdirs(QString(d.path()+QLatin1Char('/')+*it));
+    for (const auto &dir : dirs) {
+        subdirs.append(d.path() + QLatin1Char('/') + dir);
+        subdirs += getAllSubdirs(QDir(d.path() + QLatin1Char('/') + dir));
     }
     return subdirs;
 }

@@ -79,9 +79,7 @@ KQuery::KQuery(QObject *parent)
 
 KQuery::~KQuery()
 {
-    while (!m_regexps.isEmpty()) {
-        delete m_regexps.takeFirst();
-    }
+    qDeleteAll(m_regexps);
     m_fileItems.clear();
     if (processLocate->state() == QProcess::Running) {
         disconnect(processLocate);
@@ -142,10 +140,8 @@ void KQuery::slotResult(KJob *_job)
 
 void KQuery::slotListEntries(KIO::Job *, const KIO::UDSEntryList &list)
 {
-    const KIO::UDSEntryList::ConstIterator end = list.constEnd();
-
-    for (KIO::UDSEntryList::ConstIterator it = list.constBegin(); it != end; ++it) {
-        m_fileItems.enqueue(KFileItem(*it, m_url, true, true));
+    for (const KIO::UDSEntry &entry : list) {
+        m_fileItems.enqueue(KFileItem(entry, m_url, true, true));
     }
 
     checkEntries();
@@ -200,12 +196,9 @@ void KQuery::slotListEntries(const QStringList &list)
     metaKeyRx = QRegExp(m_metainfokey);
     metaKeyRx.setPatternSyntax(QRegExp::Wildcard);
 
-    QStringList::const_iterator it = list.constBegin();
-    QStringList::const_iterator end = list.constEnd();
-
     m_foundFilesList.clear();
-    for (; it != end; ++it) {
-        processQuery(KFileItem(QUrl::fromLocalFile(*it)));
+    for (const auto &file : list) {
+        processQuery(KFileItem(QUrl::fromLocalFile(file)));
     }
 
     if (!m_foundFilesList.isEmpty()) {
@@ -226,10 +219,7 @@ void KQuery::processQuery(const KFileItem &file)
 
     bool matched = false;
 
-    QListIterator<QRegExp *> nextItem(m_regexps);
-    while (nextItem.hasNext())
-    {
-        QRegExp *reg = nextItem.next();
+    for (const QRegExp *reg : std::as_const(m_regexps)) {
         matched = matched || (reg == nullptr) || (reg->exactMatch(file.url().adjusted(QUrl::StripTrailingSlash).fileName()));
     }
     if (!matched) {
@@ -537,18 +527,15 @@ void KQuery::setGroupname(const QString &groupname)
 
 void KQuery::setRegExp(const QString &regexp, bool caseSensitive)
 {
-    QRegExp *regExp = nullptr;
     const QStringList strList = regexp.split(QLatin1Char(';'), Qt::SkipEmptyParts);
     //  QRegExp globChars ("[\\*\\?\\[\\]]", TRUE, FALSE);
-    while (!m_regexps.isEmpty()) {
-        delete m_regexps.takeFirst();
-    }
+    qDeleteAll(m_regexps);
+    m_regexps.reserve(strList.size());
 
     //  m_regexpsContainsGlobs.clear();
-    for (QStringList::ConstIterator it = strList.constBegin(); it != strList.constEnd(); ++it) {
-        regExp = new QRegExp((*it), (caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive), QRegExp::Wildcard);
+    for (const auto &str : strList) {
         //m_regexpsContainsGlobs.append(regExp->pattern().contains(globChars));
-        m_regexps.append(regExp);
+        m_regexps.append(new QRegExp(str, (caseSensitive ? Qt::CaseSensitive : Qt::CaseInsensitive), QRegExp::Wildcard));
     }
 }
 

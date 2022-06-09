@@ -80,19 +80,14 @@ QVariant KFindItemModel::headerData(int section, Qt::Orientation orientation, in
     return QVariant();
 }
 
-void KFindItemModel::insertFileItems(const QList< QPair<KFileItem, QString> > &pairs)
+void KFindItemModel::insertFileItems(const QList<QPair<KFileItem, QString>> &pairs)
 {
     if (!pairs.isEmpty()) {
         beginInsertRows(QModelIndex(), m_itemList.size(), m_itemList.size()+pairs.size()-1);
 
-        QList< QPair<KFileItem, QString> >::const_iterator it = pairs.constBegin();
-        QList< QPair<KFileItem, QString> >::const_iterator end = pairs.constEnd();
-
-        for (; it != end; ++it) {
-            QPair<KFileItem, QString> pair = *it;
-
-            const QString subDir = m_view->reducedDir(pair.first.url().adjusted(QUrl::RemoveFilename).path());
-            m_itemList.append(KFindItem(pair.first, subDir, pair.second));
+        for (const auto &[item, dir] : pairs) {
+            const QString subDir = m_view->reducedDir(item.url().adjusted(QUrl::RemoveFilename).path());
+            m_itemList.append(KFindItem(item, subDir, dir));
         }
 
         endInsertRows();
