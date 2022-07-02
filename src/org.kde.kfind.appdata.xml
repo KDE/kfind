@@ -7,6 +7,7 @@
   <name xml:lang="ar">بحثك</name>
   <name xml:lang="ast">KFind</name>
   <name xml:lang="az">KFind</name>
+  <name xml:lang="bg">KFind</name>
   <name xml:lang="bs">KFind</name>
   <name xml:lang="ca">KFind</name>
   <name xml:lang="ca-valencia">KFind</name>
@@ -56,6 +57,7 @@
   <summary xml:lang="ar">اعثر على ملفات/مجلدات</summary>
   <summary xml:lang="ast">Atopa ficheros/carpetes</summary>
   <summary xml:lang="az">Faylları/Qovluqları tapın</summary>
+  <summary xml:lang="bg">Търсене на папки и директории</summary>
   <summary xml:lang="bs">Traženje datoteka i fascikli</summary>
   <summary xml:lang="ca">Cerca de fitxers i carpetes</summary>
   <summary xml:lang="ca-valencia">Busca de fitxers i carpetes</summary>
@@ -109,6 +111,7 @@
     <p xml:lang="ar">يمكن استخدام بحثك كأداة بحث قائمة بذاتها، يتم إطلاقها بواسطة "مشغلك" أو من القائمة الخاصة بك. تم دمجه أيضًا في كونكيورر كـ "اعثر على ملف" في قائمة "الأدوات". يسمح لك بالعثور على الملفات بالاسم أو النوع أو المحتوى.</p>
     <p xml:lang="ast">KFind pue usase como una ferramienta independiente de busca, llanzáu por KRunner o dende'l menú. Tamién ta integráu en Konqueror como «Atopar ficheru» nel menú «Ferramientes». Permítete atopar ficheros pel nome, tipu o conteníu.</p>
     <p xml:lang="az">KFind KRunner və ya menyudan başladılan müstəqil axtarış vasitəsi kimi istifadə edilə bilər. O. həmçinin Konqueror/Dolphin daxilinə Alətlər menyusunda "Fayl tapın" kimi inteqrasiya olunub. KFind sizə faylları adı, növü və tərkibinə görə axtarmağa imkan verir.</p>
+    <p xml:lang="bg">Kfind може да се използва като самостоятелен инструмент за търсене, стартиран от Krunner или от менюто ви. Той също така е интегриран в Konqueror като "Търсене на файл" в менюто "Инструменти". Програмата ви позволява да намерите файлове по име, тип или съдържание.</p>
     <p xml:lang="bs">KFind se može koristiti kao samostalni alat za pretragu, koju je pokrenula KRunner ili iz menija. On je takođe integrisan u Konqueror kao "Pronađi Datoteku" u meniju "Alati". To vam omogućava da pronađete datoteke po imenu, tipu ili sadržaju.</p>
     <p xml:lang="ca">El KFind es pot usar com una eina de cerca independent, llançar-la des del KRunner o des del menú. També està integrada al Konqueror com a «Cerca el fitxer» al menú «Eines». Permet cercar fitxers per nom, tipus o contingut.</p>
     <p xml:lang="ca-valencia">KFind es pot utilitzar com una eina de busca independent, iniciar-la des de KRunner o des del menú. També està integrada a Konqueror com a «Busca el fitxer» al menú «Eines». Permet buscar fitxers per nom, tipus o contingut.</p>
@@ -163,6 +166,7 @@
       <caption xml:lang="ar">النافذة الرئيسة لبحثك</caption>
       <caption xml:lang="ast">Ventana principal de KFind</caption>
       <caption xml:lang="az">KFind əsas pəncərəsi</caption>
+      <caption xml:lang="bg">Основен прозорец на KFind</caption>
       <caption xml:lang="ca">Finestra principal del KFind</caption>
       <caption xml:lang="ca-valencia">Finestra principal de KFind</caption>
       <caption xml:lang="cs">Hlavní okno KFind</caption>
