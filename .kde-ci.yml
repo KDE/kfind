@@ -12,3 +12,6 @@ Dependencies:
     'frameworks/kfilemetadata': '@stable'
     'frameworks/kwidgetsaddons': '@stable'
     'frameworks/kio': '@stable'
+
+Options:
+    require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
