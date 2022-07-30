@@ -199,10 +199,10 @@ void KfindDlg::slotResult(int errorCode)
         setStatusMsg(i18n("Canceled."));
     } else if (errorCode == KIO::ERR_MALFORMED_URL) {
         setStatusMsg(i18n("Error."));
-        KMessageBox::sorry(this, i18n("Please specify an absolute path in the \"Look in\" box."));
+        KMessageBox::error(this, i18n("Please specify an absolute path in the \"Look in\" box."));
     } else if (errorCode == KIO::ERR_DOES_NOT_EXIST) {
         setStatusMsg(i18n("Error."));
-        KMessageBox::sorry(this, i18n("Could not find the specified folder."));
+        KMessageBox::error(this, i18n("Could not find the specified folder."));
     } else {
         setStatusMsg(i18n("Error."));
     }

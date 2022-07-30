@@ -547,7 +547,7 @@ bool KfindTabWidget::isDateValid()
             return true;
         }
 
-        KMessageBox::sorry(this, i18n("Unable to search within a period which is less than a minute."));
+        KMessageBox::error(this, i18n("Unable to search within a period which is less than a minute."));
         return false;
     }
 
@@ -566,7 +566,7 @@ bool KfindTabWidget::isDateValid()
     }
 
     if (!str.isEmpty()) {
-        KMessageBox::sorry(nullptr, str);
+        KMessageBox::error(nullptr, str);
         return false;
     }
     return true;
