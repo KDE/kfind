@@ -333,9 +333,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
 
         const auto types = QMimeDatabase().allMimeTypes();
         for (const QMimeType &type : types) {
-            if ((!type.comment().isEmpty())
-                && (!type.name().startsWith(QLatin1String("kdedevice/")))
-                && (!type.name().startsWith(QLatin1String("all/")))) {
+            if (!type.comment().isEmpty()) {
                 mimeTypes.all.append(type);
 
                 if (type.name().startsWith(QLatin1String("image/"))) {
