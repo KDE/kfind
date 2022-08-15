@@ -530,6 +530,7 @@ void KQuery::setRegExp(const QString &regexp, bool caseSensitive)
     const QStringList strList = regexp.split(QLatin1Char(';'), Qt::SkipEmptyParts);
     //  QRegExp globChars ("[\\*\\?\\[\\]]", TRUE, FALSE);
     qDeleteAll(m_regexps);
+    m_regexps.clear();
     m_regexps.reserve(strList.size());
 
     //  m_regexpsContainsGlobs.clear();
