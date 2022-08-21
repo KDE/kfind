@@ -30,7 +30,7 @@ KF5::WidgetsAddons
 KF5::XmlGui
 )
 
-install(TARGETS kfind ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS kfind ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############
 
