@@ -30,6 +30,10 @@
 
 #include <KIO/CopyJob>
 #include <KIO/DeleteJob>
+#include <kio_version.h>
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 98, 0)
+#include <KIO/JobUiDelegateFactory>
+#endif
 #include <KIO/JobUiDelegate>
 #include <KIO/OpenFileManagerWindowJob>
 #include <KIO/OpenUrlJob>
@@ -561,7 +565,11 @@ void KFindTreeView::slotExecuteSelected()
             KFindItem item = m_model->itemAtIndex(index);
             if (item.isValid()) {
                 auto *job = new KIO::OpenUrlJob(item.getFileItem().targetUrl());
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 98, 0)
+                job->setUiDelegate(KIO::createDefaultJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
+#else
                 job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
+#endif
                 job->start();
             }
         }
@@ -583,7 +591,11 @@ void KFindTreeView::slotExecute(const QModelIndex &index)
         const KFindItem item = m_model->itemAtIndex(realIndex);
         if (item.isValid()) {
             auto *job = new KIO::OpenUrlJob(item.getFileItem().targetUrl());
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 98, 0)
+            job->setUiDelegate(KIO::createDefaultJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
+#else
             job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
+#endif
             job->start();
         }
     }
