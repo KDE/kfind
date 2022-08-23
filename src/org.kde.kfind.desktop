@@ -3,7 +3,6 @@ Exec=kfind %u
 Icon=kfind
 X-DocPath=kfind/index.html
 Type=Application
-Terminal=false
 Name=KFind
 Name[ar]=بحثك
 Name[ast]=KFind
