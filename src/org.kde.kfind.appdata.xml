@@ -27,6 +27,7 @@
   <name xml:lang="id">KFind</name>
   <name xml:lang="is">KFind</name>
   <name xml:lang="it">KFind</name>
+  <name xml:lang="ka">KFind</name>
   <name xml:lang="ko">KFind</name>
   <name xml:lang="lt">KFind</name>
   <name xml:lang="ml">കെഫൈൻഡ്</name>
@@ -77,6 +78,7 @@
   <summary xml:lang="id">Temukan File/Folder</summary>
   <summary xml:lang="is">Finna skrár/möppur</summary>
   <summary xml:lang="it">Trova file/cartelle</summary>
+  <summary xml:lang="ka">ფაილებისა და საქაღალდეების მოძებნა</summary>
   <summary xml:lang="ko">파일/폴더 찾기</summary>
   <summary xml:lang="lt">Rasti failus/aplankus</summary>
   <summary xml:lang="ml">ഫയലുകൾ/അറകൾ തിരയുക</summary>
@@ -185,6 +187,7 @@
       <caption xml:lang="id">Window utama KFind</caption>
       <caption xml:lang="is">Aðalgluggi KFind</caption>
       <caption xml:lang="it">Finestra principale di KFind</caption>
+      <caption xml:lang="ka">KFind -ის მთავარი ფანჯარა</caption>
       <caption xml:lang="ko">KFind 주 창</caption>
       <caption xml:lang="lt">KFind pagrindinis langas</caption>
       <caption xml:lang="ml">കെഫൈൻഡ് പ്രധാന ജാലകം</caption>
