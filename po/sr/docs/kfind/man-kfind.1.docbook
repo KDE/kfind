@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Serbian "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Кориснички приручник <application
+>К-налазача</application
+></title>
+<author
+><personname
+><firstname
+>Лори</firstname
+> <surname
+>Вотс</surname
+></personname
+> &Lauri.Watts.mail;</author>
+<date
+>11.5.2016.</date>
+<releaseinfo
+>Програми КДЕ-а 16.12</releaseinfo>
+<productname
+>Програми КДЕ-а</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>КДЕ-ова алатка за тражење фајлова</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>путања-претраге</option
+></group
+> <arg choice="opt"
+>опције</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Опис</title>
+<para
+><application
+>К-налазач</application
+> је алатка за тражење одређених фајлова на рачунару по имену, односно обрасцу имена, и другим атрибутима. На пример, могу се тражити фајлови задатог типа, са задатим словима у имену фајла, или са одређеним текстом као делом садржаја.</para
+> 
+<para
+><application
+>К-налазач</application
+> је графичка алатка, обично се не извршава из командне линије. </para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Опције</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>searchpath</option
+></term>
+<listitem
+><para
+>За претпопуњавање дијалога можете задати путању од које почиње претрага.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Види још</title>
+<simplelist>
+<member
+>Детаљнија корисничка документација доступна је кроз <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (унесите овај УРЛ у <application
+>К-освајач</application
+> или извршите <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</member>
+<member
+><literal
+>kf5options(7)</literal
+></member>
+<member
+><literal
+>qt5options(7)</literal
+></member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Аутори</title>
+<para
+>Списак доприносилаца дат је у корисничком приручнику, у <application
+>К-центру-помоћи</application
+>.</para>
+<para
+>Страницу припремила <personname
+><firstname
+>Лори</firstname
+> <surname
+>Вотс</surname
+></personname
+> &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

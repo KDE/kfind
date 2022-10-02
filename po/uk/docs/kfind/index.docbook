@@ -1,0 +1,556 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Ukrainian "INCLUDE"
+> 
+]>
+
+<book id="kfind" lang="&language;">
+
+<bookinfo>
+<title
+>Підручник з &kfind;</title>
+
+<authorgroup>
+<author
+>&Dirk.Doerflinger; &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Юрій</firstname
+><surname
+>Чорноіван</surname
+><affiliation
+><address
+><email
+>yurchor@ukr.net</email
+></address
+></affiliation
+><contrib
+>Переклад українською</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Dirk.Doerflinger;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>22 жовтня 2018 року</date>
+<releaseinfo
+>Програми 18.12</releaseinfo>
+
+<abstract>
+<para
+>&kfind; — це засіб для виконання завдань з пошуку від &kde; </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>файл</keyword>
+<keyword
+>kfind</keyword>
+<keyword
+>знайти</keyword>
+<keyword
+>пошук</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Вступ</title>
+
+<para
+>&kfind; — це засіб для виконання завдань з пошуку від &kde; </para>
+
+<sect1 id="starting">
+<title
+>Як запустити &kfind;</title>
+
+<para
+>Інструмент пошуку — це один зі зручних способів пошуку окремих файлів на вашому комп’ютері або пошуку файлів, які відповідають заданому шаблону. Прикладами такого пошуку можуть бути пошуки файлів певного типу, або файлів з певними літерами у назві. Ви можете завантажити цей інструмент у &konqueror;  (у режимі керування файлами) за допомогою пункту <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl; <keycap
+>F</keycap
+></keycombo
+></shortcut
+><guimenu
+>Інструменти</guimenu
+> <guimenuitem
+>Знайти файл</guimenuitem
+></menuchoice
+>. Якщо ви бажаєте скористатися &kfind; як окремим інструментом, запустіть програму за допомогою &krunner;. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="using-kfind">
+<title
+>Пошук файлів</title>
+
+<sect1 id="name-tab">
+<title
+>Вкладка «Назва/Шлях»</title>
+
+<para
+>Після запуску &kfind; ви побачите дуже просте вікно. Вкажіть назву файла, який ви шукаєте у полі з міткою <guilabel
+>З назвою:</guilabel
+>. Ви можете скористатися шаблонами заміни та крапкою з комою («;») для відокремлення декількох записів назв.</para>
+<para
+>Вкажіть теку, у якій слід виконати пошук, заповненням поля <guilabel
+>Шукати у:</guilabel
+> або натисканням кнопки <guibutton
+>Навігація...</guibutton
+> (ви можете увімкнути або вимкнути видимість прихованих файлів та тек можна за допомогою клавіатурних скорочень <keycombo action="simul"
+>&Alt;<keycap
+>.</keycap
+></keycombo
+> та <keycap
+>F8</keycap
+>). Потім натисніть клавішу &Enter; або кнопку <guibutton
+>Пошук</guibutton
+>. Щоб зупинити пошук, натисніть кнопку <guibutton
+>Зупинити</guibutton
+>. Зберегти результати пошуку у форматі &HTML; або звичайному текстовому форматі можна за допомогою натискання кнопки <guibutton
+>Зберегти як...</guibutton
+>.</para>
+<para
+>Якщо буде позначено пункт <guilabel
+>Включати підтеки</guilabel
+>, пошук буде виконано у всіх підтеках вказаної вами теки. Якщо ви позначите пункт <guilabel
+>Пошук з урахуванням регістру</guilabel
+>, &kfind; шукатиме лише ті файли, регістр назв яких збігатимуться з вказаним. Щоб включити до пошуку приховані файли, позначте пункт <guilabel
+>Показати приховані файли</guilabel
+>. Позначенням пункту <guilabel
+>Використовувати індекс файлів</guilabel
+> можна дозволити програмі використати покажчик (індекс) файлів, створений програмами пакунка  <quote
+>locate</quote
+> для пришвидшення пошуку.</para>
+<para
+>Ви можете використовувати такі шаблони заміни у назвах файлів або тек: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Зірочка, <quote
+><keycap
+>*</keycap
+></quote
+></term>
+<listitem>
+<para
+>Зірочка позначає будь-яке число пропущений символів (навіть нульове), це означає, наприклад, що пошук за шаблоном <userinput
+>marc*</userinput
+> знайде файли <filename
+>marc</filename
+>, <filename
+>marc.png</filename
+> і <filename
+> marc_must_not_read_this.kwd</filename
+>. За шаблоном <userinput
+>mar*.kwd</userinput
+> можна знайти <filename
+>marketplace.kwd</filename
+> і <filename
+>marc_must_not_read_this.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Знак запитання, <quote
+><keycap
+>?</keycap
+></quote
+></term>
+<listitem>
+<para
+>На противагу зірочці, знак питання позначає точно один пропущений символ, отже, пошук за шаблоном <userinput
+>mar?</userinput
+> виявить файл <filename
+>marc</filename
+>, а пошук за шаблоном <userinput
+>marc?</userinput
+> не знайде наших файлів з назвами <filename
+>marc</filename
+> і <filename
+>marc.png</filename
+>. Ви можете вказати у шаблоні будь-яку кількість знаків питання: буде знайдено лише файли з вказаною шаблоном кількістю символів у назві. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Набір символів <quote
+>[...]</quote
+></term>
+<listitem>
+<para
+>Відповідність будь-якому з символів між дужками. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Звичайно ж, ви можете використовувати комбінації декількох шаблонів заміни у запиті на пошук. </para>
+
+<para
+>Результати пошуку буде показано у полі, розташованому у нижній частині вікна. Наведення вказівника миші на набір файлів у цьому полі з наступним клацанням правою кнопкою миші відкриє контекстне меню з багатьма пунктами дій, які ви можете виконати над позначеними файлами або теками. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>Вкладка «Вміст»</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Тип файла</guilabel
+></term>
+<listitem>
+<para
+>Тут ви можете вказати тип файла, який ви шукаєте. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Містить текст</guilabel
+></term>
+<listitem>
+<para
+>Тут можна ввести слово або речення, які мають містити знайдені файли. Пам’ятайте: якщо ви виконуєте пошук у великій теці або залишили позначку у полі <guilabel
+>Включати підтеки</guilabel
+> на вкладці <guilabel
+>Назва/Шлях</guilabel
+>, пошук може тривати досить довго. </para>
+
+<note>
+<para
+>Цей параметр <emphasis
+>не</emphasis
+> працює для всіх файлів, список яких наведено у <guilabel
+>Типі файла</guilabel
+>. Підтримується пошук лише у файлах таких типів: <itemizedlist>
+<listitem
+><para
+>Текстові файли, наприклад файли з початковим кодом і файли <filename
+>README</filename
+></para
+></listitem>
+<listitem
+><para
+>&kword; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kpresenter; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kspread; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Writer / LibreOffice Writer</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Impress / LibreOffice Impress</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Calc / LibreOffice Calc</para
+></listitem>
+<listitem
+><para
+>Calligra Words</para
+></listitem>
+<listitem
+><para
+>Calligra Sheets</para
+></listitem>
+<listitem
+><para
+>Calligra Stage</para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>З урахуванням регістру</guilabel
+></term>
+<listitem>
+<para
+>Якщо ви залишите позначку поряд з цією міткою, &kfind; шукатиме лише файли, назви яких записано літерами того самого регістру, що і літери шаблону, наприклад, пошук за шаблоном <userinput
+>MARC</userinput
+> виявить лише файл <quote
+>MARC</quote
+>, але не файл <quote
+>Marc</quote
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Формальний вираз</guilabel
+></term>
+<listitem
+><para
+>Якщо ви встановите інструмент &kregexpeditor; з пакунка playground/utils сервера Git &kde;, ви отримаєте доступ до цього додаткового параметра. Якщо увімкнути цей параметр, ви зможете виконувати пошук за допомогою регулярних або формальних виразів. Формальний вираз — це один зі способів визначення умов вашого пошуку, формальні вирази можуть бути дуже складними, а отже і дуже потужними. Якщо ви ще недостатньо знайомі з формальними виразами, ви можете скористатися кнопкою <guibutton
+>Редагувати</guibutton
+>, щоб відкрити вікно &kregexpeditor;. &kregexpeditor; надасть вам змогу створити ваш набір умов за допомогою графічного інтерфейсу, а потім надасть вам готовий формальний вираз для копіювання.</para>
+
+<para
+>&kregexpeditor; є дуже корисним інструментом, ним можна скористатися ще у багатьох програмах &kde;, окрім &kfind;. Докладнішу інформацію щодо цієї програми ви можете отримати з підручника, присвяченого &kregexpeditor;.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Включати двійкові файли</guilabel
+></term>
+<listitem
+><para
+>Надає змогу виконувати пошук в будь-яких типах файлів, навіть в тих, що, зазвичай, не містять тексту (наприклад файли програм та зображень).</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Пошук у розділах метаданих</guilabel
+></term>
+<listitem>
+<para
+>Цими двома полями можна скористатися для пошуку даних у специфічних для типів файлів коментарях та метаданих. </para>
+<para
+>Ось лише декілька основних випадків: </para>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>Відеофайли (avi, mp4 тощо)</emphasis
+>: вкажіть якусь назву мітки (<userinput
+>Бітова швидкість</userinput
+>, <userinput
+>Тривалість</userinput
+> тощо) і її значення, щоб знайти записи, які містять вказане значення параметра у метаданих. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Зображення (png, jpeg тощо)</emphasis
+>: вкажіть якусь назву мітки (<userinput
+>Ширина</userinput
+>, <userinput
+>Висота</userinput
+> тощо) і її значення, щоб знайти записи, які містять вказане значення параметра у метаданих. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Звукові файли (mp3, flac тощо)</emphasis
+>: вкажіть якусь назву мітки (<userinput
+>Назва</userinput
+>, <userinput
+>Альбом</userinput
+> тощо) і її значення, щоб знайти записи, які містять вказане значення параметра у метаданих. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Електронні книги (epub, azw, fb2 тощо)</emphasis
+>: вкажіть якусь назву мітки (<userinput
+>Назва</userinput
+>, <userinput
+>Автор</userinput
+> тощо) і її значення, щоб знайти записи, які містять вказане значення параметра у метаданих. </para>
+    </listitem>
+</itemizedlist>
+<note>
+    <para
+>Якщо мітки перекладено вашою рідною мовою, ви можете скористатися локалізованими назвами міток у критеріях пошуку. </para>
+</note>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>Вкладка «Властивості»</title>
+
+<para
+>За допомогою цієї вкладки ви можете уточнити параметри пошуку. Ось окремі уточнення, які ви можете зробити: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Знайти всі файли, створені або змінені</guilabel
+></term>
+<listitem>
+<para
+>Тут ви можете або ввести дві дати, між якими було створено або змінено файли, або вказати період часу. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Розмір файла</guilabel
+></term>
+<listitem>
+<para
+>Тут ви можете вказати, що розмір файла має бути принаймні не меншим або принаймні не більшим за розмір, який ви введете у сусідньому полі. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>З власником</guilabel
+>, <guilabel
+>З групою</guilabel
+></term>
+<listitem>
+<para
+>Тут ви можете вказати користувача і групу, яким має належати файл. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Подяки і ліцензія</title>
+
+<para
+>&kfind; </para>
+
+<para
+>Авторські права на програму: </para>
+
+<itemizedlist>
+<title
+>Розробники</title>
+<listitem>
+<para
+>Martin Hartig</para>
+</listitem>
+
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Mario.Weilguni; &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Alex.Zepeda; <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Miroslav Flídr <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Harri.Porten; &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Dima Rogozin <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Hans Petter Bieker <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Waldo.Bastian; &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>Авторські права на документацію &Dirk.Doerflinger; &Dirk.Doerflinger.mail;, ©2001</para
+> 
+
+<para
+>Переклад українською: Юрій Чорноіван <email
+>yurchor@ukr.net</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->

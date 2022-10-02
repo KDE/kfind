@@ -1,0 +1,736 @@
+# translation of kfindpart.po to British English
+# Copyright (C) 2003, 2004, 2005, 2008 Free Software Foundation, Inc.
+#
+# Malcolm Hunter <malcolm.hunter@gmx.co.uk>, 2003, 2004, 2005, 2008, 2009.
+# Andrew Coles <andrew_coles@yahoo.co.uk>, 2004, 2005, 2009, 2010.
+# Steve Allewell <steve.allewell@gmail.com>, 2016, 2017, 2018, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kfindpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"PO-Revision-Date: 2021-07-25 11:18+0100\n"
+"Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
+"Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.04.3\n"
+
+#: kfinddlg.cpp:31
+#, kde-format
+msgctxt "@title:window"
+msgid "Find Files/Folders"
+msgstr "Find Files/Folders"
+
+#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#, kde-format
+msgctxt "the application is currently idle, there is no active search"
+msgid "Idle."
+msgstr "Idle."
+
+#. i18n as below
+#: kfinddlg.cpp:133
+#, kde-format
+msgid "0 items found"
+msgstr "0 items found"
+
+#: kfinddlg.cpp:172
+#, kde-format
+msgid "Searching..."
+msgstr "Searching..."
+
+#: kfinddlg.cpp:199
+#, kde-format
+msgid "Canceled."
+msgstr "Cancelled."
+
+#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#, kde-format
+msgid "Error."
+msgstr "Error."
+
+#: kfinddlg.cpp:202
+#, kde-format
+msgid "Please specify an absolute path in the \"Look in\" box."
+msgstr "Please specify an absolute path in the \"Look in\" box."
+
+#: kfinddlg.cpp:205
+#, kde-format
+msgid "Could not find the specified folder."
+msgstr "Could not find the specified folder."
+
+#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#, kde-format
+msgid "one item found"
+msgid_plural "%1 items found"
+msgstr[0] "one item found"
+msgstr[1] "%1 items found"
+
+#: kfindtreeview.cpp:46
+msgid "Read-write"
+msgstr "Read-write"
+
+#: kfindtreeview.cpp:47
+msgid "Read-only"
+msgstr "Read-only"
+
+#: kfindtreeview.cpp:48
+msgid "Write-only"
+msgstr "Write-only"
+
+#: kfindtreeview.cpp:49
+msgid "Inaccessible"
+msgstr "Inaccessible"
+
+#: kfindtreeview.cpp:69
+#, kde-format
+msgctxt "file name column"
+msgid "Name"
+msgstr "Name"
+
+#: kfindtreeview.cpp:71
+#, kde-format
+msgctxt "name of the containing folder"
+msgid "In Subfolder"
+msgstr "In Subfolder"
+
+#: kfindtreeview.cpp:73
+#, kde-format
+msgctxt "file size column"
+msgid "Size"
+msgstr "Size"
+
+#: kfindtreeview.cpp:75
+#, kde-format
+msgctxt "modified date column"
+msgid "Modified"
+msgstr "Modified"
+
+#: kfindtreeview.cpp:77
+#, kde-format
+msgctxt "file permissions column"
+msgid "Permissions"
+msgstr "Permissions"
+
+#: kfindtreeview.cpp:79
+#, kde-format
+msgctxt "first matching line of the query string in this file"
+msgid "First Matching Line"
+msgstr "First Matching Line"
+
+#: kfindtreeview.cpp:361
+#, kde-format
+msgid "&Open containing folder(s)"
+msgstr "&Open containing folder(s)"
+
+#: kfindtreeview.cpp:365
+#, kde-format
+msgid "&Delete"
+msgstr "&Delete"
+
+#: kfindtreeview.cpp:369
+#, kde-format
+msgid "&Move to Trash"
+msgstr "&Move to Wastebin"
+
+#: kfindtreeview.cpp:488
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Results As"
+msgstr "Save Results As"
+
+#: kfindtreeview.cpp:513
+#, kde-format
+msgid "Unable to save results."
+msgstr "Unable to save results."
+
+#: kfindtreeview.cpp:531
+#, kde-format
+msgid "KFind Results File"
+msgstr "KFind Results File"
+
+#: kfindtreeview.cpp:546
+#, kde-format
+msgctxt "%1=filename"
+msgid "Results were saved to: %1"
+msgstr "Results were saved to: %1"
+
+#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Properties"
+
+#: kftabdlg.cpp:65
+#, kde-format
+msgctxt "this is the label for the name textfield"
+msgid "&Named:"
+msgstr "&Named:"
+
+#: kftabdlg.cpp:68
+#, kde-format
+msgid "You can use wildcard matching and \";\" for separating multiple names"
+msgstr "You can use wildcard matching and \";\" for separating multiple names"
+
+#: kftabdlg.cpp:74
+#, kde-format
+msgid "Look &in:"
+msgstr "Look &in:"
+
+#: kftabdlg.cpp:77
+#, kde-format
+msgid "Include &subfolders"
+msgstr "Include &subfolders"
+
+#: kftabdlg.cpp:78
+#, kde-format
+msgid "Case s&ensitive search"
+msgstr "Case s&ensitive search"
+
+#: kftabdlg.cpp:79
+#, kde-format
+msgid "&Browse..."
+msgstr "&Browse..."
+
+#: kftabdlg.cpp:80
+#, kde-format
+msgid "&Use files index"
+msgstr "&Use files index"
+
+#: kftabdlg.cpp:81
+#, kde-format
+msgid "Show &hidden files"
+msgstr "Show &hidden files"
+
+#: kftabdlg.cpp:100
+#, kde-format
+msgid ""
+"<qt>Enter the filename you are looking for. <br />Alternatives may be "
+"separated by a semicolon \";\".<br /><br />The filename may contain the "
+"following special characters:<ul><li><b>?</b> matches any single character</"
+"li><li><b>*</b> matches zero or more of any characters</li><li><b>[...]</b> "
+"matches any of the characters between the braces</li></ul><br />Example "
+"searches:<ul><li><b>*.kwd;*.txt</b> finds all files ending with .kwd or ."
+"txt</li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> finds all "
+"files that start with \"Hel\" and end with \"o\", having one character in "
+"between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
+"li></ul></qt>"
+msgstr ""
+"<qt>Enter the filename you are looking for. <br />Alternatives may be "
+"separated by a semicolon \";\".<br /><br />The filename may contain the "
+"following special characters:<ul><li><b>?</b> matches any single character</"
+"li><li><b>*</b> matches zero or more of any characters</li><li><b>[...]</b> "
+"matches any of the characters between the brackets</li></ul><br />Example "
+"searches:<ul><li><b>*.kwd;*.txt</b> finds all files ending with .kwd or ."
+"txt</li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> finds all "
+"files that start with \"Hel\" and end with \"o\", having one character in "
+"between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
+"li></ul></qt>"
+
+#: kftabdlg.cpp:121
+#, kde-format
+msgid ""
+"<qt>This lets you use the files' index created by the <i>slocate</i> package "
+"to speed-up the search; remember to update the index from time to time "
+"(using <i>updatedb</i>).</qt>"
+msgstr ""
+"<qt>This lets you use the files' index created by the <i>slocate</i> package "
+"to speed-up the search; remember to update the index from time to time "
+"(using <i>updatedb</i>).</qt>"
+
+#: kftabdlg.cpp:165
+#, kde-format
+msgid "Find all files created or &modified:"
+msgstr "Find all files created or &modified:"
+
+#: kftabdlg.cpp:167
+#, kde-format
+msgid "&between"
+msgstr "&between"
+
+#: kftabdlg.cpp:169
+#, kde-format
+msgid "and"
+msgstr "and"
+
+#: kftabdlg.cpp:191
+#, kde-format
+msgid "File &size is:"
+msgstr "File &size is:"
+
+#: kftabdlg.cpp:204
+#, kde-format
+msgid "Files owned by &user:"
+msgstr "Files owned by &user:"
+
+#: kftabdlg.cpp:209
+#, kde-format
+msgid "Owned by &group:"
+msgstr "Owned by &group:"
+
+#: kftabdlg.cpp:212
+#, kde-format
+msgctxt "file size isn't considered in the search"
+msgid "(none)"
+msgstr "(none)"
+
+#: kftabdlg.cpp:213
+#, kde-format
+msgid "At Least"
+msgstr "At Least"
+
+#: kftabdlg.cpp:214
+#, kde-format
+msgid "At Most"
+msgstr "At Most"
+
+#: kftabdlg.cpp:215
+#, kde-format
+msgid "Equal To"
+msgstr "Equal To"
+
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#, kde-format
+msgid "Byte"
+msgid_plural "Bytes"
+msgstr[0] "Byte"
+msgstr[1] "Bytes"
+
+#: kftabdlg.cpp:218
+#, kde-format
+msgid "KiB"
+msgstr "KiB"
+
+#: kftabdlg.cpp:219
+#, kde-format
+msgid "MiB"
+msgstr "MiB"
+
+#: kftabdlg.cpp:220
+#, kde-format
+msgid "GiB"
+msgstr "GiB"
+
+#: kftabdlg.cpp:283
+#, kde-format
+msgctxt "label for the file type combobox"
+msgid "File &type:"
+msgstr "File &type:"
+
+#: kftabdlg.cpp:288
+#, kde-format
+msgid "C&ontaining text:"
+msgstr "C&ontaining text:"
+
+#: kftabdlg.cpp:294
+#, kde-format
+msgid ""
+"<qt>If specified, only files that contain this text are found. Note that not "
+"all file types from the list above are supported. Please refer to the "
+"documentation for a list of supported file types.</qt>"
+msgstr ""
+"<qt>If specified, only files that contain this text are found. Note that not "
+"all file types from the list above are supported. Please refer to the "
+"documentation for a list of supported file types.</qt>"
+
+#: kftabdlg.cpp:302
+#, kde-format
+msgid "Case s&ensitive"
+msgstr "Case s&ensitive"
+
+#: kftabdlg.cpp:303
+#, kde-format
+msgid "Include &binary files"
+msgstr "Include &binary files"
+
+#: kftabdlg.cpp:306
+#, kde-format
+msgid ""
+"<qt>This lets you search in any type of file, even those that usually do not "
+"contain text (for example program files and images).</qt>"
+msgstr ""
+"<qt>This lets you search in any type of file, even those that usually do not "
+"contain text (for example program files and images).</qt>"
+
+#: kftabdlg.cpp:313
+#, kde-format
+msgctxt "as in search for"
+msgid "fo&r:"
+msgstr "fo&r:"
+
+#: kftabdlg.cpp:315
+#, kde-format
+msgid "Search &metainfo sections:"
+msgstr "Search &metainfo sections:"
+
+#: kftabdlg.cpp:319
+#, kde-format
+msgid "All Files & Folders"
+msgstr "All Files & Folders"
+
+#: kftabdlg.cpp:320
+#, kde-format
+msgid "Files"
+msgstr "Files"
+
+#: kftabdlg.cpp:321
+#, kde-format
+msgid "Folders"
+msgstr "Folders"
+
+#: kftabdlg.cpp:322
+#, kde-format
+msgid "Symbolic Links"
+msgstr "Symbolic Links"
+
+#: kftabdlg.cpp:323
+#, kde-format
+msgid "Special Files (Sockets, Device Files, ...)"
+msgstr "Special Files (Sockets, Device Files, ...)"
+
+#: kftabdlg.cpp:324
+#, kde-format
+msgid "Executable Files"
+msgstr "Executable Files"
+
+#: kftabdlg.cpp:325
+#, kde-format
+msgid "SUID Executable Files"
+msgstr "SUID Executable Files"
+
+#: kftabdlg.cpp:326
+#, kde-format
+msgid "All Images"
+msgstr "All Images"
+
+#: kftabdlg.cpp:327
+#, kde-format
+msgid "All Video"
+msgstr "All Video"
+
+#: kftabdlg.cpp:328
+#, kde-format
+msgid "All Sounds"
+msgstr "All Sounds"
+
+#: kftabdlg.cpp:393
+#, kde-format
+msgid "Name/&Location"
+msgstr "Name/&Location"
+
+#: kftabdlg.cpp:394
+#, kde-format
+msgctxt "tab name: search by contents"
+msgid "C&ontents"
+msgstr "C&ontents"
+
+#: kftabdlg.cpp:399
+#, kde-format
+msgid ""
+"<qt>Search within files' specific comments/metainfo<br />These are some "
+"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
+msgstr ""
+"<qt>Search within files' specific comments/metainfo<br />These are some "
+"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
+
+#: kftabdlg.cpp:407
+#, kde-format
+msgid ""
+"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
+msgstr ""
+"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
+
+#: kftabdlg.cpp:548
+#, kde-format
+msgid "Unable to search within a period which is less than a minute."
+msgstr "Unable to search within a period which is less than a minute."
+
+#: kftabdlg.cpp:559
+#, kde-format
+msgid "The date is not valid."
+msgstr "The date is not valid."
+
+#: kftabdlg.cpp:561
+#, kde-format
+msgid "Invalid date range."
+msgstr "Invalid date range."
+
+#: kftabdlg.cpp:563
+#, kde-format
+msgid "Unable to search dates in the future."
+msgstr "Unable to search dates in the future."
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Size is too big. Set maximum size value?"
+msgstr "Size is too big. Set maximum size value?"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Error"
+msgstr "Error"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Set"
+msgstr "Set"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Do Not Set"
+msgstr "Do Not Set"
+
+#: kftabdlg.cpp:818
+#, kde-format
+msgctxt ""
+"during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
+"minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
+msgid "&during the previous"
+msgid_plural "&during the previous"
+msgstr[0] "&during the previous"
+msgstr[1] "&during the previous"
+
+#: kftabdlg.cpp:819
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minute"
+msgstr[1] "minutes"
+
+#: kftabdlg.cpp:820
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "hour"
+msgstr[1] "hours"
+
+#: kftabdlg.cpp:821
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "day"
+msgid_plural "days"
+msgstr[0] "day"
+msgstr[1] "days"
+
+#: kftabdlg.cpp:822
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "month"
+msgid_plural "months"
+msgstr[0] "month"
+msgstr[1] "months"
+
+#: kftabdlg.cpp:823
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "year"
+msgid_plural "years"
+msgstr[0] "year"
+msgstr[1] "years"
+
+#: kquery.cpp:565
+#, kde-format
+msgctxt "@title:window"
+msgid "Error while using locate"
+msgstr "Error while using locate"
+
+#: main.cpp:36
+#, kde-format
+msgid "KFind"
+msgstr "KFind"
+
+#: main.cpp:37
+#, kde-format
+msgid "KDE file find utility"
+msgstr "KDE file find utility"
+
+#: main.cpp:38
+#, kde-format
+msgid "(c) 1998-2021, The KDE Developers"
+msgstr "(c) 1998-2021, The KDE Developers"
+
+#: main.cpp:40
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr "Kai Uwe Broulik"
+
+#: main.cpp:40
+#, kde-format
+msgid "Current Maintainer"
+msgstr "Current Maintainer"
+
+#: main.cpp:41
+#, kde-format
+msgid "Eric Coquelle"
+msgstr "Eric Coquelle"
+
+#: main.cpp:41
+#, kde-format
+msgid "Former Maintainer"
+msgstr "Former Maintainer"
+
+#: main.cpp:42
+#, kde-format
+msgid "Mark W. Webb"
+msgstr "Mark W. Webb"
+
+#: main.cpp:42
+#, kde-format
+msgid "Developer"
+msgstr "Developer"
+
+#: main.cpp:43
+#, kde-format
+msgid "Beppe Grimaldi"
+msgstr "Beppe Grimaldi"
+
+#: main.cpp:43
+#, kde-format
+msgid "UI Design & more search options"
+msgstr "UI Design & more search options"
+
+#: main.cpp:44
+#, kde-format
+msgid "Martin Hartig"
+msgstr "Martin Hartig"
+
+#: main.cpp:45
+#, kde-format
+msgid "Stephan Kulow"
+msgstr "Stephan Kulow"
+
+#: main.cpp:46
+#, kde-format
+msgid "Mario Weilguni"
+msgstr "Mario Weilguni"
+
+#: main.cpp:47
+#, kde-format
+msgid "Alex Zepeda"
+msgstr "Alex Zepeda"
+
+#: main.cpp:48
+#, kde-format
+msgid "Miroslav Flídr"
+msgstr "Miroslav Flídr"
+
+#: main.cpp:49
+#, kde-format
+msgid "Harri Porten"
+msgstr "Harri Porten"
+
+#: main.cpp:50
+#, kde-format
+msgid "Dima Rogozin"
+msgstr "Dima Rogozin"
+
+#: main.cpp:51
+#, kde-format
+msgid "Carsten Pfeiffer"
+msgstr "Carsten Pfeiffer"
+
+#: main.cpp:52
+#, kde-format
+msgid "Hans Petter Bieker"
+msgstr "Hans Petter Bieker"
+
+#: main.cpp:53
+#, kde-format
+msgid "Waldo Bastian"
+msgstr "Waldo Bastian"
+
+#: main.cpp:53
+#, kde-format
+msgid "UI Design"
+msgstr "UI Design"
+
+#: main.cpp:54
+#, kde-format
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: main.cpp:55
+#, kde-format
+msgid "Clarence Dang"
+msgstr "Clarence Dang"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Dwayne Bailey, Steve Allewell"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "dwayne@translate.org.za, steve.allewell@gmail.com"
+
+#: main.cpp:63
+#, kde-format
+msgid "Path(s) to search"
+msgstr "Path(s) to search"
+
+#~ msgid "Regular e&xpression"
+#~ msgstr "Regular e&xpression"
+
+#~ msgid "&Edit..."
+#~ msgstr "&Edit..."
+
+#~ msgid "HTML page"
+#~ msgstr "HTML page"
+
+#~ msgid "Text file"
+#~ msgstr "Text file"
+
+#~ msgctxt "Name of the component that finds things"
+#~ msgid "Find Component"
+#~ msgstr "Find Component"
+
+#~ msgid "Aborted."
+#~ msgstr "Aborted."
+
+#~ msgid "Ready."
+#~ msgstr "Ready."
+
+#~ msgid "Do you really want to delete the selected file?"
+#~ msgid_plural "Do you really want to delete the %1 selected files?"
+#~ msgstr[0] "Do you really want to delete the selected file?"
+#~ msgstr[1] "Do you really want to delete the %1 selected files?"
+
+#~ msgctxt "Menu item"
+#~ msgid "Open"
+#~ msgstr "Open"
+
+#~ msgid "Open Folder"
+#~ msgstr "Open Folder"
+
+#~ msgid "Copy"
+#~ msgstr "Copy"
+
+#~ msgid "Open With..."
+#~ msgstr "Open With..."
+
+#~ msgid "Properties"
+#~ msgstr "Properties"
+
+#~ msgid "Selected Files"
+#~ msgstr "Selected Files"
+
+#~ msgid "AMiddleLengthText..."
+#~ msgstr "AMiddleLengthText..."
+
+#~ msgid "&Find"
+#~ msgstr "&Find"

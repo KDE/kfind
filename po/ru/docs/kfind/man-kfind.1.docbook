@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Russian "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Руководство пользователя KDE</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>6 октября 2010 г.</date>
+<productname
+>KDE</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>программа поиска файлов в &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>путь_поиска</option
+></group
+> <arg choice="opt"
+>специфические параметры KDE</arg
+> <arg choice="opt"
+>специфические параметры Qt</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Описание</title>
+<para
+>&kfind; - удобный способ найти определённые файлы на вашем компьютера, например, совпадающие с заданным шаблоном. Программа может искать файлы определённого типа, с заданными текстом в имени файлов.</para
+> 
+<para
+>&kfind; - графическая программа и обычно не запускается из командной строки.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Опции</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>путь_поиска</option
+></term>
+<listitem
+><para
+>Вы можете по желанию указать разделённый двоеточиями путь, чтобы предварительно заполнить диалог.Это может быть использовано для создания на панели или на рабочем столе ссылок для быстрого поиска в определённых местах.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>См. также</title>
+<para
+>Более подробная документация пользователя доступна на <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (введите этот <acronym
+>URL</acronym
+> в адресную строку &konqueror; или запустите <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</para>
+</refsect1>
+
+<refsect1>
+<title
+>Авторы</title>
+<para
+>Список лиц, принимавших участие в разработке, доступен в полном руководстве пользователя, которое доступно через Центр справки KDE.</para>
+<para
+>Это руководство было подготовлено &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

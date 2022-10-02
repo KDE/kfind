@@ -1,0 +1,559 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Swedish "INCLUDE"
+> 
+]>
+
+<book id="kfind" lang="&language;">
+
+<bookinfo>
+<title
+>Handbok &kfind;</title>
+
+<authorgroup>
+<author
+>&Dirk.Doerflinger; &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@bredband.net</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Dirk.Doerflinger;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2018-10-22</date>
+<releaseinfo
+>Program 18.12</releaseinfo>
+
+<abstract>
+<para
+>&kfind; är ett verktyg för filsökning av &kde;. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>fil</keyword>
+<keyword
+>kfind</keyword>
+<keyword
+>hitta</keyword>
+<keyword
+>sök</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Inledning</title>
+
+<para
+>&kfind; är ett verktyg för filsökning av &kde;. </para>
+
+<sect1 id="starting">
+<title
+>Starta &kfind;</title>
+
+<para
+>Verktyget Hitta filer är en användbar metod att söka efter specifika filer på datorn, eller att söka efter filer som matchar ett mönster. Ett exempel på detta kan vara att söka efter filer av en viss typ eller med vissa bokstäver i filnamnet. Du kan ladda verktyget i &konqueror; (i filhanteringsläge) genom att välja <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></shortcut
+><guimenu
+>Verktyg</guimenu
+> <guimenuitem
+>Sök fil</guimenuitem
+></menuchoice
+> i menyn. Om du vill använda &kfind; som ett fristående sökverktyg, starta det genom att använda Kör program. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="using-kfind">
+<title
+>Hitta filer</title>
+
+<sect1 id="name-tab">
+<title
+>Fliken Namn och plats</title>
+
+<para
+>När &kfind; startas, visas ett ganska enkelt fönster. Skriv in namnet på filen du söker efter i textrutan med beteckningen <guilabel
+>Med namn:</guilabel
+>. Du kan använda matchning med jokertecken och ett semikolon (<quote
+>;</quote
+>) för att skilja flera namn åt.</para>
+<para
+>Välj en katalog där du vill söka genom att skriva in den i fältet <guilabel
+>Sök i:</guilabel
+> eller genom att klicka på <guibutton
+>Bläddra...</guibutton
+> (visning av dolda filer och kataloger i dialogrutan kan ändras genom att använda genvägarna <keycombo action="simul"
+>&Alt;<keycap
+>.</keycap
+></keycombo
+> eller <keycap
+>F8</keycap
+>) och trycka på returtangenten eller klicka på knappen <guibutton
+>Sök</guibutton
+>. Använd knappen <guibutton
+>Stoppa</guibutton
+> för att avbryta en sökning. Sökresultatet kan sparas med &HTML;-format eller som vanlig text med knappen <guibutton
+>Spara som...</guibutton
+>.</para>
+<para
+>Om <guilabel
+>Inkludera underkataloger</guilabel
+> är markerad, söks också alla underkataloger igenom med början i den valda katalogen. Om du aktiverar <guilabel
+>Skiftlägeskänslig sökning</guilabel
+>, hittar &kfind; bara filer där namnet exakt matchar stora och små bokstäver. Aktivera alternativet <guilabel
+>Visa dolda filer</guilabel
+> för att inkludera dem i sökningen. Att välja <guilabel
+>Använd filindex</guilabel
+> låter dig använda filindexet skapat av paketet <quote
+>locate</quote
+> för att snabba upp sökningen.</para>
+<para
+>Du kan använda följande jokertecken för fil- eller katalognamn: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Asterisken <quote
+><keycap
+>*</keycap
+></quote
+></term>
+<listitem>
+<para
+>Asterisken står för ett godtyckligt antal tecken som inte finns med (till och med inga), det betyder t.ex. att en sökning efter <userinput
+>markus*</userinput
+> hittar filerna <filename
+>markus</filename
+>, <filename
+>markus.png</filename
+> och <filename
+> markus_får_inte_läsa_detta.kwd</filename
+>. Istället så hittar <userinput
+>mar*.kwd</userinput
+> filerna <filename
+>marknad.kwd</filename
+> och <filename
+>markus_får_inte_läsa_detta.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Frågetecknet <quote
+><keycap
+>?</keycap
+></quote
+></term>
+<listitem>
+<para
+>I motsats till asterisken, så står frågetecknet för exakt ett tecken, så <userinput
+>marku?</userinput
+> hittar <filename
+>markus</filename
+>, men <userinput
+>mark?</userinput
+> hittar ingenting, eftersom våra filer heter <filename
+>markus</filename
+> och <filename
+>markus.png</filename
+>. Du kan skriva in så många frågetecken i namnet som du vill, de motsvarar exakt så många tecken. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Teckenmängden <quote
+>[...]</quote
+></term>
+<listitem>
+<para
+>Det här matchar vilken som helst av bokstäverna mellan hakparenteserna. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Du kan förstås kombinera två eller flera jokertecken i ett sökbegrepp. </para>
+
+<para
+>Resultatet av sökningen visas i rutan nedanför. Ett klick med höger musknapp på en markering i rutan visar en sammanhangsberoende meny med en lista över åtgärder för de markerade filerna eller katalogerna. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>Fliken Innehåll</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Filtyp</guilabel
+></term>
+<listitem>
+<para
+>Här kan du ange filtypen som du söker efter. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Innehållande text</guilabel
+></term>
+<listitem>
+<para
+>Skriv in ordet eller meningen som filerna du söker efter måste innehålla. Observera att om du gör det här i en stor katalog eller markerar <guilabel
+>Sök även i underkataloger</guilabel
+> på fliken <guilabel
+>Namn/plats</guilabel
+>, kan detta ta lång tid. </para>
+
+<note>
+<para
+>Det här alternativet fungerar <emphasis
+>inte</emphasis
+> med alla filer som anges under <guilabel
+>Filtyp</guilabel
+>. Bara följande filer stöds: <itemizedlist>
+<listitem
+><para
+>Textfiler, t.ex. källkod och <filename
+>README</filename
+>-filer</para
+></listitem>
+<listitem
+><para
+>&kword; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kpresenter; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kspread; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Writer eller LibreOffice Writer</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Impress eller LibreOffice Impress</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Calc eller LibreOffice Calc</para
+></listitem>
+<listitem
+><para
+>Calligra Words</para
+></listitem>
+<listitem
+><para
+>Calligra Sheets</para
+></listitem>
+<listitem
+><para
+>Calligra Stage</para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Skiftlägeskänslig</guilabel
+></term>
+<listitem>
+<para
+>Om du aktivera det här alternativet, söker &kfind; bara efter filer med exakt samma skiftläge, t.ex. <userinput
+>MARKUS</userinput
+> hittar bara <quote
+>MARKUS</quote
+>, inte <quote
+>Markus</quote
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Reguljärt uttryck</guilabel
+></term>
+<listitem
+><para
+>Om du har installerat verktyget &kregexpeditor; från playground/utils på &kde;:s git-server, finns detta extra alternativ. Om du aktiverar det kan du söka efter ett <firstterm
+>reguljärt uttryck</firstterm
+>. Ett reguljärt uttryck är ett sätt att ange sökvillkor, som kan vara mycket komplexa och på samma gång mycket kraftfulla. Om du inte är bekant med reguljära uttryck kan du välja <guibutton
+>Redigera</guibutton
+> för att öppna &kregexpeditor;. Verktyget låter dig skapa en uppsättning med villkor grafiskt, och skapar därefter uttrycket åt dig.</para>
+
+<para
+>&kregexpeditor; är ett mycket användbart verktyg, och kan användas inne i många andra &kde;-program förutom &kfind;. Du hittar mer information i dess egen hjälpfil.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Sök även i binärfiler</guilabel
+></term>
+<listitem
+><para
+>Det här gör att du kan söka i vilken sorts fil som helst, också de som vanligen inte innehåller text (till exempel programfiler och bilder).</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Sök i sektioner med metainformation</guilabel
+></term>
+<listitem>
+<para
+>De här två fälten kan användas för att söka i filernas specifika kommentarer eller metainformation. </para>
+<para
+>Här är några viktigare fall: </para>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>Videofiler (avi, mp4, etc.)</emphasis
+>: ange någon beteckning  (<userinput
+>Bitrate</userinput
+>, <userinput
+>Duration</userinput
+>, etc.) och dess värde för att hitta objekt som har det angivna parametervärdet i sin metadata. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Bilder (png, jpeg, etc.)</emphasis
+>: Ange någon beteckning (<userinput
+>Width</userinput
+>, <userinput
+>Height</userinput
+>, etc.) och dess värde för att hitta objekt som har det angivna parametervärdet i sin metadata. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Ljudfiler (mp3, flac, etc.)</emphasis
+>: ange någon beteckning  (<userinput
+>Title</userinput
+>, <userinput
+>Album</userinput
+>, etc.) och dess värde för att hitta objekt som har det angivna parametervärdet i sin metadata. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>E-böcker (epub, azw, fb2, etc.)</emphasis
+>: ange någon beteckning  (<userinput
+>Title</userinput
+>, <userinput
+>Author</userinput
+>, etc.) och dess värde för att hitta objekt som har det angivna parametervärdet i sin metadata. </para>
+    </listitem>
+</itemizedlist>
+<note>
+    <para
+>Om det finns en översättning av beteckningarna till svenska kan de översatta namnen på beteckningarna användas i sökkriteriet. </para>
+</note>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>Fliken Egenskaper</title>
+
+<para
+>Här kan du förfina sökningen. Detta är de särskilda förfiningarna som du kan välja: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Hitta alla filer skapade eller ändrade</guilabel
+></term>
+<listitem>
+<para
+>Här kan du antingen skriva in två datum, mellan vilka filerna skapades eller ändrades, eller ange en tidsperiod. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Filstorleken är</guilabel
+></term>
+<listitem>
+<para
+>Här kan du ange om filen måste vara minst så stor eller som mest så stor som du skriver in i efterföljande ruta, eller annars lika med storleken. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Filer ägda av användare</guilabel
+>, <guilabel
+>Ägda av grupp</guilabel
+></term>
+<listitem>
+<para
+>Här kan du ange användare och gruppnamn som ägare till filen. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Tack till och licens</title>
+
+<para
+>&kfind; </para>
+
+<para
+>Program copyright: </para>
+
+<itemizedlist>
+<title
+>Utvecklare</title>
+<listitem>
+<para
+>Martin Hartig</para>
+</listitem>
+
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Mario.Weilguni; &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Alex.Zepeda; <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Miroslav Flídr <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Harri.Porten; &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Dima Rogozin <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Hans Petter Bieker <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Waldo.Bastian; &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>Dokumentation copyright 2001 &Dirk.Doerflinger; &Dirk.Doerflinger.mail;</para
+> 
+
+<para
+>Översättning Stefan Asserhäll <email
+>stefan.asserhall@bredband.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->

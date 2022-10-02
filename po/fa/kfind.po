@@ -1,0 +1,768 @@
+# translation of kfindpart.po to Persian
+# Nazanin Kazemi <kazemi@itland.ir>, 2006, 2007.
+# MaryamSadat Razavi <razavi@itland.ir>, 2006.
+# Tahereh Dadkhahfar <dadkhahfar@itland.ir>, 2006.
+# Nasim Daniarzadeh <daniarzadeh@itland.ir>, 2006.
+# Mohamad Reza Mirdamadi <mohi@ubuntu.ir>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kfindpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"PO-Revision-Date: 2011-10-05 00:21+0330\n"
+"Last-Translator: Mohamad Reza Mirdamadi <mohi@ubuntu.ir>\n"
+"Language-Team: Farsi (Persian) <>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: kfinddlg.cpp:31
+#, kde-format
+msgctxt "@title:window"
+msgid "Find Files/Folders"
+msgstr "یافتن پرونده‌ها/پوشه‌ها"
+
+#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#, kde-format
+msgctxt "the application is currently idle, there is no active search"
+msgid "Idle."
+msgstr "بی‌کار."
+
+#. i18n as below
+#: kfinddlg.cpp:133
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "0 items found"
+msgstr "%1 پرونده یافت شد"
+
+#: kfinddlg.cpp:172
+#, kde-format
+msgid "Searching..."
+msgstr "در حال جستجو..."
+
+#: kfinddlg.cpp:199
+#, kde-format
+msgid "Canceled."
+msgstr "لغو شد."
+
+#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#, kde-format
+msgid "Error."
+msgstr "خطا."
+
+#: kfinddlg.cpp:202
+#, kde-format
+msgid "Please specify an absolute path in the \"Look in\" box."
+msgstr "لطفاً، در جعبه »جستجو«، یک مسیر مطلق مشخص کنید."
+
+#: kfinddlg.cpp:205
+#, kde-format
+msgid "Could not find the specified folder."
+msgstr "پوشه مشخص‌شده را نتوانست پیدا کند."
+
+#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "one item found"
+msgid_plural "%1 items found"
+msgstr[0] "%1 پرونده یافت شد"
+
+#: kfindtreeview.cpp:46
+msgid "Read-write"
+msgstr "خواندنی-نوشتنی"
+
+#: kfindtreeview.cpp:47
+msgid "Read-only"
+msgstr "فقط خواندنی"
+
+#: kfindtreeview.cpp:48
+msgid "Write-only"
+msgstr "فقط نوشتنی"
+
+#: kfindtreeview.cpp:49
+msgid "Inaccessible"
+msgstr "دستیابی‌ناپذیر"
+
+#: kfindtreeview.cpp:69
+#, kde-format
+msgctxt "file name column"
+msgid "Name"
+msgstr "نام"
+
+#: kfindtreeview.cpp:71
+#, kde-format
+msgctxt "name of the containing folder"
+msgid "In Subfolder"
+msgstr "در زیرپوشه"
+
+#: kfindtreeview.cpp:73
+#, kde-format
+msgctxt "file size column"
+msgid "Size"
+msgstr "اندازه"
+
+#: kfindtreeview.cpp:75
+#, kde-format
+msgctxt "modified date column"
+msgid "Modified"
+msgstr "تغییریافته"
+
+#: kfindtreeview.cpp:77
+#, kde-format
+msgctxt "file permissions column"
+msgid "Permissions"
+msgstr "مجوزها"
+
+#: kfindtreeview.cpp:79
+#, kde-format
+msgctxt "first matching line of the query string in this file"
+msgid "First Matching Line"
+msgstr "اولین خط تطابق"
+
+#: kfindtreeview.cpp:361
+#, kde-format
+msgid "&Open containing folder(s)"
+msgstr "&باز کردن پوشهٔ محتوی پرونده"
+
+#: kfindtreeview.cpp:365
+#, kde-format
+msgid "&Delete"
+msgstr "&حذف‌"
+
+#: kfindtreeview.cpp:369
+#, kde-format
+msgid "&Move to Trash"
+msgstr "&حرکت به زباله‌"
+
+#: kfindtreeview.cpp:488
+#, fuzzy, kde-format
+#| msgid "Save Results As"
+msgctxt "@title:window"
+msgid "Save Results As"
+msgstr "ذخیره نتایج به عنوان"
+
+#: kfindtreeview.cpp:513
+#, kde-format
+msgid "Unable to save results."
+msgstr "قادر به ذخیره نتایج نیست."
+
+#: kfindtreeview.cpp:531
+#, kde-format
+msgid "KFind Results File"
+msgstr "پرونده نتایج KFind"
+
+#: kfindtreeview.cpp:546
+#, fuzzy, kde-format
+#| msgid "Results were saved to file\n"
+msgctxt "%1=filename"
+msgid "Results were saved to: %1"
+msgstr "نتایج، در پرونده ذخیره شد\n"
+
+#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&ویژگیها‌"
+
+#: kftabdlg.cpp:65
+#, kde-format
+msgctxt "this is the label for the name textfield"
+msgid "&Named:"
+msgstr "&نامیده:‌"
+
+#: kftabdlg.cpp:68
+#, kde-format
+msgid "You can use wildcard matching and \";\" for separating multiple names"
+msgstr ""
+"می‌توانید از تطابق نویسه عام و »؛« برای جداسازی نامهای چندگانه استفاده کنید"
+
+#: kftabdlg.cpp:74
+#, kde-format
+msgid "Look &in:"
+msgstr "&جستجو:‌"
+
+#: kftabdlg.cpp:77
+#, kde-format
+msgid "Include &subfolders"
+msgstr "شامل &زیرپوشه‌ها‌"
+
+#: kftabdlg.cpp:78
+#, kde-format
+msgid "Case s&ensitive search"
+msgstr "جستجوی &حساس به حالت‌"
+
+#: kftabdlg.cpp:79
+#, kde-format
+msgid "&Browse..."
+msgstr "&مرور...‌"
+
+#: kftabdlg.cpp:80
+#, kde-format
+msgid "&Use files index"
+msgstr "&استفاده از نمایه پرونده‌"
+
+#: kftabdlg.cpp:81
+#, kde-format
+msgid "Show &hidden files"
+msgstr "نمایش پرونده‌های &مخفی"
+
+#: kftabdlg.cpp:100
+#, fuzzy, kde-format
+msgid ""
+"<qt>Enter the filename you are looking for. <br />Alternatives may be "
+"separated by a semicolon \";\".<br /><br />The filename may contain the "
+"following special characters:<ul><li><b>?</b> matches any single character</"
+"li><li><b>*</b> matches zero or more of any characters</li><li><b>[...]</b> "
+"matches any of the characters between the braces</li></ul><br />Example "
+"searches:<ul><li><b>*.kwd;*.txt</b> finds all files ending with .kwd or ."
+"txt</li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> finds all "
+"files that start with \"Hel\" and end with \"o\", having one character in "
+"between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
+"li></ul></qt>"
+msgstr ""
+"<qt>نام پرونده‌ای که جستجو می‌کنید را وارد کنید. <br />موارد دیگر با یک نقطه "
+"ویرگول »؛« جدا می‌شوند.<br /><br />ممکن است نام پرونده شامل نویسه‌های ویژه زیر "
+"باشد:<ul><li><b>؟</b>با هر تک نویسه مطابق است </li><li><b>*</b> با صفر یا "
+"بیش از یک نویسه مطابق است</li><li><b>[...]</b> با  هر نویسه در کروشه‌ها مطابق "
+"است</li></ul><br >جستجوهای مثال:<ul><li><b>*.kwd;*.txt</b> همه پرونده‌های "
+"پایان‌یافته با .kwd یا .txt را می‌یابد</li><li><b>go[dt]</b> god و got را "
+"می‌یابد</li><li><b>Hel?o</b> همه پرونده‌هایی که با «Hel» آغاز و با «o» پایان "
+"می‌گیرد و دارای یک نویسه در میان می‌باشد، را می‌یابد</li><li><b>My Document."
+"kwd</b> پرونده‌ای را دقیقاً با آن نام می‌یابد</li></ul></qt>"
+
+#: kftabdlg.cpp:121
+#, kde-format
+msgid ""
+"<qt>This lets you use the files' index created by the <i>slocate</i> package "
+"to speed-up the search; remember to update the index from time to time "
+"(using <i>updatedb</i>).</qt>"
+msgstr ""
+"<qt>اجازه استفاده از نمایه پرونده‌ها که با استفاده از <i>slocate</i> برای "
+"بالا بردن سرعت جستجو ایجاد شده را به شما می‌دهد؛ به یاد داشته باشید که نمایه  "
+"را لحظه به لحظه به‌روزرسانی کنید )با استفاده از <i>updatedb</i> ( . </qt>"
+
+#: kftabdlg.cpp:165
+#, kde-format
+msgid "Find all files created or &modified:"
+msgstr "یافتن همه پرونده‌های ایجادشده یا &تغییریافته:‌"
+
+#: kftabdlg.cpp:167
+#, kde-format
+msgid "&between"
+msgstr "&بین‌"
+
+#: kftabdlg.cpp:169
+#, kde-format
+msgid "and"
+msgstr "و"
+
+#: kftabdlg.cpp:191
+#, kde-format
+msgid "File &size is:"
+msgstr "&اندازه پرونده، این گونه است:‌"
+
+#: kftabdlg.cpp:204
+#, kde-format
+msgid "Files owned by &user:"
+msgstr "پرونده‌های تصاحب‌شده توسط &کاربر:‌"
+
+#: kftabdlg.cpp:209
+#, kde-format
+msgid "Owned by &group:"
+msgstr "تصاحب‌شده توسط &گروه:‌"
+
+#: kftabdlg.cpp:212
+#, kde-format
+msgctxt "file size isn't considered in the search"
+msgid "(none)"
+msgstr "(هیچ‌کدام)"
+
+#: kftabdlg.cpp:213
+#, kde-format
+msgid "At Least"
+msgstr "حداقل"
+
+#: kftabdlg.cpp:214
+#, kde-format
+msgid "At Most"
+msgstr "حداکثر"
+
+#: kftabdlg.cpp:215
+#, kde-format
+msgid "Equal To"
+msgstr "مساوی با"
+
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#, fuzzy, kde-format
+#| msgid "Bytes"
+msgid "Byte"
+msgid_plural "Bytes"
+msgstr[0] "بایت"
+
+#: kftabdlg.cpp:218
+#, kde-format
+msgid "KiB"
+msgstr "کیبی‌بایت"
+
+#: kftabdlg.cpp:219
+#, kde-format
+msgid "MiB"
+msgstr "مبی‌بایت"
+
+#: kftabdlg.cpp:220
+#, kde-format
+msgid "GiB"
+msgstr "گیبی‌بایت"
+
+#: kftabdlg.cpp:283
+#, kde-format
+msgctxt "label for the file type combobox"
+msgid "File &type:"
+msgstr "&نوع پرونده:‌"
+
+#: kftabdlg.cpp:288
+#, kde-format
+msgid "C&ontaining text:"
+msgstr "&شامل متن:‌"
+
+#: kftabdlg.cpp:294
+#, kde-format
+msgid ""
+"<qt>If specified, only files that contain this text are found. Note that not "
+"all file types from the list above are supported. Please refer to the "
+"documentation for a list of supported file types.</qt>"
+msgstr ""
+"<qt>اگر مشخص شد، تنها پرونده‌های شامل این متن یافت می‌شوند. توجه کنید که کل "
+"انواع پرونده از فهرست بالا پشتیبانی نمی‌شوند. لطفاً، برای دیدن فهرست انواع "
+"پرونده پشتیبانی‌شده به مستندات مراجعه کنید.</qt>"
+
+#: kftabdlg.cpp:302
+#, kde-format
+msgid "Case s&ensitive"
+msgstr "&حساس به حالت‌"
+
+#: kftabdlg.cpp:303
+#, kde-format
+msgid "Include &binary files"
+msgstr "شامل پرونده‌های &دوگانی‌"
+
+#: kftabdlg.cpp:306
+#, kde-format
+msgid ""
+"<qt>This lets you search in any type of file, even those that usually do not "
+"contain text (for example program files and images).</qt>"
+msgstr ""
+"<qt>اجازه جستجو در هر نوع پرونده‌ای را به شما می‌دهد، حتی اگر معمولاً شامل متن "
+"نباشند )برای مثال، پرونده‌های برنامه و تصاویر(.</qt>"
+
+#: kftabdlg.cpp:313
+#, kde-format
+msgctxt "as in search for"
+msgid "fo&r:"
+msgstr "&برای:‌"
+
+#: kftabdlg.cpp:315
+#, kde-format
+msgid "Search &metainfo sections:"
+msgstr "جستجوی بخشهای &فرا اطلاعاتی:‌"
+
+#: kftabdlg.cpp:319
+#, kde-format
+msgid "All Files & Folders"
+msgstr "همه پرونده‌ها و پوشه‌ها"
+
+#: kftabdlg.cpp:320
+#, kde-format
+msgid "Files"
+msgstr "پرونده‌ها"
+
+#: kftabdlg.cpp:321
+#, kde-format
+msgid "Folders"
+msgstr "پوشه‌ها"
+
+#: kftabdlg.cpp:322
+#, kde-format
+msgid "Symbolic Links"
+msgstr "پیوندهای نمادی"
+
+#: kftabdlg.cpp:323
+#, kde-format
+msgid "Special Files (Sockets, Device Files, ...)"
+msgstr "پرونده‌های ویژه )سوکتها، پرونده دستگاهها،...("
+
+#: kftabdlg.cpp:324
+#, kde-format
+msgid "Executable Files"
+msgstr "پرونده‌های قابل اجرا"
+
+#: kftabdlg.cpp:325
+#, kde-format
+msgid "SUID Executable Files"
+msgstr "پرونده‌های قابل اجرای SUID"
+
+#: kftabdlg.cpp:326
+#, kde-format
+msgid "All Images"
+msgstr "همه تصاویر"
+
+#: kftabdlg.cpp:327
+#, kde-format
+msgid "All Video"
+msgstr "کل ویدیو"
+
+#: kftabdlg.cpp:328
+#, kde-format
+msgid "All Sounds"
+msgstr "همه صوتها"
+
+#: kftabdlg.cpp:393
+#, kde-format
+msgid "Name/&Location"
+msgstr "نام/&محل‌"
+
+#: kftabdlg.cpp:394
+#, kde-format
+msgctxt "tab name: search by contents"
+msgid "C&ontents"
+msgstr "&محتویات‌"
+
+#: kftabdlg.cpp:399
+#, kde-format
+msgid ""
+"<qt>Search within files' specific comments/metainfo<br />These are some "
+"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
+msgstr ""
+"<qt>جستجو در توضیحات/فرااطلاعات پرونده‌ها<br />چند مثال:<br /"
+"><ul><li><b>پرونده‌های صوتی (mp3...)</b> جستجو در برچسب id3 برای یک عنوان یا "
+"یک آلبوم</li><li><b>تصاویر (png...)</b>جستجوی تصاویر با یک دقت یا توضیح "
+"ویژه...</li></ul></qt>"
+
+#: kftabdlg.cpp:407
+#, kde-format
+msgid ""
+"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
+msgstr ""
+"<qt>اگر مشخص شود، جستجو فقط در این حوزه است<br /><ul><li><b>پرونده‌های صوتی "
+"(mp3...)</b>این می‌تواند عنوان یا آلبوم و ... باشد</li><li><b>تصاویر "
+"(png...)</b> جستجو فقط در دقت، عمق بیت و...</li></ul></qt>"
+
+#: kftabdlg.cpp:548
+#, kde-format
+msgid "Unable to search within a period which is less than a minute."
+msgstr "قادر به جستجو در یک دوره کمتر از یک دقیقه نیست."
+
+#: kftabdlg.cpp:559
+#, kde-format
+msgid "The date is not valid."
+msgstr "تاریخ معتبر نیست."
+
+#: kftabdlg.cpp:561
+#, kde-format
+msgid "Invalid date range."
+msgstr "گستره تاریخ نامعتبر."
+
+#: kftabdlg.cpp:563
+#, kde-format
+msgid "Unable to search dates in the future."
+msgstr "قادر به جستجوی تاریخها در آینده نیست."
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Size is too big. Set maximum size value?"
+msgstr "اندازه، خیلی بزرگ است. مقدار اندازه بیشینه تنظیم شود؟"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Error"
+msgstr "خطا"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Set"
+msgstr "تنظیم"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Do Not Set"
+msgstr "تنظیم نشود"
+
+#: kftabdlg.cpp:818
+#, fuzzy, kde-format
+#| msgid "&during the previous"
+msgctxt ""
+"during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
+"minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
+msgid "&during the previous"
+msgid_plural "&during the previous"
+msgstr[0] "&طی قبلی‌"
+
+#: kftabdlg.cpp:819
+#, fuzzy, kde-format
+#| msgid "minute(s)"
+msgctxt "use date ranges to search files by modified time"
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "دقیقه"
+
+#: kftabdlg.cpp:820
+#, fuzzy, kde-format
+#| msgid "hour(s)"
+msgctxt "use date ranges to search files by modified time"
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "ساعت"
+
+#: kftabdlg.cpp:821
+#, fuzzy, kde-format
+#| msgid "day(s)"
+msgctxt "use date ranges to search files by modified time"
+msgid "day"
+msgid_plural "days"
+msgstr[0] "روز"
+
+#: kftabdlg.cpp:822
+#, fuzzy, kde-format
+#| msgid "month(s)"
+msgctxt "use date ranges to search files by modified time"
+msgid "month"
+msgid_plural "months"
+msgstr[0] "ماه"
+
+#: kftabdlg.cpp:823
+#, fuzzy, kde-format
+#| msgid "year(s)"
+msgctxt "use date ranges to search files by modified time"
+msgid "year"
+msgid_plural "years"
+msgstr[0] "سال"
+
+#: kquery.cpp:565
+#, fuzzy, kde-format
+#| msgid "Error while using locate"
+msgctxt "@title:window"
+msgid "Error while using locate"
+msgstr "خطا هنگام استفاده از محل‌یابی"
+
+#: main.cpp:36
+#, kde-format
+msgid "KFind"
+msgstr "KFind"
+
+#: main.cpp:37
+#, kde-format
+msgid "KDE file find utility"
+msgstr "برنامه سودمند برای یافتن پرونده KDE"
+
+#: main.cpp:38
+#, fuzzy, kde-format
+#| msgid "(c) 1998-2003, The KDE Developers"
+msgid "(c) 1998-2021, The KDE Developers"
+msgstr "(ح) ۲۰۰۳-۱۹۹۸، توسعه‌دهندگان KDE"
+
+#: main.cpp:40
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr ""
+
+#: main.cpp:40
+#, kde-format
+msgid "Current Maintainer"
+msgstr "نگه‌دارنده جاری"
+
+#: main.cpp:41
+#, kde-format
+msgid "Eric Coquelle"
+msgstr "Eric Coquelle"
+
+#: main.cpp:41
+#, fuzzy, kde-format
+#| msgid "Current Maintainer"
+msgid "Former Maintainer"
+msgstr "نگه‌دارنده جاری"
+
+#: main.cpp:42
+#, kde-format
+msgid "Mark W. Webb"
+msgstr "Mark W. Webb"
+
+#: main.cpp:42
+#, kde-format
+msgid "Developer"
+msgstr "توسعه‌دهنده"
+
+#: main.cpp:43
+#, kde-format
+msgid "Beppe Grimaldi"
+msgstr "Beppe Grimaldi"
+
+#: main.cpp:43
+#, kde-format
+msgid "UI Design & more search options"
+msgstr "طراحی واسط کاربر و گزینه‌های جستجوی بیشتر"
+
+#: main.cpp:44
+#, kde-format
+msgid "Martin Hartig"
+msgstr "Martin Hartig"
+
+#: main.cpp:45
+#, kde-format
+msgid "Stephan Kulow"
+msgstr "Stephan Kulow"
+
+#: main.cpp:46
+#, kde-format
+msgid "Mario Weilguni"
+msgstr "Mario Weilguni"
+
+#: main.cpp:47
+#, kde-format
+msgid "Alex Zepeda"
+msgstr "Alex Zepeda"
+
+#: main.cpp:48
+#, kde-format
+msgid "Miroslav Flídr"
+msgstr ""
+
+#: main.cpp:49
+#, kde-format
+msgid "Harri Porten"
+msgstr "Harri Porten"
+
+#: main.cpp:50
+#, kde-format
+msgid "Dima Rogozin"
+msgstr "Dima Rogozin"
+
+#: main.cpp:51
+#, kde-format
+msgid "Carsten Pfeiffer"
+msgstr "Carsten Pfeiffer"
+
+#: main.cpp:52
+#, kde-format
+msgid "Hans Petter Bieker"
+msgstr "Hans Petter Bieker"
+
+#: main.cpp:53
+#, kde-format
+msgid "Waldo Bastian"
+msgstr "Waldo Bastian"
+
+#: main.cpp:53
+#, kde-format
+msgid "UI Design"
+msgstr "طراحی واسط کاربر"
+
+#: main.cpp:54
+#, kde-format
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: main.cpp:55
+#, kde-format
+msgid "Clarence Dang"
+msgstr "Clarence Dang"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "محمدرضا میردامادی , نازنین کاظمی"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "mohi@ubuntu.ir , kazemi@itland.ir"
+
+#: main.cpp:63
+#, kde-format
+msgid "Path(s) to search"
+msgstr "مسیر)های( جستجو"
+
+#~ msgid "Regular e&xpression"
+#~ msgstr "&عبارت منظم‌"
+
+#~ msgid "&Edit..."
+#~ msgstr "&ویرایش...‌"
+
+#~ msgid "HTML page"
+#~ msgstr "صفحه HTML"
+
+#~ msgid "Text file"
+#~ msgstr "پرونده‌ متنی"
+
+#, fuzzy
+#~| msgid "Find Component"
+#~ msgctxt "Name of the component that finds things"
+#~ msgid "Find Component"
+#~ msgstr "یافتن مؤلفه"
+
+#~ msgid "Aborted."
+#~ msgstr "ساقط شد."
+
+#~ msgid "Ready."
+#~ msgstr "آماده."
+
+#~ msgid "Do you really want to delete the selected file?"
+#~ msgid_plural "Do you really want to delete the %1 selected files?"
+#~ msgstr[0] "آیا واقعاً می‌خواهید %1 پرونده برگزیده را رونوشت کنید؟"
+
+#~ msgctxt "Menu item"
+#~ msgid "Open"
+#~ msgstr "باز"
+
+#~ msgid "Open Folder"
+#~ msgstr "باز کردن پوشه"
+
+#~ msgid "Copy"
+#~ msgstr "رونوشت"
+
+#~ msgid "Open With..."
+#~ msgstr "باز کردن با..."
+
+#~ msgid "Properties"
+#~ msgstr "ویژگیها"
+
+#~ msgid "Selected Files"
+#~ msgstr "پرونده‌های برگزیده"
+
+#~ msgid "AMiddleLengthText..."
+#~ msgstr "AMiddleLengthText..."
+
+#~ msgid ""
+#~ "<qt>Enter the filename you are looking for. <br />Alternatives may be "
+#~ "separated by a semicolon \";\".<br /><br />The filename may contain the "
+#~ "following special characters:<ul><li><b>?</b> matches any single "
+#~ "character</li><li><b>*</b> matches zero or more of any characters</"
+#~ "li><li><b>[...]</b> matches any of the characters in braces</li></ul><br /"
+#~ ">Example searches:<ul><li><b>*.kwd;*.txt</b> finds all files ending with ."
+#~ "kwd or .txt</li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> "
+#~ "finds all files that start with \"Hel\" and end with \"o\", having one "
+#~ "character in between</li><li><b>My Document.kwd</b> finds a file of "
+#~ "exactly that name</li></ul></qt>"
+#~ msgstr ""
+#~ "<qt>نام پرونده‌ای که جستجو می‌کنید را وارد کنید. <br />موارد دیگر با یک "
+#~ "نقطه ویرگول »؛« جدا می‌شوند.<br /><br />ممکن است نام پرونده شامل نویسه‌های "
+#~ "ویژه زیر باشد:<ul><li><b>؟</b>با هر تک نویسه مطابق است </li><li><b>*</b> "
+#~ "با صفر یا بیش از یک نویسه مطابق است</li><li><b>[...]</b> با  هر نویسه در "
+#~ "کروشه‌ها مطابق است</li></ul><br >جستجوهای مثال:<ul><li><b>*.kwd;*.txt</b> "
+#~ "همه پرونده‌های پایان‌یافته با .kwd یا .txt را می‌یابد</li><li><b>go[dt]</b> "
+#~ "god و got را می‌یابد</li><li><b>Hel?o</b> همه پرونده‌هایی که با «Hel» آغاز "
+#~ "و با «o» پایان می‌گیرد و دارای یک نویسه در میان می‌باشد، را می‌یابد</"
+#~ "li><li><b>My Document.kwd</b> پرونده‌ای را دقیقاً با آن نام می‌یابد</li></"
+#~ "ul></qt>"
+
+#~ msgid "Miroslav Fl�r"
+#~ msgstr "Miroslav Fl�r"

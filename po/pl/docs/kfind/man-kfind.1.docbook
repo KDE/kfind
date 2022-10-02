@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Polish "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Podręcznik użytkownika KDE</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>07 Czerwiec 2005</date
+> <productname
+>K Desktop Environment</productname
+> </refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>narzędzie wyszukiwania plików dla &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>ścieżka_przeszukiwania</option
+></group
+> <arg choice="opt"
+>Standardowe opcje KDE</arg
+> <arg choice="opt"
+>Standardowe opcje Qt</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Opis</title>
+<para
+>Narzędzie wyszukiwania plików pozwala na wyszukiwanie określonych przez użytkownika plików na dysku, lub plików odpowiadających pewnemu wzorcowi. Można na przykład wyszukiwać plików określonego typu,plików zawierających pewne litery w nazwie lub fragment tekstu w swojej zawartości.</para
+> 
+<para
+>Program &kfind; jest narzędziem graficznym, i z reguły nie jest uruchamiany z linii poleceń.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Parametry</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>ścieżka_przeszukiwania</option
+></term>
+<listitem
+><para
+>Możliwe jest wprowadzenie kilku ścieżek oddzielonych średnikami. Można to wykorzystać do utworzenia na pulpicie lub panelu ikon szybkiego wyszukiwania w różnych lokalizacjach.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Opcje programu jako lista zmiennych</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Zobacz także</title>
+<para
+>Szczegółowa dokumentacja użytkownika jest dostępna pod adresem <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (należy go wprowadzić jako adres <acronym
+>URL</acronym
+> w programie &konqueror;, lub wykonać polecenie <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autorzy</title>
+<para
+>Aktualnie opiekunem programu  &kfind; jest . Lista wszystkich twórców dostępna jest w podręczniku dostępnym w programie khelpcenter.</para>
+<para
+>Niniejsza dokumentacja została przygotowana przez: &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

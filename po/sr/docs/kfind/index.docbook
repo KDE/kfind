@@ -1,0 +1,662 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Serbian "INCLUDE"
+> 
+]>
+
+<book id="kfind" lang="&language;">
+
+<bookinfo>
+<title
+>Приручник за <application
+>К‑налазач</application
+></title>
+
+<authorgroup>
+<author
+><personname
+><firstname
+>Дирк</firstname
+> <surname
+>Дерфлингер</surname
+></personname
+> &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Драган</firstname
+><surname
+>Пантелић</surname
+><affiliation
+><address
+><email
+>falcon-10@gmx.de</email
+></address
+></affiliation
+><contrib
+>превод</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>Дирк Дерфлингер</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>11. 5. 2016.</date>
+<releaseinfo
+>Програми КДЕ‑а 16.12</releaseinfo>
+
+<abstract>
+<para
+><application
+>К‑налазач</application
+> је КДЕ‑ова алатка за тражење фајлова. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>КДЕ</keyword>
+<keyword
+>фајл</keyword>
+<keyword
+>К‑налазач</keyword>
+<keyword
+>нађи</keyword>
+<keyword
+>тражи</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Увод</title>
+
+<para
+><application
+>К‑налазач</application
+> је КДЕ‑ова алатка за тражење фајлова. </para>
+
+<sect1 id="starting">
+<title
+>Покретање <application
+>К‑налазача</application
+></title>
+
+<para
+><application
+>К‑налазач</application
+> је алатка за тражење одређених фајлова на рачунару по имену, односно обрасцу имена, и другим атрибутима. На пример, могу се тражити фајлови задатог типа, или са задатим словима у имену фајла. <application
+>К‑налазач</application
+> можете покренути из <application
+>К‑освајача</application
+> (у режиму менаџера фајлова) избором <menuchoice
+><shortcut
+><keycombo action="simul"
+><keycap
+>Ctrl</keycap
+> <keycap
+>F</keycap
+></keycombo
+></shortcut
+><guimenu
+>Алатке</guimenu
+> <guimenuitem
+>Нађи фајл...</guimenuitem
+></menuchoice
+> из менија. Ако желите да користите <application
+>К‑налазач</application
+> као самосталну алатку, покрените га <application
+>К‑извођачем</application
+>. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="using-kfind">
+<title
+>Тражење фајлова</title>
+
+<sect1 id="name-tab">
+<title
+>Језичак <guilabel
+>Име/локација</guilabel
+></title>
+
+<para
+>По покретању <application
+>К‑налазача</application
+> видећете сасвим једноставан прозор. Унесите име фајла који тражите у поље <guilabel
+>По имену:</guilabel
+>. Можете користити џокере, као и тачку-зарез за раздвајање више имена.</para>
+<para
+>Изаберите фасциклу у којој ће се тражити уносом у поље <guilabel
+>Тражи у:</guilabel
+> или кликом на <guibutton
+>Прегледај...</guibutton
+> (скривене фајлове и фасцикле можете приказати и сакрити у дијалогу пречицом <keycombo action="simul"
+><keycap
+>Alt</keycap
+><keycap
+>.</keycap
+></keycombo
+> или <keycap
+>F8</keycap
+>), па притисните <keycap
+>Enter</keycap
+> или кликните на <guibutton
+>Нађи</guibutton
+>. Дугметом <guibutton
+>Заустави</guibutton
+> обустављате претрагу. Резултати претраге могу се сачувати као ХТМЛ или обичан текст, дугметом <guibutton
+>Сачувај као...</guibutton
+>.</para>
+<para
+>Ако је попуњено <guilabel
+>Укључи потфасцикле</guilabel
+>, биће претражени и све потфасцикле фасцикле коју сте изабрали. Ако укључите <guilabel
+>Разликуј величину слова</guilabel
+>, <application
+>К‑налазач</application
+> ће узети у обзир само фајлове код којих се тачно поклапа величина слова. Укључите опцију <guilabel
+>Прикажи скривене фајлове</guilabel
+> да и њих обухватите претрагом. Попуњавањем <guilabel
+>Користи индекс фајлова</guilabel
+> налажете да се користи индекс фајлова који се прави за наредбу <command
+>locate</command
+>, ради убрзавања претраге.</para>
+<para
+>Можете користити следеће џокере у именима фајлова и фасцикли: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>звездица (*)</term>
+<listitem>
+<para
+>Звездица замењује произвољан број било којих знакова (чак и ниједан). На пример, потрага за <userinput
+>pera*</userinput
+> може наћи фајлове <filename
+>pera</filename
+>, <filename
+>pera.png</filename
+> и <filename
+>pera_ne_sme_procitati_ovo.kwd</filename
+>, док <userinput
+>per*.kwd</userinput
+> може наћи <filename
+>periskop.kwd</filename
+> и <filename
+>pera_ne_sme_procitati_ovo.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>знак питања (?)</term>
+<listitem>
+<para
+>Насупрот звездици, знак питања замењује тачно један знак, па ће <userinput
+>per?</userinput
+> наћи <filename
+>pera</filename
+>, али <userinput
+>pera?</userinput
+> неће наћи ништа, пошто се фајлови зову <filename
+>pera</filename
+> и <filename
+>pera.png</filename
+>. У образац можете ставити колико хоћете знакова питања, што ће поклопити тачно толико произвољних знакова. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>скуп знакова ([...])</term>
+<listitem>
+<para
+>Поклапа било који од знакова у угластим заградама. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Наравно, можете комбиновати више џокерских симбола у истом обрасцу. </para>
+
+<para
+>Резултати претраге приказују се у пољу испод. Кликните десним на избор у овом пољу да добијете контекстни мени са могућим радњама над обухваћеним фајловима или фасциклама. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>Језичак <guilabel
+>Садржај</guilabel
+></title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Тип фајла:</guilabel
+></term>
+<listitem>
+<para
+>Овде можете задати тип траженог фајла. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Садржи текст:</guilabel
+></term>
+<listitem>
+<para
+>Упишите реч или израз који треба да садрже тражени фајлови. Напомена: ако ово задате у великој фасцикли, или са попуњеним <guilabel
+>Укључи потфасцикле</guilabel
+> под језичком <guilabel
+>Име/локација</guilabel
+>, тражење може потрајати. </para>
+
+<note>
+<para
+>Ова опција <emphasis
+>неће</emphasis
+> функционисати за све фајлове набројане под <guilabel
+>Тип фајла:</guilabel
+>. Подржани су само следећи типови фајлова: <itemizedlist>
+<listitem
+><para
+>текстуални фајлови, нпр. изворни код и фајлови <filename
+>README</filename
+>.</para
+></listitem>
+<listitem
+><para
+><application
+>К‑ворд</application
+> &gt;= 1.2 </para
+></listitem>
+<listitem
+><para
+><application
+>К‑презентер</application
+> &gt;= 1.2 </para
+></listitem>
+<listitem
+><para
+><application
+>К‑спред</application
+> &gt;= 1.2 </para
+></listitem>
+<listitem
+><para
+>Опенофисов Писац / Либреофисов Писац</para
+></listitem>
+<listitem
+><para
+>Опенофисова Презентација / Либреофисова Презентација</para
+></listitem>
+<listitem
+><para
+>Опенофисов Рачун / Либреофисов Рачун</para
+></listitem>
+<listitem
+><para
+><application
+>Калигрине Речи</application
+></para
+></listitem>
+<listitem
+><para
+><application
+>Калигрини Листови</application
+></para
+></listitem>
+<listitem
+><para
+><application
+>Калигрина Позорница</application
+></para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Разликуј величину слова</guilabel
+></term>
+<listitem>
+<para
+>Ако укључите ову опцију, <application
+>К‑налазач</application
+> ће тражити текст само у фајловима чија имена тачно поклапају задату величину слова. На пример, <userinput
+>PERA</userinput
+> ће поклопити само <filename
+>PERA</filename
+>, а неће <filename
+>Pera</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Регуларни израз</guilabel
+></term>
+<listitem
+><para
+>Ако је инсталирана алатка <application
+>К‑уређивач-региза</application
+> (из <filename class="directory"
+>playground/utils</filename
+> на <application
+>гит</application
+> серверу КДЕ‑а), имаћете и ову опцију на располагању. Ако је укључите, образац за претрагу постаје <emphasis
+>регуларни израз</emphasis
+> (скр. <firstterm
+>региз</firstterm
+>). Регуларни изрази су начин писања услова претраге, који могу бити врло сложени, али зато и врло моћни. Ако вам регуларни изрази нису познати, можете кликнути на дугме <guibutton
+>Уређивање</guibutton
+> да отворите <application
+>К‑уређивач-региза</application
+>. Ова алатка омогућава да графички изградите скуп услова, а затим ствара израз уместо вас.</para>
+
+<para
+><application
+>К‑уређивач-региза</application
+> је врло корисна алатка, која се поред <application
+>К‑налазача</application
+> може користити у многим другим КДЕ програмима. Више информација наћи ћете у оквиру сопствене помоћи <application
+>К‑уређивача-региза</application
+>.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Укључи бинарне фајлове</guilabel
+></term>
+<listitem
+><para
+>Активира тражење у свим типовима фајлова, чак и онима који обично не садрже текст (попут програма или слика).</para>
+</listitem>
+</varlistentry>
+
+<!-- FIXME: "Search metainfo sections" 
+Search within files' specific comments/metainfo<br/>These are some "
+"examples:<br/><ul
+><li
+><b
+>Audio files (mp3...)</b
+> Search in id3 tag for a "
+"title, an album</li
+><li
+><b
+>Images (png...)</b
+> Search images with a special "
+"resolution, comment...</li
+></ul
+></qt
+>"
+
+"<qt
+>If specified, search only in this field<br/><ul
+><li
+><b
+>Audio files "
+"(mp3...)</b
+> This can be Title, Album...</li
+><li
+><b
+>Images (png...)</b
+> "
+"Search only in Resolution, Bitdepth...</li
+></ul
+></qt
+>"
+Broken in 4.11? kfile4 + kfilemetadatareader give no output
+-->
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>Језичак <guilabel
+>Својства</guilabel
+></title>
+
+<para
+>Овде можете профинити претрагу. Од посебних профињења, можете изабрати: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Нађи све фајлове створене или измењене:</guilabel
+></term>
+<listitem>
+<para
+>Овде можете или унети два датума између којих су фајлови били створени или измењени, или задати временски период. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Величина фајла:</guilabel
+></term>
+<listitem>
+<para
+>Овде можете задати величину од које фајл не треба да буде већи или мањи, или којој треба да буде једнак. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Власник фајлова:</guilabel
+>, <guilabel
+>Власник је група:</guilabel
+></term>
+<listitem>
+<para
+>Овде можете задати корисничко име и групу која је власник фајлова. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Заслуге и лиценца</title>
+
+<para
+><application
+>К‑налазач</application
+> </para>
+
+<para
+>Ауторска права за програм: </para>
+
+<itemizedlist>
+<title
+>Програмери</title>
+<listitem>
+<para
+><personname
+><firstname
+>Мартин</firstname
+> <surname
+>Хартиг</surname
+></personname
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Штефан</firstname
+> <surname
+>Кулов</surname
+></personname
+> &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Марио</firstname
+> <surname
+>Вајлгуни</surname
+></personname
+> &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Алекс</firstname
+> <surname
+>Зепеда</surname
+></personname
+> <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Мирослав</firstname
+> <surname
+>Флидр</surname
+></personname
+> <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Хари</firstname
+> <surname
+>Портен</surname
+></personname
+> &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Дима</firstname
+> <surname
+>Рогозин</surname
+></personname
+> <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Карстен</firstname
+> <surname
+>Пфајфер</surname
+></personname
+> &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Ханс Петер</firstname
+> <surname
+>Бикер</surname
+></personname
+> <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Валдо</firstname
+> <surname
+>Бастијан</surname
+></personname
+> &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>Ауторска права за документацију, © 2001 <personname
+><firstname
+>Дирк</firstname
+> <surname
+>Дерфлингер</surname
+></personname
+> &Dirk.Doerflinger.mail;</para
+> 
+
+<para
+>Превео Драган Пантелић <email
+>falcon-10@gmx.de</email
+>.</para
+> 
+&underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->

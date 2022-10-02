@@ -1,0 +1,573 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Italian "INCLUDE"
+> 
+]>
+
+<book id="kfind" lang="&language;">
+
+<bookinfo>
+<title
+>Manuale di &kfind;</title>
+
+<authorgroup>
+<author
+>&Dirk.Doerflinger; &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Luciano</firstname
+><surname
+>Montanaro</surname
+><contrib
+>Traduzione</contrib
+></othercredit
+><othercredit role="translator"
+><firstname
+>Federico</firstname
+><surname
+>Zenith</surname
+><affiliation
+><address
+><email
+>federico.zenith@member.fsf.org</email
+></address
+></affiliation
+><contrib
+>Traduzione della documentazione</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Dirk.Doerflinger;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2018-10-22</date>
+<releaseinfo
+>Applications 18.12</releaseinfo>
+
+<abstract>
+<para
+>&kfind; è il programma di ricerca di file di &kde;. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>file</keyword>
+<keyword
+>kfind</keyword>
+<keyword
+>find</keyword>
+<keyword
+>ricerca</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introduzione</title>
+
+<para
+>&kfind; è il programma di ricerca di file di &kde;. </para>
+
+<sect1 id="starting">
+<title
+>Avviare &kfind;</title>
+
+<para
+>Lo strumento per cercare file è un metodo utile per cercare certi file sul computer, o per cercare file che corrispondono a uno schema. Un esempio di ciò potrebbe essere cercare file di un tipo particolare o con certe lettere nel loro nome. Puoi caricare questo programma in &konqueror; (in modalità di gestore di file) selezionando <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></shortcut
+><guimenu
+>Strumenti</guimenu
+><guimenuitem
+>Trova file</guimenuitem
+></menuchoice
+> dal menu. Se vuoi usare &kfind; come uno strumento di ricerca a sé, avvialo con &krunner;. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="using-kfind">
+<title
+>Trovare i file</title>
+
+<sect1 id="name-tab">
+<title
+>La scheda <guilabel
+>Nome/posizione</guilabel
+></title>
+
+<para
+>Quando avvii &kfind;, vedrai una finestra piuttosto semplice. Scrivi il nome del file che stai cercando nella casella di testo indicata da <guilabel
+>Nome</guilabel
+>. Puoi usare caratteri jolly e un punto e virgola (<quote
+>;</quote
+>) per separare più nomi.</para>
+<para
+>Scegli una cartella in cui vuoi cercare scrivendola nel campo <guilabel
+>Cerca in</guilabel
+> o facendo clic sul pulsante <guibutton
+>Sfoglia</guibutton
+> (puoi commutare la visualizzazione dei file e delle cartelle nascoste nella finestra usando le scorciatoie <keycombo action="simul"
+>&Alt;<keycap
+>.</keycap
+></keycombo
+> o <keycap
+>F8</keycap
+>) e premi &Enter;, o fai clic sul pulsante <guibutton
+>Trova</guibutton
+>. Usa il pulsante <guibutton
+>Ferma</guibutton
+> per annullare una ricerca. Un risultato di ricerca può essere salvato in formato &HTML; o come testo semplice con il pulsante <guibutton
+>Salva come</guibutton
+>.</para>
+<para
+>Se è attivato <guilabel
+>Includi le sottocartelle</guilabel
+>, si cercherà anche in tutte le sottocartelle della cartella selezionata. Se abiliti <guilabel
+>Distingui maiuscole</guilabel
+>, &kfind; cercherà solo i file con nomi che corrispondano anche nelle maiuscole e nelle minuscole. Abilita l'opzione <guilabel
+>Mostra i file nascosti</guilabel
+> per includerli nella ricerca. Selezionare <guilabel
+>Usa indice dei file</guilabel
+> permette di usare l'indice di file creato dal pacchetto <application
+>locate</application
+> per accelerare la ricerca.</para>
+<para
+>Puoi usare i seguenti caratteri jolly per i nomi di file o cartelle: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>L'asterisco <quote
+><keycap
+>*</keycap
+></quote
+></term>
+<listitem>
+<para
+>L'asterisco rappresenta un qualsiasi numero di caratteri mancanti (anche nessuno), quindi, per esempio, una ricerca di <userinput
+>marco*</userinput
+> può trovare i file <filename
+>marco</filename
+>, <filename
+>marco.png</filename
+> e <filename
+> marco_non_lo_deve_leggere.kwd</filename
+>. In un altro esempio, <userinput
+>mar*.kwd</userinput
+> può trovare <filename
+>marcovaldo.kwd</filename
+> e <filename
+>marco_non_lo_deve_leggere.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Il punto interrogativo <quote
+><keycap
+>?</keycap
+></quote
+></term>
+<listitem>
+<para
+>A differenza dell'asterisco, il punto interrogativo corrisponde esattamente a un carattere, quindi <userinput
+>marc?</userinput
+> troverà <filename
+>marco</filename
+>, ma <userinput
+>marco?</userinput
+> non troverà niente, visto che i nostri file si chiamano <filename
+>marco</filename
+> e <filename
+>marco.png</filename
+>. Puoi mettere quanti punti interrogativi vuoi nel termine da ricercare, verranno contati come altrettanti caratteri qualsiasi. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>L'insieme di caratteri <quote
+>[...]</quote
+></term>
+<listitem>
+<para
+>Corrisponde a qualsiasi carattere compreso tra le parentesi quadre. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Naturalmente è possibile combinare due o più caratteri jolly in un termine di ricerca. </para>
+
+<para
+>I risultati della ricerca saranno visualizzati nel riquadro sotto. Un clic con il &RMB; su una selezione di questo riquadro apre un menu contestuale con un elenco di azioni per i file o le cartelle selezionati. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>La scheda <guilabel
+>Contenuti</guilabel
+></title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Tipo di file</guilabel
+></term>
+<listitem>
+<para
+>Qui puoi specificare il tipo di file che stai cercando. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Contenenti il testo</guilabel
+></term>
+<listitem>
+<para
+>Scrivi la parola o la frase che deve essere contenuta nei file che stai cercando. Nota: Una ricerca di questo tipo può richiedere molto tempo se è eseguita in una grossa cartella, o quando è attivo <guilabel
+>Includi le sottocartelle</guilabel
+> della scheda <guilabel
+>Nome/posizione</guilabel
+>. </para>
+
+<note>
+<para
+>Questa opzione <emphasis
+>non</emphasis
+> funziona per tutti i file elencati sotto <guilabel
+>Tipo di file</guilabel
+>. Sono gestiti solo i seguenti tipi di file: <itemizedlist>
+<listitem
+><para
+>File di testo, per esempio codice sorgente e file <filename
+>README</filename
+></para
+></listitem>
+<listitem
+><para
+>&kword; 1.2 o superiore</para
+></listitem>
+<listitem
+><para
+>&kpresenter; 1.2 o superiore</para
+></listitem>
+<listitem
+><para
+>&kspread; 1.2 o superiore</para
+></listitem>
+<listitem
+><para
+>Writer di OpenOffice.org o LibreOffice</para
+></listitem>
+<listitem
+><para
+>Impress di OpenOffice.org o LibreOffice</para
+></listitem>
+<listitem
+><para
+>Calc di OpenOffice.org o LibreOffice</para
+></listitem>
+<listitem
+><para
+>Words di Calligra</para
+></listitem>
+<listitem
+><para
+>Sheets di Calligra</para
+></listitem>
+<listitem
+><para
+>Stage di Calligra</para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Distingui maiuscole</guilabel
+></term>
+<listitem>
+<para
+>Abilitando questa opzione, &kfind; cercherà solo del testo in cui corrispondano esattamente anche le maiuscole e le minuscole, per esempio<userinput
+>MARCO</userinput
+> corrisponde solo a <quote
+>MARCO</quote
+>, non a <quote
+>Marco</quote
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Espressione regolare</guilabel
+></term>
+<listitem
+><para
+>Se hai installato lo strumento &kregexpeditor; dal pacchetto playground/utils del server git di &kde;, avrai questa opzione aggiuntiva. Abilitandola potrai fare ricerche in base a <firstterm
+>espressioni regolari</firstterm
+>. Queste sono un modo di specificare condizioni di ricerca, e possono essere molto complesse, ma anche molto potenti. Se non sei pratico di espressioni regolari puoi usare il pulsante <guibutton
+>Modifica</guibutton
+> per aprire &kregexpeditor;. Questo strumento permette di costruire le condizioni graficamente, e poi ne genera l'espressione regolare.</para>
+
+<para
+>&kregexpeditor; è uno strumento utilissimo e può essere usato da molte applicazioni di &kde; oltre a &kfind;. Puoi trovare maggiori informazioni a riguardo nei suoi file di aiuto.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Includi i file binari</guilabel
+></term>
+<listitem
+><para
+>Questo permette di cercare in qualsiasi tipo di file, anche quelli che normalmente non contengono testo (per esempio i file di programmi e di immagini).</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Cerca nelle sezioni delle metainformazioni</guilabel
+></term>
+<listitem>
+<para
+>Questi due campi possono essere usati per cercare nei commenti o nelle metainformazioni specifiche dei file. </para>
+<para
+>Ecco alcuni casi d'uso rilevanti: </para>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>Filmati (api, mp4, &etc;)</emphasis
+>: specifica un tag (<userinput
+>Bitrate</userinput
+>, <userinput
+>Durata</userinput
+>, &etc;) ed il relativo valore per trovare elementi che hanno il valore specificato per quel parametro tra i propri metadati. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Immagini (png, jpeg, &etc;)</emphasis
+>: specifica un tag (<userinput
+>Larghezza</userinput
+>, <userinput
+>Altezza</userinput
+>, &etc;) ed il relativo valore per trovare elementi che hanno il valore specificato per quel parametro tra i propri metadati. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>File sonori (mp3, flac, &etc;)</emphasis
+>: specifica un tag (<userinput
+>Titolo</userinput
+>, <userinput
+>Album</userinput
+>, &etc;) ed il relativo valore per trovare elementi che hanno il valore specificato per quel parametro tra i propri metadati. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Ebook (epub, azw, fb2, &etc;)</emphasis
+>: specifica un tag (<userinput
+>Titolo</userinput
+>, <userinput
+>Autore</userinput
+>) ed il relativo valore per trovare elementi che hanno il valore specificato per quel parametro tra i propri metadati. </para>
+    </listitem>
+</itemizedlist>
+<note>
+    <para
+>Se esiste una traduzione dei tag nella tua lingua, puoi usare le versioni tradotte dei nomi dei tag nei criteri di ricerca. </para>
+</note>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>La scheda <guilabel
+>Proprietà</guilabel
+></title>
+
+<para
+>Qui puoi affinare la ricerca. Queste sono le migliorie tra cui puoi scegliere: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Tutti i file creati o modificati</guilabel
+></term>
+<listitem>
+<para
+>Qui puoi inserire due date entro le quali i file sono stati creati o modificati, o specificare un intervallo di tempo. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Dimensione file</guilabel
+></term>
+<listitem>
+<para
+>Da qui puoi specificare se il file deve avere come minimo o come massimo la dimensione inserita nella casella di fianco, o avere esattamente quella dimensione. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>File appartenenti all'utente</guilabel
+>, <guilabel
+>File appartenenti al gruppo</guilabel
+></term>
+<listitem>
+<para
+>Qui puoi specificare nomi di utente o di gruppo come proprietario dei file. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Riconoscimenti e licenza</title>
+
+<para
+>&kfind; </para>
+
+<para
+>Copyright del programma: </para>
+
+<itemizedlist>
+<title
+>Sviluppatori</title>
+<listitem>
+<para
+>Martin Hartig</para>
+</listitem>
+
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Mario.Weilguni; &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Alex.Zepeda; <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Miroslav Flídr <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Harri.Porten; &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Dima Rogozin <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Hans Petter Bieker <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Waldo.Bastian; &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>La documentazione è Copyright 2001 di &Dirk.Doerflinger; &Dirk.Doerflinger.mail;</para
+> 
+
+<para
+>Traduzione a cura di Luciano Montanaro e Federico Zenith <email
+>federico.zenith@member.fsf.org</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->

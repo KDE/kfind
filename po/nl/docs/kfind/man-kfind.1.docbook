@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Dutch "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Gebruikershandleiding voor kfind</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>2016-11-05</date>
+<releaseinfo
+>Applications 16.12</releaseinfo>
+<productname
+>KDE Applications</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>programma om bestanden te zoeken door &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>zoekpad</option
+></group
+> <arg choice="opt"
+>opties</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beschrijving</title>
+<para
+>Het hulpmiddel Find Files (Bestanden zoeken) is methode om naar specifieke bestanden op uw computer te zoeken of om te zoeken naar bestanden die aan een patroon voldoen. Een voorbeeld hiervan is het zoeken van bestanden van een bepaalde soort of met bepaalde letters in de bestandsnaam of die een bepaald stukje tekst bevatten.</para
+> 
+<para
+>&kfind; is een grafisch hulpmiddel en wordt normaal niet gestart vanaf de commandoregel.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Opties</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>zoekpad</option
+></term>
+<listitem
+><para
+>U kunt optioneel een pad aanleveren om de dialoog te vullen met het begin van de zoekopdracht.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Zie ook</title>
+<simplelist>
+<member
+>Meer gedetailleerde gebruikersdocumentatie is beschikbaar op <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (voer deze <acronym
+>URL</acronym
+> in in &konqueror;, of draai <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</member>
+<member
+>kf5options(7)</member>
+<member
+>qt5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Auteurs</title>
+<para
+>Een lijst met personen die hebben bijgedragen is beschikbaar in het complete gebruikershandboek in khelpcenter.</para>
+<para
+>Dit document is gemaakt door &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

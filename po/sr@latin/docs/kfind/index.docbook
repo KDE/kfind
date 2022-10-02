@@ -1,0 +1,662 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Serbian-Latin "INCLUDE"
+> 
+]>
+
+<book id="kfind" lang="&language;">
+
+<bookinfo>
+<title
+>Priručnik za <application
+>K‑nalazač</application
+></title>
+
+<authorgroup>
+<author
+><personname
+><firstname
+>Dirk</firstname
+> <surname
+>Derflinger</surname
+></personname
+> &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Dragan</firstname
+><surname
+>Pantelić</surname
+><affiliation
+><address
+><email
+>falcon-10@gmx.de</email
+></address
+></affiliation
+><contrib
+>prevod</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>Dirk Derflinger</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>11. 5. 2016.</date>
+<releaseinfo
+>Programi KDE‑a 16.12</releaseinfo>
+
+<abstract>
+<para
+><application
+>K‑nalazač</application
+> je KDE‑ova alatka za traženje fajlova. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>fajl</keyword>
+<keyword
+>K‑nalazač</keyword>
+<keyword
+>nađi</keyword>
+<keyword
+>traži</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Uvod</title>
+
+<para
+><application
+>K‑nalazač</application
+> je KDE‑ova alatka za traženje fajlova. </para>
+
+<sect1 id="starting">
+<title
+>Pokretanje <application
+>K‑nalazača</application
+></title>
+
+<para
+><application
+>K‑nalazač</application
+> je alatka za traženje određenih fajlova na računaru po imenu, odnosno obrascu imena, i drugim atributima. Na primer, mogu se tražiti fajlovi zadatog tipa, ili sa zadatim slovima u imenu fajla. <application
+>K‑nalazač</application
+> možete pokrenuti iz <application
+>K‑osvajača</application
+> (u režimu menadžera fajlova) izborom <menuchoice
+><shortcut
+><keycombo action="simul"
+><keycap
+>Ctrl</keycap
+> <keycap
+>F</keycap
+></keycombo
+></shortcut
+><guimenu
+>Alatke</guimenu
+> <guimenuitem
+>Nađi fajl...</guimenuitem
+></menuchoice
+> iz menija. Ako želite da koristite <application
+>K‑nalazač</application
+> kao samostalnu alatku, pokrenite ga <application
+>K‑izvođačem</application
+>. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="using-kfind">
+<title
+>Traženje fajlova</title>
+
+<sect1 id="name-tab">
+<title
+>Jezičak <guilabel
+>Ime/lokacija</guilabel
+></title>
+
+<para
+>Po pokretanju <application
+>K‑nalazača</application
+> videćete sasvim jednostavan prozor. Unesite ime fajla koji tražite u polje <guilabel
+>Po imenu:</guilabel
+>. Možete koristiti džokere, kao i tačku-zarez za razdvajanje više imena.</para>
+<para
+>Izaberite fasciklu u kojoj će se tražiti unosom u polje <guilabel
+>Traži u:</guilabel
+> ili klikom na <guibutton
+>Pregledaj...</guibutton
+> (skrivene fajlove i fascikle možete prikazati i sakriti u dijalogu prečicom <keycombo action="simul"
+><keycap
+>Alt</keycap
+><keycap
+>.</keycap
+></keycombo
+> ili <keycap
+>F8</keycap
+>), pa pritisnite <keycap
+>Enter</keycap
+> ili kliknite na <guibutton
+>Nađi</guibutton
+>. Dugmetom <guibutton
+>Zaustavi</guibutton
+> obustavljate pretragu. Rezultati pretrage mogu se sačuvati kao HTML ili običan tekst, dugmetom <guibutton
+>Sačuvaj kao...</guibutton
+>.</para>
+<para
+>Ako je popunjeno <guilabel
+>Uključi potfascikle</guilabel
+>, biće pretraženi i sve potfascikle fascikle koju ste izabrali. Ako uključite <guilabel
+>Razlikuj veličinu slova</guilabel
+>, <application
+>K‑nalazač</application
+> će uzeti u obzir samo fajlove kod kojih se tačno poklapa veličina slova. Uključite opciju <guilabel
+>Prikaži skrivene fajlove</guilabel
+> da i njih obuhvatite pretragom. Popunjavanjem <guilabel
+>Koristi indeks fajlova</guilabel
+> nalažete da se koristi indeks fajlova koji se pravi za naredbu <command
+>locate</command
+>, radi ubrzavanja pretrage.</para>
+<para
+>Možete koristiti sledeće džokere u imenima fajlova i fascikli: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>zvezdica (*)</term>
+<listitem>
+<para
+>Zvezdica zamenjuje proizvoljan broj bilo kojih znakova (čak i nijedan). Na primer, potraga za <userinput
+>pera*</userinput
+> može naći fajlove <filename
+>pera</filename
+>, <filename
+>pera.png</filename
+> i <filename
+>pera_ne_sme_procitati_ovo.kwd</filename
+>, dok <userinput
+>per*.kwd</userinput
+> može naći <filename
+>periskop.kwd</filename
+> i <filename
+>pera_ne_sme_procitati_ovo.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>znak pitanja (?)</term>
+<listitem>
+<para
+>Nasuprot zvezdici, znak pitanja zamenjuje tačno jedan znak, pa će <userinput
+>per?</userinput
+> naći <filename
+>pera</filename
+>, ali <userinput
+>pera?</userinput
+> neće naći ništa, pošto se fajlovi zovu <filename
+>pera</filename
+> i <filename
+>pera.png</filename
+>. U obrazac možete staviti koliko hoćete znakova pitanja, što će poklopiti tačno toliko proizvoljnih znakova. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>skup znakova ([...])</term>
+<listitem>
+<para
+>Poklapa bilo koji od znakova u uglastim zagradama. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Naravno, možete kombinovati više džokerskih simbola u istom obrascu. </para>
+
+<para
+>Rezultati pretrage prikazuju se u polju ispod. Kliknite desnim na izbor u ovom polju da dobijete kontekstni meni sa mogućim radnjama nad obuhvaćenim fajlovima ili fasciklama. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>Jezičak <guilabel
+>Sadržaj</guilabel
+></title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Tip fajla:</guilabel
+></term>
+<listitem>
+<para
+>Ovde možete zadati tip traženog fajla. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Sadrži tekst:</guilabel
+></term>
+<listitem>
+<para
+>Upišite reč ili izraz koji treba da sadrže traženi fajlovi. Napomena: ako ovo zadate u velikoj fascikli, ili sa popunjenim <guilabel
+>Uključi potfascikle</guilabel
+> pod jezičkom <guilabel
+>Ime/lokacija</guilabel
+>, traženje može potrajati. </para>
+
+<note>
+<para
+>Ova opcija <emphasis
+>neće</emphasis
+> funkcionisati za sve fajlove nabrojane pod <guilabel
+>Tip fajla:</guilabel
+>. Podržani su samo sledeći tipovi fajlova: <itemizedlist>
+<listitem
+><para
+>tekstualni fajlovi, npr. izvorni kod i fajlovi <filename
+>README</filename
+>.</para
+></listitem>
+<listitem
+><para
+><application
+>KWord</application
+> &gt;= 1.2 </para
+></listitem>
+<listitem
+><para
+><application
+>KPresenter</application
+> &gt;= 1.2 </para
+></listitem>
+<listitem
+><para
+><application
+>KSpread</application
+> &gt;= 1.2 </para
+></listitem>
+<listitem
+><para
+>OpenOfficeov Pisac / LibreOfficeov Pisac</para
+></listitem>
+<listitem
+><para
+>OpenOfficeova Prezentacija / LibreOfficeova Prezentacija</para
+></listitem>
+<listitem
+><para
+>OpenOfficeov Račun / LibreOfficeov Račun</para
+></listitem>
+<listitem
+><para
+><application
+>Calligrine Reči</application
+></para
+></listitem>
+<listitem
+><para
+><application
+>Calligrini Listovi</application
+></para
+></listitem>
+<listitem
+><para
+><application
+>Calligrina Pozornica</application
+></para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Razlikuj veličinu slova</guilabel
+></term>
+<listitem>
+<para
+>Ako uključite ovu opciju, <application
+>K‑nalazač</application
+> će tražiti tekst samo u fajlovima čija imena tačno poklapaju zadatu veličinu slova. Na primer, <userinput
+>PERA</userinput
+> će poklopiti samo <filename
+>PERA</filename
+>, a neće <filename
+>Pera</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Regularni izraz</guilabel
+></term>
+<listitem
+><para
+>Ako je instalirana alatka <application
+>K‑uređivač-regiza</application
+> (iz <filename class="directory"
+>playground/utils</filename
+> na <application
+>git</application
+> serveru KDE‑a), imaćete i ovu opciju na raspolaganju. Ako je uključite, obrazac za pretragu postaje <emphasis
+>regularni izraz</emphasis
+> (skr. <firstterm
+>regiz</firstterm
+>). Regularni izrazi su način pisanja uslova pretrage, koji mogu biti vrlo složeni, ali zato i vrlo moćni. Ako vam regularni izrazi nisu poznati, možete kliknuti na dugme <guibutton
+>Uređivanje</guibutton
+> da otvorite <application
+>K‑uređivač-regiza</application
+>. Ova alatka omogućava da grafički izgradite skup uslova, a zatim stvara izraz umesto vas.</para>
+
+<para
+><application
+>K‑uređivač-regiza</application
+> je vrlo korisna alatka, koja se pored <application
+>K‑nalazača</application
+> može koristiti u mnogim drugim KDE programima. Više informacija naći ćete u okviru sopstvene pomoći <application
+>K‑uređivača-regiza</application
+>.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Uključi binarne fajlove</guilabel
+></term>
+<listitem
+><para
+>Aktivira traženje u svim tipovima fajlova, čak i onima koji obično ne sadrže tekst (poput programa ili slika).</para>
+</listitem>
+</varlistentry>
+
+<!-- FIXME: "Search metainfo sections" 
+Search within files' specific comments/metainfo<br/>These are some "
+"examples:<br/><ul
+><li
+><b
+>Audio files (mp3...)</b
+> Search in id3 tag for a "
+"title, an album</li
+><li
+><b
+>Images (png...)</b
+> Search images with a special "
+"resolution, comment...</li
+></ul
+></qt
+>"
+
+"<qt
+>If specified, search only in this field<br/><ul
+><li
+><b
+>Audio files "
+"(mp3...)</b
+> This can be Title, Album...</li
+><li
+><b
+>Images (png...)</b
+> "
+"Search only in Resolution, Bitdepth...</li
+></ul
+></qt
+>"
+Broken in 4.11? kfile4 + kfilemetadatareader give no output
+-->
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>Jezičak <guilabel
+>Svojstva</guilabel
+></title>
+
+<para
+>Ovde možete profiniti pretragu. Od posebnih profinjenja, možete izabrati: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Nađi sve fajlove stvorene ili izmenjene:</guilabel
+></term>
+<listitem>
+<para
+>Ovde možete ili uneti dva datuma između kojih su fajlovi bili stvoreni ili izmenjeni, ili zadati vremenski period. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Veličina fajla:</guilabel
+></term>
+<listitem>
+<para
+>Ovde možete zadati veličinu od koje fajl ne treba da bude veći ili manji, ili kojoj treba da bude jednak. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Vlasnik fajlova:</guilabel
+>, <guilabel
+>Vlasnik je grupa:</guilabel
+></term>
+<listitem>
+<para
+>Ovde možete zadati korisničko ime i grupu koja je vlasnik fajlova. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Zasluge i licenca</title>
+
+<para
+><application
+>K‑nalazač</application
+> </para>
+
+<para
+>Autorska prava za program: </para>
+
+<itemizedlist>
+<title
+>Programeri</title>
+<listitem>
+<para
+><personname
+><firstname
+>Martin</firstname
+> <surname
+>Hartig</surname
+></personname
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Štefan</firstname
+> <surname
+>Kulov</surname
+></personname
+> &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Mario</firstname
+> <surname
+>Vajlguni</surname
+></personname
+> &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Aleks</firstname
+> <surname
+>Zepeda</surname
+></personname
+> <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Miroslav</firstname
+> <surname
+>Flidr</surname
+></personname
+> <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Hari</firstname
+> <surname
+>Porten</surname
+></personname
+> &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Dima</firstname
+> <surname
+>Rogozin</surname
+></personname
+> <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Karsten</firstname
+> <surname
+>Pfajfer</surname
+></personname
+> &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Hans Peter</firstname
+> <surname
+>Biker</surname
+></personname
+> <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+><personname
+><firstname
+>Valdo</firstname
+> <surname
+>Bastijan</surname
+></personname
+> &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>Autorska prava za dokumentaciju, © 2001 <personname
+><firstname
+>Dirk</firstname
+> <surname
+>Derflinger</surname
+></personname
+> &Dirk.Doerflinger.mail;</para
+> 
+
+<para
+>Preveo Dragan Pantelić <email
+>falcon-10@gmx.de</email
+>.</para
+> 
+&underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->

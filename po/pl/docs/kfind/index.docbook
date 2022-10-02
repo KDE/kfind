@@ -1,0 +1,463 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&kfind;">
+  <!ENTITY package "kdebase">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Polish "INCLUDE"
+> 
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+<title
+>Podręcznik programu &kfind;</title>
+
+<authorgroup>
+<author
+>&Dirk.Doerflinger; &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Paweł</firstname
+><surname
+>Dąbek</surname
+><affiliation
+><address
+><email
+>pdabek@onet.pl</email
+></address
+></affiliation
+><contrib
+>Polskie tłumaczenie</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Dirk.Doerflinger;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2004-04-11</date>
+<releaseinfo
+>1.20.01</releaseinfo>
+
+<abstract>
+<para
+>Program &kfind; jest wyszukiwarką plików dla &kde;. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeutils</keyword>
+<keyword
+>kfind</keyword>
+<keyword
+>znajdź</keyword>
+<keyword
+>wyszukaj</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Wprowadzenie</title>
+
+<para
+>Program &kfind; jest wyszukiwarką plików dla &kde;. </para>
+
+<sect1 id="starting">
+<title
+>Uruchamianie programu &kfind;</title>
+
+<para
+>Program &kfind; to użyteczne narzędzie do wyszukiwania w komputerze konkretnych plików lub plików pasujących do wzorca. Przykładem może być wyszukiwanie plików danego typu lub zawierających pewne litery w nazwie. Możesz uruchomić to narzędzie klikając na <guimenuitem
+>Wyszukaj pliki</guimenuitem
+>. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="kfind">
+<title
+>Wyszukiwanie plików</title>
+
+<sect1 id="name-tab">
+<title
+>Nazwa/katalog</title>
+
+<para
+>Po uruchomieniu programu &kfind; pojawi się dość proste okno. Wpisz nazwę szukanego słowa w polu tekstowym oznaczonym <guilabel
+>Nazwa:</guilabel
+>. Wybierz katalog, który chcesz przeszukać, wpisując jego nazwę w <guilabel
+>Szukaj w:</guilabel
+> lub klikając na <guibutton
+>Przeglądaj...</guibutton
+> i naciskając <keycap
+>Enter</keycap
+> lub <guibutton
+>Znajdź</guibutton
+>. Jeśli opcja <guilabel
+>Przeszukuj podkatalogi</guilabel
+> jest zaznaczona, wszystkie podkatalogi znajdujące się w wybranym katalogu również będą przeszukane. Wynik zostanie wyświetlony w oknie poniżej. </para>
+
+<para
+>Możesz wykorzystać następujące znaki zastępcze: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Gwiazdka <quote
+><keycap
+>*</keycap
+></quote
+></term>
+<listitem>
+<para
+>Gwiazdka zastępuje dowolne brakujące znaki (nawet zero znaków), co oznacza, że jeśli wyszukując wpiszemy np. <userinput
+>marc*</userinput
+> to możemy wyszukać następujące pliki <filename
+>marc</filename
+>, <filename
+>marc.png</filename
+> i <filename
+> marc_must_not_read_this.kwd</filename
+>. Jeśli wpiszemy <userinput
+>mar*.kwd</userinput
+> wówczas możemy otrzymać <filename
+>marketplace.kwd</filename
+> i <filename
+>marc_must_not_read_this.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Znak zapytania <quote
+><keycap
+>?</keycap
+></quote
+></term>
+<listitem>
+<para
+>W przeciwieństwie do gwiazdki, znak zapytania zastępuje dokładnie jeden znak, tak więc <userinput
+>mar?</userinput
+> pozwoli nam odnaleźć <filename
+>marc</filename
+>, natomiast <userinput
+>marc?</userinput
+> nie wyszuka niczego, ponieważ nasze pliki nazywają się <filename
+>marc</filename
+> i <filename
+>marc.png</filename
+>. Możesz użyć dowolnej liczby znaków zapytania we wzorcu. Wyszukane słowo będzie miało taką samą liczbę znaków jak wprowadzony wzorzec. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Przy wyszukiwaniu możliwe są oczywiście kombinacje obu znaków zastępczych. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>Karta Zawartość</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Typ pliku</guilabel
+></term>
+<listitem>
+<para
+>Tu możesz określić typ wyszukiwanego pliku. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Zawierający tekst</guilabel
+></term>
+<listitem>
+<para
+>Wpisz słowo lub zdanie, które muszą być zawarte w wyszukiwanych plikach. Uwaga: jeśli robisz to w dużym katalogu lub zaznaczyłeś <guilabel
+>Przeszukuj podkatalogi</guilabel
+> na karcie <guilabel
+>Nazwa/katalog</guilabel
+>, wówczas może to trochę potrwać.  </para>
+
+<note>
+<para
+>Opcja ta <emphasis
+>nie</emphasis
+> będzie działać w przypadku niektórych plików wymienionych w liście <guilabel
+>Typ plików</guilabel
+>. Obsługiwane są jedynie następujące typy plików: <itemizedlist>
+<listitem
+><para
+>Pliki tekstowe, np. kod źródłowy i pliki <filename
+>README</filename
+></para
+></listitem>
+<listitem
+><para
+>&kword; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kpresenter; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kspread; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Writer</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Impress</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Calc</para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Z rozróżnianiem małych i wielkich liter</guilabel
+></term>
+<listitem>
+<para
+>Jeśli zaznaczysz tę opcję, program &kfind; wyszuka jedynie pliki zgodne również w kwestii wielkości liter, np. <userinput
+>MARC</userinput
+> będzie zgodny jedynie z <quote
+>MARC</quote
+>, a nie <quote
+>Marc</quote
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Wyrażenie regularne</guilabel
+></term>
+<listitem
+><para
+>Jeśli zainstalowałeś narzędzie &kregexpeditor; z pakietu kdeutils, to będziesz miał tę dodatkową opcję. Włączenie jej umożliwi Ci wyszukiwanie za pomocą <firstterm
+>wyrażeń regularnych</firstterm
+>. Wyrażenie regularne jest sposobem na określenie warunków wyszukiwania, które mogą być zarówno złożone jak i efektywne. Jeśli nie znasz dobrze wyrażeń regularnych, możesz wybrać <guilabel
+>Edytor wyrażeń regularnych</guilabel
+>, aby otworzyć program &kregexpeditor;. Narzędzie to umożliwi Ci tworzenie zestawów warunków w sposób graficzny, a następnie wygeneruje dla Ciebie wyrażenie.</para>
+
+<para
+>Program &kregexpeditor; jest bardzo użytecznym narzędziem, które może być używane w innych niż &kfind; programach &kde;. Więcej informacji znajdziesz w pliku pomocy tego programu.</para>
+</listitem>
+</varlistentry>
+
+<!-- TODO: "Search metainfo sections" -->
+
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>Karta Właściwości</title>
+
+<para
+>Tutaj możesz przefiltrować wyniki wyszukiwania. Do wyboru są specjalne filtry: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Znajdź wszystkie pliki utworzone lub zmodyfikowane</guilabel
+></term>
+<listitem>
+<para
+>Tutaj, możesz zarówno wprowadzić dwie daty, pomiędzy którymi zostały stworzone pliki, jak i określić przedział czasu. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Rozmiar pliku:</guilabel
+></term>
+<listitem>
+<para
+>Tutaj możesz określić minimalny lub maksymalny rozmiar wyszukiwanego pliku. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Należy do użytkownika:/Należy do grupy:</guilabel
+></term>
+<listitem>
+<para
+>Tutaj możesz określić nazwę użytkownika i grupy. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Podziękowania i licencje</title>
+
+<para
+>&kfind; </para>
+
+<para
+>Prawa autorskie: </para>
+
+<itemizedlist>
+<title
+>Programiści</title>
+<listitem>
+<para
+>Martin Hartig</para>
+</listitem>
+
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Mario.Weilguni; &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Alex.Zepeda; <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Miroslav Flídr <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Harri.Porten; &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Dima Rogozin <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Hans Petter Bieker <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Waldo.Bastian; &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>Prawa autorskie do dokumentacji: &copy; 2001 &Dirk.Doerflinger; &Dirk.Doerflinger.mail;</para
+> 
+
+<para
+>Polskie tłumaczenie: Paweł Dąbek<email
+>pdabek@onet.pl</email
+></para
+> 
+&underFDL; &underBSDLicense; </chapter>
+
+<appendix id="installation">
+<title
+>Instalacja</title>
+
+<sect1 id="getting-kfind">
+<title
+>Jak zdobyć program &kfind;</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="requirements">
+<title
+>Wymagania</title>
+
+<para
+>Aby z powodzeniem używać programu &kfind; potrzebujesz &kde; 4.x. </para>
+
+</sect1>
+
+<sect1 id="compilation">
+<title
+>Kompilacja i instalacja</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->

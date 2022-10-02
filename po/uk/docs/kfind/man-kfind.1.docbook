@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Ukrainian "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Інструкція користувача KFind</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>5 листопада 2016 року</date>
+<releaseinfo
+>Програми 16.12</releaseinfo>
+<productname
+>Програми KDE</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>засіб для пошуку файлів від &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>шлях_пошуку</option
+></group
+> <arg choice="opt"
+>параметри</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Опис</title>
+<para
+>Інструмент пошуку — це один зі зручних способів пошуку окремих файлів на вашому комп’ютері, або пошуку файлів, які відповідають заданому шаблону. Прикладами такого пошуку можуть бути пошуки файлів певного типу, або файлів з певними літерами у назві, або файлів, що містять певний рядок тексту.</para
+> 
+<para
+>&kfind; є графічним інструментом, який, за звичайних умов, не призначено для запуску з командного рядка.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Параметри</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>шлях_пошуку</option
+></term>
+<listitem
+><para
+>Ви можете, якщо хочете, вказати шлях, який слід використати для початку пошуку у діалоговому вікні.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Прочитайте також</title>
+<simplelist>
+<member
+>Доступ до докладнішої документації можна отримати за адресою <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (або введіть цю адресу до рядка адреси <acronym
+>URL</acronym
+> &konqueror;, або виконайте за допомогою командного рядка команду <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</member>
+<member
+>kf5options(7)</member>
+<member
+>qt5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Автори</title>
+<para
+>Список учасників розробки можна переглянути у повному підручнику для користувачів, доступ до якого можна отримати за допомогою khelpcenter.</para>
+<para
+>Цю документацію було створено &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

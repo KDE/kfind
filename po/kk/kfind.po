@@ -1,0 +1,733 @@
+# translation of kfindpart.po to Kazakh
+#
+# Izbasarov M.I. <mambet@sci.kz>, 2005.
+# Sairan Kikkarin <sairan@computer.org>, 2005, 2006, 2008, 2010.
+# Sairan Kikkarin <sairan@computer.org>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kfindpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"PO-Revision-Date: 2011-12-05 05:30+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"\n"
+"\n"
+"\n"
+
+#: kfinddlg.cpp:31
+#, kde-format
+msgctxt "@title:window"
+msgid "Find Files/Folders"
+msgstr "Файл/қапшықтарды іздеу"
+
+#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#, kde-format
+msgctxt "the application is currently idle, there is no active search"
+msgid "Idle."
+msgstr "Тоқтап тұр."
+
+#. i18n as below
+#: kfinddlg.cpp:133
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "0 items found"
+msgstr "%1 файл табылды"
+
+#: kfinddlg.cpp:172
+#, kde-format
+msgid "Searching..."
+msgstr "Іздеу..."
+
+#: kfinddlg.cpp:199
+#, kde-format
+msgid "Canceled."
+msgstr "Доғарылды."
+
+#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#, kde-format
+msgid "Error."
+msgstr "Қате."
+
+#: kfinddlg.cpp:202
+#, kde-format
+msgid "Please specify an absolute path in the \"Look in\" box."
+msgstr "\"Іздеу жолдары\" өрісінде абсолюттік жолды келтіріңіз."
+
+#: kfinddlg.cpp:205
+#, kde-format
+msgid "Could not find the specified folder."
+msgstr "Келтірілген қапшық табылмады."
+
+#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "one item found"
+msgid_plural "%1 items found"
+msgstr[0] "%1 файл табылды"
+
+#: kfindtreeview.cpp:46
+msgid "Read-write"
+msgstr "Оқу-жазу"
+
+#: kfindtreeview.cpp:47
+msgid "Read-only"
+msgstr "Тек оқу"
+
+#: kfindtreeview.cpp:48
+msgid "Write-only"
+msgstr "Тек жазу"
+
+#: kfindtreeview.cpp:49
+msgid "Inaccessible"
+msgstr "Қол жеткізбейді"
+
+#: kfindtreeview.cpp:69
+#, kde-format
+msgctxt "file name column"
+msgid "Name"
+msgstr "Атауы"
+
+#: kfindtreeview.cpp:71
+#, kde-format
+msgctxt "name of the containing folder"
+msgid "In Subfolder"
+msgstr "Қай қапшықта"
+
+#: kfindtreeview.cpp:73
+#, kde-format
+msgctxt "file size column"
+msgid "Size"
+msgstr "Өлшемі"
+
+#: kfindtreeview.cpp:75
+#, kde-format
+msgctxt "modified date column"
+msgid "Modified"
+msgstr "Өзгертілген"
+
+#: kfindtreeview.cpp:77
+#, kde-format
+msgctxt "file permissions column"
+msgid "Permissions"
+msgstr "Рұқсаттары"
+
+#: kfindtreeview.cpp:79
+#, kde-format
+msgctxt "first matching line of the query string in this file"
+msgid "First Matching Line"
+msgstr "Бірінші табылғаны"
+
+#: kfindtreeview.cpp:361
+#, kde-format
+msgid "&Open containing folder(s)"
+msgstr "&Ол қапшықтарын ашу"
+
+#: kfindtreeview.cpp:365
+#, kde-format
+msgid "&Delete"
+msgstr "&Өшіру"
+
+#: kfindtreeview.cpp:369
+#, kde-format
+msgid "&Move to Trash"
+msgstr "Ө&шірілгендерге тастау"
+
+#: kfindtreeview.cpp:488
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Results As"
+msgstr "Нәтижелерді былай сақтау"
+
+#: kfindtreeview.cpp:513
+#, kde-format
+msgid "Unable to save results."
+msgstr "Нәтижелер сақталынбады."
+
+#: kfindtreeview.cpp:531
+#, kde-format
+msgid "KFind Results File"
+msgstr "KFind нәтижелер файлы"
+
+#: kfindtreeview.cpp:546
+#, kde-format
+msgctxt "%1=filename"
+msgid "Results were saved to: %1"
+msgstr "Нәтижелері келесі файлда сақталды: %1"
+
+#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "Қас&иеттері"
+
+#: kftabdlg.cpp:65
+#, kde-format
+msgctxt "this is the label for the name textfield"
+msgid "&Named:"
+msgstr "&Атауы:"
+
+#: kftabdlg.cpp:68
+#, kde-format
+msgid "You can use wildcard matching and \";\" for separating multiple names"
+msgstr ""
+"Үлгі қалқасының және бірнеше атауды бөлектеу үшін \";\" белгісін "
+"қолдануыңызға болады"
+
+#: kftabdlg.cpp:74
+#, kde-format
+msgid "Look &in:"
+msgstr "&Іздеу жолдары:"
+
+#: kftabdlg.cpp:77
+#, kde-format
+msgid "Include &subfolders"
+msgstr "І&шкі қапшықтарды қоса"
+
+#: kftabdlg.cpp:78
+#, kde-format
+msgid "Case s&ensitive search"
+msgstr "Үлкен-кішілігін е&скеріп"
+
+#: kftabdlg.cpp:79
+#, kde-format
+msgid "&Browse..."
+msgstr "&Шолу..."
+
+#: kftabdlg.cpp:80
+#, kde-format
+msgid "&Use files index"
+msgstr "Файлдар индексін қ&олданып"
+
+#: kftabdlg.cpp:81
+#, kde-format
+msgid "Show &hidden files"
+msgstr "&Жасырын файлдар көрсетілсін"
+
+#: kftabdlg.cpp:100
+#, kde-format
+msgid ""
+"<qt>Enter the filename you are looking for. <br />Alternatives may be "
+"separated by a semicolon \";\".<br /><br />The filename may contain the "
+"following special characters:<ul><li><b>?</b> matches any single character</"
+"li><li><b>*</b> matches zero or more of any characters</li><li><b>[...]</b> "
+"matches any of the characters between the braces</li></ul><br />Example "
+"searches:<ul><li><b>*.kwd;*.txt</b> finds all files ending with .kwd or ."
+"txt</li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> finds all "
+"files that start with \"Hel\" and end with \"o\", having one character in "
+"between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
+"li></ul></qt>"
+msgstr ""
+"<qt>Іздейтін файлдың атауын келтіріңіз.<br />Баламалары үтірлі нүкте \";\" "
+"деп айырылады.<br /><br />Іздемек файл атауы келесі арнайы таңбалардан "
+"құрылады:<ul><li><b>?</b>кез келген жеке таңба орнын көрсетеді</li><li><b>*</"
+"b> нөл немесе бірнеше кез келген таңбалар тізбегін орнын көрсетеді</"
+"li><li><b>[...]</b> жақшадағы кез келген таңбаның біреуі деген өрнек</li> </"
+"ul><br />Іздеу мысалдары:<ul><li><b>*.kwd;*.txt</b> .kwd немесе .txt "
+"жұрнағымен аяқталатын кез келген файлдарды табу</li><li><b>go[dt]</b> god "
+"және got дегендерді табу</li><li><b>Hel?o</b> \"Hel\" деп басталып, \"o\" "
+"деп аяқталып, ортасында бір таңбасы бар барлық файлдарды табу</li><li><b>My "
+"Document.kwd</b> атауы дәл сәйкес келетін файлды табу</li></ul></qt>"
+
+#: kftabdlg.cpp:121
+#, kde-format
+msgid ""
+"<qt>This lets you use the files' index created by the <i>slocate</i> package "
+"to speed-up the search; remember to update the index from time to time "
+"(using <i>updatedb</i>).</qt>"
+msgstr ""
+"<qt>Бұл іздеуді тездету үшін <i>slocate</i> дестемен дайындалған файлдар "
+"индексін қолдануға мүмкіндік береді. Индесті (<i>updatedb</i> командасымен) "
+"бір мезгіл сайын жаңартып тұрыңыз.</qt>"
+
+#: kftabdlg.cpp:165
+#, kde-format
+msgid "Find all files created or &modified:"
+msgstr "Келтірілген кезде құрылған не ө&згертілген файлдарды іздеу:"
+
+#: kftabdlg.cpp:167
+#, kde-format
+msgid "&between"
+msgstr "келесі &аралықта"
+
+#: kftabdlg.cpp:169
+#, kde-format
+msgid "and"
+msgstr "мен"
+
+#: kftabdlg.cpp:191
+#, kde-format
+msgid "File &size is:"
+msgstr "Файл ө&лшемі:"
+
+#: kftabdlg.cpp:204
+#, kde-format
+msgid "Files owned by &user:"
+msgstr "Келесі &пайдаланушының:"
+
+#: kftabdlg.cpp:209
+#, kde-format
+msgid "Owned by &group:"
+msgstr "Келесі &тобының:"
+
+#: kftabdlg.cpp:212
+#, kde-format
+msgctxt "file size isn't considered in the search"
+msgid "(none)"
+msgstr "(жоқ)"
+
+#: kftabdlg.cpp:213
+#, kde-format
+msgid "At Least"
+msgstr "Кем дегенде"
+
+#: kftabdlg.cpp:214
+#, kde-format
+msgid "At Most"
+msgstr "Келесіден артық емес"
+
+#: kftabdlg.cpp:215
+#, kde-format
+msgid "Equal To"
+msgstr "Келесіге тең"
+
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#, kde-format
+msgid "Byte"
+msgid_plural "Bytes"
+msgstr[0] "байт"
+
+#: kftabdlg.cpp:218
+#, kde-format
+msgid "KiB"
+msgstr "КиБ"
+
+#: kftabdlg.cpp:219
+#, kde-format
+msgid "MiB"
+msgstr "МиБ"
+
+#: kftabdlg.cpp:220
+#, kde-format
+msgid "GiB"
+msgstr "ГиБ"
+
+#: kftabdlg.cpp:283
+#, kde-format
+msgctxt "label for the file type combobox"
+msgid "File &type:"
+msgstr "Файлдың &түрі:"
+
+#: kftabdlg.cpp:288
+#, kde-format
+msgid "C&ontaining text:"
+msgstr "Келесі мәтіні &бар:"
+
+#: kftabdlg.cpp:294
+#, kde-format
+msgid ""
+"<qt>If specified, only files that contain this text are found. Note that not "
+"all file types from the list above are supported. Please refer to the "
+"documentation for a list of supported file types.</qt>"
+msgstr ""
+"<qt>Егер келтірілген болса, тек осы мәтіні бар файлдар ізделінеді. Ескерту, "
+"жоғарыда келтірілген файл түрлерінің барлығы да қолдау таппайды. Қолдау "
+"табатындары қайсы екеннін білу үшін файл түрлерінің құжаттамасын қараңыз.</"
+"qt>"
+
+#: kftabdlg.cpp:302
+#, kde-format
+msgid "Case s&ensitive"
+msgstr "Үлкен-кішілігін &ескеріп"
+
+#: kftabdlg.cpp:303
+#, kde-format
+msgid "Include &binary files"
+msgstr "&Бинарлық файлдарды қоса"
+
+#: kftabdlg.cpp:306
+#, kde-format
+msgid ""
+"<qt>This lets you search in any type of file, even those that usually do not "
+"contain text (for example program files and images).</qt>"
+msgstr ""
+"<qt>Бұл файлдың кез келген түрінен іздеуге мүмкіндік береді, тіпті әдетте "
+"құрамында мәтіні жоқ файлдардан ( мысалы, бағдарлама менкескін файлдарды).</"
+"qt>"
+
+#: kftabdlg.cpp:313
+#, kde-format
+msgctxt "as in search for"
+msgid "fo&r:"
+msgstr "өрістерінен &келесіні іздеу:"
+
+#: kftabdlg.cpp:315
+#, kde-format
+msgid "Search &metainfo sections:"
+msgstr "Құжаттың &метадеректерінің"
+
+#: kftabdlg.cpp:319
+#, kde-format
+msgid "All Files & Folders"
+msgstr "Барлық қапшықтардан бүкіл файлдардан"
+
+#: kftabdlg.cpp:320
+#, kde-format
+msgid "Files"
+msgstr "Файлдар"
+
+#: kftabdlg.cpp:321
+#, kde-format
+msgid "Folders"
+msgstr "Қапшықтар"
+
+#: kftabdlg.cpp:322
+#, kde-format
+msgid "Symbolic Links"
+msgstr "Символды сілтемелер"
+
+#: kftabdlg.cpp:323
+#, kde-format
+msgid "Special Files (Sockets, Device Files, ...)"
+msgstr "Арнайы файлдар (сокеттер, құрылғы файлдары, ...)"
+
+#: kftabdlg.cpp:324
+#, kde-format
+msgid "Executable Files"
+msgstr "Орындалатын файлдар"
+
+#: kftabdlg.cpp:325
+#, kde-format
+msgid "SUID Executable Files"
+msgstr "SUID-орындалатын файлдар"
+
+#: kftabdlg.cpp:326
+#, kde-format
+msgid "All Images"
+msgstr "Барлық кескіндер"
+
+#: kftabdlg.cpp:327
+#, kde-format
+msgid "All Video"
+msgstr "Барлық бейнефильм файлдары"
+
+#: kftabdlg.cpp:328
+#, kde-format
+msgid "All Sounds"
+msgstr "Барлық дыбыс файлдары"
+
+#: kftabdlg.cpp:393
+#, kde-format
+msgid "Name/&Location"
+msgstr "Атауы мен о&рналасуы"
+
+#: kftabdlg.cpp:394
+#, kde-format
+msgctxt "tab name: search by contents"
+msgid "C&ontents"
+msgstr "&Мазмұны"
+
+#: kftabdlg.cpp:399
+#, kde-format
+msgid ""
+"<qt>Search within files' specific comments/metainfo<br />These are some "
+"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
+msgstr ""
+"<qt>Файлдардың ерекше түсініктемесі/мәліметтері бойынша іздеу.<br />Мысалдар:"
+"<br /><ul><li><b>Аудио файлдар (mp3...)</b> id3 тегтері бойынша іздеу, "
+"мысалы, title, album бойынша </li> <li><b>Кескіндер (png...)</b> "
+"Айырымдылығы, түсініктемелері бойынша кескіндерді іздеу...</li></ul></qt>"
+
+#: kftabdlg.cpp:407
+#, kde-format
+msgid ""
+"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
+msgstr ""
+"<qt>Келтірілген болса, тек осы өрісте іздеу<br /><ul><li><b>Аудио файлы "
+"(mp3...)</b>Title, Album...</li><li><b>Кескіндер (png...)</b>Resolution, "
+"Bitdepth бойынша іздеу...</li></ul></qt>"
+
+#: kftabdlg.cpp:548
+#, kde-format
+msgid "Unable to search within a period which is less than a minute."
+msgstr "Бір минуттан кем уақыт аралығында іздеу мүмкін емес."
+
+#: kftabdlg.cpp:559
+#, kde-format
+msgid "The date is not valid."
+msgstr "Күні дұрыс емес."
+
+#: kftabdlg.cpp:561
+#, kde-format
+msgid "Invalid date range."
+msgstr "Күн аралығы дұрыс емес."
+
+#: kftabdlg.cpp:563
+#, kde-format
+msgid "Unable to search dates in the future."
+msgstr "Болашақта іздеу мүмкін емес."
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Size is too big. Set maximum size value?"
+msgstr "Өлшемі өте үлкен. Шекті өлшем мәні алынсын ба?"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Error"
+msgstr "Қате"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Set"
+msgstr "Алынсын"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Do Not Set"
+msgstr "Керегі жоқ"
+
+#: kftabdlg.cpp:818
+#, kde-format
+msgctxt ""
+"during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
+"minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
+msgid "&during the previous"
+msgid_plural "&during the previous"
+msgstr[0] "&алдыңғы"
+
+#: kftabdlg.cpp:819
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "минутте"
+
+#: kftabdlg.cpp:820
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "сағатта"
+
+#: kftabdlg.cpp:821
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "day"
+msgid_plural "days"
+msgstr[0] "күнде"
+
+#: kftabdlg.cpp:822
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "month"
+msgid_plural "months"
+msgstr[0] "айда"
+
+#: kftabdlg.cpp:823
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "year"
+msgid_plural "years"
+msgstr[0] "жылда"
+
+#: kquery.cpp:565
+#, kde-format
+msgctxt "@title:window"
+msgid "Error while using locate"
+msgstr "Locate командасын қолданғанда қате пайда болды"
+
+#: main.cpp:36
+#, kde-format
+msgid "KFind"
+msgstr "KFind"
+
+#: main.cpp:37
+#, kde-format
+msgid "KDE file find utility"
+msgstr "KDE-нің файлдар іздеу утилитасы"
+
+#: main.cpp:38
+#, fuzzy, kde-format
+#| msgid "(c) 1998-2003, The KDE Developers"
+msgid "(c) 1998-2021, The KDE Developers"
+msgstr "(c) 1998-2003, KDE жасаушылары"
+
+#: main.cpp:40
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr ""
+
+#: main.cpp:40
+#, kde-format
+msgid "Current Maintainer"
+msgstr "Қазіргі жетілдірушісі"
+
+#: main.cpp:41
+#, kde-format
+msgid "Eric Coquelle"
+msgstr "Eric Coquelle"
+
+#: main.cpp:41
+#, fuzzy, kde-format
+#| msgid "Current Maintainer"
+msgid "Former Maintainer"
+msgstr "Қазіргі жетілдірушісі"
+
+#: main.cpp:42
+#, kde-format
+msgid "Mark W. Webb"
+msgstr "Mark W. Webb"
+
+#: main.cpp:42
+#, kde-format
+msgid "Developer"
+msgstr "Жасаушысы"
+
+#: main.cpp:43
+#, kde-format
+msgid "Beppe Grimaldi"
+msgstr "Beppe Grimaldi"
+
+#: main.cpp:43
+#, kde-format
+msgid "UI Design & more search options"
+msgstr "Интерфейсінің жобасы және іздеу параметрлері"
+
+#: main.cpp:44
+#, kde-format
+msgid "Martin Hartig"
+msgstr "Martin Hartig"
+
+#: main.cpp:45
+#, kde-format
+msgid "Stephan Kulow"
+msgstr "Stephan Kulow"
+
+#: main.cpp:46
+#, kde-format
+msgid "Mario Weilguni"
+msgstr "Mario Weilguni"
+
+#: main.cpp:47
+#, kde-format
+msgid "Alex Zepeda"
+msgstr "Alex Zepeda"
+
+#: main.cpp:48
+#, kde-format
+msgid "Miroslav Flídr"
+msgstr "Miroslav Flídr"
+
+#: main.cpp:49
+#, kde-format
+msgid "Harri Porten"
+msgstr "Harri Porten"
+
+#: main.cpp:50
+#, kde-format
+msgid "Dima Rogozin"
+msgstr "Dima Rogozin"
+
+#: main.cpp:51
+#, kde-format
+msgid "Carsten Pfeiffer"
+msgstr "Carsten Pfeiffer"
+
+#: main.cpp:52
+#, kde-format
+msgid "Hans Petter Bieker"
+msgstr "Hans Petter Bieker"
+
+#: main.cpp:53
+#, kde-format
+msgid "Waldo Bastian"
+msgstr "Waldo Bastian"
+
+#: main.cpp:53
+#, kde-format
+msgid "UI Design"
+msgstr "Интерфейсінің жобасы"
+
+#: main.cpp:54
+#, kde-format
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: main.cpp:55
+#, kde-format
+msgid "Clarence Dang"
+msgstr "Clarence Dang"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Мәмбет Ізбасаров, Сайран Киккарин"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "izbas@sci.kz, sairan@computer.org"
+
+#: main.cpp:63
+#, kde-format
+msgid "Path(s) to search"
+msgstr "Іздеу жолдары"
+
+#~ msgid "Regular e&xpression"
+#~ msgstr "Үлгі ө&рнегі"
+
+#~ msgid "&Edit..."
+#~ msgstr "&Өңдеу..."
+
+#~ msgid "HTML page"
+#~ msgstr "HTML парағы"
+
+#~ msgid "Text file"
+#~ msgstr "Мәтін файлы"
+
+#~ msgctxt "Name of the component that finds things"
+#~ msgid "Find Component"
+#~ msgstr "Іздеуді істейтін компонент"
+
+#~ msgid "Aborted."
+#~ msgstr "Доғарылды."
+
+#~ msgid "Ready."
+#~ msgstr "Дайын."
+
+#~ msgid "Do you really want to delete the selected file?"
+#~ msgid_plural "Do you really want to delete the %1 selected files?"
+#~ msgstr[0] "%1 таңдалған файл жойылсын ба?"
+
+#~ msgctxt "Menu item"
+#~ msgid "Open"
+#~ msgstr "Ашу"
+
+#~ msgid "Open Folder"
+#~ msgstr "Қапшықты ашу"
+
+#~ msgid "Copy"
+#~ msgstr "Көшіріп алу"
+
+#~ msgid "Open With..."
+#~ msgstr "Мынамен ашу..."
+
+#~ msgid "Properties"
+#~ msgstr "Қасиеттері"
+
+#~ msgid "Selected Files"
+#~ msgstr "Таңдалған қапшықтар"

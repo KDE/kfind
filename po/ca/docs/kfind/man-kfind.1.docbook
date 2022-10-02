@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Catalan  "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Manual d'usuari del kfind</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>5 de novembre de 2016</date>
+<releaseinfo
+>Aplicacions 16.12</releaseinfo>
+<productname
+>Aplicacions KDE</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>utilitat de cerca a fitxers pel &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>camí_de_cerca</option
+></group
+> <arg choice="opt"
+>opcions</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Descripció</title>
+<para
+>L'eina «find» és un mètode útil de cerca de fitxers específics al vostre ordinador, o per a cercar fitxers que cassin amb un cert patró. Un exemple d'això podria incloure la cerca de fitxers d'un tipus en particular o amb certes lletres en particular al nom del fitxer, o que continguin certes peces de text en el seu contingut.</para
+> 
+<para
+>&kfind; és una eina gràfica i no se sol executar des de la línia d'ordres.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Opcions</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>camí_de_cerca</option
+></term>
+<listitem
+><para
+>De manera opcional, podeu subministrar un camí per omplir el diàleg on començar la cerca.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Veure també</title>
+<simplelist>
+<member
+>Hi ha documentació d'usuari més detallada a <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (podeu emprar aquest &URL; al &konqueror; o bé executar <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</member>
+<member
+>kf5options(7)</member>
+<member
+>qt5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Autors</title>
+<para
+>Hi ha una llista de col·laboradors en el manual complet d'usuari disponible a través del khelpcenter.</para>
+<para
+>Aquesta documentació ha estat preparada per en &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

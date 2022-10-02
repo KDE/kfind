@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Portuguese "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Manual do Utilizador do kfind</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>2016-11-05</date>
+<releaseinfo
+>Aplicações 16.12</releaseinfo>
+<productname
+>Aplicações do KDE</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>Um utilitário de procura de ficheiros do &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>local-procura</option
+></group
+> <arg choice="opt"
+>opções</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Descrição</title>
+<para
+>A ferramenta para Procurar Ficheiros é um método útil para procurar ficheiros específicos no seu computador ou para procurar ficheiros que correspondam a um padrão. Um exemplo disto poderá incluir a procura de ficheiros por um determinado tipo ou com certas letras no nome do ficheiro ou que ainda contenham um determinado tipo de texto no seu conteúdo.</para
+> 
+<para
+>O &kfind; é uma ferramenta gráfica e não é normalmente executada a partir da linha de comandos.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Opções</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>local-procura</option
+></term>
+<listitem
+><para
+>Poderá indicar de forma opcional um local para pré-preencher a janela onde iniciar a pesquisa.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Veja Também</title>
+<simplelist>
+<member
+>Existe mais documentação do utilizador disponível através do <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (tanto pode indicar este <acronym
+>URL</acronym
+> no &konqueror; como executar o <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</member>
+<member
+>kf5options(7)</member>
+<member
+>qt5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Autores</title>
+<para
+>Existe uma lista dos responsáveis anteriores no manual de utilizador completo, que está disponível no 'khelpcenter'.</para>
+<para
+>Esta documentação foi preparada pela &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

@@ -1,0 +1,739 @@
+# Translation of kfind.po into Serbian.
+# Toplica Tanaskovic <toptan@kde.org.yu>, 2003, 2004, 2005.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2016, 2017.
+# Dalibor Djuric <daliborddjuric@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kfind\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-04-30 02:34+0200\n"
+"PO-Revision-Date: 2017-09-28 17:56+0200\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#: kfinddlg.cpp:43
+#, kde-format
+msgctxt "@title:window"
+msgid "Find Files/Folders"
+msgstr "Тражење фајлова и фасцикли"
+
+#: kfinddlg.cpp:62 kfinddlg.cpp:211
+#, kde-format
+msgctxt "the application is currently idle, there is no active search"
+msgid "Idle."
+msgstr "Мирујем."
+
+#. i18n as below
+#: kfinddlg.cpp:147
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "0 items found"
+msgstr "%1 фајл пронађен"
+
+# >> @info:progress
+#: kfinddlg.cpp:186
+#, kde-format
+msgid "Searching..."
+msgstr "Тражим..."
+
+#: kfinddlg.cpp:213
+#, kde-format
+msgid "Canceled."
+msgstr "Отказано."
+
+#: kfinddlg.cpp:215 kfinddlg.cpp:218 kfinddlg.cpp:221
+#, kde-format
+msgid "Error."
+msgstr "Грешка."
+
+#: kfinddlg.cpp:216
+#, kde-format
+msgid "Please specify an absolute path in the \"Look in\" box."
+msgstr "Морате задати апсолутну путању у пољу „Тражи у:“."
+
+#: kfinddlg.cpp:219
+#, kde-format
+msgid "Could not find the specified folder."
+msgstr "Не могу да пронађем задату фасциклу."
+
+#: kfinddlg.cpp:242 kfinddlg.cpp:266
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "one item found"
+msgid_plural "%1 items found"
+msgstr[0] "%1 фајл пронађен"
+msgstr[1] "%1 фајла пронађена"
+msgstr[2] "%1 фајлова пронађено"
+msgstr[3] "један фајл пронађен"
+
+#: kfindtreeview.cpp:51
+#, kde-format
+msgid "Read-write"
+msgstr "читање‑упис"
+
+#: kfindtreeview.cpp:52
+#, kde-format
+msgid "Read-only"
+msgstr "само‑за‑читање"
+
+#: kfindtreeview.cpp:53
+#, kde-format
+msgid "Write-only"
+msgstr "само‑упис"
+
+#: kfindtreeview.cpp:54
+#, kde-format
+msgid "Inaccessible"
+msgstr "неприступачно"
+
+#: kfindtreeview.cpp:74
+#, kde-format
+msgctxt "file name column"
+msgid "Name"
+msgstr "име"
+
+# >> @title:column +
+#: kfindtreeview.cpp:76
+#, kde-format
+msgctxt "name of the containing folder"
+msgid "In Subfolder"
+msgstr "у потфасцикли"
+
+#: kfindtreeview.cpp:78
+#, kde-format
+msgctxt "file size column"
+msgid "Size"
+msgstr "величина"
+
+#: kfindtreeview.cpp:80
+#, kde-format
+msgctxt "modified date column"
+msgid "Modified"
+msgstr "измењен"
+
+#: kfindtreeview.cpp:82
+#, kde-format
+msgctxt "file permissions column"
+msgid "Permissions"
+msgstr "дозволе"
+
+# >> @title:column +
+#: kfindtreeview.cpp:84
+#, kde-format
+msgctxt "first matching line of the query string in this file"
+msgid "First Matching Line"
+msgstr "први поклапајући ред"
+
+#: kfindtreeview.cpp:346
+#, kde-format
+msgid "&Open containing folder(s)"
+msgstr "&Отвори обухватајућу фасциклу"
+
+#: kfindtreeview.cpp:350
+#, kde-format
+msgid "&Delete"
+msgstr "&Обриши"
+
+#: kfindtreeview.cpp:354
+#, kde-format
+msgid "&Move to Trash"
+msgstr "&Премести у смеће"
+
+#: kfindtreeview.cpp:465
+#, kde-format
+msgctxt "@title:window"
+msgid "Save Results As"
+msgstr "Уписивање резултата као"
+
+#: kfindtreeview.cpp:490
+#, kde-format
+msgid "Unable to save results."
+msgstr "Не могу да сачувам резултате."
+
+#: kfindtreeview.cpp:505
+#, kde-format
+msgid "KFind Results File"
+msgstr "К‑налазачев фајл са резултатима"
+
+#: kfindtreeview.cpp:526
+#, kde-format
+msgctxt "%1=filename"
+msgid "Results were saved to: %1"
+msgstr "Резултати сачувани у: %1"
+
+# >> @title:tab
+#: kfindtreeview.cpp:614 kftabdlg.cpp:437
+#, kde-format
+msgid "&Properties"
+msgstr "С&војства"
+
+#: kftabdlg.cpp:82
+#, kde-format
+msgctxt "this is the label for the name textfield"
+msgid "&Named:"
+msgstr "По &имену:"
+
+#: kftabdlg.cpp:85
+#, kde-format
+msgid "You can use wildcard matching and \";\" for separating multiple names"
+msgstr "Можете користити џокере и „;“ за одвајање више имена"
+
+#: kftabdlg.cpp:91
+#, kde-format
+msgid "Look &in:"
+msgstr "&Тражи у:"
+
+#: kftabdlg.cpp:94
+#, kde-format
+msgid "Include &subfolders"
+msgstr "Укључи &потфасцикле"
+
+#: kftabdlg.cpp:95
+#, kde-format
+msgid "Case s&ensitive search"
+msgstr "Разликуј &величину слова"
+
+#: kftabdlg.cpp:96
+#, kde-format
+msgid "&Browse..."
+msgstr "Пре&гледај..."
+
+#: kftabdlg.cpp:97
+#, kde-format
+msgid "&Use files index"
+msgstr "Користи &индекс фајлова"
+
+#: kftabdlg.cpp:98
+#, kde-format
+msgid "Show &hidden files"
+msgstr "Прикажи &скривене фајлове"
+
+#: kftabdlg.cpp:117
+#, kde-format
+msgid ""
+"<qt>Enter the filename you are looking for. <br />Alternatives may be "
+"separated by a semicolon \";\".<br /><br />The filename may contain the "
+"following special characters:<ul><li><b>?</b> matches any single character</"
+"li><li><b>*</b> matches zero or more of any characters</li><li><b>[...]</b> "
+"matches any of the characters between the braces</li></ul><br />Example "
+"searches:<ul><li><b>*.kwd;*.txt</b> finds all files ending with .kwd or ."
+"txt</li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> finds all "
+"files that start with \"Hel\" and end with \"o\", having one character in "
+"between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
+"li></ul></qt>"
+msgstr ""
+"<qt><p>Унесите име фајла који тражите. Можете унети и више имена, "
+"раздвојених тачком-запетом (;).</p><p>Име може садржати следеће посебне "
+"знаке:</p><ul><li><b>?</b> поклапа било који један знак</li><li><b>*</b> "
+"поклапа ниједан или више било којих знакова</li><li><b>[...]</b> поклапа "
+"било који од знакова у заградама</li></ul><p>Примери:</p><ul><li><tt>*.kwd;*."
+"txt</tt> сви фајлови који се завршавају са <tt>.kwd</tt> или <tt>.txt</tt></"
+"li><li><tt>mi[ck]a</tt> и <tt>mika</tt> и <tt>mica</tt></li><li><tt>sed?ica</"
+"tt> сви фајлови који почињу са <tt>sed</tt>, завршавају се са <tt>ica</tt>, "
+"и имају један знак између</li><li><tt>spisak.txt</tt> фајл са тачно овим "
+"именом</li></ul></qt>"
+
+#: kftabdlg.cpp:138
+#, kde-format
+msgid ""
+"<qt>This lets you use the files' index created by the <i>slocate</i> package "
+"to speed-up the search; remember to update the index from time to time "
+"(using <i>updatedb</i>).</qt>"
+msgstr ""
+"<qt>Избором овога користи се индекс фајлова начињен пакетом <tt>slocate</"
+"tt>, што убрзава тражење. Сетите се да ажурирате индекс с времена на време "
+"(наредбом <tt>updatedb</tt>).</qt>"
+
+#: kftabdlg.cpp:182
+#, kde-format
+msgid "Find all files created or &modified:"
+msgstr "Нађи све фајлове створене или &измењене:"
+
+#: kftabdlg.cpp:184
+#, kde-format
+msgid "&between"
+msgstr "&између"
+
+#: kftabdlg.cpp:186
+#, kde-format
+msgid "and"
+msgstr "и"
+
+#: kftabdlg.cpp:208
+#, kde-format
+msgid "File &size is:"
+msgstr "&Величина фајла:"
+
+#: kftabdlg.cpp:221
+#, kde-format
+msgid "Files owned by &user:"
+msgstr "Вл&асник фајлова:"
+
+#: kftabdlg.cpp:226
+#, kde-format
+msgid "Owned by &group:"
+msgstr "Власник је &група:"
+
+#: kftabdlg.cpp:229
+#, kde-format
+msgctxt "file size isn't considered in the search"
+msgid "(none)"
+msgstr "(ниједна)"
+
+#: kftabdlg.cpp:230
+#, kde-format
+msgid "At Least"
+msgstr "најмање"
+
+#: kftabdlg.cpp:231
+#, kde-format
+msgid "At Most"
+msgstr "највише"
+
+#: kftabdlg.cpp:232
+#, kde-format
+msgid "Equal To"
+msgstr "једнако"
+
+#: kftabdlg.cpp:234 kftabdlg.cpp:895
+#, kde-format
+msgid "Byte"
+msgid_plural "Bytes"
+msgstr[0] "бајт"
+msgstr[1] "бајта"
+msgstr[2] "бајтова"
+msgstr[3] "бајт"
+
+#: kftabdlg.cpp:235
+#, kde-format
+msgid "KiB"
+msgstr "KiB"
+
+#: kftabdlg.cpp:236
+#, kde-format
+msgid "MiB"
+msgstr "MiB"
+
+#: kftabdlg.cpp:237
+#, kde-format
+msgid "GiB"
+msgstr "GiB"
+
+#: kftabdlg.cpp:300
+#, kde-format
+msgctxt "label for the file type combobox"
+msgid "File &type:"
+msgstr "&Тип фајла:"
+
+#: kftabdlg.cpp:305
+#, kde-format
+msgid "C&ontaining text:"
+msgstr "&Садржи текст:"
+
+#: kftabdlg.cpp:311
+#, kde-format
+msgid ""
+"<qt>If specified, only files that contain this text are found. Note that not "
+"all file types from the list above are supported. Please refer to the "
+"documentation for a list of supported file types.</qt>"
+msgstr ""
+"<qt>Ако је задат, биће тражени само фајлови који садрже овај текст. Међутим, "
+"ово не подржавају сви типови фајлова са списка изнад; потражите у "
+"документацији списак подржаних.</qt>"
+
+#: kftabdlg.cpp:319
+#, kde-format
+msgid "Case s&ensitive"
+msgstr "Разликуј &величину слова"
+
+#: kftabdlg.cpp:320
+#, kde-format
+msgid "Include &binary files"
+msgstr "Укључи &бинарне фајлове"
+
+#: kftabdlg.cpp:321
+#, kde-format
+msgid "Regular e&xpression"
+msgstr "&Регуларни израз"
+
+#: kftabdlg.cpp:324
+#, kde-format
+msgid ""
+"<qt>This lets you search in any type of file, even those that usually do not "
+"contain text (for example program files and images).</qt>"
+msgstr ""
+"<qt>Уз ово можете тражити у било ком типу фајла, чак и у онима који обично "
+"не садрже текст (нпр. извршни фајлови и слике).</qt>"
+
+#: kftabdlg.cpp:332
+#, kde-format
+msgid "&Edit..."
+msgstr "&Уреди..."
+
+# >> @label:textbox Search metainfo sections: <input> *for:* <input>
+#: kftabdlg.cpp:338
+#, kde-format
+msgctxt "as in search for"
+msgid "fo&r:"
+msgstr "&ово:"
+
+#: kftabdlg.cpp:340
+#, kde-format
+msgid "Search &metainfo sections:"
+msgstr "Тражи у &метаподацима:"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:344
+#, kde-format
+msgid "All Files & Folders"
+msgstr "сви фајлови и фасцикле"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:345
+#, kde-format
+msgid "Files"
+msgstr "фајлови"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:346
+#, kde-format
+msgid "Folders"
+msgstr "фасцикле"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:347
+#, kde-format
+msgid "Symbolic Links"
+msgstr "симболичке везе"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:348
+#, kde-format
+msgid "Special Files (Sockets, Device Files, ...)"
+msgstr "специјални фајлови (сокети, уређајски...)"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:349
+#, kde-format
+msgid "Executable Files"
+msgstr "извршни фајлови"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:350
+#, kde-format
+msgid "SUID Executable Files"
+msgstr "сУИД извршни фајлови"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:351
+#, kde-format
+msgid "All Images"
+msgstr "све слике"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:352
+#, kde-format
+msgid "All Video"
+msgstr "сав видео"
+
+# >> @item:inlistbox File type
+#: kftabdlg.cpp:353
+#, kde-format
+msgid "All Sounds"
+msgstr "сви звукови"
+
+# >> @title:tab
+#: kftabdlg.cpp:435
+#, kde-format
+msgid "Name/&Location"
+msgstr "&Име/локација"
+
+# >> @title:tab
+#: kftabdlg.cpp:436
+#, kde-format
+msgctxt "tab name: search by contents"
+msgid "C&ontents"
+msgstr "&Садржај"
+
+#: kftabdlg.cpp:441
+#, kde-format
+msgid ""
+"<qt>Search within files' specific comments/metainfo<br />These are some "
+"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
+msgstr ""
+"<qt><p>Тражи унутар коментара или метаподатака фајлова. Ево неких примера:</"
+"p><ul><li><b>Аудио фајлови (<tt>mp3</tt>...)</b> тражи у ИД3 ознаци наслов, "
+"албум...</li><li><b>Слике (<tt>png</tt>...)</b> тражи слике одређене "
+"величине, коментара... </li></ul></qt>"
+
+#: kftabdlg.cpp:449
+#, kde-format
+msgid ""
+"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
+msgstr ""
+"<qt><p>Ако је задато, тражи само у овом пољу:</p><ul><li><b>Аудио фајлови "
+"(<tt>mp3</tt>...)</b> може бити наслов, албум...</li><li><b>Слике (<tt>png</"
+"tt>...)</b> само у величини, броју боја... </li></ul></qt>"
+
+#: kftabdlg.cpp:609
+#, kde-format
+msgid "Unable to search within a period which is less than a minute."
+msgstr "Не могу да тражим унутар периода мањег од једног минута."
+
+#: kftabdlg.cpp:620
+#, kde-format
+msgid "The date is not valid."
+msgstr "Датум није исправан."
+
+#: kftabdlg.cpp:622
+#, kde-format
+msgid "Invalid date range."
+msgstr "Неисправан опсег датума."
+
+#: kftabdlg.cpp:624
+#, kde-format
+msgid "Unable to search dates in the future."
+msgstr "Не могу се тражити датуми у будућности."
+
+#: kftabdlg.cpp:696
+#, kde-format
+msgid "Size is too big. Set maximum size value?"
+msgstr "Величина је превелика. Да поставим највећу вредност?"
+
+#: kftabdlg.cpp:696
+#, kde-format
+msgid "Error"
+msgstr "Грешка"
+
+#: kftabdlg.cpp:696
+#, kde-format
+msgid "Set"
+msgstr "Постави"
+
+#: kftabdlg.cpp:696
+#, kde-format
+msgid "Do Not Set"
+msgstr "Не постављај"
+
+#: kftabdlg.cpp:885
+#, kde-format
+msgctxt ""
+"during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
+"minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
+msgid "&during the previous"
+msgid_plural "&during the previous"
+msgstr[0] "за &претходни|/|за $[по-контексту type y &претходну &претходни]"
+msgstr[1] "за &претходна|/|за $[по-контексту type y &претходне &претходна]"
+msgstr[2] "за &претходних|/|за $[по-контексту type y &претходних &претходних]"
+msgstr[3] "за &претходни|/|за $[по-контексту type y &претходну &претходни]"
+
+# наставља се на „за претходних N ...“
+#: kftabdlg.cpp:886
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "минут"
+msgstr[1] "минута"
+msgstr[2] "минута"
+msgstr[3] "минут"
+
+#: kftabdlg.cpp:887
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "сат"
+msgstr[1] "сата"
+msgstr[2] "сати"
+msgstr[3] "сат"
+
+#: kftabdlg.cpp:888
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "day"
+msgid_plural "days"
+msgstr[0] "дан"
+msgstr[1] "дана"
+msgstr[2] "дана"
+msgstr[3] "дан"
+
+#: kftabdlg.cpp:889
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "month"
+msgid_plural "months"
+msgstr[0] "месец"
+msgstr[1] "месеца"
+msgstr[2] "месеци"
+msgstr[3] "месец"
+
+# наставља се на „за претходних N година...“
+#: kftabdlg.cpp:890
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "year"
+msgid_plural "years"
+msgstr[0] "годину"
+msgstr[1] "године"
+msgstr[2] "година"
+msgstr[3] "годину"
+
+#: kquery.cpp:603
+#, kde-format
+msgctxt "@title:window"
+msgid "Error while using locate"
+msgstr "Грешка при извршавању locate"
+
+#: main.cpp:40
+#, kde-format
+msgid "KFind"
+msgstr "К‑налазач"
+
+#: main.cpp:41
+#, kde-format
+msgid "KDE file find utility"
+msgstr "КДЕ‑ова алатка за тражење фајлова"
+
+#: main.cpp:42
+#, kde-format
+msgid "(c) 1998-2017, The KDE Developers"
+msgstr "© 1998–2017, програмери КДЕ‑а"
+
+#: main.cpp:44
+#, fuzzy, kde-format
+#| msgid "Kai-Uwe Broulik"
+msgid "Kai Uwe Broulik"
+msgstr "Каи Уве Броулик"
+
+#: main.cpp:44
+#, kde-format
+msgid "Current Maintainer"
+msgstr "тренутни одржавалац"
+
+#: main.cpp:45
+#, kde-format
+msgid "Eric Coquelle"
+msgstr "Ерик Кокел"
+
+#: main.cpp:45
+#, kde-format
+msgid "Former Maintainer"
+msgstr "бивши одржавалац"
+
+#: main.cpp:46
+#, kde-format
+msgid "Mark W. Webb"
+msgstr "Марк В. Веб"
+
+#: main.cpp:46
+#, kde-format
+msgid "Developer"
+msgstr "програмер"
+
+#: main.cpp:47
+#, kde-format
+msgid "Beppe Grimaldi"
+msgstr "Бепе Грималди"
+
+#: main.cpp:47
+#, kde-format
+msgid "UI Design & more search options"
+msgstr "дизајн сучеља и неке опције претраживања"
+
+#: main.cpp:48
+#, kde-format
+msgid "Martin Hartig"
+msgstr "Мартин Хартиг"
+
+#: main.cpp:49
+#, kde-format
+msgid "Stephan Kulow"
+msgstr "Штефан Кулов"
+
+#: main.cpp:50
+#, kde-format
+msgid "Mario Weilguni"
+msgstr "Марио Вајлгуни"
+
+#: main.cpp:51
+#, kde-format
+msgid "Alex Zepeda"
+msgstr "Алекс Зепеда"
+
+#: main.cpp:52
+#, kde-format
+msgid "Miroslav Flídr"
+msgstr "Мирослав Флидр"
+
+#: main.cpp:53
+#, kde-format
+msgid "Harri Porten"
+msgstr "Хари Портен"
+
+#: main.cpp:54
+#, kde-format
+msgid "Dima Rogozin"
+msgstr "Дима Рогозин"
+
+#: main.cpp:55
+#, kde-format
+msgid "Carsten Pfeiffer"
+msgstr "Карстен Пфајфер"
+
+#: main.cpp:56
+#, kde-format
+msgid "Hans Petter Bieker"
+msgstr "Ханс Петер Бикер"
+
+#: main.cpp:57
+#, kde-format
+msgid "Waldo Bastian"
+msgstr "Валдо Бастијан"
+
+#: main.cpp:57
+#, kde-format
+msgid "UI Design"
+msgstr "дизајн сучеља"
+
+#: main.cpp:58
+#, kde-format
+msgid "Alexander Neundorf"
+msgstr "Александер Нојндорф"
+
+#: main.cpp:59
+#, kde-format
+msgid "Clarence Dang"
+msgstr "Кларенс Данг"
+
+#: main.cpp:60
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Топлица Танасковић,Часлав Илић"
+
+#: main.cpp:60
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "toptan@kde.org.yu,caslav.ilic@gmx.net"
+
+#: main.cpp:66
+#, kde-format
+msgid "Path(s) to search"
+msgstr "Путање за претрагу"

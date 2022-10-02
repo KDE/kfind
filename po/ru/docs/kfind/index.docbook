@@ -1,0 +1,461 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&kfind;">
+  <!ENTITY package "kdebase">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Russian "INCLUDE"
+> 
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+<title
+>Справочное руководство по &kfind;</title>
+
+<authorgroup>
+<author
+>&Dirk.Doerflinger; &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Екатерина</firstname
+><surname
+>Пыжова</surname
+> <affiliation
+><address
+><email
+>haleth@yandex.ru</email
+></address
+></affiliation
+> <contrib
+>Перевод на русский</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Dirk.Doerflinger;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2004-04-11</date>
+<releaseinfo
+>1.20.01</releaseinfo>
+
+<abstract>
+<para
+>&kfind; &mdash; это &kde;-утилита поиска. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeutils</keyword>
+<keyword
+>kfind</keyword>
+<keyword
+>поиск</keyword>
+<keyword
+>поиск</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Введение</title>
+
+<para
+>&kfind; &mdash; это утилита &kde; для поиска файлов. </para>
+
+<sect1 id="starting">
+<title
+>Запуск &kfind;</title>
+
+<para
+>Эта утилита -- инструмент для поиска файлов по названию на вашем компьютере, или файлов по шаблону. Например с помощью неё можно найти файлы определённого типа или только содержашие буквы в названии. Чтобы запустить программу щёлкните на кнопке <guimenuitem
+>Поиск файлов и папок</guimenuitem
+>. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="kfind">
+<title
+>Поиск файлов</title>
+
+<sect1 id="name-tab">
+<title
+>Имя/Расположение</title>
+
+<para
+>При запуске &kfind; появится довольно простое окно. Введите имя файла, который вы ищете, в поле ввода <guilabel
+>Название:</guilabel
+>, а каталог для поиска в поле ввода <quote
+><guilabel
+>Искать в:</guilabel
+></quote
+> или укажите его с помощью кнопки <guibutton
+>Просмотр...</guibutton
+> и нажмите <keycap
+>Enter</keycap
+> или кнопку <guibutton
+>Поиск</guibutton
+>. Если установлен флажок <guilabel
+>Включая подкаталоги</guilabel
+>, поиск будет вестись во всех подкаталогах выбранного каталога. Результаты поиска будут отображены в поле внизу окна. </para>
+
+<para
+>Можно использовать следующие шаблоны: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Звёздочка <quote
+><keycap
+>*</keycap
+></quote
+></term>
+<listitem>
+<para
+>Звёздочка обозначает любое количество (в том числе и ноль) пропущенных символов. Это означает, например, что в результате поиска <filename
+>marc*</filename
+> вы получите <filename
+>marc</filename
+>, <filename
+>marc.png</filename
+> и <filename
+> marc_must_not_read_this.kwd</filename
+>. Поиск <filename
+>mar*.kwd</filename
+>, в свою очередь, приведёт к результатам <filename
+>marketplace.kwd</filename
+> и <filename
+>marc_must_not_read_this.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Вопросительный знак <quote
+><keycap
+>?</keycap
+></quote
+></term>
+<listitem>
+<para
+>В отличие от звёздочки, вопросительный знак означает, что пропущен ровно один символ, так что в результате поиска <filename
+>mar?</filename
+> вы получите <filename
+>marc</filename
+>, а по <filename
+>marc?</filename
+> не найдете ничего, так как наши файлы называются <filename
+>marc</filename
+> и <filename
+>marc.png</filename
+>. В условие поиска можно поместить сколько угодно вопросительных знаков, и вы найдете ровно столько символов. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Разумеется, оба шаблона в условии можно комбинировать. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>Содержимое</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Тип файла</guilabel
+></term>
+<listitem>
+<para
+>Здесь можно уточнить тип нужного файла. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Содержит текст</guilabel
+></term>
+<listitem>
+<para
+>Введите слово или фразу, содержащиеся в файле, который вы ищете. Помните, что еси поиск идёт в большом каталоге или с пометкой <guilabel
+>Включая подкаталоги</guilabel
+>, он может занять много времени. </para>
+
+<note>
+<para
+>Эта опция <emphasis
+>не</emphasis
+> работает для всех файлов перечисленных в списке <guilabel
+>Тип файла</guilabel
+>. Поддерживаются только следующие типы: <itemizedlist>
+<listitem
+><para
+>Текстовые файлы, например исходные коды, и файлы <filename
+>README</filename
+></para
+></listitem>
+<listitem
+><para
+>&kword; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kpresenter; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kspread; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Writer</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Impress</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Calc</para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Поиск с учётом регистра</guilabel
+></term>
+<listitem>
+<para
+>Если вы выберите эту опцию, &kfind; найдёт только те файлы, у которых совпадает регистр. Например <userinput
+>MARC</userinput
+> найдёт только <quote
+>MARC</quote
+> но не <quote
+>Marc</quote
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Регулярное выражение</guilabel
+></term>
+<listitem
+><para
+>Если у вас установлен &kregexpeditor; из пакета kdeutils, этот флажок будет доступен. Установив его, вы сможете вести поиск регулярного выражения. С помощью регулярных выражений можно сделать условия поиска намного сложнее и настолько же эффективнее. Если вы не знакомы с регулярными выражениями, можно нажать на кнопку <guilabel
+>Изменить...</guilabel
+>, чтобы открыть &kregexpeditor;. Этот инструмент позволит вам составить нужный набор условий графически и затем сгенерирует регулярное выражение.</para>
+
+<para
+>&kregexpeditor; &mdash; чрезвычайно полезный инструмент, который может использоваться не только в &kfind;, но и во многих других приложениях &kde;. Подробности можно найти в соответствующем файле помощи.</para>
+</listitem>
+</varlistentry>
+
+<!-- TODO: "Search metainfo sections" -->
+
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>Свойства</title>
+
+<para
+>Дополнительные условия для поиска: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Найти все файлы созданные или изменённые:</guilabel
+></term>
+<listitem>
+<para
+>Здесь вы можете определить две даты, между которыми были изменены или созданы файлы, также можно задать определённый период времени. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Размер файла:</guilabel
+></term>
+<listitem>
+<para
+>В этом поле можно указать, больше или меньше какого значения должен быть найденный файл. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Принадлежащие группе, Принадлежащие пользователю</guilabel
+></term>
+<listitem>
+<para
+>Здесь можно уточнить пользователя и группу. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Авторские права и лицензирование</title>
+
+<para
+>&kfind; </para>
+
+<para
+>Авторские права на программу: </para>
+
+<itemizedlist>
+<title
+>Разработчики</title>
+<listitem>
+<para
+>Мартин Хартиг (Martin Hartig)</para>
+</listitem>
+
+<listitem>
+<para
+>Стефан Кулов (&Stephan.Kulow;) &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Марио Вейлгуни (&Mario.Weilguni;) &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Алекс Зепеда (&Alex.Zepeda;) <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Мирослав Флир (Miroslav Flídr) <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Харри Портен (&Harri.Porten;) &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Дима Рогозин (Dima Rogozin) <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Карстен Пфайффер (&Carsten.Pfeiffer;) &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Ганс-Петтер Бикер (Hans Petter Bieker) <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Вальдо Бастиан (&Waldo.Bastian;) &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>Авторские права на документацию принадлежат Дирку Дёрфлингеру (&Dirk.Doerflinger;) &Dirk.Doerflinger.mail;, 2001</para
+> 
+
+<para
+> (с) 2004 перевод Пыжова Екатерина <email
+>haleth@yandex.ru</email
+> </para
+> 
+&underFDL; &underBSDLicense; </chapter>
+
+<appendix id="installation">
+<title
+>Установка</title>
+
+<sect1 id="getting-kfind">
+<title
+>Как получить &kfind;</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="requirements">
+<title
+>Требования</title>
+
+<para
+>Для использования &kfind; требуется &kde; 3.x. </para>
+
+</sect1>
+
+<sect1 id="compilation">
+<title
+>Компиляция и установка</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->

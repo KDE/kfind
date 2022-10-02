@@ -1,0 +1,722 @@
+# translation of kfindpart.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2007.
+# Ravishankar Shrivastava <raviratlami@aol.in>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kfindpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"PO-Revision-Date: 2009-02-05 18:13+0530\n"
+"Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
+"Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
+"Language: hne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 0.2\n"
+
+#: kfinddlg.cpp:31
+#, fuzzy, kde-format
+#| msgid "Find Files/Folders"
+msgctxt "@title:window"
+msgid "Find Files/Folders"
+msgstr "फाइल/फोल्डर खोजव"
+
+#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#, kde-format
+msgctxt "the application is currently idle, there is no active search"
+msgid "Idle."
+msgstr ""
+
+#. i18n as below
+#: kfinddlg.cpp:133
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "0 items found"
+msgstr "एक फाइल मिलिस"
+
+#: kfinddlg.cpp:172
+#, kde-format
+msgid "Searching..."
+msgstr "खोजत हे..."
+
+#: kfinddlg.cpp:199
+#, kde-format
+msgid "Canceled."
+msgstr ""
+
+#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#, kde-format
+msgid "Error."
+msgstr "गलती."
+
+#: kfinddlg.cpp:202
+#, kde-format
+msgid "Please specify an absolute path in the \"Look in\" box."
+msgstr "किरपा करके, \"ये मां देखव\" डब्बा मं निरपेक्छ (एब्सल्यूट) रस्ता निरधारित करव."
+
+#: kfinddlg.cpp:205
+#, kde-format
+msgid "Could not find the specified folder."
+msgstr "निरधारित फोल्डर नइ खोज सकिस."
+
+#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "one item found"
+msgid_plural "%1 items found"
+msgstr[0] "एक फाइल मिलिस"
+msgstr[1] "%1 फाइल मन ल मिलिस"
+
+#: kfindtreeview.cpp:46
+msgid "Read-write"
+msgstr "पढ़े-लिखे बर"
+
+#: kfindtreeview.cpp:47
+msgid "Read-only"
+msgstr "सिरिफ पढ़े बर"
+
+#: kfindtreeview.cpp:48
+msgid "Write-only"
+msgstr "सिरिफ लिखे बर"
+
+#: kfindtreeview.cpp:49
+msgid "Inaccessible"
+msgstr "नइ पहुंच सके"
+
+#: kfindtreeview.cpp:69
+#, fuzzy, kde-format
+msgctxt "file name column"
+msgid "Name"
+msgstr "नाम"
+
+#: kfindtreeview.cpp:71
+#, fuzzy, kde-format
+msgctxt "name of the containing folder"
+msgid "In Subfolder"
+msgstr "सब-फोल्डर में"
+
+#: kfindtreeview.cpp:73
+#, fuzzy, kde-format
+msgctxt "file size column"
+msgid "Size"
+msgstr "आकार"
+
+#: kfindtreeview.cpp:75
+#, fuzzy, kde-format
+msgctxt "modified date column"
+msgid "Modified"
+msgstr "परिवर्धित"
+
+#: kfindtreeview.cpp:77
+#, fuzzy, kde-format
+msgctxt "file permissions column"
+msgid "Permissions"
+msgstr "अनुमति"
+
+#: kfindtreeview.cpp:79
+#, fuzzy, kde-format
+msgctxt "first matching line of the query string in this file"
+msgid "First Matching Line"
+msgstr "मिलत जुलत पहला लाइन"
+
+#: kfindtreeview.cpp:361
+#, kde-format
+msgid "&Open containing folder(s)"
+msgstr ""
+
+#: kfindtreeview.cpp:365
+#, fuzzy, kde-format
+msgid "&Delete"
+msgstr "मेटाव"
+
+#: kfindtreeview.cpp:369
+#, kde-format
+msgid "&Move to Trash"
+msgstr ""
+
+#: kfindtreeview.cpp:488
+#, fuzzy, kde-format
+#| msgid "Save Results As"
+msgctxt "@title:window"
+msgid "Save Results As"
+msgstr "परिनाम अइसन सहेजव"
+
+#: kfindtreeview.cpp:513
+#, kde-format
+msgid "Unable to save results."
+msgstr "परिनाम मन ल सहेजना संभव नइ हे."
+
+#: kfindtreeview.cpp:531
+#, kde-format
+msgid "KFind Results File"
+msgstr "के-फाइंड परिनाम फाइल"
+
+#: kfindtreeview.cpp:546
+#, fuzzy, kde-format
+#| msgid "Results were saved to file\n"
+msgctxt "%1=filename"
+msgid "Results were saved to: %1"
+msgstr "परिनाम ल फाइल मं सहेजिस\n"
+
+#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "गुन (&P)"
+
+#: kftabdlg.cpp:65
+#, fuzzy, kde-format
+msgctxt "this is the label for the name textfield"
+msgid "&Named:"
+msgstr "नामः (&N)"
+
+#: kftabdlg.cpp:68
+#, kde-format
+msgid "You can use wildcard matching and \";\" for separating multiple names"
+msgstr "आप मन वाइल्ड-कार्ड अउ \";\" के उपयोग बहुत से नांव मन ल अलग करे बर कर सकथो "
+
+#: kftabdlg.cpp:74
+#, kde-format
+msgid "Look &in:"
+msgstr "ये मां देखव: (&i)"
+
+#: kftabdlg.cpp:77
+#, kde-format
+msgid "Include &subfolders"
+msgstr "सब-फोल्डर सामिल करव (&s)"
+
+#: kftabdlg.cpp:78
+#, kde-format
+msgid "Case s&ensitive search"
+msgstr "अक्छर संवेदनसील खोज (&e)"
+
+#: kftabdlg.cpp:79
+#, kde-format
+msgid "&Browse..."
+msgstr "ब्राउज... (&B)"
+
+#: kftabdlg.cpp:80
+#, kde-format
+msgid "&Use files index"
+msgstr "फाइल निर्देसिका उपयोग करव (&U)"
+
+#: kftabdlg.cpp:81
+#, kde-format
+msgid "Show &hidden files"
+msgstr ""
+
+#: kftabdlg.cpp:100
+#, kde-format
+msgid ""
+"<qt>Enter the filename you are looking for. <br />Alternatives may be "
+"separated by a semicolon \";\".<br /><br />The filename may contain the "
+"following special characters:<ul><li><b>?</b> matches any single character</"
+"li><li><b>*</b> matches zero or more of any characters</li><li><b>[...]</b> "
+"matches any of the characters between the braces</li></ul><br />Example "
+"searches:<ul><li><b>*.kwd;*.txt</b> finds all files ending with .kwd or ."
+"txt</li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> finds all "
+"files that start with \"Hel\" and end with \"o\", having one character in "
+"between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
+"li></ul></qt>"
+msgstr ""
+
+#: kftabdlg.cpp:121
+#, kde-format
+msgid ""
+"<qt>This lets you use the files' index created by the <i>slocate</i> package "
+"to speed-up the search; remember to update the index from time to time "
+"(using <i>updatedb</i>).</qt>"
+msgstr ""
+
+#: kftabdlg.cpp:165
+#, kde-format
+msgid "Find all files created or &modified:"
+msgstr "सब्बो बनाय गे या परिवर्धित फाइल मन ल खोजव: (&m)"
+
+#: kftabdlg.cpp:167
+#, kde-format
+msgid "&between"
+msgstr "के बीच मं (&b)"
+
+#: kftabdlg.cpp:169
+#, kde-format
+msgid "and"
+msgstr "अउ"
+
+#: kftabdlg.cpp:191
+#, kde-format
+msgid "File &size is:"
+msgstr "फाइल आकार हे: (&s)"
+
+#: kftabdlg.cpp:204
+#, kde-format
+msgid "Files owned by &user:"
+msgstr "फाइल ए कमइया के मालिकाना मं हे: (&u)"
+
+#: kftabdlg.cpp:209
+#, kde-format
+msgid "Owned by &group:"
+msgstr "समूह के मालिकाना मं हे: (&g)"
+
+#: kftabdlg.cpp:212
+#, fuzzy, kde-format
+msgctxt "file size isn't considered in the search"
+msgid "(none)"
+msgstr "(कुछ नइ)"
+
+#: kftabdlg.cpp:213
+#, kde-format
+msgid "At Least"
+msgstr "कम से कम"
+
+#: kftabdlg.cpp:214
+#, kde-format
+msgid "At Most"
+msgstr "अधिक से अधिक"
+
+#: kftabdlg.cpp:215
+#, kde-format
+msgid "Equal To"
+msgstr "के बराबर"
+
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#, fuzzy, kde-format
+#| msgid "Bytes"
+msgid "Byte"
+msgid_plural "Bytes"
+msgstr[0] "बाइट्स"
+msgstr[1] "बाइट्स"
+
+#: kftabdlg.cpp:218
+#, fuzzy, kde-format
+msgid "KiB"
+msgstr "कि.बा."
+
+#: kftabdlg.cpp:219
+#, fuzzy, kde-format
+msgid "MiB"
+msgstr "मे.बा."
+
+#: kftabdlg.cpp:220
+#, fuzzy, kde-format
+msgid "GiB"
+msgstr "गी.बा."
+
+#: kftabdlg.cpp:283
+#, fuzzy, kde-format
+msgctxt "label for the file type combobox"
+msgid "File &type:"
+msgstr "फाइल किसिमः (&t)"
+
+#: kftabdlg.cpp:288
+#, kde-format
+msgid "C&ontaining text:"
+msgstr "पाठ ल धरे हे: (&o)"
+
+#: kftabdlg.cpp:294
+#, kde-format
+msgid ""
+"<qt>If specified, only files that contain this text are found. Note that not "
+"all file types from the list above are supported. Please refer to the "
+"documentation for a list of supported file types.</qt>"
+msgstr ""
+
+#: kftabdlg.cpp:302
+#, kde-format
+msgid "Case s&ensitive"
+msgstr "अक्छर संवेदनसील (&e)"
+
+#: kftabdlg.cpp:303
+#, kde-format
+msgid "Include &binary files"
+msgstr "बाइनरी फाइल मन ल सामिल करव (&b)"
+
+#: kftabdlg.cpp:306
+#, kde-format
+msgid ""
+"<qt>This lets you search in any type of file, even those that usually do not "
+"contain text (for example program files and images).</qt>"
+msgstr ""
+"<qt>ये आप मन ल कोनो किसम के फाइल मं खोजन देथे , इहां तक कि ओमां घलोक जऊन मं प्रायः "
+"कोई पाठ नइ होथे ( उदाहरन बर, प्रोग्राम फाइल मन मं अउर फोटू मन मं).</qt>"
+
+#: kftabdlg.cpp:313
+#, fuzzy, kde-format
+#| msgid "fo&r:"
+msgctxt "as in search for"
+msgid "fo&r:"
+msgstr "बरः (&r)"
+
+#: kftabdlg.cpp:315
+#, kde-format
+msgid "Search &metainfo sections:"
+msgstr "खोजे के मेटा जानकारी खन्ड: (&m)"
+
+#: kftabdlg.cpp:319
+#, kde-format
+msgid "All Files & Folders"
+msgstr "सब्बो फोल्डर अउ फाइल मन ल"
+
+#: kftabdlg.cpp:320
+#, kde-format
+msgid "Files"
+msgstr "फाइल"
+
+#: kftabdlg.cpp:321
+#, kde-format
+msgid "Folders"
+msgstr "फोल्डर"
+
+#: kftabdlg.cpp:322
+#, kde-format
+msgid "Symbolic Links"
+msgstr "सिंबालिक संकली"
+
+#: kftabdlg.cpp:323
+#, kde-format
+msgid "Special Files (Sockets, Device Files, ...)"
+msgstr "विसिस्ट फाइल मन ल (साकेट्स, उपकरन फाइल मन ल,...)"
+
+#: kftabdlg.cpp:324
+#, kde-format
+msgid "Executable Files"
+msgstr "चलाय जा सके वाले फाइल मन ल"
+
+#: kftabdlg.cpp:325
+#, kde-format
+msgid "SUID Executable Files"
+msgstr "एसयूआईडी चलाय जा सके वाले फाइल मन ल"
+
+#: kftabdlg.cpp:326
+#, kde-format
+msgid "All Images"
+msgstr "सब्बो फोटू"
+
+#: kftabdlg.cpp:327
+#, kde-format
+msgid "All Video"
+msgstr "सब्बो वीडियो"
+
+#: kftabdlg.cpp:328
+#, kde-format
+msgid "All Sounds"
+msgstr "सब्बो अवाज"
+
+#: kftabdlg.cpp:393
+#, kde-format
+msgid "Name/&Location"
+msgstr "नाम/जगह  (&L)"
+
+#: kftabdlg.cpp:394
+#, fuzzy, kde-format
+msgctxt "tab name: search by contents"
+msgid "C&ontents"
+msgstr "विसय चीज (&o)"
+
+#: kftabdlg.cpp:399
+#, kde-format
+msgid ""
+"<qt>Search within files' specific comments/metainfo<br />These are some "
+"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
+msgstr ""
+
+#: kftabdlg.cpp:407
+#, kde-format
+msgid ""
+"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
+msgstr ""
+
+#: kftabdlg.cpp:548
+#, kde-format
+msgid "Unable to search within a period which is less than a minute."
+msgstr "एक समय के भीतर खोजे मं अक्छम जऊन कि एक मिनट से कम हे."
+
+#: kftabdlg.cpp:559
+#, kde-format
+msgid "The date is not valid."
+msgstr "तारीक वैध नइ हे."
+
+#: kftabdlg.cpp:561
+#, kde-format
+msgid "Invalid date range."
+msgstr "अवैध तारीक सीमा."
+
+#: kftabdlg.cpp:563
+#, kde-format
+msgid "Unable to search dates in the future."
+msgstr "भविस्य मं तारीक खोजे मं अक्छम."
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Size is too big. Set maximum size value?"
+msgstr "आकार बहुत बड़ा हे. सबसे अधिक आकार मूल्य सेट करव?"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Error"
+msgstr "गलती"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Set"
+msgstr "सेट"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Do Not Set"
+msgstr "सेट नइ करव"
+
+#: kftabdlg.cpp:818
+#, fuzzy, kde-format
+#| msgid "&during the previous"
+msgctxt ""
+"during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
+"minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
+msgid "&during the previous"
+msgid_plural "&during the previous"
+msgstr[0] "पिछले के समय (&d)"
+msgstr[1] "पिछले के समय (&d)"
+
+#: kftabdlg.cpp:819
+#, fuzzy, kde-format
+#| msgid "minute(s)"
+msgctxt "use date ranges to search files by modified time"
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "मिनट"
+msgstr[1] "मिनट"
+
+#: kftabdlg.cpp:820
+#, fuzzy, kde-format
+#| msgid "hour(s)"
+msgctxt "use date ranges to search files by modified time"
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "घंटा"
+msgstr[1] "घंटा"
+
+#: kftabdlg.cpp:821
+#, fuzzy, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "day"
+msgid_plural "days"
+msgstr[0] "दिन"
+msgstr[1] "दिन"
+
+#: kftabdlg.cpp:822
+#, fuzzy, kde-format
+#| msgid "month(s)"
+msgctxt "use date ranges to search files by modified time"
+msgid "month"
+msgid_plural "months"
+msgstr[0] "महिना"
+msgstr[1] "महिना"
+
+#: kftabdlg.cpp:823
+#, fuzzy, kde-format
+#| msgid "year(s)"
+msgctxt "use date ranges to search files by modified time"
+msgid "year"
+msgid_plural "years"
+msgstr[0] "साल"
+msgstr[1] "साल"
+
+#: kquery.cpp:565
+#, fuzzy, kde-format
+#| msgid "Error while using locate"
+msgctxt "@title:window"
+msgid "Error while using locate"
+msgstr "लोकेट उपयोग करे मं गलती होइस"
+
+#: main.cpp:36
+#, kde-format
+msgid "KFind"
+msgstr "के-फाइंड"
+
+#: main.cpp:37
+#, kde-format
+msgid "KDE file find utility"
+msgstr "केडीई फाइल खोजे के यूटिलिटी"
+
+#: main.cpp:38
+#, fuzzy, kde-format
+#| msgid "(c) 1998-2003, The KDE Developers"
+msgid "(c) 1998-2021, The KDE Developers"
+msgstr "(c) 1998-2003, केडीई बनइया मन"
+
+#: main.cpp:40
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr ""
+
+#: main.cpp:40
+#, kde-format
+msgid "Current Maintainer"
+msgstr "अभी हाल के मेंटेनर"
+
+#: main.cpp:41
+#, kde-format
+msgid "Eric Coquelle"
+msgstr "एरिक काकेल्ले"
+
+#: main.cpp:41
+#, fuzzy, kde-format
+#| msgid "Current Maintainer"
+msgid "Former Maintainer"
+msgstr "अभी हाल के मेंटेनर"
+
+#: main.cpp:42
+#, kde-format
+msgid "Mark W. Webb"
+msgstr "मार्क डबल्यू वेब"
+
+#: main.cpp:42
+#, kde-format
+msgid "Developer"
+msgstr "डेवलपर"
+
+#: main.cpp:43
+#, kde-format
+msgid "Beppe Grimaldi"
+msgstr "बेप्पे गिरमाल्दी"
+
+#: main.cpp:43
+#, kde-format
+msgid "UI Design & more search options"
+msgstr "यूआई डिजाइन अउ अधिक खोजे के विकल्प"
+
+#: main.cpp:44
+#, kde-format
+msgid "Martin Hartig"
+msgstr "मार्टिन हार्टिग"
+
+#: main.cpp:45
+#, kde-format
+msgid "Stephan Kulow"
+msgstr "स्टीफन कुलोव"
+
+#: main.cpp:46
+#, kde-format
+msgid "Mario Weilguni"
+msgstr "मारियो वेइलगुनी"
+
+#: main.cpp:47
+#, kde-format
+msgid "Alex Zepeda"
+msgstr "एलेक्स जेपेदा"
+
+#: main.cpp:48
+#, fuzzy, kde-format
+msgid "Miroslav Flídr"
+msgstr "मिरोस्लाव फ्लेर"
+
+#: main.cpp:49
+#, kde-format
+msgid "Harri Porten"
+msgstr "हेरी पोर्तेन"
+
+#: main.cpp:50
+#, kde-format
+msgid "Dima Rogozin"
+msgstr "दिमा रोगोजऊन"
+
+#: main.cpp:51
+#, kde-format
+msgid "Carsten Pfeiffer"
+msgstr "कार्स्टेन फेइफर"
+
+#: main.cpp:52
+#, kde-format
+msgid "Hans Petter Bieker"
+msgstr "हेंस पीटर बीइकर"
+
+#: main.cpp:53
+#, kde-format
+msgid "Waldo Bastian"
+msgstr "वाल्दो बास्तियान"
+
+#: main.cpp:53
+#, kde-format
+msgid "UI Design"
+msgstr "यूआई डिजाइन"
+
+#: main.cpp:54
+#, kde-format
+msgid "Alexander Neundorf"
+msgstr "अलेक्जेंडर न्यून्दार्फ"
+
+#: main.cpp:55
+#, kde-format
+msgid "Clarence Dang"
+msgstr "क्लेरेंस डैंग"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "raviratlami@aol.in,"
+
+#: main.cpp:63
+#, kde-format
+msgid "Path(s) to search"
+msgstr "खोजे के रस्ता"
+
+#~ msgid "Regular e&xpression"
+#~ msgstr "रेगुलर एक्सप्रेसन (&x)"
+
+#~ msgid "&Edit..."
+#~ msgstr "संपादन... (&E)"
+
+#, fuzzy
+#~ msgctxt "Name of the component that finds things"
+#~ msgid "Find Component"
+#~ msgstr "अवयव खोजव"
+
+#~ msgid "Aborted."
+#~ msgstr "छोड़िस."
+
+#~ msgid "Ready."
+#~ msgstr "तैयार."
+
+#~ msgid "Do you really want to delete the selected file?"
+#~ msgid_plural "Do you really want to delete the %1 selected files?"
+#~ msgstr[0] "का आप मन सचमुच चुने गे फाइल ल मिटाना चाहथो ?"
+#~ msgstr[1] "का आप मन सचमुच ए %1 चुने गे फाइल मन ल मिटाना चाहथो ?"
+
+#~ msgctxt "Menu item"
+#~ msgid "Open"
+#~ msgstr "खोलव"
+
+#~ msgid "Open Folder"
+#~ msgstr "फोल्डर खोलव"
+
+#~ msgid "Copy"
+#~ msgstr "नकल"
+
+#~ msgid "Open With..."
+#~ msgstr "एखर साथ खोलव..."
+
+#~ msgid "Properties"
+#~ msgstr "गुन"
+
+#~ msgid "Selected Files"
+#~ msgstr "चुने गे फाइल मन ल"
+
+#~ msgid "AMiddleLengthText..."
+#~ msgstr "एक-मध्यम-लंबाई पाठ..."

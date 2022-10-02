@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Norwegian-Bokmal "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>KDE brukerhåndbok</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>2010-10-06</date>
+<productname
+>K Desktop Environment</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>filfinnerverktøy for &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>søkesti</option
+></group
+> <arg choice="opt"
+>Generiske KDE-valg</arg
+> <arg choice="opt"
+>Generiske Qt-valg</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beskrivelse</title>
+<para
+>Filfinnerverktøyet er en nyttig metode for å lete etter bestemte filer på datamaskinen, eller for å lete etter filer som har navn som passer med et mønster. Et eksempel på dette kan være å lete etter filer av en bestemt type eller med bestemte bokstaver i filnavnet, eller som inneholder en bestemt tekststreng.</para
+> 
+<para
+>&kfind; er et grafisk verktøy og kjøres normalt ikke fra kommandolinja.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Valg</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>søkesti</option
+></term>
+<listitem
+><para
+>Du kan om du vil oppgi en sti med kolon som skilletegn for å forhåndsutfylle dialogen. Dette kan du bruke til å sette opp forskjellige ikoner på panelet eller skrivebordet for raskt å kjøre søk på forskjellige steder.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Se også</title>
+<para
+>Mer detaljert brukerdokumentasjon finnes fra <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (skriv enten denne <acronym
+>URL</acronym
+>-en inn i &konqueror; eller kjør <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</para>
+</refsect1>
+
+<refsect1>
+<title
+>Utviklere</title>
+<para
+>En liste over bidragsytere finnes i den komplette dokumentasjonen i khelpcenter.</para>
+<para
+>Denne dokumentasjonen ble laget av &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

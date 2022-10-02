@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Brazilian-Portuguese "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Manual do Usuário do KDE</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>06/10/2010</date>
+<productname
+>KDE</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>utilitário de procura de arquivos para o &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>local-procura</option
+></group
+> <arg choice="opt"
+>Opções Genéricas do KDE</arg
+> <arg choice="opt"
+>Opções Genéricas do Qt</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Descrição</title>
+<para
+>A ferramenta para Procurar Arquivos é um método útil para procurar arquivos específicos no seu computador ou para procurar arquivos que correspondam a um padrão. Um exemplo disto poderia incluir a procura de arquivos por um determinado tipo ou com certas letras no nome do arquivo ou que ainda contenham um determinado tipo de texto no seu conteúdo.</para
+> 
+<para
+>O &kfind; é uma ferramenta gráfica e não é normalmente executada a partir da linha de comando.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Opções</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>local-procura</option
+></term>
+<listitem
+><para
+>Você poderá, opcionalmente, fornecer um local pré-definido, separado por dois-pontos (:) para preencher previamente a janela. Você pode usar esta capacidade para configurar ícones diferentes no seu painel ou tela para procurar rapidamente em diversos locais.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Veja também</title>
+<para
+>Existe uma documentação do usuário mais detalhada disponível através do <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (tanto pode inserir este <acronym
+>URL</acronym
+> no &konqueror; como executar o <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autores</title>
+<para
+>Existe uma lista dos responsáveis no manual de usuário completo, que está disponível no 'khelpcenter'.</para>
+<para
+>Esta documentação foi preparada por &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

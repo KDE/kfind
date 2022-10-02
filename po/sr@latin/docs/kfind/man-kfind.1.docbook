@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Serbian-Latin "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Korisnički priručnik <application
+>K-nalazača</application
+></title>
+<author
+><personname
+><firstname
+>Lori</firstname
+> <surname
+>Vots</surname
+></personname
+> &Lauri.Watts.mail;</author>
+<date
+>11.5.2016.</date>
+<releaseinfo
+>Programi KDE-a 16.12</releaseinfo>
+<productname
+>Programi KDE-a</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>KDE-ova alatka za traženje fajlova</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>putanja-pretrage</option
+></group
+> <arg choice="opt"
+>opcije</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Opis</title>
+<para
+><application
+>K-nalazač</application
+> je alatka za traženje određenih fajlova na računaru po imenu, odnosno obrascu imena, i drugim atributima. Na primer, mogu se tražiti fajlovi zadatog tipa, sa zadatim slovima u imenu fajla, ili sa određenim tekstom kao delom sadržaja.</para
+> 
+<para
+><application
+>K-nalazač</application
+> je grafička alatka, obično se ne izvršava iz komandne linije. </para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Opcije</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>searchpath</option
+></term>
+<listitem
+><para
+>Za pretpopunjavanje dijaloga možete zadati putanju od koje počinje pretraga.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Vidi još</title>
+<simplelist>
+<member
+>Detaljnija korisnička dokumentacija dostupna je kroz <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (unesite ovaj URL u <application
+>K-osvajač</application
+> ili izvršite <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</member>
+<member
+><literal
+>kf5options(7)</literal
+></member>
+<member
+><literal
+>qt5options(7)</literal
+></member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Autori</title>
+<para
+>Spisak doprinosilaca dat je u korisničkom priručniku, u <application
+>K-centru-pomoći</application
+>.</para>
+<para
+>Stranicu pripremila <personname
+><firstname
+>Lori</firstname
+> <surname
+>Vots</surname
+></personname
+> &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

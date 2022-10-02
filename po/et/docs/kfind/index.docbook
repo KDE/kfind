@@ -1,0 +1,564 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&kfind;">
+  <!ENTITY package "kdebase">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Estonian  "INCLUDE"
+> 
+]>
+
+<book id="kfind" lang="&language;">
+
+<bookinfo>
+<title
+>&kfind;i käsiraamat</title>
+
+<authorgroup>
+<author
+>&Dirk.Doerflinger; &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Marek</firstname
+><surname
+>Laane</surname
+><affiliation
+><address
+><email
+>bald@smail.ee</email
+></address
+></affiliation
+><contrib
+>Tõlge eesti keelde</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Dirk.Doerflinger;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2013-05-29</date>
+<releaseinfo
+>&kde; 4.11</releaseinfo>
+
+<abstract>
+<para
+>&kfind; on &kde; failiotsimisvahend. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeutils</keyword>
+<keyword
+>kfind</keyword>
+<keyword
+>otsimine</keyword>
+<keyword
+>otsing</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Sissejuhatus</title>
+
+<para
+>&kfind; on &kde; failiotsimisvahend. </para>
+
+<sect1 id="starting">
+<title
+>&kfind;i käivitamine</title>
+
+<para
+>Failide otsimise abivahend on äärmiselt kasulik kindla faili või teatud mustrile vastavate failide leidmiseks arvutis. Nii on võimalik näiteks otsida teatud tüüpi või nimes teatud tähti sisaldavaid faile. Abivahendi saab avada &konqueror;is (failihalduri režiimis), kui valida menüükäsk <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl; <keycap
+>F</keycap
+></keycombo
+></shortcut
+><guimenu
+>Tööriistad</guimenu
+> <guimenuitem
+>Failide otsimine</guimenuitem
+></menuchoice
+>. Kui soovid aga kasutada &kfind;i omaette otsingutööriistana, käivita see &krunner;i vahendusel. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="using-kfind">
+<title
+>Failide otsimine</title>
+
+<sect1 id="name-tab">
+<title
+>Nime/asukoha kaart</title>
+
+<para
+>&kfind;i käivitamisel ilmub üsna lihtne aken. Kirjuta otsitava faili nimi tekstikasti <guilabel
+>Nimi:</guilabel
+>. Soovi korral võib kasutada metamärke ning mitme nime eraldamiseks semikoolonit (<quote
+>;</quote
+>).</para>
+<para
+>Kataloogi, milles otsida, saab kirjutada väljale <guilabel
+>Asukoht:</guilabel
+> või valida klõpsates nupule <guibutton
+>Lehitse...</guibutton
+> (peidetud failide ja kataloogide kuvamist dialoogis saab muuta kiirklahvidega  <keycombo action="simul"
+>&Alt;<keycap
+>.</keycap
+></keycombo
+> või <keycap
+>F8</keycap
+>). Seejärel vajuta &Enter; või klõpsa nupule <guibutton
+>Otsi</guibutton
+>. Nupuga <guibutton
+>Peata</guibutton
+> saab otsimise katkestada. Otsingutulemused võib salvestada &HTML;-vormingusse või lihttekstina nupu <guibutton
+>Salvesta kui...</guibutton
+> abil.</para>
+<para
+>Kui märgitud on <guilabel
+>Kaasa arvatud alamkataloogid</guilabel
+>, otsitakse läbi ka kõik valitud kataloogi alamkataloogid. Kui märkida <guilabel
+>Tõstutundlik otsing</guilabel
+>, leiab &kfind; ainult failid, mille puhul sobivad otsitavaga täpselt ka tähesuurused. Valiku <guilabel
+>Peidetud failide näitamine</guilabel
+> märkimisel kaasatakse otsingusse ka sellised failid. Valik <guilabel
+>Failiindeksi kasutamine</guilabel
+> võimaldab tarvitada failide indeksit, mille loob otsingu kiirendamiseks programm <quote
+>locate</quote
+>.</para>
+<para
+>Faili- või katalooginimede puhul saab kasutada järgmisi metamärke: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Tärn <quote
+><keycap
+>*</keycap
+></quote
+></term>
+<listitem>
+<para
+>Tärn tähistab suvalist hulka puuduvaid märke (ka mitte ühtegi), see tähendab, et &eg; otsingufraas <userinput
+>marek*</userinput
+> annab tulemuseks <filename
+>marek</filename
+>, <filename
+>marek.png</filename
+> ja <filename
+>marek_ei_tohi_seda_lugeda.kwd</filename
+>. Samas <userinput
+>mare*.kwd</userinput
+> leiab näiteks <filename
+>maretädi.kwd</filename
+> ja <filename
+>marek_ei_tohi_seda_lugeda.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Küsimärk <quote
+><keycap
+>?</keycap
+></quote
+></term>
+<listitem>
+<para
+>Erinevalt tärnist tähistab küsimärk täpselt üht puuduvat märki, nii et <userinput
+>mare?</userinput
+> tulemuseks on <filename
+>marek</filename
+>, kuid <userinput
+>marek?</userinput
+> ei leia midagi, sest failide nimed on <filename
+>marek</filename
+> ja <filename
+>marek.png</filename
+>. Küsimärke võib otsingusse kirjutada nii palju, kui süda lustib, pidades aga silmas, et igaühele vastab üks märk. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Kooditabel <quote
+>[...]</quote
+></term>
+<listitem>
+<para
+>Vastab iga sulgudes olev märk. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Mõistagi on kaht või rohkematki metamärki võimalik otsingus ka kombineerida. </para>
+
+<para
+>Otsingutulemusi näeb allolevas kastis. Klõps &HPNga; selles kastis olevale kirjele avab kontekstimenüü, mis sisaldab rohkelt toiminguid, mida on valitud faili või kataloogiga võimalik ette võtta. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>Sisu kaart</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Failitüüp</guilabel
+></term>
+<listitem>
+<para
+>Siin saab määrata, millist tüüpi faile tuleb otsida. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Sisaldab teksti:</guilabel
+></term>
+<listitem>
+<para
+>Kirjuta siia sõna või fraas, mida otsitav fail peab sisaldama. Märkus: Kui rakendad seda võimalust suure kataloogi puhul või kui kaardil <guilabel
+>Nimi/Asukoht</guilabel
+> on ära märgitud kast <guilabel
+>Kaasa arvatud alamkataloogid</guilabel
+>, võib see võtta päris palju aega. </para>
+
+<note>
+<para
+>See võimalus <emphasis
+>ei</emphasis
+> toimi kõigi failide puhul, mille toob ära <guilabel
+>failitüüp</guilabel
+>. Toetatud on ainult järgmised failitüübid: <itemizedlist>
+<listitem
+><para
+>Tekstifailid, &eg; lähtekoodi ja <filename
+>README</filename
+> failid</para
+></listitem>
+<listitem
+><para
+>&kword; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kpresenter; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>&kspread; &gt;= 1.2</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Writer / LibreOffice Writer</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Impress / LibreOffice Impress</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Calc / LibreOffice Calc</para
+></listitem>
+<listitem
+><para
+>Calligra Words</para
+></listitem>
+<listitem
+><para
+>Calligra Sheets</para
+></listitem>
+<listitem
+><para
+>Calligra Stage</para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Tõstutundlik</guilabel
+></term>
+<listitem>
+<para
+>Selle sisselülitamisel leiab &kfind; ainult teksti failides, mis vastavad täpselt otsitavale, &eg; otsingule <userinput
+>MAREK</userinput
+> vastab ainult <quote
+>MAREK</quote
+>, aga mitte <quote
+>Marek</quote
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Regulaarvaldis</guilabel
+></term>
+<listitem
+><para
+>Kui paigaldatud on &kde; Git-serveris playground/utils all leiduv &kregexpeditor;, on võimalik kasutada sellist lisavõimalust. Selle lubamine võimaldab kasutada otsimisel <firstterm
+>regexp</firstterm
+>-i ehk regulaaravaldist. Regulaaravaldis on meetod piiritleda otsingutingimusi, selle võimalused võivad olla päris keerukad, kuid samas väga võimsad. Kui regulaaravaldised sulle väga tuttavad ei ole, võid vajutada nuppu <guibutton
+>Muuda...</guibutton
+>, mis avab &kregexpeditor;i. See lubab sul oma tingimused graafiliselt määrata ning koostab siis sinu eest korrektse avaldise.</para>
+
+<para
+>&kregexpeditor; on väga kasulik vahend, mida saab kasutada ka palju enamate &kde; rakenduste puhul kui pelgalt &kfind;. Rohkem infot selle kohta leiab tema käsiraamatust.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Kaasa arvatud binaarfailid</guilabel
+></term>
+<listitem
+><para
+>See võimaldab otsida suvalist tüüpi faile, ka neid, mis tavaliselt ei sisalda teksti (näiteks programmifailid ja pildid).</para>
+</listitem>
+</varlistentry>
+
+<!-- FIXME: "Search metainfo sections" 
+Search within files' specific comments/metainfo<br/>These are some "
+"examples:<br/><ul
+><li
+><b
+>Audio files (mp3...)</b
+> Search in id3 tag for a "
+"title, an album</li
+><li
+><b
+>Images (png...)</b
+> Search images with a special "
+"resolution, comment...</li
+></ul
+></qt
+>"
+
+"<qt
+>If specified, search only in this field<br/><ul
+><li
+><b
+>Audio files "
+"(mp3...)</b
+> This can be Title, Album...</li
+><li
+><b
+>Images (png...)</b
+> "
+"Search only in Resolution, Bitdepth...</li
+></ul
+></qt
+>"
+Broken in 4.11? kfile4 + kfilemetadatareader give no output
+-->
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>Omaduste kaart</title>
+
+<para
+>Siin saab täpsustada otsingu tingimusi. Valida saab järgmiste piirajate vahel: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Otsitakse faile, mis on loodud või mida on muudetud:</guilabel
+></term>
+<listitem>
+<para
+>Siin saab sisestada kaks kuupäeva, mille vahel peavad failid olema loodud või muudetud, või määrata periood. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Faili suurus on:</guilabel
+></term>
+<listitem>
+<para
+>Siin saab määrata otsitava faili vähima või suurima suuruse. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Faili omanikuks on kasutaja</guilabel
+> ja <guilabel
+>Faili grupp on</guilabel
+></term>
+<listitem>
+<para
+>Siin saab määrata faili(de) kasutaja ja grupi nime. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Autorid ja litsents</title>
+
+<para
+>&kfind; </para>
+
+<para
+>Rakenduse autoriõigus: </para>
+
+<itemizedlist>
+<title
+>Arendajad</title>
+<listitem>
+<para
+>Martin Hartig</para>
+</listitem>
+
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Mario.Weilguni; &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Alex.Zepeda; <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Miroslav Flídr <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Harri.Porten; &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Dima Rogozin <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Hans Petter Bieker <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Waldo.Bastian; &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>Dokumentatsiooni autoriõigus 2001: &Dirk.Doerflinger; &Dirk.Doerflinger.mail;</para
+> 
+
+<para
+>Tõlge eesti keelde: Marek Laane <email
+>bald@smail.ee</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Paigaldamine</title>
+
+<sect1 id="getting-kfind">
+<title
+>&kfind;i hankimine</title>
+&install.intro.documentation; </sect1>
+
+<sect1 id="requirements">
+<title
+>Nõuded</title>
+
+<para
+>&kfind;i edukaks kasutamiseks on vajalik &kde; 4.x. </para>
+
+</sect1>
+
+<sect1 id="compilation">
+<title
+>Kompileerimine ja paigaldamine</title>
+&install.compile.documentation; </sect1>
+
+</appendix>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->

@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Lithuanian "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>KDE Naudotojo vadovas</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>2010-10-06</date>
+<productname
+>K darbastalio aplinka</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>&kde; failų paieškos pagalbininkas</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>searchpath</option
+></group
+> <arg choice="opt"
+>Bendros KDE parinktys</arg
+> <arg choice="opt"
+>Bendros Qt parinktys</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Aprašymas</title>
+<para
+>Failų paieškos įrankį patogu naudoti, kai norite rasti savo kompiuteryje rasti konkretų failą, arba ieškote failų, atitinkančių šabloną. Pavzydžiui ieškant konkretaus tipo failų, ar failų su konkrečia fraze jų pavadinime ar turinyje.</para
+> 
+<para
+>&kfind; yra grafinės sąsajos įrankis ir paprastai jie nėra paleidinėjamas iš komandinės eilutės.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Parinktys</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>searchpath</option
+></term>
+<listitem
+><para
+>Galite nurodyti dvitaškiais atskirtus kelius, kuriais bus užpildyti dialogo laukai. Šią galimybę galite panaudoti sukurdami ant darbastalio kelis paieškos ženkliukus, kurie paleistų paiešką skirtingose vietose.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Taip pat žiūrėkite</title>
+<para
+>Detalesnę naudotojo informaciją rasite <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (arba įrašykite šią nuorodą į &konqueror;, arba paleiskite <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</para>
+</refsect1>
+
+<refsect1>
+<title
+>Autoriai</title>
+<para
+>Pagalbininkų sąrašą galite rasti pilname vadove, esančiame pagalbos centre.</para>
+<para
+>Dokumentą paruošė &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>

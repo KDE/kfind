@@ -1,0 +1,733 @@
+# translation of kfindpart.po to Thai
+# Copyright (C) 2003, 2005, 2008 Free Software Foundation, Inc.
+#
+# Thanomsub Noppaburana <donga_n@yahoo.com>, 2003.
+# Sahachart Anukulkitch <drrider@gmail.com>, 2005.
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kfindpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"PO-Revision-Date: 2010-03-27 23:10+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: kfinddlg.cpp:31
+#, fuzzy, kde-format
+#| msgid "Find Files/Folders"
+msgctxt "@title:window"
+msgid "Find Files/Folders"
+msgstr "ค้นหาแฟ้ม/โฟลเดอร์"
+
+#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#, kde-format
+msgctxt "the application is currently idle, there is no active search"
+msgid "Idle."
+msgstr "ว่าง"
+
+#. i18n as below
+#: kfinddlg.cpp:133
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "0 items found"
+msgstr "ค้นพบ %1 แฟ้ม"
+
+#: kfinddlg.cpp:172
+#, kde-format
+msgid "Searching..."
+msgstr "กำลังค้นหา..."
+
+#: kfinddlg.cpp:199
+#, kde-format
+msgid "Canceled."
+msgstr "ถูกยกเลิก"
+
+#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#, kde-format
+msgid "Error."
+msgstr "ผิดพลาด"
+
+#: kfinddlg.cpp:202
+#, kde-format
+msgid "Please specify an absolute path in the \"Look in\" box."
+msgstr "กรุณาระบุพาธแบบสัมบูรณ์ในช่องข้อมูล \"ค้นหาใน\""
+
+#: kfinddlg.cpp:205
+#, kde-format
+msgid "Could not find the specified folder."
+msgstr "ไม่สามารถค้นหาโฟลเดอร์ที่ระบุได้"
+
+#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#, fuzzy, kde-format
+#| msgid "one file found"
+#| msgid_plural "%1 files found"
+msgid "one item found"
+msgid_plural "%1 items found"
+msgstr[0] "ค้นพบ %1 แฟ้ม"
+
+#: kfindtreeview.cpp:46
+msgid "Read-write"
+msgstr "อ่านได้-เขียนได้"
+
+#: kfindtreeview.cpp:47
+msgid "Read-only"
+msgstr "อ่านได้อย่างเดียว"
+
+#: kfindtreeview.cpp:48
+msgid "Write-only"
+msgstr "เขียนได้อย่างเดียว"
+
+#: kfindtreeview.cpp:49
+msgid "Inaccessible"
+msgstr "เข้าใช้งานไม่ได้"
+
+#: kfindtreeview.cpp:69
+#, kde-format
+msgctxt "file name column"
+msgid "Name"
+msgstr "ชื่อ"
+
+#: kfindtreeview.cpp:71
+#, kde-format
+msgctxt "name of the containing folder"
+msgid "In Subfolder"
+msgstr "ในโฟลเดอร์ย่อย"
+
+#: kfindtreeview.cpp:73
+#, kde-format
+msgctxt "file size column"
+msgid "Size"
+msgstr "ขนาด"
+
+#: kfindtreeview.cpp:75
+#, kde-format
+msgctxt "modified date column"
+msgid "Modified"
+msgstr "แก้ไขเมื่อ"
+
+#: kfindtreeview.cpp:77
+#, kde-format
+msgctxt "file permissions column"
+msgid "Permissions"
+msgstr "สิทธิ์ที่อนุญาต"
+
+#: kfindtreeview.cpp:79
+#, kde-format
+msgctxt "first matching line of the query string in this file"
+msgid "First Matching Line"
+msgstr "บรรทัดแรกที่เข้าเงื่อนไข"
+
+#: kfindtreeview.cpp:361
+#, kde-format
+msgid "&Open containing folder(s)"
+msgstr "เ&ปิดโฟลเดอร์ที่เก็บ"
+
+#: kfindtreeview.cpp:365
+#, kde-format
+msgid "&Delete"
+msgstr "&ลบ"
+
+#: kfindtreeview.cpp:369
+#, kde-format
+msgid "&Move to Trash"
+msgstr "&ทิ้งลงถังขยะ"
+
+#: kfindtreeview.cpp:488
+#, fuzzy, kde-format
+#| msgid "Save Results As"
+msgctxt "@title:window"
+msgid "Save Results As"
+msgstr "บันทึกผลการค้นหาเป็น"
+
+#: kfindtreeview.cpp:513
+#, kde-format
+msgid "Unable to save results."
+msgstr "ไม่สามารถบันทึกผลการค้นหาได้"
+
+#: kfindtreeview.cpp:531
+#, kde-format
+msgid "KFind Results File"
+msgstr "แฟ้มผลการค้นหาของ KFind"
+
+#: kfindtreeview.cpp:546
+#, kde-format
+msgctxt "%1=filename"
+msgid "Results were saved to: %1"
+msgstr "ผลการค้นหาถูกบันทึกไปยัง: %1"
+
+#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&คุณสมบัติ"
+
+#: kftabdlg.cpp:65
+#, kde-format
+msgctxt "this is the label for the name textfield"
+msgid "&Named:"
+msgstr "&ชื่อ:"
+
+#: kftabdlg.cpp:68
+#, kde-format
+msgid "You can use wildcard matching and \";\" for separating multiple names"
+msgstr "คุณสามารถใช้ไวล์การ์ด และเครื่องหมาย \";\" เพื่อแยกการค้นหาชื่อหลาย ๆ แบบได้"
+
+#: kftabdlg.cpp:74
+#, kde-format
+msgid "Look &in:"
+msgstr "ค้นหาใน:"
+
+#: kftabdlg.cpp:77
+#, kde-format
+msgid "Include &subfolders"
+msgstr "ค้นหาในโฟลเดอร์ย่อยด้วย"
+
+#: kftabdlg.cpp:78
+#, kde-format
+msgid "Case s&ensitive search"
+msgstr "ค้นหาโดยแยกแยะตัวพิมพ์เล็ก-ใหญ่"
+
+#: kftabdlg.cpp:79
+#, kde-format
+msgid "&Browse..."
+msgstr "เ&ลือก..."
+
+#: kftabdlg.cpp:80
+#, kde-format
+msgid "&Use files index"
+msgstr "ใ&ช้ดัชนีของแฟ้ม"
+
+#: kftabdlg.cpp:81
+#, kde-format
+msgid "Show &hidden files"
+msgstr "แสดงแฟ้ม&ที่ซ่อนไว้"
+
+#: kftabdlg.cpp:100
+#, kde-format
+msgid ""
+"<qt>Enter the filename you are looking for. <br />Alternatives may be "
+"separated by a semicolon \";\".<br /><br />The filename may contain the "
+"following special characters:<ul><li><b>?</b> matches any single character</"
+"li><li><b>*</b> matches zero or more of any characters</li><li><b>[...]</b> "
+"matches any of the characters between the braces</li></ul><br />Example "
+"searches:<ul><li><b>*.kwd;*.txt</b> finds all files ending with .kwd or ."
+"txt</li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> finds all "
+"files that start with \"Hel\" and end with \"o\", having one character in "
+"between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
+"li></ul></qt>"
+msgstr ""
+"<qt>เติมชื่อแฟ้มที่คุณต้องการค้นหา <br />โดยสามารถหาชื่ออื่นร่วมได้ด้วย "
+"โดยแยกด้วยเครื่องหมายอัฒภาค \";\"<br /><br />ชื่อแฟ้มอาจจะใช้อักขระพิเศษเหล่านี้ได้: "
+"<ul><li><b>?</b>เท่ากับตัวอักษรใดก็ได้หนึ่งตัว</li> <li><b>*</b> เท่ากับตัวอักษรใด ๆ "
+"กี่ตัวก็ได้</li><li><b>[...]</b> มีอักขระบางตัวที่อยู่ในวงเล็บเหลี่ยม</li></ul> <br /"
+">ตัวอย่างการค้นหา:<ul> <li><b>*.kwd;*.txt</b> ค้นหาทุกแฟ้มที่ลงท้ายชื่อด้วย .kwd หรือ ."
+"txt</li><li><b>โด[ดน]</b> ค้นหาคำว่า โดด และ โดน</li><li><b>เอก?าร</b> "
+"ค้นหาทุกแฟ้มที่ขึ้นต้นด้วยคำว่า \"เอก\" และลงท้ายด้วย \"าร\" โดยมีตัวอักษรใดก็ได้หนึ่งตัว "
+"อยู่ระหว่าง 'เอก' กับ 'าร'</li><li><b>เอกสารของฉัน.kwd</b> "
+"ค้นหาแฟ้มที่ชื่อเหมือนกับที่กำหนดทุกตัว</li></ul></qt>"
+
+#: kftabdlg.cpp:121
+#, kde-format
+msgid ""
+"<qt>This lets you use the files' index created by the <i>slocate</i> package "
+"to speed-up the search; remember to update the index from time to time "
+"(using <i>updatedb</i>).</qt>"
+msgstr ""
+"<qt>สิ่งนี้จะอนุญาตให้คุณใช้ดัชนีแฟ้มซึ่งสร้างขึ้นมาโดยแพกเกจ <i>slocate</i> "
+"เพื่อเพิ่มความเร็วในการค้นหา อย่าลืมทำการปรับปรุงดัชนีให้ทันสมัยเป็นระยะ ๆ (โดยใช่้ "
+"<i>updatedb</i>) </qt>"
+
+#: kftabdlg.cpp:165
+#, kde-format
+msgid "Find all files created or &modified:"
+msgstr "ค้นหาทุกแฟ้มที่ถูกสร้างหรือถูกแ&ก้ไข:"
+
+#: kftabdlg.cpp:167
+#, kde-format
+msgid "&between"
+msgstr "ในช่วง&ระหว่าง"
+
+#: kftabdlg.cpp:169
+#, kde-format
+msgid "and"
+msgstr "ถึง"
+
+#: kftabdlg.cpp:191
+#, kde-format
+msgid "File &size is:"
+msgstr "แฟ้มมีข&นาด:"
+
+#: kftabdlg.cpp:204
+#, kde-format
+msgid "Files owned by &user:"
+msgstr "แฟ้มเป็นของ&ผู้ใช้:"
+
+#: kftabdlg.cpp:209
+#, kde-format
+msgid "Owned by &group:"
+msgstr "เป็นของ&กลุ่ม:"
+
+#: kftabdlg.cpp:212
+#, kde-format
+msgctxt "file size isn't considered in the search"
+msgid "(none)"
+msgstr "(ไม่ระบุ)"
+
+#: kftabdlg.cpp:213
+#, kde-format
+msgid "At Least"
+msgstr "อย่างน้อย"
+
+#: kftabdlg.cpp:214
+#, kde-format
+msgid "At Most"
+msgstr "อย่างมาก"
+
+#: kftabdlg.cpp:215
+#, kde-format
+msgid "Equal To"
+msgstr "เท่ากับ"
+
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#, kde-format
+msgid "Byte"
+msgid_plural "Bytes"
+msgstr[0] "ไบต์"
+
+#: kftabdlg.cpp:218
+#, kde-format
+msgid "KiB"
+msgstr "กิโลไบต์"
+
+#: kftabdlg.cpp:219
+#, kde-format
+msgid "MiB"
+msgstr "เมกะไบต์"
+
+#: kftabdlg.cpp:220
+#, kde-format
+msgid "GiB"
+msgstr "กิกะไบต์"
+
+#: kftabdlg.cpp:283
+#, kde-format
+msgctxt "label for the file type combobox"
+msgid "File &type:"
+msgstr "ประเ&ภทแฟ้ม:"
+
+#: kftabdlg.cpp:288
+#, kde-format
+msgid "C&ontaining text:"
+msgstr "บรร&จุข้อความ:"
+
+#: kftabdlg.cpp:294
+#, kde-format
+msgid ""
+"<qt>If specified, only files that contain this text are found. Note that not "
+"all file types from the list above are supported. Please refer to the "
+"documentation for a list of supported file types.</qt>"
+msgstr ""
+"<qt>หากมีการระบุ จะทำการค้นหาแฟ้มที่มีข้อความที่ระบุในช่องนี้เท่านั้น โปรดสังเกตว่า "
+"ไม่ได้มีการรองรับชนิดของแฟ้มในช่องรายการด้านบนทั้งหมด โปรดอ้างอิงเอกสารคู่มือ "
+"เพื่อดูรายการชนิดของแฟ้มที่รองรับ</qt>"
+
+#: kftabdlg.cpp:302
+#, kde-format
+msgid "Case s&ensitive"
+msgstr "แยกแยะตัว&พิมพ์เล็ก-ใหญ่"
+
+#: kftabdlg.cpp:303
+#, kde-format
+msgid "Include &binary files"
+msgstr "รวมแฟ้มภาษาเ&ครื่องด้วย"
+
+#: kftabdlg.cpp:306
+#, kde-format
+msgid ""
+"<qt>This lets you search in any type of file, even those that usually do not "
+"contain text (for example program files and images).</qt>"
+msgstr ""
+"<qt>ตัวเลือกนี้ จะอนุญาตให้คุณค้นหาภายในแฟ้มชนิดใดก็ได้ แม้ว่าจะเป็นแฟ้มที่ไม่ได้บรรจุข้อความเอาไว้ "
+"(ตัวอย่างเช่น แฟ้มเรียกโปรแกรม หรือแฟ้มรูปภาพ)</qt>"
+
+#: kftabdlg.cpp:313
+#, fuzzy, kde-format
+#| msgid "fo&r:"
+msgctxt "as in search for"
+msgid "fo&r:"
+msgstr "สำ&หรับ:"
+
+#: kftabdlg.cpp:315
+#, kde-format
+msgid "Search &metainfo sections:"
+msgstr "ค้นหาในส่วนข้อมูล&กำกับ:"
+
+#: kftabdlg.cpp:319
+#, kde-format
+msgid "All Files & Folders"
+msgstr "แฟ้มและโฟลเดอร์ทั้งหมด"
+
+#: kftabdlg.cpp:320
+#, kde-format
+msgid "Files"
+msgstr "แฟ้มทั้งหมด"
+
+#: kftabdlg.cpp:321
+#, kde-format
+msgid "Folders"
+msgstr "โฟลเดอร์ทั้งหมด"
+
+#: kftabdlg.cpp:322
+#, kde-format
+msgid "Symbolic Links"
+msgstr "แฟ้มเชื่อมโยงแบบสัญลักษณ์"
+
+#: kftabdlg.cpp:323
+#, kde-format
+msgid "Special Files (Sockets, Device Files, ...)"
+msgstr "แฟ้มพิเศษ (ซ็อกเกต, แฟ้มอุปกรณ์...) ทั้งหมด"
+
+#: kftabdlg.cpp:324
+#, kde-format
+msgid "Executable Files"
+msgstr "แฟ้มประมวลผลได้ทั้งหมด"
+
+#: kftabdlg.cpp:325
+#, kde-format
+msgid "SUID Executable Files"
+msgstr "แฟ้มประมวลผลได้แบบ SUID ทั้งหมด"
+
+#: kftabdlg.cpp:326
+#, kde-format
+msgid "All Images"
+msgstr "แฟ้มรูปภาพทั้งหมด"
+
+#: kftabdlg.cpp:327
+#, kde-format
+msgid "All Video"
+msgstr "แฟ้มวิดีโอทั้งหมด"
+
+#: kftabdlg.cpp:328
+#, kde-format
+msgid "All Sounds"
+msgstr "แฟ้มเสียงทั้งหมด"
+
+#: kftabdlg.cpp:393
+#, kde-format
+msgid "Name/&Location"
+msgstr "ชื่อ/ตำแหน่ง"
+
+#: kftabdlg.cpp:394
+#, kde-format
+msgctxt "tab name: search by contents"
+msgid "C&ontents"
+msgstr "เ&นื้อหา"
+
+#: kftabdlg.cpp:399
+#, kde-format
+msgid ""
+"<qt>Search within files' specific comments/metainfo<br />These are some "
+"examples:<br /><ul><li><b>Audio files (mp3...)</b> Search in id3 tag for a "
+"title, an album</li><li><b>Images (png...)</b> Search images with a special "
+"resolution, comment...</li></ul></qt>"
+msgstr ""
+"<qt>ค้นหาภายในส่วนหมายเหตุ/ข้อมูลกำกับของแฟ้ม<br />ตัวอย่างเช่น:<br /"
+"><ul><li><b>แฟ้มเสียง (mp3...)</b> จะค้นหาในส่วนแท็ก id3 สำหรับชื่อเพลง, ชื่ออัลบั้ม</"
+"li><li><b>แฟ้มภาพ (png...)</b> ค้นหาภาพที่มีความละเอียดที่กำหนด, หมายเหตุ...</li></"
+"ul></qt>"
+
+#: kftabdlg.cpp:407
+#, kde-format
+msgid ""
+"<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
+"(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
+"Search only in Resolution, Bitdepth...</li></ul></qt>"
+msgstr ""
+"<qt>หากมีการระบุไว้ จะมีการค้นหาเฉพาะในช่องข้อมูลนี้<br /><ul><li><b>แฟ้มเสียง (mp3...)</"
+"b> อาจเป็นชื่อเพลง, ชื่ออัลบั้ม</li><li><b>แฟ้มภาพ (png...)</b> ค้นหาความละเอียดที่กำหนด, "
+"ความลึกสี...</li></ul></qt>"
+
+#: kftabdlg.cpp:548
+#, kde-format
+msgid "Unable to search within a period which is less than a minute."
+msgstr "ไม่สามารถหาในช่วงที่น้อยกว่าหนึ่งนาทีได้"
+
+#: kftabdlg.cpp:559
+#, kde-format
+msgid "The date is not valid."
+msgstr "วันที่ใช้งานไม่ได้"
+
+#: kftabdlg.cpp:561
+#, kde-format
+msgid "Invalid date range."
+msgstr "ช่วงวันที่ใช้งานไม่ได้"
+
+#: kftabdlg.cpp:563
+#, kde-format
+msgid "Unable to search dates in the future."
+msgstr "ไม่สามารถค้นหาช่วงวันที่ในอนาคตได้ !"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Size is too big. Set maximum size value?"
+msgstr "มีขนาดใหญ่เกินไป... จะตั้งค่าขนาดสูงสุดหรือไม่ ?"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Error"
+msgstr "ผิดพลาด"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Set"
+msgstr "ตั้งค่า"
+
+#: kftabdlg.cpp:635
+#, kde-format
+msgid "Do Not Set"
+msgstr "ไม่ต้องตั้งค่า"
+
+#: kftabdlg.cpp:818
+#, kde-format
+msgctxt ""
+"during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
+"minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
+msgid "&during the previous"
+msgid_plural "&during the previous"
+msgstr[0] "ใน&ช่วง"
+
+#: kftabdlg.cpp:819
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "นาที"
+
+#: kftabdlg.cpp:820
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "ชั่วโมง"
+
+#: kftabdlg.cpp:821
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "day"
+msgid_plural "days"
+msgstr[0] "วัน"
+
+#: kftabdlg.cpp:822
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "month"
+msgid_plural "months"
+msgstr[0] "เดือน"
+
+#: kftabdlg.cpp:823
+#, kde-format
+msgctxt "use date ranges to search files by modified time"
+msgid "year"
+msgid_plural "years"
+msgstr[0] "ปี"
+
+#: kquery.cpp:565
+#, fuzzy, kde-format
+#| msgid "Error while using locate"
+msgctxt "@title:window"
+msgid "Error while using locate"
+msgstr "เกิดข้อผิดพลาดขณะใช้คำสั่ง locate"
+
+#: main.cpp:36
+#, kde-format
+msgid "KFind"
+msgstr "KFind"
+
+#: main.cpp:37
+#, kde-format
+msgid "KDE file find utility"
+msgstr "เครื่องมือค้นหาแฟ้มของ KDE"
+
+#: main.cpp:38
+#, fuzzy, kde-format
+#| msgid "(c) 1998-2003, The KDE Developers"
+msgid "(c) 1998-2021, The KDE Developers"
+msgstr "สงวนลิขสิทธิ์ (c) 1998-2003, กลุ่มผู้พัฒนา KDE"
+
+#: main.cpp:40
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr ""
+
+#: main.cpp:40
+#, kde-format
+msgid "Current Maintainer"
+msgstr "ผู้ดูแลในปัจจุบัน"
+
+#: main.cpp:41
+#, kde-format
+msgid "Eric Coquelle"
+msgstr "Eric Coquelle"
+
+#: main.cpp:41
+#, fuzzy, kde-format
+#| msgid "Current Maintainer"
+msgid "Former Maintainer"
+msgstr "ผู้ดูแลในปัจจุบัน"
+
+#: main.cpp:42
+#, kde-format
+msgid "Mark W. Webb"
+msgstr "Mark W. Webb"
+
+#: main.cpp:42
+#, kde-format
+msgid "Developer"
+msgstr "ผู้พัฒนา"
+
+#: main.cpp:43
+#, kde-format
+msgid "Beppe Grimaldi"
+msgstr "Beppe Grimaldi"
+
+#: main.cpp:43
+#, kde-format
+msgid "UI Design & more search options"
+msgstr "ออกแบบส่วนติดต่อผู้ใช้และตัวเลือกการค้นหาเพิ่มเติม"
+
+#: main.cpp:44
+#, kde-format
+msgid "Martin Hartig"
+msgstr "Martin Hartig"
+
+#: main.cpp:45
+#, kde-format
+msgid "Stephan Kulow"
+msgstr "Stephan Kulow"
+
+#: main.cpp:46
+#, kde-format
+msgid "Mario Weilguni"
+msgstr "Mario Weilguni"
+
+#: main.cpp:47
+#, kde-format
+msgid "Alex Zepeda"
+msgstr "Alex Zepeda"
+
+#: main.cpp:48
+#, kde-format
+msgid "Miroslav Flídr"
+msgstr "Miroslav Flídr"
+
+#: main.cpp:49
+#, kde-format
+msgid "Harri Porten"
+msgstr "Harri Porten"
+
+#: main.cpp:50
+#, kde-format
+msgid "Dima Rogozin"
+msgstr "Dima Rogozin"
+
+#: main.cpp:51
+#, kde-format
+msgid "Carsten Pfeiffer"
+msgstr "Carsten Pfeiffer"
+
+#: main.cpp:52
+#, kde-format
+msgid "Hans Petter Bieker"
+msgstr "Hans Petter Bieker"
+
+#: main.cpp:53
+#, kde-format
+msgid "Waldo Bastian"
+msgstr "Waldo Bastian"
+
+#: main.cpp:53
+#, kde-format
+msgid "UI Design"
+msgstr "ออกแบบส่วนติดต่อผู้ใช้"
+
+#: main.cpp:54
+#, kde-format
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: main.cpp:55
+#, kde-format
+msgid "Clarence Dang"
+msgstr "Clarence Dang"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ถนอมทรัพย์ นพบูรณ์, สหชาติ อนุกูลกิจ"
+
+#: main.cpp:56
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "donga.nb@gmail.com, drrider@gmail.com"
+
+#: main.cpp:63
+#, kde-format
+msgid "Path(s) to search"
+msgstr "พาธที่จะใช้ในการค้นหา"
+
+#~ msgid "Regular e&xpression"
+#~ msgstr "เงื่อนไ&ขการค้นหา (RegEx)"
+
+#~ msgid "&Edit..."
+#~ msgstr "แ&ก้ไข..."
+
+#~ msgid "HTML page"
+#~ msgstr "หน้าเว็บ HTML"
+
+#~ msgid "Text file"
+#~ msgstr "แฟ้มข้อความ"
+
+#~ msgctxt "Name of the component that finds things"
+#~ msgid "Find Component"
+#~ msgstr "ค้นหาส่วนประกอบ"
+
+#~ msgid "Aborted."
+#~ msgstr "ถูกยกเลิก"
+
+#~ msgid "Ready."
+#~ msgstr "พร้อม"
+
+#~ msgid "Do you really want to delete the selected file?"
+#~ msgid_plural "Do you really want to delete the %1 selected files?"
+#~ msgstr[0] "คุณต้องการจะลบแฟ้ม %1 แฟ้มที่เลือกไว้หรือไม่ ?"
+
+#~ msgctxt "Menu item"
+#~ msgid "Open"
+#~ msgstr "เปิด"
+
+#~ msgid "Open Folder"
+#~ msgstr "เปิดโฟลเดอร์"
+
+#~ msgid "Copy"
+#~ msgstr "คัดลอก"
+
+#~ msgid "Open With..."
+#~ msgstr "เปิดใช้ด้วย..."
+
+#~ msgid "Properties"
+#~ msgstr "คุณสมบัติ"
+
+#~ msgid "Selected Files"
+#~ msgstr "แฟ้มที่เลือกไว้"
+
+#~ msgid "AMiddleLengthText..."
+#~ msgstr "AMiddleLengthText..."

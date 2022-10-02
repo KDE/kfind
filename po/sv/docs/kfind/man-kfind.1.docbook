@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Swedish "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>Kfind användarhandbok</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>2016-11-05</date>
+<releaseinfo
+>Program 16.12</releaseinfo>
+<productname
+>KDE Program</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>filsökningsverktyg av &kde;</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>sökväg</option
+></group
+> <arg choice="opt"
+>väljare</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Beskrivning</title>
+<para
+>Verktyget för filsökning är ett användbart sätt att söka efter särskilda filer på datorn, eller för att söka efter filer som matchar ett mönster. Ett exempel på det skulle kunna inkludera sökning efter filer av en viss typ eller med vissa bokstäver i filnamnet, eller som innehåller ett visst textstycke.</para
+> 
+<para
+>&kfind; är ett grafiskt verktyg, och körs normalt inte från kommandoraden.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Väljare</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>sökväg</option
+></term>
+<listitem
+><para
+>En sökväg kan valfritt anges för att fylla i dialogrutan i förväg med var sökningen ska börja.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Se också</title>
+<simplelist>
+<member
+>Mer detaljerad användardokumentation är tillgänglig med <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (skriv antingen in webbadressen i &konqueror;, eller kör <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</member>
+<member
+>kf5options(7)</member>
+<member
+>qt5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Upphovsmän</title>
+<para
+>En lista med bidragsgivare är tillgänglig i den fullständiga användarhandboken tillgänglig i Hjälpcentralen.</para>
+<para
+>Den här dokumentationen är framställd av &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>
