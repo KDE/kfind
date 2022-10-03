@@ -97,7 +97,7 @@ msgstr "Nom"
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
-msgstr "A la subcarpeta"
+msgstr "En la subcarpeta"
 
 #: kfindtreeview.cpp:73
 #, kde-format
