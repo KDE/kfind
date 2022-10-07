@@ -695,9 +695,3 @@ msgstr ""
 #, kde-format
 msgid "Path(s) to search"
 msgstr "検索するパス"
-
-#~ msgid "Regular e&xpression"
-#~ msgstr "正規表現(&X)"
-
-#~ msgid "&Edit..."
-#~ msgstr "編集(&E)..."
