@@ -37,6 +37,7 @@
 #include <algorithm>
 
 #include "kquery.h"
+#include <kwidgetsaddons_version.h>
 
 // Static utility functions
 static void save_pattern(KComboBox *, const QString &, const QString &);
@@ -632,8 +633,17 @@ void KfindTabWidget::setQuery(KQuery *query)
 // Or is there an arch where this can happen?
 #if 0
     if (size < 0) { // overflow
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+        if (KMessageBox::warningTwoActions(this, i18n("Size is too big. Set maximum size value?"), i18n("Error"), i18n("Set"), i18n("Do Not Set"))
+#else
         if (KMessageBox::warningYesNo(this, i18n("Size is too big. Set maximum size value?"), i18n("Error"), i18n("Set"), i18n("Do Not Set"))
+
+#endif
+#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+            == KMessageBox::ButtonCode::PrimaryAction) {
+#else
             == KMessageBox::Yes) {
+#endif
             sizeEdit->setValue(INT_MAX);
             sizeUnitBox->setCurrentIndex(0);
             size = INT_MAX;
