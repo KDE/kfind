@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"POT-Creation-Date: 2022-10-16 00:50+0000\n"
 "PO-Revision-Date: 2021-07-25 09:07+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -159,55 +159,55 @@ msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Rezultatele au fost salvate în: %1"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#: kfindtreeview.cpp:644 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "&Proprietăți"
 
-#: kftabdlg.cpp:65
+#: kftabdlg.cpp:66
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "De&numit:"
 
-#: kftabdlg.cpp:68
+#: kftabdlg.cpp:69
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 "Puteți utiliza caractere de globalizare și \";\" pentru a separa mai multe "
 "nume"
 
-#: kftabdlg.cpp:74
+#: kftabdlg.cpp:75
 #, kde-format
 msgid "Look &in:"
 msgstr "&Caută în:"
 
-#: kftabdlg.cpp:77
+#: kftabdlg.cpp:78
 #, kde-format
 msgid "Include &subfolders"
 msgstr "Include &subdosarele"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "Căutare s&ensibilă la registru"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Browse..."
 msgstr "&Răsfoiește..."
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:81
 #, kde-format
 msgid "&Use files index"
 msgstr "Utilizează &index de fișiere"
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:82
 #, kde-format
 msgid "Show &hidden files"
 msgstr "Ara&tă fișierele ascunse"
 
-#: kftabdlg.cpp:100
+#: kftabdlg.cpp:101
 #, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -233,7 +233,7 @@ msgstr ""
 "ale cuvîntului</li><li><b>Documentul meu.kwd</b> caută un fișier cu acest "
 "nume</li></ul></qt>"
 
-#: kftabdlg.cpp:121
+#: kftabdlg.cpp:122
 #, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -244,58 +244,58 @@ msgstr ""
 "<b>slocate</b> pentru a mări viteza de căutare. Nu uitați să actualizați din "
 "cînd în cînd indexul folosind programul <b>updatedb</b>.</qt>"
 
-#: kftabdlg.cpp:165
+#: kftabdlg.cpp:166
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "Caută toate fișierele create sau &modificate:"
 
-#: kftabdlg.cpp:167
+#: kftabdlg.cpp:168
 #, kde-format
 msgid "&between"
 msgstr "î&ntre"
 
-#: kftabdlg.cpp:169
+#: kftabdlg.cpp:170
 #, kde-format
 msgid "and"
 msgstr "și"
 
-#: kftabdlg.cpp:191
+#: kftabdlg.cpp:192
 #, kde-format
 msgid "File &size is:"
 msgstr "&Mărimea fișierului este:"
 
-#: kftabdlg.cpp:204
+#: kftabdlg.cpp:205
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "Fișierele aparțin &utilizatorului:"
 
-#: kftabdlg.cpp:209
+#: kftabdlg.cpp:210
 #, kde-format
 msgid "Owned by &group:"
 msgstr "Aparțin &grupului:"
 
-#: kftabdlg.cpp:212
+#: kftabdlg.cpp:213
 #, kde-format
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(niciuna)"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Least"
 msgstr "Cel puțin"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "At Most"
 msgstr "Cel mult"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:216
 #, kde-format
 msgid "Equal To"
 msgstr "Egală cu"
 
-#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#: kftabdlg.cpp:218 kftabdlg.cpp:838
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
@@ -303,33 +303,33 @@ msgstr[0] "octet"
 msgstr[1] "octeți"
 msgstr[2] "de octeți"
 
-#: kftabdlg.cpp:218
+#: kftabdlg.cpp:219
 #, kde-format
 msgid "KiB"
 msgstr "KiO"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:220
 #, kde-format
 msgid "MiB"
 msgstr "MiO"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:221
 #, kde-format
 msgid "GiB"
 msgstr "GiO"
 
-#: kftabdlg.cpp:283
+#: kftabdlg.cpp:284
 #, kde-format
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "&Tipul de fișier:"
 
-#: kftabdlg.cpp:288
+#: kftabdlg.cpp:289
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "&Conține textul:"
 
-#: kftabdlg.cpp:294
+#: kftabdlg.cpp:295
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -340,17 +340,17 @@ msgstr ""
 "text. Nu sînt suportate toate tipurile de fișiere din lista de mai sus. "
 "Citiți în documentație care sînt tipurile de fișiere suportate.</qt>"
 
-#: kftabdlg.cpp:302
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "Sensibil la r&egistru"
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:304
 #, kde-format
 msgid "Include &binary files"
 msgstr "Include fișierele &binare"
 
-#: kftabdlg.cpp:306
+#: kftabdlg.cpp:307
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
@@ -359,79 +359,79 @@ msgstr ""
 "<qt>Vă permite să căutați în orice tip de fișier, chiar și în cele care nu "
 "conțin text în mod normal (de exemplu fișiere imagine și programe).</qt>"
 
-#: kftabdlg.cpp:313
+#: kftabdlg.cpp:314
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "&după:"
 
-#: kftabdlg.cpp:315
+#: kftabdlg.cpp:316
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "Caută în &metainformații:"
 
-#: kftabdlg.cpp:319
+#: kftabdlg.cpp:320
 #, kde-format
 msgid "All Files & Folders"
 msgstr "Toate fișierele și dosarele"
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Files"
 msgstr "Fișiere"
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Folders"
 msgstr "Dosare"
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Symbolic Links"
 msgstr "Legături simbolice"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:324
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "Fișiere speciale (socluri, fișiere dispozitiv, ...)"
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "Executable Files"
 msgstr "Fișiere executabile"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "Fișiere executabile SUID"
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Images"
 msgstr "Toate fișierele imagine"
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Video"
 msgstr "Toate fișierele video"
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:329
 #, kde-format
 msgid "All Sounds"
 msgstr "Toate fișierele audio"
 
-#: kftabdlg.cpp:393
+#: kftabdlg.cpp:394
 #, kde-format
 msgid "Name/&Location"
 msgstr "Nume/&Locație"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:395
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "C&onținut"
 
-#: kftabdlg.cpp:399
+#: kftabdlg.cpp:400
 #, kde-format
 msgid ""
 "<qt>Search within files' specific comments/metainfo<br />These are some "
@@ -444,7 +444,7 @@ msgstr ""
 "pentru un titlu, un album...</li><li><b>Imagini (png...)</b> Caută imagini "
 "cu o rezoluție anume, un anumit comentariu...</li></ul></qt>"
 
-#: kftabdlg.cpp:407
+#: kftabdlg.cpp:408
 #, kde-format
 msgid ""
 "<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
@@ -456,47 +456,47 @@ msgstr ""
 "li><li><b>Imagini (png...)</b> Caută numai în „Rezoluție”, „Adîncime de "
 "bit”...</li></ul></qt>"
 
-#: kftabdlg.cpp:548
+#: kftabdlg.cpp:549
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "Nu pot căuta pentru o perioadă mai mică de un minut."
 
-#: kftabdlg.cpp:559
+#: kftabdlg.cpp:560
 #, kde-format
 msgid "The date is not valid."
 msgstr "Data nu este validă."
 
-#: kftabdlg.cpp:561
+#: kftabdlg.cpp:562
 #, kde-format
 msgid "Invalid date range."
 msgstr "Domeniu de dată eronat."
 
-#: kftabdlg.cpp:563
+#: kftabdlg.cpp:564
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "Nu pot căuta pentru date din viitor."
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "Dimensiunea este prea mare. Stabilesc valoarea maximă pentru mărime?"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Error"
 msgstr "Eroare"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Set"
 msgstr "Stabilește"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Do Not Set"
 msgstr "Nu stabili"
 
-#: kftabdlg.cpp:818
+#: kftabdlg.cpp:828
 #, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
@@ -507,7 +507,7 @@ msgstr[0] "în u&rmă cu cel mult"
 msgstr[1] "în u&rmă cu cel mult"
 msgstr[2] "în u&rmă cu cel mult"
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:829
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
@@ -516,7 +516,7 @@ msgstr[0] "minut"
 msgstr[1] "minute"
 msgstr[2] "de minute"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:830
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
@@ -525,7 +525,7 @@ msgstr[0] "oră"
 msgstr[1] "ore"
 msgstr[2] "de ore"
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:831
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
@@ -534,7 +534,7 @@ msgstr[0] "zi"
 msgstr[1] "zile"
 msgstr[2] "de zile"
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:832
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
@@ -543,7 +543,7 @@ msgstr[0] "lună"
 msgstr[1] "luni"
 msgstr[2] "de luni"
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:833
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"

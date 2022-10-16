@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"POT-Creation-Date: 2022-10-16 00:50+0000\n"
 "PO-Revision-Date: 2014-03-29 18:50-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -161,53 +161,53 @@ msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "ਨਤੀਜੇ ਸੰਭਾਲੇ ਗਏ: %1"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#: kfindtreeview.cpp:644 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "ਵਿਸ਼ੇਸ਼ਤਾ(&P)"
 
-#: kftabdlg.cpp:65
+#: kftabdlg.cpp:66
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "ਨਾਂ(&N):"
 
-#: kftabdlg.cpp:68
+#: kftabdlg.cpp:69
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 
-#: kftabdlg.cpp:74
+#: kftabdlg.cpp:75
 #, kde-format
 msgid "Look &in:"
 msgstr "ਇਸ ਵਿੱਚ ਖੋਜ(&i):"
 
-#: kftabdlg.cpp:77
+#: kftabdlg.cpp:78
 #, kde-format
 msgid "Include &subfolders"
 msgstr "ਸਬ-ਫੋਲਡਰਾਂ ਸਮੇਤ(&s)"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "ਅੱਖਰ ਅਕਾਰ ਸੰਵੇਦਨਸ਼ੀਲ(&e)"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Browse..."
 msgstr "ਝਲਕ(&B)..."
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:81
 #, kde-format
 msgid "&Use files index"
 msgstr "ਫਾਇਲ ਇੰਡੈਕਸ ਵਰਤੋਂ(&U)"
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:82
 #, kde-format
 msgid "Show &hidden files"
 msgstr "ਲੁਕਵੀਆਂ ਫਾਇਲਾਂ ਵੇਖੋ(&h)"
 
-#: kftabdlg.cpp:100
+#: kftabdlg.cpp:101
 #, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -222,7 +222,7 @@ msgid ""
 "li></ul></qt>"
 msgstr ""
 
-#: kftabdlg.cpp:121
+#: kftabdlg.cpp:122
 #, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -230,91 +230,91 @@ msgid ""
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
 
-#: kftabdlg.cpp:165
+#: kftabdlg.cpp:166
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "ਸਭ ਫਾਇਲਾਂ ਬਣਾਇਆਂ ਜਾਂ ਸੋਧੀਆਂ ਖੋਜ(&m):"
 
-#: kftabdlg.cpp:167
+#: kftabdlg.cpp:168
 #, kde-format
 msgid "&between"
 msgstr "ਵਿਚਕਾਰ(&b)"
 
-#: kftabdlg.cpp:169
+#: kftabdlg.cpp:170
 #, kde-format
 msgid "and"
 msgstr "ਅਤੇ"
 
-#: kftabdlg.cpp:191
+#: kftabdlg.cpp:192
 #, kde-format
 msgid "File &size is:"
 msgstr "ਫਾਇਲ ਅਕਾਰ(&s):"
 
-#: kftabdlg.cpp:204
+#: kftabdlg.cpp:205
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "ਫਾਇਲਾਂ ਦਾ ਮਾਲਕ ਯੂਜ਼ਰ(&u):"
 
-#: kftabdlg.cpp:209
+#: kftabdlg.cpp:210
 #, kde-format
 msgid "Owned by &group:"
 msgstr "ਮਾਲਕ ਗਰੁੱਪ(&g):"
 
-#: kftabdlg.cpp:212
+#: kftabdlg.cpp:213
 #, kde-format
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(ਕੋਈ ਨਹੀਂ)"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Least"
 msgstr "ਘੱਟੋ-ਘੱਟ"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "At Most"
 msgstr "ਵੱਧੋ-ਵੱਧ"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:216
 #, kde-format
 msgid "Equal To"
 msgstr "ਬਰਾਬਰ"
 
-#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#: kftabdlg.cpp:218 kftabdlg.cpp:838
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
 msgstr[0] "ਬਾਈਟ"
 msgstr[1] "ਬਾਈਟ"
 
-#: kftabdlg.cpp:218
+#: kftabdlg.cpp:219
 #, kde-format
 msgid "KiB"
 msgstr "KiB"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:220
 #, kde-format
 msgid "MiB"
 msgstr "MiB"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:221
 #, kde-format
 msgid "GiB"
 msgstr "GiB"
 
-#: kftabdlg.cpp:283
+#: kftabdlg.cpp:284
 #, kde-format
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "ਫਾਇਲ ਕਿਸਮ(&t):"
 
-#: kftabdlg.cpp:288
+#: kftabdlg.cpp:289
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "ਪਾਠ ਸ਼ਾਮਲ(&o):"
 
-#: kftabdlg.cpp:294
+#: kftabdlg.cpp:295
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -322,96 +322,96 @@ msgid ""
 "documentation for a list of supported file types.</qt>"
 msgstr ""
 
-#: kftabdlg.cpp:302
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "ਅੱਖਰ ਆਕਾਰ ਸੰਵੇਦਨਸ਼ੀਲ(&e)"
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:304
 #, kde-format
 msgid "Include &binary files"
 msgstr "ਬਾਈਨਰੀ ਫਾਇਲਾਂ ਸ਼ਾਮਲ(&b)"
 
-#: kftabdlg.cpp:306
+#: kftabdlg.cpp:307
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
 msgstr ""
 
-#: kftabdlg.cpp:313
+#: kftabdlg.cpp:314
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "ਲਈ(&r):"
 
-#: kftabdlg.cpp:315
+#: kftabdlg.cpp:316
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "ਮੇਟਾ-ਜਾਣਕਾਰੀ ਭਾਗ ਖੋਜ(&m):"
 
-#: kftabdlg.cpp:319
+#: kftabdlg.cpp:320
 #, kde-format
 msgid "All Files & Folders"
 msgstr "ਸਭ ਫਾਇਲਾਂ ਅਤੇ ਫੋਲਡਰ"
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Files"
 msgstr "ਫਾਇਲਾਂ"
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Folders"
 msgstr "ਫੋਲਡਰ"
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Symbolic Links"
 msgstr "ਸਿੰਬੋਲਿਕ ਲਿੰਕ"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:324
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "ਖਾਸ ਫਾਇਲਾਂ ਫਾਇਲਾਂ (ਸਾਕਟ, ਜੰਤਰ ਫਾਇਲਾਂ)"
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "Executable Files"
 msgstr "ਚੱਲਣਯੋਗ ਫਾਇਲਾਂ"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "SUID ਚੱਲਣਯੋਗ ਫਾਇਲਾਂ"
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Images"
 msgstr "ਸਭ ਚਿੱਤਰ"
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Video"
 msgstr "ਸਭ ਵੀਡਿਓ"
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:329
 #, kde-format
 msgid "All Sounds"
 msgstr "ਸਭ ਸਾਊਂਡ"
 
-#: kftabdlg.cpp:393
+#: kftabdlg.cpp:394
 #, kde-format
 msgid "Name/&Location"
 msgstr "ਨਾਂ/ਟਿਕਾਣਾ(&L)"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:395
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "ਸਮੱਗਰੀ(&o)"
 
-#: kftabdlg.cpp:399
+#: kftabdlg.cpp:400
 #, kde-format
 msgid ""
 "<qt>Search within files' specific comments/metainfo<br />These are some "
@@ -420,7 +420,7 @@ msgid ""
 "resolution, comment...</li></ul></qt>"
 msgstr ""
 
-#: kftabdlg.cpp:407
+#: kftabdlg.cpp:408
 #, kde-format
 msgid ""
 "<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
@@ -428,47 +428,47 @@ msgid ""
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
 
-#: kftabdlg.cpp:548
+#: kftabdlg.cpp:549
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "ਇੱਕ ਨਿਸ਼ਚਿਤ ਅੰਤਰਾਲ, ਜੋ ਕਿ ਇੱਕ ਮਿੰਟ ਤੋਂ ਵੀ ਘੱਟ ਸੀ, ਵਿੱਚ ਲੱਭਣ ਵਿੱਚ ਅਸਫਲ ਹੈ।"
 
-#: kftabdlg.cpp:559
+#: kftabdlg.cpp:560
 #, kde-format
 msgid "The date is not valid."
 msgstr "ਤਾਰੀਖ ਜਾਇਜ ਨਹੀਂ ਹੈ।"
 
-#: kftabdlg.cpp:561
+#: kftabdlg.cpp:562
 #, kde-format
 msgid "Invalid date range."
 msgstr "ਗਲਤ ਸੀਮਾ ਖੇਤਰ ਹੈ।"
 
-#: kftabdlg.cpp:563
+#: kftabdlg.cpp:564
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "ਭਵਿੱਖ ਦੀ ਮਿਤੀ ਵਿੱਚ ਲੱਭਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ।"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "ਅਕਾਰ ਬਹੁਤ ਵੱਡਾ ਹੈ। ਕੀ ਵੱਧੋ-ਵੱਧ ਅਕਾਰ ਮੁੱਲ ਦੇਣਾ ਹੈ?"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Error"
 msgstr "ਗਲਤੀ"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Set"
 msgstr "ਸੈੱਟ"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Do Not Set"
 msgstr "ਸੈੱਟ ਨਾ ਕਰੋ"
 
-#: kftabdlg.cpp:818
+#: kftabdlg.cpp:828
 #, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
@@ -478,7 +478,7 @@ msgid_plural "&during the previous"
 msgstr[0] "ਪਿਛਲੀ ਵਾਰੀ(&d)"
 msgstr[1] "ਪਿਛਲੀ ਵਾਰੀ(&d)"
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:829
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
@@ -486,7 +486,7 @@ msgid_plural "minutes"
 msgstr[0] "ਮਿੰਟ"
 msgstr[1] "ਮਿੰਟ"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:830
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
@@ -494,7 +494,7 @@ msgid_plural "hours"
 msgstr[0] "ਘੰਟਾ"
 msgstr[1] "ਘੰਟੇ"
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:831
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
@@ -502,7 +502,7 @@ msgid_plural "days"
 msgstr[0] "ਦਿਨ"
 msgstr[1] "ਦਿਨ"
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:832
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
@@ -510,7 +510,7 @@ msgid_plural "months"
 msgstr[0] "ਮਹੀਨਾ"
 msgstr[1] "ਮਹੀਨੇ"
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:833
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"

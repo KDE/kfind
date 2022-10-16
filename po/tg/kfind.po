@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"POT-Creation-Date: 2022-10-16 00:50+0000\n"
 "PO-Revision-Date: 2019-10-01 11:08+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -174,56 +174,56 @@ msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Натиҷаҳо дар файл захира карда шуданд\n"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#: kfindtreeview.cpp:644 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "&Хусусиятҳо"
 
-#: kftabdlg.cpp:65
+#: kftabdlg.cpp:66
 #, fuzzy, kde-format
 #| msgid "&Named:"
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "&Номида шуд:"
 
-#: kftabdlg.cpp:68
+#: kftabdlg.cpp:69
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 "Шумо метавонед ниқоби мутобиқро ва \";\"-ро барои ҷудосозии номҳои бисёр "
 "истифода баред"
 
-#: kftabdlg.cpp:74
+#: kftabdlg.cpp:75
 #, kde-format
 msgid "Look &in:"
 msgstr "&Ҷустуҷӯ дар:"
 
-#: kftabdlg.cpp:77
+#: kftabdlg.cpp:78
 #, kde-format
 msgid "Include &subfolders"
 msgstr "&Зерфеҳрастҳоро дарбар мегирад"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "Ҷустуҷӯ бо ҳисоби &сабткунанда"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Browse..."
 msgstr "&Баррасӣ..."
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:81
 #, fuzzy, kde-format
 msgid "&Use files index"
 msgstr "Нишондиҳандаи файлҳоро истифода баред"
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:82
 #, kde-format
 msgid "Show &hidden files"
 msgstr ""
 
-#: kftabdlg.cpp:100
+#: kftabdlg.cpp:101
 #, fuzzy, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -249,7 +249,7 @@ msgstr ""
 "баён як аломат доранд, пайдо мекунад</li><li><b>My Document.kwd</b> файлҳоро "
 "бо номи пурра мутобиқи </li></ul></qt> пайдо мекунад"
 
-#: kftabdlg.cpp:121
+#: kftabdlg.cpp:122
 #, fuzzy, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -261,59 +261,59 @@ msgstr ""
 "нав кардани нишондиҳандаҳоро аз хотир набароред(бо истифодаи <i>updatedb</"
 "i>).</qt>"
 
-#: kftabdlg.cpp:165
+#: kftabdlg.cpp:166
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "Ҷустуҷӯи ҳамаи файлҳо, офаридан ё &тағир додан:"
 
-#: kftabdlg.cpp:167
+#: kftabdlg.cpp:168
 #, kde-format
 msgid "&between"
 msgstr "&байни"
 
-#: kftabdlg.cpp:169
+#: kftabdlg.cpp:170
 #, kde-format
 msgid "and"
 msgstr "ва"
 
-#: kftabdlg.cpp:191
+#: kftabdlg.cpp:192
 #, kde-format
 msgid "File &size is:"
 msgstr "&Андозаи файл:"
 
-#: kftabdlg.cpp:204
+#: kftabdlg.cpp:205
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "Файлҳои ба &корванд тааллуқ дошта:"
 
-#: kftabdlg.cpp:209
+#: kftabdlg.cpp:210
 #, kde-format
 msgid "Owned by &group:"
 msgstr "Ба &гурӯҳ тааллуқ дошта:"
 
-#: kftabdlg.cpp:212
+#: kftabdlg.cpp:213
 #, fuzzy, kde-format
 #| msgid "(none)"
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(не)"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Least"
 msgstr "На Кам"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "At Most"
 msgstr "На Зиёда"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:216
 #, kde-format
 msgid "Equal To"
 msgstr "Баробар Ба"
 
-#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#: kftabdlg.cpp:218 kftabdlg.cpp:838
 #, fuzzy, kde-format
 #| msgid "Bytes"
 msgid "Byte"
@@ -321,34 +321,34 @@ msgid_plural "Bytes"
 msgstr[0] "Байт"
 msgstr[1] "Байт"
 
-#: kftabdlg.cpp:218
+#: kftabdlg.cpp:219
 #, kde-format
 msgid "KiB"
 msgstr "КБ"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:220
 #, kde-format
 msgid "MiB"
 msgstr "МБ"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:221
 #, kde-format
 msgid "GiB"
 msgstr "ГБ"
 
-#: kftabdlg.cpp:283
+#: kftabdlg.cpp:284
 #, fuzzy, kde-format
 #| msgid "File &type:"
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "&Навъи файл:"
 
-#: kftabdlg.cpp:288
+#: kftabdlg.cpp:289
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "Матнро &дарбар мегирад:"
 
-#: kftabdlg.cpp:294
+#: kftabdlg.cpp:295
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -360,17 +360,17 @@ msgstr ""
 "боло буда пуштибонӣ мегардад. Марҳамат карда ба санадсозӣ барои феҳристи "
 "навъҳои пуштибоншавандаи файл муроҷит кунед.</qt>"
 
-#: kftabdlg.cpp:302
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "Ҷустуҷӯ бо ҳисоби &сабткунанда"
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:304
 #, kde-format
 msgid "Include &binary files"
 msgstr "Бо ҳамроҳи файлҳои ҳисоби &дуӣ"
 
-#: kftabdlg.cpp:306
+#: kftabdlg.cpp:307
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
@@ -380,80 +380,80 @@ msgstr ""
 "одатан матнро дарбар намегиранд, медиҳад (масалан файлҳои барнома ва симоҳо)."
 "</qt>"
 
-#: kftabdlg.cpp:313
+#: kftabdlg.cpp:314
 #, fuzzy, kde-format
 #| msgid "fo&r:"
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "&барои:"
 
-#: kftabdlg.cpp:315
+#: kftabdlg.cpp:316
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "Қисмҳои &metainfo ҷустуҷӯ кунед:"
 
-#: kftabdlg.cpp:319
+#: kftabdlg.cpp:320
 #, kde-format
 msgid "All Files & Folders"
 msgstr "Ҳамаи файлҳо ва ҷузвадонҳо"
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Files"
 msgstr "Файлҳо"
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Folders"
 msgstr "Ҷузвадонҳо"
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Symbolic Links"
 msgstr "Алоқаҳои рамзӣ"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:324
 #, fuzzy, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "Файлҳои Махсус (Бастагоҳҳо, Файлҳои Дастгоҳ...)"
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "Executable Files"
 msgstr "Файлҳои иҷропазир"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "Файлҳои иҷропазири SUID"
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Images"
 msgstr "Ҳамаи тасвирҳо"
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Video"
 msgstr "Ҳамаи видео"
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:329
 #, kde-format
 msgid "All Sounds"
 msgstr "Ҳамаи садоҳо"
 
-#: kftabdlg.cpp:393
+#: kftabdlg.cpp:394
 #, kde-format
 msgid "Name/&Location"
 msgstr "Ном/&Ҷойгиршавӣ"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:395
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Мундариҷа"
 
-#: kftabdlg.cpp:399
+#: kftabdlg.cpp:400
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Search within files' specific comments/metainfo<br>These are some "
@@ -471,7 +471,7 @@ msgstr ""
 "сарлавҳа, албом ҷустуҷӯ кунед</li><li><b>Симоҳо (png...)</b> Симоҳоро бо "
 "ҳалнокии махсус, тавзеҳот ҷустуҷӯ кунед...</li></ul></qt>"
 
-#: kftabdlg.cpp:407
+#: kftabdlg.cpp:408
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>If specified, search only in this field<br><ul><li><b>Audio files "
@@ -487,49 +487,49 @@ msgstr ""
 "метавонад...</li><li><b>Симоҳо (png...)</b> Танҳо дар Ҳалнокӣ, Bitdepth..."
 "ҷустуҷӯ кунед</li></ul></qt>"
 
-#: kftabdlg.cpp:548
+#: kftabdlg.cpp:549
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "Дар тӯли кам аз як дақиқа ҷустуҷӯ кардан ғайриимкон аст."
 
-#: kftabdlg.cpp:559
+#: kftabdlg.cpp:560
 #, fuzzy, kde-format
 msgid "The date is not valid."
 msgstr "Санаи нодуруст аст!"
 
-#: kftabdlg.cpp:561
+#: kftabdlg.cpp:562
 #, fuzzy, kde-format
 msgid "Invalid date range."
 msgstr "Маҳдудаи нодурусти санаҳо!"
 
-#: kftabdlg.cpp:563
+#: kftabdlg.cpp:564
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "Ҷустуҷӯи файлҳо бо санааш дар оянда ғайри имкон аст."
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, fuzzy, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr ""
 "Андозаи хеле калон аст... Мехоҳед, ки қиммати андозаи калонтаринро гузориш "
 "намоед?"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Error"
 msgstr "Хато"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Set"
 msgstr "Насб"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Do Not Set"
 msgstr ""
 
-#: kftabdlg.cpp:818
+#: kftabdlg.cpp:828
 #, fuzzy, kde-format
 #| msgid "&during the previous"
 msgctxt ""
@@ -540,7 +540,7 @@ msgid_plural "&during the previous"
 msgstr[0] "&дар давоми гузашта"
 msgstr[1] "&дар давоми гузашта"
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:829
 #, fuzzy, kde-format
 #| msgid "minute(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -549,7 +549,7 @@ msgid_plural "minutes"
 msgstr[0] "дақиқа(ҳо)"
 msgstr[1] "дақиқа(ҳо)"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:830
 #, fuzzy, kde-format
 #| msgid "hour(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -558,7 +558,7 @@ msgid_plural "hours"
 msgstr[0] "соат(ҳо)"
 msgstr[1] "соат(ҳо)"
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:831
 #, fuzzy, kde-format
 #| msgid "day(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -567,7 +567,7 @@ msgid_plural "days"
 msgstr[0] "рӯз(ҳо)"
 msgstr[1] "рӯз(ҳо)"
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:832
 #, fuzzy, kde-format
 #| msgid "month(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -576,7 +576,7 @@ msgid_plural "months"
 msgstr[0] "моҳ(ҳо)"
 msgstr[1] "моҳ(ҳо)"
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:833
 #, fuzzy, kde-format
 #| msgid "year(s)"
 msgctxt "use date ranges to search files by modified time"

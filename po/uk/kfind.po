@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"POT-Creation-Date: 2022-10-16 00:50+0000\n"
 "PO-Revision-Date: 2021-07-15 09:31+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -164,53 +164,53 @@ msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Результати збережено до: %1"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#: kfindtreeview.cpp:644 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "&Властивості"
 
-#: kftabdlg.cpp:65
+#: kftabdlg.cpp:66
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "&З назвою:"
 
-#: kftabdlg.cpp:68
+#: kftabdlg.cpp:69
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Ви можете використовувати шаблони замін та «;» для розділення назв"
 
-#: kftabdlg.cpp:74
+#: kftabdlg.cpp:75
 #, kde-format
 msgid "Look &in:"
 msgstr "&Шукати у:"
 
-#: kftabdlg.cpp:77
+#: kftabdlg.cpp:78
 #, kde-format
 msgid "Include &subfolders"
 msgstr "Включати &підтеки"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "Пошук з &урахуванням регістру"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Browse..."
 msgstr "&Навігація..."
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:81
 #, kde-format
 msgid "&Use files index"
 msgstr "Використовувати &індекс файлів"
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:82
 #, kde-format
 msgid "Show &hidden files"
 msgstr "Показати при&ховані файли"
 
-#: kftabdlg.cpp:100
+#: kftabdlg.cpp:101
 #, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -235,7 +235,7 @@ msgstr ""
 "ними</li><li><b>My Document.kwd</b> шукає файл, який має точно таку назву</"
 "li></ul></qt>"
 
-#: kftabdlg.cpp:121
+#: kftabdlg.cpp:122
 #, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -246,58 +246,58 @@ msgstr ""
 "що прискорює пошук. Не забувайте час від часу поновлювати індекс (за "
 "допомогою команди <i>updatedb</i>).</qt>"
 
-#: kftabdlg.cpp:165
+#: kftabdlg.cpp:166
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "Знайти всі файли створені або &змінені:"
 
-#: kftabdlg.cpp:167
+#: kftabdlg.cpp:168
 #, kde-format
 msgid "&between"
 msgstr "&між"
 
-#: kftabdlg.cpp:169
+#: kftabdlg.cpp:170
 #, kde-format
 msgid "and"
 msgstr "та"
 
-#: kftabdlg.cpp:191
+#: kftabdlg.cpp:192
 #, kde-format
 msgid "File &size is:"
 msgstr "&Розмір файла:"
 
-#: kftabdlg.cpp:204
+#: kftabdlg.cpp:205
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "З &власником:"
 
-#: kftabdlg.cpp:209
+#: kftabdlg.cpp:210
 #, kde-format
 msgid "Owned by &group:"
 msgstr "З &групою:"
 
-#: kftabdlg.cpp:212
+#: kftabdlg.cpp:213
 #, kde-format
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(без обмежень)"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Least"
 msgstr "Щонайменше"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "At Most"
 msgstr "Щонайбільше"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:216
 #, kde-format
 msgid "Equal To"
 msgstr "Дорівнює"
 
-#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#: kftabdlg.cpp:218 kftabdlg.cpp:838
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
@@ -306,33 +306,33 @@ msgstr[1] "байти"
 msgstr[2] "байтів"
 msgstr[3] "байт"
 
-#: kftabdlg.cpp:218
+#: kftabdlg.cpp:219
 #, kde-format
 msgid "KiB"
 msgstr "КіБ"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:220
 #, kde-format
 msgid "MiB"
 msgstr "МіБ"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:221
 #, kde-format
 msgid "GiB"
 msgstr "ГіБ"
 
-#: kftabdlg.cpp:283
+#: kftabdlg.cpp:284
 #, kde-format
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "&Тип файла:"
 
-#: kftabdlg.cpp:288
+#: kftabdlg.cpp:289
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "&Містить текст:"
 
-#: kftabdlg.cpp:294
+#: kftabdlg.cpp:295
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -343,17 +343,17 @@ msgstr ""
 "Зауважте, що підтримуються не всі типи файлів зі списку вище. Будь ласка, "
 "зверніться до документації щодо типів файлів, що підтримуються.</qt>"
 
-#: kftabdlg.cpp:302
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "З &урахуванням регістру"
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:304
 #, kde-format
 msgid "Include &binary files"
 msgstr "В&ключати двійкові файли"
 
-#: kftabdlg.cpp:306
+#: kftabdlg.cpp:307
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
@@ -362,79 +362,79 @@ msgstr ""
 "<qt>Надає змогу виконувати пошук в будь-яких типах файлів, навіть в тих, що, "
 "зазвичай, не містять тексту (наприклад, файли програм та зображень).</qt>"
 
-#: kftabdlg.cpp:313
+#: kftabdlg.cpp:314
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "&з:"
 
-#: kftabdlg.cpp:315
+#: kftabdlg.cpp:316
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "Пошук у розділах м&етаданих:"
 
-#: kftabdlg.cpp:319
+#: kftabdlg.cpp:320
 #, kde-format
 msgid "All Files & Folders"
 msgstr "Всі файли та теки"
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Files"
 msgstr "Файли"
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Folders"
 msgstr "Теки"
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Symbolic Links"
 msgstr "Символічні посилання"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:324
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "Спеціальні файли (сокети, файли пристроїв...)"
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "Executable Files"
 msgstr "Файли програм"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "Файли програм з бітом SUID"
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Images"
 msgstr "Всі зображення"
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Video"
 msgstr "Всі відео"
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:329
 #, kde-format
 msgid "All Sounds"
 msgstr "Всі звуки"
 
-#: kftabdlg.cpp:393
+#: kftabdlg.cpp:394
 #, kde-format
 msgid "Name/&Location"
 msgstr "Назва/&шлях"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:395
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "В&міст"
 
-#: kftabdlg.cpp:399
+#: kftabdlg.cpp:400
 #, kde-format
 msgid ""
 "<qt>Search within files' specific comments/metainfo<br />These are some "
@@ -447,7 +447,7 @@ msgstr ""
 "альбому</li><li><b>Зображення (png...)</b> Шукати зображення тільки з "
 "роздільною здатністю, коментар...</li></ul></qt>"
 
-#: kftabdlg.cpp:407
+#: kftabdlg.cpp:408
 #, kde-format
 msgid ""
 "<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
@@ -458,47 +458,47 @@ msgstr ""
 "(mp3...)</b>Може бути назва, альбом...</li><li><b>Зображення (png...)</"
 "b>Шукати тільки з роздільною здатністю, глибиною...</li></ul></qt>"
 
-#: kftabdlg.cpp:548
+#: kftabdlg.cpp:549
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "Неможливо шукати в діапазоні, який не містить жодної хвилини."
 
-#: kftabdlg.cpp:559
+#: kftabdlg.cpp:560
 #, kde-format
 msgid "The date is not valid."
 msgstr "Некоректна дата."
 
-#: kftabdlg.cpp:561
+#: kftabdlg.cpp:562
 #, kde-format
 msgid "Invalid date range."
 msgstr "Некоректний діапазон дат."
 
-#: kftabdlg.cpp:563
+#: kftabdlg.cpp:564
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "Пошук за майбутніми датами позбавлений сенсу."
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "Розмір завеликий. Виставити значення максимального розміру?"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Error"
 msgstr "Помилка"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Set"
 msgstr "Виставити"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Do Not Set"
 msgstr "Не виставляти"
 
-#: kftabdlg.cpp:818
+#: kftabdlg.cpp:828
 #, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
@@ -514,7 +514,7 @@ msgstr[3] ""
 "&протягом попереднього|/|&протягом $[за-контекстом type i|h попередньої "
 "попереднього]"
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:829
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
@@ -524,7 +524,7 @@ msgstr[1] "хвилин"
 msgstr[2] "хвилин"
 msgstr[3] "хвилини"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:830
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
@@ -534,7 +534,7 @@ msgstr[1] "годин"
 msgstr[2] "годин"
 msgstr[3] "години"
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:831
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
@@ -544,7 +544,7 @@ msgstr[1] "днів"
 msgstr[2] "днів"
 msgstr[3] "дня"
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:832
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
@@ -554,7 +554,7 @@ msgstr[1] "місяців"
 msgstr[2] "місяців"
 msgstr[3] "місяця"
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:833
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-07 00:51+0000\n"
+"POT-Creation-Date: 2022-10-16 00:50+0000\n"
 "PO-Revision-Date: 2002-10-25 11:47SAST\n"
 "Last-Translator: Lwandle Mgidlana <lwandle@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -174,56 +174,56 @@ msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Iziphumo zagcinwa kwifayile\n"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:395
+#: kfindtreeview.cpp:644 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "&Iimpahla"
 
-#: kftabdlg.cpp:65
+#: kftabdlg.cpp:66
 #, fuzzy, kde-format
 #| msgid "&Named:"
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "&Inikwe igama:"
 
-#: kftabdlg.cpp:68
+#: kftabdlg.cpp:69
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 "Ungakwazi ukusebenzisa utelekiso lwe wildcard ne  \";\" yokwahlula amagama "
 "amaninzi"
 
-#: kftabdlg.cpp:74
+#: kftabdlg.cpp:75
 #, fuzzy, kde-format
 msgid "Look &in:"
 msgstr "&Khangela kwi:"
 
-#: kftabdlg.cpp:77
+#: kftabdlg.cpp:78
 #, fuzzy, kde-format
 msgid "Include &subfolders"
 msgstr "&Quka abalawuli abasezantsi"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "Uphendlo l&wetyala elinovakalelo"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Browse..."
 msgstr "&Khangela incwadi..."
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:81
 #, fuzzy, kde-format
 msgid "&Use files index"
 msgstr "%1 iifayile zifunyenwe"
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:82
 #, kde-format
 msgid "Show &hidden files"
 msgstr ""
 
-#: kftabdlg.cpp:100
+#: kftabdlg.cpp:101
 #, fuzzy, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -248,7 +248,7 @@ msgstr ""
 "\"o\", ezinomsebenzi ophakathi </li><li><b>Uxwebhu Lwam.kwd</b> ifumana "
 "ifayile enegama elifana nqo</li></ul></qt></li>"
 
-#: kftabdlg.cpp:121
+#: kftabdlg.cpp:122
 #, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -256,59 +256,59 @@ msgid ""
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
 
-#: kftabdlg.cpp:165
+#: kftabdlg.cpp:166
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "&Fumana zonke iifayile ezenziweyo okanye eziguqulwe kancinane:"
 
-#: kftabdlg.cpp:167
+#: kftabdlg.cpp:168
 #, kde-format
 msgid "&between"
 msgstr "&phakathi"
 
-#: kftabdlg.cpp:169
+#: kftabdlg.cpp:170
 #, kde-format
 msgid "and"
 msgstr "ne"
 
-#: kftabdlg.cpp:191
+#: kftabdlg.cpp:192
 #, kde-format
 msgid "File &size is:"
 msgstr "Ubungakanani &befayile ngu:"
 
-#: kftabdlg.cpp:204
+#: kftabdlg.cpp:205
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "Ifayile &ezizezomsebenzisi:"
 
-#: kftabdlg.cpp:209
+#: kftabdlg.cpp:210
 #, kde-format
 msgid "Owned by &group:"
 msgstr "Umnini &liqela:"
 
-#: kftabdlg.cpp:212
+#: kftabdlg.cpp:213
 #, fuzzy, kde-format
 #| msgid "(none)"
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(akukho nanye)"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Least"
 msgstr "Eyona incinci noko"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "At Most"
 msgstr "Eyona ininzi noko"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:216
 #, kde-format
 msgid "Equal To"
 msgstr "Ilingana Ne"
 
-#: kftabdlg.cpp:217 kftabdlg.cpp:828
+#: kftabdlg.cpp:218 kftabdlg.cpp:838
 #, fuzzy, kde-format
 #| msgid "Bytes"
 msgid "Byte"
@@ -316,36 +316,36 @@ msgid_plural "Bytes"
 msgstr[0] "Bytes"
 msgstr[1] "Bytes"
 
-#: kftabdlg.cpp:218
+#: kftabdlg.cpp:219
 #, fuzzy, kde-format
 #| msgid "KB"
 msgid "KiB"
 msgstr "KB"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:220
 #, fuzzy, kde-format
 #| msgid "MB"
 msgid "MiB"
 msgstr "MB"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:221
 #, kde-format
 msgid "GiB"
 msgstr ""
 
-#: kftabdlg.cpp:283
+#: kftabdlg.cpp:284
 #, fuzzy, kde-format
 #| msgid "File &type:"
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "Udidi &lwefayile:"
 
-#: kftabdlg.cpp:288
+#: kftabdlg.cpp:289
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "E&qulethe amagama abhaliweyo:"
 
-#: kftabdlg.cpp:294
+#: kftabdlg.cpp:295
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -353,99 +353,99 @@ msgid ""
 "documentation for a list of supported file types.</qt>"
 msgstr ""
 
-#: kftabdlg.cpp:302
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "U&mzekelo onovakalelo"
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:304
 #, fuzzy, kde-format
 msgid "Include &binary files"
 msgstr "&Quka abalawuli abasezantsi"
 
-#: kftabdlg.cpp:306
+#: kftabdlg.cpp:307
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
 msgstr ""
 
-#: kftabdlg.cpp:313
+#: kftabdlg.cpp:314
 #, fuzzy, kde-format
 #| msgid "fo&r:"
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "y&e:"
 
-#: kftabdlg.cpp:315
+#: kftabdlg.cpp:316
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "Khangela &eluguqulweni kolunye ulwimi:"
 
-#: kftabdlg.cpp:319
+#: kftabdlg.cpp:320
 #, fuzzy, kde-format
 msgid "All Files & Folders"
 msgstr "Zonke Iifayile Nolawulo"
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Files"
 msgstr ""
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Folders"
 msgstr ""
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Symbolic Links"
 msgstr "Amakhonkco Abonisa Okuthile"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:324
 #, fuzzy, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr ""
 "Iifayile Ezikhethekileyo (Zamacebo Okufaka Umbane, Iifayile Zamacebo...)"
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "Executable Files"
 msgstr "Iifayile Eziphunyeziweyo"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "Iifayile Eziphunyeziweyo ze-SUID"
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Images"
 msgstr ""
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Video"
 msgstr ""
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:329
 #, kde-format
 msgid "All Sounds"
 msgstr ""
 
-#: kftabdlg.cpp:393
+#: kftabdlg.cpp:394
 #, kde-format
 msgid "Name/&Location"
 msgstr "Igama/&Indawo ekuyo"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:395
 #, fuzzy, kde-format
 #| msgid "C&ontents"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "I&mixholo"
 
-#: kftabdlg.cpp:399
+#: kftabdlg.cpp:400
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Search within files' specific comments/metainfo<br>These are some "
@@ -463,7 +463,7 @@ msgstr ""
 "se id3 xa ufuna iwonga, icwecwe</li><li><b>Imifanekiso (png...)</b> Phendla "
 "imifanekiso enesisombululo esikhethekileyo, gqabaza...</li></ul></qt>"
 
-#: kftabdlg.cpp:407
+#: kftabdlg.cpp:408
 #, fuzzy, kde-format
 msgid ""
 "<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
@@ -475,48 +475,48 @@ msgstr ""
 "(png...)</b>Phendla kuphela kwisiSombululo, ubunzulu besuntswana...</li></"
 "ul></qt>"
 
-#: kftabdlg.cpp:548
+#: kftabdlg.cpp:549
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "Ayikwazi kuphendla kwixeshana elingaphantsi komzuzu."
 
-#: kftabdlg.cpp:559
+#: kftabdlg.cpp:560
 #, fuzzy, kde-format
 msgid "The date is not valid."
 msgstr "Lo mhla awulunganga!"
 
-#: kftabdlg.cpp:561
+#: kftabdlg.cpp:562
 #, fuzzy, kde-format
 msgid "Invalid date range."
 msgstr "Ubeko lomhla ongasebenziyo!"
 
-#: kftabdlg.cpp:563
+#: kftabdlg.cpp:564
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "Ayinakuphendla imihla kwixesha elizayo."
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, fuzzy, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr ""
 "Umlinganiselo mkhulu kakhulu...Ungabeka ixabiso lomlinganiselo omkhulu?"
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, fuzzy, kde-format
 msgid "Error"
 msgstr "Imposiso."
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Set"
 msgstr ""
 
-#: kftabdlg.cpp:635
+#: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Do Not Set"
 msgstr ""
 
-#: kftabdlg.cpp:818
+#: kftabdlg.cpp:828
 #, fuzzy, kde-format
 #| msgid "&during the previous"
 msgctxt ""
@@ -527,7 +527,7 @@ msgid_plural "&during the previous"
 msgstr[0] "&ngeexesha elidlulileyo"
 msgstr[1] "&ngeexesha elidlulileyo"
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:829
 #, fuzzy, kde-format
 #| msgid "minute(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -536,7 +536,7 @@ msgid_plural "minutes"
 msgstr[0] "umzuzu(imi)"
 msgstr[1] "umzuzu(imi)"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:830
 #, fuzzy, kde-format
 #| msgid "hour(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -545,7 +545,7 @@ msgid_plural "hours"
 msgstr[0] "iyure(ii)"
 msgstr[1] "iyure(ii)"
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:831
 #, fuzzy, kde-format
 #| msgid "day(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -554,7 +554,7 @@ msgid_plural "days"
 msgstr[0] "imini(ii)"
 msgstr[1] "imini(ii)"
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:832
 #, fuzzy, kde-format
 #| msgid "month(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -563,7 +563,7 @@ msgid_plural "months"
 msgstr[0] "inyanga(ii)"
 msgstr[1] "inyanga(ii)"
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:833
 #, fuzzy, kde-format
 #| msgid "year(s)"
 msgctxt "use date ranges to search files by modified time"
