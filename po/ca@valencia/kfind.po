@@ -242,7 +242,7 @@ msgid ""
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
 "<qt>Permet utilitzar l'índex de fitxers creat pel paquet <i>slocate</i> per "
-"a accelerar la busca. Penseu a actualitzar l'índex de tant en tant "
+"a accelerar la busca. Penseu que cal actualitzar l'índex de tant en tant "
 "(utilitzant <i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:166
