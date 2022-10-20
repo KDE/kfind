@@ -5,7 +5,6 @@
   <project_license>GPL-2.0+</project_license>
   <name>KFind</name>
   <name xml:lang="ar">بحثك</name>
-  <name xml:lang="ast">KFind</name>
   <name xml:lang="az">KFind</name>
   <name xml:lang="bg">KFind</name>
   <name xml:lang="bs">KFind</name>
@@ -56,7 +55,6 @@
   <name xml:lang="zh-TW">KFind</name>
   <summary>Find Files/Folders</summary>
   <summary xml:lang="ar">اعثر على ملفات/مجلدات</summary>
-  <summary xml:lang="ast">Atopa ficheros/carpetes</summary>
   <summary xml:lang="az">Faylları/Qovluqları tapın</summary>
   <summary xml:lang="bg">Търсене на папки и директории</summary>
   <summary xml:lang="bs">Traženje datoteka i fascikli</summary>
@@ -111,7 +109,6 @@
       as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.
     </p>
     <p xml:lang="ar">يمكن استخدام بحثك كأداة بحث قائمة بذاتها، يتم إطلاقها بواسطة "مشغلك" أو من القائمة الخاصة بك. تم دمجه أيضًا في كونكيورر كـ "اعثر على ملف" في قائمة "الأدوات". يسمح لك بالعثور على الملفات بالاسم أو النوع أو المحتوى.</p>
-    <p xml:lang="ast">KFind pue usase como una ferramienta independiente de busca, llanzáu por KRunner o dende'l menú. Tamién ta integráu en Konqueror como «Atopar ficheru» nel menú «Ferramientes». Permítete atopar ficheros pel nome, tipu o conteníu.</p>
     <p xml:lang="az">KFind KRunner və ya menyudan başladılan müstəqil axtarış vasitəsi kimi istifadə edilə bilər. O. həmçinin Konqueror/Dolphin daxilinə Alətlər menyusunda "Fayl tapın" kimi inteqrasiya olunub. KFind sizə faylları adı, növü və tərkibinə görə axtarmağa imkan verir.</p>
     <p xml:lang="bg">Kfind може да се използва като самостоятелен инструмент за търсене, стартиран от Krunner или от менюто ви. Той също така е интегриран в Konqueror като "Търсене на файл" в менюто "Инструменти". Програмата ви позволява да намерите файлове по име, тип или съдържание.</p>
     <p xml:lang="bs">KFind se može koristiti kao samostalni alat za pretragu, koju je pokrenula KRunner ili iz menija. On je takođe integrisan u Konqueror kao "Pronađi Datoteku" u meniju "Alati". To vam omogućava da pronađete datoteke po imenu, tipu ili sadržaju.</p>
@@ -166,7 +163,6 @@
     <screenshot type="default">
       <caption>KFind main window</caption>
       <caption xml:lang="ar">النافذة الرئيسة لبحثك</caption>
-      <caption xml:lang="ast">Ventana principal de KFind</caption>
       <caption xml:lang="az">KFind əsas pəncərəsi</caption>
       <caption xml:lang="bg">Основен прозорец на KFind</caption>
       <caption xml:lang="ca">Finestra principal del KFind</caption>
