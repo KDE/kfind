@@ -37,6 +37,9 @@
 #include <KIO/JobUiDelegate>
 #include <KIO/OpenFileManagerWindowJob>
 #include <KIO/OpenUrlJob>
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 100, 0)
+#include <KIO/DeleteOrTrashJob>
+#endif
 
 // Permission strings
 #include <ki18n_version.h>
@@ -675,6 +678,7 @@ void KFindTreeView::deleteSelectedFiles()
         return;
     }
 
+#if KIO_VERSION < QT_VERSION_CHECK(5, 100, 0)
     KIO::JobUiDelegate uiDelegate;
     uiDelegate.setWindow(this);
     if (uiDelegate.askDeleteConfirmation(uris, KIO::JobUiDelegate::Delete, KIO::JobUiDelegate::ForceConfirmation)) {
@@ -682,6 +686,11 @@ void KFindTreeView::deleteSelectedFiles()
         KJobWidgets::setWindow(deleteJob, this);
         deleteJob->uiDelegate()->setAutoErrorHandlingEnabled(true);
     }
+#else
+    using Iface = KIO::AskUserActionInterface;
+    auto *trashJob = new KIO::DeleteOrTrashJob(uris, Iface::Delete, Iface::ForceConfirmation, this);
+    trashJob->start();
+#endif
 }
 
 void KFindTreeView::moveToTrashSelectedFiles()
@@ -691,6 +700,7 @@ void KFindTreeView::moveToTrashSelectedFiles()
         return;
     }
 
+#if KIO_VERSION < QT_VERSION_CHECK(5, 100, 0)
     KIO::JobUiDelegate uiDelegate;
     uiDelegate.setWindow(this);
     if (uiDelegate.askDeleteConfirmation(uris, KIO::JobUiDelegate::Trash, KIO::JobUiDelegate::ForceConfirmation)) {
@@ -698,6 +708,11 @@ void KFindTreeView::moveToTrashSelectedFiles()
         KJobWidgets::setWindow(trashJob, this);
         trashJob->uiDelegate()->setAutoErrorHandlingEnabled(true);
     }
+#else
+    using Iface = KIO::AskUserActionInterface;
+    auto *trashJob = new KIO::DeleteOrTrashJob(uris, Iface::Trash, Iface::ForceConfirmation, this);
+    trashJob->start();
+#endif
 }
 
 void KFindTreeView::reconfigureMouseSettings()
