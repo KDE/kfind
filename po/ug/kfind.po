@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:50+0000\n"
+"POT-Creation-Date: 2022-10-30 00:49+0000\n"
 "PO-Revision-Date: 2013-09-08 07:04+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -70,96 +70,96 @@ msgid "one item found"
 msgid_plural "%1 items found"
 msgstr[0] "%1 ھۆججەت تېپىلدى"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:49
 msgid "Read-write"
 msgstr "ئوقۇش-يېزىش"
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:50
 msgid "Read-only"
 msgstr "پەقەتلا ئوقۇش"
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:51
 msgid "Write-only"
 msgstr "پەقەتلا يېزىش"
 
-#: kfindtreeview.cpp:49
+#: kfindtreeview.cpp:52
 msgid "Inaccessible"
 msgstr "زىيارەت قىلغىلى بولمايدۇ"
 
-#: kfindtreeview.cpp:69
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "ئاتى"
 
-#: kfindtreeview.cpp:71
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "تارماق مۇندەرىجىدە"
 
-#: kfindtreeview.cpp:73
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "چوڭلۇقى"
 
-#: kfindtreeview.cpp:75
+#: kfindtreeview.cpp:78
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "ئۆزگەرتىلگەن ۋاقتى"
 
-#: kfindtreeview.cpp:77
+#: kfindtreeview.cpp:80
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "ئىمتىيازلار"
 
-#: kfindtreeview.cpp:79
+#: kfindtreeview.cpp:82
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "تۇنجى ماس كەلگەن قۇر"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:364
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "بار قىسقۇچنى ئاچ(&O)"
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:368
 #, kde-format
 msgid "&Delete"
 msgstr "ئۆچۈر(&D)"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr "ئەخلەتخانىغا يۆتكە(&M)"
 
-#: kfindtreeview.cpp:488
+#: kfindtreeview.cpp:491
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "نەتىجىنى باشقا ئاتتا ساقلا"
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:516
 #, kde-format
 msgid "Unable to save results."
 msgstr "نەتىجىنى ساقلىغىلى بولمىدى."
 
-#: kfindtreeview.cpp:531
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind نەتىجە ھۆججىتى"
 
-#: kfindtreeview.cpp:546
+#: kfindtreeview.cpp:549
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "نەتىجىلەر «%1» غا ساقلاندى"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:396
+#: kfindtreeview.cpp:647 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "خاسلىق(&P)"

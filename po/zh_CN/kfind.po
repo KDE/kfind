@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:50+0000\n"
+"POT-Creation-Date: 2022-10-30 00:49+0000\n"
 "PO-Revision-Date: 2022-10-22 05:28\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -66,96 +66,96 @@ msgid "one item found"
 msgid_plural "%1 items found"
 msgstr[0] "找到 %1 项"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:49
 msgid "Read-write"
 msgstr "读写"
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:50
 msgid "Read-only"
 msgstr "只读"
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:51
 msgid "Write-only"
 msgstr "只写"
 
-#: kfindtreeview.cpp:49
+#: kfindtreeview.cpp:52
 msgid "Inaccessible"
 msgstr "不可访问"
 
-#: kfindtreeview.cpp:69
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "名称"
 
-#: kfindtreeview.cpp:71
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "在子文件夹中"
 
-#: kfindtreeview.cpp:73
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "大小"
 
-#: kfindtreeview.cpp:75
+#: kfindtreeview.cpp:78
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "修改时间"
 
-#: kfindtreeview.cpp:77
+#: kfindtreeview.cpp:80
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "权限"
 
-#: kfindtreeview.cpp:79
+#: kfindtreeview.cpp:82
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "第一个匹配的行"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:364
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "打开包含的文件夹(&O)"
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:368
 #, kde-format
 msgid "&Delete"
 msgstr "删除(&D)"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr "移至回收站(&M)"
 
-#: kfindtreeview.cpp:488
+#: kfindtreeview.cpp:491
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "结果保存为"
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:516
 #, kde-format
 msgid "Unable to save results."
 msgstr "无法保存结果。"
 
-#: kfindtreeview.cpp:531
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind 结果文件"
 
-#: kfindtreeview.cpp:546
+#: kfindtreeview.cpp:549
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "结果已保存到：%1"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:396
+#: kfindtreeview.cpp:647 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "属性(&P)"

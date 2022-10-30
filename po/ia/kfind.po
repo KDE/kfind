@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:50+0000\n"
+"POT-Creation-Date: 2022-10-30 00:49+0000\n"
 "PO-Revision-Date: 2021-08-04 22:55+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -69,96 +69,96 @@ msgid_plural "%1 items found"
 msgstr[0] "un elemento trovate"
 msgstr[1] "%1 elementos trovate"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:49
 msgid "Read-write"
 msgstr "Lectura-Scriptura"
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:50
 msgid "Read-only"
 msgstr "Solmente de lectura"
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:51
 msgid "Write-only"
 msgstr "Solmente de scriptura"
 
-#: kfindtreeview.cpp:49
+#: kfindtreeview.cpp:52
 msgid "Inaccessible"
 msgstr "Non accessibile"
 
-#: kfindtreeview.cpp:69
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "Nomine"
 
-#: kfindtreeview.cpp:71
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "In sub dossier"
 
-#: kfindtreeview.cpp:73
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "Grandor"
 
-#: kfindtreeview.cpp:75
+#: kfindtreeview.cpp:78
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "Modificate"
 
-#: kfindtreeview.cpp:77
+#: kfindtreeview.cpp:80
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "Permissiones"
 
-#: kfindtreeview.cpp:79
+#: kfindtreeview.cpp:82
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Prime linea coincidente"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:364
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "&Aperi dossier(es) que contine"
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:368
 #, kde-format
 msgid "&Delete"
 msgstr "&Dele"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&Move al corbe"
 
-#: kfindtreeview.cpp:488
+#: kfindtreeview.cpp:491
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Salveguarda resultatos como"
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:516
 #, kde-format
 msgid "Unable to save results."
 msgstr "Inhabile a salveguardar resultatos."
 
-#: kfindtreeview.cpp:531
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "KFind Results File"
 msgstr "File de resultatos de KFind"
 
-#: kfindtreeview.cpp:546
+#: kfindtreeview.cpp:549
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Resultatos esseva salveguardate a : %1"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:396
+#: kfindtreeview.cpp:647 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "&Proprietates"

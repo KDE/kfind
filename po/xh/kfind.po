@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:50+0000\n"
+"POT-Creation-Date: 2022-10-30 00:49+0000\n"
 "PO-Revision-Date: 2002-10-25 11:47SAST\n"
 "Last-Translator: Lwandle Mgidlana <lwandle@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -78,103 +78,103 @@ msgid_plural "%1 items found"
 msgstr[0] "%1 kufunyenwe ifayile enye"
 msgstr[1] "%1 iifayile ezifumanekile"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:49
 msgid "Read-write"
 msgstr "Fuda-bhala"
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:50
 msgid "Read-only"
 msgstr "Funda-kuphela"
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:51
 msgid "Write-only"
 msgstr "Bhala-kuphela"
 
-#: kfindtreeview.cpp:49
+#: kfindtreeview.cpp:52
 msgid "Inaccessible"
 msgstr "Ayinikezeleki"
 
-#: kfindtreeview.cpp:69
+#: kfindtreeview.cpp:72
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "file name column"
 msgid "Name"
 msgstr "Igama"
 
-#: kfindtreeview.cpp:71
+#: kfindtreeview.cpp:74
 #, fuzzy, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "Kubalawuli abasezantsi"
 
-#: kfindtreeview.cpp:73
+#: kfindtreeview.cpp:76
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "file size column"
 msgid "Size"
 msgstr "Ubungakanani"
 
-#: kfindtreeview.cpp:75
+#: kfindtreeview.cpp:78
 #, fuzzy, kde-format
 #| msgid "Modified"
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "Iguqulwe kancinane"
 
-#: kfindtreeview.cpp:77
+#: kfindtreeview.cpp:80
 #, fuzzy, kde-format
 #| msgid "Permissions"
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "Iimvume"
 
-#: kfindtreeview.cpp:79
+#: kfindtreeview.cpp:82
 #, fuzzy, kde-format
 #| msgid "First Matching Line"
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Ilayini Yokuqala Ethelekisekayo"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:364
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr ""
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:368
 #, kde-format
 msgid "&Delete"
 msgstr ""
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:488
+#: kfindtreeview.cpp:491
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Gcina Iziphumo Njenge"
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:516
 #, fuzzy, kde-format
 msgid "Unable to save results."
 msgstr "Zange kwenzeke ukugcina iziphumo!"
 
-#: kfindtreeview.cpp:531
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind Ifayile Yeziphumo"
 
-#: kfindtreeview.cpp:546
+#: kfindtreeview.cpp:549
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Iziphumo zagcinwa kwifayile\n"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:396
+#: kfindtreeview.cpp:647 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "&Iimpahla"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:50+0000\n"
+"POT-Creation-Date: 2022-10-30 00:49+0000\n"
 "PO-Revision-Date: 2005-02-14 05:06-0800\n"
 "Last-Translator: Tamil PC <tamilpc@ambalam.com>\n"
 "Language-Team:  <ta@li.org>\n"
@@ -73,104 +73,104 @@ msgid_plural "%1 items found"
 msgstr[0] "ஒரு கொப்பு கண்டுபிடிக்கபட்டது"
 msgstr[1] "%1 கோப்புகள் கண்டுபிடிக்கப்பட்டன"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:49
 msgid "Read-write"
 msgstr "வாசிக்க-எழுத "
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:50
 msgid "Read-only"
 msgstr "வாசிக்க-மட்டும் "
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:51
 msgid "Write-only"
 msgstr "எழுத-மட்டும் "
 
-#: kfindtreeview.cpp:49
+#: kfindtreeview.cpp:52
 msgid "Inaccessible"
 msgstr "அணுகமுடியாதது "
 
-#: kfindtreeview.cpp:69
+#: kfindtreeview.cpp:72
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "file name column"
 msgid "Name"
 msgstr "பெயர்  "
 
-#: kfindtreeview.cpp:71
+#: kfindtreeview.cpp:74
 #, fuzzy, kde-format
 #| msgid "In Subfolder"
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "துணை கோப்புறையில்"
 
-#: kfindtreeview.cpp:73
+#: kfindtreeview.cpp:76
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "file size column"
 msgid "Size"
 msgstr "அளவு "
 
-#: kfindtreeview.cpp:75
+#: kfindtreeview.cpp:78
 #, fuzzy, kde-format
 #| msgid "Modified"
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "மாற்றப்பட்ட "
 
-#: kfindtreeview.cpp:77
+#: kfindtreeview.cpp:80
 #, fuzzy, kde-format
 #| msgid "Permissions"
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "அனுமதிகள் "
 
-#: kfindtreeview.cpp:79
+#: kfindtreeview.cpp:82
 #, fuzzy, kde-format
 #| msgid "First Matching Line"
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "முதலாவது பொருந்தும் வரி "
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:364
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr ""
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:368
 #, kde-format
 msgid "&Delete"
 msgstr ""
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:488
+#: kfindtreeview.cpp:491
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "முடிவுகளை இப்படி சேமிக்கவும் "
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:516
 #, kde-format
 msgid "Unable to save results."
 msgstr "முடிவுகளை சேமிக்க முடியவில்லை."
 
-#: kfindtreeview.cpp:531
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "KFind Results File"
 msgstr "Kதேடல் முடிவுக் கோப்பு "
 
-#: kfindtreeview.cpp:546
+#: kfindtreeview.cpp:549
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "இந்த கோப்பில் முடிவுகள் சேமிக்கபட்டன\n"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:396
+#: kfindtreeview.cpp:647 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "இயல்புகள் "

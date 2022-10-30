@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:50+0000\n"
+"POT-Creation-Date: 2022-10-30 00:49+0000\n"
 "PO-Revision-Date: 2007-10-26 16:01+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -73,105 +73,105 @@ msgid_plural "%1 items found"
 msgstr[0] "एक फ़ाइल मिला"
 msgstr[1] "%1 फ़ाइलें मिलीं"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:49
 msgid "Read-write"
 msgstr "पढ़ें-लिखें"
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:50
 msgid "Read-only"
 msgstr "सिर्फ पढ़ने के लिए"
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:51
 msgid "Write-only"
 msgstr "सिर्फ लिखने के लिए"
 
-#: kfindtreeview.cpp:49
+#: kfindtreeview.cpp:52
 msgid "Inaccessible"
 msgstr "पहुँच योग्य नहीं"
 
-#: kfindtreeview.cpp:69
+#: kfindtreeview.cpp:72
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "file name column"
 msgid "Name"
 msgstr "नाम"
 
-#: kfindtreeview.cpp:71
+#: kfindtreeview.cpp:74
 #, fuzzy, kde-format
 #| msgid "In Subfolder"
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "सब-फ़ोल्डर में"
 
-#: kfindtreeview.cpp:73
+#: kfindtreeview.cpp:76
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "file size column"
 msgid "Size"
 msgstr "आकार"
 
-#: kfindtreeview.cpp:75
+#: kfindtreeview.cpp:78
 #, fuzzy, kde-format
 #| msgid "Modified"
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "परिवर्धित"
 
-#: kfindtreeview.cpp:77
+#: kfindtreeview.cpp:80
 #, fuzzy, kde-format
 #| msgid "Permissions"
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "अनुमतियाँ"
 
-#: kfindtreeview.cpp:79
+#: kfindtreeview.cpp:82
 #, fuzzy, kde-format
 #| msgid "First Matching Line"
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "मिलती जुलती प्रथम पंक्ति"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:364
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr ""
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:368
 #, fuzzy, kde-format
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "मिटाएँ"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:488
+#: kfindtreeview.cpp:491
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "परिणाम ऐसे सहेजें"
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:516
 #, kde-format
 msgid "Unable to save results."
 msgstr "परिणामों को सहेजना संभव नहीं है."
 
-#: kfindtreeview.cpp:531
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "KFind Results File"
 msgstr "के-फाइंड परिणाम फ़ाइल"
 
-#: kfindtreeview.cpp:546
+#: kfindtreeview.cpp:549
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "परिणाम फ़ाइल में सहेजा-\n"
 
-#: kfindtreeview.cpp:644 kftabdlg.cpp:396
+#: kfindtreeview.cpp:647 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "गुण (&P)"
