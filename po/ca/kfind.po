@@ -688,15 +688,3 @@ msgstr "antonibella5@yahoo.com,sps@sastia.com"
 #, kde-format
 msgid "Path(s) to search"
 msgstr "Camí(ns) on cercar"
-
-#~ msgid "Regular e&xpression"
-#~ msgstr "&Expressió regular"
-
-#~ msgid "&Edit..."
-#~ msgstr "&Edita..."
-
-#~ msgid "HTML page"
-#~ msgstr "Pàgina HTML"
-
-#~ msgid "Text file"
-#~ msgstr "Fitxer de text"
