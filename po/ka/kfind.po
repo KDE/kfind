@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-30 00:49+0000\n"
-"PO-Revision-Date: 2022-11-28 09:49+0100\n"
+"PO-Revision-Date: 2022-12-01 08:11+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -172,6 +172,8 @@ msgstr "&სახელად:"
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
+"შეგიძლიათ გამოიყენოთ ვაილდკარდით დამთხვევა და \";\" ბევრი სახელის "
+"დასაშორებლად"
 
 #: kftabdlg.cpp:75
 #, kde-format
