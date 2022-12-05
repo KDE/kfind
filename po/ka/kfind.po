@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-30 00:49+0000\n"
-"PO-Revision-Date: 2022-12-01 09:33+0100\n"
+"PO-Revision-Date: 2022-12-04 07:48+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -219,6 +219,16 @@ msgid ""
 "between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
 "li></ul></qt>"
 msgstr ""
+"<qt>შეიყვანეთ მოსაძებნი ფაილის სახელი. <br />შესაძლო ვარიანტები შეგიძლიათ "
+"წერტილმძიმით გამოყოთ.<br /><br />ფაილის სახელის შეიძლება შემდეგ სპეციალურ "
+"სიმბოლოებს შეიცავდეს:<ul><li><b>?</b> ემთხვევა ნებისმიერ ერთ სიმბოლოს</"
+"li><li><b>*</b> ემთხვევა ნულიდან ნებისმიერ რაოდენობის სიმბოლოებს</"
+"li><li><b>[...]</b> ემთხვევა ნებისმიერ სიმბოლოს ფრჩხილების შიგნით</li></"
+"ul><br />ძებნის მაგალითები:<ul><li><b>*.kwd;*.txt</b>ყველა ფაილის ძებნა, "
+"რომელიც .kwd an .txt-ით მთავრდება</li><li><b>go[dt]</b>მოძებნის god-ს და got-"
+"ს</li><li><b>Hel?o</b>მოძებნის ყველა ფაილს, რომელიც იწყება \"Hel\"-ით და "
+"მთავრდება \"o\"-ით და შუაში ერთი სიმბოლო აქვთ.</li><li><b>My Document.kwd</"
+"b> მოძებნის ფაილს, რომელსაც ზუსტად ეს სახელი ჰქვია</li></ul></qt>"
 
 #: kftabdlg.cpp:122
 #, kde-format
@@ -227,6 +237,9 @@ msgid ""
 "to speed-up the search; remember to update the index from time to time "
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
+"<qt>საშუალებას გაძლევთ, ძებნის ასაჩქარებლად <i>slocate</i>პაკეტის მიერ "
+"შექმნილი ფაილების ინდექსი გამოიყენოთ. დაიმახსოვრეთ, რომ ხანდახან საჭიროა "
+"ინდექსის განახლება (ბრძანებით <i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:166
 #, kde-format
@@ -319,6 +332,9 @@ msgid ""
 "all file types from the list above are supported. Please refer to the "
 "documentation for a list of supported file types.</qt>"
 msgstr ""
+"<qt>თუ მითითებულია, ნაპოვნი იქნება ფაილები, რომლებიც ამ ტექსტს შეიცავენ. "
+"დაიმახსოვრეთ, რომ ყველა ფაილის ტიპი მხარდაჭერილი არაა. მხარდაჭერილი ფაილების "
+"სიის მისაღებად იხილეთ დოკუმენტაცია.</qt>"
 
 #: kftabdlg.cpp:303
 #, kde-format
@@ -336,6 +352,8 @@ msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
 msgstr ""
+"<qt>საშუალებას გაძლევთ, ნებისმიერი ტიპის ფაილში ეძებოთ. მათშიც კი, რომლებიც "
+"ჩვეულებრივ ტექსტს არ შეიცავენ (მაგალითად, გამშვები ფაილები და სურათები).</qt>"
 
 #: kftabdlg.cpp:314
 #, kde-format
@@ -417,6 +435,10 @@ msgid ""
 "title, an album</li><li><b>Images (png...)</b> Search images with a special "
 "resolution, comment...</li></ul></qt>"
 msgstr ""
+"<qt>ფაილის მითითებულ კომენტარებში/მეტამონაცემებში ძებნა<br />მაგალითად:<br /"
+"><ul><li><b>აუდიო ფაილები (mp3...)</b>id3 ჭდეში სათაურის ალბომის და ა.შ. "
+"ძებნა</li><li><b>სურათები (png…)</b>მოძებნეთ სურათები განსაკუთრებული "
+"გაფართოებით, კომენტარით და ა.შ...</li></ul></qt>"
 
 #: kftabdlg.cpp:408
 #, kde-format
@@ -425,6 +447,10 @@ msgid ""
 "(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
+"<qt>თუ მითითებულია, ძებნა მხოლოდ ამ ველში მოხდება<br /><ul><li><b>აუდიო "
+"ფაილები (mp3...)</b> შეიძლება იყოს სათაური, ალბომი.....</li><li><b>სურათები "
+"(png…)</b> მხოლოდ ფერების სიღრმის ან გაფართოებით და ა.შ. ძებნა...</li></ul></"
+"qt>"
 
 #: kftabdlg.cpp:549
 #, kde-format
