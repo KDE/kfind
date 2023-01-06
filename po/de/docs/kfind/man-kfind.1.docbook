@@ -1,76 +1,54 @@
 <?xml version="1.0" ?>
 <!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
-<!ENTITY % German "INCLUDE">
+<!ENTITY % English "INCLUDE">
 ]>
 
 <refentry lang="&language;">
 <refentryinfo>
-<title
->KFind-Benutzerhandbuch</title>
-<author
->&Lauri.Watts; &Lauri.Watts.mail;</author>
-<date
->2016-11-05</date>
-<releaseinfo
->Anwendungen 16.12</releaseinfo>
-<productname
->KDE-Anwendungen</productname>
+<title>kfind User's Manual</title>
+<author>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date>2016-11-05</date>
+<releaseinfo>Applications 16.12</releaseinfo>
+<productname>KDE Applications</productname>
 </refentryinfo>
 
 <refmeta>
-<refentrytitle
-><command
->kfind</command
-></refentrytitle>
-<manvolnum
->1</manvolnum>
+<refentrytitle><command>kfind</command></refentrytitle>
+<manvolnum>1</manvolnum>
 </refmeta>
 
 <refnamediv>
-<refname
-><command
->kfind</command
-></refname>
-<refpurpose
->Hilfsmittel zum Suchen von Dateien von &kde;</refpurpose>
+<refname><command>kfind</command></refname>
+<refpurpose>file find utility by &kde;</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
-<cmdsynopsis
-><command
->kfind</command
-> <group choice="opt"
-><option
->Suchpfad</option
-></group
-> <arg choice="opt"
->Optionen</arg
-> </cmdsynopsis>
+<cmdsynopsis>
+<command>kfind</command>
+<group choice="opt"><option>searchpath</option></group>
+<arg choice="opt">options</arg>
+</cmdsynopsis>
 </refsynopsisdiv>
 
 <refsect1>
-<title
->Beschreibung</title>
-<para
->KFind ist ein nützliches Hilfsmittel zum Suchen und Auffinden besonderer Dateien auf Ihrem Rechner oder zum Suchen von Dateien, die einem bestimmten Muster entsprechen. So können Sie beispielsweise Dateien eines bestimmten Typs, mit bestimmten Buchstaben im Dateinamen oder mit einem bestimmten Text im Dateiinhalt suchen.</para
-> 
-<para
->&kfind; hat eine grafische Benutzeroberfläche und ist eigentlich nicht für die Verwendung mit der Befehlszeile gedacht.</para>
+<title>Description</title>
+<para>The Find Files tool is a useful method of searching for specific files
+on your computer, or for searching for files that match a pattern. An
+example of this could include searching for files of a particular type or
+with certain letters in the filename, or that contain a certain piece of
+text in their contents.</para> 
+<para>&kfind; is a graphical tool, and not normally run from the command
+line.</para>
 
 </refsect1>
 
 <refsect1>
-<title
->Optionen</title>
+<title>Options</title>
 <variablelist>
 <varlistentry>
-<term
-><option
->Suchpfad</option
-></term>
-<listitem
-><para
->Sie können einen Pfad angeben, um im Dialog bereits auszufüllen, wo die Suche beginnt.</para>
+<term><option>searchpath</option></term>
+<listitem><para>You may optionally supply a path to prefill
+the dialog where to start the search.</para>
 </listitem>
 </varlistentry>
 </variablelist>
@@ -78,33 +56,24 @@
 </refsect1>
 
 <refsect1>
-<title
->Siehe auch</title>
+<title>See Also</title>
 <simplelist>
-<member
->Eine ausführliche Dokumentation erhalten Sie, indem Sie in der Adressleiste von &konqueror; <ulink url="help:/kfind"
->help:/kfind</ulink
-> eingeben, oder den Befehl <userinput
-><command
->khelpcenter</command
-> <parameter
->help:/kfind</parameter
-></userinput
-> ausführen).</member>
-<member
->kf5options(7)</member>
-<member
->qt5options(7)</member>
+<member>More detailed user documentation is available from <ulink
+url="help:/kfind">help:/kfind</ulink>
+(either enter this <acronym>URL</acronym> into &konqueror;, or run
+<userinput><command>khelpcenter</command>
+<parameter>help:/kfind</parameter></userinput>).</member>
+<member>kf5options(7)</member>
+<member>qt5options(7)</member>
 </simplelist>
 </refsect1>
 
 <refsect1>
-<title
->Autoren</title>
-<para
->Eine Liste der Entwickler finden Sie im Benutzerhandbuch, das Sie über das Hilfezentrum von &kde; erreichen.</para>
-<para
->Diese Dokumentation wurde von &Lauri.Watts; &Lauri.Watts.mail; aufbereitet.</para>
+<title>Authors</title>
+<para>A list of contributors is available in the complete user manual available in
+khelpcenter.</para>
+<para>This documentation was prepared by &Lauri.Watts;
+&Lauri.Watts.mail;</para>
 </refsect1>
 
 </refentry>
