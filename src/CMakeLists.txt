@@ -21,14 +21,17 @@ ecm_add_app_icon(kfind_SRCS ICONS ${ICONS_SRCS})
 target_link_libraries(kfind
 Qt${QT_MAJOR_VERSION}::Concurrent
 Qt${QT_MAJOR_VERSION}::Widgets
-KF5::Archive
-KF5::CoreAddons
-KF5::FileMetaData
-KF5::I18n
-KF5::KIOWidgets
-KF5::WidgetsAddons
-KF5::XmlGui
+KF${KF_MAJOR_VERSION}::Archive
+KF${KF_MAJOR_VERSION}::CoreAddons
+KF${KF_MAJOR_VERSION}::FileMetaData
+KF${KF_MAJOR_VERSION}::I18n
+KF${KF_MAJOR_VERSION}::KIOWidgets
+KF${KF_MAJOR_VERSION}::WidgetsAddons
+KF${KF_MAJOR_VERSION}::XmlGui
 )
+if (TARGET Qt::Core5Compat)
+    target_link_libraries(kfind Qt::Core5Compat)
+endif()
 
 install(TARGETS kfind ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 

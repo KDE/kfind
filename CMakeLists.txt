@@ -27,6 +27,13 @@ include(FeatureSummary)
 include(ECMAddAppIcon)
 include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
+if (QT_MAJOR_VERSION STREQUAL "6")
+    set(QT_REQUIRED_VERSION "6.4.0")
+    set(KF_MIN_VERSION "5.240.0")
+    set(KF_MAJOR_VERSION "6")
+else()
+    set(KF_MAJOR_VERSION "5")
+endif()
 
 set(KFIND_VERSION ${RELEASE_SERVICE_VERSION})
 
@@ -35,7 +42,7 @@ ecm_setup_version(${KFIND_VERSION} VARIABLE_PREFIX KFIND
 )
 
 # Build dependencies
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+find_package(KF${KF_MAJOR_VERSION} ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Archive
     CoreAddons
     FileMetaData
@@ -43,12 +50,12 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     KIO
     WidgetsAddons
 )
-find_package(KF5DocTools ${KF5_MIN_VERSION})
-set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
+find_package(KF${KF_MAJOR_VERSION}DocTools ${KF5_MIN_VERSION})
+set_package_properties(KF${KF_MAJOR_VERSION}DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
 )
-ecm_set_disabled_deprecation_versions(QT 5.15.2
+ecm_set_disabled_deprecation_versions(QT 6.4
     KF 5.101.0
     )
 
