@@ -7,13 +7,13 @@
 # Ozan Çağlayan <ozan@pardus.org.tr>, 2010.
 # obsoleteman <tulliana@gmail.com>, 2008-2009,2012.
 # Volkan Gezer <volkangezer@gmail.com>, 2013-2014.
-# Emir SARI <emir_sari@icloud.com>, 2022.
+# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-30 00:49+0000\n"
-"PO-Revision-Date: 2022-12-03 19:58+0300\n"
+"PO-Revision-Date: 2023-02-05 11:20+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -409,7 +409,7 @@ msgstr "SUID Çalıştırılabilir Dosyalar"
 #: kftabdlg.cpp:327
 #, kde-format
 msgid "All Images"
-msgstr "Tüm Resimler"
+msgstr "Tüm Görseller"
 
 #: kftabdlg.cpp:328
 #, kde-format
