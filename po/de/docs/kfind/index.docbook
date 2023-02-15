@@ -299,11 +299,15 @@
 ></listitem>
 <listitem
 ><para
->&kword; &gt;= 1.2</para
+><application
+>KWord</application
+> &gt;= 1.2</para
 ></listitem>
 <listitem
 ><para
->&kpresenter; &gt;= 1.2</para
+><application
+>KPresenter</application
+> &gt;= 1.2</para
 ></listitem>
 <listitem
 ><para
