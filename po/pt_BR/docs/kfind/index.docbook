@@ -1,8 +1,5 @@
 <?xml version="1.0" ?>
-<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
-"dtd/kdedbx45.dtd" [
-  <!ENTITY kappname "&kfind;">
-  <!ENTITY package "kdebase">
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % Brazilian-Portuguese "INCLUDE"
 > 
@@ -47,9 +44,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->29/05/2013</date>
+>22/10/2018</date>
 <releaseinfo
->&kde; 4.11</releaseinfo>
+>Applications 18.12</releaseinfo>
 
 <abstract>
 <para
@@ -60,7 +57,7 @@
 <keyword
 >KDE</keyword>
 <keyword
->kdeutils</keyword>
+>arquivo</keyword>
 <keyword
 >kfind</keyword>
 <keyword
@@ -349,40 +346,64 @@
 </listitem>
 </varlistentry>
 
-<!-- FIXME: "Search metainfo sections" 
-Search within files' specific comments/metainfo<br/>These are some "
-"examples:<br/><ul
-><li
-><b
->Audio files (mp3...)</b
-> Search in id3 tag for a "
-"title, an album</li
-><li
-><b
->Images (png...)</b
-> Search images with a special "
-"resolution, comment...</li
-></ul
-></qt
->"
-
-"<qt
->If specified, search only in this field<br/><ul
-><li
-><b
->Audio files "
-"(mp3...)</b
-> This can be Title, Album...</li
-><li
-><b
->Images (png...)</b
-> "
-"Search only in Resolution, Bitdepth...</li
-></ul
-></qt
->"
-Broken in 4.11? kfile4 + kfilemetadatareader give no output
--->
+<varlistentry>
+<term
+><guilabel
+>Pesquisar seções de metainformação</guilabel
+></term>
+<listitem>
+<para
+>Esses dois campos podem ser usados para pesquisar nos comentários específicos dos arquivos ou metainfo. </para>
+<para
+>Aqui estão alguns dos principais casos: </para>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>Arquivos de vídeo (avi, mp4, &etc;)</emphasis
+>: especifique algumas etiquetas (<userinput
+>Bitrate</userinput
+>, <userinput
+>Duração</userinput
+>, &etc;) e seus valores para encontrar itens que contenham os valores dos parâmetros  especificados em seus metadados. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Imagens (png, jpeg, &etc;)</emphasis
+>: especifique algumas etiquetas (<userinput
+>Largura</userinput
+>, <userinput
+>Altura</userinput
+>, &etc;) e seus valores para encontrar itens que contenham os valores dos parâmetros  especificados em seus metadados. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Arquivos de áudio (mp3, flac, &etc;)</emphasis
+>: especifique algumas etiquetas (<userinput
+>Título</userinput
+>, <userinput
+>Álbum</userinput
+>, &etc;) e seus valores para encontrar itens que contenham os valores dos parâmetros  especificados em seus metadados. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Ebooks (epub, azw, fb2, &etc;)</emphasis
+>: especifique algumas etiquetas (<userinput
+>Título</userinput
+>, <userinput
+>Autor</userinput
+>, &etc;) e seus valores para encontrar itens que contenham os valores dos parâmetros  especificados em seus metadados. </para>
+    </listitem>
+</itemizedlist>
+<note>
+    <para
+>Se houver uma tradução das etiquetas em seu idioma você pode usar os nomes traduzidos das etiquetas nos critérios da pesquisa. </para>
+</note>
+</listitem>
+</varlistentry>
 </variablelist>
 
 </sect1>
@@ -519,33 +540,7 @@ Broken in 4.11? kfile4 + kfilemetadatareader give no output
 >Tradução de Marcus Gama <email
 >marcus.gama@gmail.com</email
 ></para
-> 
-&underFDL; &underGPL; </chapter>
-
-<appendix id="installation">
-<title
->Instalação</title>
-
-<sect1 id="getting-kfind">
-<title
->Como obter o &kfind;</title>
-&install.intro.documentation; </sect1>
-
-<sect1 id="requirements">
-<title
->Requisitos</title>
-
-<para
->Para usar com sucesso o &kfind; você precisa do &kde; 4.x. </para>
-
-</sect1>
-
-<sect1 id="compilation">
-<title
->Compilação e Instalação</title>
-&install.compile.documentation; </sect1>
-
-</appendix>
+> &underFDL; &underGPL; </chapter>
 
 &documentation.index;
 

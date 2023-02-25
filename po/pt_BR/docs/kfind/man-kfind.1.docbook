@@ -6,13 +6,15 @@
 <refentry lang="&language;">
 <refentryinfo>
 <title
->Manual do Usuário do KDE</title>
+>Manual do usuário do kfind</title>
 <author
 >&Lauri.Watts; &Lauri.Watts.mail;</author>
 <date
->06/10/2010</date>
+>05/11/2016</date>
+<releaseinfo
+>Applications 16.12</releaseinfo>
 <productname
->KDE</productname>
+>KDE Applications</productname>
 </refentryinfo>
 
 <refmeta>
@@ -30,7 +32,7 @@
 >kfind</command
 ></refname>
 <refpurpose
->utilitário de procura de arquivos para o &kde;</refpurpose>
+>utilitário de procura de arquivos do &kde;</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -42,9 +44,7 @@
 >local-procura</option
 ></group
 > <arg choice="opt"
->Opções Genéricas do KDE</arg
-> <arg choice="opt"
->Opções Genéricas do Qt</arg
+>opções</arg
 > </cmdsynopsis>
 </refsynopsisdiv>
 
@@ -70,7 +70,7 @@
 ></term>
 <listitem
 ><para
->Você poderá, opcionalmente, fornecer um local pré-definido, separado por dois-pontos (:) para preencher previamente a janela. Você pode usar esta capacidade para configurar ícones diferentes no seu painel ou tela para procurar rapidamente em diversos locais.</para>
+>Você pode, opcionalmente, fornecer um caminho para preencher o diálogo onde começar a pesquisa.</para>
 </listitem>
 </varlistentry>
 </variablelist>
@@ -80,7 +80,8 @@
 <refsect1>
 <title
 >Veja também</title>
-<para
+<simplelist>
+<member
 >Existe uma documentação do usuário mais detalhada disponível através do <ulink url="help:/kfind"
 >help:/kfind</ulink
 > (tanto pode inserir este <acronym
@@ -91,7 +92,12 @@
 > <parameter
 >help:/kfind</parameter
 ></userinput
->).</para>
+>).</member>
+<member
+>kf5options(7)</member>
+<member
+>qt5options(7)</member>
+</simplelist>
 </refsect1>
 
 <refsect1>
