@@ -112,6 +112,7 @@ public:
 
 public Q_SLOTS:
     void copySelection();
+    void copySelectionPath();
     void contextMenuRequested(const QPoint &p);
     void saveResults();
 

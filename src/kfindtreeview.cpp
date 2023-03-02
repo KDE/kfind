@@ -361,6 +361,13 @@ KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
     QAction *copy = KStandardAction::copy(this, SLOT(copySelection()), this);
     m_actionCollection->addAction(QStringLiteral("edit_copy"), copy);
 
+    QAction *copyPathAction = m_actionCollection->addAction(QStringLiteral("copy_location"));
+    copyPathAction->setText(i18nc("@action:incontextmenu", "Copy Location"));
+    copyPathAction->setWhatsThis(i18nc("@info:whatsthis copy_location", "This will copy the path of the first selected item into the clipboard."));
+    copyPathAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-copy-path")));
+    m_actionCollection->setDefaultShortcuts(copyPathAction, {Qt::CTRL | Qt::ALT | Qt::Key_C});
+    connect(copyPathAction, &QAction::triggered, this, &KFindTreeView::copySelectionPath);
+
     QAction *openFolder = new QAction(QIcon::fromTheme(QStringLiteral("window-new")), i18n("&Open containing folder(s)"), this);
     connect(openFolder, &QAction::triggered, this, &KFindTreeView::openContainingFolder);
     m_actionCollection->addAction(QStringLiteral("openfolder"), openFolder);
@@ -482,6 +489,27 @@ void KFindTreeView::copySelection()
         QClipboard *cb = qApp->clipboard();
         cb->setMimeData(mime);
     }
+}
+
+void KFindTreeView::copySelectionPath()
+{
+    const auto selectedIndexes = m_proxyModel->mapSelectionToSource(selectionModel()->selection()).indexes();
+    if (selectedIndexes.isEmpty()) {
+        return;
+    }
+
+    const auto item = m_model->itemAtIndex(selectedIndexes.at(0)).getFileItem();
+
+    QString path = item.localPath();
+    if (path.isEmpty()) {
+        path = item.url().toDisplayString();
+    }
+
+    QClipboard *clipboard = QApplication::clipboard();
+    if (!clipboard) {
+        return;
+    }
+    clipboard->setText(path);
 }
 
 void KFindTreeView::saveResults()
@@ -627,6 +655,12 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
     m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("file_open")));
     m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("openfolder")));
     m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("edit_copy")));
+
+    QAction *copyLocationAction = m_actionCollection->action(QStringLiteral("copy_location"));
+    // It's not worth it to track the selection and update the action live.
+    copyLocationAction->setEnabled(fileList.count() == 1);
+    m_contextMenu->addAction(copyLocationAction);
+
     //m_contextMenu->addAction(m_actionCollection->action(QLatin1String("del")));
     m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("trash")));
     m_contextMenu->addSeparator();
