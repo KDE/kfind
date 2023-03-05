@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Turkish "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>kfind Kullanıcı El Kitabı</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>2016-11-05</date>
+<releaseinfo
+>Uygulamalar 16.12</releaseinfo>
+<productname
+>KDE Uygulamaları</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>&kde; için dosya bulma aracı</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>aramayolu</option
+></group
+> <arg choice="opt"
+>seçenekler</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Açıklama</title>
+<para
+>Dosyaları Bul aracı, bilgisayarınızdaki belirli dosyaları aramak veya bir desenle eşleşen dosyaları aramak için kullanışlı bir yöntemdir. Bunun bir örneği, belirli bir türe ait dosyaları, dosya adındaki bazı harfleri veya içeriklerinde belirli bir metin parçasını içeren dosyaları aramaktır.</para
+> 
+<para
+>&kfind; bir grafik aracıdır ve normal şekilde komut satırından çalışmaz.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Seçenekler</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>aramyolu</option
+></term>
+<listitem
+><para
+>İsteğe bağlı olarak, aramayı başlatacağınız yeri önceden doldurmak için bir yol da belirtebilirsiniz.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Ayrıca Bakınız</title>
+<simplelist>
+<member
+>Ayrıntılı kullanıcı belgelendirmesine <ulink url="help:/kfind"
+>help:/kfind</ulink
+> bölümünden ulaşabilirsiniz (ya da bu <acronym
+>URL</acronym
+>'yi &konqueror; adres çubuğuna girin, veya <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+> komutunu çalıştırın).</member>
+<member
+>kf5options(7)</member>
+<member
+>qt5options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Yazarlar</title>
+<para
+>Katkıda bulunanların bir listesi, khelpcenter içinde bulunan tam kullanım kılavuzunda mevcuttur.</para>
+<para
+>Bu belge, &Lauri.Watts; &Lauri.Watts.mail; tarafafından hazırlanmıştır</para>
+</refsect1>
+
+</refentry>

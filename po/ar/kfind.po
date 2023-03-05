@@ -593,12 +593,12 @@ msgstr "بحثك"
 #: main.cpp:37
 #, kde-format
 msgid "KDE file find utility"
-msgstr "أداة كدي للبحث عن الملفات"
+msgstr "أداة كِيدِي للبحث عن الملفات"
 
 #: main.cpp:38
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "© ١٩٩٨-٢٠٢١ لمطوري كدي"
+msgstr "© ١٩٩٨-٢٠٢١ لمطوري كِيدِي"
 
 #: main.cpp:40
 #, kde-format
