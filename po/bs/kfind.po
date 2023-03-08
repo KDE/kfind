@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-30 00:49+0000\n"
+"POT-Creation-Date: 2023-03-08 00:50+0000\n"
 "PO-Revision-Date: 2014-10-20 20:10+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: bosanski <bs@li.org>\n"
@@ -130,44 +130,56 @@ msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Prva pronađena linija"
 
-#: kfindtreeview.cpp:364
+#: kfindtreeview.cpp:365
+#, kde-format
+msgctxt "@action:incontextmenu"
+msgid "Copy Location"
+msgstr ""
+
+#: kfindtreeview.cpp:366
+#, kde-format
+msgctxt "@info:whatsthis copy_location"
+msgid "This will copy the path of the first selected item into the clipboard."
+msgstr ""
+
+#: kfindtreeview.cpp:371
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "&Otvori roditeljsku fasciklu"
 
-#: kfindtreeview.cpp:368
+#: kfindtreeview.cpp:375
 #, kde-format
 msgid "&Delete"
 msgstr "O&briši"
 
-#: kfindtreeview.cpp:372
+#: kfindtreeview.cpp:379
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&Premjesti u Smeće"
 
-#: kfindtreeview.cpp:491
+#: kfindtreeview.cpp:519
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Sačuvaj rezultate kao"
 
-#: kfindtreeview.cpp:516
+#: kfindtreeview.cpp:544
 #, kde-format
 msgid "Unable to save results."
 msgstr "Nisam u mogućnosti da sačuvam rezultate."
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:562
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind datoteka sa rezultatima"
 
-#: kfindtreeview.cpp:549
+#: kfindtreeview.cpp:577
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Rezultati sačuvani u: %1"
 
-#: kfindtreeview.cpp:647 kftabdlg.cpp:396
+#: kfindtreeview.cpp:681 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "&Osobine"

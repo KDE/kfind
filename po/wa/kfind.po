@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-30 00:49+0000\n"
+"POT-Creation-Date: 2023-03-08 00:50+0000\n"
 "PO-Revision-Date: 2010-01-21 18:26+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -133,46 +133,58 @@ msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Prumire roye ki corespond"
 
-#: kfindtreeview.cpp:364
+#: kfindtreeview.cpp:365
+#, kde-format
+msgctxt "@action:incontextmenu"
+msgid "Copy Location"
+msgstr ""
+
+#: kfindtreeview.cpp:366
+#, kde-format
+msgctxt "@info:whatsthis copy_location"
+msgid "This will copy the path of the first selected item into the clipboard."
+msgstr ""
+
+#: kfindtreeview.cpp:371
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "&Drovi ridant(s) contnant(s)"
 
-#: kfindtreeview.cpp:368
+#: kfindtreeview.cpp:375
 #, kde-format
 msgid "&Delete"
 msgstr "&Disfacer"
 
-#: kfindtreeview.cpp:372
+#: kfindtreeview.cpp:379
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&Taper å batch"
 
-#: kfindtreeview.cpp:491
+#: kfindtreeview.cpp:519
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Schaper rzultats eyet les rlomer"
 
-#: kfindtreeview.cpp:516
+#: kfindtreeview.cpp:544
 #, kde-format
 msgid "Unable to save results."
 msgstr "Dji n' a nén parvinou a schaper les rzultats."
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:562
 #, kde-format
 msgid "KFind Results File"
 msgstr "Fitchî des rzultats di Kfind"
 
-#: kfindtreeview.cpp:549
+#: kfindtreeview.cpp:577
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Les rzultats sont schapés e fitchî\n"
 
-#: kfindtreeview.cpp:647 kftabdlg.cpp:396
+#: kfindtreeview.cpp:681 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "&Prôpietés"
