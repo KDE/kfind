@@ -186,7 +186,7 @@ msgstr "Bu&sca a:"
 #: kftabdlg.cpp:78
 #, kde-format
 msgid "Include &subfolders"
-msgstr "Incloure les &subcarpetes"
+msgstr "Inclou les &subcarpetes"
 
 #: kftabdlg.cpp:79
 #, kde-format
