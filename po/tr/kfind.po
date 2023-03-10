@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-08 00:50+0000\n"
-"PO-Revision-Date: 2023-02-05 11:20+0300\n"
+"PO-Revision-Date: 2023-03-08 12:02+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,13 +21,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Find Files/Folders"
-msgstr "Dosya/Dizin Bul"
+msgstr "Dosya/Klasör Bul"
 
 #: kfinddlg.cpp:48 kfinddlg.cpp:197
 #, kde-format
@@ -64,7 +64,7 @@ msgstr "Lütfen \"Buraya bak\" kutucuğunda bir tam yol belirtin."
 #: kfinddlg.cpp:205
 #, kde-format
 msgid "Could not find the specified folder."
-msgstr "Belirtilen dizin bulunamadı."
+msgstr "Belirtilen klasör bulunamadı."
 
 #: kfinddlg.cpp:228 kfinddlg.cpp:252
 #, kde-format
@@ -75,15 +75,15 @@ msgstr[1] "%1 öge bulundu"
 
 #: kfindtreeview.cpp:49
 msgid "Read-write"
-msgstr "Oku-Yaz"
+msgstr "Okunur-Yazılır"
 
 #: kfindtreeview.cpp:50
 msgid "Read-only"
-msgstr "Yalnızca oku"
+msgstr "Saltokunur"
 
 #: kfindtreeview.cpp:51
 msgid "Write-only"
-msgstr "Yalnızca yaz"
+msgstr "Saltyazılır"
 
 #: kfindtreeview.cpp:52
 msgid "Inaccessible"
@@ -99,7 +99,7 @@ msgstr "Ad"
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
-msgstr "Alt Dizin"
+msgstr "Alt Klasörde"
 
 #: kfindtreeview.cpp:76
 #, kde-format
@@ -129,18 +129,18 @@ msgstr "İlk Eşleşen Satır"
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Konumu Kopyala"
 
 #: kfindtreeview.cpp:366
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
-msgstr ""
+msgstr "Bu, seçili ilk ögenin yolunu panoya kopyalar."
 
 #: kfindtreeview.cpp:371
 #, kde-format
 msgid "&Open containing folder(s)"
-msgstr "&İçeren dizin(ler)i aç"
+msgstr "&İçeren klasörleri aç"
 
 #: kfindtreeview.cpp:375
 #, kde-format
@@ -199,7 +199,7 @@ msgstr "&Aranacak yer:"
 #: kftabdlg.cpp:78
 #, kde-format
 msgid "Include &subfolders"
-msgstr "A&lt dizinleri kapsa"
+msgstr "&Alt klasörleri içer"
 
 #: kftabdlg.cpp:79
 #, kde-format
@@ -386,7 +386,7 @@ msgstr "Arama &üst bilgi bölümleri:"
 #: kftabdlg.cpp:320
 #, kde-format
 msgid "All Files & Folders"
-msgstr "Tüm Dosyalar ve Dizinler"
+msgstr "Tüm Dosyalar ve Klasörler"
 
 #: kftabdlg.cpp:321
 #, kde-format
@@ -396,7 +396,7 @@ msgstr "Dosyalar"
 #: kftabdlg.cpp:322
 #, kde-format
 msgid "Folders"
-msgstr "Dizinler"
+msgstr "Klasörler"
 
 #: kftabdlg.cpp:323
 #, kde-format
