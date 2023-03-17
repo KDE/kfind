@@ -8,7 +8,7 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # AbdulAziz AlSharif <a.a-a.s@hotmail.com>, 2007.
 # Youssef Chahibi <chahibi@gmail.com>, 2007.
-# zayed <zayed.alsaidi@gmail.com>, 2008, 2012, 2022.
+# zayed <zayed.alsaidi@gmail.com>, 2008, 2012, 2022, 2023.
 # Abdalrahim G. Fakhouri <abdilra7eem@yahoo.com>, 2012.
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2014.
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-08 00:50+0000\n"
-"PO-Revision-Date: 2022-01-21 13:13+0400\n"
+"PO-Revision-Date: 2023-03-16 09:41+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Lokalize 21.07.70\n"
+"X-Generator: Lokalize 21.12.3\n"
 "X-Project-Style: kde\n"
 
 #: kfinddlg.cpp:31
@@ -138,13 +138,13 @@ msgstr "أول سطر تطابق"
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "انسخ المكان"
 
 #: kfindtreeview.cpp:366
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
-msgstr ""
+msgstr "سيؤدي هذا إلى نسخ مسار العنصر الأول المحدد في الحافظة."
 
 #: kfindtreeview.cpp:371
 #, kde-format
