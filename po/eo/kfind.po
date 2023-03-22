@@ -1,17 +1,17 @@
-# translation of kfindpart.po to Esperanto
+# translation of kfind.pot to Esperanto
 # Copyright (C) 1998, 2007 Free Software Foundation, Inc.
 # Wolfram Diestel <wolfram@steloj.de>, 1998.
 # Stéphane Fillod <f8cfe@free.fr>, 2007.
 # Cindy McKee <cfmckee@gmail.com>, 2007.
-#
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: kfindpart\n"
+"Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-08 00:50+0000\n"
-"PO-Revision-Date: 2007-12-18 11:28-0600\n"
-"Last-Translator: Cindy McKee <cfmckee@gmail.com>\n"
+"PO-Revision-Date: 2023-03-20 22:43+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -30,15 +30,13 @@ msgstr "Trovi Dosierojn/Dosierujojn"
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
-msgstr ""
+msgstr "Senlabore."
 
 #. i18n as below
 #: kfinddlg.cpp:133
-#, fuzzy, kde-format
-#| msgid "one file found"
-#| msgid_plural "%1 files found"
+#, kde-format
 msgid "0 items found"
-msgstr "unu dosiero estas trovita"
+msgstr "0 elementoj trovitaj"
 
 #: kfinddlg.cpp:172
 #, kde-format
@@ -66,13 +64,11 @@ msgid "Could not find the specified folder."
 msgstr "Ne eblis trovi la donitan dosierujon."
 
 #: kfinddlg.cpp:228 kfinddlg.cpp:252
-#, fuzzy, kde-format
-#| msgid "one file found"
-#| msgid_plural "%1 files found"
+#, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
-msgstr[0] "unu dosiero estas trovita"
-msgstr[1] "%1 dosieroj estas trovitaj"
+msgstr[0] ""
+msgstr[1] ""
 
 #: kfindtreeview.cpp:49
 msgid "Read-write"
@@ -170,11 +166,10 @@ msgid "KFind Results File"
 msgstr "Trovitaj dosieroj"
 
 #: kfindtreeview.cpp:577
-#, fuzzy, kde-format
-#| msgid "Results were saved to file\n"
+#, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
-msgstr "Rezultoj estas konservitaj en la dosiero\n"
+msgstr ""
 
 #: kfindtreeview.cpp:681 kftabdlg.cpp:396
 #, kde-format
@@ -223,18 +218,7 @@ msgid "Show &hidden files"
 msgstr "Montri &kaŝitajn dosierojn sur la labortablo"
 
 #: kftabdlg.cpp:101
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>Enter the filename you are looking for. <br />Alternatives may be "
-#| "separated by a semicolon \";\".<br /><br />The filename may contain the "
-#| "following special characters:<ul><li><b>?</b> matches any single "
-#| "character</li><li><b>*</b> matches zero or more of any characters</"
-#| "li><li><b>[...]</b> matches any of the characters in braces</li></ul><br /"
-#| ">Example searches:<ul><li><b>*.kwd;*.txt</b> finds all files ending with ."
-#| "kwd or .txt</li><li><b>go[dt]</b> finds god and got</li><li><b>Hel?o</b> "
-#| "finds all files that start with \"Hel\" and end with \"o\", having one "
-#| "character in between</li><li><b>My Document.kwd</b> finds a file of "
-#| "exactly that name</li></ul></qt>"
+#, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
 "separated by a semicolon \";\".<br /><br />The filename may contain the "
@@ -247,16 +231,6 @@ msgid ""
 "between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
 "li></ul></qt>"
 msgstr ""
-"<qt>Entajpu la dosieronomon kiun vi volas trovi. <br />Alternativajn nomojn "
-"vi povas apartigi per puntokomo \";\".<br /><br />La dosieronomo povas "
-"enhavi la sekvajn signojn:<ul><li><b>?</b>kungruos kun unuopa signo</"
-"li><li><b>*</b> kongruos kun iu ajn nombro de signoj</li><li><b>[...]</b> "
-"kongruos kun iujn ajn signojn en krampoj</li></ul><br />Ekzemplaj serĉoj:"
-"<ul><li><b>*.kwd;*.txt</b> trovas ĉiujn dosierojn kiuj finiĝas per .kwd aŭ ."
-"txt</li><li><b>man[oa]</b>trovos \"mano\" kaj \"mana\"</li><li><b>Salu?on</"
-"b>trovos ĉiujn dosierojn kiuj komenciĝas je \"Salu\", finiĝas je \"on\" kaj "
-"havas unu mezan signon.</li><li><b>Mia dokumento.kwd</b> trovos dosieron kiu "
-"havas ĝuste tiun nomon.</li></ul></qt>"
 
 #: kftabdlg.cpp:122
 #, kde-format
@@ -586,10 +560,9 @@ msgid "KDE file find utility"
 msgstr "KDE-Trovprogramo"
 
 #: main.cpp:38
-#, fuzzy, kde-format
-#| msgid "(c) 1998-2003, The KDE Developers"
+#, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "(c) 1998-2003, La KDE-Programistoj"
+msgstr ""
 
 #: main.cpp:40
 #, kde-format
@@ -607,10 +580,9 @@ msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
 
 #: main.cpp:41
-#, fuzzy, kde-format
-#| msgid "Current Maintainer"
+#, kde-format
 msgid "Former Maintainer"
-msgstr "Nuna fleganto"
+msgstr ""
 
 #: main.cpp:42
 #, kde-format
@@ -713,46 +685,3 @@ msgstr "wolfram@steloj.de,f8cfe@free.fr,cfmckee@gmail.com"
 #, kde-format
 msgid "Path(s) to search"
 msgstr "Traserĉenda(j) vojo(j)"
-
-#~ msgid "Regular e&xpression"
-#~ msgstr "&Regula esprimo"
-
-#~ msgid "&Edit..."
-#~ msgstr "&Redakti..."
-
-#~ msgctxt "Name of the component that finds things"
-#~ msgid "Find Component"
-#~ msgstr "Trovi komponanton"
-
-#~ msgid "Aborted."
-#~ msgstr "Ĉesigis."
-
-#~ msgid "Ready."
-#~ msgstr "Preta."
-
-#~ msgid "Do you really want to delete the selected file?"
-#~ msgid_plural "Do you really want to delete the %1 selected files?"
-#~ msgstr[0] "Ĉu vere vi volas forigi la elektitan dosieron?"
-#~ msgstr[1] "Ĉu vere vi volas forigi la %1 elektitajn dosierojn?"
-
-#~ msgctxt "Menu item"
-#~ msgid "Open"
-#~ msgstr "Malfermi"
-
-#~ msgid "Open Folder"
-#~ msgstr "Malfermi Dosierujon"
-
-#~ msgid "Copy"
-#~ msgstr "Kopii"
-
-#~ msgid "Open With..."
-#~ msgstr "Malfermi per..."
-
-#~ msgid "Properties"
-#~ msgstr "Ecoj"
-
-#~ msgid "Selected Files"
-#~ msgstr "Elektitaj dosieroj"
-
-#~ msgid "AMiddleLengthText..."
-#~ msgstr "Mezlongateksto..."
