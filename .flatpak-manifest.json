@@ -1,0 +1,30 @@
+{
+    "id": "org.kde.kfind",
+    "rename-icon": "kfind",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15-22.08",
+    "sdk": "org.kde.Sdk",
+    "command": "kfind",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--filesystem=host",
+        "--device=dri"
+    ],
+    "cleanup": [
+        "/share/man"
+    ],
+    "modules": [
+        {
+            "name": "kfind",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
+        }
+    ]
+}
