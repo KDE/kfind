@@ -11,6 +11,7 @@ Dependencies:
     'frameworks/kdoctools': '@latest-kf6'
     'frameworks/kfilemetadata': '@latest-kf6'
     'frameworks/kwidgetsaddons': '@latest-kf6'
+    'frameworks/kxmlgui': '@latest-kf6'
     'frameworks/kio': '@latest-kf6'
 
 - 'on': ['Linux/Qt5', 'FreeBSD/Qt5']
@@ -22,6 +23,7 @@ Dependencies:
     'frameworks/kdoctools': '@stable'
     'frameworks/kfilemetadata': '@stable'
     'frameworks/kwidgetsaddons': '@stable'
+    'frameworks/kxmlgui': '@stable'
     'frameworks/kio': '@stable'
 
 Options:

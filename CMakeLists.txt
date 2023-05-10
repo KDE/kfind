@@ -49,6 +49,7 @@ find_package(KF${KF_MAJOR_VERSION} ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     I18n
     KIO
     WidgetsAddons
+    XmlGui
 )
 find_package(KF${KF_MAJOR_VERSION}DocTools ${KF5_MIN_VERSION})
 set_package_properties(KF${KF_MAJOR_VERSION}DocTools PROPERTIES DESCRIPTION
