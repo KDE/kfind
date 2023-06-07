@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-08 00:50+0000\n"
-"PO-Revision-Date: 2023-03-21 22:43+0100\n"
+"PO-Revision-Date: 2023-06-06 22:02+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -67,8 +67,8 @@ msgstr "Ne eblis trovi la donitan dosierujon."
 #, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "trovis unu eron"
+msgstr[1] "trovis %1 erojn"
 
 #: kfindtreeview.cpp:49
 msgid "Read-write"
@@ -126,18 +126,18 @@ msgstr "Unua Kongrua Linio"
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Kopii lokon"
 
 #: kfindtreeview.cpp:366
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
-msgstr ""
+msgstr "Ĉi tio kopios la vojon de la unua elektita ero al la tondujo."
 
 #: kfindtreeview.cpp:371
 #, kde-format
 msgid "&Open containing folder(s)"
-msgstr ""
+msgstr "Malfermi enhavanta(j)n d&osiero(j)n"
 
 #: kfindtreeview.cpp:375
 #, kde-format
@@ -169,12 +169,12 @@ msgstr "Trovitaj dosieroj"
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
-msgstr ""
+msgstr "Rezuloj estis konservitaj al: %1"
 
 #: kfindtreeview.cpp:681 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
-msgstr "E&coj"
+msgstr "&Proprecoj"
 
 #: kftabdlg.cpp:66
 #, kde-format
@@ -231,6 +231,16 @@ msgid ""
 "between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
 "li></ul></qt>"
 msgstr ""
+"<qt>Enigu la dosieronomon kiun vi serĉas.<br />Alternativoj povas esti "
+"apartigitaj per punktokomo \";\".<br /><br />La dosieronomo povas enhavi "
+"lasekvantajn specialsignojn:<ul><li><b>?</b> kongruas al iu unuopa signo</"
+"li><li><b>*</b> kongruas al nul aŭ pli da iuj signoj</li><li><b>[...]</b> "
+"kongruas al la signoj inter la kunigaj krampoj</li></ul><br />Ekzemplaj "
+"serĉoj:<ul><li><b>*.kwd;*.txt</b> trovas ĉiujn dosierojn finantajn per .kwd "
+"aŭ .txt</li><li><b>go[dt]</b> trovas god kaj got</li><li><b>Hel?o</b> trovas "
+"ĉiujn dosierojn kiuj komenciĝas per \"Hel\" kaj finas per \"o\", havante unu "
+"signon intere.</li><li><b>My Document.kwd</b> trovas dosieron de tiu ekzakta "
+"nomo</li></ul></qt>"
 
 #: kftabdlg.cpp:122
 #, kde-format
@@ -562,12 +572,12 @@ msgstr "KDE-Trovprogramo"
 #: main.cpp:38
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr ""
+msgstr "(k) 1998-2021, la evoluistoj de KDE"
 
 #: main.cpp:40
 #, kde-format
 msgid "Kai Uwe Broulik"
-msgstr ""
+msgstr "Kai Uwe Broulik"
 
 #: main.cpp:40
 #, kde-format
@@ -582,7 +592,7 @@ msgstr "Eric Coquelle"
 #: main.cpp:41
 #, kde-format
 msgid "Former Maintainer"
-msgstr ""
+msgstr "Antaŭa prizorganto"
 
 #: main.cpp:42
 #, kde-format
