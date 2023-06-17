@@ -16,6 +16,7 @@
   <name xml:lang="de">KFind</name>
   <name xml:lang="el">KFind</name>
   <name xml:lang="en-GB">KFind</name>
+  <name xml:lang="eo">KFind</name>
   <name xml:lang="es">KFind</name>
   <name xml:lang="et">KFind</name>
   <name xml:lang="eu">KFind</name>
@@ -67,6 +68,7 @@
   <summary xml:lang="de">Dateien/Ordner suchen</summary>
   <summary xml:lang="el">Αναζητήστε αρχεία/φακέλους</summary>
   <summary xml:lang="en-GB">Find Files/Folders</summary>
+  <summary xml:lang="eo">Trovi Dosierojn/Dosierujojn</summary>
   <summary xml:lang="es">Buscar archivos o carpetas</summary>
   <summary xml:lang="et">Failide/kataloogide otsimine</summary>
   <summary xml:lang="eu">Aurkitu fitxategiak/karpetak</summary>
@@ -177,6 +179,7 @@
       <caption xml:lang="de">KFind-Hauptfenster</caption>
       <caption xml:lang="el">Κύριο παράθυρο του KFind</caption>
       <caption xml:lang="en-GB">KFind main window</caption>
+      <caption xml:lang="eo">KFind ĉefa fenestro</caption>
       <caption xml:lang="es">Ventana principal de KFind</caption>
       <caption xml:lang="et">KFindi peaaken</caption>
       <caption xml:lang="eu">KFind leiho nagusia</caption>
