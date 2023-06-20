@@ -189,8 +189,8 @@ msgstr "&Nome:"
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
-"Pode empregar busca de coincidencias con caracteres de substitución e «;» "
-"para separar múltiplos nomes"
+"Pode usar busca de coincidencias con caracteres de substitución e «;» para "
+"separar múltiplos nomes"
 
 #: kftabdlg.cpp:75
 #, kde-format
@@ -215,12 +215,12 @@ msgstr "&Examinar…"
 #: kftabdlg.cpp:81
 #, kde-format
 msgid "&Use files index"
-msgstr "&Empregar o índice de ficheiros"
+msgstr "&Usar o índice de ficheiros"
 
 #: kftabdlg.cpp:82
 #, kde-format
 msgid "Show &hidden files"
-msgstr "Mostrar os ficheiros &agochados"
+msgstr "Amosar os ficheiros &agochados"
 
 #: kftabdlg.cpp:101
 #, kde-format
@@ -255,9 +255,9 @@ msgid ""
 "to speed-up the search; remember to update the index from time to time "
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
-"<qt>Isto permítelle empregar o índice de ficheiros creado polo paquete "
+"<qt>Isto permítelle usar o índice de ficheiros creado polo paquete "
 "<i>slocate</i> para axilizar a busca; lembre actualizar o índice de cando en "
-"cando (empregando <i>updatedb</i>).</qt>"
+"cando (usando <i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:166
 #, kde-format
@@ -504,12 +504,12 @@ msgstr "Erro"
 #: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Set"
-msgstr "Estabelecer"
+msgstr "Definir"
 
 #: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
 msgid "Do Not Set"
-msgstr "Non estabelecer"
+msgstr "Non definir"
 
 #: kftabdlg.cpp:828
 #, kde-format
@@ -566,7 +566,7 @@ msgstr[1] "anos"
 #, kde-format
 msgctxt "@title:window"
 msgid "Error while using locate"
-msgstr "Erro ao empregar «locate»"
+msgstr "Erro ao usar «locate»"
 
 #: main.cpp:36
 #, kde-format
