@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.2\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -71,6 +71,7 @@ msgstr "پوشه مشخص‌شده را نتوانست پیدا کند."
 msgid "one item found"
 msgid_plural "%1 items found"
 msgstr[0] "%1 پرونده یافت شد"
+msgstr[1] ""
 
 #: kfindtreeview.cpp:49
 msgid "Read-write"
@@ -314,6 +315,7 @@ msgstr "مساوی با"
 msgid "Byte"
 msgid_plural "Bytes"
 msgstr[0] "بایت"
+msgstr[1] ""
 
 #: kftabdlg.cpp:219
 #, kde-format
@@ -516,6 +518,7 @@ msgctxt ""
 msgid "&during the previous"
 msgid_plural "&during the previous"
 msgstr[0] "&طی قبلی‌"
+msgstr[1] ""
 
 #: kftabdlg.cpp:829
 #, fuzzy, kde-format
@@ -524,6 +527,7 @@ msgctxt "use date ranges to search files by modified time"
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "دقیقه"
+msgstr[1] ""
 
 #: kftabdlg.cpp:830
 #, fuzzy, kde-format
@@ -532,6 +536,7 @@ msgctxt "use date ranges to search files by modified time"
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "ساعت"
+msgstr[1] ""
 
 #: kftabdlg.cpp:831
 #, fuzzy, kde-format
@@ -540,6 +545,7 @@ msgctxt "use date ranges to search files by modified time"
 msgid "day"
 msgid_plural "days"
 msgstr[0] "روز"
+msgstr[1] ""
 
 #: kftabdlg.cpp:832
 #, fuzzy, kde-format
@@ -548,6 +554,7 @@ msgctxt "use date ranges to search files by modified time"
 msgid "month"
 msgid_plural "months"
 msgstr[0] "ماه"
+msgstr[1] ""
 
 #: kftabdlg.cpp:833
 #, fuzzy, kde-format
@@ -556,6 +563,7 @@ msgctxt "use date ranges to search files by modified time"
 msgid "year"
 msgid_plural "years"
 msgstr[0] "سال"
+msgstr[1] ""
 
 #: kquery.cpp:565
 #, fuzzy, kde-format
