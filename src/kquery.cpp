@@ -581,3 +581,5 @@ void KQuery::slotendProcessLocate(int code, QProcess::ExitStatus)
     }
     Q_EMIT result(0);
 }
+
+#include "moc_kquery.cpp"

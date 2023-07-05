@@ -277,3 +277,5 @@ QStringList KfindDlg::getAllSubdirs(QDir d)
     }
     return subdirs;
 }
+
+#include "moc_kfinddlg.cpp"

@@ -772,3 +772,5 @@ void KFindTreeView::dragMoveEvent(QDragMoveEvent *e)
 }
 
 //END KFindTreeView
+
+#include "moc_kfindtreeview.cpp"
