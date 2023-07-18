@@ -1,6 +1,6 @@
 # translation of kfindpart.po to Polish
 # translation of kfindpart.po to
-# Version: $Revision: 1646898 $
+# Version: $Revision: 1646809 $
 # Copyright (C) 2002,2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
 #
 # Marcin Giedz <mgiedz@elka.pw.edu.pl>, 2002.
