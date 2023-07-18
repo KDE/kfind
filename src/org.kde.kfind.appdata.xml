@@ -16,7 +16,6 @@
   <name xml:lang="de">KFind</name>
   <name xml:lang="el">KFind</name>
   <name xml:lang="en-GB">KFind</name>
-  <name xml:lang="eo">KFind</name>
   <name xml:lang="es">KFind</name>
   <name xml:lang="et">KFind</name>
   <name xml:lang="eu">KFind</name>
@@ -68,7 +67,6 @@
   <summary xml:lang="de">Dateien/Ordner suchen</summary>
   <summary xml:lang="el">Αναζητήστε αρχεία/φακέλους</summary>
   <summary xml:lang="en-GB">Find Files/Folders</summary>
-  <summary xml:lang="eo">Trovi Dosierojn/Dosierujojn</summary>
   <summary xml:lang="es">Buscar archivos o carpetas</summary>
   <summary xml:lang="et">Failide/kataloogide otsimine</summary>
   <summary xml:lang="eu">Aurkitu fitxategiak/karpetak</summary>
@@ -123,7 +121,6 @@
     <p xml:lang="de">KFind kann als eigenständiges Suchprogramm benutzt und durch KRunner oder aus dem Menü gestartet werden. Es ist auch in Konqueror als Aktion „Dateien suchen“ im Menü „Extras“ integriert. Es ermöglicht die Dateisuche nach Namen, Art oder Inhalt.</p>
     <p xml:lang="el">Το KFind χρησιμεύει ως ένα ανεξάρτητο εργαλείο αναζήτησης, το οποίο εκτελείται από το KRunner ή από το μενού σας. Επίσης είναι ενσωματωμένο στο Konqueror ως"Αναζήτηση αρχείου" στο μενού "Εργαλεία". Σας επιτρέπει να αναζητείτε αρχεία με όνομα, είδος ή περιεχόμενο.</p>
     <p xml:lang="en-GB">KFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.</p>
-    <p xml:lang="eo">KFind povas esti uzata kiel memstara serĉilo, lanĉita de KRunner aŭ de via menuo. Ĝi ankaŭ estas integrita en Konqueror kiel "Trovi dosieron" en la menuo "Iloj". Ĝi permesas vin trovi dosierojn laŭ nomo, tipo aŭ enhavo.</p>
     <p xml:lang="es">KFind se puede utilizar como herramienta de búsqueda independiente, lanzada por KRunner o desde el menú. También está integrada en Konqueror como «Buscar archivo» en el menú «Herramientas». Permite buscar archivos por nombre, tipo o contenido.</p>
     <p xml:lang="et">KFindi saab tarvitada omaette otsingutööriistana, mis käivitatakse KRunnerist või menüüst. Samuti on see lõimitud Konquerori (menüüs Tööriistad kirje Failide otsimine). See võimaldab otsida faile nime, tüübi või sisu järgi.</p>
     <p xml:lang="eu">KFind banakako bilaketa tresna gisa erabili daiteke, KRunner bidez edo zure menutik abiarazita. Konqueror-ren barneratua dago "Aurkitu fitxategia" gisa "Tresnak" menuan. Fitxategiak bilatzen uzten dizu, izen, mota edo edukiaren arabera.</p>
@@ -180,7 +177,6 @@
       <caption xml:lang="de">KFind-Hauptfenster</caption>
       <caption xml:lang="el">Κύριο παράθυρο του KFind</caption>
       <caption xml:lang="en-GB">KFind main window</caption>
-      <caption xml:lang="eo">KFind ĉefa fenestro</caption>
       <caption xml:lang="es">Ventana principal de KFind</caption>
       <caption xml:lang="et">KFindi peaaken</caption>
       <caption xml:lang="eu">KFind leiho nagusia</caption>
