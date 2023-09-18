@@ -19,15 +19,15 @@ ecm_add_app_icon(kfind_SRCS ICONS ${ICONS_SRCS})
 
 
 target_link_libraries(kfind
-Qt${QT_MAJOR_VERSION}::Concurrent
-Qt${QT_MAJOR_VERSION}::Widgets
-KF${KF_MAJOR_VERSION}::Archive
-KF${KF_MAJOR_VERSION}::CoreAddons
-KF${KF_MAJOR_VERSION}::FileMetaData
-KF${KF_MAJOR_VERSION}::I18n
-KF${KF_MAJOR_VERSION}::KIOWidgets
-KF${KF_MAJOR_VERSION}::WidgetsAddons
-KF${KF_MAJOR_VERSION}::XmlGui
+Qt6::Concurrent
+Qt6::Widgets
+KF6::Archive
+KF6::CoreAddons
+KF6::FileMetaData
+KF6::I18n
+KF6::KIOWidgets
+KF6::WidgetsAddons
+KF6::XmlGui
 )
 if (TARGET Qt::Core5Compat)
     target_link_libraries(kfind Qt::Core5Compat)

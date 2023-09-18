@@ -401,11 +401,6 @@ void KQuery::processQuery(const KFileItem &file)
                 zippedXmlFileContent = zipfileEntry->data();
                 stream = new QTextStream(zippedXmlFileContent, QIODevice::ReadOnly);
 
-                // QTextStream default encoding is UTF-8 in Qt6
-                #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-                stream->setCodec("UTF-8");
-                #endif
-
                 isZippedOfficeDocument = true;
             } else {
                 qCWarning(KFING_LOG) << "Cannot open supposed ZIP file " << file.url();
@@ -434,11 +429,7 @@ void KQuery::processQuery(const KFileItem &file)
             qf.setFileName(filename);
             qf.open(QIODevice::ReadOnly);
             stream = new QTextStream(&qf);
-            #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
             stream->setEncoding(QStringConverter::System);
-            #else
-            stream->setCodec(QTextCodec::codecForLocale());
-            #endif
         }
 
         while (!stream->atEnd())

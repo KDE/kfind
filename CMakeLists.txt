@@ -8,16 +8,14 @@ set (RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE
 
 project(kfind VERSION ${RELEASE_SERVICE_VERSION})
 
-set (KF5_MIN_VERSION "5.92.0")
+set (KF5_MIN_VERSION "5.240.0")
 # ECM setup
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
-set(QT_REQUIRED_VERSION "5.15.2")
+set(QT_REQUIRED_VERSION "6.5.0")
 include(KDEInstallDirs)
-find_package(Qt${QT_MAJOR_VERSION} ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Concurrent)
-if (QT_MAJOR_VERSION STREQUAL "6")
-    find_package(Qt6Core5Compat)
-endif()
+find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Concurrent)
+find_package(Qt6Core5Compat)
 
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
@@ -27,13 +25,6 @@ include(FeatureSummary)
 include(ECMAddAppIcon)
 include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
-if (QT_MAJOR_VERSION STREQUAL "6")
-    set(QT_REQUIRED_VERSION "6.4.0")
-    set(KF_MIN_VERSION "5.240.0")
-    set(KF_MAJOR_VERSION "6")
-else()
-    set(KF_MAJOR_VERSION "5")
-endif()
 
 set(KFIND_VERSION ${RELEASE_SERVICE_VERSION})
 
@@ -42,7 +33,7 @@ ecm_setup_version(${KFIND_VERSION} VARIABLE_PREFIX KFIND
 )
 
 # Build dependencies
-find_package(KF${KF_MAJOR_VERSION} ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+find_package(KF6 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Archive
     CoreAddons
     FileMetaData
@@ -51,12 +42,12 @@ find_package(KF${KF_MAJOR_VERSION} ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     WidgetsAddons
     XmlGui
 )
-find_package(KF${KF_MAJOR_VERSION}DocTools ${KF5_MIN_VERSION})
-set_package_properties(KF${KF_MAJOR_VERSION}DocTools PROPERTIES DESCRIPTION
+find_package(KF6DocTools ${KF5_MIN_VERSION})
+set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
 )
-ecm_set_disabled_deprecation_versions(QT 6.4
+ecm_set_disabled_deprecation_versions(QT 6.5
     KF 5.240.0
     )
 
@@ -66,9 +57,11 @@ add_subdirectory(icons)
 ecm_qt_install_logging_categories(EXPORT KFIND FILE kfind.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 
 ki18n_install(po)
-if (KF5DocTools_FOUND)
+if (0) # Need to fix doc in kf6 need to remove &kword etc.
+if (KF6DocTools_FOUND)
     kdoctools_install(po)
     add_subdirectory(doc)
+endif()
 endif()
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

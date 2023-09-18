@@ -31,15 +31,11 @@
 #include <KIO/CopyJob>
 #include <KIO/DeleteJob>
 #include <kio_version.h>
-#if KIO_VERSION >= QT_VERSION_CHECK(5, 98, 0)
 #include <KIO/JobUiDelegateFactory>
-#endif
 #include <KIO/JobUiDelegate>
 #include <KIO/OpenFileManagerWindowJob>
 #include <KIO/OpenUrlJob>
-#if KIO_VERSION >= QT_VERSION_CHECK(5, 100, 0)
 #include <KIO/DeleteOrTrashJob>
-#endif
 
 // Permission strings
 #include <ki18n_version.h>
@@ -544,11 +540,7 @@ void KFindTreeView::saveResults()
                            i18n("Unable to save results."));
     } else {
         QTextStream stream(&file);
-        #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
         stream.setEncoding(QStringConverter::System);
-        #else
-        stream.setCodec(QTextCodec::codecForLocale());
-        #endif
 
         const QList<KFindItem> itemList = m_model->getItemList();
         if (dialog.selectedMimeTypeFilter() == QLatin1String("text/html")) {
@@ -596,11 +588,7 @@ void KFindTreeView::slotExecuteSelected()
             KFindItem item = m_model->itemAtIndex(index);
             if (item.isValid()) {
                 auto *job = new KIO::OpenUrlJob(item.getFileItem().targetUrl());
-#if KIO_VERSION >= QT_VERSION_CHECK(5, 98, 0)
                 job->setUiDelegate(KIO::createDefaultJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
-#else
-                job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
-#endif
                 job->start();
             }
         }
@@ -622,11 +610,7 @@ void KFindTreeView::slotExecute(const QModelIndex &index)
         const KFindItem item = m_model->itemAtIndex(realIndex);
         if (item.isValid()) {
             auto *job = new KIO::OpenUrlJob(item.getFileItem().targetUrl());
-#if KIO_VERSION >= QT_VERSION_CHECK(5, 98, 0)
             job->setUiDelegate(KIO::createDefaultJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
-#else
-            job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, this));
-#endif
             job->start();
         }
     }
@@ -712,19 +696,9 @@ void KFindTreeView::deleteSelectedFiles()
         return;
     }
 
-#if KIO_VERSION < QT_VERSION_CHECK(5, 100, 0)
-    KIO::JobUiDelegate uiDelegate;
-    uiDelegate.setWindow(this);
-    if (uiDelegate.askDeleteConfirmation(uris, KIO::JobUiDelegate::Delete, KIO::JobUiDelegate::ForceConfirmation)) {
-        KJob *deleteJob = KIO::del(uris);
-        KJobWidgets::setWindow(deleteJob, this);
-        deleteJob->uiDelegate()->setAutoErrorHandlingEnabled(true);
-    }
-#else
     using Iface = KIO::AskUserActionInterface;
     auto *trashJob = new KIO::DeleteOrTrashJob(uris, Iface::Delete, Iface::ForceConfirmation, this);
     trashJob->start();
-#endif
 }
 
 void KFindTreeView::moveToTrashSelectedFiles()
@@ -734,19 +708,9 @@ void KFindTreeView::moveToTrashSelectedFiles()
         return;
     }
 
-#if KIO_VERSION < QT_VERSION_CHECK(5, 100, 0)
-    KIO::JobUiDelegate uiDelegate;
-    uiDelegate.setWindow(this);
-    if (uiDelegate.askDeleteConfirmation(uris, KIO::JobUiDelegate::Trash, KIO::JobUiDelegate::ForceConfirmation)) {
-        KJob *trashJob = KIO::trash(uris);
-        KJobWidgets::setWindow(trashJob, this);
-        trashJob->uiDelegate()->setAutoErrorHandlingEnabled(true);
-    }
-#else
     using Iface = KIO::AskUserActionInterface;
     auto *trashJob = new KIO::DeleteOrTrashJob(uris, Iface::Trash, Iface::ForceConfirmation, this);
     trashJob->start();
-#endif
 }
 
 void KFindTreeView::reconfigureMouseSettings()
