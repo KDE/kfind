@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-08 00:50+0000\n"
+"POT-Creation-Date: 2023-09-19 01:56+0000\n"
 "PO-Revision-Date: 2023-03-16 09:41+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -82,108 +82,108 @@ msgstr[3] "عُثر على %1 ملفات"
 msgstr[4] "عُثر على %1 ملفًا"
 msgstr[5] "عُثر على %1 ملف"
 
-#: kfindtreeview.cpp:49
+#: kfindtreeview.cpp:45
 msgid "Read-write"
 msgstr "للقراءة والكتابة"
 
-#: kfindtreeview.cpp:50
+#: kfindtreeview.cpp:46
 msgid "Read-only"
 msgstr "للقراءة فقط"
 
-#: kfindtreeview.cpp:51
+#: kfindtreeview.cpp:47
 msgid "Write-only"
 msgstr "للكتابة فقط"
 
-#: kfindtreeview.cpp:52
+#: kfindtreeview.cpp:48
 msgid "Inaccessible"
 msgstr "مستحيل الوصول"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:68
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "الاسم"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:70
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "في المجلد الفرعي"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "الحجم"
 
-#: kfindtreeview.cpp:78
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "عُدّل في"
 
-#: kfindtreeview.cpp:80
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "الصلاحيات"
 
-#: kfindtreeview.cpp:82
+#: kfindtreeview.cpp:78
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "أول سطر تطابق"
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:361
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "انسخ المكان"
 
-#: kfindtreeview.cpp:366
+#: kfindtreeview.cpp:362
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr "سيؤدي هذا إلى نسخ مسار العنصر الأول المحدد في الحافظة."
 
-#: kfindtreeview.cpp:371
+#: kfindtreeview.cpp:367
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "ا&فتح المجلد(ات) الحاوي(ة)"
 
-#: kfindtreeview.cpp:375
+#: kfindtreeview.cpp:371
 #, kde-format
 msgid "&Delete"
 msgstr "ا&حذف"
 
-#: kfindtreeview.cpp:379
+#: kfindtreeview.cpp:375
 #, kde-format
 msgid "&Move to Trash"
 msgstr "ا&نقل إلى المهملات"
 
-#: kfindtreeview.cpp:519
+#: kfindtreeview.cpp:515
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "احفظ النتائج كـ"
 
-#: kfindtreeview.cpp:544
+#: kfindtreeview.cpp:540
 #, kde-format
 msgid "Unable to save results."
 msgstr "تعذّر حفظ النتائج."
 
-#: kfindtreeview.cpp:562
+#: kfindtreeview.cpp:554
 #, kde-format
 msgid "KFind Results File"
 msgstr "ملف نتائج بحثك"
 
-#: kfindtreeview.cpp:577
+#: kfindtreeview.cpp:569
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "حُفظت النتائج إلى: %1"
 
-#: kfindtreeview.cpp:681 kftabdlg.cpp:396
+#: kfindtreeview.cpp:665 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "&خصائص"
@@ -314,7 +314,7 @@ msgstr "على الأكثر"
 msgid "Equal To"
 msgstr "يساوي"
 
-#: kftabdlg.cpp:218 kftabdlg.cpp:838
+#: kftabdlg.cpp:218 kftabdlg.cpp:829
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
@@ -497,27 +497,27 @@ msgstr "مدى التاريخ غير صالح."
 msgid "Unable to search dates in the future."
 msgstr "لا يمكن البحث في التواريخ المستقبلية."
 
-#: kftabdlg.cpp:637 kftabdlg.cpp:639
+#: kftabdlg.cpp:636
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "الحجم كبير جدًا. أأعيّن أقصى قيمة للحجم؟"
 
-#: kftabdlg.cpp:637 kftabdlg.cpp:639
+#: kftabdlg.cpp:636
 #, kde-format
 msgid "Error"
 msgstr "خطأ"
 
-#: kftabdlg.cpp:637 kftabdlg.cpp:639
+#: kftabdlg.cpp:636
 #, kde-format
 msgid "Set"
 msgstr "عيّن"
 
-#: kftabdlg.cpp:637 kftabdlg.cpp:639
+#: kftabdlg.cpp:636
 #, kde-format
 msgid "Do Not Set"
 msgstr "لا تعيّن"
 
-#: kftabdlg.cpp:828
+#: kftabdlg.cpp:819
 #, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
@@ -531,7 +531,7 @@ msgstr[3] "&خلال الـ"
 msgstr[4] "&خلال الـ"
 msgstr[5] "&خلال الـ"
 
-#: kftabdlg.cpp:829
+#: kftabdlg.cpp:820
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
@@ -543,7 +543,7 @@ msgstr[3] "دقائق الماضية"
 msgstr[4] "دقيقة الماضية"
 msgstr[5] "دقيقة الماضية"
 
-#: kftabdlg.cpp:830
+#: kftabdlg.cpp:821
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
@@ -555,7 +555,7 @@ msgstr[3] "ساعات الماضية"
 msgstr[4] "ساعة الماضية"
 msgstr[5] "ساعة الماضية"
 
-#: kftabdlg.cpp:831
+#: kftabdlg.cpp:822
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
@@ -567,7 +567,7 @@ msgstr[3] "أيام الماضية"
 msgstr[4] "يومًا الماضي"
 msgstr[5] "يوم ماضي"
 
-#: kftabdlg.cpp:832
+#: kftabdlg.cpp:823
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
@@ -579,7 +579,7 @@ msgstr[3] "أشهر الماضية"
 msgstr[4] "شهرًا الماضي"
 msgstr[5] "شهر الماضي"
 
-#: kftabdlg.cpp:833
+#: kftabdlg.cpp:824
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"
@@ -591,145 +591,145 @@ msgstr[3] "سنوات الماضية"
 msgstr[4] "سنة الماضية"
 msgstr[5] "سنة الماضية"
 
-#: kquery.cpp:565
+#: kquery.cpp:556
 #, kde-format
 msgctxt "@title:window"
 msgid "Error while using locate"
 msgstr "خطأ أثناء استخدام locate"
 
-#: main.cpp:36
+#: main.cpp:26
 #, kde-format
 msgid "KFind"
 msgstr "بحثك"
 
-#: main.cpp:37
+#: main.cpp:27
 #, kde-format
 msgid "KDE file find utility"
 msgstr "أداة كِيدِي للبحث عن الملفات"
 
-#: main.cpp:38
+#: main.cpp:28
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
 msgstr "© 1998-2021 لمطوري كِيدِي"
 
-#: main.cpp:40
+#: main.cpp:30
 #, kde-format
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
 
-#: main.cpp:40
+#: main.cpp:30
 #, kde-format
 msgid "Current Maintainer"
 msgstr "المصين الحالي"
 
-#: main.cpp:41
+#: main.cpp:31
 #, kde-format
 msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
 
-#: main.cpp:41
+#: main.cpp:31
 #, kde-format
 msgid "Former Maintainer"
 msgstr "المصين السّابق"
 
-#: main.cpp:42
+#: main.cpp:32
 #, kde-format
 msgid "Mark W. Webb"
 msgstr "Mark W. Webb"
 
-#: main.cpp:42
+#: main.cpp:32
 #, kde-format
 msgid "Developer"
 msgstr "مطوِّر"
 
-#: main.cpp:43
+#: main.cpp:33
 #, kde-format
 msgid "Beppe Grimaldi"
 msgstr "Beppe Grimaldi"
 
-#: main.cpp:43
+#: main.cpp:33
 #, kde-format
 msgid "UI Design & more search options"
 msgstr "تصميم الواجهة وخيارات بحث أكثر"
 
-#: main.cpp:44
+#: main.cpp:34
 #, kde-format
 msgid "Martin Hartig"
 msgstr "Martin Hartig"
 
-#: main.cpp:45
+#: main.cpp:35
 #, kde-format
 msgid "Stephan Kulow"
 msgstr "Stephan Kulow"
 
-#: main.cpp:46
+#: main.cpp:36
 #, kde-format
 msgid "Mario Weilguni"
 msgstr "Mario Weilguni"
 
-#: main.cpp:47
+#: main.cpp:37
 #, kde-format
 msgid "Alex Zepeda"
 msgstr "Alex Zepeda"
 
-#: main.cpp:48
+#: main.cpp:38
 #, kde-format
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
-#: main.cpp:49
+#: main.cpp:39
 #, kde-format
 msgid "Harri Porten"
 msgstr "Harri Porten"
 
-#: main.cpp:50
+#: main.cpp:40
 #, kde-format
 msgid "Dima Rogozin"
 msgstr "Dima Rogozin"
 
-#: main.cpp:51
+#: main.cpp:41
 #, kde-format
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
-#: main.cpp:52
+#: main.cpp:42
 #, kde-format
 msgid "Hans Petter Bieker"
 msgstr "Hans Petter Bieker"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "UI Design"
 msgstr "تصميم الواجهة"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "محمد سعد,زايد السعيدي"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "metehyi@free.fr,zayed.alsaidi@gmail.com"
 
-#: main.cpp:63
+#: main.cpp:49
 #, kde-format
 msgid "Path(s) to search"
 msgstr "مسار(ات) البحث"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-08 00:50+0000\n"
+"POT-Creation-Date: 2023-09-19 01:56+0000\n"
 "PO-Revision-Date: 2010-01-29 15:11+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Maithili <maithili.sf.net>\n"
@@ -77,116 +77,116 @@ msgid_plural "%1 items found"
 msgstr[0] "एकटा फाइल भेटल"
 msgstr[1] "%1 फाइल भेटल"
 
-#: kfindtreeview.cpp:49
+#: kfindtreeview.cpp:45
 msgid "Read-write"
 msgstr "पढू-लिखू"
 
-#: kfindtreeview.cpp:50
+#: kfindtreeview.cpp:46
 msgid "Read-only"
 msgstr "सिर्फ पढबाक लेल "
 
-#: kfindtreeview.cpp:51
+#: kfindtreeview.cpp:47
 msgid "Write-only"
 msgstr "केवल-लिखू"
 
-#: kfindtreeview.cpp:52
+#: kfindtreeview.cpp:48
 msgid "Inaccessible"
 msgstr "अनभिग्मय"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:68
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "file name column"
 msgid "Name"
 msgstr "नाम"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:70
 #, fuzzy, kde-format
 #| msgid "Open Folder"
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "उप-फोल्डर मे"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:72
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "file size column"
 msgid "Size"
 msgstr "आकार"
 
-#: kfindtreeview.cpp:78
+#: kfindtreeview.cpp:74
 #, fuzzy, kde-format
 #| msgid "Modified"
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "सुधार कएल"
 
-#: kfindtreeview.cpp:80
+#: kfindtreeview.cpp:76
 #, fuzzy, kde-format
 #| msgid "Permissions"
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "अनुमतिसभ"
 
-#: kfindtreeview.cpp:82
+#: kfindtreeview.cpp:78
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "मिलैत जुलैत प्रथम पंक्ति"
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:361
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr ""
 
-#: kfindtreeview.cpp:366
+#: kfindtreeview.cpp:362
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr ""
 
-#: kfindtreeview.cpp:371
+#: kfindtreeview.cpp:367
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "फोल्डरक संग खोलू (&O)"
 
-#: kfindtreeview.cpp:375
+#: kfindtreeview.cpp:371
 #, fuzzy, kde-format
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "मेटाबू (&D)"
 
-#: kfindtreeview.cpp:379
+#: kfindtreeview.cpp:375
 #, kde-format
 msgid "&Move to Trash"
 msgstr "रद्दीमे डालू (&M)"
 
-#: kfindtreeview.cpp:519
+#: kfindtreeview.cpp:515
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "परिणाम एहिना सहेजू"
 
-#: kfindtreeview.cpp:544
+#: kfindtreeview.cpp:540
 #, kde-format
 msgid "Unable to save results."
 msgstr "परिणाम केँ सहेजनाइ संभव नहि अछि."
 
-#: kfindtreeview.cpp:562
+#: kfindtreeview.cpp:554
 #, kde-format
 msgid "KFind Results File"
 msgstr "के-फाइंड परिणाम फाइल"
 
-#: kfindtreeview.cpp:577
+#: kfindtreeview.cpp:569
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "परिणाम फाइल मे सहेजलक-\n"
 
-#: kfindtreeview.cpp:681 kftabdlg.cpp:396
+#: kfindtreeview.cpp:665 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
 msgstr "गुण (&P)"
@@ -309,7 +309,7 @@ msgstr "बेसी सँ बेसी"
 msgid "Equal To"
 msgstr "कए बराबर"
 
-#: kftabdlg.cpp:218 kftabdlg.cpp:838
+#: kftabdlg.cpp:218 kftabdlg.cpp:829
 #, fuzzy, kde-format
 #| msgid "Bytes"
 msgid "Byte"
@@ -481,27 +481,27 @@ msgstr "अवैध दिनांक सीमा."
 msgid "Unable to search dates in the future."
 msgstr "भविष्य मे दिनांक खोजबा मे अक्षम."
 
-#: kftabdlg.cpp:637 kftabdlg.cpp:639
+#: kftabdlg.cpp:636
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "आकार बहुत पैघ अछि.  अधिकतम आकार मूल्य सेट करू?"
 
-#: kftabdlg.cpp:637 kftabdlg.cpp:639
+#: kftabdlg.cpp:636
 #, kde-format
 msgid "Error"
 msgstr "त्रुटि"
 
-#: kftabdlg.cpp:637 kftabdlg.cpp:639
+#: kftabdlg.cpp:636
 #, kde-format
 msgid "Set"
 msgstr "सेट"
 
-#: kftabdlg.cpp:637 kftabdlg.cpp:639
+#: kftabdlg.cpp:636
 #, kde-format
 msgid "Do Not Set"
 msgstr "सेट नहि करू"
 
-#: kftabdlg.cpp:828
+#: kftabdlg.cpp:819
 #, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
@@ -511,7 +511,7 @@ msgid_plural "&during the previous"
 msgstr[0] "पछिला क' काले (&d)"
 msgstr[1] "पछिला क' काले (&d)"
 
-#: kftabdlg.cpp:829
+#: kftabdlg.cpp:820
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
@@ -519,7 +519,7 @@ msgid_plural "minutes"
 msgstr[0] "मिनट"
 msgstr[1] "मिनट"
 
-#: kftabdlg.cpp:830
+#: kftabdlg.cpp:821
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
@@ -527,7 +527,7 @@ msgid_plural "hours"
 msgstr[0] "घंटा"
 msgstr[1] "घंटा"
 
-#: kftabdlg.cpp:831
+#: kftabdlg.cpp:822
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
@@ -535,7 +535,7 @@ msgid_plural "days"
 msgstr[0] "दिन"
 msgstr[1] "दिन"
 
-#: kftabdlg.cpp:832
+#: kftabdlg.cpp:823
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
@@ -543,7 +543,7 @@ msgid_plural "months"
 msgstr[0] "महीना"
 msgstr[1] "महीना"
 
-#: kftabdlg.cpp:833
+#: kftabdlg.cpp:824
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"
@@ -551,148 +551,148 @@ msgid_plural "years"
 msgstr[0] "साल"
 msgstr[1] "साल"
 
-#: kquery.cpp:565
+#: kquery.cpp:556
 #, fuzzy, kde-format
 #| msgid "Error while using locate"
 msgctxt "@title:window"
 msgid "Error while using locate"
 msgstr "लोकेट उपयोग करबामे त्रुटि भेल"
 
-#: main.cpp:36
+#: main.cpp:26
 #, kde-format
 msgid "KFind"
 msgstr "के-फाइंड"
 
-#: main.cpp:37
+#: main.cpp:27
 #, kde-format
 msgid "KDE file find utility"
 msgstr "केडीई फाइल ताकबाक यूटिलिटी"
 
-#: main.cpp:38
+#: main.cpp:28
 #, fuzzy, kde-format
 #| msgid "(c) 1998-2003, The KDE Developers"
 msgid "(c) 1998-2021, The KDE Developers"
 msgstr "(c) 1998-2003, केडीई डेवलपर्स"
 
-#: main.cpp:40
+#: main.cpp:30
 #, kde-format
 msgid "Kai Uwe Broulik"
 msgstr ""
 
-#: main.cpp:40
+#: main.cpp:30
 #, kde-format
 msgid "Current Maintainer"
 msgstr "वर्तमान मेंटेनर"
 
-#: main.cpp:41
+#: main.cpp:31
 #, kde-format
 msgid "Eric Coquelle"
 msgstr "एरिक काकेल्ले"
 
-#: main.cpp:41
+#: main.cpp:31
 #, fuzzy, kde-format
 #| msgid "Current Maintainer"
 msgid "Former Maintainer"
 msgstr "वर्तमान मेंटेनर"
 
-#: main.cpp:42
+#: main.cpp:32
 #, kde-format
 msgid "Mark W. Webb"
 msgstr "मार्क डबल्यू वेब"
 
-#: main.cpp:42
+#: main.cpp:32
 #, kde-format
 msgid "Developer"
 msgstr "डेवलपर"
 
-#: main.cpp:43
+#: main.cpp:33
 #, kde-format
 msgid "Beppe Grimaldi"
 msgstr "बेप्पे गिरमाल्दी"
 
-#: main.cpp:43
+#: main.cpp:33
 #, kde-format
 msgid "UI Design & more search options"
 msgstr "यूआई डिज़ाइन आ बेसी खोजबाक विकल्प"
 
-#: main.cpp:44
+#: main.cpp:34
 #, kde-format
 msgid "Martin Hartig"
 msgstr "मार्टिन हार्टिग"
 
-#: main.cpp:45
+#: main.cpp:35
 #, kde-format
 msgid "Stephan Kulow"
 msgstr "स्टीफन कुलोव"
 
-#: main.cpp:46
+#: main.cpp:36
 #, kde-format
 msgid "Mario Weilguni"
 msgstr "मारियो वेइलगुनी"
 
-#: main.cpp:47
+#: main.cpp:37
 #, kde-format
 msgid "Alex Zepeda"
 msgstr "एलेक्स जेपेदा"
 
-#: main.cpp:48
+#: main.cpp:38
 #, kde-format
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
-#: main.cpp:49
+#: main.cpp:39
 #, kde-format
 msgid "Harri Porten"
 msgstr "हैरी पोर्तेन"
 
-#: main.cpp:50
+#: main.cpp:40
 #, kde-format
 msgid "Dima Rogozin"
 msgstr "दिमा रोगोजिन"
 
-#: main.cpp:51
+#: main.cpp:41
 #, kde-format
 msgid "Carsten Pfeiffer"
 msgstr "कार्स्टेन फेइफर"
 
-#: main.cpp:52
+#: main.cpp:42
 #, kde-format
 msgid "Hans Petter Bieker"
 msgstr "हैंस पीटर बीइकर"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "Waldo Bastian"
 msgstr "वाल्दो बास्तियान"
 
-#: main.cpp:53
+#: main.cpp:43
 #, kde-format
 msgid "UI Design"
 msgstr "यूआई डिज़ाइन"
 
-#: main.cpp:54
+#: main.cpp:44
 #, kde-format
 msgid "Alexander Neundorf"
 msgstr "अलेक्जेंडर न्यून्दार्फ"
 
-#: main.cpp:55
+#: main.cpp:45
 #, kde-format
 msgid "Clarence Dang"
 msgstr "क्लेरेंस डैंग"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "संगीता कुमारी"
 
-#: main.cpp:56
+#: main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sangeeta09@gmail.com"
 
-#: main.cpp:63
+#: main.cpp:49
 #, kde-format
 msgid "Path(s) to search"
 msgstr "खोजबाक पथ"
