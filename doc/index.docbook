@@ -183,9 +183,6 @@ under <guilabel>File type</guilabel>. Only the following file types
 are supported:
 <itemizedlist>
 <listitem><para>Text files, &eg; source code and <filename>README</filename> files</para></listitem>
-<listitem><para>&kword; &gt;= 1.2</para></listitem>
-<listitem><para>&kpresenter; &gt;= 1.2</para></listitem>
-<listitem><para>&kspread; &gt;= 1.2</para></listitem>
 <listitem><para>OpenOffice.org Writer / LibreOffice Writer</para></listitem>
 <listitem><para>OpenOffice.org Impress / LibreOffice Impress</para></listitem>
 <listitem><para>OpenOffice.org Calc / LibreOffice Calc</para></listitem>

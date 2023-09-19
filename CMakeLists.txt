@@ -57,11 +57,10 @@ add_subdirectory(icons)
 ecm_qt_install_logging_categories(EXPORT KFIND FILE kfind.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 
 ki18n_install(po)
-if (0) # Need to fix doc in kf6 need to remove &kword etc.
+
 if (KF6DocTools_FOUND)
     kdoctools_install(po)
     add_subdirectory(doc)
-endif()
 endif()
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
