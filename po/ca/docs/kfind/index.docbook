@@ -36,7 +36,7 @@
 
 <abstract>
 <para
->El &kfind; és una utilitat per cercar als fitxers del &kde;. </para>
+>El &kfind; és una utilitat per a cercar als fitxers del &kde;. </para>
 </abstract>
 
 <keywordset>
@@ -58,7 +58,7 @@
 >Introducció</title>
 
 <para
->El &kfind; és una utilitat per cercar als fitxers del &kde;. </para>
+>El &kfind; és una utilitat per a cercar als fitxers del &kde;. </para>
 
 <sect1 id="starting">
 <title
@@ -111,7 +111,7 @@
 >Cerca</guibutton
 >. Utilitzeu el botó <guibutton
 >Atura</guibutton
-> per cancel·lar una cerca. El resultat d'una cerca es pot desar en format &HTML; o com a text net amb el botó <guibutton
+> per a cancel·lar una cerca. El resultat d'una cerca es pot desar en format &HTML; o com a text net amb el botó <guibutton
 >Desa com a...</guibutton
 >.</para>
 <para
@@ -125,7 +125,7 @@
 >Usa l'índex de fitxers</guilabel
 > permet utilitzar l'índex de fitxers creat pel paquet <quote
 >locate</quote
-> per accelerar la cerca.</para>
+> per a accelerar la cerca.</para>
 <para
 >Podeu usar els següents caràcters de comodí per a noms de fitxer o carpeta: </para>
 
@@ -303,7 +303,7 @@
 >regexp</firstterm
 > o expressió regular. Una regexp és una manera d'especificar condicions per a la vostra cerca, que poden ser molt complexes, i igualment molt potents. Si no hi esteu familiaritzat, podeu escollir el botó <guibutton
 >Edita...</guibutton
-> per obrir &kregexpeditor;. Aquesta eina us permet construir el vostre conjunt de condicions en mode gràfic, i després generar l'expressió.</para>
+> per a obrir el &kregexpeditor;. Aquesta eina us permet construir el conjunt de condicions en mode gràfic, i després generar l'expressió.</para>
 
 <para
 >&kregexpeditor; és una eina molt útil, i es pot emprar des de moltes aplicacions &kde; a part de &kfind;. Podeu trobar més informació des del seu propi fitxer d'ajuda.</para>
