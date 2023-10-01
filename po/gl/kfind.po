@@ -64,7 +64,7 @@ msgstr "Por favor, especifique unha ruta absoluta no campo «Buscar en»."
 #: kfinddlg.cpp:205
 #, kde-format
 msgid "Could not find the specified folder."
-msgstr "Non se puido atopar o cartafol especificado."
+msgstr "Non foi posíbel atopar o cartafol especificado."
 
 #: kfinddlg.cpp:228 kfinddlg.cpp:252
 #, kde-format
@@ -161,7 +161,7 @@ msgstr "Gardar os resultados como"
 #: kfindtreeview.cpp:544
 #, kde-format
 msgid "Unable to save results."
-msgstr "Non se poden gardar os resultados."
+msgstr "Non é posíbel gardar os resultados."
 
 #: kfindtreeview.cpp:562
 #, kde-format
@@ -474,7 +474,7 @@ msgstr ""
 #: kftabdlg.cpp:549
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
-msgstr "Non se pode buscar nun período de menos dun minuto."
+msgstr "Non é posíbel buscar nun período de menos dun minuto."
 
 #: kftabdlg.cpp:560
 #, kde-format
@@ -489,7 +489,7 @@ msgstr "O intervalo de datas é incorrecto."
 #: kftabdlg.cpp:564
 #, kde-format
 msgid "Unable to search dates in the future."
-msgstr "Non se poden buscar datas no futuro."
+msgstr "Non é posíbel buscar datas no futuro."
 
 #: kftabdlg.cpp:637 kftabdlg.cpp:639
 #, kde-format
