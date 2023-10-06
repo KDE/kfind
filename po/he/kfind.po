@@ -12,19 +12,20 @@
 #
 # Diego Iastrubni <elcuco@kde.org>, 2005, 2008, 2009, 2012.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2023 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2017-05-24 07:15-0400\n"
-"Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2023-10-05 07:53+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 23.08.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: kfinddlg.cpp:31
@@ -317,17 +318,17 @@ msgstr[1] "בתים"
 #: kftabdlg.cpp:219
 #, kde-format
 msgid "KiB"
-msgstr "ק\"ב"
+msgstr "ק״ב"
 
 #: kftabdlg.cpp:220
 #, kde-format
 msgid "MiB"
-msgstr "ק\"ב"
+msgstr "ק״ב"
 
 #: kftabdlg.cpp:221
 #, kde-format
 msgid "GiB"
-msgstr "ג\"ב"
+msgstr "ג״ב"
 
 #: kftabdlg.cpp:284
 #, kde-format
@@ -488,7 +489,7 @@ msgstr "אין אפשרות לחפש תאריכים בעתיד."
 #: kftabdlg.cpp:636
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
-msgstr "הערך גדול מדיי. האם לקבוע כגודל המרבי המותר?"
+msgstr "הערך גדול מדי. האם לקבוע כגודל המרבי המותר?"
 
 #: kftabdlg.cpp:636
 #, kde-format
