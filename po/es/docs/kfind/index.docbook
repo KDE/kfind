@@ -157,7 +157,7 @@
 >Mirar en:</guilabel
 > o haciendo clic en <guibutton
 >Examinar...</guibutton
-> (en el cuadro de diálogo, se puede alternar entre mostrar o no las carpetas y archivos ocultos mediante los accesos rápidos de teclado <keycombo action="simul"
+> (en el cuadro de diálogo, se puede alternar entre mostrar o no las carpetas y archivos ocultos mediante los atajos de teclado <keycombo action="simul"
 >&Alt;<keycap
 >.</keycap
 ></keycombo
@@ -355,7 +355,7 @@
 >regexp</firstterm
 > o expresión regular. Una expresión regular es un medio de especificar condiciones a su búsqueda y estas pueden ser muy complejas y, por tanto, muy potentes. Si no tiene experiencia con las expresiones regulares, puede elegir el botón <guibutton
 >Editar</guibutton
-> para abrir &kregexpeditor;. Esta herramienta le permite construir su conjunto de condiciones gráficamente, y después generar la expresión para usted.</para>
+> para abrir &kregexpeditor;. Esta herramienta le permite construir su conjunto de condiciones gráficamente, y después generar la expresión.</para>
 
 <para
 >&kregexpeditor; es una herramienta muy útil, y se puede utilizar desde muchas aplicaciones de &kde; diferentes de &kfind;. Puede encontrar más información desde su propio archivo de ayuda.</para>
