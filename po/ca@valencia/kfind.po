@@ -57,7 +57,7 @@ msgstr "Error."
 #: kfinddlg.cpp:202
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
-msgstr "Especifiqueu un camí absolut al quadro «Mira en»."
+msgstr "Especifiqueu un camí absolut en el quadro «Mira en»."
 
 #: kfinddlg.cpp:205
 #, kde-format
@@ -149,7 +149,7 @@ msgstr "Sup&rimix"
 #: kfindtreeview.cpp:379
 #, kde-format
 msgid "&Move to Trash"
-msgstr "&Mou a la paperera"
+msgstr "&Mou cap a dins de la paperera"
 
 #: kfindtreeview.cpp:519
 #, kde-format
