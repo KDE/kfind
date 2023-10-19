@@ -110,7 +110,7 @@ private:
 
     QUrl m_url;
 
-    QVector<QMimeType> m_types;
+    QList<QMimeType> m_types;
     QStringList m_ImageTypes;
     QStringList m_VideoTypes;
     QStringList m_AudioTypes;

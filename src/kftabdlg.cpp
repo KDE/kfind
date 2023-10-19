@@ -46,7 +46,7 @@ static const int specialMimeTypeCount = 10;
 
 struct MimeTypes
 {
-    QVector<QMimeType> all;
+    QList<QMimeType> all;
     QStringList image;
     QStringList video;
     QStringList audio;
@@ -171,7 +171,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     andL->setObjectName(QStringLiteral("and"));
     betweenType = new KComboBox(pages[1]);
     betweenType->setObjectName(QStringLiteral("comboBetweenType"));
-    betweenType->addItems(QVector<QString>(5).toList()); // texts set in updateDateLabels
+    betweenType->addItems(QList<QString>(5).toList()); // texts set in updateDateLabels
     betweenType->setCurrentIndex(1);
     updateDateLabels(1, 1);
 
