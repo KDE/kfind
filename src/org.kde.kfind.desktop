@@ -107,3 +107,4 @@ X-KDE-StartupNotify=true
 OnlyShowIn=KDE;
 Categories=Qt;KDE;Utility;
 X-DBUS-ServiceName=org.kde.kfind
+Keywords=search;file search;search tool;finder;
