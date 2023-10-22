@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2023-10-06 22:31+0300\n"
+"PO-Revision-Date: 2023-10-21 23:18+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -73,13 +73,13 @@ msgid "Could not find the specified folder."
 msgstr "לא ניתן למצוא את התיקייה המצוינת."
 
 #: kfinddlg.cpp:228 kfinddlg.cpp:252
-#, fuzzy, kde-format
+#, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
 msgstr[0] "נמצא פריט"
-msgstr[1] "נמצאו %1 פריטים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[1] "נמצאו שני פריטים"
+msgstr[2] "נמצאו %1 פריטים"
+msgstr[3] "נמצאו %1 פריטים"
 
 #: kfindtreeview.cpp:45
 msgid "Read-write"
@@ -315,13 +315,13 @@ msgid "Equal To"
 msgstr "שווה ל־"
 
 #: kftabdlg.cpp:218 kftabdlg.cpp:829
-#, fuzzy, kde-format
+#, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
 msgstr[0] "בית"
 msgstr[1] "בתים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[2] "בתים"
+msgstr[3] "בתים"
 
 #: kftabdlg.cpp:219
 #, kde-format
@@ -515,7 +515,7 @@ msgid "Do Not Set"
 msgstr "לא להגדיר"
 
 #: kftabdlg.cpp:819
-#, fuzzy, kde-format
+#, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
 "minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
@@ -523,58 +523,58 @@ msgid "&during the previous"
 msgid_plural "&during the previous"
 msgstr[0] "במה&לך"
 msgstr[1] "במה&לך"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[2] "במה&לך"
+msgstr[3] "במה&לך"
 
 #: kftabdlg.cpp:820
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "הדקה האחרונה"
 msgstr[1] "הדקות האחרונות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[2] "הדקות האחרונות"
+msgstr[3] "הדקות האחרונות"
 
 #: kftabdlg.cpp:821
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "השעה האחרונה"
-msgstr[1] "השעות האחרונות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[1] "השעתיים האחרונות"
+msgstr[2] "השעות האחרונות"
+msgstr[3] "השעות האחרונות"
 
 #: kftabdlg.cpp:822
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
 msgid_plural "days"
 msgstr[0] "היום האחרון"
-msgstr[1] "הימים האחרונים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[1] "היומיים האחרונים"
+msgstr[2] "הימים האחרונים"
+msgstr[3] "הימים האחרונים"
 
 #: kftabdlg.cpp:823
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
 msgid_plural "months"
 msgstr[0] "החודש האחרון"
-msgstr[1] "החודשים האחרונים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[1] "החודשיים האחרונים"
+msgstr[2] "החודשים האחרונים"
+msgstr[3] "החודשים האחרונים"
 
 #: kftabdlg.cpp:824
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"
 msgid_plural "years"
 msgstr[0] "השנה האחרונה"
-msgstr[1] "השנים האחרונות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[1] "השנתיים האחרונות"
+msgstr[2] "השנים האחרונות"
+msgstr[3] "השנים האחרונות"
 
 #: kquery.cpp:556
 #, kde-format
