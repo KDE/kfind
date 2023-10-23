@@ -1,0 +1,561 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Turkish "INCLUDE"
+> 
+]>
+
+<book id="kfind" lang="&language;">
+
+<bookinfo>
+<title
+>&kfind; El Kitabı</title>
+
+<authorgroup>
+<author
+>&Dirk.Doerflinger; &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Kaan</firstname
+><surname
+>Özdinçer</surname
+><affiliation
+><address
+><email
+>kaanozdincer@gmail.com</email
+></address
+></affiliation
+><contrib
+>Çeviri</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Emir</firstname
+><surname
+>SARI</surname
+><affiliation
+><address
+><email
+>emir_sari@icloud.com</email
+></address
+></affiliation
+><contrib
+>Çeviri</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Dirk.Doerflinger;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2018-10-22</date>
+<releaseinfo
+>Uygulamalar 18.12</releaseinfo>
+
+<abstract>
+<para
+>&kfind;, &kde; için bir dosya bulma izlencesidir. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>dosya</keyword>
+<keyword
+>kfind</keyword>
+<keyword
+>bul</keyword>
+<keyword
+>ara</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Giriş</title>
+
+<para
+>&kfind;, &kde; için bir dosya bulma izlencesidir. </para>
+
+<sect1 id="starting">
+<title
+>&kfind;'u Başlatmak</title>
+
+<para
+>Dosya Bul aracı, bilgisayarınızdaki belirli dosyaları veya bir kalıpla eşleşen dosyaları aramak için kullanışlı bir yöntemdir. Bunun bir örneği, belirli bir türdeki veya dosya adında belirli harfler bulunan dosyaların aranmasını içerebilir. Bu izlenceyi &konqueror;'da (dosya yöneticisi kipinde) menüden <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl; <keycap
+>F</keycap
+></keycombo
+></shortcut
+><guimenu
+>Araçlar</guimenu
+> <guimenuitem
+>Dosya Bul</guimenuitem
+></menuchoice
+>'u çalıştırarak yükleyebilirsiniz. &kfind;'u tek başına çalıştırmak istiyorsanız onu &krunner; üzerinden başlatın. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="using-kfind">
+<title
+>Dosyaları Bulmak</title>
+
+<sect1 id="name-tab">
+<title
+>Ad/Konum Sekmesi</title>
+
+<para
+>&kfind;'u başlattığınızda oldukça basit bir pencere göreceksiniz. <guilabel
+>Aranacak ad:</guilabel
+> etiketli metin kutusuna aradığınız dosyanın adını yazın. Birden çok adı ayırmak için joker karakter eşleştirmesi ve noktalı virgül (<quote
+>;</quote
+>) kullanabilirsiniz.</para>
+<para
+>Arama yapmak istediğiniz konumu <guilabel
+>Aranacak yer:</guilabel
+> alanına yazın veya <guibutton
+>Göz At...</guibutton
+> düğmesine tıklayarak seçin (gizli dosyaların/klasörlerin görüntülenmesini <keycombo action="simul"
+>&Alt;<keycap
+>.</keycap
+></keycombo
+> veya <keycap
+>F8</keycap
+> kısayollarını kullanarak açıp kapatabilirsiniz) ve &Enter; düğmesine basın veya <guibutton
+>Bul</guibutton
+> düğmesini kullanın. Bir aramayı iptal etmek için <guibutton
+>Durdur</guibutton
+> düğmesine basın. Bir arama sonucu, <guibutton
+>Farklı Kaydet...</guibutton
+> seçeneği kullanılarak düz metin veya &HTML; olarak kaydedilebilir.</para>
+<para
+><guilabel
+>Alt klasörleri içer</guilabel
+> işaretliyse seçtiğiniz klasörden itibaren tüm alt klasörler aranır. <guilabel
+>BÜYÜK/küçük harf duyarlı arama</guilabel
+> etkinse &kfind;, bu eşleşmeyle örtüşenleri bulacaktır. <guilabel
+>Gizli dosyaları göster</guilabel
+> seçeneği ile bu dosyaları aramada içerebilirsiniz. <guilabel
+>Dosya indeksini kullan</guilabel
+> seçeneği, <quote
+>locate</quote
+> paketiyle oluşturulmuş dosyalarda arama yapmanıza ve böylece arama hızını artırmanıza olanak tanır.</para>
+<para
+>Dosya veya klasör adları için aşağıdaki joker karakterleri kullanabilirsiniz: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Yıldız <quote
+><keycap
+>*</keycap
+></quote
+></term>
+<listitem>
+<para
+>Yıldız işareti herhangi bir sayıda eksik karakteri bulur (hatta sıfır), bunun anlamı &eg;, <userinput
+>marc*</userinput
+> için <filename
+>marc</filename
+>, <filename
+>marc.png</filename
+> ve <filename
+> marc_must_not_read_this.kwd</filename
+> bulmasıdır. <userinput
+>mar*.kwd</userinput
+> ise, <filename
+>marketplace.kwd</filename
+> ve <filename
+>marc_must_not_read_this.kwd</filename
+> bulabilir. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Soru İşareti <quote
+><keycap
+>?</keycap
+></quote
+></term>
+<listitem>
+<para
+>Yıldız işaretinin aksine, soru işareti tek bir karakteri temsil eder, <userinput
+>mar?</userinput
+> için <filename
+>marc</filename
+> bulunacaktır, ancak <userinput
+>marc?</userinput
+>, <filename
+>marc</filename
+> ve <filename
+>marc.png</filename
+> gibi dosyaları bulamaz. Terimde istediğiniz sayıda soru işareti kullanabilirsiniz, tam olarak o sayıda karakteri bulacaksınız. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Karakter Kümesi <quote
+>[...]</quote
+></term>
+<listitem>
+<para
+>Bu, parantezler arasındaki karakterlerden herhangi biriyle eşleşir. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Tabii ki bir arama teriminde iki veya daha fazla joker karakteri ile birleştirebilirsiniz. </para>
+
+<para
+>Aramanızın sonuçları aşağıdaki kutuda görüntülenecektir. Bu kutudaki bir seçimdeki &RMB; ile yapılan bir tıklama, seçili dosyalar veya klasörler için bir eylem listesi içeren bir bağlam menüsü açar. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>İçindekiler Sekmesi</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Dosya türü</guilabel
+></term>
+<listitem>
+<para
+>Burada, aradığınız dosyanın türünü belirtebilirsiniz. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>İçerdiği metne göre</guilabel
+></term>
+<listitem>
+<para
+>İçinde bulundurduğunuz dosyaları aramak istediğiniz sözcüğü veya tümceyi yazın. Not: Bunu büyük bir klasörde yaparsanız veya <guilabel
+>Ad/Konum</guilabel
+> sekmesinde <guilabel
+>Alt klasörleri içer</guilabel
+> seçeneğini işaretlerseniz bu uzun bir zaman alabilir. </para>
+
+<note>
+<para
+>Bu seçenek <guilabel
+>Dosya türü</guilabel
+> altında listelenmiş dosyaların tümünde <emphasis
+>çalışmaz</emphasis
+>. Yalnızca aşağıdaki dosya türleri desteklenir: <itemizedlist>
+<listitem
+><para
+>Metin dosyaları, &eg; kaynak kodu ve <filename
+>README</filename
+> dosyaları</para
+></listitem>
+<listitem
+><para
+>LibreOffice Writer</para
+></listitem>
+<listitem
+><para
+>LibreOffice Impress</para
+></listitem>
+<listitem
+><para
+>LibreOffice Calc</para
+></listitem>
+<listitem
+><para
+>Calligra Sözcükler</para
+></listitem>
+<listitem
+><para
+>Calligra Tablolar</para
+></listitem>
+<listitem
+><para
+>Calligra Sahne</para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>BÜYÜK/küçük harf duyarlı</guilabel
+></term>
+<listitem>
+<para
+>Bu seçeneği etkinleştirirseniz &kfind;, yalnızca dosyayı BÜYÜK/küçük harf duyarlı olarak bulur, &eg; <userinput
+>MARC</userinput
+> yalnızca <quote
+>MARC</quote
+> ile eşleşir, <quote
+>Marc</quote
+> ile eşleşmez. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Düzenli ifade</guilabel
+></term>
+<listitem
+><para
+>&kregexpeditor;, &kde; git sunucusundaki playground/utils üzerinden kurulduysa bu ek bir seçenek olacaktır. Etkinleştirilirse bir <firstterm
+>düzenli ifadeyi</firstterm
+> aramanıza izin verir. Bir düzenli ifade, aramanızın koşullarını belirlemenin bir yoludur ve çok karmaşık olabilirler, ayrıca eşit derecede güçlü olabilirler. Düzenli ifadelere aşina değilseniz &kregexpeditor; dosyasını açmak için <guibutton
+>Düzenle</guibutton
+> düğmesine basabilirsiniz. Bu araç, koşullar kümesini grafiksel olarak oluşturmanıza ve sonra sizin için ifadenin üretilmesine olanak tanır.</para>
+
+<para
+>&kregexpeditor; oldukça kullanışlı bir araçtır ve &kfind; dışında bir çok &kde; uygulamasıyla birlikte kullanılabilir. Daha fazla bilgiye kendi yardım dosyasından ulaşabilirsiniz.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>İkili (çalıştırılabilir) dosyaları içer</guilabel
+></term>
+<listitem
+><para
+>Bu işlem hemen her türlü dosya üzerinde (program dosyaları veya görseller içerilir) arama yapmanıza olanak sağlar.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Arama üst bilgi bölümleri</guilabel
+></term>
+<listitem>
+<para
+>Bu iki alan, dosyaların belirli yorumlarında veya üst bilgilerinde arama yapmak için kullanılabilir. </para>
+<para
+>En çok kullanılan durumlar: </para>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>Video dosyaları (avi, mp4, &etc;)</emphasis
+>: Birkaç etiket (<userinput
+>Bit Hızı</userinput
+>, <userinput
+>Süre</userinput
+>, &etc;) ve üst verisinde belirtilen parametre değerine sahip değerleri belirtin. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Görseller (png, jpeg, &etc;)</emphasis
+>: Birkaç etiket (<userinput
+>Genişlik</userinput
+>, <userinput
+>Yükseklik</userinput
+>, &etc;) ve üst verisinde belirtilen parametre değerine sahip değerleri belirtin. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Ses dosyaları (mp3, flac, &etc;)</emphasis
+>: Birkaç etiket (<userinput
+>Başlık</userinput
+>, <userinput
+>Albüm</userinput
+>, &etc;) ve üst verisinde belirtilen parametre değerine sahip değerleri belirtin. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>E-kitaplar (epub, azw, fb2, &etc;)</emphasis
+>: Birkaç etiket (<userinput
+>Başlık</userinput
+>, <userinput
+>Yazar</userinput
+>, &etc;) ve üst verisinde belirtilen parametre değerine sahip değerleri belirtin. </para>
+    </listitem>
+</itemizedlist>
+<note>
+    <para
+>Etiketlerin dilinize çevirisi varsa arama kriterinde yerelleştirilmiş etiket adlarını kullanabilirsiniz. </para>
+</note>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>Özellikler Sekmesi</title>
+
+<para
+>Burada aramanızı özelleştirebilirsiniz. Bunlar, seçebileceğiniz özel iyileştirmelerdir: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Oluşturulan veya değiştirilen tüm dosyaları bul</guilabel
+></term>
+<listitem>
+<para
+>Burada, dosyaların oluşturulduğu veya değiştirildiği iki tarihi girebilir veya bir zaman aralığı belirtebilirsiniz. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Dosya boyutu</guilabel
+></term>
+<listitem>
+<para
+>Burada, dosyanın en az veya en fazla aşağıdaki kutuya girilen boyut kadar büyük olmasını veya boyutuna eşit olmasını belirleyebilirsiniz. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Kullanıcının sahip olduğu dosyalar</guilabel
+>, <guilabel
+>Grubun sahip olduğu dosyalar</guilabel
+></term>
+<listitem>
+<para
+>Burada dosyaların sahibi olarak kullanıcı ve grup adlarını belirleyebilirsiniz. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Emeği Geçerler ve Lisans</title>
+
+<para
+>&kfind; </para>
+
+<para
+>Program telif hakkı: </para>
+
+<itemizedlist>
+<title
+>Geliştiriciler</title>
+<listitem>
+<para
+>Martin Hartig</para>
+</listitem>
+
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Mario.Weilguni; &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Alex.Zepeda; <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Miroslav Flídr <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Harri.Porten; &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Dima Rogozin <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Hans Petter Bieker <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Waldo.Bastian; &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>Belgelendirme telif hakkı 2001 &Dirk.Doerflinger; &Dirk.Doerflinger.mail;</para
+> 
+
+<para
+>Çeviren: Kaan Özdinçer <email
+>kaanozdincer@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->
