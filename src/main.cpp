@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
 
-    KLocalizedString::setApplicationDomain("kfind");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("kfind"));
 
     KAboutData aboutData(QStringLiteral("kfind"), i18n("KFind"),
                          QStringLiteral(KFIND_VERSION_STRING), i18n("KDE file find utility"), KAboutLicense::GPL,
