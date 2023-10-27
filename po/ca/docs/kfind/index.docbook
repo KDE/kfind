@@ -93,9 +93,7 @@
 <para
 >En iniciar el &kfind;, veureu una finestra força senzilla. Teclegeu el nom del fitxer que esteu cercant en el quadre de text anomenat com a <guilabel
 >Anomenat:</guilabel
->. Podeu utilitzar comodins, i un punt i coma (<quote
->;</quote
->) per a separar diversos noms.</para>
+>. Podeu utilitzar comodins, i un punt i coma («;») per a separar diversos noms.</para>
 <para
 >Seleccioneu una carpeta des d'on voleu cercar, teclejant-la en el camp <guilabel
 >Cerca a:</guilabel
@@ -123,20 +121,16 @@
 >Mostra els fitxers ocults</guilabel
 > per a incloure'ls en la cerca. Seleccionat <guilabel
 >Usa l'índex de fitxers</guilabel
-> permet utilitzar l'índex de fitxers creat pel paquet <quote
->locate</quote
-> per a accelerar la cerca.</para>
+> permet utilitzar l'índex de fitxers creat pel paquet «locate» per a accelerar la cerca.</para>
 <para
 >Podeu usar els següents caràcters de comodí per a noms de fitxer o carpeta: </para>
 
 <variablelist>
 <varlistentry>
 <term
->L'asterisc <quote
-><keycap
+>L'asterisc «<keycap
 >*</keycap
-></quote
-></term>
+>»</term>
 <listitem>
 <para
 >L'asterisc significa qualsevol nombre de caràcters (fins i tot zero), això vol dir, &pex;, que cercant <filename
@@ -159,11 +153,9 @@
 
 <varlistentry>
 <term
->L'interrogant <quote
-><keycap
+>L'interrogant «<keycap
 >?</keycap
-></quote
-></term>
+>»</term>
 <listitem>
 <para
 >Al contrari que amb l'asterisc, l'interrogant significa un únic caràcter, de manera que <filename
@@ -182,9 +174,7 @@
 
 <varlistentry>
 <term
->El joc de caràcters <quote
->[...]</quote
-></term>
+>El joc de caràcters «[...]»</term>
 <listitem>
 <para
 >Això coincideix amb qualsevol dels caràcters entre els claudàtors. </para>
@@ -284,11 +274,7 @@
 <para
 >Si habiliteu aquesta opció, el &kfind; només cercarà els fitxers exactament amb les majúscules o minúscules que coincideixin, &pex;, <userinput
 >MARC</userinput
-> només cassarà amb <quote
->MARC</quote
->, no amb <quote
->Marc</quote
->. </para>
+> només cassarà amb «MARC», no amb «Marc». </para>
 </listitem>
 </varlistentry>
 
