@@ -430,7 +430,7 @@ KfindTabWidget::~KfindTabWidget()
 
 void KfindTabWidget::setURL(const QUrl &url)
 {
-    KConfigGroup conf(KSharedConfig::openConfig(), "History");
+    KConfigGroup conf(KSharedConfig::openConfig(), QStringLiteral("History"));
     m_url = url;
     QStringList sl = conf.readPathEntry("Directories", QStringList());
     dirBox->clear(); // make sure there is no old Stuff in there
