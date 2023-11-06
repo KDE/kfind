@@ -5,6 +5,7 @@
   <project_license>GPL-2.0+</project_license>
   <name>KFind</name>
   <name xml:lang="ar">بحثك</name>
+  <name xml:lang="ast">KFind</name>
   <name xml:lang="az">KFind</name>
   <name xml:lang="be">KFind</name>
   <name xml:lang="bg">KFind</name>
@@ -58,6 +59,7 @@
   <name xml:lang="zh-TW">KFind</name>
   <summary>Find Files/Folders</summary>
   <summary xml:lang="ar">اعثر على ملفات/مجلدات</summary>
+  <summary xml:lang="ast">Atopa ficheros/carpetes</summary>
   <summary xml:lang="az">Faylları/Qovluqları tapın</summary>
   <summary xml:lang="be">Пошук файлаў/каталогаў</summary>
   <summary xml:lang="bg">Търсене на папки и директории</summary>
@@ -173,6 +175,7 @@
     <screenshot type="default">
       <caption>KFind main window</caption>
       <caption xml:lang="ar">النافذة الرئيسة لبحثك</caption>
+      <caption xml:lang="ast">Ventana principal de KFind</caption>
       <caption xml:lang="az">KFind əsas pəncərəsi</caption>
       <caption xml:lang="be">Галоўнае акно KFind</caption>
       <caption xml:lang="bg">Основен прозорец на KFind</caption>
