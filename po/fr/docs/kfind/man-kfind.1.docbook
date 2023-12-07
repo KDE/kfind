@@ -41,7 +41,7 @@
 >kfind</command
 > <group choice="opt"
 ><option
->emplacement_de_recherche</option
+>emplacement-de-recherche</option
 ></group
 > <arg choice="opt"
 >options</arg
