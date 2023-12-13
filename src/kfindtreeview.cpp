@@ -361,7 +361,7 @@ KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
     copyPathAction->setText(i18nc("@action:incontextmenu", "Copy Location"));
     copyPathAction->setWhatsThis(i18nc("@info:whatsthis copy_location", "This will copy the path of the first selected item into the clipboard."));
     copyPathAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-copy-path")));
-    m_actionCollection->setDefaultShortcuts(copyPathAction, {Qt::CTRL | Qt::ALT | Qt::Key_C});
+    KActionCollection::setDefaultShortcuts(copyPathAction, {Qt::CTRL | Qt::ALT | Qt::Key_C});
     connect(copyPathAction, &QAction::triggered, this, &KFindTreeView::copySelectionPath);
 
     QAction *openFolder = new QAction(QIcon::fromTheme(QStringLiteral("window-new")), i18n("&Open containing folder(s)"), this);
@@ -370,11 +370,11 @@ KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
 
     QAction *del = new QAction(QIcon::fromTheme(QStringLiteral("edit-delete")), i18n("&Delete"), this);
     connect(del, &QAction::triggered, this, &KFindTreeView::deleteSelectedFiles);
-    m_actionCollection->setDefaultShortcut(del, Qt::SHIFT | Qt::Key_Delete);
+    KActionCollection::setDefaultShortcut(del, Qt::SHIFT | Qt::Key_Delete);
 
     QAction *trash = new QAction(QIcon::fromTheme(QStringLiteral("user-trash")), i18n("&Move to Trash"), this);
     connect(trash, &QAction::triggered, this, &KFindTreeView::moveToTrashSelectedFiles);
-    m_actionCollection->setDefaultShortcut(trash, Qt::Key_Delete);
+    KActionCollection::setDefaultShortcut(trash, Qt::Key_Delete);
     m_actionCollection->addAction(QStringLiteral("trash"), trash);
 
     header()->setStretchLastSection(true);
