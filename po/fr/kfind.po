@@ -10,11 +10,11 @@
 # Sébastien Renard <Sebastien.Renard@digitalfox.org>, 2007, 2008.
 # Amine Say <aminesay@yahoo.fr>, 2008, 2009.
 # Guillaume Pujol <guill.p@gmail.com>, 2010.
-# xavier <ktranslator31@yahoo.fr>, 2013.
+# Xavier Besnard <xavier.besnard@kde.org>, 2013.
 # Vincent Pinon <vpinon@kde.org>, 2017.
 # Simon Depiets <sdepiets@gmail.com>, 2018, 2020.
-# Xavier Besnard <xavier.besnard@neuf.fr>, 2021.
-# Xavier BESNARD <xavier.besnard@neuf.fr>, 2023.
+# Xavier Besnard <xavier.besnard@kde.org>, 2021.
+# Xavier Besnard <xavier.besnard@kde.org>, 2023.
 #
 # amine say, 2012.
 msgid ""
