@@ -2,7 +2,7 @@
     "id": "org.kde.kfind",
     "rename-icon": "kfind",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "6.6-kf6preview",
     "sdk": "org.kde.Sdk",
     "command": "kfind",
     "finish-args": [
