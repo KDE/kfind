@@ -13,11 +13,12 @@
 #include <QList>
 #include <QObject>
 #include <QPair>
+#include <QUrl>
 #include <QQueue>
 #include <QRegExp>
 #include <QStringList>
 
-#include <KIO/Job>
+#include <KIO/ListJob>
 #include <KProcess>
 
 class KFileItem;
