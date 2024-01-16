@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2021-06-16 00:54+0300\n"
+"PO-Revision-Date: 2024-01-16 00:25+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -129,13 +129,13 @@ msgstr "Pirma atitinkanti eilutė"
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Kopijuoti vietą"
 
 #: kfindtreeview.cpp:362
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
-msgstr ""
+msgstr "Tai nukopijuos į iškarpinę pirmo pažymėto elemento kelią."
 
 #: kfindtreeview.cpp:367
 #, kde-format
@@ -590,16 +590,14 @@ msgid "KDE file find utility"
 msgstr "KDE failų paieškos pagalbinė programa"
 
 #: main.cpp:28
-#, fuzzy, kde-format
-#| msgid "(c) 1998-2017, The KDE Developers"
+#, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "© 1998-2017, KDE programuotojai"
+msgstr "(c) 1998-2021, KDE programuotojai"
 
 #: main.cpp:30
-#, fuzzy, kde-format
-#| msgid "Kai-Uwe Broulik"
+#, kde-format
 msgid "Kai Uwe Broulik"
-msgstr "Kai-Uwe Broulik"
+msgstr "Kai Uwe Broulik"
 
 #: main.cpp:30
 #, kde-format
@@ -705,13 +703,13 @@ msgstr "Clarence Dang"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Ričardas Čepas, Donatas Glodenis"
+msgstr "Ričardas Čepas, Donatas Glodenis, Moo"
 
 #: main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "rch@richard.eu.org, dgvirtual@akl.lt"
+msgstr "rch@richard.eu.org, dgvirtual@akl.lt, <>"
 
 #: main.cpp:49
 #, kde-format
