@@ -110,6 +110,7 @@ OnlyShowIn=KDE;
 Categories=Qt;KDE;Utility;
 X-DBUS-ServiceName=org.kde.kfind
 Keywords=search;file search;search tool;finder;
+Keywords[ar]=بحث;ملف;أداة بحث;ابحث;
 Keywords[bg]=търсене;търсене на файлове;инструмент за търсене;търсачка;
 Keywords[ca]=cerca;cerca de fitxer;eina de cerca;cercador;
 Keywords[ca@valencia]=busca;busca de fitxer;eina de busca;buscador;
