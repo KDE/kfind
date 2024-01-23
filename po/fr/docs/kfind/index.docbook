@@ -148,9 +148,9 @@
 > et <filename
 >marc_ne_doit_pas_lire_ceci.kwd</filename
 >. <userinput
->mar*.kwd</userinput
+>marc*.kwd</userinput
 > permet de trouver <filename
->marché_à_terme.kwd</filename
+>marché-à-terme.kwd</filename
 > et <filename
 >marc_ne_doit_pas_lire_ceci.kwd</filename
 >. </para>
@@ -348,9 +348,9 @@
     <listitem>
         <para
 ><emphasis
->Les fichiers video (avi, mp4, &etc;)</emphasis
+>Les fichiers vidéo (avi, mp4, &etc;)</emphasis
 > : spécifient (<userinput
->Bitrate</userinput
+>Débit-binaire</userinput
 >, <userinput
 >Durée</userinput
 >, &etc;) et leurs valeurs pour trouver les éléments dont les valeurs des paramètres sont présentes dans les méta-données. </para>
@@ -378,7 +378,7 @@
     <listitem>
         <para
 ><emphasis
->Les fichiers e-books (epub, azw, fb2, &etc;)</emphasis
+>Les fichiers de bandes dessinées (ePub, azw, fb2, &etc;)</emphasis
 > : spécifient certaines étiquettes (<userinput
 >Titre</userinput
 >, <userinput
