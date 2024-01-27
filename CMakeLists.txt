@@ -15,7 +15,7 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 set(QT_REQUIRED_VERSION "6.5.0")
 include(KDEInstallDirs)
 find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Concurrent)
-find_package(Qt6Core5Compat)
+find_package(Qt6Core5Compat REQUIRED)
 
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
