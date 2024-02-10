@@ -1,25 +1,26 @@
 # translation of kfindpart.po to Latvian
 # Copyright (C) 2007, 2008, 2010, 2011 Free Software Foundation, Inc.
 #
-# Maris Nartiss <maris.kde@gmail.com>, 2007, 2010, 2011, 2024.
+# Maris Nartiss <maris.kde@gmail.com>, 2007, 2010, 2011.
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2007, 2008.
 # Viesturs Zariņš <viesturs.zarins@algorego.com>, 2008.
 # Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
 # Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011.
 # Einars Sprugis <einars8@gmail.com>, 2012.
+# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2024-02-08 12:54+0200\n"
-"Last-Translator: Māris Nartišs <maris.kde@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-02-08 08:21+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
@@ -27,7 +28,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Find Files/Folders"
-msgstr "Meklēt failus/mapes"
+msgstr "Atrodi datnes/mapes"
 
 #: kfinddlg.cpp:48 kfinddlg.cpp:197
 #, kde-format
@@ -37,11 +38,9 @@ msgstr "Gaida."
 
 #. i18n as below
 #: kfinddlg.cpp:133
-#, fuzzy, kde-format
-#| msgid "one file found"
-#| msgid_plural "%1 files found"
+#, kde-format
 msgid "0 items found"
-msgstr "atrasts %1 fails"
+msgstr "Nekas nav atrasts"
 
 #: kfinddlg.cpp:172
 #, kde-format
@@ -61,7 +60,7 @@ msgstr "Kļūda."
 #: kfinddlg.cpp:202
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
-msgstr "Lūdzu norādiet absolūto ceļu \"Meklēt iekš\" laukā."
+msgstr "Norādiet absolūto ceļu „Meklēšanas vieta“ laukā."
 
 #: kfinddlg.cpp:205
 #, kde-format
@@ -69,26 +68,24 @@ msgid "Could not find the specified folder."
 msgstr "Nevar atrast norādīto mapi."
 
 #: kfinddlg.cpp:228 kfinddlg.cpp:252
-#, fuzzy, kde-format
-#| msgid "one file found"
-#| msgid_plural "%1 files found"
+#, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
-msgstr[0] "atrasts %1 fails"
-msgstr[1] "atrasti %1 faili"
-msgstr[2] "atrasts %1 failu"
+msgstr[0] "atrasts %1 vienums"
+msgstr[1] "atrasti %1 vienums"
+msgstr[2] "atrasts %1 vienumu"
 
 #: kfindtreeview.cpp:45
 msgid "Read-write"
-msgstr "Lasīt-rakstīt"
+msgstr "Lasīt un rakstīt"
 
 #: kfindtreeview.cpp:46
 msgid "Read-only"
-msgstr "Tikai-lasīt"
+msgstr "Tikai lasīt"
 
 #: kfindtreeview.cpp:47
 msgid "Write-only"
-msgstr "Tikai-rakstīt"
+msgstr "Tikai rakstīt"
 
 #: kfindtreeview.cpp:48
 msgid "Inaccessible"
@@ -134,13 +131,13 @@ msgstr "Pirmā atbilstošā rinda"
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Kopēt atrašanās vietu"
 
 #: kfindtreeview.cpp:362
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
-msgstr ""
+msgstr "Šī darbība nokopēs pirmā atlasītā vienuma ceļu starpliktuvē."
 
 #: kfindtreeview.cpp:367
 #, kde-format
@@ -155,7 +152,7 @@ msgstr "&Dzēst"
 #: kfindtreeview.cpp:375
 #, kde-format
 msgid "&Move to Trash"
-msgstr "Pārvietot uz &miskasti"
+msgstr "Pārvietot uz &atkritni"
 
 #: kfindtreeview.cpp:515
 #, kde-format
@@ -171,13 +168,13 @@ msgstr "Neizdevās saglabāt rezultātus."
 #: kfindtreeview.cpp:554
 #, kde-format
 msgid "KFind Results File"
-msgstr "KFind rezultātu fails"
+msgstr "„KFind“ rezultātu datne"
 
 #: kfindtreeview.cpp:569
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
-msgstr "Rezultāti tika saglabāti: %1"
+msgstr "Rezultāti ir saglabāti: %1"
 
 #: kfindtreeview.cpp:665 kftabdlg.cpp:396
 #, kde-format
@@ -193,14 +190,12 @@ msgstr "&Nosaukums:"
 #: kftabdlg.cpp:69
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
-msgstr ""
-"Jūs varat lietot zvaigznīšu atbilstības meklēšanu un  \";\" lai atdalītu "
-"vairākus nosaukumus"
+msgstr "Varat lietot aizstājējzīmes un „;“, lai atdalītu vairākus nosaukumus"
 
 #: kftabdlg.cpp:75
 #, kde-format
 msgid "Look &in:"
-msgstr "&Meklēt iekš:"
+msgstr "&Meklēšanas vieta:"
 
 #: kftabdlg.cpp:78
 #, kde-format
@@ -220,12 +215,12 @@ msgstr "&Pārlūkot..."
 #: kftabdlg.cpp:81
 #, kde-format
 msgid "&Use files index"
-msgstr "&Lietot failu indeksu"
+msgstr "&Lietot datņu indeksu"
 
 #: kftabdlg.cpp:82
 #, kde-format
 msgid "Show &hidden files"
-msgstr "Rādīt &slēptos failus"
+msgstr "Rādīt &slēptās datnes"
 
 #: kftabdlg.cpp:101
 #, kde-format
@@ -241,16 +236,16 @@ msgid ""
 "between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
 "li></ul></qt>"
 msgstr ""
-"<qt>Ievadiet meklējamā faila nosaukumu. <br />Alternatīvus variantus var "
-"atdalīt ar semikolu \";\".<br /><br />Faila nosaukums var saturēt šādus "
-"speciālos simbolus:<ul><li><b>?</b> atbilst jebkurai viena rakstzīme</"
+"<qt>Ievadiet meklējamās datnes nosaukumu. <br />Alternatīvus variantus varat "
+"atdalīt ar semikolu „;“.<br /><br />Datnes nosaukums var saturēt šādus "
+"speciālos simbolus:<ul><li><b>?</b> atbilst jebkura viena rakstzīme</"
 "li><li><b>*</b> atbilst neviena vai vairākas rakstzīmes </li><li><b>[...]</"
 "b> atbilst jebkura no rakstzīmēm iekavās</li></ul><br />Meklēšanas piemēri:"
-"<ul><li><b>*.kwd;*.txt</b> atrod visus failus, kas beidzas ar .kwd vai .txt</"
-"li><li><b>go[dt]</b> atrod 'god' un 'got'</li><li><b>Hel?o</b> atrod visus "
-"failus, kas sākas ar \"Hel\" un beidzas ar \"o\", un satur tieši vienu "
-"rakstzīmi pa vidu</li><li><b>Mans dokuments.kwd</b> atrod failu ar tieši "
-"šādu nosaukumu</li></ul></qt>"
+"<ul><li><b>*.kwd;*.txt</b> atrod visas datnes, kas beidzas ar .kwd vai .txt</"
+"li><li><b>au[gk]sts</b> atrod „augsts“ un „auksts“</li><li><b>Sve?ki</b> "
+"atrod visas datnes, kas sākas ar „Sve“ un beidzas ar „ki“, un satur tieši "
+"vienu rakstzīmi pa vidu</li><li><b>Mans dokuments.kwd</b> atrod datni ar "
+"tieši šādu nosaukumu</li></ul></qt>"
 
 #: kftabdlg.cpp:122
 #, kde-format
@@ -259,14 +254,14 @@ msgid ""
 "to speed-up the search; remember to update the index from time to time "
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
-"<qt> Šis ļauj jums izmantot failu indeksu, kas veidots ar <i>slocate</i> "
-"rīku, lai paātrinātu meklēšanu; atceraties laiku pa laikam atjaunot indeksu "
-"(lietojot <i>updatedb</i> komandu).</qt>"
+"<qt> Šī iespēja ļauj izmantot datņu indeksu, kas veidots ar <i>slocate</i> "
+"rīku, lai paātrinātu meklēšanu. Neaizmirstiet laiku pa laikam atjaunot "
+"indeksu (lietojot <i>updatedb</i> komandu).</qt>"
 
 #: kftabdlg.cpp:166
 #, kde-format
 msgid "Find all files created or &modified:"
-msgstr "Meklēt failus, kas izveidoti vai &mainīti:"
+msgstr "&Meklēt datnes, kas ir izveidotas vai mainītas:"
 
 #: kftabdlg.cpp:168
 #, kde-format
@@ -281,12 +276,12 @@ msgstr "un"
 #: kftabdlg.cpp:192
 #, kde-format
 msgid "File &size is:"
-msgstr "Faila i&zmērs ir:"
+msgstr "Datnes i&zmērs ir:"
 
 #: kftabdlg.cpp:205
 #, kde-format
 msgid "Files owned by &user:"
-msgstr "Faila ī&pašnieks ir:"
+msgstr "D&atnes īpašnieks ir:"
 
 #: kftabdlg.cpp:210
 #, kde-format
@@ -341,7 +336,7 @@ msgstr "GiB"
 #, kde-format
 msgctxt "label for the file type combobox"
 msgid "File &type:"
-msgstr "Faila &tips:"
+msgstr "&Datnes tips:"
 
 #: kftabdlg.cpp:289
 #, kde-format
@@ -355,19 +350,19 @@ msgid ""
 "all file types from the list above are supported. Please refer to the "
 "documentation for a list of supported file types.</qt>"
 msgstr ""
-"<qt>Ja norādīts, tiks atrasti tikai faili, kas satur šo tekstu. Piezīme ne "
-"visi sarakstā esošie failu tipi ir atbalstīti. Lūdzu lasiet dokumentācijā "
-"kādi failu tipi ir atbalstīti.</qt>"
+"<qt>Ja norādīts, programma atradīs tikai tās datnes, kas satur šo tekstu. "
+"Ievērojiet, ka nav atbalstīti visi sarakstā esošie datņu tipi. Atbalstītie "
+"datņu tipi ir minēti dokumentācijā.</qt>"
 
 #: kftabdlg.cpp:303
 #, kde-format
 msgid "Case s&ensitive"
-msgstr "R&eģistrjutīga meklēšana"
+msgstr "&Reģistrjutīga meklēšana"
 
 #: kftabdlg.cpp:304
 #, kde-format
 msgid "Include &binary files"
-msgstr "Iekļaut &bināros failus"
+msgstr "&Iekļaut binārās datnes"
 
 #: kftabdlg.cpp:307
 #, kde-format
@@ -375,29 +370,29 @@ msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
 msgstr ""
-"<qt>Šis ļauj jums meklēt visos failos, pat tādos, kas parasti nesatur "
-"tekstu(piemēram programmas un attēli).</qt>"
+"<qt>Šī iespēja ļauj meklēt visās datnēs — pat tādās, kas parasti nesatur "
+"tekstu (piemēram programmas un attēli).</qt>"
 
 #: kftabdlg.cpp:314
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
-msgstr ""
+msgstr "&atslēgvārdu:"
 
 #: kftabdlg.cpp:316
 #, kde-format
 msgid "Search &metainfo sections:"
-msgstr "Meklēt &metainformācijas sadaļās:"
+msgstr "&Meklēt metainformācijas sadaļās:"
 
 #: kftabdlg.cpp:320
 #, kde-format
 msgid "All Files & Folders"
-msgstr "Visi faili un mapes"
+msgstr "Visas datnes un mapes"
 
 #: kftabdlg.cpp:321
 #, kde-format
 msgid "Files"
-msgstr "Faili"
+msgstr "Datnes"
 
 #: kftabdlg.cpp:322
 #, kde-format
@@ -412,17 +407,17 @@ msgstr "Simboliskās saites"
 #: kftabdlg.cpp:324
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
-msgstr "Speciālie faili (ligzdas, ierīču faili...)"
+msgstr "Speciālās datnes (ligzdas, ierīču datnes...)"
 
 #: kftabdlg.cpp:325
 #, kde-format
 msgid "Executable Files"
-msgstr "Izpildāmie faili"
+msgstr "Izpildāmās datnes"
 
 #: kftabdlg.cpp:326
 #, kde-format
 msgid "SUID Executable Files"
-msgstr "SUID izpildāmie faili"
+msgstr "SUID izpildāmās datnes"
 
 #: kftabdlg.cpp:327
 #, kde-format
@@ -437,7 +432,7 @@ msgstr "Visi video"
 #: kftabdlg.cpp:329
 #, kde-format
 msgid "All Sounds"
-msgstr "Visi skaņas"
+msgstr "Visas skaņas"
 
 #: kftabdlg.cpp:394
 #, kde-format
@@ -458,9 +453,9 @@ msgid ""
 "title, an album</li><li><b>Images (png...)</b> Search images with a special "
 "resolution, comment...</li></ul></qt>"
 msgstr ""
-"<qt>Meklēt failu komentāros/metainformācijā<br /> Daži piemēri:<br /"
-"><ul><li><b>Audio faili (mp3...)</b> Meklēt id3 tagādziesmas nosaukumi, "
-"albūmu</li><li><b>Attēli (png...)</b> Meklēt attēlu ar noteiktu "
+"<qt>Meklēt datņu komentāros/metainformācijā<br /> Daži piemēri:<br /"
+"><ul><li><b>Audio datnes (mp3...)</b> Meklēt id3 birkā dziesmas nosaukumu, "
+"albumu</li><li><b>Attēli (png...)</b> Meklēt attēlu ar noteiktu "
 "izšķirtspēju, komentāru...</li></ul></qt>"
 
 #: kftabdlg.cpp:408
@@ -470,8 +465,8 @@ msgid ""
 "(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
-"<qt>Ja norādīts, meklēt tikai šajā laukā<br /><ul><li><b>Audio faili "
-"(mp3...)</b> Šis var būt Nosaukums, Albūms...</li><li><b>Attēli (png...)</b> "
+"<qt>Ja norādīts, meklēt tikai šajā laukā<br /><ul><li><b>Audio datnes "
+"(mp3...)</b> Šis var būt nosaukums, albums...</li><li><b>Attēli (png...)</b> "
 "Meklēt tikai izšķirtspēju, bitu dziļumu...</li></ul></qt>"
 
 #: kftabdlg.cpp:549
@@ -497,7 +492,7 @@ msgstr "Meklējamais datums ir nākotnē."
 #: kftabdlg.cpp:636
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
-msgstr "Izmērs ir par lielu. Uzstādīt maksimālo izmēra vērtību?"
+msgstr "Izmērs ir par lielu. Iestatīt maksimālo izmēra vērtību?"
 
 #: kftabdlg.cpp:636
 #, kde-format
@@ -507,12 +502,12 @@ msgstr "Kļūda"
 #: kftabdlg.cpp:636
 #, kde-format
 msgid "Set"
-msgstr "Uzstādīt"
+msgstr "Iestatīt"
 
 #: kftabdlg.cpp:636
 #, kde-format
 msgid "Do Not Set"
-msgstr "Neuzstādīt"
+msgstr "Neiestatīt"
 
 #: kftabdlg.cpp:819
 #, kde-format
@@ -521,7 +516,7 @@ msgctxt ""
 "minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
 msgid "&during the previous"
 msgid_plural "&during the previous"
-msgstr[0] "&pēdējā"
+msgstr[0] "pē&dējā"
 msgstr[1] "&pēdējās|/|$[by-context type 'i|h|d' '&pēdējās' 'm|y' '&pēdējos']"
 msgstr[2] "&pēdējās"
 
@@ -574,7 +569,7 @@ msgstr[2] "gados"
 #, kde-format
 msgctxt "@title:window"
 msgid "Error while using locate"
-msgstr "Kļūda, izmantojot locate"
+msgstr "Kļūda, izmantojot „locate“"
 
 #: main.cpp:26
 #, kde-format
@@ -584,18 +579,17 @@ msgstr "KFind"
 #: main.cpp:27
 #, kde-format
 msgid "KDE file find utility"
-msgstr "KDE failu meklēšanas utilīta"
+msgstr "KDE datņu meklēšanas rīks"
 
 #: main.cpp:28
-#, fuzzy, kde-format
-#| msgid "(c) 1998-2003, The KDE Developers"
+#, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "(c) 1998-2003, KDE Izstrādātāji"
+msgstr "(c) 1998–2021, KDE izstrādātāji"
 
 #: main.cpp:30
 #, kde-format
 msgid "Kai Uwe Broulik"
-msgstr ""
+msgstr "Kai Uwe Broulik"
 
 #: main.cpp:30
 #, kde-format
@@ -608,10 +602,9 @@ msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
 
 #: main.cpp:31
-#, fuzzy, kde-format
-#| msgid "Current Maintainer"
+#, kde-format
 msgid "Former Maintainer"
-msgstr "Pašreizējais uzturētājs"
+msgstr "Iepriekšējais uzturētājs"
 
 #: main.cpp:32
 #, kde-format
@@ -631,7 +624,7 @@ msgstr "Beppe Grimaldi"
 #: main.cpp:33
 #, kde-format
 msgid "UI Design & more search options"
-msgstr "UI Dizains un vairāk meklēšanas opciju"
+msgstr "Saskarnes dizains un vairāk meklēšanas opciju"
 
 #: main.cpp:34
 #, kde-format
@@ -686,7 +679,7 @@ msgstr "Waldo Bastian"
 #: main.cpp:43
 #, kde-format
 msgid "UI Design"
-msgstr "UI Dizains"
+msgstr "Saskarnes dizains"
 
 #: main.cpp:44
 #, kde-format
@@ -702,18 +695,20 @@ msgstr "Clarence Dang"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Andris Maziks, Māris Nartišs, Viesturs Zariņš"
+msgstr "Andris Maziks, Māris Nartišs, Viesturs Zariņš, Toms Trasūns"
 
 #: main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "andzha@latnet.lv, maris.kde@gmail.com, viesturs.zarins@mii.lu.lv"
+msgstr ""
+"andzha@latnet.lv, maris.kde@gmail.com, viesturs.zarins@mii.lu.lv, toms."
+"trasuns@posteo.net"
 
 #: main.cpp:49
 #, kde-format
 msgid "Path(s) to search"
-msgstr "Ceļš(i) meklēšanai"
+msgstr "Meklēšanas ceļš(-i)"
 
 #~ msgid "Regular e&xpression"
 #~ msgstr "R&egulāra izteiksme"
