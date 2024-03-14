@@ -42,13 +42,13 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     WidgetsAddons
     XmlGui
 )
-find_package(KF6DocTools ${KF5_MIN_VERSION})
+find_package(KF6DocTools ${KF_MIN_VERSION})
 set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
     TYPE OPTIONAL
 )
 ecm_set_disabled_deprecation_versions(QT 6.6
-    KF 5.240.0
+    KF 6.0.0
     )
 
 add_subdirectory(src)
