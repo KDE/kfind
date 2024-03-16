@@ -93,7 +93,7 @@
 >&kfind;'u Başlatmak</title>
 
 <para
->Dosya Bul aracı, bilgisayarınızdaki belirli dosyaları veya bir kalıpla eşleşen dosyaları aramak için kullanışlı bir yöntemdir. Bunun bir örneği, belirli bir türdeki veya dosya adında belirli harfler bulunan dosyaların aranmasını içerebilir. Bu izlenceyi &konqueror;'da (dosya yöneticisi kipinde) menüden <menuchoice
+>Dosya Bul aracı, bilgisayarınızdaki belirli dosyaları veya bir dizgiyle eşleşen dosyaları aramak için kullanışlı bir yöntemdir. Bunun bir örneği, belirli bir türdeki veya dosya adında belirli harfler bulunan dosyaların aranmasını içerebilir. Bu izlenceyi &konqueror;'da (dosya yöneticisi kipinde) menüden <menuchoice
 ><shortcut
 ><keycombo action="simul"
 >&Ctrl; <keycap
