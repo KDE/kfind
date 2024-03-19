@@ -1,9 +1,9 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kfind package.
 #
 # Roman Maurer <roman.maurer@amis.net>, 2001.
 # Gregor Rakar <gregor.rakar@kiss.si>, 2003, 2004, 2005.
-# Jure Repinc <jlp@holodeck1.com>, 2006, 2007, 2008, 2009, 2010, 2011.
+# SPDX-FileCopyrightText: 2006, 2007, 2008, 2009, 2010, 2011, 2024 Jure Repinc <jlp@holodeck1.com>
 # Andrej Vernekar <andrej.vernekar@moj.net>, 2007, 2011.
 # Andrej Mernik <andrejm@ubuntu.si>, 2013, 2014, 2016, 2017, 2018.
 # Matjaž Jeran <matjaz.jeran@amis.net>, 2019, 2020, 2021.
@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2023-03-09 09:07+0100\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"PO-Revision-Date: 2024-03-17 01:53+0100\n"
+"Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Lokalize 24.04.70\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -45,7 +45,7 @@ msgstr "0 najdenih predmetov"
 #: kfinddlg.cpp:172
 #, kde-format
 msgid "Searching..."
-msgstr "Iskanje ..."
+msgstr "Iskanje …"
 
 #: kfinddlg.cpp:199
 #, kde-format
@@ -71,10 +71,10 @@ msgstr "Navedene mape ni bilo mogoče najti."
 #, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
-msgstr[0] "%1 najden predmet"
-msgstr[1] "%1 najdena predmeta"
-msgstr[2] "%1 najdeni predmeti"
-msgstr[3] "%1 najdenih predmetov"
+msgstr[0] "%1 najdenih predmetov"
+msgstr[1] "%1 najden predmet"
+msgstr[2] "%1 najdena predmeta"
+msgstr[3] "%1 najdeni predmeti"
 
 #: kfindtreeview.cpp:45
 msgid "Read-write"
@@ -148,7 +148,7 @@ msgstr "&Odpri vsebujočo mapo"
 #: kfindtreeview.cpp:371
 #, kde-format
 msgid "&Delete"
-msgstr "Izbriši"
+msgstr "&Izbriši"
 
 #: kfindtreeview.cpp:375
 #, kde-format
@@ -180,13 +180,13 @@ msgstr "Rezultati so bili shranjeni v: %1"
 #: kfindtreeview.cpp:665 kftabdlg.cpp:396
 #, kde-format
 msgid "&Properties"
-msgstr "Lastnosti"
+msgstr "&Lastnosti"
 
 #: kftabdlg.cpp:66
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
-msgstr "Ime:"
+msgstr "&Ime:"
 
 #: kftabdlg.cpp:69
 #, kde-format
@@ -198,22 +198,22 @@ msgstr ""
 #: kftabdlg.cpp:75
 #, kde-format
 msgid "Look &in:"
-msgstr "Išči v:"
+msgstr "Išči &v:"
 
 #: kftabdlg.cpp:78
 #, kde-format
 msgid "Include &subfolders"
-msgstr "Vključi podmape"
+msgstr "Vključi &podmape"
 
 #: kftabdlg.cpp:79
 #, kde-format
 msgid "Case s&ensitive search"
-msgstr "Iskanje, občutljivo na velikost črk"
+msgstr "Iskanje, ob&čutljivo na velikost črk"
 
 #: kftabdlg.cpp:80
 #, kde-format
 msgid "&Browse..."
-msgstr "Pre&brskaj..."
+msgstr "&Brskanje …"
 
 #: kftabdlg.cpp:81
 #, kde-format
@@ -223,7 +223,7 @@ msgstr "&Uporabi kazalo datotek"
 #: kftabdlg.cpp:82
 #, kde-format
 msgid "Show &hidden files"
-msgstr "Pokaži skrite datoteke"
+msgstr "Pokaži &skrite datoteke"
 
 #: kftabdlg.cpp:101
 #, kde-format
@@ -242,7 +242,7 @@ msgstr ""
 "<qt>Vnesite ime iskane datoteke. <br />Alternative so ločene s podpičjem »;«."
 "<br /><br />Ime datoteke lahko vsebuje naslednje posebne znake:<ul><li><b>?</"
 "b> ujema se katerikoli en znak</li><li><b>*</b> ujema se nič ali več "
-"katerihkoli znakov</li><li><b>[...]</b> ujema se katerikoli od znakov v "
+"katerihkoli znakov</li><li><b>[…]</b> ujema se katerikoli od znakov v "
 "oglatih oklepajih</li></ul><br />Primeri iskanja:<ul><li><b>*.kwd;*.txt</b> "
 "najde vse datoteke, ki se končajo z .kwd ali .txt</li><li><b>ima[mš]</b> "
 "najde imaš in imam</li><li><b>M?rko</b> najde vse datoteke, ki se začnejo z "
@@ -263,12 +263,12 @@ msgstr ""
 #: kftabdlg.cpp:166
 #, kde-format
 msgid "Find all files created or &modified:"
-msgstr "Najdi vse datoteke, narejene ali spre&menjene:"
+msgstr "Najdi vse datoteke, &ustvarjene ali spremenjene:"
 
 #: kftabdlg.cpp:168
 #, kde-format
 msgid "&between"
-msgstr "med"
+msgstr "m&ed"
 
 #: kftabdlg.cpp:170
 #, kde-format
@@ -278,17 +278,17 @@ msgstr "in"
 #: kftabdlg.cpp:192
 #, kde-format
 msgid "File &size is:"
-msgstr "Velikost je:"
+msgstr "&Velikost je:"
 
 #: kftabdlg.cpp:205
 #, kde-format
 msgid "Files owned by &user:"
-msgstr "Lasti si jo &uporabnik:"
+msgstr "&Last uporabnika:"
 
 #: kftabdlg.cpp:210
 #, kde-format
 msgid "Owned by &group:"
-msgstr "Lasti si jo skupina:"
+msgstr "Last &skupine:"
 
 #: kftabdlg.cpp:213
 #, kde-format
@@ -309,16 +309,16 @@ msgstr "Največ"
 #: kftabdlg.cpp:216
 #, kde-format
 msgid "Equal To"
-msgstr "Enako kot"
+msgstr "Enaka"
 
 #: kftabdlg.cpp:218 kftabdlg.cpp:829
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
-msgstr[0] "Bajt"
-msgstr[1] "Bajta"
-msgstr[2] "Bajte"
-msgstr[3] "Bajtov"
+msgstr[0] "Bajtov"
+msgstr[1] "Bajt"
+msgstr[2] "Bajta"
+msgstr[3] "Bajti"
 
 #: kftabdlg.cpp:219
 #, kde-format
@@ -344,7 +344,7 @@ msgstr "Vrs&ta datoteke:"
 #: kftabdlg.cpp:289
 #, kde-format
 msgid "C&ontaining text:"
-msgstr "Vsebuje besedilo:"
+msgstr "Vsebuje &besedilo:"
 
 #: kftabdlg.cpp:295
 #, kde-format
@@ -360,12 +360,12 @@ msgstr ""
 #: kftabdlg.cpp:303
 #, kde-format
 msgid "Case s&ensitive"
-msgstr "Iskanje, občutljivo na velikost črk"
+msgstr "Ob&čutljivo na velikost črk"
 
 #: kftabdlg.cpp:304
 #, kde-format
 msgid "Include &binary files"
-msgstr "Vključi dvojiške datoteke"
+msgstr "Vključi &dvojiške datoteke"
 
 #: kftabdlg.cpp:307
 #, kde-format
@@ -380,12 +380,12 @@ msgstr ""
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
-msgstr "za:"
+msgstr "z&a:"
 
 #: kftabdlg.cpp:316
 #, kde-format
 msgid "Search &metainfo sections:"
-msgstr "Išči po &metapodatkih:"
+msgstr "Išči &po metapodatkih:"
 
 #: kftabdlg.cpp:320
 #, kde-format
@@ -410,7 +410,7 @@ msgstr "Simbolne povezave"
 #: kftabdlg.cpp:324
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
-msgstr "Posebne datoteke (vtiči, datoteke naprav ...)"
+msgstr "Posebne datoteke (vtiči, datoteke naprav, …)"
 
 #: kftabdlg.cpp:325
 #, kde-format
@@ -440,13 +440,13 @@ msgstr "Vsi zvoki"
 #: kftabdlg.cpp:394
 #, kde-format
 msgid "Name/&Location"
-msgstr "Ime/mesto"
+msgstr "I&me/mesto"
 
 #: kftabdlg.cpp:395
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
-msgstr "Vsebina"
+msgstr "Vsebi&na"
 
 #: kftabdlg.cpp:400
 #, kde-format
@@ -457,9 +457,9 @@ msgid ""
 "resolution, comment...</li></ul></qt>"
 msgstr ""
 "<qt>Iskanje znotraj, za datoteko določenih, opomb/metapodatkov<br />Tu sta "
-"dva primera:<br /><ul><li><b>Zvočne datoteke (mp3 ...)</b>: iskanje v "
-"oznakah ID3 po naslovu ali albumu</li><li><b>Slike (png ...)</b>: iskanje "
-"slik s posebno ločljivostjo, opombo, ...</li></ul></qt>"
+"dva primera:<br /><ul><li><b>Zvočne datoteke (mp3, …)</b>: iskanje v oznakah "
+"ID3 po naslovu ali albumu</li><li><b>Slike (png, …)</b>: iskanje slik s "
+"posebno ločljivostjo, opombo, …</li></ul></qt>"
 
 #: kftabdlg.cpp:408
 #, kde-format
@@ -469,8 +469,8 @@ msgid ""
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
 "<qt>Če je navedeno, iskanje samo v tem polju<br /><ul><li><b>Zvočne datoteke "
-"(mp3 ...)</b>: to je lahko Naslov, Album ...</li><li><b>Slike (png ...)</b>: "
-"iskanje samo v Ločljivost, Bitna globina ...</li></ul></qt>"
+"(mp3, …)</b>: to je lahko Naslov, Album, …</li><li><b>Slike (png, …)</b>: "
+"iskanje samo v Ločljivost, Bitna globina, …</li></ul></qt>"
 
 #: kftabdlg.cpp:549
 #, kde-format
@@ -485,7 +485,7 @@ msgstr "Datum ni veljaven."
 #: kftabdlg.cpp:562
 #, kde-format
 msgid "Invalid date range."
-msgstr "Neveljaven obseg datuma."
+msgstr "Neveljaveno datumsko obdobje."
 
 #: kftabdlg.cpp:564
 #, kde-format
@@ -520,18 +520,18 @@ msgctxt ""
 "minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
 msgid "&during the previous"
 msgid_plural "&during the previous"
-msgstr[0] "v zadnjem"
-msgstr[1] "v zadnjih"
-msgstr[2] "v zadnjih"
-msgstr[3] "v zadnjih"
+msgstr[0] "&v zadnjih"
+msgstr[1] "&v zadnji/em"
+msgstr[2] "&v zadnjih"
+msgstr[3] "&v zadnjih"
 
 #: kftabdlg.cpp:820
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
 msgid_plural "minutes"
-msgstr[0] "minuti"
-msgstr[1] "minutah"
+msgstr[0] "minutah"
+msgstr[1] "minuti"
 msgstr[2] "minutah"
 msgstr[3] "minutah"
 
@@ -540,8 +540,8 @@ msgstr[3] "minutah"
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
 msgid_plural "hours"
-msgstr[0] "uri"
-msgstr[1] "urah"
+msgstr[0] "urah"
+msgstr[1] "uri"
 msgstr[2] "urah"
 msgstr[3] "urah"
 
@@ -550,8 +550,8 @@ msgstr[3] "urah"
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
 msgid_plural "days"
-msgstr[0] "dnevu"
-msgstr[1] "dneh"
+msgstr[0] "dneh"
+msgstr[1] "dnevu"
 msgstr[2] "dneh"
 msgstr[3] "dneh"
 
@@ -560,8 +560,8 @@ msgstr[3] "dneh"
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
 msgid_plural "months"
-msgstr[0] "mesecu"
-msgstr[1] "mesecih"
+msgstr[0] "mesecih"
+msgstr[1] "mesecu"
 msgstr[2] "mesecih"
 msgstr[3] "mesecih"
 
@@ -570,8 +570,8 @@ msgstr[3] "mesecih"
 msgctxt "use date ranges to search files by modified time"
 msgid "year"
 msgid_plural "years"
-msgstr[0] "leti"
-msgstr[1] "letih"
+msgstr[0] "letih"
+msgstr[1] "letu"
 msgstr[2] "letih"
 msgstr[3] "letih"
 
@@ -594,7 +594,7 @@ msgstr "KDE-jev pripomoček za iskanje datotek"
 #: main.cpp:28
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "(c) 1998-2021, razvijalci KDE"
+msgstr "© 1998–2021, razvijalci KDE"
 
 #: main.cpp:30
 #, kde-format
