@@ -170,7 +170,7 @@
     <p xml:lang="uk">KFind можна скористатися як окремою програмою для пошуку даних, запустивши її за допомогою KRunner або меню. Крім того, програму вбудовано до Konqueror. Нею можна скористатися за допомогою пункту «Знайти файл» у меню «Інструменти». Передбачено пошук файлів за назвою, типом і вмістом.</p>
     <p xml:lang="vi">KFind có thể được dùng như một công cụ tìm kiếm độc lập, được khởi chạy từ KRunner, hoặc từ trình đơn của bạn. Nó cũng được tích hợp vào Konqueror ở mục "Tìm tệp" trong trình đơn "Công cụ". Nó cho phép bạn tìm tệp bằng tên, kiểu hoặc nội dung.</p>
     <p xml:lang="x-test">xxKFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.xx</p>
-    <p xml:lang="zh-CN">KFind 可以用作独立的搜索工具，也可以从 KRunner 或者菜单加载。它也被集成在 Konqueror 里作为“工具”菜单里的“查找文件”。</p>
+    <p xml:lang="zh-CN">KFind 可以帮助您根据文件名、文件类型和文件内容查找所需文件。它既可以作为一款独立的搜索工具使用，也可以通过 KRunner 或者其他应用程序的菜单调用。它还被集成在 Konqueror 中，通过“工具”菜单的“查找文件”项即可访问。</p>
     <p xml:lang="zh-TW">KFind 可以做成獨立的搜尋工具，從 KRunner 或是您的選單中開啟。它也可以整合到 Konqueror「工具」選單中的「尋找檔案」。它可以讓您依檔名、檔案型態或內容來搜尋。</p>
   </description>
   <url type="homepage">https://apps.kde.org/kfind/</url>
