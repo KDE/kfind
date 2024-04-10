@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2024-04-07 00:30\n"
+"PO-Revision-Date: 2024-04-09 19:27\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -33,7 +33,7 @@ msgstr "空闲。"
 #: kfinddlg.cpp:133
 #, kde-format
 msgid "0 items found"
-msgstr "找到 0 项。"
+msgstr "找到了 0 个项目。"
 
 #: kfinddlg.cpp:172
 #, kde-format
@@ -48,7 +48,7 @@ msgstr "已取消。"
 #: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
 #, kde-format
 msgid "Error."
-msgstr "出错。"
+msgstr "发生错误。"
 
 #: kfinddlg.cpp:202
 #, kde-format
@@ -58,41 +58,41 @@ msgstr "请在“查找位置”框中指定绝对路径。"
 #: kfinddlg.cpp:205
 #, kde-format
 msgid "Could not find the specified folder."
-msgstr "找不到指定文件夹。"
+msgstr "无法找到指定的文件夹。"
 
 #: kfinddlg.cpp:228 kfinddlg.cpp:252
 #, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
-msgstr[0] "找到 %1 项"
+msgstr[0] "找到了 %1 个项目"
 
 #: kfindtreeview.cpp:45
 msgid "Read-write"
-msgstr "读写"
+msgstr "读取和写入"
 
 #: kfindtreeview.cpp:46
 msgid "Read-only"
-msgstr "只读"
+msgstr "读取"
 
 #: kfindtreeview.cpp:47
 msgid "Write-only"
-msgstr "只写"
+msgstr "写入"
 
 #: kfindtreeview.cpp:48
 msgid "Inaccessible"
-msgstr "不可访问"
+msgstr "无访问权限"
 
 #: kfindtreeview.cpp:68
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
-msgstr "名称"
+msgstr "文件名"
 
 #: kfindtreeview.cpp:70
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
-msgstr "在子文件夹中"
+msgstr "所在文件夹"
 
 #: kfindtreeview.cpp:72
 #, kde-format
@@ -116,7 +116,7 @@ msgstr "权限"
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
-msgstr "第一个匹配的行"
+msgstr "匹配条件的第一行"
 
 #: kfindtreeview.cpp:361
 #, kde-format
@@ -128,7 +128,7 @@ msgstr "复制位置"
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
-msgstr "这将复制第一个被选中对象的路径到剪贴板。"
+msgstr "这将复制第一个被选中项目的路径到剪贴板。"
 
 #: kfindtreeview.cpp:367
 #, kde-format
@@ -149,23 +149,23 @@ msgstr "移动到回收站(&M)"
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
-msgstr "结果保存为"
+msgstr "查找结果另存为"
 
 #: kfindtreeview.cpp:540
 #, kde-format
 msgid "Unable to save results."
-msgstr "无法保存结果。"
+msgstr "无法保存查找结果。"
 
 #: kfindtreeview.cpp:554
 #, kde-format
 msgid "KFind Results File"
-msgstr "KFind 结果文件"
+msgstr "KFind 查找结果文件"
 
 #: kfindtreeview.cpp:569
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
-msgstr "结果已保存到：%1"
+msgstr "查找结果已保存到：%1"
 
 #: kfindtreeview.cpp:665 kftabdlg.cpp:396
 #, kde-format
@@ -176,12 +176,12 @@ msgstr "属性(&P)"
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
-msgstr "文件名称(&N)："
+msgstr "文件名(&N)："
 
 #: kftabdlg.cpp:69
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
-msgstr "您可以使用通配符，用“;”分隔多个文件名"
+msgstr "您可以使用通配符。使用半角分号“;”分隔多个文件名"
 
 #: kftabdlg.cpp:75
 #, kde-format
