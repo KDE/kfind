@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2024-04-09 19:27\n"
+"PO-Revision-Date: 2024-04-10 19:54\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -227,13 +227,14 @@ msgid ""
 "between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
 "li></ul></qt>"
 msgstr ""
-"<qt>输入您要查找的文件名。<br />多个文件用分号“;”分隔。<br /><br />文件名中可"
-"以包含下列特殊字符：<ul><li><b>?</b> 匹配任意单个字符</li><li><b>*</b> 匹配零"
-"或多个字符</li><li><b>[...]</b> 匹配方括号中的任意字符</li></ul><br />搜索示"
-"例：<ul><li><b>*.kwd;*.txt</b> 查找所有以 .kwd 或 .txt 结尾的文件</"
-"li><li><b>go[dt]</b> 查找 god 和 got</li><li><b>Hel?o</b> 查找所有以“Hel”开"
-"始，以“o”结束的文件，并且在它们之间只有一个字符</li><li><b>My Document.kwd</"
-"b> 查找与这个名字精确匹配的文件</li></ul></qt>"
+"<qt>输入您要查找的文件名。<br />多个文件可以通过半角分号“;”分隔。<br /><br />"
+"文件名中可以包含以下半角字符作为通配符：<ul><li><b>?</b> 匹配任意单个字符</"
+"li><li><b>*</b> 匹配零到任意个数的字符</li><li><b>[...]</b> 匹配方括号中的任"
+"意字符</li></ul><br />查找示例：<ul><li><b>*.kwd;*.txt</b>：查找文件名以 ."
+"kwd 或者 .txt 结尾的文件</li><li><b>go[dt]</b>：查找文件名中包含 god 或者 "
+"got 的文件</li><li><b>Hel?o</b> 查找文件名以“Hel”开始，之后紧接 1 个任意字"
+"符，然后以“o”结束的文件</li><li><b>My Document.kwd</b> 查找与这个文件名完全匹"
+"配的文件</li></ul></qt>"
 
 #: kftabdlg.cpp:122
 #, kde-format
@@ -242,13 +243,13 @@ msgid ""
 "to speed-up the search; remember to update the index from time to time "
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
-"<qt>这将让您使用 <i>slocate</i> 软件包创建的文件索引以加快搜索；不要忘了时常"
-"更新索引(使用 <i>updatedb</i>)。</qt>"
+"<qt>启用此选项后将使用 <i>slocate</i> 程序创建的文件索引来加快查找过程；为保"
+"证效果，请及时更新文件索引(使用 <i>updatedb</i> 命令)。</qt>"
 
 #: kftabdlg.cpp:166
 #, kde-format
 msgid "Find all files created or &modified:"
-msgstr "查找在如下时间创建或修改的所有文件(&M)："
+msgstr "查找在如下时间创建或者修改的文件(&M)："
 
 #: kftabdlg.cpp:168
 #, kde-format
@@ -258,7 +259,7 @@ msgstr "介于(&B)"
 #: kftabdlg.cpp:170
 #, kde-format
 msgid "and"
-msgstr "和"
+msgstr "与"
 
 #: kftabdlg.cpp:192
 #, kde-format
@@ -284,12 +285,12 @@ msgstr "(无)"
 #: kftabdlg.cpp:214
 #, kde-format
 msgid "At Least"
-msgstr "至少"
+msgstr "不小于"
 
 #: kftabdlg.cpp:215
 #, kde-format
 msgid "At Most"
-msgstr "最多"
+msgstr "不大于"
 
 #: kftabdlg.cpp:216
 #, kde-format
@@ -310,12 +311,12 @@ msgstr "KiB"
 #: kftabdlg.cpp:220
 #, kde-format
 msgid "MiB"
-msgstr "MB"
+msgstr "MiB"
 
 #: kftabdlg.cpp:221
 #, kde-format
 msgid "GiB"
-msgstr "GB"
+msgstr "GiB"
 
 #: kftabdlg.cpp:284
 #, kde-format
@@ -335,8 +336,9 @@ msgid ""
 "all file types from the list above are supported. Please refer to the "
 "documentation for a list of supported file types.</qt>"
 msgstr ""
-"<qt>如果指定了的话，将只会找到包含此文字的文件。请注意，并非支持上面列出的所"
-"有文件类型。请参看文档中关于所支持文件类型的描述。</qt>"
+"<qt>如果指定了包含文本，将只会找到在内容中包含这些文本的文件。请注意：并不是"
+"文件类型列表中的所有文件类型都能支持此功能。请参考 Kfind 文档以确认各种文件类"
+"型的支持情况。</qt>"
 
 #: kftabdlg.cpp:303
 #, kde-format
@@ -354,19 +356,19 @@ msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
 msgstr ""
-"<qt>这使得您可搜索任何类型的文件，甚至不包含文字的文件(如程序文件和图像)。</"
-"qt>"
+"<qt>启用此选项后将查找任意类型的文件，包括不含文本的文件 (例如可执行程序和图"
+"像)。</qt>"
 
 #: kftabdlg.cpp:314
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
-msgstr "查找(&R)："
+msgstr "查找内容(&R)："
 
 #: kftabdlg.cpp:316
 #, kde-format
 msgid "Search &metainfo sections:"
-msgstr "在摘要信息片段(&M)："
+msgstr "查找元信息字段(&M)："
 
 #: kftabdlg.cpp:320
 #, kde-format
@@ -391,7 +393,7 @@ msgstr "符号链接"
 #: kftabdlg.cpp:324
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
-msgstr "特殊文件(套接字、设备文件...)"
+msgstr "特殊文件 (套接字、设备文件...)"
 
 #: kftabdlg.cpp:325
 #, kde-format
@@ -406,22 +408,22 @@ msgstr "SUID 可执行文件"
 #: kftabdlg.cpp:327
 #, kde-format
 msgid "All Images"
-msgstr "全部图像"
+msgstr "所有图像"
 
 #: kftabdlg.cpp:328
 #, kde-format
 msgid "All Video"
-msgstr "全部视频"
+msgstr "所有视频"
 
 #: kftabdlg.cpp:329
 #, kde-format
 msgid "All Sounds"
-msgstr "全部声音"
+msgstr "所有音频"
 
 #: kftabdlg.cpp:394
 #, kde-format
 msgid "Name/&Location"
-msgstr "名称/位置(&L)"
+msgstr "文件名/位置(&L)"
 
 #: kftabdlg.cpp:395
 #, kde-format
@@ -437,9 +439,9 @@ msgid ""
 "title, an album</li><li><b>Images (png...)</b> Search images with a special "
 "resolution, comment...</li></ul></qt>"
 msgstr ""
-"<qt>查找文件的特定注释/摘要信息<br />例如：<br /><ul><li><b>音频文件 "
-"(mp3...)</b> 查找音乐文件 ID3 标签中的曲名，</li><li><b>图片 (png...)</b> 查"
-"找指定分辨率、注释的图片</li></ul></qt>"
+"<qt>查找文件的备注、元数据中的内容<br />例如：<br /><ul><li><b>音频文件 "
+"(mp3...)</b>：查找它的 ID3 标签中的曲名，</li><li><b>图像 (png...)</b>：查找"
+"指定分辨率、备注的图像</li></ul></qt>"
 
 #: kftabdlg.cpp:408
 #, kde-format
@@ -448,14 +450,15 @@ msgid ""
 "(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
-"<qt>如果指定，将只查找这个字段<br /><ul><li><b>音频文件 (mp3...)</b>这可能是"
-"曲名、专辑名...</li><li><b>图片 (png...)</b>只查找分辨率、位宽...</li></ul></"
-"qt>"
+"<qt>如果指定了元信息字段，KFind 将只查找这个字段中的信息<br /><ul><li><b>音频"
+"文件 (mp3...)</b>：可以指定只查找曲名 (Title)、专辑名 (Album)...等字段</"
+"li><li><b>图片 (png...)</b>：可以指定只查找分辨率 (Resolution)、色彩位深 "
+"(Bitdepth)...等字段</li></ul></qt>"
 
 #: kftabdlg.cpp:549
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
-msgstr "不能查找小于1分钟的时间间隔。"
+msgstr "不能在小于 1 分钟的时间范围中进行查找。"
 
 #: kftabdlg.cpp:560
 #, kde-format
@@ -470,12 +473,12 @@ msgstr "无效的日期范围。"
 #: kftabdlg.cpp:564
 #, kde-format
 msgid "Unable to search dates in the future."
-msgstr "不能查找未来的日期。"
+msgstr "不能在未来的日期中查找。"
 
 #: kftabdlg.cpp:636
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
-msgstr "大小太大。您要设定最大值吗？"
+msgstr "文件大小太大。您想要将文件大小设置为最大值吗？"
 
 #: kftabdlg.cpp:636
 #, kde-format
@@ -485,12 +488,12 @@ msgstr "错误"
 #: kftabdlg.cpp:636
 #, kde-format
 msgid "Set"
-msgstr "设定"
+msgstr "设置"
 
 #: kftabdlg.cpp:636
 #, kde-format
 msgid "Do Not Set"
-msgstr "不设定"
+msgstr "不设置"
 
 #: kftabdlg.cpp:819
 #, kde-format
@@ -506,46 +509,46 @@ msgstr[0] "之前(&D)"
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
 msgid_plural "minutes"
-msgstr[0] " 分钟"
+msgstr[0] "分钟"
 
 #: kftabdlg.cpp:821
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
 msgid_plural "hours"
-msgstr[0] " 小时"
+msgstr[0] "小时"
 
 #: kftabdlg.cpp:822
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
 msgid_plural "days"
-msgstr[0] " 天"
+msgstr[0] "天"
 
 #: kftabdlg.cpp:823
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
 msgid_plural "months"
-msgstr[0] " 月"
+msgstr[0] "月"
 
 #: kftabdlg.cpp:824
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"
 msgid_plural "years"
-msgstr[0] " 年"
+msgstr[0] "年"
 
 #: kquery.cpp:556
 #, kde-format
 msgctxt "@title:window"
 msgid "Error while using locate"
-msgstr "使用 locate 出错"
+msgstr "使用 locate 命令时发生错误"
 
 #: main.cpp:26
 #, kde-format
 msgid "KFind"
-msgstr "KFind"
+msgstr "KFind 文件查找工具"
 
 #: main.cpp:27
 #, kde-format
@@ -585,7 +588,7 @@ msgstr "Mark W. Webb"
 #: main.cpp:32
 #, kde-format
 msgid "Developer"
-msgstr "开发人员"
+msgstr "开发者"
 
 #: main.cpp:33
 #, kde-format
@@ -666,15 +669,15 @@ msgstr "Clarence Dang"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "KDE 中国"
+msgstr "Guo Yunhe, Tyson Tan"
 
 #: main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kde-china@kde.org"
+msgstr "i@guoyunhe.me, tds00@qq.com"
 
 #: main.cpp:49
 #, kde-format
 msgid "Path(s) to search"
-msgstr "要搜索的路径"
+msgstr "要查找的路径"
