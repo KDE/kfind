@@ -663,7 +663,7 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
     if (KPropertiesDialog::canDisplay(fileList)) {
         QAction *act = new QAction(m_contextMenu);
         act->setText(i18n("&Properties"));
-        QObject::connect(act, &QAction::triggered, [this, fileList]() {
+        QObject::connect(act, &QAction::triggered, this, [this, fileList]() {
             KPropertiesDialog::showDialog(fileList, this, false /*non modal*/);
         });
         m_contextMenu->addAction(act);
