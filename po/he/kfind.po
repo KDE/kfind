@@ -12,13 +12,13 @@
 #
 # Diego Iastrubni <elcuco@kde.org>, 2005, 2008, 2009, 2012.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
-# SPDX-FileCopyrightText: 2023 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2023, 2024 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2023-10-21 23:18+0300\n"
+"PO-Revision-Date: 2024-05-05 12:01+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -242,15 +242,14 @@ msgid ""
 "between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
 "li></ul></qt>"
 msgstr ""
-"<qt>נא למלא את שם הקובץ שברצונך לחפש. <br />אפשר להפריד בין חלופות עם נקודה־"
-"פסיק „;”.<br /><br />שם הקובץ יכול להכיל את התווים המיוחדים הבאים:"
-"<ul><li><b>?</b> לוכד כל תו בודד</li><li><b>*</b> לוכד אפס תווים או יותר מכל "
-"סוג תו שהוא</li><li><b>[...]</b> לוכד כל אחת מהתווים שבין הסוגריים המרובעים</"
-"li></ul><br />דוגמאות לחיפוש:<ul><li><b>‎*.kwd;*.txt</b> מאתר את כל הקבצים "
-"שמסתיימים ב־‎.kwd או ב־‎.txt</li><li><b>go[dt]</b> מאתר את god ואת got</"
-"li><li><b>Hel?o</b> מאתר את כל הקבצים שמתחילים ב־„Hel” ומסתיימים ב־„o”, עם "
-"תו אחד מפריד ביניהם</li><li><b>My Document.kwd</b> מאתר קובץ בדיוק בשם הזה</"
-"li></ul></qt>"
+"<qt>נא למלא את שם הקובץ לחיפוש. <br />אפשר להפריד בין חלופות עם נקודה־פסיק "
+"„;”.<br /><br />שם הקובץ יכול להכיל את התווים המיוחדים הבאים:<ul><li><b>?</"
+"b> לוכד כל תו בודד</li><li><b>*</b> לוכד אפס תווים או יותר מכל סוג תו שהוא</"
+"li><li><b>[...]</b> לוכד כל אחת מהתווים שבין הסוגריים המרובעים</li></ul><br /"
+">דוגמאות לחיפוש:<ul><li><b>‎*.kwd;*.txt</b> מאתר את כל הקבצים שמסתיימים ב־‎."
+"kwd או ב־‎.txt</li><li><b>go[dt]</b> מאתר את god ואת got</li><li><b>Hel?o</b> "
+"מאתר את כל הקבצים שמתחילים ב־„Hel” ומסתיימים ב־„o”, עם תו אחד מפריד ביניהם</"
+"li><li><b>My Document.kwd</b> מאתר קובץ בדיוק בשם הזה</li></ul></qt>"
 
 #: kftabdlg.cpp:122
 #, kde-format
