@@ -42,7 +42,7 @@ msgstr "No s'ha trobat cap element"
 #: kfinddlg.cpp:172
 #, kde-format
 msgid "Searching..."
-msgstr "S'està buscant..."
+msgstr "S'està buscant…"
 
 #: kfinddlg.cpp:199
 #, kde-format
@@ -209,7 +209,7 @@ msgstr "Distin&gix minúscules/majúscules en la busca"
 #: kftabdlg.cpp:80
 #, kde-format
 msgid "&Browse..."
-msgstr "&Navega..."
+msgstr "&Navega…"
 
 #: kftabdlg.cpp:81
 #, kde-format
@@ -239,13 +239,13 @@ msgstr ""
 "<qt>Introduïu el nom del fitxer que busqueu. <br />Les alternatives poden "
 "separar-se amb un punt i coma «;».<br /><br />El nom de fitxer pot contindre "
 "els següents caràcters especials:<ul><li><b>?</b> que case amb un únic "
-"caràcter</li><li><b>*</b> que casen zero o més caràcters</li><li><b>[...]</"
-"b> que casen qualsevol dels caràcters entre claudàtors</li></ul><br /"
-">Exemples de busca:<ul><li><b>*.kwd;*.txt</b> busca tots els fitxers que "
-"acaben amb .kwd o .txt</li><li><b>go[tl]</b> busca got i gol</li><li><b>Hol?"
-"a</b> busca tots els fitxers que comencen per «Hol» i que acaben per «a», "
-"amb un sol caràcter enmig</li><li><b>El meu document.kwd</b> busca un fitxer "
-"amb este nom exacte</li></ul></qt>"
+"caràcter</li><li><b>*</b> que casen zero o més caràcters</li><li><b>[…]</b> "
+"que casen qualsevol dels caràcters entre claudàtors</li></ul><br />Exemples "
+"de busca:<ul><li><b>*.kwd;*.txt</b> busca tots els fitxers que acaben amb ."
+"kwd o .txt</li><li><b>go[tl]</b> busca got i gol</li><li><b>Hol?a</b> busca "
+"tots els fitxers que comencen per «Hol» i que acaben per «a», amb un sol "
+"caràcter enmig</li><li><b>El meu document.kwd</b> busca un fitxer amb este "
+"nom exacte</li></ul></qt>"
 
 #: kftabdlg.cpp:122
 #, kde-format
@@ -407,7 +407,7 @@ msgstr "Enllaços simbòlics"
 #: kftabdlg.cpp:324
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
-msgstr "Fitxers especials (sòcols, fitxers de dispositiu,...)"
+msgstr "Fitxers especials (sòcols, fitxers de dispositiu…)"
 
 #: kftabdlg.cpp:325
 #, kde-format
@@ -454,9 +454,9 @@ msgid ""
 "resolution, comment...</li></ul></qt>"
 msgstr ""
 "<qt>Busca dintre dels comentaris/metainfo del fitxer<br />Estos són alguns "
-"exemples:<br /><ul><li><b>Fitxers de so (mp3...)</b> Busca una etiqueta id3 "
-"per a un títol, un àlbum...</li><li><b>Imatges (png...)</b> Busca imatges "
-"amb una resolució en especial, comentari...</li></ul></qt>"
+"exemples:<br /><ul><li><b>Fitxers de so (mp3…)</b> Busca una etiqueta id3 "
+"per a un títol, un àlbum…</li><li><b>Imatges (png…)</b> Busca imatges amb "
+"una resolució en especial, comentari…</li></ul></qt>"
 
 #: kftabdlg.cpp:408
 #, kde-format
@@ -466,8 +466,8 @@ msgid ""
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
 "<qt>Si s'especifica, el només buscar en este camp<br /><ul><li><b>Fitxers de "
-"so (mp3...)</b> Este pot ser el títol, Àlbum...</li><li><b>Imatges (png...)</"
-"b> Busca només en la resolució, profunditat de bit...</li></ul></qt>"
+"so (mp3…)</b> Este pot ser el títol, Àlbum…</li><li><b>Imatges (png…)</b> "
+"Busca només en la resolució, profunditat de bit…</li></ul></qt>"
 
 #: kftabdlg.cpp:549
 #, kde-format
