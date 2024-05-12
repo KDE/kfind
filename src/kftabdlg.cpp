@@ -37,7 +37,6 @@
 #include <algorithm>
 
 #include "kquery.h"
-#include <kwidgetsaddons_version.h>
 
 // Static utility functions
 static void save_pattern(KComboBox *, const QString &, const QString &);

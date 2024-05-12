@@ -30,7 +30,6 @@
 
 #include <KIO/CopyJob>
 #include <KIO/DeleteJob>
-#include <kio_version.h>
 #include <KIO/JobUiDelegateFactory>
 #include <KIO/JobUiDelegate>
 #include <KIO/OpenFileManagerWindowJob>
@@ -38,7 +37,6 @@
 #include <KIO/DeleteOrTrashJob>
 
 // Permission strings
-#include <ki18n_version.h>
 #include <KLazyLocalizedString>
 
 const KLazyLocalizedString perm[4] = {
