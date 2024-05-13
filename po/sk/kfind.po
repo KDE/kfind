@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-19 01:56+0000\n"
+"POT-Creation-Date: 2024-05-13 00:41+0000\n"
 "PO-Revision-Date: 2023-12-10 15:06+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -73,156 +73,156 @@ msgstr[0] "Nájdený jeden súbor"
 msgstr[1] "Nájdené %1 súbory"
 msgstr[2] "Nájdených %1 súborov"
 
-#: kfindtreeview.cpp:45
+#: kfindtreeview.cpp:43
 msgid "Read-write"
 msgstr "Čítanie a zápis"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:44
 msgid "Read-only"
 msgstr "Iba čítanie"
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:45
 msgid "Write-only"
 msgstr "Iba zápis"
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:46
 msgid "Inaccessible"
 msgstr "Neprístupné"
 
-#: kfindtreeview.cpp:68
+#: kfindtreeview.cpp:66
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "Názov"
 
-#: kfindtreeview.cpp:70
+#: kfindtreeview.cpp:68
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "V podpriečinku"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:70
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "Veľkosť"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "Zmenené"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "Prístupové práva"
 
-#: kfindtreeview.cpp:78
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Riadok prvej zhody"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:359
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "Kopírovať umiestnenie"
 
-#: kfindtreeview.cpp:362
+#: kfindtreeview.cpp:360
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr "Týmto sa skopíruje cesta prvej vybranej položky do schránky."
 
-#: kfindtreeview.cpp:367
+#: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "Otvoriť o&bsahujúci priečinok"
 
-#: kfindtreeview.cpp:371
+#: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Delete"
 msgstr "O&dstrániť"
 
-#: kfindtreeview.cpp:375
+#: kfindtreeview.cpp:373
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&Presunúť do koša"
 
-#: kfindtreeview.cpp:515
+#: kfindtreeview.cpp:513
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Uloženie výsledkov ako"
 
-#: kfindtreeview.cpp:540
+#: kfindtreeview.cpp:538
 #, kde-format
 msgid "Unable to save results."
 msgstr "Nie je možné uložiť výsledky."
 
-#: kfindtreeview.cpp:554
+#: kfindtreeview.cpp:552
 #, kde-format
 msgid "KFind Results File"
 msgstr "Súbor výsledkov pre KFind"
 
-#: kfindtreeview.cpp:569
+#: kfindtreeview.cpp:567
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Výsledky boli uložené do: %1"
 
-#: kfindtreeview.cpp:665 kftabdlg.cpp:396
+#: kfindtreeview.cpp:663 kftabdlg.cpp:395
 #, kde-format
 msgid "&Properties"
 msgstr "&Vlastnosti"
 
-#: kftabdlg.cpp:66
+#: kftabdlg.cpp:65
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "&Názov:"
 
-#: kftabdlg.cpp:69
+#: kftabdlg.cpp:68
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 "Pre oddelenie viacerých názvov môžete použiť zastupiteľné znaky a "
 "bodkočiarku \";\""
 
-#: kftabdlg.cpp:75
+#: kftabdlg.cpp:74
 #, kde-format
 msgid "Look &in:"
 msgstr "Hľadať &v:"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:77
 #, kde-format
 msgid "Include &subfolders"
 msgstr "Zahrnúť podp&riečinky"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:78
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "Rozlišovať &veľkosť písmen"
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "&Browse..."
 msgstr "&Prehliadať..."
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Use files index"
 msgstr "&Použiť index súborov"
 
-#: kftabdlg.cpp:82
+#: kftabdlg.cpp:81
 #, kde-format
 msgid "Show &hidden files"
 msgstr "Zobraziť &skryté súbory"
 
-#: kftabdlg.cpp:101
+#: kftabdlg.cpp:100
 #, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -246,7 +246,7 @@ msgstr ""
 "\" a končiace s \"o\", majúce jeden znak medzi</li><li><b>Môj dokument.kwd</"
 "b> nájde súbor presne podľa tohto názvu</li></ul></qt>"
 
-#: kftabdlg.cpp:122
+#: kftabdlg.cpp:121
 #, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -257,58 +257,58 @@ msgstr ""
 "hľadanie urýchli. Nezabudnite index raz začas aktualizovať (pomocou príkazu "
 "<i>updatedb</i>).</qt>"
 
-#: kftabdlg.cpp:166
+#: kftabdlg.cpp:165
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "Nájsť všetky súbory vytvorené alebo &zmenené:"
 
-#: kftabdlg.cpp:168
+#: kftabdlg.cpp:167
 #, kde-format
 msgid "&between"
 msgstr "&medzi"
 
-#: kftabdlg.cpp:170
+#: kftabdlg.cpp:169
 #, kde-format
 msgid "and"
 msgstr "a"
 
-#: kftabdlg.cpp:192
+#: kftabdlg.cpp:191
 #, kde-format
 msgid "File &size is:"
 msgstr "Veľko&sť súboru je:"
 
-#: kftabdlg.cpp:205
+#: kftabdlg.cpp:204
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "Súbory vlastní &užívateľ:"
 
-#: kftabdlg.cpp:210
+#: kftabdlg.cpp:209
 #, kde-format
 msgid "Owned by &group:"
 msgstr "Vlastní ho &skupina:"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:212
 #, kde-format
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(žiadna)"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:213
 #, kde-format
 msgid "At Least"
 msgstr "Najmenej"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Most"
 msgstr "Najviac"
 
-#: kftabdlg.cpp:216
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "Equal To"
 msgstr "Rovná"
 
-#: kftabdlg.cpp:218 kftabdlg.cpp:829
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
@@ -316,33 +316,33 @@ msgstr[0] "Bajt"
 msgstr[1] "Bajty"
 msgstr[2] "Bajtov"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:218
 #, kde-format
 msgid "KiB"
 msgstr "KiB"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:219
 #, kde-format
 msgid "MiB"
 msgstr "MiB"
 
-#: kftabdlg.cpp:221
+#: kftabdlg.cpp:220
 #, kde-format
 msgid "GiB"
 msgstr "GiB"
 
-#: kftabdlg.cpp:284
+#: kftabdlg.cpp:283
 #, kde-format
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "&Typ súboru:"
 
-#: kftabdlg.cpp:289
+#: kftabdlg.cpp:288
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "O&bsahuje text:"
 
-#: kftabdlg.cpp:295
+#: kftabdlg.cpp:294
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -353,17 +353,17 @@ msgstr ""
 "Uvedomte si, že nie všetky typy súborov uvedené vyššie sú podporované. "
 "Zoznam podporovaných typov nájdete v dokumentácii.</qt>"
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:302
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "Rozlišovať &veľkosť písmen"
 
-#: kftabdlg.cpp:304
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Include &binary files"
 msgstr "Zahrnúť &binárne súbory"
 
-#: kftabdlg.cpp:307
+#: kftabdlg.cpp:306
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
@@ -372,79 +372,79 @@ msgstr ""
 "<qt>Toto vám umožní hľadať ľubovoľný typ súboru, dokonca aj tie, ktoré "
 "obvykle neobsahujú text (napríklad programy a obrázky).</qt>"
 
-#: kftabdlg.cpp:314
+#: kftabdlg.cpp:313
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "vý&raz:"
 
-#: kftabdlg.cpp:316
+#: kftabdlg.cpp:315
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "Hľadať v častiach s &meta-informáciami:"
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:319
 #, kde-format
 msgid "All Files & Folders"
 msgstr "Všetky súbory a priečinky"
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:320
 #, kde-format
 msgid "Files"
 msgstr "Súbory"
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Folders"
 msgstr "Priečinky"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Symbolic Links"
 msgstr "Symbolické odkazy"
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "Špeciálne súbory (sokety, súbory zariadení, ...)"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:324
 #, kde-format
 msgid "Executable Files"
 msgstr "Spustiteľné súbory"
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "Spustiteľné súbory SUID"
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "All Images"
 msgstr "Všetky obrázky"
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Video"
 msgstr "Všetky videá"
 
-#: kftabdlg.cpp:329
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Sounds"
 msgstr "Všetky zvuky"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:393
 #, kde-format
 msgid "Name/&Location"
 msgstr "Názov/&Umiestnenie"
 
-#: kftabdlg.cpp:395
+#: kftabdlg.cpp:394
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Obsah"
 
-#: kftabdlg.cpp:400
+#: kftabdlg.cpp:399
 #, kde-format
 msgid ""
 "<qt>Search within files' specific comments/metainfo<br />These are some "
@@ -457,7 +457,7 @@ msgstr ""
 "album</li><li><b>Obrázky (png...)</b> Hľadá obrázky so špecifickým "
 "rozlíšením, komentárom...</li></ul></qt>"
 
-#: kftabdlg.cpp:408
+#: kftabdlg.cpp:407
 #, kde-format
 msgid ""
 "<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
@@ -469,47 +469,47 @@ msgstr ""
 "li><li><b>Obrázky (png...)</b>Hľadať len v rozlíšení, bitovej hĺbke...</li></"
 "ul></qt>"
 
-#: kftabdlg.cpp:549
+#: kftabdlg.cpp:548
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "Nie je možné hľadať v období, ktoré netrvá ani jednu minútu."
 
-#: kftabdlg.cpp:560
+#: kftabdlg.cpp:559
 #, kde-format
 msgid "The date is not valid."
 msgstr "Dátum je neplatný."
 
-#: kftabdlg.cpp:562
+#: kftabdlg.cpp:561
 #, kde-format
 msgid "Invalid date range."
 msgstr "Neplatný rozsah dátumov."
 
-#: kftabdlg.cpp:564
+#: kftabdlg.cpp:563
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "Nie je možné hľadať dátumy v budúcnosti."
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "Veľkosť je príliš vysoká. Chcete použiť maximálnu hodnotu veľkosti?"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Error"
 msgstr "Chyba"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Set"
 msgstr "Nastaviť"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Do Not Set"
 msgstr "Nenastaviť"
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:818
 #, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
@@ -520,7 +520,7 @@ msgstr[0] "počas po&slednej"
 msgstr[1] "počas po&sledných"
 msgstr[2] "počas po&sledných"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:819
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
@@ -529,7 +529,7 @@ msgstr[0] "minúty"
 msgstr[1] "minút"
 msgstr[2] "minút"
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:820
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
@@ -538,7 +538,7 @@ msgstr[0] "hodiny"
 msgstr[1] "hodín"
 msgstr[2] "hodín"
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:821
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
@@ -547,7 +547,7 @@ msgstr[0] "dňa"
 msgstr[1] "dní"
 msgstr[2] "dní"
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:822
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
@@ -556,7 +556,7 @@ msgstr[0] "mesiaca"
 msgstr[1] "mesiacov"
 msgstr[2] "mesiacov"
 
-#: kftabdlg.cpp:824
+#: kftabdlg.cpp:823
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"

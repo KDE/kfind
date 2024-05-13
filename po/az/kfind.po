@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-19 01:56+0000\n"
+"POT-Creation-Date: 2024-05-13 00:41+0000\n"
 "PO-Revision-Date: 2023-03-12 18:29+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -67,156 +67,156 @@ msgid_plural "%1 items found"
 msgstr[0] "bir yazı tapıldı"
 msgstr[1] "%1 yazı tapıldı"
 
-#: kfindtreeview.cpp:45
+#: kfindtreeview.cpp:43
 msgid "Read-write"
 msgstr "Oxumaq-yazmaq"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:44
 msgid "Read-only"
 msgstr "Yalnız oxumaq"
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:45
 msgid "Write-only"
 msgstr "Yalnız yazmaq"
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:46
 msgid "Inaccessible"
 msgstr "Əlçatmaz "
 
-#: kfindtreeview.cpp:68
+#: kfindtreeview.cpp:66
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "Ad"
 
-#: kfindtreeview.cpp:70
+#: kfindtreeview.cpp:68
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "Alt qovluqda"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:70
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "Ölçü"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "Dəyişdirilib"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "İcazələr"
 
-#: kfindtreeview.cpp:78
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "İlk uyğun sətr"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:359
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "Yerini kopyala"
 
-#: kfindtreeview.cpp:362
+#: kfindtreeview.cpp:360
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr "Bu ilk seçilən elementin yolunu mübadilə buferinə kopyalayacaq."
 
-#: kfindtreeview.cpp:367
+#: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "Bu fayl &olan qovluğu açın"
 
-#: kfindtreeview.cpp:371
+#: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Delete"
 msgstr "&Silin"
 
-#: kfindtreeview.cpp:375
+#: kfindtreeview.cpp:373
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&Səbətə Atın"
 
-#: kfindtreeview.cpp:515
+#: kfindtreeview.cpp:513
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Nəticələri belə saxlayın"
 
-#: kfindtreeview.cpp:540
+#: kfindtreeview.cpp:538
 #, kde-format
 msgid "Unable to save results."
 msgstr "Nəticələri saxlamaq mümkün olmadı."
 
-#: kfindtreeview.cpp:554
+#: kfindtreeview.cpp:552
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind nəticələri olan fayl"
 
-#: kfindtreeview.cpp:569
+#: kfindtreeview.cpp:567
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Nəticələr burada saxlanıldı: %1"
 
-#: kfindtreeview.cpp:665 kftabdlg.cpp:396
+#: kfindtreeview.cpp:663 kftabdlg.cpp:395
 #, kde-format
 msgid "&Properties"
 msgstr "&Xüsusiyyətlər"
 
-#: kftabdlg.cpp:66
+#: kftabdlg.cpp:65
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "&Adlandırılb:"
 
-#: kftabdlg.cpp:69
+#: kftabdlg.cpp:68
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 "Siz əvəzləyici nümunələrdən və fərqli adları ayırmaq üçün \";\"  istifadə "
 "edə bilərsiniz."
 
-#: kftabdlg.cpp:75
+#: kftabdlg.cpp:74
 #, kde-format
 msgid "Look &in:"
 msgstr "&Baxın:"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:77
 #, kde-format
 msgid "Include &subfolders"
 msgstr "Alt &qovluqlar daxil"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:78
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "Böyük-kiçik hərfə hə&ssas axtarış"
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "&Browse..."
 msgstr "&Baxış..."
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Use files index"
 msgstr "Fayl indeksi &istifadə edin"
 
-#: kftabdlg.cpp:82
+#: kftabdlg.cpp:81
 #, kde-format
 msgid "Show &hidden files"
 msgstr "&Gizli fayllar göstərilsin"
 
-#: kftabdlg.cpp:101
+#: kftabdlg.cpp:100
 #, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -241,7 +241,7 @@ msgstr ""
 "aralarında bir simvol olan bütün faylları tapır</li><li><b>My Document.kwd</"
 "b> məhz bu adda olan faylı tapır</li></ul></qt>"
 
-#: kftabdlg.cpp:122
+#: kftabdlg.cpp:121
 #, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -253,91 +253,91 @@ msgstr ""
 "vaxtaşırı (<i>updatedb</i> istifadə edərək) indeksi yeniləməyi unutmayın.</"
 "qt>"
 
-#: kftabdlg.cpp:166
+#: kftabdlg.cpp:165
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "Yaradılmış və ya &dəyişiklik edilmiş bütün faylları tapın:"
 
-#: kftabdlg.cpp:168
+#: kftabdlg.cpp:167
 #, kde-format
 msgid "&between"
 msgstr "&arasında"
 
-#: kftabdlg.cpp:170
+#: kftabdlg.cpp:169
 #, kde-format
 msgid "and"
 msgstr "və"
 
-#: kftabdlg.cpp:192
+#: kftabdlg.cpp:191
 #, kde-format
 msgid "File &size is:"
 msgstr "Faylın ölçü&sü:"
 
-#: kftabdlg.cpp:205
+#: kftabdlg.cpp:204
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "Fayl bu &istifadəçiy' aiddir:"
 
-#: kftabdlg.cpp:210
+#: kftabdlg.cpp:209
 #, kde-format
 msgid "Owned by &group:"
 msgstr "Bu qru&pa aiddir:"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:212
 #, kde-format
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(məhdudiyyətsiz)"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:213
 #, kde-format
 msgid "At Least"
 msgstr "Ən az"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Most"
 msgstr "Ən çox"
 
-#: kftabdlg.cpp:216
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "Equal To"
 msgstr "Bərabərdir:"
 
-#: kftabdlg.cpp:218 kftabdlg.cpp:829
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
 msgstr[0] "Bayt"
 msgstr[1] "Bayt"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:218
 #, kde-format
 msgid "KiB"
 msgstr "KiB"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:219
 #, kde-format
 msgid "MiB"
 msgstr "MiB"
 
-#: kftabdlg.cpp:221
+#: kftabdlg.cpp:220
 #, kde-format
 msgid "GiB"
 msgstr "GiB"
 
-#: kftabdlg.cpp:284
+#: kftabdlg.cpp:283
 #, kde-format
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "Fayl &növü:"
 
-#: kftabdlg.cpp:289
+#: kftabdlg.cpp:288
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "&Tərkibindəki mətn:"
 
-#: kftabdlg.cpp:295
+#: kftabdlg.cpp:294
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -348,17 +348,17 @@ msgstr ""
 "yuxarıdakı siyahıdakı fayl növlərinin hamısı dəstəklənmir. Dəstəklənən "
 "faylların siyahısı üçün sənədləşməyə baxın.</qt>"
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:302
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "Böyük-kiçik hərfə hə&ssas"
 
-#: kftabdlg.cpp:304
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Include &binary files"
 msgstr "&Binar fayllar daxil"
 
-#: kftabdlg.cpp:307
+#: kftabdlg.cpp:306
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
@@ -367,79 +367,79 @@ msgstr ""
 "<qt>Bu sizə, bütün növ faylları (hətta mətndən ibarət olmayan, məsələn, "
 "proqram faylları və təsvirlər) tapmağa imkan verir.</qt>"
 
-#: kftabdlg.cpp:314
+#: kftabdlg.cpp:313
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "bun&un üçün:"
 
-#: kftabdlg.cpp:316
+#: kftabdlg.cpp:315
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "&Meta məlumatı bölmələrinin axtarışı:"
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:319
 #, kde-format
 msgid "All Files & Folders"
 msgstr "Bütün fayllar və qovluqlar"
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:320
 #, kde-format
 msgid "Files"
 msgstr "Fayllar"
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Folders"
 msgstr "Qovluqlar"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Symbolic Links"
 msgstr "Simvolik keçidlər"
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "Xüsusi fayllar (soketlər, cihaz faylları, ...)"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:324
 #, kde-format
 msgid "Executable Files"
 msgstr "İcraediləbilən fayllar"
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "İcraediləbilən SUİD fayllar"
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "All Images"
 msgstr "Bütün təsvirlər"
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Video"
 msgstr "Bütün videolar"
 
-#: kftabdlg.cpp:329
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Sounds"
 msgstr "Bütün səslər"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:393
 #, kde-format
 msgid "Name/&Location"
 msgstr "Ad/&Məkan"
 
-#: kftabdlg.cpp:395
+#: kftabdlg.cpp:394
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Tərkibləri"
 
-#: kftabdlg.cpp:400
+#: kftabdlg.cpp:399
 #, kde-format
 msgid ""
 "<qt>Search within files' specific comments/metainfo<br />These are some "
@@ -452,7 +452,7 @@ msgstr ""
 "etiketlərinə görə</li><li><b>Şəkillər (png...)</b> Şəkilləri verilmiş "
 "ölçülərinə və şərhlərinə görə axtarmaq...</li></ul></qt>"
 
-#: kftabdlg.cpp:408
+#: kftabdlg.cpp:407
 #, kde-format
 msgid ""
 "<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
@@ -464,47 +464,47 @@ msgstr ""
 "(png...)</li>Yalnız görüntü ölçülərinə görə və bit dərinliyinə görə "
 "axtarmaq...</ul></qt><qt>"
 
-#: kftabdlg.cpp:549
+#: kftabdlg.cpp:548
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "Bir dəqiqədən az diapazonda axtarmaq mümkün deyil."
 
-#: kftabdlg.cpp:560
+#: kftabdlg.cpp:559
 #, kde-format
 msgid "The date is not valid."
 msgstr "Tarix səhvdir"
 
-#: kftabdlg.cpp:562
+#: kftabdlg.cpp:561
 #, kde-format
 msgid "Invalid date range."
 msgstr "Səhv tarix aralığı"
 
-#: kftabdlg.cpp:564
+#: kftabdlg.cpp:563
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "Gələcək tarixlərdə axtarmaq mümkün deyil."
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "Ölçüsü çox böyükdür. Maksimum ölçü təyin edilsin?"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Error"
 msgstr "Xəta"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Set"
 msgstr "Təyin edin"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Do Not Set"
 msgstr "Təyin etməyin"
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:818
 #, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
@@ -514,7 +514,7 @@ msgid_plural "&during the previous"
 msgstr[0] "əvvəlkilərin vaxtın&da"
 msgstr[1] "əvvəlkilərin vaxtın&da"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:819
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
@@ -522,7 +522,7 @@ msgid_plural "minutes"
 msgstr[0] "dəqiqə"
 msgstr[1] "dəqiqələr"
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:820
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
@@ -530,7 +530,7 @@ msgid_plural "hours"
 msgstr[0] "saat"
 msgstr[1] "saatlar"
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:821
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
@@ -538,7 +538,7 @@ msgid_plural "days"
 msgstr[0] "gün"
 msgstr[1] "günlər"
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:822
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
@@ -546,7 +546,7 @@ msgid_plural "months"
 msgstr[0] "ay"
 msgstr[1] "aylar"
 
-#: kftabdlg.cpp:824
+#: kftabdlg.cpp:823
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"

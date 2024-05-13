@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-19 01:56+0000\n"
+"POT-Creation-Date: 2024-05-13 00:41+0000\n"
 "PO-Revision-Date: 2014-09-20 16:54-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -74,156 +74,156 @@ msgid "one item found"
 msgid_plural "%1 items found"
 msgstr[0] "%1 個のファイルが見つかりました"
 
-#: kfindtreeview.cpp:45
+#: kfindtreeview.cpp:43
 msgid "Read-write"
 msgstr "読み-書き"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:44
 msgid "Read-only"
 msgstr "読み取り専用"
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:45
 msgid "Write-only"
 msgstr "書き込み専用"
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:46
 msgid "Inaccessible"
 msgstr "アクセス不可"
 
-#: kfindtreeview.cpp:68
+#: kfindtreeview.cpp:66
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "名前"
 
-#: kfindtreeview.cpp:70
+#: kfindtreeview.cpp:68
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "サブフォルダ内"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:70
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "サイズ"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "更新日時"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "パーミッション"
 
-#: kfindtreeview.cpp:78
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "最初にマッチした行"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:359
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr ""
 
-#: kfindtreeview.cpp:362
+#: kfindtreeview.cpp:360
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr ""
 
-#: kfindtreeview.cpp:367
+#: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "含むフォルダを開く(&O)"
 
-#: kfindtreeview.cpp:371
+#: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Delete"
 msgstr "削除(&D)"
 
-#: kfindtreeview.cpp:375
+#: kfindtreeview.cpp:373
 #, kde-format
 msgid "&Move to Trash"
 msgstr "ごみ箱に移動(&M)"
 
-#: kfindtreeview.cpp:515
+#: kfindtreeview.cpp:513
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "名前を付けて結果を保存"
 
-#: kfindtreeview.cpp:540
+#: kfindtreeview.cpp:538
 #, kde-format
 msgid "Unable to save results."
 msgstr "結果を保存できません。"
 
-#: kfindtreeview.cpp:554
+#: kfindtreeview.cpp:552
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind 結果ファイル"
 
-#: kfindtreeview.cpp:569
+#: kfindtreeview.cpp:567
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "結果の保存先: %1"
 
-#: kfindtreeview.cpp:665 kftabdlg.cpp:396
+#: kfindtreeview.cpp:663 kftabdlg.cpp:395
 #, kde-format
 msgid "&Properties"
 msgstr "プロパティ(&P)"
 
-#: kftabdlg.cpp:66
+#: kftabdlg.cpp:65
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "名前(&N):"
 
-#: kftabdlg.cpp:69
+#: kftabdlg.cpp:68
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 "セミコロン (;) で複数の名前を区切り、ワイルドカードによるマッチングが使えま"
 "す。"
 
-#: kftabdlg.cpp:75
+#: kftabdlg.cpp:74
 #, kde-format
 msgid "Look &in:"
 msgstr "場所(&I):"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:77
 #, kde-format
 msgid "Include &subfolders"
 msgstr "サブフォルダを含める(&S)"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:78
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "大文字と小文字を区別する(&E)"
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "&Browse..."
 msgstr "ブラウズ(&B)..."
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Use files index"
 msgstr "ファイルのインデックスを使う(&U)"
 
-#: kftabdlg.cpp:82
+#: kftabdlg.cpp:81
 #, kde-format
 msgid "Show &hidden files"
 msgstr "隠しファイルを表示する(&H)"
 
-#: kftabdlg.cpp:101
+#: kftabdlg.cpp:100
 #, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -248,7 +248,7 @@ msgstr ""
 "</li><li><b>My Document.kwd</b> はこの名前に完全に一致するファイルを検索しま"
 "す。</li></ul></qt>"
 
-#: kftabdlg.cpp:122
+#: kftabdlg.cpp:121
 #, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -259,90 +259,90 @@ msgstr ""
 "たファイルのインデックスを使用します。<tt>updatedb</tt> を実行して時々イン"
 "デックスを更新するのを忘れないようにしてください。</qt>"
 
-#: kftabdlg.cpp:166
+#: kftabdlg.cpp:165
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "次の期間に作成または更新されたすべてのファイルを検索する(&M):"
 
-#: kftabdlg.cpp:168
+#: kftabdlg.cpp:167
 #, kde-format
 msgid "&between"
 msgstr "日付の範囲(&B)"
 
-#: kftabdlg.cpp:170
+#: kftabdlg.cpp:169
 #, kde-format
 msgid "and"
 msgstr " - "
 
-#: kftabdlg.cpp:192
+#: kftabdlg.cpp:191
 #, kde-format
 msgid "File &size is:"
 msgstr "ファイルサイズ(&S):"
 
-#: kftabdlg.cpp:205
+#: kftabdlg.cpp:204
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "ファイルの所有者(&U):"
 
-#: kftabdlg.cpp:210
+#: kftabdlg.cpp:209
 #, kde-format
 msgid "Owned by &group:"
 msgstr "所有グループ(&G):"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:212
 #, kde-format
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(指定しない)"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:213
 #, kde-format
 msgid "At Least"
 msgstr "以上"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Most"
 msgstr "以下"
 
-#: kftabdlg.cpp:216
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "Equal To"
 msgstr "等しい"
 
-#: kftabdlg.cpp:218 kftabdlg.cpp:829
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
 msgstr[0] "バイト"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:218
 #, kde-format
 msgid "KiB"
 msgstr "KiB"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:219
 #, kde-format
 msgid "MiB"
 msgstr "MiB"
 
-#: kftabdlg.cpp:221
+#: kftabdlg.cpp:220
 #, kde-format
 msgid "GiB"
 msgstr "GiB"
 
-#: kftabdlg.cpp:284
+#: kftabdlg.cpp:283
 #, kde-format
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "ファイルタイプ(&T):"
 
-#: kftabdlg.cpp:289
+#: kftabdlg.cpp:288
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "次のテキストを含む(&O):"
 
-#: kftabdlg.cpp:295
+#: kftabdlg.cpp:294
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -354,17 +354,17 @@ msgstr ""
 "さい。サポートされているファイルタイプについてはドキュメントを参照してくださ"
 "い。</qt>"
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:302
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "大文字と小文字を区別する(&E)"
 
-#: kftabdlg.cpp:304
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Include &binary files"
 msgstr "バイナリファイルを含める(&B)"
 
-#: kftabdlg.cpp:307
+#: kftabdlg.cpp:306
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
@@ -373,80 +373,80 @@ msgstr ""
 "<qt>通常テキストを含まないファイル (例えばプログラムファイルや画像) も含め"
 "て、すべてのタイプのファイルの中を検索することができます。</qt>"
 
-#: kftabdlg.cpp:314
+#: kftabdlg.cpp:313
 #, fuzzy, kde-format
 #| msgid "fo&r:"
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "検索(&R):"
 
-#: kftabdlg.cpp:316
+#: kftabdlg.cpp:315
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "検索するメタ情報のフィールド(&M):"
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:319
 #, kde-format
 msgid "All Files & Folders"
 msgstr "すべてのファイルとフォルダ"
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:320
 #, kde-format
 msgid "Files"
 msgstr "ファイル"
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Folders"
 msgstr "フォルダ"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Symbolic Links"
 msgstr "シンボリックリンク"
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "特殊ファイル (ソケット、デバイスファイルなど)"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:324
 #, kde-format
 msgid "Executable Files"
 msgstr "実行ファイル"
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "SUID 実行ファイル"
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "All Images"
 msgstr "すべての画像"
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Video"
 msgstr "すべての動画"
 
-#: kftabdlg.cpp:329
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Sounds"
 msgstr "すべてのサウンド"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:393
 #, kde-format
 msgid "Name/&Location"
 msgstr "名前/場所(&L)"
 
-#: kftabdlg.cpp:395
+#: kftabdlg.cpp:394
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "内容(&O)"
 
-#: kftabdlg.cpp:400
+#: kftabdlg.cpp:399
 #, kde-format
 msgid ""
 "<qt>Search within files' specific comments/metainfo<br />These are some "
@@ -458,7 +458,7 @@ msgstr ""
 "のを検索できます。<br /><ul><li>音声ファイル (mp3...): id3 タグ内のタイトルや"
 "アルバム名</li><li>画像 (png...): 特定の解像度やコメント</li></ul></qt>"
 
-#: kftabdlg.cpp:408
+#: kftabdlg.cpp:407
 #, kde-format
 msgid ""
 "<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
@@ -469,47 +469,47 @@ msgstr ""
 "ドを指定できます。<br /><ul><li>音声ファイル (mp3...): Title, Album...</"
 "li><li>画像 (png...): Dimensions, BitDepth, Comment...</li></ul></qt>"
 
-#: kftabdlg.cpp:549
+#: kftabdlg.cpp:548
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "分未満の期間は検索できません。"
 
-#: kftabdlg.cpp:560
+#: kftabdlg.cpp:559
 #, kde-format
 msgid "The date is not valid."
 msgstr "有効な日付ではありません。"
 
-#: kftabdlg.cpp:562
+#: kftabdlg.cpp:561
 #, kde-format
 msgid "Invalid date range."
 msgstr "日付の範囲が無効です。"
 
-#: kftabdlg.cpp:564
+#: kftabdlg.cpp:563
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "未来の日付では検索できません。"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "サイズが大きすぎます。最大サイズを設定しますか？"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Error"
 msgstr "エラー"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Set"
 msgstr "設定する"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Do Not Set"
 msgstr "設定しない"
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:818
 #, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
@@ -518,35 +518,35 @@ msgid "&during the previous"
 msgid_plural "&during the previous"
 msgstr[0] "以内(&D)"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:819
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "分"
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:820
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "時間"
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:821
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
 msgid_plural "days"
 msgstr[0] "日"
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:822
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
 msgid_plural "months"
 msgstr[0] "カ月"
 
-#: kftabdlg.cpp:824
+#: kftabdlg.cpp:823
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"

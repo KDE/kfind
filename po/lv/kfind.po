@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-19 01:56+0000\n"
+"POT-Creation-Date: 2024-05-13 00:41+0000\n"
 "PO-Revision-Date: 2024-02-08 08:21+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -75,154 +75,154 @@ msgstr[0] "atrasts %1 vienums"
 msgstr[1] "atrasti %1 vienums"
 msgstr[2] "atrasts %1 vienumu"
 
-#: kfindtreeview.cpp:45
+#: kfindtreeview.cpp:43
 msgid "Read-write"
 msgstr "Lasīt un rakstīt"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:44
 msgid "Read-only"
 msgstr "Tikai lasīt"
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:45
 msgid "Write-only"
 msgstr "Tikai rakstīt"
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:46
 msgid "Inaccessible"
 msgstr "Nepieejams"
 
-#: kfindtreeview.cpp:68
+#: kfindtreeview.cpp:66
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "Nosaukums"
 
-#: kfindtreeview.cpp:70
+#: kfindtreeview.cpp:68
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "Apakšmapē"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:70
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "Izmērs"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "Mainīts"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "Atļaujas"
 
-#: kfindtreeview.cpp:78
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Pirmā atbilstošā rinda"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:359
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "Kopēt atrašanās vietu"
 
-#: kfindtreeview.cpp:362
+#: kfindtreeview.cpp:360
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr "Šī darbība nokopēs pirmā atlasītā vienuma ceļu starpliktuvē."
 
-#: kfindtreeview.cpp:367
+#: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "A&tvērt mapi(es)"
 
-#: kfindtreeview.cpp:371
+#: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Delete"
 msgstr "&Dzēst"
 
-#: kfindtreeview.cpp:375
+#: kfindtreeview.cpp:373
 #, kde-format
 msgid "&Move to Trash"
 msgstr "Pārvietot uz &atkritni"
 
-#: kfindtreeview.cpp:515
+#: kfindtreeview.cpp:513
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Saglabāt rezultātus kā"
 
-#: kfindtreeview.cpp:540
+#: kfindtreeview.cpp:538
 #, kde-format
 msgid "Unable to save results."
 msgstr "Neizdevās saglabāt rezultātus."
 
-#: kfindtreeview.cpp:554
+#: kfindtreeview.cpp:552
 #, kde-format
 msgid "KFind Results File"
 msgstr "„KFind“ rezultātu datne"
 
-#: kfindtreeview.cpp:569
+#: kfindtreeview.cpp:567
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Rezultāti ir saglabāti: %1"
 
-#: kfindtreeview.cpp:665 kftabdlg.cpp:396
+#: kfindtreeview.cpp:663 kftabdlg.cpp:395
 #, kde-format
 msgid "&Properties"
 msgstr "Ī&pašības"
 
-#: kftabdlg.cpp:66
+#: kftabdlg.cpp:65
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "&Nosaukums:"
 
-#: kftabdlg.cpp:69
+#: kftabdlg.cpp:68
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Varat lietot aizstājējzīmes un „;“, lai atdalītu vairākus nosaukumus"
 
-#: kftabdlg.cpp:75
+#: kftabdlg.cpp:74
 #, kde-format
 msgid "Look &in:"
 msgstr "&Meklēšanas vieta:"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:77
 #, kde-format
 msgid "Include &subfolders"
 msgstr "Ietverot &apakšmapes"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:78
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "R&eģistrjutīga meklēšana"
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "&Browse..."
 msgstr "&Pārlūkot..."
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Use files index"
 msgstr "&Lietot datņu indeksu"
 
-#: kftabdlg.cpp:82
+#: kftabdlg.cpp:81
 #, kde-format
 msgid "Show &hidden files"
 msgstr "Rādīt &slēptās datnes"
 
-#: kftabdlg.cpp:101
+#: kftabdlg.cpp:100
 #, kde-format
 msgid ""
 "<qt>Enter the filename you are looking for. <br />Alternatives may be "
@@ -247,7 +247,7 @@ msgstr ""
 "vienu rakstzīmi pa vidu</li><li><b>Mans dokuments.kwd</b> atrod datni ar "
 "tieši šādu nosaukumu</li></ul></qt>"
 
-#: kftabdlg.cpp:122
+#: kftabdlg.cpp:121
 #, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -258,58 +258,58 @@ msgstr ""
 "rīku, lai paātrinātu meklēšanu. Neaizmirstiet laiku pa laikam atjaunot "
 "indeksu (lietojot <i>updatedb</i> komandu).</qt>"
 
-#: kftabdlg.cpp:166
+#: kftabdlg.cpp:165
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "&Meklēt datnes, kas ir izveidotas vai mainītas:"
 
-#: kftabdlg.cpp:168
+#: kftabdlg.cpp:167
 #, kde-format
 msgid "&between"
 msgstr "&starp"
 
-#: kftabdlg.cpp:170
+#: kftabdlg.cpp:169
 #, kde-format
 msgid "and"
 msgstr "un"
 
-#: kftabdlg.cpp:192
+#: kftabdlg.cpp:191
 #, kde-format
 msgid "File &size is:"
 msgstr "Datnes i&zmērs ir:"
 
-#: kftabdlg.cpp:205
+#: kftabdlg.cpp:204
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "D&atnes īpašnieks ir:"
 
-#: kftabdlg.cpp:210
+#: kftabdlg.cpp:209
 #, kde-format
 msgid "Owned by &group:"
 msgstr "Pieder &grupai:"
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:212
 #, kde-format
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(nav)"
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:213
 #, kde-format
 msgid "At Least"
 msgstr "Vismaz"
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Most"
 msgstr "Ne vairāk par"
 
-#: kftabdlg.cpp:216
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "Equal To"
 msgstr "Vienāds ar"
 
-#: kftabdlg.cpp:218 kftabdlg.cpp:829
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
@@ -317,33 +317,33 @@ msgstr[0] "Baits"
 msgstr[1] "Baiti"
 msgstr[2] "Baiti"
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:218
 #, kde-format
 msgid "KiB"
 msgstr "KiB"
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:219
 #, kde-format
 msgid "MiB"
 msgstr "MiB"
 
-#: kftabdlg.cpp:221
+#: kftabdlg.cpp:220
 #, kde-format
 msgid "GiB"
 msgstr "GiB"
 
-#: kftabdlg.cpp:284
+#: kftabdlg.cpp:283
 #, kde-format
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "&Datnes tips:"
 
-#: kftabdlg.cpp:289
+#: kftabdlg.cpp:288
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "&Satur tekstu:"
 
-#: kftabdlg.cpp:295
+#: kftabdlg.cpp:294
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -354,17 +354,17 @@ msgstr ""
 "Ievērojiet, ka nav atbalstīti visi sarakstā esošie datņu tipi. Atbalstītie "
 "datņu tipi ir minēti dokumentācijā.</qt>"
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:302
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "&Reģistrjutīga meklēšana"
 
-#: kftabdlg.cpp:304
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Include &binary files"
 msgstr "&Iekļaut binārās datnes"
 
-#: kftabdlg.cpp:307
+#: kftabdlg.cpp:306
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
@@ -373,79 +373,79 @@ msgstr ""
 "<qt>Šī iespēja ļauj meklēt visās datnēs — pat tādās, kas parasti nesatur "
 "tekstu (piemēram programmas un attēli).</qt>"
 
-#: kftabdlg.cpp:314
+#: kftabdlg.cpp:313
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "&atslēgvārdu:"
 
-#: kftabdlg.cpp:316
+#: kftabdlg.cpp:315
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "&Meklēt metainformācijas sadaļās:"
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:319
 #, kde-format
 msgid "All Files & Folders"
 msgstr "Visas datnes un mapes"
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:320
 #, kde-format
 msgid "Files"
 msgstr "Datnes"
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Folders"
 msgstr "Mapes"
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Symbolic Links"
 msgstr "Simboliskās saites"
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "Speciālās datnes (ligzdas, ierīču datnes...)"
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:324
 #, kde-format
 msgid "Executable Files"
 msgstr "Izpildāmās datnes"
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "SUID izpildāmās datnes"
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "All Images"
 msgstr "Visi attēli"
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Video"
 msgstr "Visi video"
 
-#: kftabdlg.cpp:329
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Sounds"
 msgstr "Visas skaņas"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:393
 #, kde-format
 msgid "Name/&Location"
 msgstr "Nosaukums/&vieta"
 
-#: kftabdlg.cpp:395
+#: kftabdlg.cpp:394
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Saturs"
 
-#: kftabdlg.cpp:400
+#: kftabdlg.cpp:399
 #, kde-format
 msgid ""
 "<qt>Search within files' specific comments/metainfo<br />These are some "
@@ -458,7 +458,7 @@ msgstr ""
 "albumu</li><li><b>Attēli (png...)</b> Meklēt attēlu ar noteiktu "
 "izšķirtspēju, komentāru...</li></ul></qt>"
 
-#: kftabdlg.cpp:408
+#: kftabdlg.cpp:407
 #, kde-format
 msgid ""
 "<qt>If specified, search only in this field<br /><ul><li><b>Audio files "
@@ -469,47 +469,47 @@ msgstr ""
 "(mp3...)</b> Šis var būt nosaukums, albums...</li><li><b>Attēli (png...)</b> "
 "Meklēt tikai izšķirtspēju, bitu dziļumu...</li></ul></qt>"
 
-#: kftabdlg.cpp:549
+#: kftabdlg.cpp:548
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "Nevar meklēt laika intervālā, kas īsāks par vienu minūti."
 
-#: kftabdlg.cpp:560
+#: kftabdlg.cpp:559
 #, kde-format
 msgid "The date is not valid."
 msgstr "Datums nav pareizs."
 
-#: kftabdlg.cpp:562
+#: kftabdlg.cpp:561
 #, kde-format
 msgid "Invalid date range."
 msgstr "Nepareizs datumu diapazons."
 
-#: kftabdlg.cpp:564
+#: kftabdlg.cpp:563
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "Meklējamais datums ir nākotnē."
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "Izmērs ir par lielu. Iestatīt maksimālo izmēra vērtību?"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Error"
 msgstr "Kļūda"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Set"
 msgstr "Iestatīt"
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Do Not Set"
 msgstr "Neiestatīt"
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:818
 #, kde-format
 msgctxt ""
 "during the previous minute(s)/hour(s)/...; dynamic context 'type': 'i' "
@@ -520,7 +520,7 @@ msgstr[0] "pē&dējā"
 msgstr[1] "&pēdējās|/|$[by-context type 'i|h|d' '&pēdējās' 'm|y' '&pēdējos']"
 msgstr[2] "&pēdējās"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:819
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
@@ -529,7 +529,7 @@ msgstr[0] "minūtē"
 msgstr[1] "minūtēs"
 msgstr[2] "minūtēs"
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:820
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
@@ -538,7 +538,7 @@ msgstr[0] "stundā"
 msgstr[1] "stundās"
 msgstr[2] "stundās"
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:821
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
@@ -547,7 +547,7 @@ msgstr[0] "dienā"
 msgstr[1] "dienās"
 msgstr[2] "dienās"
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:822
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
@@ -556,7 +556,7 @@ msgstr[0] "mēnesī"
 msgstr[1] "mēnešos"
 msgstr[2] "mēnešos"
 
-#: kftabdlg.cpp:824
+#: kftabdlg.cpp:823
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"

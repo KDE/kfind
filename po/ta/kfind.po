@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-19 01:56+0000\n"
+"POT-Creation-Date: 2024-05-13 00:41+0000\n"
 "PO-Revision-Date: 2005-02-14 05:06-0800\n"
 "Last-Translator: Tamil PC <tamilpc@ambalam.com>\n"
 "Language-Team:  <ta@li.org>\n"
@@ -73,163 +73,163 @@ msgid_plural "%1 items found"
 msgstr[0] "ஒரு கொப்பு கண்டுபிடிக்கபட்டது"
 msgstr[1] "%1 கோப்புகள் கண்டுபிடிக்கப்பட்டன"
 
-#: kfindtreeview.cpp:45
+#: kfindtreeview.cpp:43
 msgid "Read-write"
 msgstr "வாசிக்க-எழுத "
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:44
 msgid "Read-only"
 msgstr "வாசிக்க-மட்டும் "
 
-#: kfindtreeview.cpp:47
+#: kfindtreeview.cpp:45
 msgid "Write-only"
 msgstr "எழுத-மட்டும் "
 
-#: kfindtreeview.cpp:48
+#: kfindtreeview.cpp:46
 msgid "Inaccessible"
 msgstr "அணுகமுடியாதது "
 
-#: kfindtreeview.cpp:68
+#: kfindtreeview.cpp:66
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "file name column"
 msgid "Name"
 msgstr "பெயர்  "
 
-#: kfindtreeview.cpp:70
+#: kfindtreeview.cpp:68
 #, fuzzy, kde-format
 #| msgid "In Subfolder"
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "துணை கோப்புறையில்"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:70
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "file size column"
 msgid "Size"
 msgstr "அளவு "
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:72
 #, fuzzy, kde-format
 #| msgid "Modified"
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "மாற்றப்பட்ட "
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:74
 #, fuzzy, kde-format
 #| msgid "Permissions"
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "அனுமதிகள் "
 
-#: kfindtreeview.cpp:78
+#: kfindtreeview.cpp:76
 #, fuzzy, kde-format
 #| msgid "First Matching Line"
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "முதலாவது பொருந்தும் வரி "
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:359
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr ""
 
-#: kfindtreeview.cpp:362
+#: kfindtreeview.cpp:360
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr ""
 
-#: kfindtreeview.cpp:367
+#: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr ""
 
-#: kfindtreeview.cpp:371
+#: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Delete"
 msgstr ""
 
-#: kfindtreeview.cpp:375
+#: kfindtreeview.cpp:373
 #, kde-format
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:515
+#: kfindtreeview.cpp:513
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "முடிவுகளை இப்படி சேமிக்கவும் "
 
-#: kfindtreeview.cpp:540
+#: kfindtreeview.cpp:538
 #, kde-format
 msgid "Unable to save results."
 msgstr "முடிவுகளை சேமிக்க முடியவில்லை."
 
-#: kfindtreeview.cpp:554
+#: kfindtreeview.cpp:552
 #, kde-format
 msgid "KFind Results File"
 msgstr "Kதேடல் முடிவுக் கோப்பு "
 
-#: kfindtreeview.cpp:569
+#: kfindtreeview.cpp:567
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "இந்த கோப்பில் முடிவுகள் சேமிக்கபட்டன\n"
 
-#: kfindtreeview.cpp:665 kftabdlg.cpp:396
+#: kfindtreeview.cpp:663 kftabdlg.cpp:395
 #, kde-format
 msgid "&Properties"
 msgstr "இயல்புகள் "
 
-#: kftabdlg.cpp:66
+#: kftabdlg.cpp:65
 #, fuzzy, kde-format
 #| msgid "&Named:"
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
 msgstr "பெயரிடப்பட்ட:"
 
-#: kftabdlg.cpp:69
+#: kftabdlg.cpp:68
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "சரியான பெயர்/விவரம் தெரியவில்லையென்றால்  \";\" என்பதன் மூலம் எளிதாக தேடலாம் "
 
-#: kftabdlg.cpp:75
+#: kftabdlg.cpp:74
 #, kde-format
 msgid "Look &in:"
 msgstr "இதில் பார்:"
 
-#: kftabdlg.cpp:78
+#: kftabdlg.cpp:77
 #, kde-format
 msgid "Include &subfolders"
 msgstr "உள்ளடக்கு&துணை கோப்புறைகள்"
 
-#: kftabdlg.cpp:79
+#: kftabdlg.cpp:78
 #, kde-format
 msgid "Case s&ensitive search"
 msgstr "வகையுணர்வுடைய தேடல் "
 
-#: kftabdlg.cpp:80
+#: kftabdlg.cpp:79
 #, kde-format
 msgid "&Browse..."
 msgstr "&மேலோடு.... "
 
-#: kftabdlg.cpp:81
+#: kftabdlg.cpp:80
 #, kde-format
 msgid "&Use files index"
 msgstr "கோப்பின் சுட்டுவரிசையை பயன்படுத்து."
 
-#: kftabdlg.cpp:82
+#: kftabdlg.cpp:81
 #, kde-format
 msgid "Show &hidden files"
 msgstr ""
 
-#: kftabdlg.cpp:101
+#: kftabdlg.cpp:100
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Enter the filename you are looking for. <br>Alternatives may be "
@@ -265,7 +265,7 @@ msgstr ""
 "கோப்புகளையும் கண்டுபிடி</li><li><b>முதல்.kwd</b> சரியாக அதே பெயருடைய கோப்பைக் "
 "கண்டுபிடிக்கும்</li></ul></qt> "
 
-#: kftabdlg.cpp:122
+#: kftabdlg.cpp:121
 #, kde-format
 msgid ""
 "<qt>This lets you use the files' index created by the <i>slocate</i> package "
@@ -276,59 +276,59 @@ msgstr ""
 "தேடுதலை வேகப்படுத்துகிறது.ஒரு நேரத்தில் இருந்து மற்றொரு நேரத்திற்கு சுட்டுவரிசையை "
 "இற்றைப்படுத்த மறந்து விடக்கூடாது(<i>இற்றைப்படுத்துதலை பயன்படுத்தி</i>). </qt>"
 
-#: kftabdlg.cpp:166
+#: kftabdlg.cpp:165
 #, kde-format
 msgid "Find all files created or &modified:"
 msgstr "உருவாக்கிய அல்லது மாற்றிய கோப்புக்கள் யாவற்றையும் கண்டறி: "
 
-#: kftabdlg.cpp:168
+#: kftabdlg.cpp:167
 #, kde-format
 msgid "&between"
 msgstr "&இடைப்பட்ட"
 
-#: kftabdlg.cpp:170
+#: kftabdlg.cpp:169
 #, kde-format
 msgid "and"
 msgstr "மற்றும் "
 
-#: kftabdlg.cpp:192
+#: kftabdlg.cpp:191
 #, kde-format
 msgid "File &size is:"
 msgstr " கோப்பு அளவு: "
 
-#: kftabdlg.cpp:205
+#: kftabdlg.cpp:204
 #, kde-format
 msgid "Files owned by &user:"
 msgstr "பயனருக்கு சொந்தமான கோப்புகள்: "
 
-#: kftabdlg.cpp:210
+#: kftabdlg.cpp:209
 #, kde-format
 msgid "Owned by &group:"
 msgstr "குழுவிற்கு சொந்தமானது: "
 
-#: kftabdlg.cpp:213
+#: kftabdlg.cpp:212
 #, fuzzy, kde-format
 #| msgid "(none)"
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
 msgstr "(எதுவுமில்லை) "
 
-#: kftabdlg.cpp:214
+#: kftabdlg.cpp:213
 #, kde-format
 msgid "At Least"
 msgstr "ஆகக்குறைந்த "
 
-#: kftabdlg.cpp:215
+#: kftabdlg.cpp:214
 #, kde-format
 msgid "At Most"
 msgstr "ஆகக்கூடிய "
 
-#: kftabdlg.cpp:216
+#: kftabdlg.cpp:215
 #, kde-format
 msgid "Equal To"
 msgstr "நிகரானது "
 
-#: kftabdlg.cpp:218 kftabdlg.cpp:829
+#: kftabdlg.cpp:217 kftabdlg.cpp:828
 #, fuzzy, kde-format
 #| msgid "Bytes"
 msgid "Byte"
@@ -336,36 +336,36 @@ msgid_plural "Bytes"
 msgstr[0] "பைட்டுகள் "
 msgstr[1] "பைட்டுகள் "
 
-#: kftabdlg.cpp:219
+#: kftabdlg.cpp:218
 #, fuzzy, kde-format
 #| msgid "KB"
 msgid "KiB"
 msgstr "KB "
 
-#: kftabdlg.cpp:220
+#: kftabdlg.cpp:219
 #, fuzzy, kde-format
 #| msgid "MB"
 msgid "MiB"
 msgstr "MB "
 
-#: kftabdlg.cpp:221
+#: kftabdlg.cpp:220
 #, kde-format
 msgid "GiB"
 msgstr ""
 
-#: kftabdlg.cpp:284
+#: kftabdlg.cpp:283
 #, fuzzy, kde-format
 #| msgid "File &type:"
 msgctxt "label for the file type combobox"
 msgid "File &type:"
 msgstr "கோப்பு வகை "
 
-#: kftabdlg.cpp:289
+#: kftabdlg.cpp:288
 #, kde-format
 msgid "C&ontaining text:"
 msgstr "கொண்டுள்ள உரை : "
 
-#: kftabdlg.cpp:295
+#: kftabdlg.cpp:294
 #, kde-format
 msgid ""
 "<qt>If specified, only files that contain this text are found. Note that not "
@@ -376,17 +376,17 @@ msgstr ""
 "வகைகலும் மேலே உள்ள பட்டியலில் இருந்து ஆதரிக்காது என்பதை கவனிக்க.தயவுசெய்து  "
 "ஆதரவளிக்கும் கோப்பு வகைகளின் பட்டியலுக்கு ஆவணமாக்க குறிப்பிடு</qt>."
 
-#: kftabdlg.cpp:303
+#: kftabdlg.cpp:302
 #, kde-format
 msgid "Case s&ensitive"
 msgstr "வகையுணர்வுடைய "
 
-#: kftabdlg.cpp:304
+#: kftabdlg.cpp:303
 #, kde-format
 msgid "Include &binary files"
 msgstr "உள்ளடக்கு&இரும கோப்புகள்"
 
-#: kftabdlg.cpp:307
+#: kftabdlg.cpp:306
 #, kde-format
 msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
@@ -395,81 +395,81 @@ msgstr ""
 "<qt>எந்த வகையான கோப்புகளையும் தேடலாம்,இது சாதாரனமாக உரையினை உள்கொள்ளாமல் இருந்தால் "
 "கூட(உ.ம்:நிரல் கோப்புகள் மற்றும் படிமங்கள்). </qt>"
 
-#: kftabdlg.cpp:314
+#: kftabdlg.cpp:313
 #, fuzzy, kde-format
 #| msgid "fo&r:"
 msgctxt "as in search for"
 msgid "fo&r:"
 msgstr "இதற்காக: "
 
-#: kftabdlg.cpp:316
+#: kftabdlg.cpp:315
 #, kde-format
 msgid "Search &metainfo sections:"
 msgstr "மேலதிகதகவல் பகுதிகளைத் தேடு "
 
-#: kftabdlg.cpp:320
+#: kftabdlg.cpp:319
 #, kde-format
 msgid "All Files & Folders"
 msgstr "எல்லாக் கோப்புக்களும் &கோப்புறைகலும்"
 
-#: kftabdlg.cpp:321
+#: kftabdlg.cpp:320
 #, fuzzy, kde-format
 msgid "Files"
 msgstr "கோப்புறைகள் "
 
-#: kftabdlg.cpp:322
+#: kftabdlg.cpp:321
 #, kde-format
 msgid "Folders"
 msgstr "கோப்புறைகள் "
 
-#: kftabdlg.cpp:323
+#: kftabdlg.cpp:322
 #, kde-format
 msgid "Symbolic Links"
 msgstr "குறியீட்டு இணைப்புகள் "
 
-#: kftabdlg.cpp:324
+#: kftabdlg.cpp:323
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
 msgstr "சிறப்பு கோப்புகள் (துளைகள், சாதனக் கோப்புகள்,...) "
 
-#: kftabdlg.cpp:325
+#: kftabdlg.cpp:324
 #, kde-format
 msgid "Executable Files"
 msgstr "இயக்கக்கூடிய கோப்புகள் "
 
-#: kftabdlg.cpp:326
+#: kftabdlg.cpp:325
 #, kde-format
 msgid "SUID Executable Files"
 msgstr "SUID இயக்கக்கூடிய கோப்புகள் "
 
-#: kftabdlg.cpp:327
+#: kftabdlg.cpp:326
 #, kde-format
 msgid "All Images"
 msgstr "«¨½òÐ படிமங்கள்"
 
-#: kftabdlg.cpp:328
+#: kftabdlg.cpp:327
 #, kde-format
 msgid "All Video"
 msgstr "«¨½òÐ Å£Ê§Â¡ì¸û"
 
-#: kftabdlg.cpp:329
+#: kftabdlg.cpp:328
 #, kde-format
 msgid "All Sounds"
 msgstr "«¨½òÐ ´Ä¢¸û"
 
-#: kftabdlg.cpp:394
+#: kftabdlg.cpp:393
 #, kde-format
 msgid "Name/&Location"
 msgstr " பெயர்/இடம்  "
 
-#: kftabdlg.cpp:395
+#: kftabdlg.cpp:394
 #, fuzzy, kde-format
 #| msgid "C&ontents"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr " பொருளடக்கம் "
 
-#: kftabdlg.cpp:400
+#: kftabdlg.cpp:399
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Search within files' specific comments/metainfo<br>These are some "
@@ -487,7 +487,7 @@ msgstr ""
 "li><li><b>படங்களில் (png...)</b> சில குறிப்பிட் அளவு, குறிப்பு போன்றவற்றின் படி "
 "தேடுதல்...</li></ul></qt> "
 
-#: kftabdlg.cpp:408
+#: kftabdlg.cpp:407
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>If specified, search only in this field<br><ul><li><b>Audio files "
@@ -502,47 +502,47 @@ msgstr ""
 "யில் தலைப்புகளை, ஆல்பத்தை தேடுதல்</li><li><b>படங்களில் (png...)</b> சில குறிப்பிட் "
 "அளவு, குறிப்பு போன்றவற்றின் படி தேடுதல்...</li></ul></qt> "
 
-#: kftabdlg.cpp:549
+#: kftabdlg.cpp:548
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
 msgstr "ஒரு நிமிடத்திற்கு குறைந்த கால இடைவெளியிற் தேட முடியாது ."
 
-#: kftabdlg.cpp:560
+#: kftabdlg.cpp:559
 #, kde-format
 msgid "The date is not valid."
 msgstr "இந்த தேதி சரியானது அல்ல! "
 
-#: kftabdlg.cpp:562
+#: kftabdlg.cpp:561
 #, kde-format
 msgid "Invalid date range."
 msgstr "வலிதற்ற தேதி வீச்சு."
 
-#: kftabdlg.cpp:564
+#: kftabdlg.cpp:563
 #, kde-format
 msgid "Unable to search dates in the future."
 msgstr "எதிர்காலத்திலுள்ள தேதிகளைத் தேடமுடியாது! "
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, fuzzy, kde-format
 msgid "Size is too big. Set maximum size value?"
 msgstr "மிக அதிக அளவு...உச்ச அளவை அமைக்கட்டுமா? "
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, fuzzy, kde-format
 msgid "Error"
 msgstr "பிழை. "
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Set"
 msgstr ""
 
-#: kftabdlg.cpp:636
+#: kftabdlg.cpp:635
 #, kde-format
 msgid "Do Not Set"
 msgstr ""
 
-#: kftabdlg.cpp:819
+#: kftabdlg.cpp:818
 #, fuzzy, kde-format
 #| msgid "&during the previous"
 msgctxt ""
@@ -553,7 +553,7 @@ msgid_plural "&during the previous"
 msgstr[0] "&முன்னையதன் போது"
 msgstr[1] "&முன்னையதன் போது"
 
-#: kftabdlg.cpp:820
+#: kftabdlg.cpp:819
 #, fuzzy, kde-format
 #| msgid "minute(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -562,7 +562,7 @@ msgid_plural "minutes"
 msgstr[0] "நிமிடம்(ங்கள்) "
 msgstr[1] "நிமிடம்(ங்கள்) "
 
-#: kftabdlg.cpp:821
+#: kftabdlg.cpp:820
 #, fuzzy, kde-format
 #| msgid "hour(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -571,7 +571,7 @@ msgid_plural "hours"
 msgstr[0] "மணி(கள்) "
 msgstr[1] "மணி(கள்) "
 
-#: kftabdlg.cpp:822
+#: kftabdlg.cpp:821
 #, fuzzy, kde-format
 #| msgid "day(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -580,7 +580,7 @@ msgid_plural "days"
 msgstr[0] "நாள்(கள்) "
 msgstr[1] "நாள்(கள்) "
 
-#: kftabdlg.cpp:823
+#: kftabdlg.cpp:822
 #, fuzzy, kde-format
 #| msgid "month(s)"
 msgctxt "use date ranges to search files by modified time"
@@ -589,7 +589,7 @@ msgid_plural "months"
 msgstr[0] "மாதம்(கள்) "
 msgstr[1] "மாதம்(கள்) "
 
-#: kftabdlg.cpp:824
+#: kftabdlg.cpp:823
 #, fuzzy, kde-format
 #| msgid "year(s)"
 msgctxt "use date ranges to search files by modified time"
