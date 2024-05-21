@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-13 00:41+0000\n"
+"POT-Creation-Date: 2024-05-21 00:42+0000\n"
 "PO-Revision-Date: 2005-02-14 05:06-0800\n"
 "Last-Translator: Tamil PC <tamilpc@ambalam.com>\n"
 "Language-Team:  <ta@li.org>\n"
@@ -623,6 +623,7 @@ msgstr "(c) 1999-2001, The KDE உருவாக்குபவர். "
 
 #: main.cpp:30
 #, kde-format
+msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr ""
 
@@ -633,6 +634,7 @@ msgstr "நடப்பு பராமரிப்பாளர் "
 
 #: main.cpp:31
 #, kde-format
+msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr ""
 
@@ -644,6 +646,7 @@ msgstr "நடப்பு பராமரிப்பாளர் "
 
 #: main.cpp:32
 #, kde-format
+msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr ""
 
@@ -654,6 +657,7 @@ msgstr "உருவாக்கி "
 
 #: main.cpp:33
 #, kde-format
+msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr ""
 
@@ -664,51 +668,61 @@ msgstr "வரைவியல் திட்டஅமைப்பு மற்�
 
 #: main.cpp:34
 #, kde-format
+msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr ""
 
 #: main.cpp:35
 #, kde-format
+msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr ""
 
 #: main.cpp:36
 #, kde-format
+msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr ""
 
 #: main.cpp:37
 #, kde-format
+msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr ""
 
 #: main.cpp:38
 #, kde-format
+msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr ""
 
 #: main.cpp:39
 #, kde-format
+msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr ""
 
 #: main.cpp:40
 #, kde-format
+msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr ""
 
 #: main.cpp:41
 #, kde-format
+msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr ""
 
 #: main.cpp:42
 #, kde-format
+msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr ""
 
 #: main.cpp:43
 #, kde-format
+msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr ""
 
@@ -719,11 +733,13 @@ msgstr "வரைவியல் திட்டஅமைப்பு "
 
 #: main.cpp:44
 #, kde-format
+msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr ""
 
 #: main.cpp:45
 #, kde-format
+msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr ""
 

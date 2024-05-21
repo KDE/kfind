@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-13 00:41+0000\n"
+"POT-Creation-Date: 2024-05-21 00:42+0000\n"
 "PO-Revision-Date: 2009-01-16 22:16+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -580,6 +580,7 @@ msgstr ""
 
 #: main.cpp:30
 #, kde-format
+msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr ""
 
@@ -590,6 +591,7 @@ msgstr "ప్రస్తుత సంరక్షకుడు"
 
 #: main.cpp:31
 #, kde-format
+msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr ""
 
@@ -601,6 +603,7 @@ msgstr "ప్రస్తుత సంరక్షకుడు"
 
 #: main.cpp:32
 #, kde-format
+msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr ""
 
@@ -611,6 +614,7 @@ msgstr "డెవలపర్"
 
 #: main.cpp:33
 #, kde-format
+msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr ""
 
@@ -621,51 +625,65 @@ msgstr ""
 
 #: main.cpp:34
 #, kde-format
+msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr ""
 
 #: main.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Stephan Kulow"
+msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "స్టీఫెన్ కులొ"
 
 #: main.cpp:36
 #, kde-format
+msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr ""
 
 #: main.cpp:37
 #, kde-format
+msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr ""
 
 #: main.cpp:38
 #, kde-format
+msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr ""
 
 #: main.cpp:39
 #, kde-format
+msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr ""
 
 #: main.cpp:40
 #, kde-format
+msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr ""
 
 #: main.cpp:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Carsten Pfeiffer"
+msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "కార్స్టెన్ ఫైఫర్"
 
 #: main.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hans Petter Bieker"
+msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "హాన్స్ పెట్టెర్ బిఎకర్"
 
 #: main.cpp:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Waldo Bastian"
+msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "వాల్డొ బాస్టియన్"
 
@@ -675,12 +693,15 @@ msgid "UI Design"
 msgstr ""
 
 #: main.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Alexander Neundorf"
+msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
 #: main.cpp:45
 #, kde-format
+msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr ""
 

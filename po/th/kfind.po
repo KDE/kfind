@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-13 00:41+0000\n"
+"POT-Creation-Date: 2024-05-21 00:42+0000\n"
 "PO-Revision-Date: 2010-03-27 23:10+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -575,6 +575,7 @@ msgstr "สงวนลิขสิทธิ์ (c) 1998-2003, กลุ่ม�
 
 #: main.cpp:30
 #, kde-format
+msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr ""
 
@@ -584,7 +585,9 @@ msgid "Current Maintainer"
 msgstr "ผู้ดูแลในปัจจุบัน"
 
 #: main.cpp:31
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Eric Coquelle"
+msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
 
@@ -595,7 +598,9 @@ msgid "Former Maintainer"
 msgstr "ผู้ดูแลในปัจจุบัน"
 
 #: main.cpp:32
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mark W. Webb"
+msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "Mark W. Webb"
 
@@ -605,7 +610,9 @@ msgid "Developer"
 msgstr "ผู้พัฒนา"
 
 #: main.cpp:33
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Beppe Grimaldi"
+msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "Beppe Grimaldi"
 
@@ -615,52 +622,72 @@ msgid "UI Design & more search options"
 msgstr "ออกแบบส่วนติดต่อผู้ใช้และตัวเลือกการค้นหาเพิ่มเติม"
 
 #: main.cpp:34
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Martin Hartig"
+msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "Martin Hartig"
 
 #: main.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Stephan Kulow"
+msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "Stephan Kulow"
 
 #: main.cpp:36
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mario Weilguni"
+msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "Mario Weilguni"
 
 #: main.cpp:37
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Alex Zepeda"
+msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "Alex Zepeda"
 
 #: main.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Miroslav Flídr"
+msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
 #: main.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Harri Porten"
+msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "Harri Porten"
 
 #: main.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Dima Rogozin"
+msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "Dima Rogozin"
 
 #: main.cpp:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Carsten Pfeiffer"
+msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
 #: main.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hans Petter Bieker"
+msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "Hans Petter Bieker"
 
 #: main.cpp:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Waldo Bastian"
+msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
 
@@ -670,12 +697,16 @@ msgid "UI Design"
 msgstr "ออกแบบส่วนติดต่อผู้ใช้"
 
 #: main.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Alexander Neundorf"
+msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
 #: main.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Clarence Dang"
+msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
 

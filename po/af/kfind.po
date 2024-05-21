@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart stable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-13 00:41+0000\n"
+"POT-Creation-Date: 2024-05-21 00:42+0000\n"
 "PO-Revision-Date: 2005-11-25 11:29+0200\n"
 "Last-Translator: Frikkie Thirion <frikkie.thirion@deneloptronics.co.za>\n"
 "Language-Team: AFRIKAANS <translate-discuss-af@lists.sourceforge.net>\n"
@@ -622,6 +622,7 @@ msgstr "(c) 1998-2003, Die KDE Ontwikkelaars"
 
 #: main.cpp:30
 #, kde-format
+msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr ""
 
@@ -632,6 +633,7 @@ msgstr "Huidige Onderhouer"
 
 #: main.cpp:31
 #, kde-format
+msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr ""
 
@@ -643,6 +645,7 @@ msgstr "Huidige Onderhouer"
 
 #: main.cpp:32
 #, kde-format
+msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr ""
 
@@ -653,6 +656,7 @@ msgstr "Ontwikkelaar"
 
 #: main.cpp:33
 #, kde-format
+msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr ""
 
@@ -663,51 +667,61 @@ msgstr "Gebruiker koppelvlak Ontwerper & meer soektog opsies"
 
 #: main.cpp:34
 #, kde-format
+msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr ""
 
 #: main.cpp:35
 #, kde-format
+msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr ""
 
 #: main.cpp:36
 #, kde-format
+msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr ""
 
 #: main.cpp:37
 #, kde-format
+msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr ""
 
 #: main.cpp:38
 #, kde-format
+msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr ""
 
 #: main.cpp:39
 #, kde-format
+msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr ""
 
 #: main.cpp:40
 #, kde-format
+msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr ""
 
 #: main.cpp:41
 #, kde-format
+msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr ""
 
 #: main.cpp:42
 #, kde-format
+msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr ""
 
 #: main.cpp:43
 #, kde-format
+msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr ""
 
@@ -718,11 +732,13 @@ msgstr "Gebruiker koppelvlak ontwerp"
 
 #: main.cpp:44
 #, kde-format
+msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr ""
 
 #: main.cpp:45
 #, kde-format
+msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr ""
 

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-13 00:41+0000\n"
+"POT-Creation-Date: 2024-05-21 00:42+0000\n"
 "PO-Revision-Date: 2005-02-24 17:31+0100\n"
 "Last-Translator: Bianka Šwejdźic <hertn@gmx.de>\n"
 "Language-Team: Hornjoserbšćina\n"
@@ -628,6 +628,7 @@ msgstr "(c) 1998-2003, KDE-wuwiwarjo"
 
 #: main.cpp:30
 #, kde-format
+msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr ""
 
@@ -638,6 +639,7 @@ msgstr "Tuchwilny hladaćel"
 
 #: main.cpp:31
 #, kde-format
+msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr ""
 
@@ -649,6 +651,7 @@ msgstr "Tuchwilny hladaćel"
 
 #: main.cpp:32
 #, kde-format
+msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr ""
 
@@ -659,6 +662,7 @@ msgstr "Wuwiwar"
 
 #: main.cpp:33
 #, kde-format
+msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr ""
 
@@ -669,51 +673,61 @@ msgstr "UI-wuhotowanje & přidatne pytanje"
 
 #: main.cpp:34
 #, kde-format
+msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr ""
 
 #: main.cpp:35
 #, kde-format
+msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr ""
 
 #: main.cpp:36
 #, kde-format
+msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr ""
 
 #: main.cpp:37
 #, kde-format
+msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr ""
 
 #: main.cpp:38
 #, kde-format
+msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr ""
 
 #: main.cpp:39
 #, kde-format
+msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr ""
 
 #: main.cpp:40
 #, kde-format
+msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr ""
 
 #: main.cpp:41
 #, kde-format
+msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr ""
 
 #: main.cpp:42
 #, kde-format
+msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr ""
 
 #: main.cpp:43
 #, kde-format
+msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr ""
 
@@ -724,11 +738,13 @@ msgstr "UI-wuhotowanje"
 
 #: main.cpp:44
 #, kde-format
+msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr ""
 
 #: main.cpp:45
 #, kde-format
+msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr ""
 

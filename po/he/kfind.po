@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-13 00:41+0000\n"
+"POT-Creation-Date: 2024-05-21 00:42+0000\n"
 "PO-Revision-Date: 2024-05-05 12:01+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -597,7 +597,9 @@ msgid "(c) 1998-2021, The KDE Developers"
 msgstr "(c) 1998‏-2021, מפתחי KDE"
 
 #: main.cpp:30
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Kai Uwe Broulik"
+msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr "קאי אווה ברוליק"
 
@@ -607,7 +609,9 @@ msgid "Current Maintainer"
 msgstr "מתחזק נוכחי"
 
 #: main.cpp:31
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Eric Coquelle"
+msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "אריק קוקל"
 
@@ -617,7 +621,9 @@ msgid "Former Maintainer"
 msgstr "מתחזק לשעבר"
 
 #: main.cpp:32
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mark W. Webb"
+msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "מארק מ. ווב"
 
@@ -627,7 +633,9 @@ msgid "Developer"
 msgstr "מפתח"
 
 #: main.cpp:33
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Beppe Grimaldi"
+msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "בֵּפֵּה גרימלדי"
 
@@ -637,52 +645,72 @@ msgid "UI Design & more search options"
 msgstr "עיצוב ממשק המשתמש ואפשרויות חיפוש נוספות"
 
 #: main.cpp:34
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Martin Hartig"
+msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "מרטין הרטיג"
 
 #: main.cpp:35
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Stephan Kulow"
+msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "סטיבן קולו"
 
 #: main.cpp:36
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mario Weilguni"
+msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "מריו ולגוני"
 
 #: main.cpp:37
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Alex Zepeda"
+msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "אלכס ספדה"
 
 #: main.cpp:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Miroslav Flídr"
+msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "מירוסלב פלידר"
 
 #: main.cpp:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Harri Porten"
+msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "הארי פורטן"
 
 #: main.cpp:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Dima Rogozin"
+msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "דימה רוגוזין"
 
 #: main.cpp:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Carsten Pfeiffer"
+msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "כרסטן פייפר"
 
 #: main.cpp:42
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Hans Petter Bieker"
+msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "האנס פטר ביקר"
 
 #: main.cpp:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Waldo Bastian"
+msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "ולדו בסטיאן"
 
@@ -692,12 +720,16 @@ msgid "UI Design"
 msgstr "עיצוב ממשק המשתמש"
 
 #: main.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Alexander Neundorf"
+msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "אלכסנדר נוינדורף"
 
 #: main.cpp:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Clarence Dang"
+msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "קלרנס דנג"
 
