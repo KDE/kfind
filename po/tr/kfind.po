@@ -7,13 +7,13 @@
 # Ozan Çağlayan <ozan@pardus.org.tr>, 2010.
 # obsoleteman <tulliana@gmail.com>, 2008-2009,2012.
 # Volkan Gezer <volkangezer@gmail.com>, 2013-2014.
-# SPDX-FileCopyrightText: 2022, 2023 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2023-10-05 13:53+0300\n"
+"PO-Revision-Date: 2024-05-21 13:43+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 24.07.70\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -59,7 +59,7 @@ msgstr "Hata."
 #: kfinddlg.cpp:202
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
-msgstr "Lütfen \"Aranacak yer\" kutucuğunda bir tam yol belirtin."
+msgstr "Lütfen “Aranacak yer” kutucuğunda bir tam yol belirtin."
 
 #: kfinddlg.cpp:205
 #, kde-format
@@ -75,7 +75,7 @@ msgstr[1] "%1 öge bulundu"
 
 #: kfindtreeview.cpp:45
 msgid "Read-write"
-msgstr "Okunur-Yazılır"
+msgstr "Okunur–Yazılır"
 
 #: kfindtreeview.cpp:46
 msgid "Read-only"
@@ -189,7 +189,7 @@ msgstr "Aranacak &ad:"
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
-"Birden fazla dosya adını ayırmak için \";\" karakterini kullanabilirsiniz"
+"Birden fazla dosya adını ayırmak için ‘;’ karakterini kullanabilirsiniz"
 
 #: kftabdlg.cpp:75
 #, kde-format
@@ -235,17 +235,16 @@ msgid ""
 "between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
 "li></ul></qt>"
 msgstr ""
-"<qt>Aramak istediğiniz dosya adını girin. <br />Alternatifleri \";\" "
-"karakteri ile ayırabilirsiniz.<br /><br />Dosya adı aşağıdaki özel "
-"karakterleri içerebilir:<ul> <li><b>?</b> karakteri herhangi bir karaktere "
-"denk gelir</li><li> <b>*</b> karakteri sıfır veya daha fazla karaktere denk "
-"gelir.</li> <li><b>[...]</b> parantezler arasındaki karakterlere denk gelir."
-"</li></ul> <br />Örnek aramalar:<ul><li><b>*.kwd;*.txt</b> sonu .kwd veya ."
-"txt ile biten dosyaları bulur</li><li><b>yeme[kn]</b> yemek ve yemen "
-"sonuçlarını döndürür</li> <li><b>Hel?o</b> \"Hel\" ile başlayan ve \"o\" ile "
-"biten ve arasında yalnızca bir karakter bulunanları döndürür.</"
-"li><li><b>Benim Belgem.kwd</b> araması aynı adlı dosyayı bulur.</li></ul></"
-"qt>"
+"<qt>Aramak istediğiniz dosya adını girin. <br />Alternatifleri ‘;’ karakteri "
+"ile ayırabilirsiniz.<br /><br />Dosya adı aşağıdaki özel karakterleri "
+"içerebilir:<ul> <li><b>?</b> karakteri herhangi bir karaktere denk gelir</"
+"li><li> <b>*</b> karakteri sıfır veya daha fazla karaktere denk gelir.</li> "
+"<li><b>[...]</b> parantezler arasındaki karakterlere denk gelir.</li></ul> "
+"<br />Örnek aramalar:<ul><li><b>*.kwd;*.txt</b> sonu .kwd veya .txt ile "
+"biten dosyaları bulur</li><li><b>yeme[kn]</b> yemek ve yemen sonuçlarını "
+"döndürür</li> <li><b>Hel?o</b> “Hel” ile başlayan ve “o” ile biten ve "
+"arasında yalnızca bir karakter bulunanları döndürür.</li><li><b>Benim Belgem."
+"kwd</b> araması aynı adlı dosyayı bulur.</li></ul></qt>"
 
 #: kftabdlg.cpp:122
 #, kde-format
@@ -577,7 +576,7 @@ msgstr "KDE dosya bulma izlencesi"
 #: main.cpp:28
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "(c) 1998-2021, KDE Geliştiricileri"
+msgstr "(c) 1998–2021, KDE Geliştiricileri"
 
 #: main.cpp:30
 #, kde-format
