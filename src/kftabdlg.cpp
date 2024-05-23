@@ -65,7 +65,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     QLabel *namedL = new QLabel(i18nc("this is the label for the name textfield", "&Named:"), pages[0]);
     namedL->setBuddy(nameBox);
     namedL->setObjectName(QStringLiteral("named"));
-    namedL->setToolTip(i18n("You can use wildcard matching and \";\" for separating multiple names"));
+    namedL->setToolTip(i18nc("@info:tooltip", "You can use wildcard matching and \";\" for separating multiple names"));
     dirBox = new KUrlComboBox(KUrlComboBox::Directories, pages[0]);
     dirBox->setEditable(true);
     dirBox->setCompletionObject(new KUrlCompletion(KUrlCompletion::DirCompletion));
