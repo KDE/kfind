@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-21 00:42+0000\n"
+"POT-Creation-Date: 2024-05-24 00:41+0000\n"
 "PO-Revision-Date: 2024-01-16 00:25+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -186,7 +186,10 @@ msgid "&Named:"
 msgstr "&Pavadintas:"
 
 #: kftabdlg.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "You can use wildcard matching and \";\" for separating multiple names"
+msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Jūs galite naudoti pakaitos simbolius bei „;“ kelių vardų atskyrimui"
 

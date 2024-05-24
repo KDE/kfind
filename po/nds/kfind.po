@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-21 00:42+0000\n"
+"POT-Creation-Date: 2024-05-24 00:41+0000\n"
 "PO-Revision-Date: 2011-08-12 10:36+0200\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -186,7 +186,10 @@ msgid "&Named:"
 msgstr "Naa&m:"
 
 #: kftabdlg.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "You can use wildcard matching and \";\" for separating multiple names"
+msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 "Du kannst Platzholltekens (\"*\", \"?\") bruken, mit \";\" kannst Du Nööm "

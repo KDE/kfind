@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-21 00:42+0000\n"
+"POT-Creation-Date: 2024-05-24 00:41+0000\n"
 "PO-Revision-Date: 2009-12-18 14:34+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: American English <danishka@gmail.>\n"
@@ -187,7 +187,10 @@ msgid "&Named:"
 msgstr "නමැති (&N):"
 
 #: kftabdlg.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "You can use wildcard matching and \";\" for separating multiple names"
+msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "ඔබට අහඹු ගැලපුම භාවිත කිරීමට හා නාම කිහිපයක් වෙන් කිරීමට \";\" භාවිත කිරීමට හැක"
 

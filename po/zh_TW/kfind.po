@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-21 00:42+0000\n"
+"POT-Creation-Date: 2024-05-24 00:41+0000\n"
 "PO-Revision-Date: 2023-11-29 17:37+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -188,7 +188,10 @@ msgid "&Named:"
 msgstr "已命名(&N)："
 
 #: kftabdlg.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "You can use wildcard matching and \";\" for separating multiple names"
+msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "你可以使用萬用字元來進行配對，也可以使用 \";\" 來分隔不同的名稱"
 

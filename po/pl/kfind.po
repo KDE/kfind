@@ -1,6 +1,6 @@
 # translation of kfindpart.po to Polish
 # translation of kfindpart.po to
-# Version: $Revision: 1680502 $
+# Version: $Revision: 1680700 $
 # Copyright (C) 2002,2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
 #
 # Marcin Giedz <mgiedz@elka.pw.edu.pl>, 2002.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-21 00:42+0000\n"
+"POT-Creation-Date: 2024-05-24 00:41+0000\n"
 "PO-Revision-Date: 2023-03-12 08:25+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -191,7 +191,10 @@ msgid "&Named:"
 msgstr "&Nazwa:"
 
 #: kftabdlg.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "You can use wildcard matching and \";\" for separating multiple names"
+msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Można użyć masek oraz \";\" dla oddzielenia wielu nazw"
 

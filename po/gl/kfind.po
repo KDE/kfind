@@ -6,22 +6,22 @@
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # Marce Villarino <mvillarino@kde-espana.es>, 2009, 2011, 2012.
 # Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+# SPDX-FileCopyrightText: 2024 Adrián Chaves (Gallaecio)
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-21 00:42+0000\n"
-"PO-Revision-Date: 2023-04-28 19:13+0200\n"
+"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"PO-Revision-Date: 2024-05-23 08:45+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
-"Language-Team: Galician <proxecto@trasno.gal>\n"
+"Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -186,7 +186,10 @@ msgid "&Named:"
 msgstr "&Nome:"
 
 #: kftabdlg.cpp:68
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "You can use wildcard matching and \";\" for separating multiple names"
+msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 "Pode usar busca de coincidencias con caracteres de substitución e «;» para "
@@ -584,8 +587,7 @@ msgid "(c) 1998-2021, The KDE Developers"
 msgstr "© 1998-2021 O equipo de desenvolvemento de KDE"
 
 #: main.cpp:30
-#, fuzzy, kde-format
-#| msgid "Kai Uwe Broulik"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
@@ -596,8 +598,7 @@ msgid "Current Maintainer"
 msgstr "Mantedor actual"
 
 #: main.cpp:31
-#, fuzzy, kde-format
-#| msgid "Eric Coquelle"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
@@ -608,8 +609,7 @@ msgid "Former Maintainer"
 msgstr "Mantedor anterior"
 
 #: main.cpp:32
-#, fuzzy, kde-format
-#| msgid "Mark W. Webb"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "Mark W. Webb"
@@ -620,8 +620,7 @@ msgid "Developer"
 msgstr "Desenvolvedor"
 
 #: main.cpp:33
-#, fuzzy, kde-format
-#| msgid "Beppe Grimaldi"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "Beppe Grimaldi"
@@ -632,71 +631,61 @@ msgid "UI Design & more search options"
 msgstr "Deseño da UI e máis opcións de busca"
 
 #: main.cpp:34
-#, fuzzy, kde-format
-#| msgid "Martin Hartig"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "Martin Hartig"
 
 #: main.cpp:35
-#, fuzzy, kde-format
-#| msgid "Stephan Kulow"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "Stephan Kulow"
 
 #: main.cpp:36
-#, fuzzy, kde-format
-#| msgid "Mario Weilguni"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "Mario Weilguni"
 
 #: main.cpp:37
-#, fuzzy, kde-format
-#| msgid "Alex Zepeda"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "Alex Zepeda"
 
 #: main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Miroslav Flídr"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
 #: main.cpp:39
-#, fuzzy, kde-format
-#| msgid "Harri Porten"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "Harri Porten"
 
 #: main.cpp:40
-#, fuzzy, kde-format
-#| msgid "Dima Rogozin"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "Dima Rogozin"
 
 #: main.cpp:41
-#, fuzzy, kde-format
-#| msgid "Carsten Pfeiffer"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
 #: main.cpp:42
-#, fuzzy, kde-format
-#| msgid "Hans Petter Bieker"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "Hans Petter Bieker"
 
 #: main.cpp:43
-#, fuzzy, kde-format
-#| msgid "Waldo Bastian"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
@@ -707,15 +696,13 @@ msgid "UI Design"
 msgstr "Deseño da UI"
 
 #: main.cpp:44
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
 #: main.cpp:45
-#, fuzzy, kde-format
-#| msgid "Clarence Dang"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
