@@ -8,7 +8,7 @@
 # Pablo de Vicente <p.devicente@wanadoo.es>, 2004, 2005.
 # Pablo de Vicente <pablo.devicente@gmail.com>, 2006.
 # Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2010, 2016, 2017, 2018, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2010, 2016, 2017, 2018, 2020, 2021, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
 # Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>, 2010, 2011.
 # arklad, 2011.
 # Rocio Gallego <traducciones@rociogallego.com>, 2014.
@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2023-03-09 01:04+0100\n"
+"PO-Revision-Date: 2024-05-25 01:45+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "com>\n"
 "First-Translator: Pablo de Vicente <pvicentea@nexo.es>\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.02.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: kfinddlg.cpp:31
@@ -196,7 +196,7 @@ msgstr "&Denominado:"
 #, kde-format
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
-"Puede utilizar concordancia de comodines y «;» para separar nombres múltiples"
+"Puede usar concordancia de comodines y «;» para separar múltiples nombres"
 
 #: kftabdlg.cpp:75
 #, kde-format
