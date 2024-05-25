@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-24 00:41+0000\n"
-"PO-Revision-Date: 2024-05-21 07:38+0200\n"
+"PO-Revision-Date: 2024-05-24 07:03+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -189,14 +189,11 @@ msgid "&Named:"
 msgstr "&Ime:"
 
 #: kftabdlg.cpp:68
-#, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
-"Uporabite lahko nadomestne znake za ujemanje in podpičja (;) za ločevanje "
-"imen"
+"Uporabite lahko nadomestne znake za ujemanje in \";\" za ločevanje več imen"
 
 #: kftabdlg.cpp:74
 #, kde-format
