@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-19 01:56+0000\n"
-"PO-Revision-Date: 2023-06-06 22:02+0100\n"
+"PO-Revision-Date: 2024-05-25 06:34+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -612,7 +612,7 @@ msgstr "Beppe Grimaldi"
 #: main.cpp:33
 #, kde-format
 msgid "UI Design & more search options"
-msgstr "Grafika aspekto kaj multaj pliaj opcioj"
+msgstr "UI-Dezajno & pliaj serĉ-elektebloj"
 
 #: main.cpp:34
 #, kde-format
