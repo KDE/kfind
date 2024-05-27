@@ -179,9 +179,7 @@ msgid "&Named:"
 msgstr "文件名(&N)："
 
 #: kftabdlg.cpp:68
-#, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "您可以使用通配符。使用半角分号“;”分隔多个文件名"
