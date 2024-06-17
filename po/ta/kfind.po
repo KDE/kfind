@@ -1,45 +1,44 @@
-# translation of kfindpart.po to 
+# translation of kfindpart.po to
 # translation of kfindpart.po to
 # translation of kfindpart.po to Tamil
 # Copyright (C) 2004 Free Software Foundation, Inc.
-# , 2004.
-# , 2004.
 # Vasee Vaseeharan <vasee@ieee.org>, 2004.
 # Ambalam <tamilpc@ambalam.com>, 2004.
 # root <root@localhost.localdomain>, 2004.
 #
+# SPDX-FileCopyrightText: 2024 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-24 00:41+0000\n"
-"PO-Revision-Date: 2005-02-14 05:06-0800\n"
-"Last-Translator: Tamil PC <tamilpc@ambalam.com>\n"
-"Language-Team:  <ta@li.org>\n"
+"PO-Revision-Date: 2024-06-16 18:09+0530\n"
+"Last-Translator: Kishore G <kishore96@gmail.com>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.05.1\n"
 
 #: kfinddlg.cpp:31
-#, fuzzy, kde-format
-#| msgid "Find Files/Folders"
+#, kde-format
 msgctxt "@title:window"
 msgid "Find Files/Folders"
-msgstr "கோப்புகள்/அடைவுகளைக் கண்டுபிடி."
+msgstr "கோப்புகளையும் அடைவுகளையும் கண்டுபிடிப்பது"
 
 #: kfinddlg.cpp:48 kfinddlg.cpp:197
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
-msgstr ""
+msgstr "ஒன்றும் செய்யவில்லை."
 
 #. i18n as below
 #: kfinddlg.cpp:133
-#, fuzzy, kde-format
+#, kde-format
 msgid "0 items found"
-msgstr "ஒரு கொப்பு கண்டுபிடிக்கபட்டது"
+msgstr "ஒன்றும் கண்டுபிடிக்கப்படவில்லை"
 
 #: kfinddlg.cpp:172
 #, kde-format
@@ -49,12 +48,12 @@ msgstr "தேடுகிறது... "
 #: kfinddlg.cpp:199
 #, kde-format
 msgid "Canceled."
-msgstr ""
+msgstr "ரத்து செய்யப்பட்டது."
 
 #: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
 #, kde-format
 msgid "Error."
-msgstr "பிழை. "
+msgstr "சிக்கல்."
 
 #: kfinddlg.cpp:202
 #, kde-format
