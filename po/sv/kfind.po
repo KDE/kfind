@@ -183,8 +183,6 @@ msgstr "Med &namn:"
 
 #: kftabdlg.cpp:68
 #, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Du kan använda jokertecken och \";\" för att skilja flera namn åt"
@@ -578,7 +576,6 @@ msgstr "© 1998-2021, KDE-utvecklarna"
 
 #: main.cpp:30
 #, kde-format
-#| msgid "Kai Uwe Broulik"
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
@@ -590,7 +587,6 @@ msgstr "Nuvarande underhåll"
 
 #: main.cpp:31
 #, kde-format
-#| msgid "Eric Coquelle"
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
@@ -602,7 +598,6 @@ msgstr "Tidigare underhåll"
 
 #: main.cpp:32
 #, kde-format
-#| msgid "Mark W. Webb"
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "Mark W. Webb"
@@ -614,7 +609,6 @@ msgstr "Utvecklare"
 
 #: main.cpp:33
 #, kde-format
-#| msgid "Beppe Grimaldi"
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "Beppe Grimaldi"
@@ -626,70 +620,60 @@ msgstr "Design av användargränssnitt och fler sökalternativ"
 
 #: main.cpp:34
 #, kde-format
-#| msgid "Martin Hartig"
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "Martin Hartig"
 
 #: main.cpp:35
 #, kde-format
-#| msgid "Stephan Kulow"
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "Stephan Kulow"
 
 #: main.cpp:36
 #, kde-format
-#| msgid "Mario Weilguni"
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "Mario Weilguni"
 
 #: main.cpp:37
 #, kde-format
-#| msgid "Alex Zepeda"
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "Alex Zepeda"
 
 #: main.cpp:38
 #, kde-format
-#| msgid "Miroslav Flídr"
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
 #: main.cpp:39
 #, kde-format
-#| msgid "Harri Porten"
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "Harri Porten"
 
 #: main.cpp:40
 #, kde-format
-#| msgid "Dima Rogozin"
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "Dima Rogozin"
 
 #: main.cpp:41
 #, kde-format
-#| msgid "Carsten Pfeiffer"
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
 #: main.cpp:42
 #, kde-format
-#| msgid "Hans Petter Bieker"
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "Hans Petter Bieker"
 
 #: main.cpp:43
 #, kde-format
-#| msgid "Waldo Bastian"
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
@@ -701,14 +685,12 @@ msgstr "Design av användargränssnitt"
 
 #: main.cpp:44
 #, kde-format
-#| msgid "Alexander Neundorf"
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
 #: main.cpp:45
 #, kde-format
-#| msgid "Clarence Dang"
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
@@ -748,4 +730,3 @@ msgstr "Sökväg(ar) att söka i"
 #~ msgctxt "Name of the component that finds things"
 #~ msgid "Find Component"
 #~ msgstr "Sökkomponent"
-
