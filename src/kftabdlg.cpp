@@ -71,14 +71,14 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     dirBox->setCompletionObject(new KUrlCompletion(KUrlCompletion::DirCompletion));
     dirBox->setAutoDeleteCompletionObject(true);
     dirBox->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);  // allow smaller than widest entry
-    QLabel *lookinL = new QLabel(i18n("Look &in:"), pages[0]);
+    QLabel *lookinL = new QLabel(i18nc("@label:textbox", "Look &in:"), pages[0]);
     lookinL->setBuddy(dirBox);
     lookinL->setObjectName(QStringLiteral("lookin"));
-    subdirsCb = new QCheckBox(i18n("Include &subfolders"), pages[0]);
-    caseSensCb = new QCheckBox(i18n("Case s&ensitive search"), pages[0]);
+    subdirsCb = new QCheckBox(i18nc("@option:check", "Include &subfolders"), pages[0]);
+    caseSensCb = new QCheckBox(i18nc("@option:check", "Case s&ensitive search"), pages[0]);
     browseB = new QPushButton(i18n("&Browse..."), pages[0]);
-    useLocateCb = new QCheckBox(i18n("&Use files index"), pages[0]);
-    hiddenFilesCb = new QCheckBox(i18n("Show &hidden files"), pages[0]);
+    useLocateCb = new QCheckBox(i18nc("@option:check", "&Use files index"), pages[0]);
+    hiddenFilesCb = new QCheckBox(i18nc("@option:check", "Show &hidden files"), pages[0]);
     // Setup
 
     subdirsCb->setChecked(true);
@@ -162,11 +162,11 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     pages[1] = new QWidget;
     pages[1]->setObjectName(QStringLiteral("page2"));
 
-    findCreated = new QCheckBox(i18n("Find all files created or &modified:"), pages[1]);
+    findCreated = new QCheckBox(i18nc("@option:check", "Find all files created or &modified:"), pages[1]);
     bg = new QButtonGroup();
-    rb[0] = new QRadioButton(i18n("&between"), pages[1]);
+    rb[0] = new QRadioButton(i18nc("@option:radio", "&between"), pages[1]);
     rb[1] = new QRadioButton(pages[1]); // text set in updateDateLabels
-    andL = new QLabel(i18n("and"), pages[1]);
+    andL = new QLabel(i18nc("@label:textbox", "and"), pages[1]);
     andL->setObjectName(QStringLiteral("and"));
     betweenType = new KComboBox(pages[1]);
     betweenType->setObjectName(QStringLiteral("comboBetweenType"));
@@ -188,7 +188,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
 
     sizeBox = new KComboBox(pages[1]);
     sizeBox->setObjectName(QStringLiteral("sizeBox"));
-    QLabel *sizeL = new QLabel(i18n("File &size is:"), pages[1]);
+    QLabel *sizeL = new QLabel(i18nc("@label:textbox", "File &size is:"), pages[1]);
     sizeL->setBuddy(sizeBox);
     sizeEdit = new QSpinBox(pages[1]);
     sizeEdit->setRange(0, INT_MAX);
@@ -201,12 +201,12 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     m_usernameBox = new KComboBox(pages[1]);
     m_usernameBox->setEditable(true);
     m_usernameBox->setObjectName(QStringLiteral("m_combo1"));
-    QLabel *usernameLabel = new QLabel(i18n("Files owned by &user:"), pages[1]);
+    QLabel *usernameLabel = new QLabel(i18nc("@label:textbox", "Files owned by &user:"), pages[1]);
     usernameLabel->setBuddy(m_usernameBox);
     m_groupBox = new KComboBox(pages[1]);
     m_groupBox->setEditable(true);
     m_groupBox->setObjectName(QStringLiteral("m_combo2"));
-    QLabel *groupLabel = new QLabel(i18n("Owned by &group:"), pages[1]);
+    QLabel *groupLabel = new QLabel(i18nc("@label:textbox", "Owned by &group:"), pages[1]);
     groupLabel->setBuddy(m_groupBox);
 
     sizeBox->addItem(i18nc("file size isn't considered in the search", "(none)"));
@@ -285,7 +285,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     textEdit = new KLineEdit(pages[2]);
     textEdit->setClearButtonEnabled(true);
     textEdit->setObjectName(QStringLiteral("textEdit"));
-    QLabel *textL = new QLabel(i18n("C&ontaining text:"), pages[2]);
+    QLabel *textL = new QLabel(i18nc("@label:textbox", "C&ontaining text:"), pages[2]);
     textL->setBuddy(textEdit);
 
     connect(textEdit, &QLineEdit::returnPressed, this, &KfindTabWidget::startSearch);
@@ -299,8 +299,8 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     textEdit->setToolTip(containingtext);
     textL->setWhatsThis(containingtext);
 
-    caseContextCb = new QCheckBox(i18n("Case s&ensitive"), pages[2]);
-    binaryContextCb = new QCheckBox(i18n("Include &binary files"), pages[2]);
+    caseContextCb = new QCheckBox(i18nc("@option:check", "Case s&ensitive"), pages[2]);
+    binaryContextCb = new QCheckBox(i18nc("@option:check", "Include &binary files"), pages[2]);
 
     const QString binaryTooltip
         = i18n("<qt>This lets you search in any type of file, "
@@ -312,7 +312,7 @@ KfindTabWidget::KfindTabWidget(QWidget *parent)
     metainfoEdit = new KLineEdit(pages[2]);
     QLabel *textMetaInfo = new QLabel(i18nc("as in search for", "fo&r:"), pages[2]);
     textMetaInfo->setBuddy(metainfoEdit);
-    QLabel *textMetaKey = new QLabel(i18n("Search &metainfo sections:"), pages[2]);
+    QLabel *textMetaKey = new QLabel(i18nc("@label:textbox", "Search &metainfo sections:"), pages[2]);
     textMetaKey->setBuddy(metainfokeyEdit);
 
     // Setup
