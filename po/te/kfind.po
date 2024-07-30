@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"POT-Creation-Date: 2024-07-30 00:44+0000\n"
 "PO-Revision-Date: 2009-01-16 22:16+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -197,16 +197,19 @@ msgstr ""
 
 #: kftabdlg.cpp:74
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr ""
 
 #: kftabdlg.cpp:77
 #, kde-format
+msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr ""
 
 #: kftabdlg.cpp:78
 #, kde-format
+msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr ""
 
@@ -217,11 +220,13 @@ msgstr ""
 
 #: kftabdlg.cpp:80
 #, kde-format
+msgctxt "@option:check"
 msgid "&Use files index"
 msgstr ""
 
 #: kftabdlg.cpp:81
 #, kde-format
+msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr ""
 
@@ -250,31 +255,37 @@ msgstr ""
 
 #: kftabdlg.cpp:165
 #, kde-format
+msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr ""
 
 #: kftabdlg.cpp:167
 #, kde-format
+msgctxt "@option:radio"
 msgid "&between"
 msgstr ""
 
 #: kftabdlg.cpp:169
 #, kde-format
+msgctxt "@label:textbox"
 msgid "and"
 msgstr ""
 
 #: kftabdlg.cpp:191
 #, kde-format
+msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr ""
 
 #: kftabdlg.cpp:204
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr ""
 
 #: kftabdlg.cpp:209
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr ""
 
@@ -333,6 +344,7 @@ msgstr ""
 
 #: kftabdlg.cpp:288
 #, kde-format
+msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr ""
 
@@ -346,11 +358,13 @@ msgstr ""
 
 #: kftabdlg.cpp:302
 #, kde-format
+msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr ""
 
 #: kftabdlg.cpp:303
 #, kde-format
+msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr ""
 
@@ -369,6 +383,7 @@ msgstr ""
 
 #: kftabdlg.cpp:315
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr ""
 

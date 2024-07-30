@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"POT-Creation-Date: 2024-07-30 00:44+0000\n"
 "PO-Revision-Date: 2023-12-10 15:06+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -196,17 +196,23 @@ msgstr ""
 "bodkočiarku \";\""
 
 #: kftabdlg.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Look &in:"
+msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "Hľadať &v:"
 
 #: kftabdlg.cpp:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &subfolders"
+msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "Zahrnúť podp&riečinky"
 
 #: kftabdlg.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive search"
+msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "Rozlišovať &veľkosť písmen"
 
@@ -216,12 +222,16 @@ msgid "&Browse..."
 msgstr "&Prehliadať..."
 
 #: kftabdlg.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use files index"
+msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "&Použiť index súborov"
 
 #: kftabdlg.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Show &hidden files"
+msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Zobraziť &skryté súbory"
 
@@ -261,32 +271,44 @@ msgstr ""
 "<i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:165
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Find all files created or &modified:"
+msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Nájsť všetky súbory vytvorené alebo &zmenené:"
 
 #: kftabdlg.cpp:167
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&between"
+msgctxt "@option:radio"
 msgid "&between"
 msgstr "&medzi"
 
 #: kftabdlg.cpp:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "and"
+msgctxt "@label:textbox"
 msgid "and"
 msgstr "a"
 
 #: kftabdlg.cpp:191
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File &size is:"
+msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Veľko&sť súboru je:"
 
 #: kftabdlg.cpp:204
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Files owned by &user:"
+msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Súbory vlastní &užívateľ:"
 
 #: kftabdlg.cpp:209
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Owned by &group:"
+msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Vlastní ho &skupina:"
 
@@ -341,7 +363,9 @@ msgid "File &type:"
 msgstr "&Typ súboru:"
 
 #: kftabdlg.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "C&ontaining text:"
+msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "O&bsahuje text:"
 
@@ -357,12 +381,16 @@ msgstr ""
 "Zoznam podporovaných typov nájdete v dokumentácii.</qt>"
 
 #: kftabdlg.cpp:302
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive"
+msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "Rozlišovať &veľkosť písmen"
 
 #: kftabdlg.cpp:303
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &binary files"
+msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "Zahrnúť &binárne súbory"
 
@@ -382,7 +410,9 @@ msgid "fo&r:"
 msgstr "vý&raz:"
 
 #: kftabdlg.cpp:315
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search &metainfo sections:"
+msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "Hľadať v častiach s &meta-informáciami:"
 

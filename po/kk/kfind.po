@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"POT-Creation-Date: 2024-07-30 00:44+0000\n"
 "PO-Revision-Date: 2011-12-05 05:30+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -197,17 +197,23 @@ msgstr ""
 "қолдануыңызға болады"
 
 #: kftabdlg.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Look &in:"
+msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "&Іздеу жолдары:"
 
 #: kftabdlg.cpp:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &subfolders"
+msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "І&шкі қапшықтарды қоса"
 
 #: kftabdlg.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive search"
+msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "Үлкен-кішілігін е&скеріп"
 
@@ -217,12 +223,16 @@ msgid "&Browse..."
 msgstr "&Шолу..."
 
 #: kftabdlg.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use files index"
+msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "Файлдар индексін қ&олданып"
 
 #: kftabdlg.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Show &hidden files"
+msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "&Жасырын файлдар көрсетілсін"
 
@@ -263,32 +273,44 @@ msgstr ""
 "бір мезгіл сайын жаңартып тұрыңыз.</qt>"
 
 #: kftabdlg.cpp:165
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Find all files created or &modified:"
+msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Келтірілген кезде құрылған не ө&згертілген файлдарды іздеу:"
 
 #: kftabdlg.cpp:167
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&between"
+msgctxt "@option:radio"
 msgid "&between"
 msgstr "келесі &аралықта"
 
 #: kftabdlg.cpp:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "and"
+msgctxt "@label:textbox"
 msgid "and"
 msgstr "мен"
 
 #: kftabdlg.cpp:191
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File &size is:"
+msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Файл ө&лшемі:"
 
 #: kftabdlg.cpp:204
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Files owned by &user:"
+msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Келесі &пайдаланушының:"
 
 #: kftabdlg.cpp:209
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Owned by &group:"
+msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Келесі &тобының:"
 
@@ -341,7 +363,9 @@ msgid "File &type:"
 msgstr "Файлдың &түрі:"
 
 #: kftabdlg.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "C&ontaining text:"
+msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "Келесі мәтіні &бар:"
 
@@ -358,12 +382,16 @@ msgstr ""
 "qt>"
 
 #: kftabdlg.cpp:302
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive"
+msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "Үлкен-кішілігін &ескеріп"
 
 #: kftabdlg.cpp:303
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &binary files"
+msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "&Бинарлық файлдарды қоса"
 
@@ -384,7 +412,9 @@ msgid "fo&r:"
 msgstr "өрістерінен &келесіні іздеу:"
 
 #: kftabdlg.cpp:315
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search &metainfo sections:"
+msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "Құжаттың &метадеректерінің"
 

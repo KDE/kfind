@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"POT-Creation-Date: 2024-07-30 00:44+0000\n"
 "PO-Revision-Date: 2014-09-20 16:54-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -197,17 +197,23 @@ msgstr ""
 "す。"
 
 #: kftabdlg.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Look &in:"
+msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "場所(&I):"
 
 #: kftabdlg.cpp:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &subfolders"
+msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "サブフォルダを含める(&S)"
 
 #: kftabdlg.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive search"
+msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "大文字と小文字を区別する(&E)"
 
@@ -217,12 +223,16 @@ msgid "&Browse..."
 msgstr "ブラウズ(&B)..."
 
 #: kftabdlg.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use files index"
+msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "ファイルのインデックスを使う(&U)"
 
 #: kftabdlg.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Show &hidden files"
+msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "隠しファイルを表示する(&H)"
 
@@ -263,32 +273,44 @@ msgstr ""
 "デックスを更新するのを忘れないようにしてください。</qt>"
 
 #: kftabdlg.cpp:165
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Find all files created or &modified:"
+msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "次の期間に作成または更新されたすべてのファイルを検索する(&M):"
 
 #: kftabdlg.cpp:167
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&between"
+msgctxt "@option:radio"
 msgid "&between"
 msgstr "日付の範囲(&B)"
 
 #: kftabdlg.cpp:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "and"
+msgctxt "@label:textbox"
 msgid "and"
 msgstr " - "
 
 #: kftabdlg.cpp:191
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File &size is:"
+msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "ファイルサイズ(&S):"
 
 #: kftabdlg.cpp:204
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Files owned by &user:"
+msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "ファイルの所有者(&U):"
 
 #: kftabdlg.cpp:209
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Owned by &group:"
+msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "所有グループ(&G):"
 
@@ -341,7 +363,9 @@ msgid "File &type:"
 msgstr "ファイルタイプ(&T):"
 
 #: kftabdlg.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "C&ontaining text:"
+msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "次のテキストを含む(&O):"
 
@@ -358,12 +382,16 @@ msgstr ""
 "い。</qt>"
 
 #: kftabdlg.cpp:302
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive"
+msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "大文字と小文字を区別する(&E)"
 
 #: kftabdlg.cpp:303
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &binary files"
+msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "バイナリファイルを含める(&B)"
 
@@ -384,7 +412,9 @@ msgid "fo&r:"
 msgstr "検索(&R):"
 
 #: kftabdlg.cpp:315
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search &metainfo sections:"
+msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "検索するメタ情報のフィールド(&M):"
 

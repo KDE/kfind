@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"POT-Creation-Date: 2024-07-30 00:44+0000\n"
 "PO-Revision-Date: 2010-06-08 14:02+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -192,17 +192,23 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "អ្នក​អាច​ស្វែងរក​ដោយ​ប្រើ​តួ​អក្សរ​ជំនួស និង​សញ្ញា \";\" សម្រាប់​បំបែក​ឈ្មោះ​ជា​ច្រើន"
 
 #: kftabdlg.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Look &in:"
+msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "រក​មើល ៖"
 
 #: kftabdlg.cpp:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &subfolders"
+msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "រួម​បញ្ចូល​ទាំង​ថត​រង"
 
 #: kftabdlg.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive search"
+msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "ស្វែង​រក​ដោយ​ប្រកាន់​តួ​អក្សរ​តូច​ធំ"
 
@@ -212,12 +218,16 @@ msgid "&Browse..."
 msgstr "រក​មើល..."
 
 #: kftabdlg.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use files index"
+msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "ប្រើ​លិបិក្រម​របស់​ឯកសារ"
 
 #: kftabdlg.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Show &hidden files"
+msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "បង្ហាញ​ឯកសារ​ដែល​បានលាក់"
 
@@ -256,32 +266,44 @@ msgstr ""
 "<i>updatedb</i>) ។</qt>"
 
 #: kftabdlg.cpp:165
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Find all files created or &modified:"
+msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "រក​ឯកសារ​ទាំង​អស់​ដែល​បាន​បង្កើត ឬ​កែប្រែ ៖"
 
 #: kftabdlg.cpp:167
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&between"
+msgctxt "@option:radio"
 msgid "&between"
 msgstr "រវាង"
 
 #: kftabdlg.cpp:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "and"
+msgctxt "@label:textbox"
 msgid "and"
 msgstr "និង"
 
 #: kftabdlg.cpp:191
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File &size is:"
+msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "ទំហំ​ឯកសារ​គឺ ៖"
 
 #: kftabdlg.cpp:204
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Files owned by &user:"
+msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "ឯកសារ​ជា​របស់​អ្នក​ប្រើ ៖"
 
 #: kftabdlg.cpp:209
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Owned by &group:"
+msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "ជា​របស់​ក្រុម ៖"
 
@@ -334,7 +356,9 @@ msgid "File &type:"
 msgstr "ប្រភេទ​ឯកសារ ៖"
 
 #: kftabdlg.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "C&ontaining text:"
+msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "មាន​អត្ថបទ ៖"
 
@@ -350,12 +374,16 @@ msgstr ""
 "គាំទ្រ ។</qt>"
 
 #: kftabdlg.cpp:302
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive"
+msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "ប្រកាន់​តួ​អក្សរ​តូច​ធំ"
 
 #: kftabdlg.cpp:303
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &binary files"
+msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "រួម​បញ្ចូល​ឯកសារ​គោល​ពីរ"
 
@@ -375,7 +403,9 @@ msgid "fo&r:"
 msgstr "សម្រាប់ ៖"
 
 #: kftabdlg.cpp:315
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search &metainfo sections:"
+msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "ស្វែងរក​ផ្នែក​របស់​ព័ត៌មាន​មេតា ៖"
 

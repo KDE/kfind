@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"POT-Creation-Date: 2024-07-30 00:44+0000\n"
 "PO-Revision-Date: 2010-01-28 22:50+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn-IN <>\n"
@@ -197,17 +197,23 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "ಹೆಸರುಗಳನ್ನು ಪ್ರತ್ಯೇಕಿಸಲು ವೈಲ್ಡ್‍ಕಾರ್ಡ್ ತಾಳೆ ಮಾಡುವಿಕೆ ಹಾಗು \";\" ಅನ್ನು ಬಳಸಬಹುದು"
 
 #: kftabdlg.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Look &in:"
+msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "ಇದರಲ್ಲಿ ನೋಡು(&i):"
 
 #: kftabdlg.cpp:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &subfolders"
+msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "ಉಪಕೋಶಗಳನ್ನು ಒಳಗೊಳ್ಳಿಸು(&s)"
 
 #: kftabdlg.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive search"
+msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "ಕೇಸ್ ಸಂವೇದಿ ಹುಡುಕಾಟ (&e)"
 
@@ -217,12 +223,16 @@ msgid "&Browse..."
 msgstr "ವೀಕ್ಷಿಸು(&B)..."
 
 #: kftabdlg.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use files index"
+msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "ಕಡತಗಳ ಸೂಚಿಯನ್ನು ಬಳಸು(&U)"
 
 #: kftabdlg.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Show &hidden files"
+msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "ಅಡಗಿಸಲಾದ ಕಡತಗಳನ್ನು ತೋರಿಸು(&h)"
 
@@ -250,32 +260,44 @@ msgid ""
 msgstr ""
 
 #: kftabdlg.cpp:165
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Find all files created or &modified:"
+msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "ರಚಿಸಲಾದ ಅಥವ ಮಾರ್ಪಡಿಸಲಾದ ಎಲ್ಲಾ ಕಡತಗಳನ್ನು ಹುಡುಕು(&m):"
 
 #: kftabdlg.cpp:167
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&between"
+msgctxt "@option:radio"
 msgid "&between"
 msgstr "ನಡುವೆ(&b)"
 
 #: kftabdlg.cpp:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "and"
+msgctxt "@label:textbox"
 msgid "and"
 msgstr "ಹಾಗು"
 
 #: kftabdlg.cpp:191
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File &size is:"
+msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "ಕಡತದ ಗಾತ್ರ(&s):"
 
 #: kftabdlg.cpp:204
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Files owned by &user:"
+msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "ಈ ಬಳಕೆದಾರನಿಂದ ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿದೆ(&u):"
 
 #: kftabdlg.cpp:209
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Owned by &group:"
+msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "ಈ ಗುಂಪಿನಿಂದ ಮಾಲಿಕತ್ವವನ್ನು ಹೊಂದಿದೆ(&g):"
 
@@ -329,7 +351,9 @@ msgid "File &type:"
 msgstr "ಕಡತದ ಬಗೆ(&t):"
 
 #: kftabdlg.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "C&ontaining text:"
+msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "ಹೊಂದಿರುವ ಪಠ್ಯ(&o):"
 
@@ -345,12 +369,16 @@ msgstr ""
 "ಬಗೆಗಳ ಪಟ್ಟಿಗಾಗಿ ದಯವಿಟ್ಟು ದಸ್ತಾವೇಜನ್ನು ನೋಡಿ.</qt>"
 
 #: kftabdlg.cpp:302
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive"
+msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "ಕೇಸ್ ಸಂವೇದಿ(&e)"
 
 #: kftabdlg.cpp:303
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &binary files"
+msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "ಬೈನರಿ ಕಡತಗಳನ್ನೂ ಸೇರಿಸು(&b)"
 
@@ -371,7 +399,9 @@ msgid "fo&r:"
 msgstr "ಇದಕ್ಕಾಗಿ(&r):"
 
 #: kftabdlg.cpp:315
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search &metainfo sections:"
+msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "ಮೆಟಾಮಾಹಿತಿ ವಿಭಾಗಗಳನ್ನು ಹುಡುಕು(&m):"
 

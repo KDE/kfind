@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"POT-Creation-Date: 2024-07-30 00:44+0000\n"
 "PO-Revision-Date: 2004-07-08 23:26+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud.com>\n"
 "Language-Team: Brezhoneg <Suav.Icb.fr>\n"
@@ -197,19 +197,25 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
 
 #: kftabdlg.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Look &in:"
+msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "Sellit e-&barzh :"
 
 #: kftabdlg.cpp:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &subfolders"
+msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "Enlakaat &is-renkelloù"
 
 #: kftabdlg.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive"
+msgctxt "@option:check"
 msgid "Case s&ensitive search"
-msgstr ""
+msgstr "Evezhi&ek ouzh ar c'hef"
 
 #: kftabdlg.cpp:79
 #, kde-format
@@ -218,11 +224,13 @@ msgstr "&Furchañ ..."
 
 #: kftabdlg.cpp:80
 #, kde-format
+msgctxt "@option:check"
 msgid "&Use files index"
 msgstr ""
 
 #: kftabdlg.cpp:81
 #, kde-format
+msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr ""
 
@@ -250,32 +258,43 @@ msgid ""
 msgstr ""
 
 #: kftabdlg.cpp:165
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Find all files created or &modified:"
+msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Restroù &krouet pe kemmet :"
 
 #: kftabdlg.cpp:167
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&between"
+msgctxt "@option:radio"
 msgid "&between"
 msgstr "&etre"
 
 #: kftabdlg.cpp:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "and"
+msgctxt "@label:textbox"
 msgid "and"
 msgstr "ha"
 
 #: kftabdlg.cpp:191
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File &size is:"
+msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "&Ment ar restr a zo :"
 
 #: kftabdlg.cpp:204
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr ""
 
 #: kftabdlg.cpp:209
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Owned by &group:"
+msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Perc'hennet gant ar &strollad :"
 
@@ -336,6 +355,7 @@ msgstr "Rizh &ar restr :"
 
 #: kftabdlg.cpp:288
 #, kde-format
+msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr ""
 
@@ -348,12 +368,16 @@ msgid ""
 msgstr ""
 
 #: kftabdlg.cpp:302
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive"
+msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "Evezhi&ek ouzh ar c'hef"
 
 #: kftabdlg.cpp:303
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &binary files"
+msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "Enlakaat restroù &binarel"
 
@@ -373,6 +397,7 @@ msgstr "evi&t :"
 
 #: kftabdlg.cpp:315
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr ""
 
