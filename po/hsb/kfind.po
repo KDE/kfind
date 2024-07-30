@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"POT-Creation-Date: 2024-07-30 00:44+0000\n"
 "PO-Revision-Date: 2005-02-24 17:31+0100\n"
 "Last-Translator: Bianka Šwejdźic <hertn@gmx.de>\n"
 "Language-Team: Hornjoserbšćina\n"
@@ -196,17 +196,22 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Wy móžeće zastupowace znamješko a \";\" za wjacore mjena wužiwać."
 
 #: kftabdlg.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Look &in:"
+msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "&Pytać w:"
 
 #: kftabdlg.cpp:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &subfolders"
+msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "&Podrjadowaki zapřijeć"
 
 #: kftabdlg.cpp:78
 #, kde-format
+msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr ""
 
@@ -216,12 +221,15 @@ msgid "&Browse..."
 msgstr "&Wuzwolić..."
 
 #: kftabdlg.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use files index"
+msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "Datajowy &hesłar wužiwać"
 
 #: kftabdlg.cpp:81
 #, kde-format
+msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr ""
 
@@ -273,32 +281,44 @@ msgstr ""
 "</qt>"
 
 #: kftabdlg.cpp:165
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Find all files created or &modified:"
+msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Za wšěmi nowymi abo &změnjenymi datajemi pytać:"
 
 #: kftabdlg.cpp:167
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&between"
+msgctxt "@option:radio"
 msgid "&between"
 msgstr "&mjez"
 
 #: kftabdlg.cpp:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "and"
+msgctxt "@label:textbox"
 msgid "and"
 msgstr "a"
 
 #: kftabdlg.cpp:191
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File &size is:"
+msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "&Wulkosć dataje:"
 
 #: kftabdlg.cpp:204
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Files owned by &user:"
+msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Dataje wot:"
 
 #: kftabdlg.cpp:209
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Owned by &group:"
+msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Dataje skupiny:"
 
@@ -359,7 +379,9 @@ msgid "File &type:"
 msgstr "Datajowy &typ:"
 
 #: kftabdlg.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "C&ontaining text:"
+msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "&Wobsah:"
 
@@ -376,13 +398,16 @@ msgstr ""
 
 #: kftabdlg.cpp:302
 #, kde-format
+msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr ""
 
 #: kftabdlg.cpp:303
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &subfolders"
+msgctxt "@option:check"
 msgid "Include &binary files"
-msgstr ""
+msgstr "&Podrjadowaki zapřijeć"
 
 #: kftabdlg.cpp:306
 #, kde-format
@@ -402,6 +427,7 @@ msgstr "&za:"
 
 #: kftabdlg.cpp:315
 #, kde-format
+msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr ""
 

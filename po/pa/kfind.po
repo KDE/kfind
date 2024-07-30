@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-24 00:41+0000\n"
+"POT-Creation-Date: 2024-07-30 00:44+0000\n"
 "PO-Revision-Date: 2024-02-10 10:40-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -189,17 +189,23 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "ਤੁਸੀਂ ਵਾਈਲਡ-ਕਾਰਡ ਮੇਲ ਅਤੇ \";\" ਨਾਲ ਵੱਖ ਕਰਕੇ ਕਈ ਨਾਂ ਵਰਤ ਸਕਦੇ ਹੋ"
 
 #: kftabdlg.cpp:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Look &in:"
+msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "ਇਸ ਵਿੱਚ ਖੋਜ(&i):"
 
 #: kftabdlg.cpp:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &subfolders"
+msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "ਸਬ-ਫੋਲਡਰਾਂ ਸਮੇਤ(&s)"
 
 #: kftabdlg.cpp:78
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive search"
+msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "ਅੱਖਰ ਅਕਾਰ ਸੰਵੇਦਨਸ਼ੀਲ(&e)"
 
@@ -209,12 +215,16 @@ msgid "&Browse..."
 msgstr "ਝਲਕ(&B)..."
 
 #: kftabdlg.cpp:80
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&Use files index"
+msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "ਫਾਇਲ ਇੰਡੈਕਸ ਵਰਤੋਂ(&U)"
 
 #: kftabdlg.cpp:81
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Show &hidden files"
+msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "ਲੁਕਵੀਆਂ ਫਾਇਲਾਂ ਵੇਖੋ(&h)"
 
@@ -242,32 +252,44 @@ msgid ""
 msgstr ""
 
 #: kftabdlg.cpp:165
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Find all files created or &modified:"
+msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "ਸਭ ਫਾਇਲਾਂ ਬਣਾਇਆਂ ਜਾਂ ਸੋਧੀਆਂ ਖੋਜ(&m):"
 
 #: kftabdlg.cpp:167
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "&between"
+msgctxt "@option:radio"
 msgid "&between"
 msgstr "ਵਿਚਕਾਰ(&b)"
 
 #: kftabdlg.cpp:169
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "and"
+msgctxt "@label:textbox"
 msgid "and"
 msgstr "ਅਤੇ"
 
 #: kftabdlg.cpp:191
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File &size is:"
+msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "ਫਾਇਲ ਅਕਾਰ(&s):"
 
 #: kftabdlg.cpp:204
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Files owned by &user:"
+msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "ਫਾਇਲਾਂ ਦਾ ਮਾਲਕ ਯੂਜ਼ਰ ਹੋਵੇ(&u):"
 
 #: kftabdlg.cpp:209
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Owned by &group:"
+msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "ਮਾਲਕ ਗਰੁੱਪ ਹੋਵੇ(&g):"
 
@@ -321,7 +343,9 @@ msgid "File &type:"
 msgstr "ਫਾਇਲ ਕਿਸਮ(&t):"
 
 #: kftabdlg.cpp:288
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "C&ontaining text:"
+msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "ਲਿਖਤ ਸ਼ਾਮਲ(&o):"
 
@@ -334,12 +358,16 @@ msgid ""
 msgstr ""
 
 #: kftabdlg.cpp:302
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Case s&ensitive"
+msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "ਅੱਖਰ ਆਕਾਰ ਸੰਵੇਦਨਸ਼ੀਲ(&e)"
 
 #: kftabdlg.cpp:303
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Include &binary files"
+msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "ਬਾਈਨਰੀ ਫਾਇਲਾਂ ਸ਼ਾਮਲ(&b)"
 
@@ -357,7 +385,9 @@ msgid "fo&r:"
 msgstr "ਲਈ(&r):"
 
 #: kftabdlg.cpp:315
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Search &metainfo sections:"
+msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "ਮੇਟਾ-ਜਾਣਕਾਰੀ ਭਾਗ ਖੋਜ(&m):"
 
