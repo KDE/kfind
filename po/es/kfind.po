@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-24 00:41+0000\n"
-"PO-Revision-Date: 2024-05-25 01:45+0200\n"
+"PO-Revision-Date: 2024-07-30 16:27+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "com>\n"
 "First-Translator: Pablo de Vicente <pvicentea@nexo.es>\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: kfinddlg.cpp:31
@@ -348,7 +348,7 @@ msgstr "&Tipo de archivo:"
 #: kftabdlg.cpp:288
 #, kde-format
 msgid "C&ontaining text:"
-msgstr "C&onteniendo el texto:"
+msgstr "Que c&ontenga el texto:"
 
 #: kftabdlg.cpp:294
 #, kde-format
