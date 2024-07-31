@@ -19,14 +19,14 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-30 00:44+0000\n"
-"PO-Revision-Date: 2024-05-24 11:11+0200\n"
+"PO-Revision-Date: 2024-07-30 13:06+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: kfinddlg.cpp:31
@@ -201,22 +201,19 @@ msgstr ""
 "termen"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "Zoeken &in:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "Inclusief &submappen"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "Hoofdl&ettergevoelig zoeken"
@@ -227,15 +224,13 @@ msgid "&Browse..."
 msgstr "&Bladeren..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "Bestandenindex gebr&uiken"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Ver&borgen bestanden tonen"
@@ -278,43 +273,37 @@ msgstr ""
 "actualiseren via <i>updatedb</i>.</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Zoek alle bestanden, aange&maakt of bewerkt:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&tussen"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "en"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "&Grootte is:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Bestanden eigendom van gebr&uiker:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Eigendom van &groep:"
@@ -369,8 +358,7 @@ msgid "File &type:"
 msgstr "Bestands&type:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "&Met de tekst:"
@@ -388,15 +376,13 @@ msgstr ""
 "bestandstypen.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "Hoofdl&ettergevoelig"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "Inclusief &binaire bestanden"
@@ -418,8 +404,7 @@ msgid "fo&r:"
 msgstr "naa&r:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "Zoeken in &metainfo-secties:"

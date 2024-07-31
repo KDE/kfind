@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-30 00:44+0000\n"
-"PO-Revision-Date: 2024-06-18 19:46+0200\n"
+"PO-Revision-Date: 2024-07-30 06:58+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.05.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: kfinddlg.cpp:31
@@ -188,22 +188,19 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Du kan använda jokertecken och \";\" för att skilja flera namn åt"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
-msgstr "S&ök i:"
+msgstr "Sök &i:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "Inkludera &underkataloger"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "Skiftläg&eskänslig sökning"
@@ -214,15 +211,13 @@ msgid "&Browse..."
 msgstr "Blä&ddra..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "An&vänd filindex"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Visa &dolda filer"
@@ -264,46 +259,40 @@ msgstr ""
 "<i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Hitta alla &filer skapade eller ändrade:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "m&ellan"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "och"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
-msgstr "Fi&lstorleken är:"
+msgstr "Fil&storleken är:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
-msgstr "Filer äg&da av användare:"
+msgstr "Filer ägda av an&vändare:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
-msgstr "Ä&gda av grupp:"
+msgstr "Ägda av &grupp:"
 
 #: kftabdlg.cpp:212
 #, kde-format
@@ -355,8 +344,7 @@ msgid "File &type:"
 msgstr "Filt&yp:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "Innehållande te&xt:"
@@ -373,18 +361,16 @@ msgstr ""
 "filtyper som stöds.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
-msgstr "Skiftl&ägeskänslig"
+msgstr "Skiftläg&eskänslig"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
-msgstr "Sök även i &binärfiler"
+msgstr "Inkludera &binärfiler"
 
 #: kftabdlg.cpp:306
 #, kde-format
@@ -402,11 +388,10 @@ msgid "fo&r:"
 msgstr "efte&r:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "Sök i &filernas metainformation:"
+msgstr "Sök i sektioner med &metainformation:"
 
 #: kftabdlg.cpp:319
 #, kde-format

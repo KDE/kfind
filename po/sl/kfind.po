@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-30 00:44+0000\n"
-"PO-Revision-Date: 2024-05-24 07:03+0200\n"
+"PO-Revision-Date: 2024-07-30 08:59+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -196,25 +196,22 @@ msgstr ""
 "Uporabite lahko nadomestne znake za ujemanje in \";\" za ločevanje več imen"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
-msgstr "Išči &v:"
+msgstr "Išči v:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
-msgstr "Vključi &podmape"
+msgstr "Vključi podmape"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
-msgstr "Iskanje, ob&čutljivo na velikost črk"
+msgstr "Iskanje, občutljivo na velikost črk"
 
 #: kftabdlg.cpp:79
 #, kde-format
@@ -222,18 +219,16 @@ msgid "&Browse..."
 msgstr "&Brskanje …"
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "&Uporabi kazalo datotek"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
-msgstr "Pokaži &skrite datoteke"
+msgstr "Pokaži skrite datoteke"
 
 #: kftabdlg.cpp:100
 #, kde-format
@@ -271,46 +266,40 @@ msgstr ""
 "uporabo <i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
-msgstr "Najdi vse datoteke, &ustvarjene ali spremenjene:"
+msgstr "Najdi vse datoteke, ustvarjene ali spremenjene:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
-msgstr "m&ed"
+msgstr "med"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "in"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
-msgstr "&Velikost je:"
+msgstr "Velikost datoteke je:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
-msgstr "&Last uporabnika:"
+msgstr "Datoteke v lasti uporabnika:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
-msgstr "Last &skupine:"
+msgstr "v lasti skupine:"
 
 #: kftabdlg.cpp:212
 #, kde-format
@@ -364,11 +353,10 @@ msgid "File &type:"
 msgstr "Vrs&ta datoteke:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
-msgstr "Vsebuje &besedilo:"
+msgstr "Vsebuje besedilo:"
 
 #: kftabdlg.cpp:294
 #, kde-format
@@ -382,18 +370,16 @@ msgstr ""
 "v dokumentacijo za seznam vseh podprtih datotek.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
-msgstr "Ob&čutljivo na velikost črk"
+msgstr "Občutljivo na velikost črk"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
-msgstr "Vključi &dvojiške datoteke"
+msgstr "Vključi dvojiške datoteke"
 
 #: kftabdlg.cpp:306
 #, kde-format
@@ -408,14 +394,13 @@ msgstr ""
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
-msgstr "z&a:"
+msgstr "za:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "Išči &po metapodatkih:"
+msgstr "Išči po metapodatkih:"
 
 #: kftabdlg.cpp:319
 #, kde-format

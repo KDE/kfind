@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: applications-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-30 00:44+0000\n"
-"PO-Revision-Date: 2024-05-24 06:22+0300\n"
+"PO-Revision-Date: 2024-07-30 18:43+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -192,22 +192,19 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Birden fazla dosya adını ayırmak için ‘;’ karakteri kullanılabilir"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "Aranacak &yer:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "&Alt klasörleri içer"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "&BÜYÜK/küçük harf duyarlı arama"
@@ -218,15 +215,13 @@ msgid "&Browse..."
 msgstr "&Göz At…"
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "&Dosya indeksini kullan"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "G&izli dosyaları göster"
@@ -268,43 +263,37 @@ msgstr ""
 "(<i>updatedb</i> komutu ile).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Oluşturulan veya değiştirilen &tüm dosyaları bul:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&tarih aralığı"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "ve"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Dosya b&oyutu:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "&Kullanıcının sahip olduğu dosyalar:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Dosyala&rın grubu:"
@@ -359,8 +348,7 @@ msgid "File &type:"
 msgstr "Dosya &türü:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "İçerdiği me&tne göre:"
@@ -377,15 +365,13 @@ msgstr ""
 "yardım belgesine bakınız.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "&BÜYÜK/küçük harf duyarlı"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "&İkili dosyaları içer"
@@ -406,11 +392,10 @@ msgid "fo&r:"
 msgstr "içi&n:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "Arama &üst bilgi bölümleri:"
+msgstr "Arama &üstbilgi bölümleri:"
 
 #: kftabdlg.cpp:319
 #, kde-format
@@ -606,7 +591,7 @@ msgstr "KDE dosya bulma izlencesi"
 #: main.cpp:28
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "(c) 1998–2021, KDE Geliştiricileri"
+msgstr "© 1998–2021, KDE Geliştiricileri"
 
 #: main.cpp:30
 #, kde-format
@@ -715,7 +700,7 @@ msgstr "Waldo Bastian"
 #: main.cpp:43
 #, kde-format
 msgid "UI Design"
-msgstr "UI tasarım"
+msgstr "Arayüz tasarımı"
 
 #: main.cpp:44
 #, kde-format
