@@ -15,7 +15,7 @@ apps:
     desktop: usr/share/applications/org.kde.kfind.desktop
     command: usr/bin/kfind
     plugs:
-      - audio-record
+      - udisks2
 slots:
   session-dbus-interface:
     interface: dbus
