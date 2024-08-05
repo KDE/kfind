@@ -1,22 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kfind package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2024 OIS <mistresssilvara@hotmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-30 00:44+0000\n"
-"PO-Revision-Date: 2022-11-02 01:01+0700\n"
+"PO-Revision-Date: 2024-08-04 17:09+0700\n"
 "Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
-"Language-Team: Interlingue <kde-i18n-doc@kde.org>\n"
+"Language-Team: Interlingue <>\n"
 "Language: ie\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Lokalize 24.07.70\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -124,13 +123,13 @@ msgstr "Prim corespondent linea"
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Copiar li localisation"
 
 #: kfindtreeview.cpp:360
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
-msgstr ""
+msgstr "Copiar li rute del prim selectet element al Paperiere"
 
 #: kfindtreeview.cpp:365
 #, kde-format
@@ -181,30 +180,25 @@ msgid "&Named:"
 msgstr "&Nominat:"
 
 #: kftabdlg.cpp:68
-#, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "On posse usar mustres, anc «;» por separar multiplic nómines"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "Serchar &in:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "Includer &sub-fólderes"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "Correspondentie &exact"
@@ -215,15 +209,13 @@ msgid "&Browse..."
 msgstr "&Trovar..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "&Usar li index de files"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Revelar &celat files"
@@ -265,43 +257,37 @@ msgstr ""
 "i>).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Trovar omni files creat o &modificat:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&inter"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "e"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Gr&andore de file es:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Possedet per &usator:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Possedet per &gruppe:"
@@ -356,8 +342,7 @@ msgid "File &type:"
 msgstr "&Tip de file:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "Quel c&ontene textu:"
@@ -371,15 +356,13 @@ msgid ""
 msgstr ""
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "Correspondentie &exact"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "Includer &binari files"
@@ -400,8 +383,7 @@ msgid "fo&r:"
 msgstr "po&r:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "Serchar sectiones de &metainfo:"
@@ -491,7 +473,7 @@ msgstr ""
 #: kftabdlg.cpp:548
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
-msgstr ""
+msgstr "It es impossibil usar un periode de témpore minu quam 1 minute."
 
 #: kftabdlg.cpp:559
 #, kde-format
@@ -600,8 +582,7 @@ msgid "(c) 1998-2021, The KDE Developers"
 msgstr "(c) 1998-2021, Li developatores de KDE"
 
 #: main.cpp:30
-#, fuzzy, kde-format
-#| msgid "Kai Uwe Broulik"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
@@ -612,8 +593,7 @@ msgid "Current Maintainer"
 msgstr "Actual mantenetor"
 
 #: main.cpp:31
-#, fuzzy, kde-format
-#| msgid "Eric Coquelle"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
@@ -624,8 +604,7 @@ msgid "Former Maintainer"
 msgstr "Anteyan mantenetor"
 
 #: main.cpp:32
-#, fuzzy, kde-format
-#| msgid "Mark W. Webb"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "Mark W. Webb"
@@ -636,8 +615,7 @@ msgid "Developer"
 msgstr "Developator"
 
 #: main.cpp:33
-#, fuzzy, kde-format
-#| msgid "Beppe Grimaldi"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "Beppe Grimaldi"
@@ -648,71 +626,61 @@ msgid "UI Design & more search options"
 msgstr "Dessine del interfacie e plu optiones de sercha"
 
 #: main.cpp:34
-#, fuzzy, kde-format
-#| msgid "Martin Hartig"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "Martin Hartig"
 
 #: main.cpp:35
-#, fuzzy, kde-format
-#| msgid "Stephan Kulow"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "Stephan Kulow"
 
 #: main.cpp:36
-#, fuzzy, kde-format
-#| msgid "Mario Weilguni"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "Mario Weilguni"
 
 #: main.cpp:37
-#, fuzzy, kde-format
-#| msgid "Alex Zepeda"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "Alex Zepeda"
 
 #: main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Miroslav Flídr"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
 #: main.cpp:39
-#, fuzzy, kde-format
-#| msgid "Harri Porten"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "Harri Porten"
 
 #: main.cpp:40
-#, fuzzy, kde-format
-#| msgid "Dima Rogozin"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "Dima Rogozin"
 
 #: main.cpp:41
-#, fuzzy, kde-format
-#| msgid "Carsten Pfeiffer"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
 #: main.cpp:42
-#, fuzzy, kde-format
-#| msgid "Hans Petter Bieker"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "Hans Petter Bieker"
 
 #: main.cpp:43
-#, fuzzy, kde-format
-#| msgid "Waldo Bastian"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
@@ -723,15 +691,13 @@ msgid "UI Design"
 msgstr "Dessin de interfacie"
 
 #: main.cpp:44
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
 #: main.cpp:45
-#, fuzzy, kde-format
-#| msgid "Clarence Dang"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
