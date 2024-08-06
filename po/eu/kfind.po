@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-30 00:44+0000\n"
-"PO-Revision-Date: 2024-07-10 21:23+0200\n"
+"PO-Revision-Date: 2024-08-06 00:45+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -194,25 +194,22 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Komodinen berdintasuna erabil dezakezu, eta \";\" izenak bereizteko"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
-msgstr "Bilatu &hemen:"
+msgstr "Begiratu &hemen:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
-msgstr "&Azpikarpetak ere"
+msgstr "A&zpikarpetak barne"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
-msgstr "Bereizi &maiuskula/minuskulak"
+msgstr "Maius/minus b&ereizitako bilaketa"
 
 #: kftabdlg.cpp:79
 #, kde-format
@@ -220,18 +217,16 @@ msgid "&Browse..."
 msgstr "&Arakatu..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
-msgstr "&Erabili fitxategien indizea"
+msgstr "Era&bili fitxategien indizea"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
-msgstr "Erakutsi e&zkutuko fitxategiak"
+msgstr "Erakutsi ez&kutuko fitxategiak"
 
 #: kftabdlg.cpp:100
 #, kde-format
@@ -271,46 +266,40 @@ msgstr ""
 "eguneratzea(<i>updatedb</i> erabiliz).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
-msgstr "Bilatu sortutako edo &aldatutako fitxategiak:"
+msgstr "Aurkitu sortutako edo al&datutako fitxategia denak:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&bitarte honetan:"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "eta"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Fitxategiaren &tamaina:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Fitxategien &jabea:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
-msgstr "&Taldearena:"
+msgstr "&Talde honena:"
 
 #: kftabdlg.cpp:212
 #, kde-format
@@ -362,11 +351,10 @@ msgid "File &type:"
 msgstr "Fitxategi &mota:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
-msgstr "&Testu hau duena:"
+msgstr "Testu hau &duena:"
 
 #: kftabdlg.cpp:294
 #, kde-format
@@ -381,15 +369,13 @@ msgstr ""
 "ikusteko.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
-msgstr "&Maiuskula/minuskula"
+msgstr "Maius/minus b&ereizi"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "Fitxategi &bitarrak barne"
@@ -411,8 +397,7 @@ msgid "fo&r:"
 msgstr "ha&u:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "Bilatu &metainfo atalak:"
