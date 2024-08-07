@@ -53,6 +53,9 @@ int main(int argc, char **argv)
     aboutData.setupCommandLine(&parser);
     parser.process(app);
     aboutData.processCommandLine(&parser);
+
+    KCrash::initialize();
+
     QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("kfind")));
     QUrl url;
     if (!parser.positionalArguments().isEmpty())
