@@ -13,6 +13,7 @@
 
 #include <KAboutData>
 #include <KLocalizedString>
+#include <KCrash>
 
 #include "kfinddlg.h"
 #include "kfind_version.h"
@@ -51,6 +52,9 @@ int main(int argc, char **argv)
     aboutData.setupCommandLine(&parser);
     parser.process(app);
     aboutData.processCommandLine(&parser);
+
+    KCrash::initialize();
+
     QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("kfind")));
     QUrl url;
     if (!parser.positionalArguments().isEmpty())

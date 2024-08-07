@@ -28,6 +28,7 @@ KF6::I18n
 KF6::KIOWidgets
 KF6::WidgetsAddons
 KF6::XmlGui
+KF6::Crash
 )
 if (TARGET Qt::Core5Compat)
     target_link_libraries(kfind Qt::Core5Compat)
