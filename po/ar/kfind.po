@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:44+0000\n"
+"POT-Creation-Date: 2024-08-10 00:45+0000\n"
 "PO-Revision-Date: 2024-05-25 16:58+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: \n"
@@ -626,155 +626,155 @@ msgctxt "@title:window"
 msgid "Error while using locate"
 msgstr "خطأ أثناء استخدام locate"
 
-#: main.cpp:26
+#: main.cpp:27
 #, kde-format
 msgid "KFind"
 msgstr "بحثك"
 
-#: main.cpp:27
+#: main.cpp:28
 #, kde-format
 msgid "KDE file find utility"
 msgstr "أداة كِيدِي للبحث عن الملفات"
 
-#: main.cpp:28
+#: main.cpp:29
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
 msgstr "© 1998-2021 لمطوري كِيدِي"
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr "وأوف فروليك"
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgid "Current Maintainer"
 msgstr "المصين الحالي"
 
-#: main.cpp:31
+#: main.cpp:32
 #, kde-format
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "إريك كوكيلي"
 
-#: main.cpp:31
+#: main.cpp:32
 #, kde-format
 msgid "Former Maintainer"
 msgstr "المصين السّابق"
 
-#: main.cpp:32
+#: main.cpp:33
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "مارك دبليو ويب"
 
-#: main.cpp:32
+#: main.cpp:33
 #, kde-format
 msgid "Developer"
 msgstr "مطوِّر"
 
-#: main.cpp:33
+#: main.cpp:34
 #, kde-format
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "بيبي جريمالدي"
 
-#: main.cpp:33
+#: main.cpp:34
 #, kde-format
 msgid "UI Design & more search options"
 msgstr "تصميم الواجهة وخيارات بحث أكثر"
 
-#: main.cpp:34
+#: main.cpp:35
 #, kde-format
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "مارتن هارتيج"
 
-#: main.cpp:35
+#: main.cpp:36
 #, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "ستيفن كولو"
 
-#: main.cpp:36
+#: main.cpp:37
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "ماريو ويلغوني"
 
-#: main.cpp:37
+#: main.cpp:38
 #, kde-format
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "أليكس زيبيدا"
 
-#: main.cpp:38
+#: main.cpp:39
 #, kde-format
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "ميروسلاف فليدر"
 
-#: main.cpp:39
+#: main.cpp:40
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "هاري بوتن"
 
-#: main.cpp:40
+#: main.cpp:41
 #, kde-format
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "ديما روجوزين"
 
-#: main.cpp:41
+#: main.cpp:42
 #, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "كارستن فايفر"
 
-#: main.cpp:42
+#: main.cpp:43
 #, kde-format
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "هانز بيتر بيكر"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "والدو باستيان"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "UI Design"
 msgstr "تصميم الواجهة"
 
-#: main.cpp:44
+#: main.cpp:45
 #, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "ألكسندر نيوندورف"
 
-#: main.cpp:45
+#: main.cpp:46
 #, kde-format
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "كلارنس دانغ"
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "محمد سعد,زايد السعيدي"
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "metehyi@free.fr,zayed.alsaidi@gmail.com"
 
-#: main.cpp:49
+#: main.cpp:51
 #, kde-format
 msgid "Path(s) to search"
 msgstr "مسار(ات) البحث"

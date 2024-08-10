@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:44+0000\n"
+"POT-Creation-Date: 2024-08-10 00:45+0000\n"
 "PO-Revision-Date: 2010-06-10 15:16+0530\n"
 "Last-Translator: Viranch Mehta <viranch.mehta@gmail.com>\n"
 "Language-Team: Gujarati <kde-i18n-doc@kde.org>\n"
@@ -591,172 +591,172 @@ msgctxt "@title:window"
 msgid "Error while using locate"
 msgstr "લોકેટ વાપરતી વખતે ક્ષતિ"
 
-#: main.cpp:26
+#: main.cpp:27
 #, kde-format
 msgid "KFind"
 msgstr "KFind"
 
-#: main.cpp:27
+#: main.cpp:28
 #, kde-format
 msgid "KDE file find utility"
 msgstr "કેડીઇ ફાઇલ શોધ સાધન"
 
-#: main.cpp:28
+#: main.cpp:29
 #, fuzzy, kde-format
 #| msgid "(c) 1998-2003, The KDE Developers"
 msgid "(c) 1998-2021, The KDE Developers"
 msgstr "(C) ૧૯૯૮-૨૦૦૩, કેડીઇ વિકાસકર્તાઓ"
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr ""
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgid "Current Maintainer"
 msgstr "હાલનો સંભાળનાર"
 
-#: main.cpp:31
+#: main.cpp:32
 #, fuzzy, kde-format
 #| msgid "Eric Coquelle"
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "એરિક કોક્યુલે"
 
-#: main.cpp:31
+#: main.cpp:32
 #, fuzzy, kde-format
 #| msgid "Current Maintainer"
 msgid "Former Maintainer"
 msgstr "હાલનો સંભાળનાર"
 
-#: main.cpp:32
+#: main.cpp:33
 #, fuzzy, kde-format
 #| msgid "Mark W. Webb"
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "માર્ક ડબલ્યુ. વેબ"
 
-#: main.cpp:32
+#: main.cpp:33
 #, kde-format
 msgid "Developer"
 msgstr "વિકાસકર્તા"
 
-#: main.cpp:33
+#: main.cpp:34
 #, fuzzy, kde-format
 #| msgid "Beppe Grimaldi"
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "બેપ્પે ગ્રીમાલડી"
 
-#: main.cpp:33
+#: main.cpp:34
 #, kde-format
 msgid "UI Design & more search options"
 msgstr "UI રચના અને વધુ શોધ વિકલ્પો"
 
-#: main.cpp:34
+#: main.cpp:35
 #, fuzzy, kde-format
 #| msgid "Martin Hartig"
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "માર્ટિન હાર્ટિગ"
 
-#: main.cpp:35
+#: main.cpp:36
 #, fuzzy, kde-format
 #| msgid "Stephan Kulow"
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "સ્ટીફન કુલોવ"
 
-#: main.cpp:36
+#: main.cpp:37
 #, fuzzy, kde-format
 #| msgid "Mario Weilguni"
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "મારિઓ વેલ્ગુની"
 
-#: main.cpp:37
+#: main.cpp:38
 #, fuzzy, kde-format
 #| msgid "Alex Zepeda"
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "અલેક્સ ઝેપેડા"
 
-#: main.cpp:38
+#: main.cpp:39
 #, fuzzy, kde-format
 #| msgid "Miroslav Flídr"
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "મીરોસ્લેવ ફલીડ્ર"
 
-#: main.cpp:39
+#: main.cpp:40
 #, fuzzy, kde-format
 #| msgid "Harri Porten"
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "હેર્રી પોર્ટેન"
 
-#: main.cpp:40
+#: main.cpp:41
 #, fuzzy, kde-format
 #| msgid "Dima Rogozin"
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "ડિમા રોગોઝિન"
 
-#: main.cpp:41
+#: main.cpp:42
 #, fuzzy, kde-format
 #| msgid "Carsten Pfeiffer"
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "કાર્સ્ટેન ફેઇફેર"
 
-#: main.cpp:42
+#: main.cpp:43
 #, fuzzy, kde-format
 #| msgid "Hans Petter Bieker"
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "હાન્સ પીટર બેઇકેર"
 
-#: main.cpp:43
+#: main.cpp:44
 #, fuzzy, kde-format
 #| msgid "Waldo Bastian"
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "વાલ્ડો બાસ્ટિઅન"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "UI Design"
 msgstr "UI રચના"
 
-#: main.cpp:44
+#: main.cpp:45
 #, fuzzy, kde-format
 #| msgid "Alexander Neundorf"
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "એલેક્ઝાન્ડર ન્યુડ્રોફ"
 
-#: main.cpp:45
+#: main.cpp:46
 #, fuzzy, kde-format
 #| msgid "Clarence Dang"
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "કલેરેન્સે ડેન્ગ"
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Pragnesh Radadiya, કાર્તિક મિસ્ત્રી"
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "pg.radadia@gmail.com, kartik.mistry@gmail.com"
 
-#: main.cpp:49
+#: main.cpp:51
 #, kde-format
 msgid "Path(s) to search"
 msgstr "શોધ માટેના માર્ગ(ર્ગો)"

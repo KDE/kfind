@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-30 00:44+0000\n"
+"POT-Creation-Date: 2024-08-10 00:45+0000\n"
 "PO-Revision-Date: 2020-02-05 14:49+0000\n"
 "Last-Translator: Subin Siby <subins2000@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
@@ -591,165 +591,165 @@ msgctxt "@title:window"
 msgid "Error while using locate"
 msgstr "locate ഉപയോഗിക്കുമ്പോള്‍ പിശകു്"
 
-#: main.cpp:26
+#: main.cpp:27
 #, kde-format
 msgid "KFind"
 msgstr "KFind"
 
-#: main.cpp:27
+#: main.cpp:28
 #, kde-format
 msgid "KDE file find utility"
 msgstr "കെഡിഇയിലെ ഫയല്‍ തെരയുന്നതിനുള്ള പ്രയോഗം"
 
-#: main.cpp:28
+#: main.cpp:29
 #, fuzzy, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
 msgstr "(c) 1998-2003, കെഡിഇ രചയിതാക്കള്‍"
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr ""
 
-#: main.cpp:30
+#: main.cpp:31
 #, kde-format
 msgid "Current Maintainer"
 msgstr "നിലവിലുള്ള പരിപാലകന്‍"
 
-#: main.cpp:31
+#: main.cpp:32
 #, fuzzy, kde-format
 #| msgid "Eric Coquelle"
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "എറിക് കോക്വല്‍"
 
-#: main.cpp:31
+#: main.cpp:32
 #, fuzzy, kde-format
 msgid "Former Maintainer"
 msgstr "നിലവിലുള്ള പരിപാലകന്‍"
 
-#: main.cpp:32
+#: main.cpp:33
 #, fuzzy, kde-format
 #| msgid "Mark W. Webb"
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "മാര്‍ക് ഡബ്ല്യൂ വെബ്"
 
-#: main.cpp:32
+#: main.cpp:33
 #, kde-format
 msgid "Developer"
 msgstr "രചയിതാവു്"
 
-#: main.cpp:33
+#: main.cpp:34
 #, fuzzy, kde-format
 #| msgid "Beppe Grimaldi"
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "ബീപ്പ് ഗ്രിമാള്‍ഡി"
 
-#: main.cpp:33
+#: main.cpp:34
 #, kde-format
 msgid "UI Design & more search options"
 msgstr "യുഐ ഡിസൈനും കൂടുതല്‍ തെരച്ചില്‍ രീതികളും"
 
-#: main.cpp:34
+#: main.cpp:35
 #, fuzzy, kde-format
 #| msgid "Martin Hartig"
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "മാര്‍ട്ടിന്‍ ഹാര്‍ട്ടിഗ്"
 
-#: main.cpp:35
+#: main.cpp:36
 #, fuzzy, kde-format
 #| msgid "Stephan Kulow"
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "സ്റ്റീഫന്‍ കുലൌ"
 
-#: main.cpp:36
+#: main.cpp:37
 #, fuzzy, kde-format
 #| msgid "Mario Weilguni"
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "മാറിയോ വെയില്‍ഗുനി"
 
-#: main.cpp:37
+#: main.cpp:38
 #, fuzzy, kde-format
 #| msgid "Alex Zepeda"
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "അലക്സ് സെപ്പെഡാ"
 
-#: main.cpp:38
+#: main.cpp:39
 #, fuzzy, kde-format
 #| msgid "Miroslav Flídr"
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "മിറോസ്ലാവ് ഫ്ലിഡര്‍"
 
-#: main.cpp:39
+#: main.cpp:40
 #, fuzzy, kde-format
 #| msgid "Harri Porten"
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "ഹാരി പോര്‍ട്ടന്‍"
 
-#: main.cpp:40
+#: main.cpp:41
 #, fuzzy, kde-format
 #| msgid "Dima Rogozin"
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "ഡിമോ റോഗോസിന്‍"
 
-#: main.cpp:41
+#: main.cpp:42
 #, fuzzy, kde-format
 #| msgid "Carsten Pfeiffer"
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "കാര്‍സ്റ്റന്‍ ഫൈഫെര്‍"
 
-#: main.cpp:42
+#: main.cpp:43
 #, fuzzy, kde-format
 #| msgid "Hans Petter Bieker"
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "ഹാന്‍സ് പെറ്റര്‍ ബെയിക്കര്‍"
 
-#: main.cpp:43
+#: main.cpp:44
 #, fuzzy, kde-format
 #| msgid "Waldo Bastian"
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "വാള്‍ഡോ ബാസ്റ്റന്‍"
 
-#: main.cpp:43
+#: main.cpp:44
 #, kde-format
 msgid "UI Design"
 msgstr "യുഐ ഡിസൈന്‍"
 
-#: main.cpp:44
+#: main.cpp:45
 #, fuzzy, kde-format
 #| msgid "Alexander Neundorf"
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "അലക്സാണ്ടര്‍ ന്യൂണ്‍ഡോര്‍ഫ്"
 
-#: main.cpp:45
+#: main.cpp:46
 #, fuzzy, kde-format
 #| msgid "Clarence Dang"
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "ക്ലാറന്‍സ് ഡാങ്"
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 "അനി പീറ്റര്‍, ഹരി വിഷ്ണു,ഷിജു അലക്സ്,ശങ്കരനാരായണന്‍ എന്‍ എം,വിവേക് കെ.ജെ.,Emmanuantony Jose"
 
-#: main.cpp:46
+#: main.cpp:47
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
@@ -757,7 +757,7 @@ msgstr ""
 "peter.ani@gmail.com,harivishnu@gmail.com,shijualexonline@gmail.com,"
 "snalledam@dataone.in,vivekkj2004@gmail.com,"
 
-#: main.cpp:49
+#: main.cpp:51
 #, kde-format
 msgid "Path(s) to search"
 msgstr "തെരയേണ്ട പാത്ത്"
