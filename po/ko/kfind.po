@@ -1,6 +1,6 @@
 # Tranalation of kfindpart to Korean.
 # Copyright (C) 2007 Free Software Foundation, Inc.
-# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2016, 2017, 2018, 2019, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024 Shinjo Park <kde@peremen.name>
 # Minori Hiraoka <minori@mnetwork.co.kr>, 2018.
 #
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-10 00:45+0000\n"
-"PO-Revision-Date: 2023-04-22 00:51+0200\n"
+"PO-Revision-Date: 2024-08-19 23:15+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -180,35 +180,30 @@ msgid "&Named:"
 msgstr "이름(&N):"
 
 #: kftabdlg.cpp:68
-#, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
-"와일드카드를 사용할 수 있으며, 세미콜론(;)을 사용하여 여러 이름을 구분할 수 "
-"있습니다"
+"와일드카드를 사용할 수 있으며, 쌍반점(;)을 사용하여 여러 이름을 구분할 수 있"
+"습니다"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "다음에서 찾기(&I):"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
-msgstr "하위 디렉터리 포함하기(&S)"
+msgstr "하위 디렉터리 포함(&S)"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
-msgstr "대소문자 구별하기(&E)"
+msgstr "대소문자 구별(&E)"
 
 #: kftabdlg.cpp:79
 #, kde-format
@@ -216,15 +211,13 @@ msgid "&Browse..."
 msgstr "찾아보기(&B)..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
-msgstr "파일 색인 사용하기(&U)"
+msgstr "파일 색인 사용(&U)"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "숨김 파일 표시(&H)"
@@ -243,16 +236,15 @@ msgid ""
 "between</li><li><b>My Document.kwd</b> finds a file of exactly that name</"
 "li></ul></qt>"
 msgstr ""
-"<qt>찾고 계신 파일 이름을 입력하십시오.<br />여러 가지 이름의 파일을 찾으시려"
-"면 세미콜론 \";\"으로 구분해서 입력할 수 있습니다.<br /><br />파일 이름에는 "
-"다음 특수 문자가 들어갈 수 있습니다:<ul><li><b>?</b>는 임의의 한 문자와 일치"
-"합니다.</li><li><b>*</b>는 임의의 0개 이상의 문자와 일치합니다.</"
-"li><li><b>[...]은 괄호 안에 있는 임의의 문자와 일치합니다.</b></li></ul>예제:"
-"<ul><li><b>*.kwd;*.txt</b>는 .kwd나 .txt로 끝나는 모든 파일을 찾습니다.</"
-"li><li><b>go[dt]</b>는 god 또는 got을 찾습니다.</li><li><b>Hel?o</b>는 \"Hel"
-"\"로 시작하고 \"o\"로 끝나는 단어 중 이들 사이에 정확히 한 글자가 있는 것을 "
-"찾습니다.</li><li><b>My Document.kwd</b>는 My Document.kwd 파일을 찾습니다.</"
-"li></ul></qt>"
+"<qt>찾으려고 하는 파일 이름을 입력하십시오.<br />이름이 여러 종류라면 쌍반점 "
+"\";\"으로 구분해서 입력할 수 있습니다.<br /><br />파일 이름에는 다음 특수 문"
+"자가 들어갈 수 있습니다:<ul><li><b>?</b>는 임의의 한 문자와 일치합니다.</"
+"li><li><b>*</b>는 임의의 0개 이상의 문자와 일치합니다.</li><li><b>[...]은 괄"
+"호 안에 있는 임의의 문자와 일치합니다.</b></li></ul>예제:<ul><li><b>*.kwd;*."
+"txt</b>는 .kwd나 .txt로 끝나는 모든 파일을 찾습니다.</li><li><b>go[dt]</b>는 "
+"god 또는 got을 찾습니다.</li><li><b>Hel?o</b>는 \"Hel\"로 시작하고 \"o\"로 끝"
+"나는 단어 중 이들 사이에 정확히 한 글자가 있는 것을 찾습니다.</li><li><b>My "
+"Document.kwd</b>는 My Document.kwd 파일을 찾습니다.</li></ul></qt>"
 
 #: kftabdlg.cpp:121
 #, kde-format
@@ -265,43 +257,37 @@ msgstr ""
 "용해서 주기적으로 데이터베이스를 업데이트하십시오.</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "다음 기간 중에 만들어졌거나 수정된 모든 파일 찾기(&M):"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "다음 기간 사이(&B)"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
-msgstr "부터"
+msgstr " 그리고 "
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "파일 크기(&S):"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "파일 소유자(&U):"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "파일 소유 그룹(&G):"
@@ -355,8 +341,7 @@ msgid "File &type:"
 msgstr "파일 형식(&T):"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "다음 문자열 포함(&O):"
@@ -373,15 +358,13 @@ msgstr ""
 "참고하십시오.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "대소문자 구별(&E)"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "바이너리 파일 포함(&B)"
@@ -402,8 +385,7 @@ msgid "fo&r:"
 msgstr "다음에서(&R):"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "메타 정보 검색(&M):"
@@ -599,8 +581,7 @@ msgid "(c) 1998-2021, The KDE Developers"
 msgstr "(c) 1998-2021, The KDE Developers"
 
 #: main.cpp:31
-#, fuzzy, kde-format
-#| msgid "Kai Uwe Broulik"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
@@ -611,8 +592,7 @@ msgid "Current Maintainer"
 msgstr "현재 관리자"
 
 #: main.cpp:32
-#, fuzzy, kde-format
-#| msgid "Eric Coquelle"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
@@ -623,8 +603,7 @@ msgid "Former Maintainer"
 msgstr "이전 관리자"
 
 #: main.cpp:33
-#, fuzzy, kde-format
-#| msgid "Mark W. Webb"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "Mark W. Webb"
@@ -635,8 +614,7 @@ msgid "Developer"
 msgstr "개발자"
 
 #: main.cpp:34
-#, fuzzy, kde-format
-#| msgid "Beppe Grimaldi"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "Beppe Grimaldi"
@@ -647,71 +625,61 @@ msgid "UI Design & more search options"
 msgstr "UI 디자인, 더 많은 검색 옵션"
 
 #: main.cpp:35
-#, fuzzy, kde-format
-#| msgid "Martin Hartig"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "Martin Hartig"
 
 #: main.cpp:36
-#, fuzzy, kde-format
-#| msgid "Stephan Kulow"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "Stephan Kulow"
 
 #: main.cpp:37
-#, fuzzy, kde-format
-#| msgid "Mario Weilguni"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "Mario Weilguni"
 
 #: main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Alex Zepeda"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "Alex Zepeda"
 
 #: main.cpp:39
-#, fuzzy, kde-format
-#| msgid "Miroslav Flídr"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
 #: main.cpp:40
-#, fuzzy, kde-format
-#| msgid "Harri Porten"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "Harri Porten"
 
 #: main.cpp:41
-#, fuzzy, kde-format
-#| msgid "Dima Rogozin"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "Dima Rogozin"
 
 #: main.cpp:42
-#, fuzzy, kde-format
-#| msgid "Carsten Pfeiffer"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
 #: main.cpp:43
-#, fuzzy, kde-format
-#| msgid "Hans Petter Bieker"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "Hans Petter Bieker"
 
 #: main.cpp:44
-#, fuzzy, kde-format
-#| msgid "Waldo Bastian"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
@@ -722,15 +690,13 @@ msgid "UI Design"
 msgstr "UI 디자인"
 
 #: main.cpp:45
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "Clarence Dang"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
