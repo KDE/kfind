@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-10 00:45+0000\n"
-"PO-Revision-Date: 2024-05-25 09:25+0200\n"
+"PO-Revision-Date: 2024-08-01 16:11+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -211,22 +211,19 @@ msgstr ""
 "séparer plusieurs noms"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "Regarder &dans :"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "Inclure les &sous-dossiers"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "R&echerche sensible à la casse"
@@ -237,15 +234,13 @@ msgid "&Browse..."
 msgstr "&Parcourir..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "&Utiliser l'index de fichiers"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Afficher les fic&hiers cachés"
@@ -289,46 +284,40 @@ msgstr ""
 "l'index de temps en temps (en utilisant <i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Recherchez tous les fichiers créés ou &modifiés :"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&entre"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "et"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Dont la taille de fichier e&st :"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
-msgstr "Qui sont propriété de l'&utilisateur :"
+msgstr "Fichiers appartenant à l'&utilisateur :"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
-msgstr "Qui sont propriété du &groupe :"
+msgstr "Appartenant au &groupe :"
 
 #: kftabdlg.cpp:212
 #, kde-format
@@ -380,8 +369,7 @@ msgid "File &type:"
 msgstr "&Type du fichier :"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "C&ontenant le texte :"
@@ -399,18 +387,16 @@ msgstr ""
 "une liste des types de fichiers pris en charge.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
-msgstr "R&especter la casse"
+msgstr "Avec r&espect de la casse"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
-msgstr "Inclure les fichiers &binaires"
+msgstr "Prend en compte les fichiers &binaires"
 
 #: kftabdlg.cpp:306
 #, kde-format
@@ -430,11 +416,10 @@ msgstr "d&e : "
 
 # unreviewed-context
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "Chercher dans les sections de &méta-données :"
+msgstr "Rechercher dans les sections de &méta-données :"
 
 #: kftabdlg.cpp:319
 #, kde-format
