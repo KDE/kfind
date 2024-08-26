@@ -186,29 +186,24 @@ msgstr "Med &navn:"
 
 #: kftabdlg.cpp:68
 #, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Du kan bruke jokertegn, og «;» som skille mellom flere navn"
 
 #: kftabdlg.cpp:74
 #, fuzzy, kde-format
-#| msgid "Look &in:"
 msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "Let &i:"
 
 #: kftabdlg.cpp:77
 #, fuzzy, kde-format
-#| msgid "Include &subfolders"
 msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "Ta med &undermapper"
 
 #: kftabdlg.cpp:78
 #, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "Skill m&ellom små og store bokstaver"
@@ -220,14 +215,12 @@ msgstr "&Bla gjennom …"
 
 #: kftabdlg.cpp:80
 #, fuzzy, kde-format
-#| msgid "&Use files index"
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "Br&uk fil-indeks"
 
 #: kftabdlg.cpp:81
 #, fuzzy, kde-format
-#| msgid "Show &hidden files"
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Vis &skjulte filer"
@@ -269,42 +262,36 @@ msgstr ""
 
 #: kftabdlg.cpp:165
 #, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Finn alle filer laget eller &endret:"
 
 #: kftabdlg.cpp:167
 #, fuzzy, kde-format
-#| msgid "&between"
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&mellom"
 
 #: kftabdlg.cpp:169
 #, fuzzy, kde-format
-#| msgid "and"
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "og"
 
 #: kftabdlg.cpp:191
 #, fuzzy, kde-format
-#| msgid "File &size is:"
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Fil&størrelsen er:"
 
 #: kftabdlg.cpp:204
 #, fuzzy, kde-format
-#| msgid "Files owned by &user:"
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Filer som br&uker eier:"
 
 #: kftabdlg.cpp:209
 #, fuzzy, kde-format
-#| msgid "Owned by &group:"
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Filer som tilhører &gruppe:"
@@ -360,7 +347,6 @@ msgstr "Fil&type:"
 
 #: kftabdlg.cpp:288
 #, fuzzy, kde-format
-#| msgid "C&ontaining text:"
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "Inneh&older tekst:"
@@ -378,14 +364,12 @@ msgstr ""
 
 #: kftabdlg.cpp:302
 #, fuzzy, kde-format
-#| msgid "Case s&ensitive"
 msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "Skill m&ellom store og små bokstaver"
 
 #: kftabdlg.cpp:303
 #, fuzzy, kde-format
-#| msgid "Include &binary files"
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "Ta med &binærfiler"
@@ -407,7 +391,6 @@ msgstr "ette&r:"
 
 #: kftabdlg.cpp:315
 #, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "Søk i filenes &metadata:"
@@ -621,7 +604,6 @@ msgstr "Nåværende vedlikeholder"
 
 #: main.cpp:32
 #, fuzzy, kde-format
-#| msgid "Eric Coquelle"
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
@@ -633,7 +615,6 @@ msgstr "Tidligere vedlikeholder"
 
 #: main.cpp:33
 #, fuzzy, kde-format
-#| msgid "Mark W. Webb"
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "Mark W. Webb"
@@ -645,7 +626,6 @@ msgstr "Utvikler"
 
 #: main.cpp:34
 #, fuzzy, kde-format
-#| msgid "Beppe Grimaldi"
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "Beppe Grimaldi"
@@ -657,70 +637,60 @@ msgstr "Grafisk design & flere søkemuligheter"
 
 #: main.cpp:35
 #, fuzzy, kde-format
-#| msgid "Martin Hartig"
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "Martin Hartig"
 
 #: main.cpp:36
 #, fuzzy, kde-format
-#| msgid "Stephan Kulow"
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "Stephan Kulow"
 
 #: main.cpp:37
 #, fuzzy, kde-format
-#| msgid "Mario Weilguni"
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "Mario Weilguni"
 
 #: main.cpp:38
 #, fuzzy, kde-format
-#| msgid "Alex Zepeda"
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "Alex Zepeda"
 
 #: main.cpp:39
 #, fuzzy, kde-format
-#| msgid "Miroslav Flídr"
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
 #: main.cpp:40
 #, fuzzy, kde-format
-#| msgid "Harri Porten"
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "Harri Porten"
 
 #: main.cpp:41
 #, fuzzy, kde-format
-#| msgid "Dima Rogozin"
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "Dima Rogozin"
 
 #: main.cpp:42
 #, fuzzy, kde-format
-#| msgid "Carsten Pfeiffer"
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
 #: main.cpp:43
 #, fuzzy, kde-format
-#| msgid "Hans Petter Bieker"
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "Hans Petter Bieker"
 
 #: main.cpp:44
 #, fuzzy, kde-format
-#| msgid "Waldo Bastian"
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
@@ -732,14 +702,12 @@ msgstr "UI-design"
 
 #: main.cpp:45
 #, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
 #: main.cpp:46
 #, fuzzy, kde-format
-#| msgid "Clarence Dang"
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "Clarence Dang"

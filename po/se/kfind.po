@@ -183,29 +183,24 @@ msgstr ""
 
 #: kftabdlg.cpp:68
 #, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Don sáhtát geavahit jokermearkkaid ja «;» sirrendihte máŋga nama."
 
 #: kftabdlg.cpp:74
 #, fuzzy, kde-format
-#| msgid "Look &in:"
 msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "&Oza dáppe:"
 
 #: kftabdlg.cpp:77
 #, fuzzy, kde-format
-#| msgid "Include &subfolders"
 msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "&Maiddái vuollemáhpain"
 
 #: kftabdlg.cpp:78
 #, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "&Stuorra ja smávva bustávaid earuheapmi"
@@ -217,7 +212,6 @@ msgstr "&Bláđđe …"
 
 #: kftabdlg.cpp:80
 #, fuzzy, kde-format
-#| msgid "&Use files index"
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "&Geavat fiila-listtu"
@@ -256,42 +250,36 @@ msgstr ""
 
 #: kftabdlg.cpp:165
 #, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Oza buot fiillaid mat leat ráhkaduvvon dahje &rievdaduvvon:"
 
 #: kftabdlg.cpp:167
 #, fuzzy, kde-format
-#| msgid "&between"
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&gaskkal"
 
 #: kftabdlg.cpp:169
 #, fuzzy, kde-format
-#| msgid "and"
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "ja"
 
 #: kftabdlg.cpp:191
 #, fuzzy, kde-format
-#| msgid "File &size is:"
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Fiila &sturrodat lea:"
 
 #: kftabdlg.cpp:204
 #, fuzzy, kde-format
-#| msgid "Files owned by &user:"
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Fiillaid &eaiggát:"
 
 #: kftabdlg.cpp:209
 #, fuzzy, kde-format
-#| msgid "Owned by &group:"
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Oamastuvvon &joavkkus:"
@@ -347,7 +335,6 @@ msgstr ""
 
 #: kftabdlg.cpp:288
 #, fuzzy, kde-format
-#| msgid "C&ontaining text:"
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "Mas &lea teaksta:"
@@ -366,14 +353,12 @@ msgstr ""
 
 #: kftabdlg.cpp:302
 #, fuzzy, kde-format
-#| msgid "Case s&ensitive"
 msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "Stuorra ja s&mávva bustávaid earuheapmi"
 
 #: kftabdlg.cpp:303
 #, fuzzy, kde-format
-#| msgid "Include &binary files"
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "&Maiddái binearafiillaid"
@@ -395,7 +380,6 @@ msgstr ""
 
 #: kftabdlg.cpp:315
 #, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "Oza &metadieđu osiin:"
