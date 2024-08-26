@@ -183,8 +183,6 @@ msgstr ""
 
 #: kftabdlg.cpp:68
 #, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Don sáhtát geavahit jokermearkkaid ja «;» sirrendihte máŋga nama."
