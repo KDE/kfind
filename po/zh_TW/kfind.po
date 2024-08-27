@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-24 00:41+0000\n"
-"PO-Revision-Date: 2024-05-26 23:11+0900\n"
+"PO-Revision-Date: 2024-08-26 16:21+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -62,7 +62,7 @@ msgstr "錯誤。"
 #: kfinddlg.cpp:202
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
-msgstr "請在\"查詢\"欄中指定絕對路徑。"
+msgstr "請在「搜尋位置」欄位中指定絕對路徑。"
 
 #: kfinddlg.cpp:205
 #, kde-format
@@ -185,7 +185,7 @@ msgstr "選項 (&P)"
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
-msgstr "已命名(&N)："
+msgstr "名為(&N)："
 
 #: kftabdlg.cpp:68
 #, kde-format
@@ -402,7 +402,7 @@ msgstr "符號連結"
 #: kftabdlg.cpp:323
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
-msgstr "特別檔案 (Sockets, 設備檔案, ...)"
+msgstr "特別檔案（Socket、裝置檔案、…）"
 
 #: kftabdlg.cpp:324
 #, kde-format
@@ -552,7 +552,7 @@ msgstr[0] "年"
 #, kde-format
 msgctxt "@title:window"
 msgid "Error while using locate"
-msgstr "定位(locate)時發生錯誤"
+msgstr "使用 locate 時發生錯誤"
 
 #: main.cpp:26
 #, kde-format
@@ -694,13 +694,15 @@ msgstr "Clarence Dang"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Paladin Liu,Hydonsingore Sie"
+msgstr "Paladin Liu,Hydonsingore Sie,Kisaragi Hiu"
 
 #: main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "paladin@ms1.hinet.net,hydonsingore@mail.educities.edu.tw"
+msgstr ""
+"paladin@ms1.hinet.net,hydonsingore@mail.educities.edu.tw,mail@kisaragi-hiu."
+"com"
 
 #: main.cpp:49
 #, kde-format
