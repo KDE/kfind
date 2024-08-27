@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-10 00:45+0000\n"
-"PO-Revision-Date: 2024-05-26 23:11+0900\n"
+"PO-Revision-Date: 2024-08-26 16:21+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -62,7 +62,7 @@ msgstr "錯誤。"
 #: kfinddlg.cpp:202
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
-msgstr "請在\"查詢\"欄中指定絕對路徑。"
+msgstr "請在「搜尋位置」欄位中指定絕對路徑。"
 
 #: kfinddlg.cpp:205
 #, kde-format
@@ -185,7 +185,7 @@ msgstr "選項 (&P)"
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
-msgstr "已命名(&N)："
+msgstr "名為(&N)："
 
 #: kftabdlg.cpp:68
 #, kde-format
@@ -194,22 +194,19 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "您可以使用萬用字元來進行配對，也可以使用 \";\" 來分隔不同的名稱"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
-msgstr "快速概覽(&I):"
+msgstr "搜尋位置(&I)："
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
-msgstr "一併尋找子資料夾(&S)"
+msgstr "包含子資料夾(&S)"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "搜尋區分大小寫(&C)"
@@ -220,15 +217,13 @@ msgid "&Browse..."
 msgstr "瀏覽(&B)..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "使用檔案索引(&U)"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "顯示隱藏檔(&H)"
@@ -267,46 +262,40 @@ msgstr ""
 "案索引(使用<i>updatedb</i>)。</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
-msgstr "搜尋所有建立或修改的檔案(&M):"
+msgstr "尋找所有建立時間或修改時間符合條件的檔案(&M)："
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
-msgstr "期間(&B): "
+msgstr "期間(&B)："
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "且"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "檔案大小(&S)："
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
-msgstr "使用者所擁有的檔案(&U)："
+msgstr "檔案擁有者為(&U)："
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
-msgstr "群組所擁有的檔案(&G)："
+msgstr "擁有者的群組為(&G)："
 
 #: kftabdlg.cpp:212
 #, kde-format
@@ -357,11 +346,10 @@ msgid "File &type:"
 msgstr "檔案型態(&T)："
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
-msgstr "包含內文(&O)："
+msgstr "包含文字(&O)："
 
 #: kftabdlg.cpp:294
 #, kde-format
@@ -374,15 +362,13 @@ msgstr ""
 "有支援。請參考文件，以得知所支援的檔案格 式。</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
-msgstr "尋找區分大小寫(&E)"
+msgstr "區分大小寫(&E)"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "包含二進位檔案(&S)"
@@ -403,11 +389,10 @@ msgid "fo&r:"
 msgstr "於(&R)："
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "搜尋檔案的格式資訊 (&M)："
+msgstr "搜尋檔案的中繼資料區塊(&M)："
 
 #: kftabdlg.cpp:319
 #, kde-format
@@ -432,7 +417,7 @@ msgstr "符號連結"
 #: kftabdlg.cpp:323
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
-msgstr "特別檔案 (Sockets, 設備檔案, ...)"
+msgstr "特別檔案（Socket、裝置檔案、…）"
 
 #: kftabdlg.cpp:324
 #, kde-format
@@ -582,7 +567,7 @@ msgstr[0] "年"
 #, kde-format
 msgctxt "@title:window"
 msgid "Error while using locate"
-msgstr "定位(locate)時發生錯誤"
+msgstr "使用 locate 時發生錯誤"
 
 #: main.cpp:27
 #, kde-format
@@ -724,13 +709,15 @@ msgstr "Clarence Dang"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Paladin Liu,Hydonsingore Sie"
+msgstr "Paladin Liu,Hydonsingore Sie,Kisaragi Hiu"
 
 #: main.cpp:47
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "paladin@ms1.hinet.net,hydonsingore@mail.educities.edu.tw"
+msgstr ""
+"paladin@ms1.hinet.net,hydonsingore@mail.educities.edu.tw,mail@kisaragi-hiu."
+"com"
 
 #: main.cpp:51
 #, kde-format
