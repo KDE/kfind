@@ -7,7 +7,7 @@
 # Panagiotis Papadopoulos <pano_90@gmx.net>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: kfindpart\n"
+"Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-10 00:45+0000\n"
 "PO-Revision-Date: 2023-03-17 23:11+0100\n"
