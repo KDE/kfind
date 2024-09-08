@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-24 00:41+0000\n"
-"PO-Revision-Date: 2024-05-25 08:44+0200\n"
+"PO-Revision-Date: 2024-07-30 17:33+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -582,7 +582,7 @@ msgstr "Utilidade de KDE para atopar ficheiros"
 #: main.cpp:28
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "© 1998-2021 O equipo de desenvolvemento de KDE"
+msgstr "© 1998-2021 O equipo desenvolvedor de KDE"
 
 #: main.cpp:30
 #, kde-format
