@@ -597,7 +597,7 @@ msgstr "Utilidade de KDE para atopar ficheiros"
 #: main.cpp:29
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "© 1998-2021 O equipo de desenvolvemento de KDE"
+msgstr "© 1998-2021 O equipo desenvolvedor de KDE"
 
 #: main.cpp:31
 #, kde-format
