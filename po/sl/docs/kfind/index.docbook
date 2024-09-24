@@ -1,0 +1,545 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Slovenian "INCLUDE"
+> 
+]>
+
+<book id="kfind" lang="&language;">
+
+<bookinfo>
+<title
+>Priročnik za &kfind;</title>
+
+<authorgroup>
+<author
+>&Dirk.Doerflinger; &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>Andrej</firstname
+><surname
+>Vernekar</surname
+><affiliation
+><address
+><email
+>andrej.vernekar@moj.net</email
+></address
+></affiliation
+><contrib
+>Prevod</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Dirk.Doerflinger;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>22.10.2018</date>
+<releaseinfo
+>Applications 18.12</releaseinfo>
+
+<abstract>
+<para
+>&kfind; je &kde;-jev iskalnik datotek. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>datoteka</keyword>
+<keyword
+>kfind</keyword>
+<keyword
+>najdi</keyword>
+<keyword
+>poišči</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Uvod</title>
+
+<para
+>&kfind; je &kde;-jev iskalnik datotek. </para>
+
+<sect1 id="starting">
+<title
+>Zagon &kfind;</title>
+
+<para
+>Orodje za iskanje datotek je uporabna metoda za iskanje točno določenih datotek na vašem računalniku ali pa za iskanje datotek, ki ustrezajo nekemu vzorcu, na primer iskanje datotek določenega tipa ali z določenimi črkami v imenu. Ta pripomoček si lahko naložite v &konqueror;-ju (v načinu upravljalnika z datotekami), tako da izberete <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl; <keycap
+>F</keycap
+></keycombo
+></shortcut
+><guimenu
+>Orodja</guimenu
+> <guimenuitem
+>Najdi Datoteko</guimenuitem
+></menuchoice
+> iz menija. Če želite uporabljati &kfind; kot samostojno orodje za iskanje, ga poženite z &krunner;-jem. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="using-kfind">
+<title
+>Iskanje datotek</title>
+
+<sect1 id="name-tab">
+<title
+>Zavihek Ime/Mesto</title>
+
+<para
+>Ko zaženete &kfind;, se vam bo prikazalo precej preprosto okno. V besedilno polje z oznako <guilabel
+>Ime:</guilabel
+> vpišite ime datoteke, ki jo iščete. Lahko uporabite ujemanje nadomestnih znakov in podpičje (<quote
+>;</quote
+>), da ločite več imen.</para>
+<para
+>V polje <guilabel
+>Išči v:</guilabel
+> vpišite ime mape, da izberete mesto, kjer želite iskati. To lahko storite tudi s klikom na <guibutton
+>Prebrskaj...</guibutton
+> (uporabite bljižnico <keycombo action="simul"
+>&Alt;<keycap
+>.</keycap
+></keycombo
+> ali <keycap
+>F8</keycap
+>, da preklopite prikaz skritih datotek in map), in nato pritisnite &Enter; ali kliknite na gumb <guibutton
+>Najdi</guibutton
+>. Uporabite gumb <guibutton
+>Zaustavi</guibutton
+>, da ustavite iskanje. Rezultat iskanja je mogoče shraniti v formatu &HTML; ali kot navadno besedilo z gumbom <guibutton
+>Shrani kot...</guibutton
+>.</para>
+<para
+>Če je označeno polje <guilabel
+>Vključi podmape</guilabel
+>, bodo preiskane tudi podmape, ki se nahajajo v izbrani mapi. Če omogočite način <guilabel
+>Iskanje, občutljivo na velikost črk</guilabel
+>, bo &kfind; našel le datoteke, katerih imena se natanko ujemajo z vpisanim. Omogočite možnost <guilabel
+>Pokaži skrite datoteke</guilabel
+>, da jih vključite v svoje iskanje. Če izberete <guilabel
+>Uporabi kazalo datoteke</guilabel
+>, lahko uporabite kazalo datotek, ki ga je ustvaril <quote
+>locate</quote
+> paket, da pohitrite iskanje.</para>
+<para
+>Uporabite lahko naslednje nadomestne zanke v imenih datotek ali map: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>Zvezdica <quote
+><keycap
+>*</keycap
+></quote
+></term>
+<listitem>
+<para
+>Zvezdica predstavlja poljubno število manjkajočih znakov (tudi nič), kar &eg; pomeni, da bo iskanje <filename
+>marc*</filename
+> vrnilo <filename
+>marc</filename
+>, <filename
+>marc.png</filename
+> in <filename
+> marc_must_not_read_this.kwd</filename
+>. <filename
+>mar*.kwd</filename
+> pa bo morda našel <filename
+>marketplace.kwd</filename
+> in <filename
+>marc_must_not_read_this.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Vprašaj <quote
+><keycap
+>?</keycap
+></quote
+></term>
+<listitem>
+<para
+>V nasprotju z zvezdico predstavlja vprašaj natanko en znak, tako da bo <filename
+>mar?</filename
+> našel <filename
+>marc</filename
+>, medtem ko <filename
+>marc?</filename
+> ne bo našel ničesar, saj se naše datoteke imenujejo <filename
+>marc</filename
+> in <filename
+>marc.png</filename
+>. Dodate lahko kolikor vprašaje želite, najdene bodo le datoteke, katerih ime ustreza številu znakov. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Nabor Znakov <quote
+>[...]</quote
+></term>
+<listitem>
+<para
+>To se bo ujemalo s katerim koli znakom, ki je naveden v naboru. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>Seveda pa lahko v iskalnem izrazu poljubno kombinirate več nadomestnih znakov. </para>
+
+<para
+>Rezultat vašega iskanja bo prikazan v spodnjem okvirčku. Z desnim klikom na izbrane datoteke ali mape boste odprli meni s seznamom dejanj. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>Zavihek Vsebina</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Vrsta datoteke</guilabel
+></term>
+<listitem>
+<para
+>Tukaj lahko določite vrsto datoteke, ki jo iščete. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Vsebuje besedilo</guilabel
+></term>
+<listitem>
+<para
+>Vnesite besedo ali izraz, ki ga naj vsebuje datoteka, ki jo iščete. Upoštevajte, da lahko iskanje, če to naredite v velikem imeniku ali pa označite <guilabel
+>Vključi podmape</guilabel
+>, traja zelo dolgo. </para>
+
+<note>
+<para
+>Ta možnost <emphasis
+>ne</emphasis
+> bo delovala za vse datoteke, ki so navedene pod <guilabel
+>Vrsta datoteke</guilabel
+>. Podprte so samo naslednje vrste datotek: <itemizedlist>
+<listitem
+><para
+>Besedilne datoteke, &eg; izvorna koda in datoteke <filename
+>README</filename
+></para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Writer / LibreOffice Writer</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Impress / LibreOffice Impress</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Calc / LibreOffice Calc</para
+></listitem>
+<listitem
+><para
+>Calligra Words</para
+></listitem>
+<listitem
+><para
+>Calligra Sheets</para
+></listitem>
+<listitem
+><para
+>Calligra Stage</para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Iskanje občutljivo na velikost črk</guilabel
+></term>
+<listitem>
+<para
+>Če omogočite to možnost, bo &kfind; našel le besedila v datotekah, ki se natanko ujemajo z vpisanim, na primer <userinput
+>MARC</userinput
+> se bo ujemal le z <quote
+>MARC</quote
+> in ne z <quote
+>Marc</quote
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Uporabi ujemanje v regularnih izrazih</guilabel
+></term>
+<listitem
+><para
+>Če ste namestili orodje &kregexpeditor; iz playground/utils na &kde;-jevem git strežniku, potem imate na voljo to dodatno možnost. Če bo omogočena, boste lahko iskali <firstterm
+>regexp</firstterm
+> ali regularni izraz. Regularni izrazi so način določevanja pogojev za vaše iskanje. So lahko zelo zapleteni prav tako pa so tudi zelo zmogljivi. Če ne poznate regularnih izrazov lahko izberete <guilabel
+>Uredi regularni izraz</guilabel
+>, da odprete &kregexpeditor;. To orodje vam omogoča grafično načrtovanje množice pogojev in nato ustvari izraz za vas.</para>
+
+<para
+>&kregexpeditor; je zelo uporabno orodje in se lahko uporablja skupaj z mnogimi programi &kde; poleg &kfind;. Več informacij o njem lahko najdete v njegovi lastni datoteki s pomočjo.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Vključi binarne datoteke</guilabel
+></term>
+<listitem
+><para
+>Ta možnost vam omogoča iskanje v kateri koli datoteki, ne glede na vrsto, celo v tistih, ki ponavadi ne vključujejo besedila, npr. programske datoteke in slike.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Išči po metapodatkih</guilabel
+></term>
+<listitem>
+<para
+>Ti dve polji sta namenjeni iskanju znotraj posebnih komentarjev ali metapodatkov datotek. </para>
+<para
+>Tu je nekaj primerov: </para>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>Video datoteke (avi, mp4, &etc;)</emphasis
+>: navedite neko značko (<userinput
+>Bitrate</userinput
+>, <userinput
+>Duration</userinput
+>, &etc;) in njeno vrednost, da najdete datoteke s tem parametrom v svojih metapodatkih. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Slike (png, jpeg, &etc;)</emphasis
+>: navedite neko značko (<userinput
+>Width</userinput
+>, <userinput
+>Height</userinput
+>, &etc;) in njeno vrednost, da najdete datoteke s tem parametrom v svojih metapodatkih. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Avdio datoteke (mp3, flac, &etc;)</emphasis
+>: navedite neko značko (<userinput
+>Title</userinput
+>, <userinput
+>Album</userinput
+>, &etc;) in njeno vrednost, da najdete datoteke s tem parametrom v svojih metapodatkih. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>Eknjige (epub, azw, fb2, &etc;)</emphasis
+>: navedite neko značko(<userinput
+>Title</userinput
+>, <userinput
+>Author</userinput
+>, &etc;) in njeno vrednost, da najdete datoteke s tem parametrom v svojih metapodatkih. </para>
+    </listitem>
+</itemizedlist>
+<note>
+    <para
+>Če obstaja prevod teh značk v vašem jeziku, lahko pri iskanju uporabite prevedena imena značk. </para>
+</note>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>Zavihek Lastnosti</title>
+
+<para
+>Tu lahko izpopolnite svoje iskanje. Izbirate lahko med naslednjimi izboljšavami: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Najdi vse datoteke, narejene ali spremenjene</guilabel
+></term>
+<listitem>
+<para
+>Tu lahko vnesete dva datuma, med katerima je bila datoteka ustvarjena ali spremenjena, ali pa navedete časovno obdobje. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Velikost je</guilabel
+></term>
+<listitem>
+<para
+>Tu lahko določite, ali mora biti datoteka vsaj, največ ali enako velika, kot ste vnesli v sledeče polje. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Lasti si jo uporabnik</guilabel
+>, <guilabel
+>Lasti si jo skupina</guilabel
+></term>
+<listitem>
+<para
+>Tu lahko navedete ime uporabnika ali skupine, ki so lastniki datotek. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Zasluge in Licenca</title>
+
+<para
+>&kfind; </para>
+
+<para
+>Avtorske pravice (copyright): </para>
+
+<itemizedlist>
+<title
+>Razvijalci</title>
+<listitem>
+<para
+>Martin Hartig</para>
+</listitem>
+
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Mario.Weilguni; &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Alex.Zepeda; <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>Miroslav Flídr <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Harri.Porten; &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Dima Rogozin <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>Hans Petter Bieker <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Waldo.Bastian; &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>Avtorske pravice dokumentacije 2001 &Dirk.Doerflinger; &Dirk.Doerflinger.mail;</para
+> 
+
+<para
+>Prevod: Andrej Vernekar<email
+>andrej.vernekar@moj.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->
