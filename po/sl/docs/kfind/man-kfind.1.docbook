@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Slovenian "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>uporabniški priročnik za kfind</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>5.11.2016</date>
+<releaseinfo
+>Applications 16.12</releaseinfo>
+<productname
+>KDE Applications</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>&kde;-jev pripomoček za iskanje datotek</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>searchpath</option
+></group
+> <arg choice="opt"
+>options</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>Opis</title>
+<para
+>Orodje za Iskanje Datotek je uporabna metoda iskanja za specifične datoteke na vašem računalniku ali za iskanje datotek, ki ustrezajo vzorcu, npr. lahko iščemo datoteke določene vrste ali z določenimi znaki v imenu ali tiste, ki imajo določen del besedila v svoji vsebini.</para
+> 
+<para
+>&kfind; je grafično orodje in ponavadi ni zagnan iz ukazne vrstice.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>Možnosti</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>pot iskanja</option
+></term>
+<listitem
+><para
+>Po želji lahko navedete pot za vnaprejšnje izpolnjevanje pogovornega okna, kjer želite začeti iskanje.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>Glej tudi</title>
+<simplelist>
+<member
+>Bolj podrobna uporabniška dokumentacija je dostopna preko <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (lahko vnesete ta <acronym
+>URL</acronym
+> v &konqueror; ali pa zaženete <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</member>
+<member
+>kf6options(7)</member>
+<member
+>qt6options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>Avtorji</title>
+<para
+>Seznam sodelavcev je dostopen na popolnem uporabniškem priročniku, ki je dostopen na khelpcenter.</para>
+<para
+>To dokumentacijo je pripravil/a &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>
