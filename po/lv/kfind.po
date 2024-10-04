@@ -13,14 +13,14 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-10 00:45+0000\n"
-"PO-Revision-Date: 2024-05-28 10:29+0300\n"
-"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"PO-Revision-Date: 2024-10-01 19:00+0300\n"
+"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.08.0\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
@@ -28,7 +28,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Find Files/Folders"
-msgstr "Atrodi datnes/mapes"
+msgstr "Atrodiet datnes/mapes"
 
 #: kfinddlg.cpp:48 kfinddlg.cpp:197
 #, kde-format
@@ -194,22 +194,19 @@ msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Varat lietot aizstājējzīmes un ';', lai atdalītu vairākus nosaukumus"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "&Meklēšanas vieta:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
-msgstr "Ietverot &apakšmapes"
+msgstr "Ietvert &apakšmapes"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "R&eģistrjutīga meklēšana"
@@ -220,15 +217,13 @@ msgid "&Browse..."
 msgstr "&Pārlūkot..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "&Lietot datņu indeksu"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Rādīt &slēptās datnes"
@@ -270,43 +265,37 @@ msgstr ""
 "indeksu (lietojot <i>updatedb</i> komandu).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
-msgstr "&Meklēt datnes, kas ir izveidotas vai mainītas:"
+msgstr "Meklēt visas izveidotās vai &mainītās datnes:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&starp"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "un"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Datnes i&zmērs ir:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "D&atnes īpašnieks ir:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Pieder &grupai:"
@@ -362,8 +351,7 @@ msgid "File &type:"
 msgstr "&Datnes tips:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "&Satur tekstu:"
@@ -380,15 +368,13 @@ msgstr ""
 "datņu tipi ir minēti dokumentācijā.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "&Reģistrjutīga meklēšana"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "&Iekļaut binārās datnes"
@@ -409,11 +395,10 @@ msgid "fo&r:"
 msgstr "&atslēgvārdu:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "&Meklēt metainformācijas sadaļās:"
+msgstr "&Meklēt metadatu sadaļās:"
 
 #: kftabdlg.cpp:319
 #, kde-format
