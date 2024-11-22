@@ -92,7 +92,12 @@ KfindDlg::KfindDlg(const QUrl &url, QWidget *parent)
     connect(query, &KQuery::result, this, &KfindDlg::slotResult);
     connect(query, &KQuery::foundFileList, this, &KfindDlg::addFiles);
 
-    KHelpMenu *helpMenu = new KHelpMenu(this, KAboutData::applicationData(), true);
+#if KXMLGUI_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+    auto helpMenu = new KHelpMenu(this, KAboutData::applicationData());
+    helpMenu->setShowWhatsThis(true);
+#else
+    auto helpMenu = new KHelpMenu(this, KAboutData::applicationData(), true);
+#endif
     buttonBox->button(QDialogButtonBox::Help)->setMenu(helpMenu->menu());
     dirwatch = nullptr;
     
