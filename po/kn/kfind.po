@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-10 00:45+0000\n"
+"POT-Creation-Date: 2024-11-23 00:43+0000\n"
 "PO-Revision-Date: 2010-01-28 22:50+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn-IN <>\n"
@@ -26,46 +26,46 @@ msgctxt "@title:window"
 msgid "Find Files/Folders"
 msgstr "ಕಡತಗಳನ್ನು/ಕಡತಕೋಶಗಳನ್ನು ಹುಡುಕು"
 
-#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#: kfinddlg.cpp:48 kfinddlg.cpp:202
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
 msgstr "ನಿಶ್ಚಲ."
 
 #. i18n as below
-#: kfinddlg.cpp:133
+#: kfinddlg.cpp:138
 #, fuzzy, kde-format
 #| msgid "one file found"
 #| msgid_plural "%1 files found"
 msgid "0 items found"
 msgstr "ಒಂದು ಕಡತ ಕಂಡುಬಂದಿದೆ"
 
-#: kfinddlg.cpp:172
+#: kfinddlg.cpp:177
 #, kde-format
 msgid "Searching..."
 msgstr "ಹುಡುಕಲಾಗುತ್ತಿದೆ..."
 
-#: kfinddlg.cpp:199
+#: kfinddlg.cpp:204
 #, kde-format
 msgid "Canceled."
 msgstr "ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ."
 
-#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#: kfinddlg.cpp:206 kfinddlg.cpp:209 kfinddlg.cpp:212
 #, kde-format
 msgid "Error."
 msgstr "ದೋಷ."
 
-#: kfinddlg.cpp:202
+#: kfinddlg.cpp:207
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
 msgstr "ದಯವಿಟ್ಟು \"ಇದರಲ್ಲಿ ನೋಡು\" ಚೌಕದಲ್ಲಿ ಸಂಪೂರ್ಣ ಮಾರ್ಗವನ್ನು ಸೂಚಿಸಿ."
 
-#: kfinddlg.cpp:205
+#: kfinddlg.cpp:210
 #, kde-format
 msgid "Could not find the specified folder."
 msgstr "ಸೂಚಿಸಲಾದ ಕಡತಕೋಶವನ್ನು ಹುಡುಕಲಾಗಿಲ್ಲ."
 
-#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#: kfinddlg.cpp:233 kfinddlg.cpp:257
 #, fuzzy, kde-format
 #| msgid "one file found"
 #| msgid_plural "%1 files found"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-10 00:45+0000\n"
+"POT-Creation-Date: 2024-11-23 00:43+0000\n"
 "PO-Revision-Date: 2011-08-12 10:36+0200\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -25,46 +25,46 @@ msgctxt "@title:window"
 msgid "Find Files/Folders"
 msgstr "Dateien/Ornern söken"
 
-#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#: kfinddlg.cpp:48 kfinddlg.cpp:202
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
 msgstr "Deit nix."
 
 #. i18n as below
-#: kfinddlg.cpp:133
+#: kfinddlg.cpp:138
 #, fuzzy, kde-format
 #| msgid "one file found"
 #| msgid_plural "%1 files found"
 msgid "0 items found"
 msgstr "Een Datei funnen"
 
-#: kfinddlg.cpp:172
+#: kfinddlg.cpp:177
 #, kde-format
 msgid "Searching..."
 msgstr "An't Söken..."
 
-#: kfinddlg.cpp:199
+#: kfinddlg.cpp:204
 #, kde-format
 msgid "Canceled."
 msgstr "Afbraken."
 
-#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#: kfinddlg.cpp:206 kfinddlg.cpp:209 kfinddlg.cpp:212
 #, kde-format
 msgid "Error."
 msgstr "Fehler."
 
-#: kfinddlg.cpp:202
+#: kfinddlg.cpp:207
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
 msgstr "Bitte giff bi \"Söök in\" en helen Padd an."
 
-#: kfinddlg.cpp:205
+#: kfinddlg.cpp:210
 #, kde-format
 msgid "Could not find the specified folder."
 msgstr "De angeven Orner lett sik nich finnen."
 
-#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#: kfinddlg.cpp:233 kfinddlg.cpp:257
 #, fuzzy, kde-format
 #| msgid "one file found"
 #| msgid_plural "%1 files found"

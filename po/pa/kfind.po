@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-10 00:45+0000\n"
+"POT-Creation-Date: 2024-11-23 00:43+0000\n"
 "PO-Revision-Date: 2024-02-10 10:40-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -24,44 +24,44 @@ msgctxt "@title:window"
 msgid "Find Files/Folders"
 msgstr "ਫਾਇਲਾਂ/ਫੋਲਡਰ ਖੋਜ"
 
-#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#: kfinddlg.cpp:48 kfinddlg.cpp:202
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
 msgstr "ਵੇਹਲਾ।"
 
 #. i18n as below
-#: kfinddlg.cpp:133
+#: kfinddlg.cpp:138
 #, kde-format
 msgid "0 items found"
 msgstr "0 ਚੀਜ਼ ਲੱਭੀ"
 
-#: kfinddlg.cpp:172
+#: kfinddlg.cpp:177
 #, kde-format
 msgid "Searching..."
 msgstr "ਖੋਜ ਜਾਰੀ ਹੈ..."
 
-#: kfinddlg.cpp:199
+#: kfinddlg.cpp:204
 #, kde-format
 msgid "Canceled."
 msgstr "ਰੱਦ ਕੀਤਾ।"
 
-#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#: kfinddlg.cpp:206 kfinddlg.cpp:209 kfinddlg.cpp:212
 #, kde-format
 msgid "Error."
 msgstr "ਗਲਤੀ ਹੈ।"
 
-#: kfinddlg.cpp:202
+#: kfinddlg.cpp:207
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
 msgstr "\"ਇਸ ਵਿੱਚ ਖੋਜ\" ਬਕਸੇ ਵਿੱਚ ਪੂਰਾ ਮਾਰਗ ਦਿਓ ਜੀ।"
 
-#: kfinddlg.cpp:205
+#: kfinddlg.cpp:210
 #, kde-format
 msgid "Could not find the specified folder."
 msgstr "ਦਿੱਤਾ ਫੋਲਡਰ ਨਹੀਂ ਲੱਭਾ ਜਾ ਸਕਿਆ ਹੈ।"
 
-#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#: kfinddlg.cpp:233 kfinddlg.cpp:257
 #, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"

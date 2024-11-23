@@ -1,6 +1,6 @@
 # translation of kfindpart.po to Polish
 # translation of kfindpart.po to
-# Version: $Revision: 1687215 $
+# Version: $Revision: 1695756 $
 # Copyright (C) 2002,2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
 # Marcin Giedz <mgiedz@elka.pw.edu.pl>, 2002.
 # Michal Rudolf <mrudolf@kdewebdev.org>, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-10 00:45+0000\n"
+"POT-Creation-Date: 2024-11-23 00:43+0000\n"
 "PO-Revision-Date: 2024-08-03 11:50+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -31,44 +31,44 @@ msgctxt "@title:window"
 msgid "Find Files/Folders"
 msgstr "Znajdź pliki/katalogi"
 
-#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#: kfinddlg.cpp:48 kfinddlg.cpp:202
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
 msgstr "Bezczynny."
 
 #. i18n as below
-#: kfinddlg.cpp:133
+#: kfinddlg.cpp:138
 #, kde-format
 msgid "0 items found"
 msgstr "Znaleziono 0 elementów"
 
-#: kfinddlg.cpp:172
+#: kfinddlg.cpp:177
 #, kde-format
 msgid "Searching..."
 msgstr "Wyszukiwanie...."
 
-#: kfinddlg.cpp:199
+#: kfinddlg.cpp:204
 #, kde-format
 msgid "Canceled."
 msgstr "Porzucono."
 
-#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#: kfinddlg.cpp:206 kfinddlg.cpp:209 kfinddlg.cpp:212
 #, kde-format
 msgid "Error."
 msgstr "Błąd."
 
-#: kfinddlg.cpp:202
+#: kfinddlg.cpp:207
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
 msgstr "Podaj bezwzględną ścieżkę w polu \"Szukaj w\"."
 
-#: kfinddlg.cpp:205
+#: kfinddlg.cpp:210
 #, kde-format
 msgid "Could not find the specified folder."
 msgstr "Nie można znaleźć podanego katalogu."
 
-#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#: kfinddlg.cpp:233 kfinddlg.cpp:257
 #, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"

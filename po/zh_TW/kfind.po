@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-10 00:45+0000\n"
+"POT-Creation-Date: 2024-11-23 00:43+0000\n"
 "PO-Revision-Date: 2024-08-26 16:21+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -32,44 +32,44 @@ msgctxt "@title:window"
 msgid "Find Files/Folders"
 msgstr "尋找檔案/資料夾"
 
-#: kfinddlg.cpp:48 kfinddlg.cpp:197
+#: kfinddlg.cpp:48 kfinddlg.cpp:202
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
 msgstr "閒置。"
 
 #. i18n as below
-#: kfinddlg.cpp:133
+#: kfinddlg.cpp:138
 #, kde-format
 msgid "0 items found"
 msgstr "找到 0 個項目"
 
-#: kfinddlg.cpp:172
+#: kfinddlg.cpp:177
 #, kde-format
 msgid "Searching..."
 msgstr "正在搜尋..."
 
-#: kfinddlg.cpp:199
+#: kfinddlg.cpp:204
 #, kde-format
 msgid "Canceled."
 msgstr "已取消。"
 
-#: kfinddlg.cpp:201 kfinddlg.cpp:204 kfinddlg.cpp:207
+#: kfinddlg.cpp:206 kfinddlg.cpp:209 kfinddlg.cpp:212
 #, kde-format
 msgid "Error."
 msgstr "錯誤。"
 
-#: kfinddlg.cpp:202
+#: kfinddlg.cpp:207
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
 msgstr "請在「搜尋位置」欄位中指定絕對路徑。"
 
-#: kfinddlg.cpp:205
+#: kfinddlg.cpp:210
 #, kde-format
 msgid "Could not find the specified folder."
 msgstr "無法找到指定的目錄。"
 
-#: kfinddlg.cpp:228 kfinddlg.cpp:252
+#: kfinddlg.cpp:233 kfinddlg.cpp:257
 #, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
