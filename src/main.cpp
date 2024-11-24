@@ -47,7 +47,6 @@ int main(int argc, char **argv)
     aboutData.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
     QCommandLineParser parser;
     KAboutData::setApplicationData(aboutData);
-    KCrash::initialize();
     parser.addOption(QCommandLineOption(QStringList() <<  QStringLiteral("+[searchpath]"), i18n("Path(s) to search")));
 
     aboutData.setupCommandLine(&parser);
