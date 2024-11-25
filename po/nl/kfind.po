@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-23 00:43+0000\n"
+"POT-Creation-Date: 2024-11-25 00:43+0000\n"
 "PO-Revision-Date: 2024-07-30 13:06+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -741,7 +741,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ottobruggeman@kde.nl,rinsedevries@kde.nl,"
 
-#: main.cpp:51
+#: main.cpp:50
 #, kde-format
 msgid "Path(s) to search"
 msgstr "Zoekpad(en)"

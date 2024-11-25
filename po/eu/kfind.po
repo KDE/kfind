@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-23 00:43+0000\n"
+"POT-Creation-Date: 2024-11-25 00:43+0000\n"
 "PO-Revision-Date: 2024-08-06 00:45+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -734,7 +734,7 @@ msgstr ""
 "etxaurre@teleline.es, juanirigoien@irakasle.net, marcos@euskalgnu.org, "
 "dooteo@euskalgnu.org"
 
-#: main.cpp:51
+#: main.cpp:50
 #, kde-format
 msgid "Path(s) to search"
 msgstr "Bilaketaren bide-izenak"

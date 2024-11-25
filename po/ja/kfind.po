@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-23 00:43+0000\n"
+"POT-Creation-Date: 2024-11-25 00:43+0000\n"
 "PO-Revision-Date: 2014-09-20 16:54-0700\n"
 "Last-Translator: Fumiaki Okushi <okushi@kde.gr.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -759,7 +759,7 @@ msgstr ""
 "takehora@firstandfast.net, shinobo@leo.bekkoame.ne.jp,md81@bird.email.ne.jp,"
 "tsuno@ngy.1st.ne.jp"
 
-#: main.cpp:51
+#: main.cpp:50
 #, kde-format
 msgid "Path(s) to search"
 msgstr "検索するパス"

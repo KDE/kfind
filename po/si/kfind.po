@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-23 00:43+0000\n"
+"POT-Creation-Date: 2024-11-25 00:43+0000\n"
 "PO-Revision-Date: 2009-12-18 14:34+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: American English <danishka@gmail.>\n"
@@ -764,7 +764,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "danishka@gmail.com"
 
-#: main.cpp:51
+#: main.cpp:50
 #, kde-format
 msgid "Path(s) to search"
 msgstr "සෙවීමට මාර්‍ග(ය)"
