@@ -8,7 +8,7 @@
 # Tapio Kautto <eleknader@phnet.fi>, 2004.
 # Ilpo Kantonen <ilpo@iki.fi>, 2004, 2005.
 # Mikko Piippo <piippo@cc.helsinki.fi>, 2007.
-# Tommi Nieminen <translator@legisign.org>, 2009, 2017, 2018, 2021, 2023.
+# SPDX-FileCopyrightText: 2009, 2017, 2018, 2021, 2023, 2024 Tommi Nieminen <translator@legisign.org>
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2010, 2011, 2012, 2013, 2014, 2015, 2016.
 # Copyright © 2002,2003, 2004, 2005, 2007, 2008 Free Software Foundation, Inc.
@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-25 00:43+0000\n"
-"PO-Revision-Date: 2023-03-12 10:55+0200\n"
+"PO-Revision-Date: 2024-10-20 14:24+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -27,20 +27,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-POT-Import-Date: 2012-12-01 22:22:02+0000\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
 msgctxt "@title:window"
 msgid "Find Files/Folders"
-msgstr "Etsi tiedostoja ja kansioita"
+msgstr "Etsi tiedostoja tai kansioita"
 
 #: kfinddlg.cpp:48 kfinddlg.cpp:202
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
-msgstr "Joutilaana."
+msgstr "Jouten."
 
 #. i18n as below
 #: kfinddlg.cpp:138
@@ -193,33 +192,28 @@ msgid "&Named:"
 msgstr "&Nimi:"
 
 #: kftabdlg.cpp:68
-#, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
-msgstr "Voit käyttää jokerimerkkejä ja ”;” merkkiä erottelemaan useita nimiä"
+msgstr "Jokerimerkkejä voi käyttää ja eri nimet erotetaan puolipistein (”;”)"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
-msgstr "Etsi kansio&sta:"
+msgstr "Etsi &kansiosta:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
-msgstr "Sisällytä &alikansiot hakuun"
+msgstr "Sisällytä &alikansiot"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
-msgstr "&Kirjainkokoherkkä haku"
+msgstr "&Erota pien- ja suuraakkoset"
 
 #: kftabdlg.cpp:79
 #, kde-format
@@ -227,15 +221,13 @@ msgid "&Browse..."
 msgstr "&Selaa…"
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
-msgstr "Käytä tiedostoindeksejä"
+msgstr "Käytä tie&dostoindeksejä"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Näytä &piilotiedostot"
@@ -277,43 +269,37 @@ msgstr ""
 "(komennolla <i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Etsi tiedostot, jotka on luotu tai joita on &muutettu:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&välillä"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "–"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
-msgstr "&Koko on:"
+msgstr "Tiedoston &koko on:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
-msgstr "Tie&doston omistaa käyttäjä:"
+msgstr "Tiedoston &omistaa:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Omistaa &ryhmä:"
@@ -368,11 +354,10 @@ msgid "File &type:"
 msgstr "Tiedoston &tyyppi:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
-msgstr "S&isältää tekstin:"
+msgstr "&Sisältää tekstin:"
 
 #: kftabdlg.cpp:294
 #, kde-format
@@ -386,18 +371,16 @@ msgstr ""
 "Tarkista tarvittaessa tuettujen tiedostotyyppien luettelosta.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
-msgstr "E&rota pien- ja suuraakkoset"
+msgstr "&Erota pien- ja suuraakkoset"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
-msgstr "Sisällytä binaaritiedostot &hakuun"
+msgstr "Sisällytä &binaaritiedostot"
 
 #: kftabdlg.cpp:306
 #, kde-format
@@ -416,11 +399,10 @@ msgid "fo&r:"
 msgstr "ha&kusanalla:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "Etsi metat&ieto-osista:"
+msgstr "Etsi &metatieto-osioista:"
 
 #: kftabdlg.cpp:319
 #, kde-format
@@ -621,8 +603,7 @@ msgid "(c) 1998-2021, The KDE Developers"
 msgstr "© 1998–2021 KDE-kehittäjät"
 
 #: main.cpp:31
-#, fuzzy, kde-format
-#| msgid "Kai Uwe Broulik"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
@@ -633,8 +614,7 @@ msgid "Current Maintainer"
 msgstr "Ylläpitäjä"
 
 #: main.cpp:32
-#, fuzzy, kde-format
-#| msgid "Eric Coquelle"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
@@ -645,8 +625,7 @@ msgid "Former Maintainer"
 msgstr "Aiempi ylläpitäjä"
 
 #: main.cpp:33
-#, fuzzy, kde-format
-#| msgid "Mark W. Webb"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "Mark W. Webb"
@@ -657,8 +636,7 @@ msgid "Developer"
 msgstr "Kehittäjä"
 
 #: main.cpp:34
-#, fuzzy, kde-format
-#| msgid "Beppe Grimaldi"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "Beppe Grimaldi"
@@ -669,71 +647,61 @@ msgid "UI Design & more search options"
 msgstr "Käyttöliittymän suunnittelu & lisää hakuvaihtoehtoja"
 
 #: main.cpp:35
-#, fuzzy, kde-format
-#| msgid "Martin Hartig"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "Martin Hartig"
 
 #: main.cpp:36
-#, fuzzy, kde-format
-#| msgid "Stephan Kulow"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "Stephan Kulow"
 
 #: main.cpp:37
-#, fuzzy, kde-format
-#| msgid "Mario Weilguni"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "Mario Weilguni"
 
 #: main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Alex Zepeda"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "Alex Zepeda"
 
 #: main.cpp:39
-#, fuzzy, kde-format
-#| msgid "Miroslav Flídr"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
 #: main.cpp:40
-#, fuzzy, kde-format
-#| msgid "Harri Porten"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "Harri Porten"
 
 #: main.cpp:41
-#, fuzzy, kde-format
-#| msgid "Dima Rogozin"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "Dima Rogozin"
 
 #: main.cpp:42
-#, fuzzy, kde-format
-#| msgid "Carsten Pfeiffer"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
 #: main.cpp:43
-#, fuzzy, kde-format
-#| msgid "Hans Petter Bieker"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "Hans Petter Bieker"
 
 #: main.cpp:44
-#, fuzzy, kde-format
-#| msgid "Waldo Bastian"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
@@ -744,15 +712,13 @@ msgid "UI Design"
 msgstr "Käyttöliittymän suunnittelu"
 
 #: main.cpp:45
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "Clarence Dang"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
