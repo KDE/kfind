@@ -21,13 +21,13 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Find Files/Folders"
-msgstr ""
+msgstr "सञ्चिकाः/पुटं अन्वेष्टुम्"
 
 #: kfinddlg.cpp:48 kfinddlg.cpp:202
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
-msgstr ""
+msgstr "आलम।"
 
 #. i18n as below
 #: kfinddlg.cpp:138
@@ -64,8 +64,8 @@ msgstr "निर्दिष्टं पुटं न प्राप्नो
 #, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "एकं द्रव्यं प्राप्तम्"
+msgstr[1] "%1 वस्तूनि प्राप्तानि"
 
 #: kfindtreeview.cpp:43
 msgid "Read-write"
@@ -87,49 +87,49 @@ msgstr "दुर्गमः"
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
-msgstr ""
+msgstr "नामः"
 
 #: kfindtreeview.cpp:68
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
-msgstr ""
+msgstr "उपपुटे"
 
 #: kfindtreeview.cpp:70
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
-msgstr ""
+msgstr "आकृति"
 
 #: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
-msgstr ""
+msgstr "परिवर्तित"
 
 #: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
-msgstr ""
+msgstr "अनुमतिः"
 
 #: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
-msgstr ""
+msgstr "प्रथमा मिलान रेखा"
 
 #: kfindtreeview.cpp:359
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "प्रतिलिपि स्थानम्"
 
 #: kfindtreeview.cpp:360
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
-msgstr ""
+msgstr "एतेन प्रथमस्य चयनितस्य द्रव्यस्य मार्गः क्लिप्बोर्ड् मध्ये प्रतिलिपितः भविष्यति ।"
 
 #: kfindtreeview.cpp:365
 #, kde-format
@@ -150,7 +150,7 @@ msgstr "&कचरा प्रति गच्छतु"
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
-msgstr ""
+msgstr "परिणामान् रक्षन्तु यथा"
 
 #: kfindtreeview.cpp:538
 #, kde-format
@@ -166,7 +166,7 @@ msgstr "KFind परिणामसञ्चिका"
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
-msgstr ""
+msgstr "परिणामाः रक्षिताः अभवन्: %1"
 
 #: kfindtreeview.cpp:663 kftabdlg.cpp:395
 #, kde-format
@@ -177,31 +177,31 @@ msgstr "&गुणाः"
 #, kde-format
 msgctxt "this is the label for the name textfield"
 msgid "&Named:"
-msgstr ""
+msgstr "&नाम: १."
 
 #: kftabdlg.cpp:68
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
-msgstr ""
+msgstr "भवान् वाइल्डकार्डमेलनं \";\" च उपयोक्तुं शक्नोति। बहुनामपृथक्करणार्थम्"
 
 #: kftabdlg.cpp:74
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
-msgstr ""
+msgstr "पश्यन्तु &in:"
 
 #: kftabdlg.cpp:77
 #, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
-msgstr ""
+msgstr "&उपपुटं समावेशयन्तु"
 
 #: kftabdlg.cpp:78
 #, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
-msgstr ""
+msgstr "प्रकरण s&संवेदनशील अन्वेषण"
 
 #: kftabdlg.cpp:79
 #, kde-format
@@ -212,13 +212,13 @@ msgstr "&ब्राउज..."
 #, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
-msgstr ""
+msgstr "&सञ्चिकासूचकाङ्कस्य उपयोगं कुर्वन्तु"
 
 #: kftabdlg.cpp:81
 #, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
-msgstr ""
+msgstr "&गुप्तसञ्चिकाः दर्शयतु"
 
 #: kftabdlg.cpp:100
 #, kde-format
@@ -260,43 +260,43 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
-msgstr ""
+msgstr "निर्मिताः अथवा &संशोधिताः सर्वाणि सञ्चिकाः अन्वेष्टुम्:"
 
 #: kftabdlg.cpp:167
 #, kde-format
 msgctxt "@option:radio"
 msgid "&between"
-msgstr ""
+msgstr "&मध्ये"
 
 #: kftabdlg.cpp:169
 #, kde-format
 msgctxt "@label:textbox"
 msgid "and"
-msgstr ""
+msgstr "तथा"
 
 #: kftabdlg.cpp:191
 #, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
-msgstr ""
+msgstr "सञ्चिका & आकारः अस्ति :"
 
 #: kftabdlg.cpp:204
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
-msgstr ""
+msgstr "&user इत्यस्य स्वामित्वं प्राप्ताः सञ्चिकाः:"
 
 #: kftabdlg.cpp:209
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
-msgstr ""
+msgstr "&group इत्यस्य स्वामित्वम् अस्ति:"
 
 #: kftabdlg.cpp:212
 #, kde-format
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
-msgstr ""
+msgstr "(न कश्चित्)"
 
 #: kftabdlg.cpp:213
 #, kde-format
@@ -317,8 +317,8 @@ msgstr "समं To"
 #, kde-format
 msgid "Byte"
 msgid_plural "Bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "बाइट्"
+msgstr[1] "बाइट्स्"
 
 #: kftabdlg.cpp:218
 #, kde-format
@@ -339,13 +339,13 @@ msgstr "गिब"
 #, kde-format
 msgctxt "label for the file type combobox"
 msgid "File &type:"
-msgstr ""
+msgstr "सञ्चिका &प्रकारः : १."
 
 #: kftabdlg.cpp:288
 #, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
-msgstr ""
+msgstr "C&containing पाठः : १."
 
 #: kftabdlg.cpp:294
 #, kde-format
@@ -362,13 +362,13 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
-msgstr ""
+msgstr "प्रकरण s&संवेदनशील"
 
 #: kftabdlg.cpp:303
 #, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
-msgstr ""
+msgstr "&binary files समाविष्टं कुर्वन्तु"
 
 #: kftabdlg.cpp:306
 #, kde-format
@@ -383,13 +383,13 @@ msgstr ""
 #, kde-format
 msgctxt "as in search for"
 msgid "fo&r:"
-msgstr ""
+msgstr "कृते:"
 
 #: kftabdlg.cpp:315
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr ""
+msgstr "&metainfo विभागेषु अन्वेषणं कुर्वन्तु:"
 
 #: kftabdlg.cpp:319
 #, kde-format
@@ -450,7 +450,7 @@ msgstr "नाम/&स्थान"
 #, kde-format
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
-msgstr ""
+msgstr "C&contents"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -523,54 +523,54 @@ msgctxt ""
 "minutes, 'h' hours, 'd' days, 'm' months, 'y' years"
 msgid "&during the previous"
 msgid_plural "&during the previous"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "&पूर्वकाले"
+msgstr[1] "&पूर्वकाले"
 
 #: kftabdlg.cpp:819
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "minute"
 msgid_plural "minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "क्षणं"
+msgstr[1] "पन्चनिमेषः"
 
 #: kftabdlg.cpp:820
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "hour"
 msgid_plural "hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "घटकः"
+msgstr[1] "घण्टानः"
 
 #: kftabdlg.cpp:821
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "day"
 msgid_plural "days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "दिनं"
+msgstr[1] "दिवसाः"
 
 #: kftabdlg.cpp:822
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "month"
 msgid_plural "months"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "माह"
+msgstr[1] "मासाः"
 
 #: kftabdlg.cpp:823
 #, kde-format
 msgctxt "use date ranges to search files by modified time"
 msgid "year"
 msgid_plural "years"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "वर्ष"
+msgstr[1] "वर्षाः"
 
 #: kquery.cpp:556
 #, kde-format
 msgctxt "@title:window"
 msgid "Error while using locate"
-msgstr ""
+msgstr "locate इत्यस्य उपयोगं कुर्वन् त्रुटिः"
 
 #: main.cpp:27
 #, kde-format
@@ -591,7 +591,7 @@ msgstr "(ग) १९९८-२०२१, द केडीई डेवलपर�
 #, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
-msgstr ""
+msgstr "कै उवे ब्रौलिक"
 
 #: main.cpp:31
 #, kde-format
@@ -602,7 +602,7 @@ msgstr "वर्तमान परिपालक"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
-msgstr ""
+msgstr "एरिक कोकेले"
 
 #: main.cpp:32
 #, kde-format
@@ -613,7 +613,7 @@ msgstr "पूर्व रखरखावकर्ता"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
-msgstr ""
+msgstr "मार्क डब्ल्यू वेब्"
 
 #: main.cpp:33
 #, kde-format
@@ -624,7 +624,7 @@ msgstr "विकासकः"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
-msgstr ""
+msgstr "बेप्पे ग्रिमाल्डी"
 
 #: main.cpp:34
 #, kde-format
@@ -635,61 +635,61 @@ msgstr "UI Design & अधिकानि अन्वेषणविकल्�
 #, kde-format
 msgctxt "@info:credit"
 msgid "Martin Hartig"
-msgstr ""
+msgstr "मार्टिन् हार्टिग्"
 
 #: main.cpp:36
 #, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
-msgstr ""
+msgstr "स्टीफन कुलोव"
 
 #: main.cpp:37
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
-msgstr ""
+msgstr "मारियो वेइलगुनी"
 
 #: main.cpp:38
 #, kde-format
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
-msgstr ""
+msgstr "एलेक्स जेपेडा"
 
 #: main.cpp:39
 #, kde-format
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
-msgstr ""
+msgstr "मिरोस्लाव Flídr"
 
 #: main.cpp:40
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harri Porten"
-msgstr ""
+msgstr "हर्री पोर्ट"
 
 #: main.cpp:41
 #, kde-format
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
-msgstr ""
+msgstr "दीमा रोगोजिन्"
 
 #: main.cpp:42
 #, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
-msgstr ""
+msgstr "कार्स्टेन फीफर"
 
 #: main.cpp:43
 #, kde-format
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
-msgstr ""
+msgstr "हंस पेटर बिकर"
 
 #: main.cpp:44
 #, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
-msgstr ""
+msgstr "वाल्दो बास्टियन"
 
 #: main.cpp:44
 #, kde-format
@@ -700,25 +700,25 @@ msgstr "UI Design इति"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
-msgstr ""
+msgstr "अलेक्जेण्डर न्यूण्डोर्फ"
 
 #: main.cpp:46
 #, kde-format
 msgctxt "@info:credit"
 msgid "Clarence Dang"
-msgstr ""
+msgstr "क्लेरेन्स डाङ्ग"
 
 #: main.cpp:47
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "भवतः नामानि"
 
 #: main.cpp:47
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "भवतः ईमेलपत्राणि"
 
 #: main.cpp:50
 #, kde-format
