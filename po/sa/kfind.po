@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-25 00:43+0000\n"
-"PO-Revision-Date: 2024-12-24 20:39+0530\n"
+"PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
@@ -396,7 +396,7 @@ msgstr "&metainfo विभागेषु अन्वेषणं कुर्
 #: kftabdlg.cpp:319
 #, kde-format
 msgid "All Files & Folders"
-msgstr "सर्वाणि सञ्चिकाः & फोल्डर् च"
+msgstr "सर्वाणि सञ्चिकाः & समुच्चय च"
 
 #: kftabdlg.cpp:320
 #, kde-format
