@@ -220,12 +220,8 @@ int KFindItemModel::columnCount(const QModelIndex &parent) const
 
 //BEGIN KFindItem
 
-KFindItem::KFindItem(const KFileItem &_fileItem, const QString &subDir, const QString &matchingLine)
+KFindItem::KFindItem(const KFileItem &_fileItem, const QString &subDir, const QString &matchingLine) : m_fileItem(_fileItem), m_matchingLine(matchingLine), m_subDir(subDir)
 {
-    m_fileItem = _fileItem;
-    m_subDir = subDir;
-    m_matchingLine = matchingLine;
-
     //TODO more caching ?
     if (!m_fileItem.isNull() && m_fileItem.isLocalFile()) {
         QFileInfo fileInfo(m_fileItem.url().toLocalFile());
