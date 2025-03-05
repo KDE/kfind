@@ -727,13 +727,13 @@ msgstr "Clarence Dang"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Thomas Diehl,Thomas Reitelbach"
+msgstr "Deutsches KDE-Übersetzungsteam"
 
 #: main.cpp:47
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "thd@kde.org,tr@erdfunkstelle.de"
+msgstr "kde-i18n-de@kde.org"
 
 #: main.cpp:51
 #, kde-format
