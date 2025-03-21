@@ -110,7 +110,6 @@ GenericName[vi]=Tìm tệp/thư mục
 GenericName[zh_CN]=查找文件/文件夹
 GenericName[zh_TW]=尋找檔案/資料夾
 StartupNotify=true
-OnlyShowIn=KDE;
 Categories=Qt;KDE;Utility;
 Keywords=search;file search;search tool;finder;
 Keywords[ar]=بحث;ملف;أداة بحث;ابحث;
