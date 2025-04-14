@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-25 00:43+0000\n"
+"POT-Creation-Date: 2025-04-14 00:43+0000\n"
 "PO-Revision-Date: 2024-02-18 15:42+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -122,56 +122,56 @@ msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Prima linie care se potrivește"
 
-#: kfindtreeview.cpp:359
+#: kfindtreeview.cpp:355
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "Copiază amplasarea"
 
-#: kfindtreeview.cpp:360
+#: kfindtreeview.cpp:356
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr "Aceasta va copia calea primului element ales în clipboard."
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:361
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "&Deschide dosarul care conține"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Delete"
 msgstr "Ș&terge"
 
-#: kfindtreeview.cpp:373
+#: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&Mută la Gunoi"
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:509
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Salvează rezultatele ca"
 
-#: kfindtreeview.cpp:538
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "Unable to save results."
 msgstr "Nu am putut salva rezultatele."
 
-#: kfindtreeview.cpp:552
+#: kfindtreeview.cpp:548
 #, kde-format
 msgid "KFind Results File"
 msgstr "Fișier rezultate căutare"
 
-#: kfindtreeview.cpp:567
+#: kfindtreeview.cpp:563
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Rezultatele au fost salvate în: %1"
 
-#: kfindtreeview.cpp:663 kftabdlg.cpp:395
+#: kfindtreeview.cpp:659 kftabdlg.cpp:395
 #, kde-format
 msgid "&Properties"
 msgstr "&Proprietăți"

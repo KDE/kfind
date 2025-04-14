@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-25 00:43+0000\n"
+"POT-Creation-Date: 2025-04-14 00:43+0000\n"
 "PO-Revision-Date: 2024-07-30 13:06+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -131,57 +131,57 @@ msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Eerste overeenkomende regel"
 
-#: kfindtreeview.cpp:359
+#: kfindtreeview.cpp:355
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "Locatie kopiëren"
 
-#: kfindtreeview.cpp:360
+#: kfindtreeview.cpp:356
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr ""
 "Dit zal het pad van het eerst geselecteerde item kopiëren in het klembord."
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:361
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "&Open de map(pen) waarin het zich bevindt"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Delete"
 msgstr "Verwij&deren"
 
-#: kfindtreeview.cpp:373
+#: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&Naar prullenbak verplaatsen"
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:509
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Resultaten opslaan als"
 
-#: kfindtreeview.cpp:538
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "Unable to save results."
 msgstr "De resultaten konden niet worden opgeslagen."
 
-#: kfindtreeview.cpp:552
+#: kfindtreeview.cpp:548
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind resultatenbestand"
 
-#: kfindtreeview.cpp:567
+#: kfindtreeview.cpp:563
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "De resultaten zijn opslagen in: %1"
 
-#: kfindtreeview.cpp:663 kftabdlg.cpp:395
+#: kfindtreeview.cpp:659 kftabdlg.cpp:395
 #, kde-format
 msgid "&Properties"
 msgstr "&Eigenschappen"

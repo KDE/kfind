@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-25 00:43+0000\n"
+"POT-Creation-Date: 2025-04-14 00:43+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -121,56 +121,56 @@ msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "प्रथमा मिलान रेखा"
 
-#: kfindtreeview.cpp:359
+#: kfindtreeview.cpp:355
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "प्रतिलिपि स्थानम्"
 
-#: kfindtreeview.cpp:360
+#: kfindtreeview.cpp:356
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr "एतेन प्रथमस्य चयनितस्य द्रव्यस्य मार्गः क्लिप्बोर्ड् मध्ये प्रतिलिपितः भविष्यति ।"
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:361
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "&पुटं (पुटं) युक्तं उद्घाटयतु"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Delete"
 msgstr "&लुप्"
 
-#: kfindtreeview.cpp:373
+#: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&कचरा प्रति गच्छतु"
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:509
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "परिणामान् रक्षन्तु यथा"
 
-#: kfindtreeview.cpp:538
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "Unable to save results."
 msgstr "परिणामान् रक्षितुं असमर्थः।"
 
-#: kfindtreeview.cpp:552
+#: kfindtreeview.cpp:548
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind परिणामसञ्चिका"
 
-#: kfindtreeview.cpp:567
+#: kfindtreeview.cpp:563
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "परिणामाः रक्षिताः अभवन्: %1"
 
-#: kfindtreeview.cpp:663 kftabdlg.cpp:395
+#: kfindtreeview.cpp:659 kftabdlg.cpp:395
 #, kde-format
 msgid "&Properties"
 msgstr "&गुणाः"

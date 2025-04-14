@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-25 00:43+0000\n"
+"POT-Creation-Date: 2025-04-14 00:43+0000\n"
 "PO-Revision-Date: 2024-07-31 10:17+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -121,13 +121,13 @@ msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Prime linea coincidente"
 
-#: kfindtreeview.cpp:359
+#: kfindtreeview.cpp:355
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "Copia location"
 
-#: kfindtreeview.cpp:360
+#: kfindtreeview.cpp:356
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
@@ -135,44 +135,44 @@ msgstr ""
 "Isto copiara le percurso del prime elemento seligite in le area de "
 "transferentia."
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:361
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "&Aperi dossier(es) que contine"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Delete"
 msgstr "&Dele"
 
-#: kfindtreeview.cpp:373
+#: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&Move al corbe"
 
-#: kfindtreeview.cpp:513
+#: kfindtreeview.cpp:509
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Salveguarda resultatos como"
 
-#: kfindtreeview.cpp:538
+#: kfindtreeview.cpp:534
 #, kde-format
 msgid "Unable to save results."
 msgstr "Inhabile a salveguardar resultatos."
 
-#: kfindtreeview.cpp:552
+#: kfindtreeview.cpp:548
 #, kde-format
 msgid "KFind Results File"
 msgstr "File de resultatos de KFind"
 
-#: kfindtreeview.cpp:567
+#: kfindtreeview.cpp:563
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Resultatos esseva salveguardate a : %1"
 
-#: kfindtreeview.cpp:663 kftabdlg.cpp:395
+#: kfindtreeview.cpp:659 kftabdlg.cpp:395
 #, kde-format
 msgid "&Properties"
 msgstr "&Proprietates"
