@@ -120,8 +120,8 @@
   <summary xml:lang="zh-TW">尋找檔案/資料夾</summary>
   <description>
     <p>
-      KFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Konqueror
-      as "Find File" in the "Tools" menu. It allows you to find files by name, type or content.
+      KFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Dolphin
+      as "Open KFind" in the "Tools" menu. It allows you to find files by name, type or content.
     </p>
     <p xml:lang="ar">يمكن استخدام بحثك كأداة بحث قائمة بذاتها، يتم إطلاقها بواسطة "مشغلك" أو من القائمة الخاصة بك. تم دمجه أيضًا في كونكيورر كـ "اعثر على ملف" في قائمة "الأدوات". يسمح لك بالعثور على الملفات بالاسم أو النوع أو المحتوى.</p>
     <p xml:lang="az">KFind KRunner və ya menyudan başladılan müstəqil axtarış vasitəsi kimi istifadə edilə bilər. O. həmçinin Konqueror/Dolphin daxilinə Alətlər menyusunda "Fayl tapın" kimi inteqrasiya olunub. KFind sizə faylları adı, növü və tərkibinə görə axtarmağa imkan verir.</p>
