@@ -140,6 +140,7 @@
     <p xml:lang="uk">KFind можна скористатися як окремою програмою для пошуку даних, запустивши її за допомогою KRunner або меню. Крім того, програму вбудовано до Dolphin. Нею можна скористатися за допомогою пункту «Відкрити KFind» у меню «Інструменти». Передбачено пошук файлів за назвою, типом і вмістом.</p>
     <p xml:lang="x-test">xxKFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Dolphin as "Open KFind" in the "Tools" menu. It allows you to find files by name, type or content.xx</p>
     <p xml:lang="zh-CN">KFind 可以帮助您根据文件名、文件类型和文件内容查找所需文件。它既可以作为一款独立的搜索工具使用，也可以通过 KRunner 或者其他应用程序的菜单调用。它还被集成在 Dolphin 中，通过“工具”菜单的“打开 KFind”项即可调用。</p>
+    <p xml:lang="zh-TW">KFind 可以做成獨立的搜尋工具，從 KRunner 或是您的選單中開啟。它也有整合到 Dolphin「工具」選單中的「開啟 KFind」選項。它可以讓您依檔名、檔案型態或內容來搜尋。</p>
   </description>
   <url type="homepage">https://apps.kde.org/kfind/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kfind</url>
