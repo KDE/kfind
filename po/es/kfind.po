@@ -1,30 +1,29 @@
-# translation of kfindpart.po to Spanish
-# Translation of kfindpart to Spanish
-# Copyright (C) 2000-2002
+# Spanish translations for kfind.po package.
+# Copyright (C) 2000-2025 This file is copyright:
+# This file is distributed under the same license as the kfind package.
 #
-# Pablo de Vicente <vicente@oan.es>, 2000-2002.
-# Jaime Robles <jaime@kde.org>, 2003, 2005, 2007, 2008.
-# Miguel Revilla Rodríguez <yo@miguelrevilla.com>, 2003, 2004.
-# Pablo de Vicente <p.devicente@wanadoo.es>, 2004, 2005.
-# Pablo de Vicente <pablo.devicente@gmail.com>, 2006.
-# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
-# SPDX-FileCopyrightText: 2010, 2016, 2017, 2018, 2020, 2021, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
-# Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>, 2010, 2011.
-# arklad, 2011.
-# Rocio Gallego <traducciones@rociogallego.com>, 2014.
+# SPDX-FileCopyrightText: 2000-2002 Pablo de Vicente <vicente@oan.es>
+# SPDX-FileCopyrightText: 2003, 2005, 2007, 2008 Jaime Robles <jaime@kde.org>
+# SPDX-FileCopyrightText: 2003, 2004 Miguel Revilla Rodríguez <yo@miguelrevilla.com>
+# SPDX-FileCopyrightText: 2004, 2005 Pablo de Vicente <p.devicente@wanadoo.es>
+# SPDX-FileCopyrightText: 2006 Pablo de Vicente <pablo.devicente@gmail.com>
+# SPDX-FileCopyrightText: 2007 Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>
+# SPDX-FileCopyrightText: 2010, 2016, 2017, 2018, 2020, 2021, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2010, 2011 Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>
+# SPDX-FileCopyrightText: 2011 arklad
+# SPDX-FileCopyrightText: 2014 Rocio Gallego <traducciones@rociogallego.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: kfindpart\n"
+"Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-14 00:43+0000\n"
-"PO-Revision-Date: 2024-07-30 16:27+0200\n"
+"PO-Revision-Date: 2025-05-17 12:43+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"com>\n"
 "First-Translator: Pablo de Vicente <pvicentea@nexo.es>\n"
 "X-Generator: Lokalize 24.05.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -50,7 +49,7 @@ msgstr "0 elementos encontrados"
 #: kfinddlg.cpp:177
 #, kde-format
 msgid "Searching..."
-msgstr "Buscando..."
+msgstr "Buscando…"
 
 #: kfinddlg.cpp:204
 #, kde-format
@@ -220,7 +219,7 @@ msgstr "Búsqueda &distinguiendo minúsculas/mayúsculas"
 #: kftabdlg.cpp:79
 #, kde-format
 msgid "&Browse..."
-msgstr "&Examinar..."
+msgstr "&Examinar…"
 
 #: kftabdlg.cpp:80
 #, kde-format
@@ -252,7 +251,7 @@ msgstr ""
 "estar separadas por punto y coma «;».<br /><br />El nombre del archivo puede "
 "contener los siguientes caracteres especiales:<ul><li><b>?</b> concuerda un "
 "solo carácter</li><li><b>*</b> concuerda cero o más caracteres</"
-"li><li><b>[...]</b> concuerda cualquiera de los caracteres entre corchetes</"
+"li><li><b>[…]</b> concuerda cualquiera de los caracteres entre corchetes</"
 "li></ul><br />Ejemplos de búsqueda:<ul><li><b>*.kwd;*.txt</b> encuentra "
 "todos los archivos que acaban con .kwd o .txt</li><li><b>do[sn]</b> "
 "encuentra dos y don</li><li><b>Hol?a</b> encuentra todos los archivos que "
@@ -430,7 +429,7 @@ msgstr "Enlaces simbólicos"
 #: kftabdlg.cpp:323
 #, kde-format
 msgid "Special Files (Sockets, Device Files, ...)"
-msgstr "Archivos especiales (sockets, archivos de dispositivo...)"
+msgstr "Archivos especiales (sockets, archivos de dispositivo…)"
 
 #: kftabdlg.cpp:324
 #, kde-format
@@ -477,9 +476,9 @@ msgid ""
 "resolution, comment...</li></ul></qt>"
 msgstr ""
 "<qt>Buscar dentro de comentarios/metainfo del archivo<br />Estos son "
-"ejemplos:<br /><ul><li><b>Archivos audio (mp3...)</b> Busca en etiqueta id3 "
-"un título, un álbum</li><li><b>Imágenes (png...)</b> Busca imágenes con una "
-"resolución especial, comentario...</li></ul></qt>"
+"ejemplos:<br /><ul><li><b>Archivos audio (mp3…)</b> Busca en etiqueta id3 un "
+"título, un álbum</li><li><b>Imágenes (png…)</b> Busca imágenes con una "
+"resolución especial, comentario…</li></ul></qt>"
 
 #: kftabdlg.cpp:407
 #, kde-format
@@ -489,8 +488,8 @@ msgid ""
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
 "<qt>Si se especifica, busca solo en este campo<br /><ul><li><b>Archivos de "
-"audio (mp3...)</b> este puede ser Título, Álbum...</li><li><b>Imágenes "
-"(png...)</b>Busca solo en resolución, profundidad de bit...</li></ul></qt>"
+"audio (mp3…)</b> este puede ser Título, Álbum…</li><li><b>Imágenes (png…)</"
+"b>Busca solo en resolución, profundidad de bit…</li></ul></qt>"
 
 #: kftabdlg.cpp:548
 #, kde-format
@@ -742,15 +741,3 @@ msgstr ""
 #, kde-format
 msgid "Path(s) to search"
 msgstr "Ruta(s) donde buscar"
-
-#~ msgid "Regular e&xpression"
-#~ msgstr "&Expresión regular"
-
-#~ msgid "&Edit..."
-#~ msgstr "&Editar..."
-
-#~ msgid "HTML page"
-#~ msgstr "Página HTML"
-
-#~ msgid "Text file"
-#~ msgstr "Archivo de texto"
