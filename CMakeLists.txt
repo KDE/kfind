@@ -49,7 +49,7 @@ set_package_properties(KF6DocTools PROPERTIES DESCRIPTION
     TYPE OPTIONAL
 )
 ecm_set_disabled_deprecation_versions(QT 6.9.0
-    KF 6.13.0
+    KF 6.14.0
     )
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
 add_subdirectory(src)
