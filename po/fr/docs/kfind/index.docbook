@@ -167,15 +167,15 @@
 <listitem>
 <para
 >À la différence de l'astérisque, le point d'interrogation remplace un caractère et un seul, ainsi <userinput
->mar?</userinput
+>toi?</userinput
 > permet de trouver <filename
->marc</filename
+>toit</filename
 >, mais <userinput
->marc?</userinput
+>toit?</userinput
 > ne trouvera rien si les fichiers existants ont pour nom <filename
->marc</filename
+>toit</filename
 > et <filename
->marc.png</filename
+>toit.png</filename
 >. Vous pouvez utiliser autant de points d'interrogation dans le nom recherché que vous le souhaitez, les fichiers comprenant le même nombre de caractères dans leur nom seront trouvés. </para>
 </listitem>
 </varlistentry>
@@ -303,7 +303,7 @@
 ><para
 >Si vous avez installé l'outil &kregexpeditor; de la rubrique playground/utils sur le serveur git de &kde;, vous aurez cette option supplémentaire. Le fait de l'activer vous permettra de chercher une <firstterm
 >regexp</firstterm
->, ou expression rationnelle. Une expression rationnelle est une façon de définir les conditions de la recherche ; elles peuvent être très complexes, mais aussi très puissantes. Si vous n'êtes pas familier avec les expressions rationnelles, vous pouvez choisir <guilabel
+>, c'est à dire une expression rationnelle. C'est une façon de définir les conditions de la recherche ; elles peuvent être très complexes, mais aussi très puissantes. Si vous n'êtes pas familier avec les expressions rationnelles, vous pouvez choisir <guilabel
 >Modifier</guilabel
 > pour appeler &kregexpeditor;. Cet outil vous permet de construire votre jeu de conditions graphiquement, puis de générer l'expression pour vous.</para>
 
