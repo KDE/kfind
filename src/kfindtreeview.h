@@ -119,6 +119,7 @@ public Q_SLOTS:
 private Q_SLOTS:
     void deleteSelectedFiles();
     void moveToTrashSelectedFiles();
+    void selectedFileProperties();
 
     void slotExecute(const QModelIndex &index);
     void slotExecuteSelected();
@@ -135,6 +136,7 @@ Q_SIGNALS:
     void resultSelected(bool);
 
 private:
+    KFileItemList selectedFileItems() const;
     void resizeToContents();
 
     QList<QPersistentModelIndex> selectedVisibleIndexes();

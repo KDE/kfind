@@ -371,6 +371,11 @@ KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
     KActionCollection::setDefaultShortcut(trash, Qt::Key_Delete);
     m_actionCollection->addAction(QStringLiteral("trash"), trash);
 
+    QAction *properties = new QAction(QIcon::fromTheme(QStringLiteral("document-properties")), i18nc("@action:inmenu File", "Properties"), this);
+    connect(properties, &QAction::triggered, this, &KFindTreeView::selectedFileProperties);
+    KActionCollection::setDefaultShortcuts(properties, {Qt::ALT | Qt::Key_Return, Qt::ALT | Qt::Key_Enter});
+    m_actionCollection->addAction(QStringLiteral("properties"), properties);
+
     header()->setStretchLastSection(true);
 
     sortByColumn(0, Qt::AscendingOrder);
@@ -610,15 +615,11 @@ void KFindTreeView::slotExecute(const QModelIndex &index)
     }
 }
 
-void KFindTreeView::contextMenuRequested(const QPoint &p)
+KFileItemList KFindTreeView::selectedFileItems() const
 {
     KFileItemList fileList;
 
     const QModelIndexList selected = m_proxyModel->mapSelectionToSource(selectionModel()->selection()).indexes();
-    if (selected.isEmpty()) {
-        return;
-    }
-
     for (const QModelIndex &index : selected) {
         if (index.column() == 0) {
             const KFindItem item = m_model->itemAtIndex(index);
@@ -626,6 +627,16 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
                 fileList.append(item.getFileItem());
             }
         }
+    }
+
+    return fileList;
+}
+
+void KFindTreeView::contextMenuRequested(const QPoint &p)
+{
+    const auto fileList = selectedFileItems();
+    if (fileList.isEmpty()) {
+        return;
     }
 
     delete m_contextMenu;
@@ -655,12 +666,7 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
 
     // Properties
     if (KPropertiesDialog::canDisplay(fileList)) {
-        QAction *act = new QAction(m_contextMenu);
-        act->setText(i18n("&Properties"));
-        QObject::connect(act, &QAction::triggered, this, [this, fileList]() {
-            KPropertiesDialog::showDialog(fileList, this, false /*non modal*/);
-        });
-        m_contextMenu->addAction(act);
+        m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("properties")));
     }
 
     m_contextMenu->exec(this->mapToGlobal(p));
@@ -705,6 +711,20 @@ void KFindTreeView::moveToTrashSelectedFiles()
     using Iface = KIO::AskUserActionInterface;
     auto *trashJob = new KIO::DeleteOrTrashJob(uris, Iface::Trash, Iface::ForceConfirmation, this);
     trashJob->start();
+}
+
+void KFindTreeView::selectedFileProperties()
+{
+    const auto fileList = selectedFileItems();
+    if (fileList.isEmpty()) {
+        return;
+    }
+
+    if (!KPropertiesDialog::canDisplay(fileList)) {
+        return;
+    }
+
+    KPropertiesDialog::showDialog(fileList, this, false /*non modal*/);
 }
 
 void KFindTreeView::reconfigureMouseSettings()
