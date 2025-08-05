@@ -636,7 +636,7 @@ msgstr "وأوف فروليك"
 #: main.cpp:31
 #, kde-format
 msgid "Current Maintainer"
-msgstr "المصين الحالي"
+msgstr "الصائن الحالي"
 
 #: main.cpp:32
 #, kde-format
@@ -647,7 +647,7 @@ msgstr "إريك كوكيلي"
 #: main.cpp:32
 #, kde-format
 msgid "Former Maintainer"
-msgstr "المصين السّابق"
+msgstr "الصائن السّابق"
 
 #: main.cpp:33
 #, kde-format
