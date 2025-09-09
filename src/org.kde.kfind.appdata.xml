@@ -59,7 +59,6 @@
   <name xml:lang="tr">K Bul</name>
   <name xml:lang="uk">KFind</name>
   <name xml:lang="vi">KFind</name>
-  <name xml:lang="x-test">xxKFindxx</name>
   <name xml:lang="zh-CN">KFind 文件查找工具</name>
   <name xml:lang="zh-TW">KFind</name>
   <summary>Find Files/Folders</summary>
@@ -115,7 +114,6 @@
   <summary xml:lang="tr">Dosya/Dizin Bul</summary>
   <summary xml:lang="uk">Програма для пошуку файлів і тек</summary>
   <summary xml:lang="vi">Tìm tệp/thư mục</summary>
-  <summary xml:lang="x-test">xxFind Files/Foldersxx</summary>
   <summary xml:lang="zh-CN">查找文件/文件夹</summary>
   <summary xml:lang="zh-TW">尋找檔案/資料夾</summary>
   <description>
@@ -148,7 +146,6 @@
     <p xml:lang="sv">Kfind kan användas som ett fristående sökverktyg, startat via Kör program eller från menyn. Det är också integrerat i Dolphin som "Öppna Kfind" i menyn "Verktyg". Det låter dig söka efter filer enligt namn, typ eller innehåll.</p>
     <p xml:lang="tr">K Bul, K Çalıştır tarafından çalıştırılan bağımsız bir arama aracı olarak kullanılabildiği gibi menüden de çalıştırılabilir. Dolphin ile “Araçlar” menüsünde “K Bul’u Aç” olarak tümleşik haldedir. Dosyaları adlarıyla, türleriyle veya içeriğiyle bulmanıza olanak sağlar.</p>
     <p xml:lang="uk">KFind можна скористатися як окремою програмою для пошуку даних, запустивши її за допомогою KRunner або меню. Крім того, програму вбудовано до Dolphin. Нею можна скористатися за допомогою пункту «Відкрити KFind» у меню «Інструменти». Передбачено пошук файлів за назвою, типом і вмістом.</p>
-    <p xml:lang="x-test">xxKFind can be used as a standalone search tool, launched by KRunner or from your menu. It is also integrated into Dolphin as "Open KFind" in the "Tools" menu. It allows you to find files by name, type or content.xx</p>
     <p xml:lang="zh-CN">KFind 可以帮助您根据文件名、文件类型和文件内容查找所需文件。它既可以作为一款独立的搜索工具使用，也可以通过 KRunner 或者其他应用程序的菜单调用。它还被集成在 Dolphin 中，通过“工具”菜单的“打开 KFind”项即可调用。</p>
     <p xml:lang="zh-TW">KFind 可以做成獨立的搜尋工具，從 KRunner 或是您的選單中開啟。它也有整合到 Dolphin「工具」選單中的「開啟 KFind」選項。它可以讓您依檔名、檔案型態或內容來搜尋。</p>
   </description>
@@ -204,7 +201,6 @@
       <caption xml:lang="tr">K Bul ana penceresi</caption>
       <caption xml:lang="uk">Головне вікно KFind</caption>
       <caption xml:lang="vi">Cửa sổ chính của KFind</caption>
-      <caption xml:lang="x-test">xxKFind main windowxx</caption>
       <caption xml:lang="zh-CN">KFind 主窗口</caption>
       <caption xml:lang="zh-TW">KFind 主視窗</caption>
       <image>https://kde.org/images/screenshots/kfind.png</image>
