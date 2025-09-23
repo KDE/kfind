@@ -156,7 +156,7 @@
 >Elija la carpeta en la que quiera buscar tecleando en el campo <guilabel
 >Mirar en:</guilabel
 > o haciendo clic en <guibutton
->Examinar...</guibutton
+>Examinar…</guibutton
 > (en el cuadro de diálogo, se puede alternar entre mostrar o no las carpetas y archivos ocultos mediante los atajos de teclado <keycombo action="simul"
 >&Alt;<keycap
 >.</keycap
@@ -168,7 +168,7 @@
 >. Para cancelar una búsqueda, utilice el botón <guibutton
 >Detener</guibutton
 >. Con el botón <guibutton
->Save As... </guibutton
+>Save As… </guibutton
 >, se puede guardar el resultado de una búsqueda en formato &HTML; o como texto sin formato.</para>
 <para
 >Si se marca la opción <guilabel
@@ -235,7 +235,7 @@
 <varlistentry>
 <term
 >El conjunto de caracteres <quote
->[...]</quote
+>[…]</quote
 ></term>
 <listitem>
 <para
