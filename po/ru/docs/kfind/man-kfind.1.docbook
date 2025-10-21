@@ -6,13 +6,15 @@
 <refentry lang="&language;">
 <refentryinfo>
 <title
->Руководство пользователя KDE</title>
+>Руководство пользователя kfind</title>
 <author
 >&Lauri.Watts; &Lauri.Watts.mail;</author>
 <date
->6 октября 2010 г.</date>
+>5 ноября 2016 г.</date>
+<releaseinfo
+>Приложения KDE 16.12</releaseinfo>
 <productname
->KDE</productname>
+>Приложения KDE</productname>
 </refentryinfo>
 
 <refmeta>
@@ -30,7 +32,7 @@
 >kfind</command
 ></refname>
 <refpurpose
->программа поиска файлов в &kde;</refpurpose>
+>программа поиска файлов &kde;</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -42,9 +44,7 @@
 >путь_поиска</option
 ></group
 > <arg choice="opt"
->специфические параметры KDE</arg
-> <arg choice="opt"
->специфические параметры Qt</arg
+>параметры</arg
 > </cmdsynopsis>
 </refsynopsisdiv>
 
@@ -52,10 +52,10 @@
 <title
 >Описание</title>
 <para
->&kfind; - удобный способ найти определённые файлы на вашем компьютера, например, совпадающие с заданным шаблоном. Программа может искать файлы определённого типа, с заданными текстом в имени файлов.</para
+>Эта утилита — удобный способ найти определённые файлы на вашем компьютере, например, совпадающие с заданным шаблоном. Программа может искать файлы указанного типа, файлы с определёнными буквами в имени, а также файлы, содержащие заданный текст.</para
 > 
 <para
->&kfind; - графическая программа и обычно не запускается из командной строки.</para>
+>&kfind; — графическая программа и обычно не запускается из командной строки.</para>
 
 </refsect1>
 
@@ -70,7 +70,7 @@
 ></term>
 <listitem
 ><para
->Вы можете по желанию указать разделённый двоеточиями путь, чтобы предварительно заполнить диалог.Это может быть использовано для создания на панели или на рабочем столе ссылок для быстрого поиска в определённых местах.</para>
+>Возможно указать путь, который будет сразу появляться в диалоговом окне поиска.</para>
 </listitem>
 </varlistentry>
 </variablelist>
@@ -79,26 +79,32 @@
 
 <refsect1>
 <title
->См. также</title>
-<para
->Более подробная документация пользователя доступна на <ulink url="help:/kfind"
+>Смотрите также</title>
+<simplelist>
+<member
+>Более подробная документация пользователя доступна по адресу <ulink url="help:/kfind"
 >help:/kfind</ulink
 > (введите этот <acronym
->URL</acronym
-> в адресную строку &konqueror; или запустите <userinput
+>URL-адрес</acronym
+> в адресную строку &konqueror; или выполните команду <userinput
 ><command
 >khelpcenter</command
 > <parameter
 >help:/kfind</parameter
 ></userinput
->).</para>
+>).</member>
+<member
+>kf6options(7)</member>
+<member
+>qt6options(7)</member>
+</simplelist>
 </refsect1>
 
 <refsect1>
 <title
 >Авторы</title>
 <para
->Список лиц, принимавших участие в разработке, доступен в полном руководстве пользователя, которое доступно через Центр справки KDE.</para>
+>Список лиц, принимавших участие в разработке, доступен в полном руководстве пользователя в Центре справки KDE.</para>
 <para
 >Это руководство было подготовлено &Lauri.Watts; &Lauri.Watts.mail;</para>
 </refsect1>
