@@ -101,7 +101,7 @@
 >Regarder dans</guilabel
 > ou en cliquant sur <guibutton
 >Parcourir...</guibutton
-> (vous pouvez activer ou désactiver l'affichage des fichiers et des dossiers cachés dans la boîte de dialogue en utilisant les raccourcis <keycombo action="simul"
+> (vous pouvez activer ou désactiver l'affichage des fichiers et des dossiers cachés dans la boite de dialogue en utilisant les raccourcis <keycombo action="simul"
 >&Alt;<keycap
 >.</keycap
 ></keycombo
@@ -197,7 +197,7 @@
 >Bien entendu, vous pouvez combiner deux ou plus symboles jokers dans le nom recherché. </para>
 
 <para
->Le résultat de la recherche sera affiché dans la boîte en-dessous. Un clic avec le &BDS; sur un élément de cette boîte ouvre un menu contextuel contenant une liste d'actions pour les fichiers ou dossiers sélectionnés. </para>
+>Le résultat de la recherche sera affiché dans la boite en-dessous. Un clic avec le &BDS; sur un élément de cette boite ouvre un menu contextuel contenant une liste d'actions pour les fichiers ou dossiers sélectionnés. </para>
 
 </sect1>
 
