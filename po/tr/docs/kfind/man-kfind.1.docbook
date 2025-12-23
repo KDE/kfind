@@ -10,7 +10,7 @@
 <author
 >&Lauri.Watts; &Lauri.Watts.mail;</author>
 <date
->2016-11-05</date>
+>2016‒11‒05</date>
 <releaseinfo
 >Uygulamalar 16.12</releaseinfo>
 <productname
@@ -86,7 +86,7 @@
 >help:/kfind</ulink
 > bölümünden ulaşabilirsiniz (ya da bu <acronym
 >URL</acronym
->'yi &konqueror; adres çubuğuna girin, veya <userinput
+>’yi &konqueror; adres çubuğuna girin, veya <userinput
 ><command
 >khelpcenter</command
 > <parameter
@@ -94,9 +94,9 @@
 ></userinput
 > komutunu çalıştırın).</member>
 <member
->kf5options(7)</member>
+>kf6options(7)</member>
 <member
->qt5options(7)</member>
+>qt6options(7)</member>
 </simplelist>
 </refsect1>
 

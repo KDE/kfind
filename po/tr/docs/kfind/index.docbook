@@ -58,7 +58,7 @@
 >&FDLNotice;</legalnotice>
 
 <date
->2018-10-22</date>
+>2018‒10‒22</date>
 <releaseinfo
 >Uygulamalar 18.12</releaseinfo>
 
@@ -90,10 +90,10 @@
 
 <sect1 id="starting">
 <title
->&kfind;'u Başlatmak</title>
+>&kfind;’u Başlatmak</title>
 
 <para
->Dosya Bul aracı, bilgisayarınızdaki belirli dosyaları veya bir dizgiyle eşleşen dosyaları aramak için kullanışlı bir yöntemdir. Bunun bir örneği, belirli bir türdeki veya dosya adında belirli harfler bulunan dosyaların aranmasını içerebilir. Bu izlenceyi &konqueror;'da (dosya yöneticisi kipinde) menüden <menuchoice
+>Dosya Bul aracı, bilgisayarınızdaki belirli dosyaları veya bir dizgiyle eşleşen dosyaları aramak için kullanışlı bir yöntemdir. Bunun bir örneği, belirli bir türdeki veya dosya adında belirli harfler bulunan dosyaların aranmasını içerebilir. Bu izlenceyi &konqueror;’da (dosya yöneticisi kipinde) menüden <menuchoice
 ><shortcut
 ><keycombo action="simul"
 >&Ctrl; <keycap
@@ -105,7 +105,7 @@
 > <guimenuitem
 >Dosya Bul</guimenuitem
 ></menuchoice
->'u çalıştırarak yükleyebilirsiniz. &kfind;'u tek başına çalıştırmak istiyorsanız onu &krunner; üzerinden başlatın. </para>
+>’u çalıştırarak yükleyebilirsiniz. &kfind;’u tek başına çalıştırmak istiyorsanız onu &krunner; üzerinden başlatın. </para>
 
 </sect1>
 </chapter>
@@ -119,7 +119,7 @@
 >Ad/Konum Sekmesi</title>
 
 <para
->&kfind;'u başlattığınızda oldukça basit bir pencere göreceksiniz. <guilabel
+>&kfind;’u başlattığınızda oldukça basit bir pencere göreceksiniz. <guilabel
 >Aranacak ad:</guilabel
 > etiketli metin kutusuna aradığınız dosyanın adını yazın. Birden çok adı ayırmak için joker karakter eşleştirmesi ve noktalı virgül (<quote
 >;</quote
@@ -128,7 +128,7 @@
 >Arama yapmak istediğiniz konumu <guilabel
 >Aranacak yer:</guilabel
 > alanına yazın veya <guibutton
->Göz At...</guibutton
+>Göz At…</guibutton
 > düğmesine tıklayarak seçin (gizli dosyaların/klasörlerin görüntülenmesini <keycombo action="simul"
 >&Alt;<keycap
 >.</keycap
@@ -140,7 +140,7 @@
 > düğmesini kullanın. Bir aramayı iptal etmek için <guibutton
 >Durdur</guibutton
 > düğmesine basın. Bir arama sonucu, <guibutton
->Farklı Kaydet...</guibutton
+>Farklı Kaydet…</guibutton
 > seçeneği kullanılarak düz metin veya &HTML; olarak kaydedilebilir.</para>
 <para
 ><guilabel
@@ -211,7 +211,7 @@
 <varlistentry>
 <term
 >Karakter Kümesi <quote
->[...]</quote
+>[…]</quote
 ></term>
 <listitem>
 <para
