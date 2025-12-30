@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2024-07-30 08:59+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -155,32 +155,34 @@ msgstr "&Izbriši"
 msgid "&Move to Trash"
 msgstr "Pre&makni v Smeti"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "&Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "&Lastnosti"
+
+#: kfindtreeview.cpp:514
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Shrani rezultate kot"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Rezultatov ni mogoče shraniti."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Datoteka z rezultati KFinda"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Rezultati so bili shranjeni v: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Lastnosti"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -462,6 +464,11 @@ msgstr "I&me/mesto"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "Vsebi&na"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Lastnosti"
 
 #: kftabdlg.cpp:399
 #, kde-format

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2024-07-31 22:25+0200\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -151,32 +151,34 @@ msgstr "&Elimina"
 msgid "&Move to Trash"
 msgstr "&Cestina"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "&Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "&Proprietà"
+
+#: kfindtreeview.cpp:514
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Salva i risultati come"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Non è stato possibile salvare i risultati."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "File dei risultati di KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "I risultati sono stati salvati in: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Proprietà"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -458,6 +460,11 @@ msgstr " Nome/&posizione"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "C&ontenuti"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Proprietà"
 
 #: kftabdlg.cpp:399
 #, kde-format

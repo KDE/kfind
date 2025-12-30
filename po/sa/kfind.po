@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -148,32 +148,34 @@ msgstr "&लुप्"
 msgid "&Move to Trash"
 msgstr "&कचरा प्रति गच्छतु"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "&Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "&गुणाः"
+
+#: kfindtreeview.cpp:514
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "परिणामान् रक्षन्तु यथा"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "परिणामान् रक्षितुं असमर्थः।"
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind परिणामसञ्चिका"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "परिणामाः रक्षिताः अभवन्: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&गुणाः"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -453,6 +455,11 @@ msgstr "नाम/&स्थान"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "C&contents"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&गुणाः"
 
 #: kftabdlg.cpp:399
 #, kde-format

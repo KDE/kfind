@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2023-03-21 18:45+0100\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -147,32 +147,34 @@ msgstr "&Xoá"
 msgid "&Move to Trash"
 msgstr "Chuyển vào thùng &rác"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "&Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "&Thuộc tính"
+
+#: kfindtreeview.cpp:514
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Lưu kết quả thành"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Không thể lưu kết quả."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Tệp kết quả KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Các kết quả đã được lưu vào: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Thuộc tính"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -467,6 +469,11 @@ msgstr "Tên/Địa điể&m"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "Nội &dung"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Thuộc tính"
 
 #: kftabdlg.cpp:399
 #, kde-format

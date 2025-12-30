@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2009-12-18 14:34+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
 "Language-Team: American English <danishka@gmail.>\n"
@@ -151,34 +151,36 @@ msgstr "මකන්න (&D)"
 msgid "&Move to Trash"
 msgstr "ඉවතලන බඳුනට ගෙනයන්න (&M)"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "&Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "වත්කම් (&P)"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "ලෙස ප්‍රතිඵලය සුරකින්න"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "ප්‍රතිඵල සුරැකිය නොහැකි විය."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind ප්‍රතිඵල ගොනුව"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "ගොනුව වෙත ප්‍රතිඵල සුරැකිනි\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "වත්කම් (&P)"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -474,6 +476,11 @@ msgstr "නම/ස්ථානය (&L)"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "අන්තර්ගතයන් (&o)"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "වත්කම් (&P)"
 
 #: kftabdlg.cpp:399
 #, kde-format

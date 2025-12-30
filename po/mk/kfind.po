@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2009-06-22 12:14+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -158,34 +158,36 @@ msgstr "&Избриши"
 msgid "&Move to Trash"
 msgstr "Пре&мести во корпа"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "&Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "&Својства"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Зачувување на резултатот како"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Не може да се снимат резултатите."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Датотека со резултати од KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Резултатите беа снимени во датотеката\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Својства"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -498,6 +500,11 @@ msgstr "Име и &локација"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "С&одржина"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Својства"
 
 #: kftabdlg.cpp:399
 #, kde-format

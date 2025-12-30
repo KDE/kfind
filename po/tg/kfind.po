@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2019-10-01 11:08+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -162,34 +162,36 @@ msgstr "Нест кардан"
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Хусусиятҳо"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Захиракунии натиҷаҳо ҳамчун"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, fuzzy, kde-format
 msgid "Unable to save results."
 msgstr "Захиракунии Натиҷаҳо ғайри имкон буд!"
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Файли натиҷаҳои KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Натиҷаҳо дар файл захира карда шуданд\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Хусусиятҳо"
 
 #: kftabdlg.cpp:65
 #, fuzzy, kde-format
@@ -495,6 +497,11 @@ msgstr "Ном/&Ҷойгиршавӣ"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Мундариҷа"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Хусусиятҳо"
 
 #: kftabdlg.cpp:399
 #, fuzzy, kde-format
@@ -824,9 +831,6 @@ msgstr "Роҳ(ҳо) барои ҷустуҷӯ"
 
 #~ msgid "Open With..."
 #~ msgstr "Кушодан бо..."
-
-#~ msgid "Properties"
-#~ msgstr "Хусусиятҳо"
 
 #~ msgid "Selected Files"
 #~ msgstr "Файлҳои Интихобшуда"

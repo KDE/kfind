@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2010-01-28 22:50+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn-IN <>\n"
@@ -153,34 +153,36 @@ msgstr "ಅಳಿಸಿಹಾಕು(&D)"
 msgid "&Move to Trash"
 msgstr "ಕಸದ ಬುಟ್ಟಿಗೆ ಸ್ಥಳಾಂತರಿಸು(&M)"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "ಲಕ್ಷಣಗಳು"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "ಫಲಿತಾಂಶಗನ್ನು ಹೀಗೆ ಉಳಿಸಿ"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "ಫಲಿತಾಂಶಗಳನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind ಫಲಿತಾಂಶ ಕಡತ"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "ಫಲಿತಾಂಶಗಳನ್ನು ಕಡತಕ್ಕೆ ಉಳಿಸಲಾಗಿದೆ\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "ಗುಣಗಳು(&P)"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -465,6 +467,11 @@ msgstr "ಹೆಸರು/ತಾಣ(&L)"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "ವಿಷಯಗಳು(&o)"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "ಗುಣಗಳು(&P)"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -792,9 +799,6 @@ msgstr "ಹುಡುಕಬೇಕಿರುವ ಮಾರ್ಗ(ಗಳು)"
 
 #~ msgid "Open With..."
 #~ msgstr "ಇದರೊಂದಿಗೆ ತೆರೆಯಿರಿ..."
-
-#~ msgid "Properties"
-#~ msgstr "ಲಕ್ಷಣಗಳು"
 
 #~ msgid "Selected Files"
 #~ msgstr "ಆಯ್ಕೆ ಮಾಡಲಾದ ಕಡತಗಳು"

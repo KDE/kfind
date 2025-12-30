@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2009-12-20 18:45+0100\n"
 "Last-Translator: Mark Kwidzińśczi <mark@linuxcsb.org>\n"
 "Language-Team: Kaszëbsczi <i18n-csb@linuxcsb.org>\n"
@@ -152,34 +152,36 @@ msgstr "Rëmôj"
 msgid "&Move to Trash"
 msgstr "&Przeniesë do kòsza"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Swòjizna"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Zapiszë wińdzenié jakno"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Nié mòże zapisac skùtkù."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Lopk szëkbë KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Skùtk òstôł zapisóny do lopka\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Swòjizna"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -478,6 +480,11 @@ msgstr "&Miono/katalog"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Zamkłosc"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Swòjizna"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -816,9 +823,6 @@ msgstr "Przeszëkiwónié stegnë"
 
 #~ msgid "Open With..."
 #~ msgstr "Òtemkni w..."
-
-#~ msgid "Properties"
-#~ msgstr "Swòjizna"
 
 #~ msgid "Selected Files"
 #~ msgstr "Wëbróné lopczi"

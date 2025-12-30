@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2010-03-27 23:10+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -152,33 +152,35 @@ msgstr "&ลบ"
 msgid "&Move to Trash"
 msgstr "&ทิ้งลงถังขยะ"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "คุณสมบัติ"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "บันทึกผลการค้นหาเป็น"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "ไม่สามารถบันทึกผลการค้นหาได้"
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "แฟ้มผลการค้นหาของ KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "ผลการค้นหาถูกบันทึกไปยัง: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&คุณสมบัติ"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -474,6 +476,11 @@ msgstr "ชื่อ/ตำแหน่ง"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "เ&นื้อหา"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&คุณสมบัติ"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -798,9 +805,6 @@ msgstr "พาธที่จะใช้ในการค้นหา"
 
 #~ msgid "Open With..."
 #~ msgstr "เปิดใช้ด้วย..."
-
-#~ msgid "Properties"
-#~ msgstr "คุณสมบัติ"
 
 #~ msgid "Selected Files"
 #~ msgstr "แฟ้มที่เลือกไว้"

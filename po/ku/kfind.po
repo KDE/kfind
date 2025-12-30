@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2009-01-06 14:31+0200\n"
 "Last-Translator: Erdal Ronahi <erdal.ronahi@nospam.gmail.com>\n"
 "Language-Team: Kurdish <kde-i18n-doc@lists.kde.org>\n"
@@ -158,34 +158,36 @@ msgstr "Jêbirin"
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Taybetmendî"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Encaman cuda tomar bike"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Nikare encaman tomar bike"
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr ""
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "encam di pel hatine tomar kirin\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Taybetmendî"
 
 #: kftabdlg.cpp:65
 #, fuzzy, kde-format
@@ -463,6 +465,11 @@ msgstr "Nav/&Cih"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "Na&verok"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Taybetmendî"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -781,9 +788,6 @@ msgstr "Rêç an reçên ji bo lêgerînê"
 
 #~ msgid "Open With..."
 #~ msgstr "Veke Bi..."
-
-#~ msgid "Properties"
-#~ msgstr "Taybetmendî"
 
 #~ msgid "Selected Files"
 #~ msgstr "Pelên Hilbijartî"

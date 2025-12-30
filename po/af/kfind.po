@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart stable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2005-11-25 11:29+0200\n"
 "Last-Translator: Frikkie Thirion <frikkie.thirion@deneloptronics.co.za>\n"
 "Language-Team: AFRIKAANS <translate-discuss-af@lists.sourceforge.net>\n"
@@ -152,34 +152,35 @@ msgstr ""
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Eienskappe"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Stoor Resultate As"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Kon nie die resultate stoor nie."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind Resultaat Lêer"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Resultate na lêer gestoors\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "Eienskappe"
 
 #: kftabdlg.cpp:65
 #, fuzzy, kde-format
@@ -497,6 +498,11 @@ msgstr "Naam/Ligging"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "Inhoud"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "Eienskappe"
 
 #: kftabdlg.cpp:399
 #, fuzzy, kde-format
@@ -824,10 +830,6 @@ msgstr "Gids om in te soek"
 
 #~ msgid "Open With..."
 #~ msgstr "Maak oop met..."
-
-#, fuzzy
-#~ msgid "Properties"
-#~ msgstr "Eienskappe"
 
 #~ msgid "Selected Files"
 #~ msgstr "Gekiesde Lêers"

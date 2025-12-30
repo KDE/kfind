@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2008-10-06 20:57+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian Latin <i18n@mova.org>\n"
@@ -162,34 +162,36 @@ msgstr "Vydali"
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Ułaścivaści"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Zapišy vynik jak"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Nie ŭdałosia zapisać vynik."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Fajły vyniku „KFind”"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Vynik zapisany ŭ fajł\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Ułaścivaści"
 
 #: kftabdlg.cpp:65
 #, fuzzy, kde-format
@@ -473,6 +475,11 @@ msgstr "Nazva/&miesca"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Źmieściva"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Ułaścivaści"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -799,9 +806,6 @@ msgstr "Ściežki pošuku"
 
 #~ msgid "Open With..."
 #~ msgstr "Adčyni..."
-
-#~ msgid "Properties"
-#~ msgstr "Ułaścivaści"
 
 #~ msgid "Selected Files"
 #~ msgstr "Vybranyja fajły"

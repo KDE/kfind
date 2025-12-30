@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2024-11-11 19:00\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -157,32 +157,34 @@ msgstr "В&ыдаліць"
 msgid "&Move to Trash"
 msgstr "&Перамясціць у сметніцу"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Уласцівасці"
+
+#: kfindtreeview.cpp:514
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Захаваць вынікі як"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Немагчыма захаваць вынікі."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Файл вынікаў KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Вынікі захаваныя ў: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Уласцівасці"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -466,6 +468,11 @@ msgstr "Назва/&Размяшчэнне"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "Змесціва"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Уласцівасці"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -790,9 +797,6 @@ msgstr "Шлях(і) пошуку"
 
 #~ msgid "Open With..."
 #~ msgstr "Адкрыць у..."
-
-#~ msgid "Properties"
-#~ msgstr "Уласцівасці"
 
 #~ msgid "Selected Files"
 #~ msgstr "Выбраныя файлы"

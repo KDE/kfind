@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2010-01-21 18:26+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux-wa@walon.org>\n"
@@ -160,34 +160,35 @@ msgstr "&Disfacer"
 msgid "&Move to Trash"
 msgstr "&Taper å batch"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "&Prôpietés"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Schaper rzultats eyet les rlomer"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Dji n' a nén parvinou a schaper les rzultats."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Fitchî des rzultats di Kfind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Les rzultats sont schapés e fitchî\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Prôpietés"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -469,6 +470,11 @@ msgstr " No/&Eplaeçmint"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "Åd&vins"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Prôpietés"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -787,10 +793,6 @@ msgstr "Tchimin(s) pol cweraedje"
 
 #~ msgid "Open With..."
 #~ msgstr "Drovi avou..."
-
-#, fuzzy
-#~ msgid "Properties"
-#~ msgstr "&Prôpietés"
 
 #~ msgid "Selected Files"
 #~ msgstr "Tchoezis fitchîs"

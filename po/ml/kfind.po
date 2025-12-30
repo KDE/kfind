@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2020-02-05 14:49+0000\n"
 "Last-Translator: Subin Siby <subins2000@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
@@ -147,32 +147,34 @@ msgstr "കളയുക (&D)"
 msgid "&Move to Trash"
 msgstr "ചവറിലേകു നീകൂക (&M)"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "ഗുണഗണങ്ങള്‍"
+
+#: kfindtreeview.cpp:514
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "ഫലങ്ങള്‍ സൂക്ഷിക്കേണ്ട പേര്"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "ഫലങ്ങള്‍ സൂക്ഷിക്കുവാന്‍ സാധ്യമായില്ല."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind ഫലങ്ങളുടെ ഫയല്‍"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "ഫലങ്ങള്‍ സൂക്ഷിച്ചിരിക്കുന്നത്: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&ഗുണഗണങ്ങള്‍"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -470,6 +472,11 @@ msgstr "പേരു്/&സ്ഥാനം"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "ഉള്ളടക്കം (&O)"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&ഗുണഗണങ്ങള്‍"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -795,9 +802,6 @@ msgstr "തെരയേണ്ട പാത്ത്"
 
 #~ msgid "Open With..."
 #~ msgstr "തുറക്കേണ്ട പ്രയോഗം..."
-
-#~ msgid "Properties"
-#~ msgstr "ഗുണഗണങ്ങള്‍"
 
 #~ msgid "Selected Files"
 #~ msgstr "തിരഞ്ഞെടുത്ത ഫയലുകള്‍"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2009-01-08 12:28+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -159,34 +159,36 @@ msgstr "মুছে ফেলুন"
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "বিবিধ বৈশিষ্ট্য"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "নতুন রূপে ফলাফল সংরক্ষণ করুন"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "ফলাফল সংরক্ষণ করতে ব্যর্থ।"
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind ফাইলের ফাইল"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "ফাইলের মধ্যে ফলাফল সংরক্ষণ করা হয়েছে\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "বিবিধ বৈশিষ্ট্য (&P)"
 
 #: kftabdlg.cpp:65
 #, fuzzy, kde-format
@@ -473,6 +475,11 @@ msgstr "নাম/অবস্থান (&L)"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "বিষয়বস্তু (&o)"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "বিবিধ বৈশিষ্ট্য (&P)"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -797,9 +804,6 @@ msgstr "অনুসন্ধান স্থলের পাথ"
 
 #~ msgid "Open With..."
 #~ msgstr "উল্লিখিত প্রোগ্রাম সহযোগে খুলুন..."
-
-#~ msgid "Properties"
-#~ msgstr "বিবিধ বৈশিষ্ট্য"
 
 #~ msgid "Selected Files"
 #~ msgstr "নির্বাচিত ফাইল"

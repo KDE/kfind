@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2010-06-10 15:16+0530\n"
 "Last-Translator: Viranch Mehta <viranch.mehta@gmail.com>\n"
 "Language-Team: Gujarati <kde-i18n-doc@kde.org>\n"
@@ -153,33 +153,35 @@ msgstr "દૂર કરો (&D)"
 msgid "&Move to Trash"
 msgstr "કચરાપેટીમાં ખસેડો (&M)"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "ગુણધર્મો"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "પરિણામ આ રીતે સંગ્રહો"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "પરિણામ સંગ્રહી શકયા નથી."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind પરિણામો ફાઇલ"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "પરિણામો %1માં સંગ્રહાઇ ગયા છે."
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "ગુણધર્મો (&P)"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -476,6 +478,11 @@ msgstr "નામ/સ્થળો (&L)"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "વિગતો (&o)"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "ગુણધર્મો (&P)"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -800,9 +807,6 @@ msgstr "શોધ માટેના માર્ગ(ર્ગો)"
 
 #~ msgid "Open With..."
 #~ msgstr "ની સાથે ખોલો..."
-
-#~ msgid "Properties"
-#~ msgstr "ગુણધર્મો"
 
 #~ msgid "Selected Files"
 #~ msgstr "પસંદ કરેલ ફાઇલો"

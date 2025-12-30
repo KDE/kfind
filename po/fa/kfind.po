@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2011-10-05 00:21+0330\n"
 "Last-Translator: Mohamad Reza Mirdamadi <mohi@ubuntu.ir>\n"
 "Language-Team: Farsi (Persian) <>\n"
@@ -152,34 +152,36 @@ msgstr "&حذف‌"
 msgid "&Move to Trash"
 msgstr "&حرکت به زباله‌"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "ویژگیها"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "ذخیره نتایج به عنوان"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "قادر به ذخیره نتایج نیست."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "پرونده نتایج KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "نتایج، در پرونده ذخیره شد\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&ویژگیها‌"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -477,6 +479,11 @@ msgstr "نام/&محل‌"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&محتویات‌"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&ویژگیها‌"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -815,9 +822,6 @@ msgstr "مسیر)های( جستجو"
 
 #~ msgid "Open With..."
 #~ msgstr "باز کردن با..."
-
-#~ msgid "Properties"
-#~ msgstr "ویژگیها"
 
 #~ msgid "Selected Files"
 #~ msgstr "پرونده‌های برگزیده"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2011-08-12 10:36+0200\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -152,32 +152,34 @@ msgstr "&Wegdoon"
 msgid "&Move to Trash"
 msgstr "Na Affalltünn &verschuven"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Egenschappen"
+
+#: kfindtreeview.cpp:514
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Resultaten sekern as"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Resultaten laat sik nich sekern."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Resultatendatei vun KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Resultaten wöörn sekert na: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Egenschappen"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -477,6 +479,11 @@ msgstr "&Naam / Oort"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Inholt"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Egenschappen"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -807,9 +814,6 @@ msgstr "Söökpadden"
 
 #~ msgid "Open With..."
 #~ msgstr "Opmaken mit..."
-
-#~ msgid "Properties"
-#~ msgstr "Egenschappen"
 
 #~ msgid "Selected Files"
 #~ msgstr "Utsöcht Dateien"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2004-07-08 23:26+0200\n"
 "Last-Translator: Thierry Vignaud <tvignaud.com>\n"
 "Language-Team: Brezhoneg <Suav.Icb.fr>\n"
@@ -154,34 +154,36 @@ msgstr "Dilemel"
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Perzhioù"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Enrollañ an disoc'hoù e"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Ne m'eus ket gallet enrollañ an disoc'hoù."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Restr disoc'hoù KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Disoc'hoù enrollet er restr\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Perzhioù"
 
 #: kftabdlg.cpp:65
 #, fuzzy, kde-format
@@ -462,6 +464,11 @@ msgstr "Anv/&Lec'hiadur"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Taolenn"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Perzhioù"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -780,9 +787,6 @@ msgstr "Hent(où) an enklask"
 
 #~ msgid "Open With..."
 #~ msgstr "Digeriñ gant ..."
-
-#~ msgid "Properties"
-#~ msgstr "Perzhioù"
 
 #~ msgid "Selected Files"
 #~ msgstr "Restroù diuzet"

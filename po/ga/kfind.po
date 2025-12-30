@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2004-12-03 14:52-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -153,32 +153,34 @@ msgstr "&Scrios"
 msgid "&Move to Trash"
 msgstr "&Cuir sa Bhruscar"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Airíonna"
+
+#: kfindtreeview.cpp:514
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Sábháil na Torthaí Mar"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Ní féidir na torthaí a shábháil."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Comhad na dTorthaí KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Sábháladh na torthaí i: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Airíonna"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -484,6 +486,11 @@ msgstr "Ainm/&Suíomh"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "I&nneachar"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Airíonna"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -840,9 +847,6 @@ msgstr "Conair(í) le cuardach"
 
 #~ msgid "Open With..."
 #~ msgstr "Oscail Le..."
-
-#~ msgid "Properties"
-#~ msgstr "Airíonna"
 
 #~ msgid "Selected Files"
 #~ msgstr "Comhaid Roghnaithe"

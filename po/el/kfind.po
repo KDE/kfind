@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2021-07-18 11:04+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -154,32 +154,34 @@ msgstr "&Διαγραφή"
 msgid "&Move to Trash"
 msgstr "&Μετακίνηση στα απορρίμματα"
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Ιδιότητες"
+
+#: kfindtreeview.cpp:514
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Αποθήκευση αποτελεσμάτων ως"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Αδυναμία αποθήκευσης των αποτελεσμάτων."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Αρχείο αποτελεσμάτων KFind"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Τα αποτελέσματα αποθηκεύτηκαν στο: %1"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "&Ιδιότητες"
 
 #: kftabdlg.cpp:65
 #, kde-format
@@ -465,6 +467,11 @@ msgstr "Όνομα/&Τοποθεσία"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Περιεχόμενα"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "&Ιδιότητες"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -781,9 +788,6 @@ msgstr "Διαδρομή(ές) για αναζήτηση"
 
 #~ msgid "Open With..."
 #~ msgstr "Άνοιγμα με..."
-
-#~ msgid "Properties"
-#~ msgstr "Ιδιότητες"
 
 #~ msgid "Selected Files"
 #~ msgstr "Επιλεγμένα αρχεία"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2009-02-05 18:13+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -153,34 +153,36 @@ msgstr "मेटाव"
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "गुन"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "परिनाम अइसन सहेजव"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "परिनाम मन ल सहेजना संभव नइ हे."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "के-फाइंड परिनाम फाइल"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "परिनाम ल फाइल मं सहेजिस\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "गुन (&P)"
 
 #: kftabdlg.cpp:65
 #, fuzzy, kde-format
@@ -462,6 +464,11 @@ msgstr "नाम/जगह  (&L)"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "विसय चीज (&o)"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "गुन (&P)"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -785,9 +792,6 @@ msgstr "खोजे के रस्ता"
 
 #~ msgid "Open With..."
 #~ msgstr "एखर साथ खोलव..."
-
-#~ msgid "Properties"
-#~ msgstr "गुन"
 
 #~ msgid "Selected Files"
 #~ msgstr "चुने गे फाइल मन ल"

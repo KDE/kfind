@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2006-01-22 20:49+0100\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -152,34 +152,35 @@ msgstr ""
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Xossa&lari"
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Natijalarni saqlash"
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "Natijalarni saqlab boʻlmadi."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind natijalar fayli"
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "Natijalar faylga saqlandi\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "Xossa&lari"
 
 #: kftabdlg.cpp:65
 #, fuzzy, kde-format
@@ -462,6 +463,11 @@ msgstr "Nomi/&Joyi"
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr "&Tarkibi"
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "Xossa&lari"
 
 #: kftabdlg.cpp:399
 #, kde-format
@@ -764,10 +770,6 @@ msgstr "Qidirish uchun yoʻl(lar)"
 
 #~ msgid "Open With..."
 #~ msgstr "...bilan ochish"
-
-#, fuzzy
-#~ msgid "Properties"
-#~ msgstr "Xossa&lari"
 
 #~ msgid "Selected Files"
 #~ msgstr "Belgilangan fayllar"

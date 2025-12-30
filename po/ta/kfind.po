@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-30 00:44+0000\n"
 "PO-Revision-Date: 2024-06-16 18:09+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -157,34 +157,35 @@ msgstr ""
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:509
+#: kfindtreeview.cpp:374
+#, fuzzy, kde-format
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "இயல்புகள் "
+
+#: kfindtreeview.cpp:514
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "முடிவுகளை இப்படி சேமிக்கவும் "
 
-#: kfindtreeview.cpp:534
+#: kfindtreeview.cpp:539
 #, kde-format
 msgid "Unable to save results."
 msgstr "முடிவுகளை சேமிக்க முடியவில்லை."
 
-#: kfindtreeview.cpp:548
+#: kfindtreeview.cpp:553
 #, kde-format
 msgid "KFind Results File"
 msgstr "Kதேடல் முடிவுக் கோப்பு "
 
-#: kfindtreeview.cpp:563
+#: kfindtreeview.cpp:568
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"
 msgstr "இந்த கோப்பில் முடிவுகள் சேமிக்கபட்டன\n"
-
-#: kfindtreeview.cpp:659 kftabdlg.cpp:395
-#, kde-format
-msgid "&Properties"
-msgstr "இயல்புகள் "
 
 #: kftabdlg.cpp:65
 #, fuzzy, kde-format
@@ -499,6 +500,11 @@ msgstr " பெயர்/இடம்  "
 msgctxt "tab name: search by contents"
 msgid "C&ontents"
 msgstr " பொருளடக்கம் "
+
+#: kftabdlg.cpp:395
+#, kde-format
+msgid "&Properties"
+msgstr "இயல்புகள் "
 
 #: kftabdlg.cpp:399
 #, fuzzy, kde-format
@@ -820,10 +826,6 @@ msgstr "தேடவேண்டிய பாதை(கள்). "
 
 #~ msgid "Open With..."
 #~ msgstr "இதனாற் திற... "
-
-#, fuzzy
-#~ msgid "Properties"
-#~ msgstr "இயல்புகள் "
 
 #~ msgid "Selected Files"
 #~ msgstr "தேர்ந்தெடுக்கபட்ட கோப்புகள் "
