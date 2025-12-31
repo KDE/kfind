@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:44+0000\n"
-"PO-Revision-Date: 2024-07-30 08:59+0200\n"
+"PO-Revision-Date: 2025-12-30 06:49+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.8\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -156,11 +156,10 @@ msgid "&Move to Trash"
 msgstr "Pre&makni v Smeti"
 
 #: kfindtreeview.cpp:374
-#, fuzzy, kde-format
-#| msgid "&Properties"
+#, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
-msgstr "&Lastnosti"
+msgstr "Lastnosti"
 
 #: kfindtreeview.cpp:514
 #, kde-format

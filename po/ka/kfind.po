@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:44+0000\n"
-"PO-Revision-Date: 2024-07-30 06:37+0200\n"
+"PO-Revision-Date: 2025-12-30 05:59+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.8\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -148,11 +148,10 @@ msgid "&Move to Trash"
 msgstr "&სანაგვე ყუთში გადატანა"
 
 #: kfindtreeview.cpp:374
-#, fuzzy, kde-format
-#| msgid "&Properties"
+#, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
-msgstr "&თვისებები"
+msgstr "თვისებები"
 
 #: kfindtreeview.cpp:514
 #, kde-format
