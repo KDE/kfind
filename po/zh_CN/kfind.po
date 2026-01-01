@@ -146,11 +146,10 @@ msgid "&Move to Trash"
 msgstr "移动到回收站(&M)"
 
 #: kfindtreeview.cpp:374
-#, fuzzy, kde-format
-#| msgid "&Properties"
+#, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
-msgstr "属性(&P)"
+msgstr ""
 
 #: kfindtreeview.cpp:514
 #, kde-format
