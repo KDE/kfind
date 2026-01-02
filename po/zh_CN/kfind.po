@@ -149,7 +149,7 @@ msgstr "移动到回收站(&M)"
 #, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
-msgstr ""
+msgstr "属性"
 
 #: kfindtreeview.cpp:514
 #, kde-format
