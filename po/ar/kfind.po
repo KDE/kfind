@@ -8,7 +8,7 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # AbdulAziz AlSharif <a.a-a.s@hotmail.com>, 2007.
 # Youssef Chahibi <chahibi@gmail.com>, 2007.
-# SPDX-FileCopyrightText: 2008, 2012, 2022, 2023, 2024 zayed <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2008, 2012, 2022, 2023, 2024, 2026 zayed <zayed.alsaidi@gmail.com>
 # Abdalrahim G. Fakhouri <abdilra7eem@yahoo.com>, 2012.
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2014.
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:44+0000\n"
-"PO-Revision-Date: 2024-08-15 11:54+0400\n"
+"PO-Revision-Date: 2026-01-07 19:05+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -161,11 +161,10 @@ msgid "&Move to Trash"
 msgstr "ا&نقل إلى المهملات"
 
 #: kfindtreeview.cpp:374
-#, fuzzy, kde-format
-#| msgid "Properties"
+#, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
-msgstr "خصائص"
+msgstr "الخصائص"
 
 #: kfindtreeview.cpp:514
 #, kde-format
