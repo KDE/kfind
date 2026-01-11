@@ -39,6 +39,8 @@
 // Permission strings
 #include <KLazyLocalizedString>
 
+using namespace Qt::StringLiterals;
+
 const KLazyLocalizedString perm[4] = {
     kli18n("Read-write"),
     kli18n("Read-only"),
@@ -364,6 +366,7 @@ KFindTreeView::KFindTreeView(QWidget *parent, KfindDlg *findDialog)
 
     QAction *del = new QAction(QIcon::fromTheme(QStringLiteral("edit-delete")), i18n("&Delete"), this);
     connect(del, &QAction::triggered, this, &KFindTreeView::deleteSelectedFiles);
+    m_actionCollection->addAction(u"delete"_s, del);
     KActionCollection::setDefaultShortcut(del, Qt::SHIFT | Qt::Key_Delete);
 
     QAction *trash = new QAction(QIcon::fromTheme(QStringLiteral("user-trash")), i18n("&Move to Trash"), this);
@@ -650,7 +653,7 @@ void KFindTreeView::contextMenuRequested(const QPoint &p)
     copyLocationAction->setEnabled(fileList.count() == 1);
     m_contextMenu->addAction(copyLocationAction);
 
-    //m_contextMenu->addAction(m_actionCollection->action(QLatin1String("del")));
+    m_contextMenu->addAction(m_actionCollection->action("delete"_L1));
     m_contextMenu->addAction(m_actionCollection->action(QStringLiteral("trash")));
     m_contextMenu->addSeparator();
 
