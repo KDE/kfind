@@ -151,11 +151,10 @@ msgid "&Move to Trash"
 msgstr "Přesunout &do koše"
 
 #: kfindtreeview.cpp:374
-#, fuzzy, kde-format
-#| msgid "&Properties"
+#, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
-msgstr "Vlastnost&i"
+msgstr "Vlastnosti"
 
 #: kfindtreeview.cpp:514
 #, kde-format
