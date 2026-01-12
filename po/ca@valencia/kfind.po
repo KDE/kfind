@@ -579,7 +579,7 @@ msgstr[1] "anys"
 #, kde-format
 msgctxt "@title:window"
 msgid "Error while using locate"
-msgstr "S'ha produït un error en utilitzar «locate»"
+msgstr "S'ha produït un error mentre s'utilitzava «locate»"
 
 #: main.cpp:27
 #, kde-format
