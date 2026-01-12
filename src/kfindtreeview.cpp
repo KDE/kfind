@@ -692,28 +692,26 @@ QList<QUrl> KFindTreeView::selectedUrls() const
     return uris;
 }
 
-void KFindTreeView::deleteSelectedFiles()
+static void deleteOrTrash(KFindTreeView *parent, KIO::AskUserActionInterface::DeletionType type)
 {
-    QList<QUrl> uris = selectedUrls();
+    const QList<QUrl> uris = parent->selectedUrls();
     if (uris.isEmpty()) {
         return;
     }
 
     using Iface = KIO::AskUserActionInterface;
-    auto *trashJob = new KIO::DeleteOrTrashJob(uris, Iface::Delete, Iface::ForceConfirmation, this);
+    auto *trashJob = new KIO::DeleteOrTrashJob(uris, type, Iface::ForceConfirmation, parent);
     trashJob->start();
+}
+
+void KFindTreeView::deleteSelectedFiles()
+{
+    deleteOrTrash(this, KIO::AskUserActionInterface::Delete);
 }
 
 void KFindTreeView::moveToTrashSelectedFiles()
 {
-    QList<QUrl> uris = selectedUrls();
-    if (uris.isEmpty()) {
-        return;
-    }
-
-    using Iface = KIO::AskUserActionInterface;
-    auto *trashJob = new KIO::DeleteOrTrashJob(uris, Iface::Trash, Iface::ForceConfirmation, this);
-    trashJob->start();
+    deleteOrTrash(this, KIO::AskUserActionInterface::Trash);
 }
 
 void KFindTreeView::selectedFileProperties()
