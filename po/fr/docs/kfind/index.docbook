@@ -303,7 +303,7 @@
 ><para
 >Si vous avez installé l'outil &kregexpeditor; de la rubrique playground/utils sur le serveur git de &kde;, vous aurez cette option supplémentaire. Le fait de l'activer vous permettra de chercher une <firstterm
 >regexp</firstterm
->, c'est à dire une expression rationnelle. C'est une façon de définir les conditions de la recherche ; elles peuvent être très complexes, mais aussi très puissantes. Si vous n'êtes pas familier avec les expressions rationnelles, vous pouvez choisir <guilabel
+>, c'est-à-dire une expression rationnelle. C'est une façon de définir les conditions de la recherche ; elles peuvent être très complexes, mais aussi très puissantes. Si vous n'êtes pas familier avec les expressions rationnelles, vous pouvez choisir <guilabel
 >Modifier</guilabel
 > pour appeler &kregexpeditor;. Cet outil vous permet de construire votre jeu de conditions graphiquement, puis de générer l'expression pour vous.</para>
 
