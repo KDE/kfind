@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:44+0000\n"
+"POT-Creation-Date: 2026-01-22 01:02+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -69,109 +69,109 @@ msgid_plural "%1 items found"
 msgstr[0] "एकं द्रव्यं प्राप्तम्"
 msgstr[1] "%1 वस्तूनि प्राप्तानि"
 
-#: kfindtreeview.cpp:43
+#: kfindtreeview.cpp:45
 msgid "Read-write"
 msgstr "पठतु-लिखय"
 
-#: kfindtreeview.cpp:44
+#: kfindtreeview.cpp:46
 msgid "Read-only"
 msgstr "केवलं पठनीयः"
 
-#: kfindtreeview.cpp:45
+#: kfindtreeview.cpp:47
 msgid "Write-only"
 msgstr "लेखनमात्रम्"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:48
 msgid "Inaccessible"
 msgstr "दुर्गमः"
 
-#: kfindtreeview.cpp:66
+#: kfindtreeview.cpp:68
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "नामः"
 
-#: kfindtreeview.cpp:68
+#: kfindtreeview.cpp:70
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "उपपुटे"
 
-#: kfindtreeview.cpp:70
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "आकृति"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "परिवर्तित"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "अनुमतिः"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:78
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "प्रथमा मिलान रेखा"
 
-#: kfindtreeview.cpp:355
+#: kfindtreeview.cpp:357
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "प्रतिलिपि स्थानम्"
 
-#: kfindtreeview.cpp:356
+#: kfindtreeview.cpp:358
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr "एतेन प्रथमस्य चयनितस्य द्रव्यस्य मार्गः क्लिप्बोर्ड् मध्ये प्रतिलिपितः भविष्यति ।"
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:363
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "&पुटं (पुटं) युक्तं उद्घाटयतु"
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:367
 #, kde-format
 msgid "&Delete"
 msgstr "&लुप्"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&कचरा प्रति गच्छतु"
 
-#: kfindtreeview.cpp:374
+#: kfindtreeview.cpp:377
 #, fuzzy, kde-format
 #| msgid "&Properties"
 msgctxt "@action:inmenu File"
 msgid "Properties"
 msgstr "&गुणाः"
 
-#: kfindtreeview.cpp:514
+#: kfindtreeview.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "परिणामान् रक्षन्तु यथा"
 
-#: kfindtreeview.cpp:539
+#: kfindtreeview.cpp:542
 #, kde-format
 msgid "Unable to save results."
 msgstr "परिणामान् रक्षितुं असमर्थः।"
 
-#: kfindtreeview.cpp:553
+#: kfindtreeview.cpp:556
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind परिणामसञ्चिका"
 
-#: kfindtreeview.cpp:568
+#: kfindtreeview.cpp:571
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"

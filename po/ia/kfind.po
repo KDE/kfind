@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:44+0000\n"
+"POT-Creation-Date: 2026-01-22 01:02+0000\n"
 "PO-Revision-Date: 2026-01-09 15:46+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -69,65 +69,65 @@ msgid_plural "%1 items found"
 msgstr[0] "un elemento trovate"
 msgstr[1] "%1 elementos trovate"
 
-#: kfindtreeview.cpp:43
+#: kfindtreeview.cpp:45
 msgid "Read-write"
 msgstr "Lectura-Scriptura"
 
-#: kfindtreeview.cpp:44
+#: kfindtreeview.cpp:46
 msgid "Read-only"
 msgstr "Solmente de lectura"
 
-#: kfindtreeview.cpp:45
+#: kfindtreeview.cpp:47
 msgid "Write-only"
 msgstr "Solmente de scriptura"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:48
 msgid "Inaccessible"
 msgstr "Non accessibile"
 
-#: kfindtreeview.cpp:66
+#: kfindtreeview.cpp:68
 #, kde-format
 msgctxt "file name column"
 msgid "Name"
 msgstr "Nomine"
 
-#: kfindtreeview.cpp:68
+#: kfindtreeview.cpp:70
 #, kde-format
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "In sub dossier"
 
-#: kfindtreeview.cpp:70
+#: kfindtreeview.cpp:72
 #, kde-format
 msgctxt "file size column"
 msgid "Size"
 msgstr "Grandor"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "Modificate"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:76
 #, kde-format
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "Permissiones"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:78
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Prime linea coincidente"
 
-#: kfindtreeview.cpp:355
+#: kfindtreeview.cpp:357
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr "Copia location"
 
-#: kfindtreeview.cpp:356
+#: kfindtreeview.cpp:358
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
@@ -135,44 +135,44 @@ msgstr ""
 "Isto copiara le percurso del prime elemento seligite in le area de "
 "transferentia."
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:363
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr "&Aperi dossier(es) que contine"
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:367
 #, kde-format
 msgid "&Delete"
 msgstr "&Dele"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr "&Move al corbe"
 
-#: kfindtreeview.cpp:374
+#: kfindtreeview.cpp:377
 #, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
 msgstr "Proprietates"
 
-#: kfindtreeview.cpp:514
+#: kfindtreeview.cpp:517
 #, kde-format
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Salveguarda resultatos como"
 
-#: kfindtreeview.cpp:539
+#: kfindtreeview.cpp:542
 #, kde-format
 msgid "Unable to save results."
 msgstr "Inhabile a salveguardar resultatos."
 
-#: kfindtreeview.cpp:553
+#: kfindtreeview.cpp:556
 #, kde-format
 msgid "KFind Results File"
 msgstr "File de resultatos de KFind"
 
-#: kfindtreeview.cpp:568
+#: kfindtreeview.cpp:571
 #, kde-format
 msgctxt "%1=filename"
 msgid "Results were saved to: %1"

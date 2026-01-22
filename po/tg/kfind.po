@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:44+0000\n"
+"POT-Creation-Date: 2026-01-22 01:02+0000\n"
 "PO-Revision-Date: 2019-10-01 11:08+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -77,116 +77,116 @@ msgid_plural "%1 items found"
 msgstr[0] "як файл ёфт шуд"
 msgstr[1] "%1 файл ёфт шуд"
 
-#: kfindtreeview.cpp:43
+#: kfindtreeview.cpp:45
 msgid "Read-write"
 msgstr "Хондан-навиштан"
 
-#: kfindtreeview.cpp:44
+#: kfindtreeview.cpp:46
 msgid "Read-only"
 msgstr "Танҳо хониш"
 
-#: kfindtreeview.cpp:45
+#: kfindtreeview.cpp:47
 msgid "Write-only"
 msgstr "Танҳо навиштан"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:48
 msgid "Inaccessible"
 msgstr "Имконпазир"
 
-#: kfindtreeview.cpp:66
+#: kfindtreeview.cpp:68
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "file name column"
 msgid "Name"
 msgstr "Ном"
 
-#: kfindtreeview.cpp:68
+#: kfindtreeview.cpp:70
 #, fuzzy, kde-format
 #| msgid "In Subfolder"
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "Дар Зерфеҳрист"
 
-#: kfindtreeview.cpp:70
+#: kfindtreeview.cpp:72
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "file size column"
 msgid "Size"
 msgstr "Андоза"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:74
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "Санаи тағйир"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:76
 #, fuzzy, kde-format
 #| msgid "Permissions"
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "Рухсатҳо"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:78
 #, fuzzy, kde-format
 #| msgid "First Matching Line"
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr "Сатри якуми мутобиқ"
 
-#: kfindtreeview.cpp:355
+#: kfindtreeview.cpp:357
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr ""
 
-#: kfindtreeview.cpp:356
+#: kfindtreeview.cpp:358
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr ""
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:363
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr ""
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:367
 #, fuzzy, kde-format
 #| msgid "Delete"
 msgid "&Delete"
 msgstr "Нест кардан"
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:374
+#: kfindtreeview.cpp:377
 #, fuzzy, kde-format
 #| msgid "Properties"
 msgctxt "@action:inmenu File"
 msgid "Properties"
 msgstr "Хусусиятҳо"
 
-#: kfindtreeview.cpp:514
+#: kfindtreeview.cpp:517
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Захиракунии натиҷаҳо ҳамчун"
 
-#: kfindtreeview.cpp:539
+#: kfindtreeview.cpp:542
 #, fuzzy, kde-format
 msgid "Unable to save results."
 msgstr "Захиракунии Натиҷаҳо ғайри имкон буд!"
 
-#: kfindtreeview.cpp:553
+#: kfindtreeview.cpp:556
 #, kde-format
 msgid "KFind Results File"
 msgstr "Файли натиҷаҳои KFind"
 
-#: kfindtreeview.cpp:568
+#: kfindtreeview.cpp:571
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"

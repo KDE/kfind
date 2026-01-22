@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:44+0000\n"
+"POT-Creation-Date: 2026-01-22 01:02+0000\n"
 "PO-Revision-Date: 2005-02-24 17:31+0100\n"
 "Last-Translator: Bianka Šwejdźic <hertn@gmx.de>\n"
 "Language-Team: Hornjoserbšćina\n"
@@ -67,115 +67,115 @@ msgid_plural "%1 items found"
 msgstr[0] "Sym jednu dataju namakał."
 msgstr[1] "Sym %1 datajow namakał."
 
-#: kfindtreeview.cpp:43
+#: kfindtreeview.cpp:45
 msgid "Read-write"
 msgstr "Čitać-pisać"
 
-#: kfindtreeview.cpp:44
+#: kfindtreeview.cpp:46
 msgid "Read-only"
 msgstr "Jenož čitać"
 
-#: kfindtreeview.cpp:45
+#: kfindtreeview.cpp:47
 msgid "Write-only"
 msgstr "Jenož pisać"
 
-#: kfindtreeview.cpp:46
+#: kfindtreeview.cpp:48
 msgid "Inaccessible"
 msgstr "Žadyn přistup"
 
-#: kfindtreeview.cpp:66
+#: kfindtreeview.cpp:68
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "file name column"
 msgid "Name"
 msgstr "Mjeno"
 
-#: kfindtreeview.cpp:68
+#: kfindtreeview.cpp:70
 #, fuzzy, kde-format
 #| msgid "In Subfolder"
 msgctxt "name of the containing folder"
 msgid "In Subfolder"
 msgstr "W podrjadowaku"
 
-#: kfindtreeview.cpp:70
+#: kfindtreeview.cpp:72
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "file size column"
 msgid "Size"
 msgstr "Wulkosć"
 
-#: kfindtreeview.cpp:72
+#: kfindtreeview.cpp:74
 #, fuzzy, kde-format
 #| msgid "Modified"
 msgctxt "modified date column"
 msgid "Modified"
 msgstr "Změnjene"
 
-#: kfindtreeview.cpp:74
+#: kfindtreeview.cpp:76
 #, fuzzy, kde-format
 #| msgid "Permissions"
 msgctxt "file permissions column"
 msgid "Permissions"
 msgstr "Dowolnosć"
 
-#: kfindtreeview.cpp:76
+#: kfindtreeview.cpp:78
 #, kde-format
 msgctxt "first matching line of the query string in this file"
 msgid "First Matching Line"
 msgstr ""
 
-#: kfindtreeview.cpp:355
+#: kfindtreeview.cpp:357
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
 msgstr ""
 
-#: kfindtreeview.cpp:356
+#: kfindtreeview.cpp:358
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
 msgstr ""
 
-#: kfindtreeview.cpp:361
+#: kfindtreeview.cpp:363
 #, kde-format
 msgid "&Open containing folder(s)"
 msgstr ""
 
-#: kfindtreeview.cpp:365
+#: kfindtreeview.cpp:367
 #, kde-format
 msgid "&Delete"
 msgstr ""
 
-#: kfindtreeview.cpp:369
+#: kfindtreeview.cpp:372
 #, kde-format
 msgid "&Move to Trash"
 msgstr ""
 
-#: kfindtreeview.cpp:374
+#: kfindtreeview.cpp:377
 #, fuzzy, kde-format
 #| msgid "&Properties"
 msgctxt "@action:inmenu File"
 msgid "Properties"
 msgstr "&Kajkosće"
 
-#: kfindtreeview.cpp:514
+#: kfindtreeview.cpp:517
 #, fuzzy, kde-format
 #| msgid "Save Results As"
 msgctxt "@title:window"
 msgid "Save Results As"
 msgstr "Wuslědk składować jako"
 
-#: kfindtreeview.cpp:539
+#: kfindtreeview.cpp:542
 #, kde-format
 msgid "Unable to save results."
 msgstr "Njemóžu wuslědk składować"
 
-#: kfindtreeview.cpp:553
+#: kfindtreeview.cpp:556
 #, kde-format
 msgid "KFind Results File"
 msgstr "KFind-dataja wuslědkow"
 
-#: kfindtreeview.cpp:568
+#: kfindtreeview.cpp:571
 #, fuzzy, kde-format
 #| msgid "Results were saved to file\n"
 msgctxt "%1=filename"
