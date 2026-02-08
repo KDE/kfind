@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:43+0000\n"
-"PO-Revision-Date: 2024-01-16 00:25+0200\n"
+"PO-Revision-Date: 2026-02-07 15:23+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.8\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -31,7 +31,7 @@ msgstr "Ieškoti failų / aplankų"
 #, kde-format
 msgctxt "the application is currently idle, there is no active search"
 msgid "Idle."
-msgstr "Laisvas."
+msgstr "Neveiklus."
 
 #. i18n as below
 #: kfinddlg.cpp:138
@@ -47,7 +47,7 @@ msgstr "Ieškoma..."
 #: kfinddlg.cpp:204
 #, kde-format
 msgid "Canceled."
-msgstr "Atšaukta."
+msgstr "Nutraukta."
 
 #: kfinddlg.cpp:206 kfinddlg.cpp:209 kfinddlg.cpp:212
 #, kde-format
@@ -57,7 +57,7 @@ msgstr "Klaida."
 #: kfinddlg.cpp:207
 #, kde-format
 msgid "Please specify an absolute path in the \"Look in\" box."
-msgstr "Prašome nurodyti absoliutų kelią „Ieškoti čia“ laukelyje."
+msgstr "Laukelyje „Kur ieškoti“ nurodykite absoliutų kelią."
 
 #: kfinddlg.cpp:210
 #, kde-format
@@ -68,26 +68,26 @@ msgstr "Nepavyko rasti nurodyto aplanko."
 #, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
-msgstr[0] "rastas vienas objektas"
-msgstr[1] "rasti %1 objektai"
-msgstr[2] "rasta %1 objektų"
-msgstr[3] "rastas %1 objektas"
+msgstr[0] "rastas vienas elementas"
+msgstr[1] "rasti %1 elementai"
+msgstr[2] "rasta %1 elementų"
+msgstr[3] "rastas %1 elementas"
 
 #: kfindtreeview.cpp:43
 msgid "Read-write"
-msgstr "Skaitoma-rašoma"
+msgstr "Skaityti-rašyti"
 
 #: kfindtreeview.cpp:44
 msgid "Read-only"
-msgstr "Tik skaitoma"
+msgstr "Tik skaityti"
 
 #: kfindtreeview.cpp:45
 msgid "Write-only"
-msgstr "Tik rašoma"
+msgstr "Tik rašyti"
 
 #: kfindtreeview.cpp:46
 msgid "Inaccessible"
-msgstr "Neprieinama"
+msgstr "Nepasiekiamas"
 
 #: kfindtreeview.cpp:66
 #, kde-format
@@ -111,7 +111,7 @@ msgstr "Dydis"
 #, kde-format
 msgctxt "modified date column"
 msgid "Modified"
-msgstr "Pakeista"
+msgstr "Modifikuotas"
 
 #: kfindtreeview.cpp:74
 #, kde-format
@@ -145,12 +145,12 @@ msgstr "&Atverti vidinį aplanką(-us)"
 #: kfindtreeview.cpp:365
 #, kde-format
 msgid "&Delete"
-msgstr "&Trinti"
+msgstr "Iš&trinti"
 
 #: kfindtreeview.cpp:369
 #, kde-format
 msgid "&Move to Trash"
-msgstr "&Perkelti į šiukšliadėžę"
+msgstr "&Perkelti į šiukšlinę"
 
 #: kfindtreeview.cpp:509
 #, kde-format
@@ -161,7 +161,7 @@ msgstr "Įrašyti rezultatus kaip"
 #: kfindtreeview.cpp:534
 #, kde-format
 msgid "Unable to save results."
-msgstr "Nepavyksta išsaugoti rezultatų."
+msgstr "Nepavyko įrašyti rezultatų."
 
 #: kfindtreeview.cpp:548
 #, kde-format
@@ -186,30 +186,27 @@ msgid "&Named:"
 msgstr "&Pavadintas:"
 
 #: kftabdlg.cpp:68
-#, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
-msgstr "Jūs galite naudoti pakaitos simbolius bei „;“ kelių vardų atskyrimui"
+msgstr ""
+"Norėdami atskirti kelis pavadinimus, galite naudoti pakaitos simbolius bei "
+"„;“"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
-msgstr "I&eškoti čia:"
+msgstr "Kur i&eškoti:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
-msgstr "Įskaitant pa&aplankius"
+msgstr "Įtraukti po&aplankius"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "Paieška sk&iriant didžiąsias ir mažąsias raides"
@@ -220,15 +217,13 @@ msgid "&Browse..."
 msgstr "&Naršyti..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "Na&udoti failų indeksą"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Rodyti &paslėptus failus"
@@ -253,11 +248,11 @@ msgstr ""
 "li><li><b>*</b> atitinka nulį ar daugiau bet kokių simbolių</"
 "li><li><b>[...]</b> atitinka bet kokį simbolį iš esančių laužtiniuose "
 "skliaustuose</li></ul><br />Paieškos pavyzdžiai:<ul>per <li><b>*.kwd;*.txt</"
-"b> ras visus failus, besibaigiančius .kwd ar .txt</li><li><b>[kt]as</b> ras "
-"„kas“ ir „tas“</li><li><b>Lab?s</b> ras visus failus, prasidedančius „Lab“ "
-"ir besibaigiančius „s“, ir turinčius vieną simbolį per vidurį</"
-"li><li><b>Mano Dokumentas.kwd</b> ras failą tiksliai tokiu pavadinimu</li></"
-"ul></qt>"
+"b> suras visus failus, kurių pavadinimas pasibaigia .kwd ar .txt</"
+"li><li><b>[kt]as</b> suras „kas“ ir „tas“</li><li><b>Lab?s</b> suras visus "
+"failus, prasidedančius „Lab“ ir besibaigiančius „s“, ir turinčius vieną "
+"simbolį per vidurį</li><li><b>Mano dokumentas.kwd</b> suras failą tiksliai "
+"tokiu pavadinimu</li></ul></qt>"
 
 #: kftabdlg.cpp:121
 #, kde-format
@@ -266,48 +261,42 @@ msgid ""
 "to speed-up the search; remember to update the index from time to time "
 "(using <i>updatedb</i>).</qt>"
 msgstr ""
-"<qt>Kad paieška būtų greitesnė, galite naudoti failų indeksą, sukurtą "
-"<i>slocate</i> paketu; nepamirškite kartas nuo karto atnaujinti indeksą "
+"<qt>Tai jums leidžia naudoti <i>slocate</i> paketo sukurtą failų indeksą, "
+"kad paieška būtų greitesnė; nepamirškite kartas nuo karto atnaujinti indeksą "
 "(naudodami komandą <i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
-msgstr "Ieškoti failų, sukurtų arba pa&keistų:"
+msgstr "Ieškoti failų, sukurtų ar &modifikuotų:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&tarp"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "ir"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "Failo &dydis yra:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Failai, priklausantys &naudotojui:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Priklauso &grupei:"
@@ -316,7 +305,7 @@ msgstr "Priklauso &grupei:"
 #, kde-format
 msgctxt "file size isn't considered in the search"
 msgid "(none)"
-msgstr "(nesvarbu)"
+msgstr "(nėra)"
 
 #: kftabdlg.cpp:213
 #, kde-format
@@ -364,11 +353,10 @@ msgid "File &type:"
 msgstr "Failo &tipas:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
-msgstr "&Kuriuose yra tekstas:"
+msgstr "&Faile yra tekstas:"
 
 #: kftabdlg.cpp:294
 #, kde-format
@@ -377,24 +365,22 @@ msgid ""
 "all file types from the list above are supported. Please refer to the "
 "documentation for a list of supported file types.</qt>"
 msgstr ""
-"<qt>Jei įrašyta, bus rasti tik tie failai, kuriuose yra šis tekstas. "
+"<qt>Jei nurodyta, bus rasti tik tie failai, kuriuose yra šis tekstas. "
 "Atkreipkite dėmesį, kad su šia parinktimi yra palaikomi ne visi aukščiau "
-"nurodyti failų tipai. Palaikomų failų tipų sąrašo ieškokite dokumentacijoje."
+"nurodyti failų tipai. Palaikomų failo tipų sąrašo ieškokite dokumentacijoje."
 "</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
-msgstr "Paieška sk&iriant didžiąsias ir mažąsias raides"
+msgstr "Sk&irti didžiąsias ir mažąsias raides"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
-msgstr "Įskaityti &dvejetainius failus"
+msgstr "Įtraukti &dvejetainius failus"
 
 #: kftabdlg.cpp:306
 #, kde-format
@@ -402,8 +388,8 @@ msgid ""
 "<qt>This lets you search in any type of file, even those that usually do not "
 "contain text (for example program files and images).</qt>"
 msgstr ""
-"<qt>Galite ieškoti bet kokio tipo failuose, net jei to tipo failuose teksto "
-"paprastai nebūna (pvz., programų failuose ar paveikslėliuose).</qt>"
+"<qt>Galite ieškoti bet kokio tipo failuose, net jei to tipo failuose "
+"įprastai nebūna teksto (pvz., programų failuose ar paveiksluose).</qt>"
 
 #: kftabdlg.cpp:313
 #, kde-format
@@ -412,11 +398,10 @@ msgid "fo&r:"
 msgstr "&ko:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "Ieškoti &metainfo skyrius:"
+msgstr "Ieškoti &metainformacijos skyriuose:"
 
 #: kftabdlg.cpp:319
 #, kde-format
@@ -446,22 +431,22 @@ msgstr "Ypatingi failai (lizdai, įrenginių failai, ...)"
 #: kftabdlg.cpp:324
 #, kde-format
 msgid "Executable Files"
-msgstr "Vykdomi failai"
+msgstr "Vykdomieji failai"
 
 #: kftabdlg.cpp:325
 #, kde-format
 msgid "SUID Executable Files"
-msgstr "SUID vykdomi failai"
+msgstr "SUID vykdomieji failai"
 
 #: kftabdlg.cpp:326
 #, kde-format
 msgid "All Images"
-msgstr "Visi paveikslėliai"
+msgstr "Visi paveikslai"
 
 #: kftabdlg.cpp:327
 #, kde-format
 msgid "All Video"
-msgstr "Visi video"
+msgstr "Visi vaizdo įrašai"
 
 #: kftabdlg.cpp:328
 #, kde-format
@@ -487,11 +472,10 @@ msgid ""
 "title, an album</li><li><b>Images (png...)</b> Search images with a special "
 "resolution, comment...</li></ul></qt>"
 msgstr ""
-"<qt>Ieškoti specifiniuose failų komentaruose ar meta informacijoje <br /"
-">Keletas pavyzdžių:<br /><ul><li><b>Muzikiniai failai (mp3...)</b> id3 meta "
-"informacijoje ieškoti dainos, albumo pavadinimo</li><li><b>Paveikslėliai "
-"(png...)</b> Ieškoti paveikslėlių, turinčių nurodytą skiriamąją raišką, "
-"komentarą...</li></ul></qt>"
+"<qt>Ieškoti specifiniuose failų komentaruose ar metainformacijoje <br />Štai "
+"keli pavyzdžiai:<br /><ul><li><b>Garso įrašo failai (mp3...)</b> Ieškoti id3 "
+"žymėje pavadinimo, albumo</li><li><b>Paveikslai (png...)</b> Ieškoti "
+"paveikslų, turinčių nurodytą skiriamąją gebą, komentarą...</li></ul></qt>"
 
 #: kftabdlg.cpp:407
 #, kde-format
@@ -500,14 +484,14 @@ msgid ""
 "(mp3...)</b> This can be Title, Album...</li><li><b>Images (png...)</b> "
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
-"<qt>Jei nurodyta, ieškoti tik šiame lauke<br /><ul><li><b>Muzikiniai failai "
-"(mp3...)</b> Tai gali būti pavadinimas, albumas</li><li><b>Paveikslėliai "
-"(png...)</b> Ieškoti tik skiriamosios raiškos, bitų gylio...</li></ul></qt>"
+"<qt>Jei nurodyta, ieškoti tik šiame lauke<br /><ul><li><b>Garso įrašo failai "
+"(mp3...)</b> Tai gali būti pavadinimas, albumas...</li><li><b>Paveikslai "
+"(png...)</b> Ieškoti tik skiriamosios gebos, bitų gylio...</li></ul></qt>"
 
 #: kftabdlg.cpp:548
 #, kde-format
 msgid "Unable to search within a period which is less than a minute."
-msgstr "Nepavyksta ieškoti trumpesniame, nei viena minutė, intervale."
+msgstr "Nepavyksta ieškoti trumpesniame, nei viena minutė, laikotarpyje."
 
 #: kftabdlg.cpp:559
 #, kde-format
@@ -517,7 +501,7 @@ msgstr "Data neteisinga."
 #: kftabdlg.cpp:561
 #, kde-format
 msgid "Invalid date range."
-msgstr "Blogas datos intervalas."
+msgstr "Blogas datos rėžis."
 
 #: kftabdlg.cpp:563
 #, kde-format
@@ -625,11 +609,10 @@ msgstr "KDE failų paieškos pagalbinė programa"
 #: main.cpp:29
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "(c) 1998-2021, KDE programuotojai"
+msgstr "(c) 1998–2021, KDE programuotojai"
 
 #: main.cpp:31
-#, fuzzy, kde-format
-#| msgid "Kai Uwe Broulik"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr "Kai Uwe Broulik"
@@ -640,8 +623,7 @@ msgid "Current Maintainer"
 msgstr "Dabartinis prižiūrėtojas"
 
 #: main.cpp:32
-#, fuzzy, kde-format
-#| msgid "Eric Coquelle"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "Eric Coquelle"
@@ -652,8 +634,7 @@ msgid "Former Maintainer"
 msgstr "Ankstesnis prižiūrėtojas"
 
 #: main.cpp:33
-#, fuzzy, kde-format
-#| msgid "Mark W. Webb"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "Mark W. Webb"
@@ -661,11 +642,10 @@ msgstr "Mark W. Webb"
 #: main.cpp:33
 #, kde-format
 msgid "Developer"
-msgstr "Programuotojas"
+msgstr "Plėtotojas"
 
 #: main.cpp:34
-#, fuzzy, kde-format
-#| msgid "Beppe Grimaldi"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "Beppe Grimaldi"
@@ -676,71 +656,61 @@ msgid "UI Design & more search options"
 msgstr "Naudotojo sąsaja ir daugiau paieškos parinkčių"
 
 #: main.cpp:35
-#, fuzzy, kde-format
-#| msgid "Martin Hartig"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "Martin Hartig"
 
 #: main.cpp:36
-#, fuzzy, kde-format
-#| msgid "Stephan Kulow"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "Stephan Kulow"
 
 #: main.cpp:37
-#, fuzzy, kde-format
-#| msgid "Mario Weilguni"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "Mario Weilguni"
 
 #: main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Alex Zepeda"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "Alex Zepeda"
 
 #: main.cpp:39
-#, fuzzy, kde-format
-#| msgid "Miroslav Flídr"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "Miroslav Flídr"
 
 #: main.cpp:40
-#, fuzzy, kde-format
-#| msgid "Harri Porten"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "Harri Porten"
 
 #: main.cpp:41
-#, fuzzy, kde-format
-#| msgid "Dima Rogozin"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "Dima Rogozin"
 
 #: main.cpp:42
-#, fuzzy, kde-format
-#| msgid "Carsten Pfeiffer"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
 #: main.cpp:43
-#, fuzzy, kde-format
-#| msgid "Hans Petter Bieker"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "Hans Petter Bieker"
 
 #: main.cpp:44
-#, fuzzy, kde-format
-#| msgid "Waldo Bastian"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "Waldo Bastian"
@@ -748,18 +718,16 @@ msgstr "Waldo Bastian"
 #: main.cpp:44
 #, kde-format
 msgid "UI Design"
-msgstr "Naudotojo sąsaja"
+msgstr "Naudotojo sąsajos dizainas"
 
 #: main.cpp:45
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "Clarence Dang"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "Clarence Dang"
