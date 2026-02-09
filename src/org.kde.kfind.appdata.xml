@@ -35,7 +35,7 @@
   <name xml:lang="it">KFind</name>
   <name xml:lang="ka">KFind</name>
   <name xml:lang="ko">KFind</name>
-  <name xml:lang="lt">KFind</name>
+  <name xml:lang="lt">K paieška</name>
   <name xml:lang="lv">KFind</name>
   <name xml:lang="ml">കെഫൈൻഡ്</name>
   <name xml:lang="nb">KFind</name>
@@ -138,6 +138,7 @@
     <p xml:lang="it">KFind può essere utilizzato come uno strumento autonomo di ricerca, avviato da KRunner o dal menu. È integrato anche in Dolphin come «Apri KFind» nel menu «Strumenti». Consente di trovare i file per nome, tipo o contenuto.</p>
     <p xml:lang="ka">KFind -ი შეგიძლიათ გამოიყენოთ როგორც ცალკე პროგრამა, რომლის გაშვება KRunner-ით ან მენიუდან შეგიძლიათ. ის ასევე ჩაშენებულია Dolphin-ში, როგორც "KFind-ით ძებნა" "ხელსაწყოების" მენიუში. ის საშუალებას გაძლევთ, ფაილები სახელის, ტიპის და შემცველობის მიხედვით მოძებნოთ.</p>
     <p xml:lang="ko">KFind는 KRunner나 메뉴에서 단독 실행 가능한 검색 도구로 사용될 수 있습니다. Dolphin의 "도구" 메뉴에서 "KFind 열기" 명령을 통하여 실행할 수도 있습니다. 파일을 이름, 형식 및 내용으로 검색할 수 있습니다.</p>
+    <p xml:lang="lt">Programa K paieška gali būti naudojama kaip atskiras paieškos įrankis, paleidžiamas programos KRunner arba naudojant meniu. K paieška taip pat yra integruota į Konqueror „Įrankių“ meniu įrašą „Rasti failą“. Tai leidžia jums lengvai rasti failus pagal pavadinimą, tipą ar turinį.</p>
     <p xml:lang="nl">KFind kan gebuikt worden als een alleenstaand hulpmiddel voor zoeken, gestart door KRunner of vanuit uw menu. Het is ook geïntegreerd in Dolphin als "KFind openen" in het menu "Hulpmiddelen". Het stelt u in staat bestanden te zoeken op naam, type of inhoud.</p>
     <p xml:lang="nn">KFind kan brukast som eit sjølvstendig søkjeverktøy, starta frå KRunner eller frå menyen. Programmet er òg innebygd i Dolphin som «Opna KFind» i «Verktøy»-menyen. Du kan bruka det til å finna filer etter namn, type eller innhald.</p>
     <p xml:lang="pl">KFind można używać jako samodzielnego narzędzia wyszukiwania, gdy zostanie wywołane z KRunner lub z twojego menu. Jest ono także zintegrowane z Dolphin jako "Otwórz KFind" w menu "Narzędzia". Umożliwia znajdywanie plików po nazwie, rodzaju czy treści.</p>
@@ -184,7 +185,7 @@
       <caption xml:lang="it">Finestra principale di KFind</caption>
       <caption xml:lang="ka">KFind -ის მთავარი ფანჯარა</caption>
       <caption xml:lang="ko">KFind 주 창</caption>
-      <caption xml:lang="lt">KFind pagrindinis langas</caption>
+      <caption xml:lang="lt">K paieškos pagrindinis langas</caption>
       <caption xml:lang="lv">„KFind“ galvenais logs</caption>
       <caption xml:lang="ml">കെഫൈൻഡ് പ്രധാന ജാലകം</caption>
       <caption xml:lang="nl">Hoofdvenster van KFind</caption>
