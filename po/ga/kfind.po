@@ -31,11 +31,9 @@ msgstr "Díomhaoin."
 
 #. i18n as below
 #: kfinddlg.cpp:138
-#, fuzzy, kde-format
-#| msgid "one file found"
-#| msgid_plural "%1 files found"
+#, kde-format
 msgid "0 items found"
-msgstr "aimsíodh aon chomhad"
+msgstr ""
 
 #: kfinddlg.cpp:177
 #, kde-format
@@ -63,16 +61,11 @@ msgid "Could not find the specified folder."
 msgstr "Níorbh fhéidir an chomhadlann sonraithe a aimsiú."
 
 #: kfinddlg.cpp:233 kfinddlg.cpp:257
-#, fuzzy, kde-format
-#| msgid "one file found"
-#| msgid_plural "%1 files found"
+#, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
-msgstr[0] "aimsíodh aon chomhad"
-msgstr[1] "aimsíodh %1 chomhad"
-msgstr[2] "aimsíodh %1 chomhad"
-msgstr[3] "aimsíodh %1 gcomhad"
-msgstr[4] "aimsíodh %1 comhad"
+msgstr[0] ""
+msgstr[1] ""
 
 #: kfindtreeview.cpp:43
 msgid "Read-write"
@@ -187,35 +180,28 @@ msgid "&Named:"
 msgstr "&Ainmnithe:"
 
 #: kftabdlg.cpp:68
-#, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr ""
-"Is féidir leat comhoiriúnú saoróige agus \";\" chun ainmneacha a dheighilt ó "
-"chéile"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
-msgstr "Amharc &i:"
+msgstr ""
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
-msgstr "Cuir fofhillteáin &san áireamh"
+msgstr ""
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
-msgstr "C&uardach cásíogair"
+msgstr ""
 
 #: kftabdlg.cpp:79
 #, kde-format
@@ -223,18 +209,16 @@ msgid "&Browse..."
 msgstr "&Brabhsáil..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
-msgstr "Ú&sáid innéacs comhad"
+msgstr ""
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
-msgstr "Taispeáin comhaid f&holaithe"
+msgstr ""
 
 #: kftabdlg.cpp:100
 #, kde-format
@@ -274,46 +258,40 @@ msgstr ""
 "go ham (le <i>updatedb</i>).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
-msgstr "Aimsigh gach comhad a cruthaíodh nó &mionathraíodh:"
+msgstr ""
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
-msgstr "&idir"
+msgstr ""
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
-msgstr "agus"
+msgstr ""
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
-msgstr "Méid an &chomhaid:"
+msgstr ""
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
-msgstr "Comhaid atá ag an úsáideoir &seo:"
+msgstr ""
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
-msgstr "Comhaid atá ag an n&grúpa seo:"
+msgstr ""
 
 #: kftabdlg.cpp:212
 #, kde-format
@@ -368,11 +346,10 @@ msgid "File &type:"
 msgstr "&Cineál comhaid:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
-msgstr "Leis an téacs se&o ann:"
+msgstr ""
 
 #: kftabdlg.cpp:294
 #, kde-format
@@ -387,18 +364,16 @@ msgstr ""
 "qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
-msgstr "Cá&síogair"
+msgstr ""
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
-msgstr "Cuir comhaid &dhénártha san áireamh"
+msgstr ""
 
 #: kftabdlg.cpp:306
 #, kde-format
@@ -418,11 +393,10 @@ msgid "fo&r:"
 msgstr "a&r:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "Cuardaigh i rannáin &mheiteafhaisnéise:"
+msgstr ""
 
 #: kftabdlg.cpp:319
 #, kde-format
@@ -634,10 +608,9 @@ msgid "KDE file find utility"
 msgstr "Uirlis aimsithe comhad KDE"
 
 #: main.cpp:29
-#, fuzzy, kde-format
-#| msgid "(c) 1998-2003, The KDE Developers"
+#, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "© 1998-2003, Forbróirí KDE"
+msgstr ""
 
 #: main.cpp:31
 #, kde-format
@@ -651,24 +624,21 @@ msgid "Current Maintainer"
 msgstr "Cothaitheoir Reatha"
 
 #: main.cpp:32
-#, fuzzy, kde-format
-#| msgid "Eric Coquelle"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
-msgstr "Eric Coquelle"
+msgstr ""
 
 #: main.cpp:32
-#, fuzzy, kde-format
-#| msgid "Current Maintainer"
+#, kde-format
 msgid "Former Maintainer"
-msgstr "Cothaitheoir Reatha"
+msgstr ""
 
 #: main.cpp:33
-#, fuzzy, kde-format
-#| msgid "Mark W. Webb"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
-msgstr "Mark W. Webb"
+msgstr ""
 
 #: main.cpp:33
 #, kde-format
@@ -676,11 +646,10 @@ msgid "Developer"
 msgstr "Forbróir"
 
 #: main.cpp:34
-#, fuzzy, kde-format
-#| msgid "Beppe Grimaldi"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
-msgstr "Beppe Grimaldi"
+msgstr ""
 
 #: main.cpp:34
 #, kde-format
@@ -688,74 +657,64 @@ msgid "UI Design & more search options"
 msgstr "Dearadh an Chomhéadain agus tuilleadh roghanna cuardaigh"
 
 #: main.cpp:35
-#, fuzzy, kde-format
-#| msgid "Martin Hartig"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Martin Hartig"
-msgstr "Martin Hartig"
+msgstr ""
 
 #: main.cpp:36
-#, fuzzy, kde-format
-#| msgid "Stephan Kulow"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
-msgstr "Stephan Kulow"
+msgstr ""
 
 #: main.cpp:37
-#, fuzzy, kde-format
-#| msgid "Mario Weilguni"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
-msgstr "Mario Weilguni"
+msgstr ""
 
 #: main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Alex Zepeda"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
-msgstr "Alex Zepeda"
+msgstr ""
 
 #: main.cpp:39
-#, fuzzy, kde-format
-#| msgid "Miroslav Flídr"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
-msgstr "Miroslav Flídr"
+msgstr ""
 
 #: main.cpp:40
-#, fuzzy, kde-format
-#| msgid "Harri Porten"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Harri Porten"
-msgstr "Harri Porten"
+msgstr ""
 
 #: main.cpp:41
-#, fuzzy, kde-format
-#| msgid "Dima Rogozin"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
-msgstr "Dima Rogozin"
+msgstr ""
 
 #: main.cpp:42
-#, fuzzy, kde-format
-#| msgid "Carsten Pfeiffer"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
-msgstr "Carsten Pfeiffer"
+msgstr ""
 
 #: main.cpp:43
-#, fuzzy, kde-format
-#| msgid "Hans Petter Bieker"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
-msgstr "Hans Petter Bieker"
+msgstr ""
 
 #: main.cpp:44
-#, fuzzy, kde-format
-#| msgid "Waldo Bastian"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
-msgstr "Waldo Bastian"
+msgstr ""
 
 #: main.cpp:44
 #, kde-format
@@ -763,18 +722,16 @@ msgid "UI Design"
 msgstr "Dearadh an Chomhéadain"
 
 #: main.cpp:45
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
+msgstr ""
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "Clarence Dang"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Clarence Dang"
-msgstr "Clarence Dang"
+msgstr ""
 
 #: main.cpp:47
 #, kde-format
@@ -792,63 +749,3 @@ msgstr "seoc@iolfree.ie,kscanne@gmail.com"
 #, kde-format
 msgid "Path(s) to search"
 msgstr "Conair(í) le cuardach"
-
-#~ msgid "Regular e&xpression"
-#~ msgstr "S&lonn ionadaíochta"
-
-#~ msgid "&Edit..."
-#~ msgstr "&Eagar..."
-
-#~ msgid "HTML page"
-#~ msgstr "Leathanach HTML"
-
-#~ msgid "Text file"
-#~ msgstr "Téacschomhad"
-
-#~ msgctxt "Name of the component that finds things"
-#~ msgid "Find Component"
-#~ msgstr "Aimsitheoir"
-
-#~ msgid "Aborted."
-#~ msgstr "Tobscortha."
-
-#~ msgid "Ready."
-#~ msgstr "Réidh."
-
-#~ msgid "Do you really want to delete the selected file?"
-#~ msgid_plural "Do you really want to delete the %1 selected files?"
-#~ msgstr[0] ""
-#~ "An bhfuil tú cinnte gur mian leat an comhad roghnaithe a scriosadh?"
-#~ msgstr[1] ""
-#~ "An bhfuil tú cinnte gur mian leat an dá chomhad roghnaithe a scriosadh?"
-#~ msgstr[2] ""
-#~ "An bhfuil tú cinnte gur mian leat na %1 chomhad roghnaithe a scriosadh?"
-#~ msgstr[3] ""
-#~ "An bhfuil tú cinnte gur mian leat na %1 gcomhad roghnaithe a scriosadh?"
-#~ msgstr[4] ""
-#~ "An bhfuil tú cinnte gur mian leat na %1 comhad roghnaithe a scriosadh?"
-
-#~ msgctxt "Menu item"
-#~ msgid "Open"
-#~ msgstr "Oscail"
-
-#~ msgid "Open Folder"
-#~ msgstr "Oscail Fillteán"
-
-#~ msgid "Copy"
-#~ msgstr "Cóipeáil"
-
-#~ msgid "Open With..."
-#~ msgstr "Oscail Le..."
-
-#~ msgid "Properties"
-#~ msgstr "Airíonna"
-
-#~ msgid "Selected Files"
-#~ msgstr "Comhaid Roghnaithe"
-
-#~ msgid "AMiddleLengthText..."
-#~ msgstr "TéacsMeasarthaFada..."
-
-#~ msgid "&Find"
-#~ msgstr "&Aimsigh"
