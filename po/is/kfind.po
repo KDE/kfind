@@ -4,13 +4,13 @@
 # Pjetur G. Hjaltason <pjetur@pjetur.net>, 2003.
 # Svanur Palsson <svanur@tern.is>, 2004.
 # Arnar Leosson <leosson@frisurf.no>, 2005.
-# SPDX-FileCopyrightText: 2009, 2010, 2011, 2017, 2018, 2019, 2021, 2023, 2024, 2025 Sveinn í Felli <sveinki@nett.is>
+# SPDX-FileCopyrightText: 2009, 2010, 2011, 2017, 2018, 2019, 2021, 2023, 2024, 2025, 2026 Sveinn í Felli <sveinki@nett.is>
 msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-22 01:02+0000\n"
-"PO-Revision-Date: 2025-10-16 13:11+0000\n"
+"PO-Revision-Date: 2026-02-25 10:27+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -154,11 +154,10 @@ msgid "&Move to Trash"
 msgstr "Setja í &ruslið"
 
 #: kfindtreeview.cpp:377
-#, fuzzy, kde-format
-#| msgid "&Properties"
+#, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
-msgstr "&Eiginleikar"
+msgstr "Eiginleikar"
 
 #: kfindtreeview.cpp:517
 #, kde-format
