@@ -57,6 +57,7 @@
   <name xml:lang="sr-ijekavianlatin">K‑nalazač</name>
   <name xml:lang="sv">Kfind</name>
   <name xml:lang="tr">K Bul</name>
+  <name xml:lang="ug">KFind</name>
   <name xml:lang="uk">KFind</name>
   <name xml:lang="vi">KFind</name>
   <name xml:lang="zh-CN">KFind 文件查找工具</name>
@@ -112,6 +113,7 @@
   <summary xml:lang="sr-ijekavianlatin">Traženje fajlova i fascikli</summary>
   <summary xml:lang="sv">Sök efter filer och kataloger</summary>
   <summary xml:lang="tr">Dosyaları ve dizinleri bulun</summary>
+  <summary xml:lang="ug">ھۆججەت/قىسقۇچ ئىزدە</summary>
   <summary xml:lang="uk">Програма для пошуку файлів і тек</summary>
   <summary xml:lang="vi">Tìm tệp/thư mục</summary>
   <summary xml:lang="zh-CN">查找文件/文件夹</summary>
