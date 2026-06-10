@@ -2,13 +2,13 @@
 # Tamas Szanto <tszanto@interware.hu>, 2000.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011.
 # Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017, 2021.
-# SPDX-FileCopyrightText: 2024, 2025 Kristof Kiszel <ulysses@fsf.hu>
+# SPDX-FileCopyrightText: 2024-2026 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.2\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-22 01:02+0000\n"
-"PO-Revision-Date: 2025-02-01 22:16+0100\n"
+"PO-Revision-Date: 2026-06-09 21:43+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 26.04.2\n"
 
 #: kfinddlg.cpp:31
 #, kde-format
@@ -148,8 +148,7 @@ msgid "&Move to Trash"
 msgstr "Á&thelyezés a Kukába"
 
 #: kfindtreeview.cpp:377
-#, fuzzy, kde-format
-#| msgid "Properties"
+#, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
 msgstr "Tulajdonságok"
