@@ -197,7 +197,7 @@ msgstr ""
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
-msgstr "Bu&sca a:"
+msgstr "Bu&sca en:"
 
 #: kftabdlg.cpp:77
 #, kde-format
@@ -220,7 +220,7 @@ msgstr "&Navega…"
 #, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
-msgstr "Utilit&za l'índex de fitxers"
+msgstr "&Utilitza l'índex de fitxers"
 
 #: kftabdlg.cpp:81
 #, kde-format
@@ -399,7 +399,7 @@ msgstr "pe&r a:"
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
-msgstr "Busca a les seccions &metainfo:"
+msgstr "Busca en les seccions &metainfo:"
 
 #: kftabdlg.cpp:319
 #, kde-format
