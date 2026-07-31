@@ -133,7 +133,7 @@
 > <guimenuitem
 >Dateien suchen</guimenuitem
 ></menuchoice
-> wählen. Möchten Sie &kfind; direkt starten, benutzen Sie &krunner;. </para>
+> wählen. Möchten Sie &kfind; direkt starten, verwenden Sie &krunner;. </para>
 
 </sect1>
 </chapter>
@@ -181,7 +181,7 @@
 >Datei-Index verwenden</guilabel
 > können Sie einen über <quote
 >locate</quote
-> erstellten Datei-Index benutzen, um die Suchgeschwindigkeit zu verbessern.</para>
+> erstellten Datei-Index verwenden, um die Suchgeschwindigkeit zu verbessern.</para>
 <para
 >Die folgenden Platzhalter sind für Datei- oder Ordnernamen erlaubt: </para>
 
@@ -370,7 +370,7 @@
 ></term>
 <listitem
 ><para
->Ermöglicht die Suche nach jedem Dateityp, einschließlich solcher, die üblicherweise keinen Text enthalten (wie z. B. Programmdateien und Bilder).</para>
+>Ermöglicht die Suche nach jedem Dateityp, einschließlich solcher, die üblicherweise keinen Text enthalten (wie z. B. Programmdateien und Bilder).</para>
 </listitem>
 </varlistentry>
 
