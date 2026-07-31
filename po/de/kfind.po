@@ -390,7 +390,7 @@ msgid ""
 "contain text (for example program files and images).</qt>"
 msgstr ""
 "<qt>Ermöglicht die Suche nach jedem Dateityp, einschließlich solcher, die "
-"üblicherweise keinen Text enthalten (wie z. B. Programmdateien und Bilder).</"
+"üblicherweise keinen Text enthalten (wie z. B. Programmdateien und Bilder).</"
 "qt>"
 
 #: kftabdlg.cpp:313
@@ -480,9 +480,9 @@ msgid ""
 "resolution, comment...</li></ul></qt>"
 msgstr ""
 "<qt>Suchen in Datei-spezifischen Kommentaren/Metainformationen<br />Zum "
-"Beispiel:<br /><ul> <li><b>Audio-Dateien (z. B. mp3)</b> Durchsuchen der "
+"Beispiel:<br /><ul> <li><b>Audio-Dateien (z. B. mp3)</b> Durchsuchen der "
 "Metadaten der Datei (ID3-Tag) nach einem Titel oder Album</"
-"li><li><b>Bilddateien (z. B. png)</b> Durchsuchen von Bildern mit einer "
+"li><li><b>Bilddateien (z. B. png)</b> Durchsuchen von Bildern mit einer "
 "bestimmten Auflösung, einem darin enthaltenen Kommentar etc.</li></ul></qt>"
 
 #: kftabdlg.cpp:407
@@ -493,8 +493,8 @@ msgid ""
 "Search only in Resolution, Bitdepth...</li></ul></qt>"
 msgstr ""
 "<qt>Falls angegeben, nur dieses Feld durchsuchen<br /><ul><li><b>Audio-"
-"Dateien (z. B. mp3)</b>, z. B. nach Titel oder Album</li><li><b>Bilddateien "
-"(z. B. png)</b> Suchen in Angaben über Auflösung, Farbtiefe etc.</li></ul></"
+"Dateien (z. B. mp3)</b>, z. B. nach Titel oder Album</li><li><b>Bilddateien "
+"(z. B. png)</b> Suchen in Angaben über Auflösung, Farbtiefe etc.</li></ul></"
 "qt>"
 
 #: kftabdlg.cpp:548
