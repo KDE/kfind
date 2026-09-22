@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-22 01:02+0000\n"
-"PO-Revision-Date: 2026-05-31 18:29-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
-"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -310,17 +310,17 @@ msgstr[0] "بايت"
 #: kftabdlg.cpp:218
 #, kde-format
 msgid "KiB"
-msgstr "KiB"
+msgstr ""
 
 #: kftabdlg.cpp:219
 #, kde-format
 msgid "MiB"
-msgstr "MiB"
+msgstr ""
 
 #: kftabdlg.cpp:220
 #, kde-format
 msgid "GiB"
-msgstr "GiB"
+msgstr ""
 
 #: kftabdlg.cpp:283
 #, kde-format
@@ -479,7 +479,7 @@ msgstr "چېسلاسى كەلگۈسىدە بولغاننى ئىزدىگىلى ب
 #: kftabdlg.cpp:635
 #, kde-format
 msgid "Size is too big. Set maximum size value?"
-msgstr "چوڭلۇقى بەك چوڭ. ئەڭ چوڭ چوڭلۇق قىممىتىنى بەلگىلەمسىز؟"
+msgstr ""
 
 #: kftabdlg.cpp:635
 #, kde-format
@@ -549,7 +549,7 @@ msgstr "locate نى ئىشلەتكەندە خاتالىق كۆرۈلدى"
 #: main.cpp:27
 #, kde-format
 msgid "KFind"
-msgstr "KFind"
+msgstr ""
 
 #: main.cpp:28
 #, kde-format
@@ -565,7 +565,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
-msgstr "Kai Uwe Broulik"
+msgstr ""
 
 #: main.cpp:31
 #, kde-format
@@ -615,7 +615,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
-msgstr "Stephan Kulow"
+msgstr ""
 
 #: main.cpp:37
 #, kde-format
@@ -651,7 +651,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
-msgstr "Carsten Pfeiffer"
+msgstr ""
 
 #: main.cpp:43
 #, kde-format
@@ -663,7 +663,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
-msgstr "Waldo Bastian"
+msgstr ""
 
 #: main.cpp:44
 #, kde-format
@@ -674,7 +674,7 @@ msgstr "كۆرۈنمە يۈز(UI) لايىھىلەش"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
+msgstr ""
 
 #: main.cpp:46
 #, kde-format
