@@ -1,14 +1,15 @@
 # Translation of kfind.po into Serbian.
 # Toplica Tanaskovic <toptan@kde.org.yu>, 2003, 2004, 2005.
-# Chusslove Illich <caslav.ilic@gmx.net>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2016, 2017.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2016, 2017, 2018.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2009.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kfind\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-22 01:02+0000\n"
-"PO-Revision-Date: 2017-09-28 17:56+0200\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-04 23:13+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -34,11 +35,9 @@ msgstr "Мирујем."
 
 #. i18n as below
 #: kfinddlg.cpp:138
-#, fuzzy, kde-format
-#| msgid "one file found"
-#| msgid_plural "%1 files found"
+#, kde-format
 msgid "0 items found"
-msgstr "%1 фајл пронађен"
+msgstr "0 ставки нађено"
 
 # >> @info:progress
 #: kfinddlg.cpp:177
@@ -64,18 +63,16 @@ msgstr "Морате задати апсолутну путању у пољу �
 #: kfinddlg.cpp:210
 #, kde-format
 msgid "Could not find the specified folder."
-msgstr "Не могу да пронађем задату фасциклу."
+msgstr "Не могу да нађем задату фасциклу."
 
 #: kfinddlg.cpp:233 kfinddlg.cpp:257
-#, fuzzy, kde-format
-#| msgid "one file found"
-#| msgid_plural "%1 files found"
+#, kde-format
 msgid "one item found"
 msgid_plural "%1 items found"
-msgstr[0] "%1 фајл пронађен"
-msgstr[1] "%1 фајла пронађена"
-msgstr[2] "%1 фајлова пронађено"
-msgstr[3] "један фајл пронађен"
+msgstr[0] "%1 ставка нађена"
+msgstr[1] "%1 ставке нађене"
+msgstr[2] "%1 ставки нађено"
+msgstr[3] "једна ставка нађена"
 
 #: kfindtreeview.cpp:45
 msgid "Read-write"
@@ -135,13 +132,13 @@ msgstr "први поклапајући ред"
 #, kde-format
 msgctxt "@action:incontextmenu"
 msgid "Copy Location"
-msgstr ""
+msgstr "Копирај локацију"
 
 #: kfindtreeview.cpp:358
 #, kde-format
 msgctxt "@info:whatsthis copy_location"
 msgid "This will copy the path of the first selected item into the clipboard."
-msgstr ""
+msgstr "Ово ће копирати путању прве изабране ставке у клипборд."
 
 #: kfindtreeview.cpp:363
 #, kde-format
@@ -160,11 +157,10 @@ msgstr "&Премести у смеће"
 
 # >> @title:tab
 #: kfindtreeview.cpp:377
-#, fuzzy, kde-format
-#| msgid "&Properties"
+#, kde-format
 msgctxt "@action:inmenu File"
 msgid "Properties"
-msgstr "С&војства"
+msgstr "Својства"
 
 #: kfindtreeview.cpp:517
 #, kde-format
@@ -195,30 +191,25 @@ msgid "&Named:"
 msgstr "По &имену:"
 
 #: kftabdlg.cpp:68
-#, fuzzy, kde-format
-#| msgid ""
-#| "You can use wildcard matching and \";\" for separating multiple names"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
 msgstr "Можете користити џокере и „;“ за одвајање више имена"
 
 #: kftabdlg.cpp:74
-#, fuzzy, kde-format
-#| msgid "Look &in:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Look &in:"
 msgstr "&Тражи у:"
 
 #: kftabdlg.cpp:77
-#, fuzzy, kde-format
-#| msgid "Include &subfolders"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &subfolders"
 msgstr "Укључи &потфасцикле"
 
 #: kftabdlg.cpp:78
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive search"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive search"
 msgstr "Разликуј &величину слова"
@@ -229,15 +220,13 @@ msgid "&Browse..."
 msgstr "Пре&гледај..."
 
 #: kftabdlg.cpp:80
-#, fuzzy, kde-format
-#| msgid "&Use files index"
+#, kde-format
 msgctxt "@option:check"
 msgid "&Use files index"
 msgstr "Користи &индекс фајлова"
 
 #: kftabdlg.cpp:81
-#, fuzzy, kde-format
-#| msgid "Show &hidden files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show &hidden files"
 msgstr "Прикажи &скривене фајлове"
@@ -279,43 +268,37 @@ msgstr ""
 "(наредбом <tt>updatedb</tt>).</qt>"
 
 #: kftabdlg.cpp:165
-#, fuzzy, kde-format
-#| msgid "Find all files created or &modified:"
+#, kde-format
 msgctxt "@option:check"
 msgid "Find all files created or &modified:"
 msgstr "Нађи све фајлове створене или &измењене:"
 
 #: kftabdlg.cpp:167
-#, fuzzy, kde-format
-#| msgid "&between"
+#, kde-format
 msgctxt "@option:radio"
 msgid "&between"
 msgstr "&између"
 
 #: kftabdlg.cpp:169
-#, fuzzy, kde-format
-#| msgid "and"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "and"
 msgstr "и"
 
 #: kftabdlg.cpp:191
-#, fuzzy, kde-format
-#| msgid "File &size is:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "File &size is:"
 msgstr "&Величина фајла:"
 
 #: kftabdlg.cpp:204
-#, fuzzy, kde-format
-#| msgid "Files owned by &user:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Files owned by &user:"
 msgstr "Вл&асник фајлова:"
 
 #: kftabdlg.cpp:209
-#, fuzzy, kde-format
-#| msgid "Owned by &group:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Owned by &group:"
 msgstr "Власник је &група:"
@@ -372,8 +355,7 @@ msgid "File &type:"
 msgstr "&Тип фајла:"
 
 #: kftabdlg.cpp:288
-#, fuzzy, kde-format
-#| msgid "C&ontaining text:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "C&ontaining text:"
 msgstr "&Садржи текст:"
@@ -390,15 +372,13 @@ msgstr ""
 "документацији списак подржаних.</qt>"
 
 #: kftabdlg.cpp:302
-#, fuzzy, kde-format
-#| msgid "Case s&ensitive"
+#, kde-format
 msgctxt "@option:check"
 msgid "Case s&ensitive"
 msgstr "Разликуј &величину слова"
 
 #: kftabdlg.cpp:303
-#, fuzzy, kde-format
-#| msgid "Include &binary files"
+#, kde-format
 msgctxt "@option:check"
 msgid "Include &binary files"
 msgstr "Укључи &бинарне фајлове"
@@ -420,8 +400,7 @@ msgid "fo&r:"
 msgstr "&ово:"
 
 #: kftabdlg.cpp:315
-#, fuzzy, kde-format
-#| msgid "Search &metainfo sections:"
+#, kde-format
 msgctxt "@label:textbox"
 msgid "Search &metainfo sections:"
 msgstr "Тражи у &метаподацима:"
@@ -542,7 +521,7 @@ msgstr "Датум није исправан."
 #: kftabdlg.cpp:561
 #, kde-format
 msgid "Invalid date range."
-msgstr "Неисправан опсег датума."
+msgstr "Лош опсег датума."
 
 #: kftabdlg.cpp:563
 #, kde-format
@@ -650,14 +629,12 @@ msgid "KDE file find utility"
 msgstr "КДЕ‑ова алатка за тражење фајлова"
 
 #: main.cpp:29
-#, fuzzy, kde-format
-#| msgid "(c) 1998-2017, The KDE Developers"
+#, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "© 1998–2017, програмери КДЕ‑а"
+msgstr "© 1998–2021, програмери КДЕ‑а"
 
 #: main.cpp:31
-#, fuzzy, kde-format
-#| msgid "Kai-Uwe Broulik"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Kai Uwe Broulik"
 msgstr "Каи Уве Броулик"
@@ -668,8 +645,7 @@ msgid "Current Maintainer"
 msgstr "тренутни одржавалац"
 
 #: main.cpp:32
-#, fuzzy, kde-format
-#| msgid "Eric Coquelle"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Eric Coquelle"
 msgstr "Ерик Кокел"
@@ -680,8 +656,7 @@ msgid "Former Maintainer"
 msgstr "бивши одржавалац"
 
 #: main.cpp:33
-#, fuzzy, kde-format
-#| msgid "Mark W. Webb"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mark W. Webb"
 msgstr "Марк В. Веб"
@@ -692,8 +667,7 @@ msgid "Developer"
 msgstr "програмер"
 
 #: main.cpp:34
-#, fuzzy, kde-format
-#| msgid "Beppe Grimaldi"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Beppe Grimaldi"
 msgstr "Бепе Грималди"
@@ -704,71 +678,61 @@ msgid "UI Design & more search options"
 msgstr "дизајн сучеља и неке опције претраживања"
 
 #: main.cpp:35
-#, fuzzy, kde-format
-#| msgid "Martin Hartig"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Martin Hartig"
 msgstr "Мартин Хартиг"
 
 #: main.cpp:36
-#, fuzzy, kde-format
-#| msgid "Stephan Kulow"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Stephan Kulow"
 msgstr "Штефан Кулов"
 
 #: main.cpp:37
-#, fuzzy, kde-format
-#| msgid "Mario Weilguni"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Mario Weilguni"
 msgstr "Марио Вајлгуни"
 
 #: main.cpp:38
-#, fuzzy, kde-format
-#| msgid "Alex Zepeda"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alex Zepeda"
 msgstr "Алекс Зепеда"
 
 #: main.cpp:39
-#, fuzzy, kde-format
-#| msgid "Miroslav Flídr"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Miroslav Flídr"
 msgstr "Мирослав Флидр"
 
 #: main.cpp:40
-#, fuzzy, kde-format
-#| msgid "Harri Porten"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Harri Porten"
 msgstr "Хари Портен"
 
 #: main.cpp:41
-#, fuzzy, kde-format
-#| msgid "Dima Rogozin"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Dima Rogozin"
 msgstr "Дима Рогозин"
 
 #: main.cpp:42
-#, fuzzy, kde-format
-#| msgid "Carsten Pfeiffer"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Carsten Pfeiffer"
 msgstr "Карстен Пфајфер"
 
 #: main.cpp:43
-#, fuzzy, kde-format
-#| msgid "Hans Petter Bieker"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Hans Petter Bieker"
 msgstr "Ханс Петер Бикер"
 
 #: main.cpp:44
-#, fuzzy, kde-format
-#| msgid "Waldo Bastian"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Waldo Bastian"
 msgstr "Валдо Бастијан"
@@ -779,15 +743,13 @@ msgid "UI Design"
 msgstr "дизајн сучеља"
 
 #: main.cpp:45
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Александер Нојндорф"
 
 #: main.cpp:46
-#, fuzzy, kde-format
-#| msgid "Clarence Dang"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Clarence Dang"
 msgstr "Кларенс Данг"
@@ -796,21 +758,15 @@ msgstr "Кларенс Данг"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Топлица Танасковић,Часлав Илић"
+msgstr "Топлица Танасковић,Часлав Илић,Немања Хиршл"
 
 #: main.cpp:47
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "toptan@kde.org.yu,caslav.ilic@gmx.net"
+msgstr "toptan@kde.org.yu,caslav.ilic@gmx.net,nemhirsl@gmail.com"
 
 #: main.cpp:50
 #, kde-format
 msgid "Path(s) to search"
 msgstr "Путање за претрагу"
-
-#~ msgid "Regular e&xpression"
-#~ msgstr "&Регуларни израз"
-
-#~ msgid "&Edit..."
-#~ msgstr "&Уреди..."
