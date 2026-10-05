@@ -51,7 +51,7 @@ msgstr "ничего не найдено"
 #: kfinddlg.cpp:177
 #, kde-format
 msgid "Searching..."
-msgstr "Поиск..."
+msgstr "Поиск…"
 
 #: kfinddlg.cpp:204
 #, kde-format
@@ -151,7 +151,7 @@ msgstr ""
 #: kfindtreeview.cpp:363
 #, kde-format
 msgid "&Open containing folder(s)"
-msgstr "&Открыть папку, содержащую файл"
+msgstr "&Открыть папки с файлами"
 
 #: kfindtreeview.cpp:367
 #, kde-format
@@ -201,7 +201,7 @@ msgstr "&Имя файла:"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "You can use wildcard matching and \";\" for separating multiple names"
-msgstr "Вы можете использовать шаблоны и «;» для разделения нескольких имён"
+msgstr "Можно использовать шаблоны и «;» для разделения нескольких имён"
 
 #: kftabdlg.cpp:74
 #, kde-format
@@ -224,7 +224,7 @@ msgstr "С &учётом регистра"
 #: kftabdlg.cpp:79
 #, kde-format
 msgid "&Browse..."
-msgstr "&Просмотр..."
+msgstr "&Обзор…"
 
 #: kftabdlg.cpp:80
 #, kde-format
@@ -376,9 +376,7 @@ msgid ""
 msgstr ""
 "<qt>Если заполнено это поле, будут искаться только файлы, содержащие этот "
 "текст. Учтите, что поддерживаются не все файлы из перечисленных выше. Чтобы "
-"узнать, какие именно файлы поддерживаются, обратитесь к документации. Также "
-"помните, что при поиске подразумевается, что файлы имеют кодировку локали.</"
-"qt>"
+"узнать, какие именно файлы поддерживаются, обратитесь к документации.</qt>"
 
 #: kftabdlg.cpp:302
 #, kde-format
@@ -451,7 +449,7 @@ msgstr "SUID-исполняемые файлы"
 #: kftabdlg.cpp:326
 #, kde-format
 msgid "All Images"
-msgstr "Все рисунки"
+msgstr "Все изображения"
 
 #: kftabdlg.cpp:327
 #, kde-format
@@ -620,12 +618,12 @@ msgstr "KFind"
 #: main.cpp:28
 #, kde-format
 msgid "KDE file find utility"
-msgstr "Утилита поиска файлов KDE"
+msgstr "Приложение для поиска файлов от KDE"
 
 #: main.cpp:29
 #, kde-format
 msgid "(c) 1998-2021, The KDE Developers"
-msgstr "© Разработчики KDE, 1998-2021"
+msgstr "© Разработчики KDE, 1998–2021"
 
 #: main.cpp:31
 #, kde-format
