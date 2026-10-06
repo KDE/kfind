@@ -102,7 +102,7 @@
   <summary xml:lang="pt">Procurar nos Ficheiros/Pastas</summary>
   <summary xml:lang="pt-BR">Procurar arquivos/pastas</summary>
   <summary xml:lang="ro">Găsește fișiere/dosare</summary>
-  <summary xml:lang="ru">Программа для поиска файлов и папок</summary>
+  <summary xml:lang="ru">Поиск файлов и папок</summary>
   <summary xml:lang="sa">सञ्चिकाः/पुटं अन्वेष्टुम्</summary>
   <summary xml:lang="sk">Nájsť súbory/priečinky</summary>
   <summary xml:lang="sl">Poiščite datoteke in mape</summary>
@@ -146,9 +146,13 @@
     <p xml:lang="nn">KFind kan brukast som eit sjølvstendig søkjeverktøy, starta frå KRunner eller frå menyen. Programmet er òg innebygd i Dolphin som «Opna KFind» i «Verktøy»-menyen. Du kan bruka det til å finna filer etter namn, type eller innhald.</p>
     <p xml:lang="pl">KFind można używać jako samodzielnego narzędzia wyszukiwania, gdy zostanie wywołane z KRunner lub z twojego menu. Jest ono także zintegrowane z Dolphin jako "Otwórz KFind" w menu "Narzędzia". Umożliwia znajdywanie plików po nazwie, rodzaju czy treści.</p>
     <p xml:lang="pt-BR">O KFind pode ser usado como uma ferramenta de pesquisa independente, que pode ser executado a partir do KRunner ou do menu. Ele também é integrado ao Dolphin como "Abrir KFind" no menu "Ferramentas". Permite-lhe localizar arquivos pelo nome, tipo ou conteúdo.</p>
-    <p xml:lang="ru">KFind возможно использовать как отдельную приложение, либо пользоваться его компонентом, встроенным в диспетчер файлов Dolhpin и доступным в через меню «Инструменты → Открыть KFind». Приложение позволяет искать файлы по имени, типу и содержимому.</p>
+    <p xml:lang="ru">KFind можно использовать как отдельное приложение, запуская его из KRunner или меню, а также из диспетчера файлов Dolphin через пункт меню «Сервис → Открыть KFind». Приложение позволяет искать файлы по имени, типу и содержимому.</p>
     <p xml:lang="sk">KFind sa môže použiť ako samostatný vyhľadávací nástroj, spustený cez KRunner alebo z vašej ponuky. Je tiež integrovaný v Konquerore ako "Nájsť súbor" v ponuke "Nástroje". Umožní vám nájsť súbor podľa názvu, typu alebo obsahu.</p>
     <p xml:lang="sl">KFind se lahko uporablja kot samostojno iskalno orodje, ki ga zažene KRunner ali iz vašega menija. Integriran je tudi v Dolphin kot "Odpri KFind" v meniju "Orodja". Omogoča iskanje datotek po imenu, vrsti ali vsebini.</p>
+    <p xml:lang="sr">К‑налазач може да се користи као самостална алатка за претрагу, кад се покрене преко К‑извођача или менија. Такође је уклопљена у Делфин, као „Отвори К‑налазач“ у менију „Алатке“. Омогућава тражење фајлова по имену, типу и садржају.</p>
+    <p xml:lang="sr-Latn">K‑nalazač može da se koristi kao samostalna alatka za pretragu, kad se pokrene preko K‑izvođača ili menija. Takođe je uklopljena u Dolphin, kao „Otvori K‑nalazač“ u meniju „Alatke“. Omogućava traženje fajlova po imenu, tipu i sadržaju.</p>
+    <p xml:lang="sr-ijekavian">К‑налазач може да се користи као самостална алатка за претрагу, кад се покрене преко К‑извођача или менија. Такође је уклопљена у Делфин, као „Отвори К‑налазач“ у менију „Алатке“. Омогућава тражење фајлова по имену, типу и садржају.</p>
+    <p xml:lang="sr-ijekavianlatin">K‑nalazač može da se koristi kao samostalna alatka za pretragu, kad se pokrene preko K‑izvođača ili menija. Takođe je uklopljena u Dolphin, kao „Otvori K‑nalazač“ u meniju „Alatke“. Omogućava traženje fajlova po imenu, tipu i sadržaju.</p>
     <p xml:lang="sv">Kfind kan användas som ett fristående sökverktyg, startat via Kör program eller från menyn. Det är också integrerat i Dolphin som "Öppna Kfind" i menyn "Verktyg". Det låter dig söka efter filer enligt namn, typ eller innehåll.</p>
     <p xml:lang="tr">K Bul, K Çalıştır tarafından çalıştırılan bağımsız bir arama aracı olarak kullanılabildiği gibi menüden de çalıştırılabilir. Dolphin ile “Araçlar” menüsünde “K Bul’u Aç” olarak tümleşik haldedir. Dosyaları adlarıyla, türleriyle veya içeriğiyle bulmanıza olanak sağlar.</p>
     <p xml:lang="uk">KFind можна скористатися як окремою програмою для пошуку даних, запустивши її за допомогою KRunner або меню. Крім того, програму вбудовано до Dolphin. Нею можна скористатися за допомогою пункту «Відкрити KFind» у меню «Інструменти». Передбачено пошук файлів за назвою, типом і вмістом.</p>
@@ -203,6 +207,10 @@
       <caption xml:lang="sa">Kमुख्यविण्डो अन्वेष्यताम्</caption>
       <caption xml:lang="sk">KFind hlavné okno</caption>
       <caption xml:lang="sl">Glavno okno KFind</caption>
+      <caption xml:lang="sr">Главни прозор К‑налазача</caption>
+      <caption xml:lang="sr-Latn">Glavni prozor K‑nalazača</caption>
+      <caption xml:lang="sr-ijekavian">Главни прозор К‑налазача</caption>
+      <caption xml:lang="sr-ijekavianlatin">Glavni prozor K‑nalazača</caption>
       <caption xml:lang="sv">Huvudfönstret i Kfind</caption>
       <caption xml:lang="tr">K Bul ana penceresi</caption>
       <caption xml:lang="uk">Головне вікно KFind</caption>
