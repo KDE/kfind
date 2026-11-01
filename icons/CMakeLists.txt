@@ -5,7 +5,7 @@ ecm_install_icons(ICONS
     32-apps-kfind.png
     48-apps-kfind.png
     64-apps-kfind.png
-    sc-apps-kfind.svgz
+    sc-apps-kfind.svg
     DESTINATION ${KDE_INSTALL_ICONDIR}
     THEME hicolor
 )
