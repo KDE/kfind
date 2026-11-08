@@ -1,6 +1,6 @@
 # translation of kfindpart.po to Polish
 # translation of kfindpart.po to
-# Version: $Revision: 1728266 $
+# Version: $Revision: 1752419 $
 # Copyright (C) 2002,2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
 # Marcin Giedz <mgiedz@elka.pw.edu.pl>, 2002.
 # Michal Rudolf <mrudolf@kdewebdev.org>, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfindpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-22 01:02+0000\n"
+"POT-Creation-Date: 2026-11-08 03:01+0000\n"
 "PO-Revision-Date: 2026-01-01 11:59+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: pl\n"
