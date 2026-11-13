@@ -1,0 +1,547 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Arabic "INCLUDE"
+> 
+]>
+
+<book id="kfind" lang="&language;">
+
+<bookinfo>
+<title
+>دليل بحثك</title>
+
+<authorgroup>
+<author
+>&Dirk.Doerflinger; &Dirk.Doerflinger.mail;</author>
+
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+
+</authorgroup>
+
+<copyright>
+<year
+>2001</year>
+<holder
+>&Dirk.Doerflinger;</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2018-10-22</date>
+<releaseinfo
+>التطبيقات 18.12</releaseinfo>
+
+<abstract>
+<para
+>بحثك أداة بحث عن الملفات من &kde;. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>كيدي</keyword>
+<keyword
+>ملف</keyword>
+<keyword
+>بحثك</keyword>
+<keyword
+>ابحث</keyword>
+<keyword
+>بحث</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>مقدمة</title>
+
+<para
+>بحثك أداة بحث عن الملفات من &kde;. </para>
+
+<sect1 id="starting">
+<title
+>تشغيل بحثك</title>
+
+<para
+>أداة البحث عن الملفات طريقة مفيدة للبحث عن ملفات محددة على حاسوبك، أو للبحث عن ملفات تطابق نمطًا. مثال على ذلك قد يتضمن البحث عن ملفات من نوع معين أو تحتوي على حروف معينة في اسم الملف. يمكنك تحميل هذه الأداة في &konqueror; (في وضع مدير الملفات) باختيار <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl; <keycap
+>F</keycap
+></keycombo
+></shortcut
+><guimenu
+>أدوات</guimenu
+> <guimenuitem
+>ابحث عن ملف</guimenuitem
+></menuchoice
+> من القائمة. إذا أردت استخدام بحثك كأداة بحث مستقلة، فشغّلها باستخدام &krunner;. </para>
+
+</sect1>
+</chapter>
+
+<chapter id="using-kfind">
+<title
+>إيجاد الملفات</title>
+
+<sect1 id="name-tab">
+<title
+>اللسان الاسم/الموقع</title>
+
+<para
+>عند بدء بحثك، سترى نافذة بسيطة إلى حد ما. اكتب اسم الملف الذي تبحث عنه في مربع النص الموسوم <guilabel
+>المسمى:</guilabel
+>. يمكنك استخدام مطابقة أحرف البدل وفاصلة منقوطة (<quote
+>;</quote
+>) لفصل أسماء متعددة.</para>
+<para
+>اختر مجلدًا تريد البحث فيه بكتابته في الحقل <guilabel
+>ابحث في:</guilabel
+> أو بالنقر على <guibutton
+>تصفح...</guibutton
+> (يمكنك تبديل عرض الملفات والمجلدات المخفية في الحوار باستخدام الاختصارات <keycombo action="simul"
+>&Alt;<keycap
+>.</keycap
+></keycombo
+> أو <keycap
+>F8</keycap
+>) واضغط &Enter; أو انقر على زر <guibutton
+>ابحث</guibutton
+>. استخدم زر <guibutton
+>أوقف</guibutton
+> لإلغاء بحث. يمكن حفظ نتيجة بحث بتنسيق &HTML; أو كنص عادي بزر <guibutton
+>احفظ باسم...</guibutton
+>.</para>
+<para
+>إذا كان <guilabel
+>ضمّن المجلدات الفرعية</guilabel
+> محددًا، فسيُبحث في جميع المجلدات الفرعية ابتداءً من مجلدك المختار أيضًا. إذا فعّلت <guilabel
+>بحث حساس لحالة الأحرف</guilabel
+>، فسيعثر بحثك فقط على الملفات ذات الأسماء المطابقة تمامًا لحالة الأحرف. فعّل الخيار <guilabel
+>أظهر الملفات المخفية</guilabel
+> لتضمينها في بحثك. اختيار <guilabel
+>استخدم فهرس الملفات</guilabel
+> يتيح لك استخدام فهرس الملفات المنشأ بواسطة حزمة <quote
+>locate</quote
+> لتسريع البحث.</para>
+<para
+>يمكنك استخدام أحرف البدل التالية لأسماء الملفات أو المجلدات: </para>
+
+<variablelist>
+<varlistentry>
+<term
+>النجمة <quote
+><keycap
+>*</keycap
+></quote
+></term>
+<listitem>
+<para
+>النجمة ترمز لأي عدد من المحارف المفقودة (حتى الصفر)، وهذا يعني مثلًا أن البحث عن <userinput
+>marc*</userinput
+> قد يعثر على الملفات <filename
+>marc</filename
+> و<filename
+>marc.png</filename
+> و<filename
+>marc_must_not_read_this.kwd</filename
+>. <userinput
+>mar*.kwd</userinput
+> قد يعثر على <filename
+>marketplace.kwd</filename
+> و<filename
+>marc_must_not_read_this.kwd</filename
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>علامة الاستفهام <quote
+><keycap
+>?</keycap
+></quote
+></term>
+<listitem>
+<para
+>على عكس النجمة، ترمز علامة الاستفهام لمحرف واحد بالضبط، لذا <userinput
+>mar?</userinput
+> سيعثر على <filename
+>marc</filename
+>، لكن <userinput
+>marc?</userinput
+> لن يعثر على شيء، لأن ملفاتنا تسمى <filename
+>marc</filename
+> و<filename
+>marc.png</filename
+>. يمكنك وضع أي عدد من علامات الاستفهام في المصطلح كما تريد، فسيعثر على ذلك العدد بالضبط من المحارف. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>مجموعة المحارف <quote
+>[...]</quote
+></term>
+<listitem>
+<para
+>هذا يطابق أيًا من المحارف بين القوسين. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>بالطبع يمكنك دمج رمزي بدل أو أكثر في مصطلح بحث. </para>
+
+<para
+>ستُعرض نتائج بحثك في المربع أدناه. نقرة بالزر الأيمن للفأرة على اختيار في هذا المربع تفتح قائمة سياق بقائمة إجراءات للملفات أو المجلدات المختارة. </para>
+
+</sect1>
+
+<sect1 id="kfind-date-range">
+<title
+>اللسان المحتويات</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>نوع الملفّات</guilabel
+></term>
+<listitem>
+<para
+>هنا يمكنك تحديد نوع الملف الذي تبحث عنه. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>يحوي النصّ</guilabel
+></term>
+<listitem>
+<para
+>اكتب الكلمة أو العبارة التي يجب أن تحتويها الملفات التي تبحث عنها. ملاحظة: إذا فعلت هذا في مجلد كبير أو حددت <guilabel
+>ضمّن المجلدات الفرعية</guilabel
+> في لسان <guilabel
+>الاسم/الموقع</guilabel
+>، فقد يستغرق هذا وقتًا طويلًا. </para>
+
+<note>
+<para
+>هذا الخيار <emphasis
+>لن</emphasis
+> يعمل لجميع الملفات المدرجة تحت <guilabel
+>نوع الملف</guilabel
+>. أنواع الملفات التالية فقط مدعومة: <itemizedlist>
+<listitem
+><para
+>ملفات نصية، مثلًا شيفرة مصدرية وملفات <filename
+>README</filename
+></para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Writer / LibreOffice Writer</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Impress / LibreOffice Impress</para
+></listitem>
+<listitem
+><para
+>OpenOffice.org Calc / LibreOffice Calc</para
+></listitem>
+<listitem
+><para
+>كاليغرا وورد</para
+></listitem>
+<listitem
+><para
+>كاليغرا شيت</para
+></listitem>
+<listitem
+><para
+>كاليغرا ستيغ</para
+></listitem>
+</itemizedlist>
+
+</para>
+</note>
+
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>حسّاس لحالة الأحرف</guilabel
+></term>
+<listitem>
+<para
+>إذا فعّلت هذا الخيار، فسيعثر بحثك فقط على نص في ملفات ذات مطابقة تامة لحالة الأحرف، مثلًا <userinput
+>MARC</userinput
+> سيطابق فقط <quote
+>MARC</quote
+>، وليس <quote
+>Marc</quote
+>. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>تعبير نمطي</guilabel
+></term>
+<listitem
+><para
+>إذا كنت قد نصبت أداة &kregexpeditor; من playground/utils على خادم git لـ &kde;، فسيكون لديك هذا الخيار الإضافي. تفعيله سيسمح لك بالبحث عن <firstterm
+>تعبير نمطي</firstterm
+> أو تعبير منتظم. التعبير النمطي طريقة لتحديد شروط لبحثك، ويمكن أن تكون معقدة جدًا، وبالمثل يمكن أن تكون قوية جدًا. إذا كنت غير معتاد على التعبيرات النمطية، يمكنك اختيار زر <guibutton
+>حرر</guibutton
+> لفتح &kregexpeditor;. هذه الأداة تسمح لك ببناء مجموعة الشروط الخاصة بك بيانيًا، ثم تولّد التعبير لك.</para>
+
+<para
+>&kregexpeditor; أداة مفيدة جدًا، ويمكن استخدامها من داخل العديد من تطبيقات &kde; بخلاف بحثك. يمكنك العثور على مزيد من المعلومات من داخل ملف المساعدة الخاص بها.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>ضمّن الملفات الثنائية</guilabel
+></term>
+<listitem
+><para
+>هذا يتيح لك البحث في أي نوع ملف، حتى تلك التي لا تحتوي عادةً على نص (مثلًا ملفات البرامج والصور).</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>ابحث في أقسام المعلومات الوصفية</guilabel
+></term>
+<listitem>
+<para
+>يمكن استخدام هذين الحقلين للبحث داخل تعليقات محددة للملفات أو معلومات وصفية. </para>
+<para
+>إليك بعض الحالات الرئيسة: </para>
+<itemizedlist>
+    <listitem>
+        <para
+><emphasis
+>ملفات الفيديو (avi, mp4، إلخ)</emphasis
+>: حدد بعض الوسوم (<userinput
+>معدل البت</userinput
+>، <userinput
+>المدة</userinput
+>، إلخ) وقيمتها للعثور على عناصر لها قيمة المعامل المحدد في بياناتها الوصفية. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>الصور (png, jpeg, وغيرها)</emphasis
+>: حدد وسمًا ما (<userinput
+>العرض</userinput
+>، <userinput
+>الارتفاع</userinput
+>، وغيرها) وقيمته للعثور على العناصر التي تحتوي على قيمة الوسم المحدد في بياناتها الوصفية. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>الملفات الصوتية (mp3, flac, وغيرها)</emphasis
+>: حدد وسمًا ما (<userinput
+>العنوان</userinput
+>، <userinput
+>الألبوم</userinput
+>، وغيرها) وقيمته للعثور على العناصر التي تحتوي على قيمة الوسم المحدد في بياناتها الوصفية. </para>
+    </listitem>
+    <listitem>
+        <para
+><emphasis
+>الكتب الإلكترونية (epub, azw, fb2, وغيرها)</emphasis
+>: حدد وسمًا ما (<userinput
+>العنوان</userinput
+>، <userinput
+>المؤلف</userinput
+>، وغيرها) وقيمته للعثور على العناصر التي تحتوي على قيمة الوسم المحدد في بياناتها الوصفية. </para>
+    </listitem>
+</itemizedlist>
+<note>
+    <para
+>إذا وُجدت ترجمة للأوسمة إلى لغتك، فيمكنك استخدام أسماء الأوسمة المترجمة في معيار البحث. </para>
+</note>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="kfind-advanced">
+<title
+>لَوح الخصائص</title>
+
+<para
+>هنا يمكنك تحسين بحثك. هذه هي التحسينات الخاصة التي يمكنك اختيارها: </para>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>اعثر على كل الملفات المنشأة أو المعدلة</guilabel
+></term>
+<listitem>
+<para
+>هنا يمكنك إما إدخال تاريخين، بينهما أُنشئت الملفات أو عُدلت، أو تحديد فترة زمنية. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>حجم الملف</guilabel
+></term>
+<listitem>
+<para
+>هنا يمكنك تحديد ما إذا كان يجب أن يكون الملف بحجم لا يقل عن أو لا يزيد عن الحجم الذي أدخلته في المربع التالي، أو مساويًا له. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>ملفات مملوكة لمستخدم</guilabel
+>، <guilabel
+>ملفات مملوكة لمجموعة</guilabel
+></term>
+<listitem>
+<para
+>هنا يمكنك تحديد أسماء المستخدمين والمجموعات كمالكي الملفات. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+</chapter>
+
+<chapter id="credits">
+
+<title
+>الإسنادات والرخصة</title>
+
+<para
+>بحثك </para>
+
+<para
+>حقوق نشر البرنامج: </para>
+
+<itemizedlist>
+<title
+>المطورون</title>
+<listitem>
+<para
+>مارتن هارتيغ</para>
+</listitem>
+
+<listitem>
+<para
+>&Stephan.Kulow; &Stephan.Kulow.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Mario.Weilguni; &Mario.Weilguni.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>&Alex.Zepeda; <email
+>jazepeda@pacbell.net</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>ميروسلاف فليدر <email
+>flidr@kky.zcu.cz</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Harri.Porten; &Harri.Porten.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>ديما روغوزين <email
+>dima@mercury.co.il</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+</listitem>
+
+<listitem>
+<para
+>هانز بيتر بيكر <email
+>bieker@kde.org</email
+></para>
+</listitem>
+
+<listitem>
+<para
+>&Waldo.Bastian; &Waldo.Bastian.mail;</para>
+</listitem>
+    
+</itemizedlist>
+
+<para
+>حقوق نشر التوثيق 2001 &Dirk.Doerflinger; &Dirk.Doerflinger.mail;</para
+> 
+
+<para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+// vim:ts=0:sw=2:tw=78:noet
+-->

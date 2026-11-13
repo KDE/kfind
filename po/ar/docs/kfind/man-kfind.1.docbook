@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<!DOCTYPE refentry PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+<!ENTITY % Arabic "INCLUDE">
+]>
+
+<refentry lang="&language;">
+<refentryinfo>
+<title
+>دليل مستخدم بحثك</title>
+<author
+>&Lauri.Watts; &Lauri.Watts.mail;</author>
+<date
+>2016-11-05</date>
+<releaseinfo
+>تطبيقات 16.12</releaseinfo>
+<productname
+>تطبيقات كِيدِي</productname>
+</refentryinfo>
+
+<refmeta>
+<refentrytitle
+><command
+>kfind</command
+></refentrytitle>
+<manvolnum
+>1</manvolnum>
+</refmeta>
+
+<refnamediv>
+<refname
+><command
+>kfind</command
+></refname>
+<refpurpose
+>أداة بحث عن الملفات من كيدي</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv>
+<cmdsynopsis
+><command
+>kfind</command
+> <group choice="opt"
+><option
+>مسار_البحث</option
+></group
+> <arg choice="opt"
+>خيارات</arg
+> </cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1>
+<title
+>الوصف</title>
+<para
+>أداة البحث عن الملفات هي طريقة مفيدة للبحث عن ملفات محددة في حاسوبك، أو للبحث عن ملفات تطابق نمطًا معينًا. مثال على ذلك قد يشمل البحث عن ملفات من نوع معين أو تحتوي على حروف محددة في اسم الملف، أو تحتوي على نص معين في محتواها.</para
+> 
+<para
+>&kfind; هي أداة رسومية، ولا تُشغَّل عادةً من سطر الأوامر.</para>
+
+</refsect1>
+
+<refsect1>
+<title
+>خيارات</title>
+<variablelist>
+<varlistentry>
+<term
+><option
+>searchpath</option
+></term>
+<listitem
+><para
+>يمكنك اختياريًا توفير مسار لملء الحوار مسبقًا حيث يبدأ البحث.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</refsect1>
+
+<refsect1>
+<title
+>انظر أيضًا</title>
+<simplelist>
+<member
+>وثائق المستخدم الأكثر تفصيلًا متوفرة من <ulink url="help:/kfind"
+>help:/kfind</ulink
+> (إما بإدخال هذا <acronym
+>الرابط</acronym
+> في &konqueror;، أو بتشغيل <userinput
+><command
+>khelpcenter</command
+> <parameter
+>help:/kfind</parameter
+></userinput
+>).</member>
+<member
+>kf6options(7)</member>
+<member
+>qt6options(7)</member>
+</simplelist>
+</refsect1>
+
+<refsect1>
+<title
+>المؤلفون</title>
+<para
+>قائمة المساهمين متوفرة في دليل المستخدم الكامل المتوفر في khelpcenter.</para>
+<para
+>أُعدت هذه الوثائق بواسطة &Lauri.Watts; &Lauri.Watts.mail;</para>
+</refsect1>
+
+</refentry>
