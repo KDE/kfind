@@ -52,6 +52,9 @@ ecm_set_disabled_deprecation_versions(QT 6.9.0
     KF 6.27.0
     )
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
+if(ECM_VERSION VERSION_GREATER_EQUAL "6.33.0")
+    add_definitions(-DQT_LEAN_HEADERS=2)
+endif()
 add_subdirectory(src)
 add_subdirectory(icons)
 
